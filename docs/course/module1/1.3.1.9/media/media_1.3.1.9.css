@@ -1,0 +1,27 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+	overflow:hidden !important;
+}
+
+table tr td {
+    border-color: #DAE17A !important;
+}
+table tbody tr td {
+    border-color: #dae17a !important;
+    border: 3px solid #ff0000;
+}
+table {
+    border-collapse: collapse;
+}
+
+#ID_s2_table { box-shadow:0 0 2px 2px #999999 !important;}

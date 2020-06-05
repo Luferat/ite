@@ -1,0 +1,229 @@
+﻿<textcomponents>
+   <component id='ID_table_01'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e soluções comuns para telas de laptops</b></font></td></tr> 
+		<tr>
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+	  
+<tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+
+<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A tela do laptop aparece preta ou muito escura. Um zumbido também pode ser ouvido.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Inversor de tela do laptop ou a lâmpada backlight está falhando.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua o inversor da tela.</li>
+		  <li>Substitua a lâmpada backlight.</li></textformat></font></td>
+        </tr>
+	
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A tela do laptop exibe apenas as linhas verticais que podem mudar as cores.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Falha na tela do laptop.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Substitua a tela do laptop.</font></td>
+        </tr>
+		
+		<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A tela externa conectada ao laptop mostra o conteúdo, mas a tela do laptop está em branco.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A tela do laptop não está definida para exibir a saída. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Pressione a tecla Fn com a tecla multifunções apropriada para exibir a saída na tela do laptop.</font></td>
+        </tr>
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A tela do laptop e um monitor externo não exibem as imagens, enquanto a unidade de disco rígido e as ventoinhas do laptop estão funcionando normalmente.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A placa-mãe do laptop ou a placa de vídeo está falhando.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua a placa-mãe do laptop se ela tiver uma placa de vídeo onboard.</li>
+<li>Substitua a placa de vídeo.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O laptop não retornar do modo de espera ou de hibernação.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O laptop tem um conflito entre as configurações de BIOS e as configurações de gerenciamento de energia do Windows.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Reconfigure a BIOS do laptop e o gerenciamento de energia do Windows.</font></td>
+        </tr>
+		
+      </table>]]>
+    </text>
+  </component>
+   <component id='ID_table_02'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr>
+		<td bgcolor='#DAE17A' colspan='3'><font size='14' color='#393536'><b class="font_fourteen">Problemas e soluções comuns para dispositivos de armazenamento portáteis e RAM</b></font></td></tr> 
+	<tr>
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+	  <tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  <tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O disco rígido portátil tem erros de acesso a dados e faz ruídos estranhos. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Disco rígido está falhando. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Substitua o disco rígido. </font></td>
+        </tr>
+	
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O laptop não inicializa ou acessa um disco rígido instalado recentemente. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O disco rígido não está conectado corretamente.</li>
+<li>A BIOS não reconhece o novo disco rígido.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Reconecte o disco rígido.</li>
+<li>Atualize a BIOS do laptop.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O laptop acessa o disco rígido excessivamente.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>A memória virtual está configurada incorretamente.</li>
+<li>É necessária RAM adicional.</li>
+<li>O espaço livre no disco rígido é limitado.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Altere as configurações de memória virtual.</li>
+<li>Instale uma memória RAM adicional.</li>
+<li>Elimine ou remova arquivos e aplicativos desnecessários.</li></textformat></font></td>
+        </tr>
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O laptop faz um longo sinal sonoro após a instalação de uma nova RAM.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Tipo errado de memória RAM instalada.</li>
+<li>A memória RAM está instalada incorretamente.</li>
+<li>Um módulo de memória RAM danificado está instalado.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Instale o tipo correto de RAM.</li>
+<li>Remova e reinstale a memória RAM.</li>
+<li>Substitua o módulo de RAM danificado.</li></textformat></font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_03'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr>
+		<td bgcolor='#DAE17A' colspan='3' ><font size='14' color='#393536'><b class="font_fourteen">Problemas e soluções comuns de energia para laptops e dispositivos de entrada</b></font></td>
+	</tr> 
+	<tr>
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+	  <tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A luz do LED de alimentação do laptop não é ligada quando o mesmo é conectado a uma tomada AC.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>A fonte de alimentação AC não está funcionando.</li>
+<li>O cabo de alimentação não está bem conectado no laptop.</li>
+<li>O adaptador AC está com defeito.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Ligue o laptop em uma fonte de energia boa.</li>
+<li>Desconecte e conecte firmemente o cabo de alimentação do laptop.</li>
+<li>Substitua o adaptador AC.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O laptop não liga ao utilizar apenas a bateria.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>A bateria não está conectada corretamente.</li>
+            <li>A bateria não tem carga.</li>
+<li>A bateria está com defeito.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Retire e recoloque a bateria.</li>
+<li>Carregue a bateria.</li>
+<li>Substitua a bateria.</li></textformat></font></td>
+        </tr>
+		
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O tempo de operação do laptop, enquanto está usando a bateria, é muito curto.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A bateria está velha.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Substitua a bateria.</font></td>
+        </tr>
+		
+		<tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A data e a hora aparecem incorretas quando o laptop é ligado.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+			<li>A bateria do CMOS está falhando.</li>
+			<li>A bateria do CMOS está solta.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua a bateria da CMOS.</li>
+		  <li>Remova e reinstale a bateria da CMOS.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O touch pad do laptop ou o dispositivo apontador não estão sensíveis.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O dispositivo touch pad ou o dispositivo apontador estão desativados.</li>
+<li>O dispositivo touch pad ou o dispositivo apontador estão com defeito.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Ative o dispositivo apontador no painel de controle.</li>
+		  <li>Substitua o dispositivo apontador.</li>
+		  <li>Use o mouse como um novo dispositivo apontador.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O teclado do laptop não funciona ou algumas teclas individuais não funcionam.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O teclado foi danificado por líquido.</li>
+<li>O teclado do laptop tem uma conexão solta.</li>
+<li>O teclado é usado ou velho.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Limpe o teclado.</li>
+		  <li>Reconecte teclado do laptop.</li>
+		  <li>Substitua o teclado do laptop.</li>
+		  <li>Use um teclado externo.</li></textformat></font></td>
+        </tr>
+		
+      </table>]]>
+    </text>
+  </component>
+   <component id='ID_table_04'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Mais Problemas e Soluções de Laptops</b></font></td>
+	</tr> 
+	<tr>
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+<tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  <tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O laptop desliga aleatoriamente ou fica excessivamente quente.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O laptop tem pouca ventilação.</li>
+<li>O laptop tem um ventilador com defeito.</li>
+<li>O dissipador de calor da CPU está sujo ou solto.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Limpe todas as aberturas.</li>
+<li>Substitua quaisquer ventiladores com defeito.</li>
+<li>Limpe e recoloque o dissipador de calor.</li></textformat></font></td>
+        </tr>
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O laptop não inicializa e só as ventoinhas e os LEDs estão funcionando.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A CPU está falhando.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Substitua a CPU.</font></td>
+        </tr>
+		
+		<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Os alto-falantes embutidos no laptop não produzem nenhum som.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O áudio está desabilitado na BIOS.</li>
+<li>O som está mutado.</li>
+<li>Os alto-falantes do laptop estão danificados.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Ative o áudio na BIOS.</li>
+<li>Tire o som do mute.</li>
+<li>Substitua os alto-falantes.</li>
+<li>Use alto-falantes externos.</li></textformat></font></td>
+        </tr>
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Não é possível inserir um PC Card no laptop.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O PC Card não é suportado pelo laptop.</li>
+<li>O protetor de plástico está instalado no slot do cartão.</li>
+</textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua o PC Card por um ExpressCard.</li>
+<li>Retire o plástico protetor do slot do cartão.</li>
+<li>Compre um PC Card para o adaptador ExpressCard.</li></textformat></font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  
+  
+</textcomponents>

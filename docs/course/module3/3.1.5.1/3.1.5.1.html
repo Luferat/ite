@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.5.1 Instalação dos cabos internos de alimentação</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Instalação dos Cabos</h2>
+      </div>
+      <div id="content">
+          <p>Conectores de Energia da placa-mãe</p>
+          <p>Toda Placa-Mãe necessita de energia para funcionar. O principal conector de alimentação Advanced Technology Extended(ATX) possui 20 ou 24 pinos. A fonte de alimentação também pode ter um conector de energia auxiliar(AUX) de 4, 6 ou 8 pinos que se conecta à placa-mãe. O conector de 20 pinos também funciona em uma placa-mãe que utiliza o soquete de 24 pinos.</p>
+          <p>Para instalar o conector de alimentação da placa-mãe, siga estes passos:</p>
+          <p>Passo 1. Alinhe o conector de alimentação ATX de 20 pinos com o soquete da placa-mãe, (Imagem 1).</p>
+          <p>Passo 2. Pressione o conector levemente para baixo até o clipe encaixar.</p>
+          <p>Passo 3. Alinhe o conector de alimentação AUX de 4 pinos no soquete da placa-mãe (Imagem 2).</p>
+          <p>Passo 4. Pressione o conector levemente para baixo até o clipe encaixar.</p>
+          <p>Conectores de alimentação SATA</p>
+          <p>Os conectores de alimentação SATA possuem 15 pinos. Estes conectores são utilizados ​​para conectar os discos rígidos, drives ópticos, ou qualquer outro dispositivo suporte a alimentação SATA.</p>
+          <p>Conector de Alimentação Molex</p>
+          <p>Os discos rígidos e drives ópticos que não possuem conectores de energia SATA podem utilizar um conector de alimentação Molex.</p>
+          <p>ATENÇÃO: Não utilize os conectores de alimentação Molex e SATA na mesma unidade, ao mesmo tempo.</p>
+          <p>Conector de Alimentação Berg</p>
+          <p>O conector de energia Berg, de 4 pinos, fornece energia para a unidade de disquete.</p>
+          <p>Para instalar o conector de alimentação SATA, Molex, ou Berg, siga estes passos:</p>
+          <p>Passo 1. Encaixe o conector de alimentação SATA no HDD (Imagem 3).</p>
+          <p>Passo 2. Encaixe o conector de alimentação Molex na unidade óptica (Imagem 4).</p>
+          <p>Passo 3. Encaixe o conector de alimentação Berg no drive de disquete - FDD (Imagem 5).</p>
+          <p>Passo 4. Encaixe o conector de alimentação, de 3 pinos, do cooler(fan) no local apropriado da placa-mãe de acordo com o manual da mesma (Imagem 6).</p>
+          <p>Passo 5. Conecte os cabos adicionais do gabinete para os conectores apropriados de acordo com o manual da placa mãe.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

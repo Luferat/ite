@@ -1,0 +1,198 @@
+﻿<textcomponents>
+
+<!--slide 1-->
+<component id='ID_s1_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Dispositivos de Armazenamento</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width="105" valign="top"><font color='#FFFFFF'><b>Identificar o problema</b></font></td>
+		<td bgcolor='#A2AA23' width="155" valign="top"><font color='#FFFFFF'><b>Prováveis Causas</b></font></td>
+		<td bgcolor='#A2AA23' width="155" valign="top"><font color='#FFFFFF'><b>Soluções Possíveis</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">O computador não reconhece um dispositivo de armazenamento.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>O cabo de alimentação está solto.</li><li>O cabo de dados está solto.</li><li>Os jumpers estão configurados incorretamente.</li><li>O dispositivo de armazenamento falhou.</li><li>As configurações do dispositivo de armazenamento estão incorretas na BIOS.</li></textformat></td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Fixe o cabo de alimentação.</li><li>Fixe o cabo de dados.</li><li>Recoloque os jumpers.</li><li>Substitua o dispositivo de armazenamento.</li><li>Redefina as configurações do dispositivo de armazenamento na BIOS.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">A unidade de disquete não lê a mídia ou a luz da unidade permanece acesa constantemente.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>O cabo de alimentação ou o cabo de dados está solto.</li><li>O pino 1 no cabo de dados não está ligado ao pino 1 na unidade.</li><li>As configurações de FDD na BIOS estão incorretas.</li><li>O disco está ruim ou não formatado.</li><li>O disco foi inserido ao contrário.</li></textformat></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Proteja o cabo de alimentação ou o cabo de dados para a unidade e a placa-mãe.</li><li>Ligue corretamente o cabo de dados.</li><li>Redefina as configurações de FDD na BIOS.</li><li>Tente outro disco ou formate o disco.</li><li>Reinsira o disco corretamente.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">O computador não reconhece um disco óptico.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'></textformat><li>A unidade óptica está com defeito.</li><li>O disco foi inserido ao contrário.</li><li>Existe mais que um disco inserido na unidade.</li><li>O disco está danificado.</li><li>O disco está no formato errado.</li></td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'></textformat><li>Substitua a unidade óptica.</li><li>Insira o disco corretamente.</li><li>Assegure-se que há apenas um disco inserido na unidade.</li><li>Substitua o disco.</li><li>Use o tipo correto de disco.</li></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">O computador não vai ejetar o disco óptico.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>A unidade óptica está emperrada.</li><li>A unidade óptica foi bloqueado por software.</li><li>A unidade óptica está com defeito.</li></textformat></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Insira um pino no furo pequeno ao lado do botão de ejeção da unidade para abrir a bandeja.</li><li>Reinicie o computador.</li><li>Substitua a unidade óptica.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">O computador não reconhece a unidade SCSI.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>A unidade SCSI tem um ID SCSI incorreto.</li><li>A terminação SCSI não está configurada corretamente.</li><li>A unidade SCSI externa não foi ligada antes de inicializar o computador.</li></textformat></td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Reconfigure o ID SCSI.</li><li>Certifique-se de que a cadeia SCSI (SCSI chain) está terminada nos pontos finais corretos.</li><li>Ligue a unidade antes de iniciar o computador.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">O computador não reconhece a unidade externa removível.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>A unidade externa removível está com defeito.</li><li>A unidade externa removível não está encaixada corretamente.</li><li>As portas externas estão desativados nas configurações da BIOS.</li></textformat></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Substitua a unidade externa removível.</li><li>Remova e reinsira a unidade.</li><li>Ative as portas nas configurações da BIOS.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">Um leitor de mídia não pode ler um cartão de memória que funciona corretamente na câmera.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>O leitor de mídia não suporta o tipo de cartão de memória.</li><li>O leitor de mídia não está conectado corretamente.</li><li>O leitor de mídia não está configurado corretamente nas configurações da BIOS.</li><li>O leitor de mídia está com defeito.</li></textformat></td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Use um tipo de cartão de memória diferente.</li><li>Verifique se o leitor de mídia está conectado corretamente no computador.</li><li>Reconfigure o leitor de mídia na BIOS.</li><li>Instale um leitor de mídia de qualidade.</li></textformat></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!--slide 2-->
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title1">
+		<td bgcolor='#DAE17A' colspan='3' class="title1"  ><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Laptops Placas-mãe e Componentes Internos</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width="105"valign="top"><font color='#FFFFFF'><b>Identificar o problema</b></font></td>
+		<td bgcolor='#A2AA23' width="155" valign="top"><font color='#FFFFFF'><b>Prováveis Causas</b></font></td>
+		<td bgcolor='#A2AA23' width="155" valign="top"><font color='#FFFFFF'><b>Soluções Possíveis</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">O relógio do computador não mantém o horário correto ou as configurações da BIOS estão mudando quando o computador é reiniciado.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>A bateria CMOS pode estar solta.</li><li>A bateria CMOS pode estar falhando.</li></textformat></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Fixe a bateria.</li><li>Substitua a bateria.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">Recuperar ou salvar os dados em uma unidade flash USB se torna um processo lento.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>A placa-mãe não suporta USB 3.0.</li><li>A unidade flash USB não suporta USB 3.0.</li><li>A porta está definida com a velocidade máxima na configuração da BIOS.</li></textformat></td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Atualize a placa-mãe ou unidade flash USB com suporte a USB 3.0.</li><li>Defina a velocidade da porta na configuração da BIOS para alta velocidade.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">Após atualizar o firmware da BIOS, o computador não será iniciado.</td>
+		<td bgcolor='#FFFFFF' valign="top">A atualização de firmware BIOS não foi instalada corretamente.</td>
+		<td bgcolor='#FFFFFF' valign="top">Entre em contato com o fabricante da placa-mãe para obter um novo chip da BIOS. Se a placa tem dois chips da BIOS, o segundo chip da BIOS pode ser usado.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">O computador exibe informações incorretas da CPU quando o mesmo é inicializado.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>A placa-mãe está com os jumpers incorretos.</li><li>As configurações da CPU não estão corretas nas configurações avançadas da BIOS.</li><li>A BIOS não reconhece corretamente a CPU.</li></textformat></td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Defina as configurações de jumper da CPU na placa-mãe.</li><li>Defina corretamente as configurações avançadas da BIOS para a CPU.</li><li>Atualize a BIOS.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">O LED da unidade de disco na frente do computador não acende.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'></textformat><li>O cabo do LED do disco rígido não está conectado ou está solto.</li><li>O cabo de LED do disco rígido não está corretamente orientado para as conexões no painel frontal do gabinete.</li></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Reconecte o cabo do LED do disco rígido na placa-mãe.</li><li>Oriente corretamente o cabo do LED do disco rígido para a sua conexão no painel frontal do gabinete e reconecte.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">A NIC built-in(Placa de rede onboard) parou de funcionar em um computador.</td>
+		<td bgcolor='#F3F5E7' valign="top">O hardware da NIC falhou.</td>
+		<td bgcolor='#F3F5E7' valign="top">Adicione uma nova NIC em um slot de expansão disponível.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">O computador não exibi qualquer vídeo depois de instalar uma nova placa de vídeo PCIe.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Configurações da BIOS são definidas para usar a imagem da placa de vídeo onboard.</li><li>O cabo ainda está conectado na placa de vídeo onboard.</li><li>A nova placa de vídeo está com defeito.</li></textformat></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Desative a placa de vídeo onboard nas configurações da BIOS.</li><li>Conecte o cabo à placa de vídeo nova.</li><li>Instale uma placa de vídeo de qualidade.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">A nova placa de som não funciona.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>O alto falante não está conectado à porta correta.</li><li>O áudio está no mudo.</li><li>A placa de som está com defeito.</li><li>As configurações da BIOS estão definidas para utilizar o dispositivo de som onboard.</li></textformat></td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Ligue o alto falante à porta correta.</li><li>Retire o áudio do mudo.</li><li>Instale uma placa de som de qualidade.</li><li>Desative o dispositivo de áudio onboard nas configurações da BIOS.</li>
+</textformat></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!--slide 3-->
+<component id='ID_s3_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Fontes de Alimentação</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23'  width="105" valign="top"><font color='#FFFFFF'><b>Identificar o problema</b></font></td>
+		<td bgcolor='#A2AA23' width="155" valign="top"><font color='#FFFFFF'><b>Prováveis Causas</b></font></td>
+		<td bgcolor='#A2AA23' width="155" valign="top"><font color='#FFFFFF'><b>Soluções Possíveis</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">O computador não liga.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>O computador não está conectado a uma tomada AC(corrente alternada).</li><li>A tomada está com defeito.</li><li>O cabo de alimentação está com defeito.</li><li>O interruptor da fonte de alimentação não está ligado.</li><li>O interruptor da fonte de alimentação está definido com uma tensão incorreta.</li><li>O botão &quot;ligar&quot; não está conectado corretamente ao conector do painel frontal.</li><li>A fonte de alimentação está falhando.</li></textformat></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Ligue o computador a uma tomada de qualidade.</li><li>Use um cabo de alimentação de qualidade.</li><li>Ligue o interruptor da fonte de alimentação.</li><li>Coloque o interruptor da fonte de alimentação com a configuração correta de tensão.</li><li>Oriente corretamente o botão de alimentação para o conector do painel frontal e reconecte.</li><li>Instale uma fonte de alimentação de qualidade.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">O computador reinicia, desliga inesperadamente, há fumaça ou o cheiro de produtos eletrônicos queimados.</td>
+		<td bgcolor='#F3F5E7' valign="top">A fonte de alimentação está a começando a falhar.</td>
+		<td bgcolor='#F3F5E7' valign="top">Substitua a fonte de alimentação.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!--slide 4-->
+<component id='ID_s4_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para CPUs e Memórias</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23'  width="105" valign="top"><font color='#FFFFFF'><b>Identificar o problema</b></font></td>
+		<td bgcolor='#A2AA23' width="155" valign="top"><font color='#FFFFFF'><b>Prováveis Causas</b></font></td>
+		<td bgcolor='#A2AA23' width="155" valign="top"><font color='#FFFFFF'><b>Soluções Possíveis</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">O computador não inicializa ou trava.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'></textformat><li>A CPU está superaquecida.</li><li>O ventilador da CPU está falhando.</li><li>A CPU falhou.</li></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Reinstale a CPU.</li><li>Substitua o ventilador da CPU.</li><li>Adicione ventoinha(s) no gabinete.</li><li>Substitua a CPU.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">O ventilador da CPU está fazendo um ruído incomum.</td>
+		<td bgcolor='#F3F5E7' valign="top">O ventilador da CPU está falhando.</td>
+		<td bgcolor='#F3F5E7' valign="top">Substitua o ventilador da CPU.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">O computador é reiniciado sem aviso prévio, trava ou exibe mensagens de erro.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>O front-side bus está configurado com um valor muito alto.</li><li>O multiplicador da CPU está definido com um valor muito alto.</li><li>A voltagem da CPU está definida com um valor muito alto.</li></textformat></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Redefina a placa-mãe para as configurações padrões de fábrica.</li><li>Diminua o valor do front-side bus configurado.</li><li>Diminua o valor do multiplicador configurado.</li><li>Diminua a voltagem da CPU configurada.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">Após a atualização de uma CPU single core para uma CPU dual core, o computador funciona mais lentamente e mostra apenas o gráfico de uma CPU no Gerenciador de Tarefas.</td>
+		<td bgcolor='#F3F5E7' valign="top">A BIOS não reconhece a CPU dual core.</td>
+		<td bgcolor='#F3F5E7' valign="top">Atualize o firmware da BIOS para suportar a CPU dual core.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">A CPU não encaixa na placa-mãe.</td>
+		<td bgcolor='#FFFFFF' valign="top">A CPU é do tipo incorreto.</td>
+		<td bgcolor='#FFFFFF' valign="top">Substitua a CPU por uma que corresponda ao tipo de soquete da placa-mãe.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">O computador não reconhece a RAM que foi adicionada.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>A nova RAM está com defeito.</li><li>Um tipo incorreto de RAM foi instalada.</li><li>A nova RAM está solta no slot de memória.</li></textformat></td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Substitua a RAM.</li><li>Instale o tipo correto de RAM.</li><li>Fixe a RAM no slot de memória.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">Após atualizar o Windows, o computador funciona muito lentamente.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>O computador não tem memória RAM suficiente.</li><li>A placa de vídeo não tem memória suficiente.</li></textformat></td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Instale memória RAM adicional.</li><li>Instale uma placa de vídeo que tenha mais memória.</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top">Um computador com memórias RAM DDR2 e DDR3 instalada só reconhece a memória RAM DDR3.</td>
+		<td bgcolor='#F3F5E7' valign="top">A placa-mãe não suporta a instalação de memórias RAM DDR2 e DDR3.</td>
+		<td bgcolor='#F3F5E7' valign="top">Verifique o manual da placa mãe para ver se o computador suporta os dois tipos de RAM simultaneamente.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

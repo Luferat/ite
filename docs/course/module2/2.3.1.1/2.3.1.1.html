@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Laboratório e Uso de Ferramentas</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Este capítulo discutiu procedimentos seguros para laboratórios, o uso da ferramenta correta e o descarte adequado de componentes dos computadores e suprimentos. Você se familiarizou no laboratório com muitas das ferramentas utilizadas para construir, ferramentas de serviço e limpeza de computadores e componentes eletrônicos. Você também aprendeu a importância de ferramentas organizacionais e como estas ferramentas ajudam você a trabalhar com mais eficiência.</p>
+          <p>Alguns dos conceitos importantes para se lembrar deste capítulo:</p>
+          <p><ul>
+              <li>Trabalhar de uma forma segura para proteger os usuários e equipamentos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Siga todas as orientações de segurança para evitar lesões a si e aos outros.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Saiba como proteger o equipamento contra danos ESD.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conhecer e ser capaz de prevenir problemas de energia que podem causar danos aos equipamentos ou perda de dados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Saber quais produtos e suprimentos requerem procedimentos especiais de descarte.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Familiarize-se com o MSDS para questões de segurança e restrições de disposição para ajudar a proteger o meio ambiente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ser capaz de utilizar as ferramentas corretas para cada tarefa.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Saber como limpar os componentes de forma segura.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use ferramentas para organização durante os reparos de um computador.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,91 @@
+﻿<textcomponents>
+
+<component id="ID_s01_title">
+<text><![CDATA[<b>Vista Superior da Base Multifuncional</b>]]></text>
+</component>
+
+<component id="ID_s01_cap01">
+<text><![CDATA[O botão de energia é um controle que liga e desliga o laptop quando ele está conectado na base multifuncional.]]></text>
+</component>
+<component id="ID_s01_cap02">
+<text><![CDATA[O botão de ejetar é uma alavanca que libera o laptop da base para que mesmo possa ser removido.]]></text>
+</component>
+<component id="ID_s01_cap03">
+<text><![CDATA[Este conector é um soquete utilizado para conectar um laptop a uma base multifuncional.]]></text>
+</component>
+
+
+<component id="ID_s02_title">
+<text><![CDATA[<b>Vista Traseira da Base Multifuncional</b>]]></text>
+</component>
+
+<component id="ID_s02_cap01">
+<text><![CDATA[A saída de ar é uma saída que expulsa o ar quente do interior da base multifuncional.]]></text>
+</component>
+<component id="ID_s02_cap02">
+<text><![CDATA[O conector de energia AC é um soquete utilizado para conectar o adaptador de energia AC na base.]]></text>
+</component>
+<component id="ID_s02_cap03">
+<text><![CDATA[O PC card é um slot de expansão que suporta as placas de expansão ExpressCard, no slot superior, e os PC Cards no inferior.]]></text>
+</component>
+<component id="ID_s02_cap04">
+<text><![CDATA[A porta VGA é um soquete de 15 pinos que permite conectar monitores externos e projetores.]]></text>
+</component>
+<component id="ID_s02_cap05">
+<text><![CDATA[A porta DVI é um soquete utilizado para conectar um monitor de vídeo digital.]]></text>
+</component>
+<component id="ID_s02_cap06">
+<text><![CDATA[O conector Line In é um soquete utilizado para conectar uma fonte de áudio.]]></text>
+</component>
+<component id="ID_s02_cap07">
+<text><![CDATA[O conector de headphone é utilizado para conectar um dispositivo de saída de áudio.]]></text>
+</component>
+<component id="ID_s02_cap08">
+<text><![CDATA[O Universal Serial Bus (USB) é um soquete usado para conectar um ou mais periféricos.]]></text>
+</component>
+<component id="ID_s02_cap09">
+<text><![CDATA[A porta de mouse PS/2 é um soquete utilizado para conectar um mouse externo.]]></text>
+</component>
+<component id="ID_s02_cap10">
+<text><![CDATA[A porta de teclado PS/2 é um soquete utilizado para conectar um teclado externo.]]></text>
+</component>
+<component id="ID_s02_cap11">
+<text><![CDATA[O conector external-diskette-drive é um soquete utilizado para conectar uma unidade de disco externa.]]></text>
+</component>
+<component id="ID_s02_cap12">
+<text><![CDATA[A porta paralela é um slot usado para conectar um dispositivo, como uma impressora ou scanner.]]></text>
+</component>
+<component id="ID_s02_cap13">
+<text><![CDATA[A porta serial é um soquete utilizado para conectar tanto um mouse como um trackball.]]></text>
+</component>
+<component id="ID_s02_cap14">
+<text><![CDATA[A porta RJ-11 é utilizada para conectar o laptop a uma linha telefônica convencional.]]></text>
+</component>
+<component id="ID_s02_cap15">
+<text><![CDATA[A porta Ethernet utiliza o conector RJ-45 que é usado para conectar o laptop a uma rede local cabeada.]]></text>
+</component>
+
+
+<component id="ID_s03_title">
+<text><![CDATA[<b>Vista Lateral Direita da Base Multifuncional</b>]]></text>
+</component>
+
+<component id="ID_s03_cap01">
+<text><![CDATA[A fechadura é um soquete no qual uma chave é inserida para bloquear o laptop na base funcional.]]></text>
+</component>
+
+
+
+
+
+
+
+<component id="ID_sub_inst">
+  <text><![CDATA[<b>Clique na área de destaque para visualizar os conteúdos importantes. Clique novamente para fechar. </b>]]></text> 
+  </component>  
+  
+<component id="transcript">
+  <text><![CDATA[<b>transcrição vai aqui</b>]]></text> 
+  </component>
+  
+</textcomponents>

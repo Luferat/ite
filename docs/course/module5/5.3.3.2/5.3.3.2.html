@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.3.2 Visualizador de Eventos, Serviços de Componentes e Fontes de Dados</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Ferramentas Administrativas</h2>
+      </div>
+      <div id="content">
+          <p>O Visualizador de eventos, conforme apresentado na figura, registra o histórico de eventos relacionados aos aplicativos, segurança e ao sistema. Esses arquivos de log são ferramentas valiosas para o troubleshooting, pois eles fornecem as informações necessárias para identificar um problema.</p>
+          <p>Para acessar o Visualizador de eventos, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Ferramentas Administrativas > Visualizador de Eventos</p>
+          <p>O Serviço de Componentes é uma ferramenta administrativa usada por administradores e desenvolvedores para implementar, configurar e administrar objetos e componentes COM (Component Object Model). A COM é uma forma utilizada para permitir a utilização de componentes em ambientes diferentes aos quais eles foram criados.</p>
+          <p>Para acessar os Serviços de componentes, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Ferramentas Administrativas > Serviços de Componentes</p>
+          <p>A Fontes de dados é uma ferramenta administrativa utilizada pelos administradores para gerenciar, adicionar ou remover fontes de dados usando o Open Database Connectivity (ODBC). O ODBC é uma tecnologia que os programas usam para acessar uma grande variedade de bancos de dados ou fontes de dados.</p>
+          <p>Para acessar a Fontes de dados (ODBC), use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Ferramentas Administrativas > Fontes de dados (ODBC)</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

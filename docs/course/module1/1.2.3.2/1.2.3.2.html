@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.3.2 CPUs</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Internal PC Components</h2>
+    </div>
+    <div id="content">
+          <p>The central processing unit (CPU) is considered the brain of the computer. It is sometimes referred to as the processor. Most calculations take place in the CPU. In terms of computing power, the CPU is the most important element of a computer system. CPUs come in different form factors, each style requiring a particular slot or socket on the motherboard. Common CPU manufacturers include Intel and AMD.</p>
+          <p>The CPU socket or slot is the connection between the motherboard and the processor. Most CPU sockets and processors in use today are built around the architectures of the pin grid array (PGA), shown in Figure 1, and land grid array (LGA), shown in Figure 2. In a PGA architecture, pins on the underside of the processor are inserted into the socket, usually with zero insertion force (ZIF). ZIF refers to the amount of force needed to install a CPU into the motherboard socket or slot. In an LGA architecture, the pins are in the socket instead of on the processor. Slot-based processors, shown in Figure 3, are cartridge-shaped and fit into a slot that looks similar to an expansion slot, shown in Figure 4.</p>
+          <p>The CPU executes a program, which is a sequence of stored instructions. Each model of processor has an instruction set, which it executes. The CPU executes the program by processing each piece of data as directed by the program and the instruction set. While the CPU is executing one step of the program, the remaining instructions and the data are stored nearby in a special memory called cache. Two major CPU architectures are related to instruction sets.</p>
+          <p>
+            <ul>
+              <li>
+                <b>Reduced Instruction Set Computer (RISC)</b> - Architectures use a relatively small set of instructions. RISC chips are designed to execute these instructions very rapidly. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Complex Instruction Set Computer (CISC)</b> - Architectures use a broad set of instructions, resulting in fewer steps per operation. </li>
+            </ul>
+          </p>
+          <p>Some Intel CPUs incorporate hyperthreading to enhance the performance of the CPU. With hyperthreading, multiple pieces of code (threads) are executed simultaneously in the CPU. To an operating system, a single CPU with hyperthreading performs as though there are two CPUs when multiple threads are being processed.</p>
+          <p>Some AMD processors use hypertransport to enhance CPU performance. Hypertransport is a high-speed, low-latency connection between the CPU and the Northbridge chip.</p>
+          <p>The power of a CPU is measured by the speed and the amount of data that it can process. The speed of a CPU is rated in cycles per second, such as millions of cycles per second, called megahertz (MHz), or billions of cycles per second, called gigahertz (GHz). The amount of data that a CPU can process at one time depends on the size of the processor data bus. This is also called the CPU bus or the front side bus (FSB). The wider the processor data bus width, the more powerful the processor is. Current processors have a 32-bit or a 64-bit processor data bus. A bit is the smallest unit of data in a computer and is the binary format in which data is processed.</p>
+          <p>Overclocking is a technique used to make a processor work at a faster speed than its original specification. Overclocking is not a recommended way to improve computer performance and can result in damage to the CPU. The opposite of overclocking is CPU throttling. CPU throttling is a technique used when the processor runs at less than the rated speed to conserve power or produce less heat. Throttling is commonly used on laptops and other mobile devices.</p>
+          <p>The latest processor technology has resulted in CPU manufacturers finding ways to incorporate more than one CPU core onto a single chip. These CPUs are capable of processing multiple instructions concurrently:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Single Core CPU</b> - One core inside a single CPU that handles all the processing. A motherboard manufacturer might provide sockets for more than one single processor, providing the ability to build a powerful, multiprocessor computer. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dual Core CPU</b> - Two cores inside a single CPU in which both cores can process information at the same time.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Triple Core CPU</b> - Three cores inside a single CPU that is actually a quad-core processor with one of the cores disabled. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Quad Core CPU</b> - Four cores inside a single CPU</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hexa-Core CPU</b> - Six cores inside a single CPU</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Octa-Core CPU</b> - Eight cores inside a single CPU</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

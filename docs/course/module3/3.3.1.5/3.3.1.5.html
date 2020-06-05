@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.1.5 Atualizando a BIOS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Atualizando e Configurando um PC</h1>
+        <h2>Placa-mãe e seus Componentes</h2>
+      </div>
+      <div id="content">
+          <p>Fabricantes de placas-mães liberam periodicamente atualizações para suas BIOS. As notas de libertação, conforme apresentado na Imagem 1, descreve a atualização para o produto, as melhorias de compatibilidade e os problemas conhecidos que foram corrigidos. Alguns dispositivos mais recentes operam adequadamente apenas com a BIOS atualizada. Para verificar a versão da BIOS instalada no seu computador consulte suas configurações, conforme apresentado na Imagem 2.</p>
+          <p>No início, as informações da BIOS se encontravam nos chips de memória ROM. Para atualizar as informações da BIOS o chip ROM deveria ser substituído, o que nem sempre era possível. Os chips de BIOS modernos são EEPROM ou memória flash, que pode ser atualizado pelo usuário, sem abrir o gabinete do computador. Este processo é chamado de flashing da BIOS.</p>
+          <p>Para baixar uma nova BIOS, consulte o site do fabricante e siga os procedimentos de instalação recomendados. Instalando o software da BIOS online pode envolver o download de um novo arquivo da BIOS, copiar ou extrair os arquivos em uma mídia removível e, em seguida, reiniciar a partir da mídia removível. Um programa de instalação solicitará informações ao usuário para concluir o processo.</p>
+          <p>Embora ainda seja comum o processo flashing da BIOS através de um prompt de comando, vários fabricantes de placas-mãe fornecem softwares em seus sites que permitem ao usuário atualizar a BIOS a partir do Windows. O procedimento varia de fabricante para fabricante.</p>
+          <p>CUIDADO: Uma atualização da BIOS instalada incorretamente ou abortada pode tornar o computador inutilizável.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

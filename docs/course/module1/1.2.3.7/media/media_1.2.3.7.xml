@@ -1,0 +1,100 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+<component id='ID_s1_title'>
+<text><![CDATA[<b>Adapter Cards</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b>Sound Adapter</b>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<b>NIC</b>]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[<b>RAID Adapter</b>]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[<b>Video Adapter</b>]]></text>
+</component>
+
+<!--Slide 2-->
+<component id='ID_s2_table'>
+	<text><![CDATA[<table header='none' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#918F90'><tr><td>test</td></tr></table>]]></text>
+</component>
+
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Expansion Slots</b>]]></text>
+</component>
+
+<component id='ID_s2_btn01'>
+	<text><![CDATA[<b>PCI</b>]]></text>
+</component>
+
+<component id='ID_s2_btn02'>
+	<text><![CDATA[<b>AGP</b>]]></text>
+</component>
+
+<component id='ID_s2_btn03'>
+	<text><![CDATA[<b>PCIe</b>]]></text>
+</component>
+
+<component id='ID_s2_btn04'>
+	<text><![CDATA[<b>ISA</b>]]></text>
+</component>
+
+<component id='ID_s2_btn05'>
+	<text><![CDATA[<b>EISA</b>]]></text>
+</component>
+
+<component id='ID_s2_btn06'>
+	<text><![CDATA[<b>MCA</b>]]></text>
+</component>
+
+<component id='ID_s2_btn07'>
+	<text><![CDATA[<b>PCI-X</b>]]></text>
+</component>
+
+<component id='ID_s2_btn08'>
+	<text><![CDATA[<b>Mini PCI</b>]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[Peripheral Component Interconnect is a 32-bit or 64-bit expansion slot. PCI is the standard slot currently used in most computers.]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[Advanced Graphics Port is a 32-bit expansion slot. AGP is designed for video adapters, and may be multipled by 2, 4, or 8.]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[PCI Express is a serial bus expansion slot. PCIe has x1, x4, x8 and x16 slots. PCIe is replacing AGP as an expansion slot for video adapters and can be used for other types of adapters.]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[Industry Standard Architecture is an 8-bit or 16-bit expansion slot. This is older technology and is seldom used.]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[Extended Industry Standard Architecture is a 32-bit expansion slot. This is older technology and is seldom used.]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[Microchannel Architecture is an IBM-proprietary 32-bit expansion slot. This is older technology and is seldom used.]]></text>
+</component>
+
+<component id='ID_s2_txt07'>
+	<text><![CDATA[PCI-Extended is a 32-bit bus with higher bandwidth than the PCI bus. PCI-X can run up to four times faster than PCI.]]></text>
+</component>
+
+<component id='ID_s2_txt08'>
+	<text><![CDATA[Mini PCI is a 32-bit bus used by laptops. Mini PCI has three different form factors, Type I, Type II, and Type III.]]></text>
+</component>
+
+
+
+</textcomponents>

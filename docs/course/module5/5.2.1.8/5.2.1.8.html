@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.1.8 Criação de Conta</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Procedimentos de Configuração de Disco Rígido</h2>
+      </div>
+      <div id="content">
+          <p>Quando os usuários tentam efetuar login em um dispositivo ou acessar recursos do sistema, o Windows usa o processo de autenticação para verificar se os usuários são quem eles dizem que são. A autenticação ocorre quando o usuário digitar um username e senha para acessar uma conta. Os sistemas operacionais Windows usam a autenticação Single-Sign On (SSO), que permite que os usuários façam login uma vez para acessar todos os recursos do sistema ao invés de obrigá-los a se autenticar toda cada vez que precisam acessar um recurso individual.</p>
+          <p>As contas de usuário permitem que múltiplos usuários compartilhem um único computador, cada usuário tendo seus próprios arquivos e configurações. Windows 7 e Windows Vista possuem três tipos de contas de usuário: Administrador, Padrão e Convidados. Cada tipo de conta fornece um usuário com um nível diferente de controle sobre os recursos do sistema.</p>
+          <p>Uma conta com privilégios de administrador deve ser criada quando o Windows 7 é instalado, conforme apresentado na figura. Um usuário com privilégios de administrador podem fazer alterações que afetam todos os usuários do computador, como alterar as configurações de segurança ou a instalação de um software para todos os usuários. Contas com privilégios de administrador só devem ser usadas para gerenciar um computador e não para uso regular, pois mudanças drásticas que afetam a todos podem ser feitas quando se utiliza a conta de administrador. Os invasores também procuram uma conta de administrador, pois ela é uma conta poderosa. Por esta razão, recomenda-se que uma conta de utilizador padrão seja criado para o uso regular.</p>
+          <p>As contas de usuário padrão podem ser criadas a qualquer momento. Uma conta de usuário padrão tem menos permissões do que uma conta de administrador. Por exemplo, os usuários podem ter o direito de só ler, sem poderem modificar um arquivo.</p>
+          <p>Indivíduos que não possuem uma conta de usuário padrão no computador podem usar a conta de convidado. A conta de convidado possui permissões limitadas e deve ser ativada por um administrador.</p>
+          <p>Para criar ou remover uma conta de usuário no Windows 7 e Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Contas de Usuário > Adicionar ou remover contas de usuário</p>
+          <p>O Windows XP possui um quarto grupo de usuários chamado Usuários Avançados (Power Users). Os Usuários Avançados têm privilégios que se estendem além dos de usuários padrão, proporcionando algumas das capacidades dadas a uma contas de administrador. Usuários avançados não são capazes de administrar plenamente os recursos do sistema. Esse grupo não foi incluído no Windows 7 ou Windows Vista.</p>
+          <p>Para criar ou remover uma conta de usuário no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Contas de Usuário > Selecione a guia Usuários e clique em Adicionar</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

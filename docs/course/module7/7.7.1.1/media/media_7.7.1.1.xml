@@ -1,0 +1,34 @@
+﻿<textcomponents>
+  
+  <component id='ID_table'>
+    <text>
+      <![CDATA[
+	  
+	  <table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+			 
+			<tr class="title">
+			 	<td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 1: Identificação do Problema</b></font></td>
+			</tr>
+			<tr>
+         		 <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+       		</tr>
+			<tr>
+				<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Questões abertas</font></td>
+				<td valign="top" bgcolor='#F3F5E7'><font  color='#393536'><textformat blockindent='-18'><li>Quais os problemas que você está enfrentando com o seu laptop?</li>
+					<li>Qual software foi instalado recentemente?</li>
+					<li>O que você estava fazendo quando o problema foi identificado?</li>
+					<li>Quais mensagens de erro você recebeu?</li></textformat></font></td>
+			</tr>
+			 
+			<tr>
+				
+				<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Questões fechadas</font></td> 
+				<td valign="top" bgcolor='#FFFFFF'><font  color='#393536'><textformat blockindent='-18'><li>O laptop está na garantia?</li>
+					<li>O laptop está conectado na bateria?</li>
+					<li>O laptop opera utilizando o adaptador de energia?</li>
+					<li>O laptop inicializa e exibe a área de trabalho do sistema operacional?</li></textformat></font></td> 
+			</tr>
+		</table>]]>
+    </text>
+  </component>
+</textcomponents>

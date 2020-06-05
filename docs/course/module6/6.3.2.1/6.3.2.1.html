@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.2.1 Endereçamento IP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Endereçando os Equipamentos da Rede</h2>
+      </div>
+      <div id="content">
+          <p>O Transmission Control Protocol/Internet Protocol (TCP/IP) define as regras que os computadores devem seguir para se comunicar uns com os outros através da Internet. O TCP é o protocolo de Internet primário para a entrega de dados confiável. O IP fornece uma estrutura de endereçamento que é responsável pela entrega de dados, do computador de origem para o computador de destino.</p>
+          <p></p>
+          <p>O endereço IP é o número utilizado para identificar um dispositivo na rede. Cada dispositivo em uma rede deve ter um endereço IP único para se comunicar com outros dispositivos de rede. Como observado anteriormente, um host é um dispositivo que envia ou recebe informações em uma rede. Os dispositivos de rede são dispositivos que movem dados através da rede.</p>
+          <p></p>
+          <p>As impressões digitais de uma pessoa geralmente não mudam. Eles fornecem uma maneira de identificar as pessoas fisicamente. O endereço de uma pessoa pode mudar, no que se refere ao local onde a pessoa vive ou pega o seu correio. Este endereço pode mudar. Por um host, o endereço Media Access Control (MAC) é atribuída à NIC e é conhecido como o endereço físico. O endereço físico sempre é o mesmo, independentemente de onde o host é colocado na rede, da mesma forma que os dedos permanecem com a pessoa, independentemente de onde a pessoa vai. Endereços MAC consistem em seis grupos de dois valores hexadecimais separados por um traço (-) ou dois pontos (:), por exemplo, 00-26-6-FC-D5-AE. Valores hexadecimais são definidos como uma série de números, de 0 a 9, e letras, de A-F.</p>
+          <p></p>
+          <p>O endereço IP é semelhante ao endereço de uma pessoa. É conhecido como um endereço lógico, pois é logicamente atribuídos com base na localização do host. O endereço IP, ou endereço de rede, baseia-se na rede local e é atribuído a cada host por um administrador de rede. Este processo é semelhante a atribuição de um endereço de um governo local, baseado na descrição lógica da cidade, vila e do bairro.</p>
+          <p></p>
+          <p>IPv4 e IPv6</p>
+          <p>No início de 1990 houve uma preocupação com a falta de endereços de rede IPv4 que levou a Internet Engineering Task Force (IETF) a começar a procurar um substituto. Isto levou ao desenvolvimento do que hoje é conhecido como IPv6. Atualmente, o IPv6 está operando e começando a substituir o IPv4.</p>
+          <p></p>
+          <p>Um endereço IPv4 é composto de 32 bits com um espaço de endereçamento potencial de 2^32. Em notação decimal, esse número é cerca de 4 seguido por 9 zeros, um endereço IPv6 é constituído de 128 bits com um espaço de endereçamento potencial de 2^128. Em notação decimal, isto é aproximadamente 3 seguido de 38 zeros. Com o IPv6, o número de endereços disponível por pessoa é de aproximadamente 10^30. Se o espaço de endereço IPv4 é representado por um mármore, então o espaço de endereço IPv6 é representado por uma esfera que é quase do tamanho do planeta Saturno.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

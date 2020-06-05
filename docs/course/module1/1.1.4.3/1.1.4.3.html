@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.4.3 Características dos Monitores</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Dispositivos de Entrada e Saída</h2>
+      </div>
+      <div id="content">
+          <p>A resolução do monitor refere-se ao nível de detalhe da imagem que pode ser reproduzido. A Figura 1 é um gráfico de resoluções comuns de monitores. Uma resolução de tela alta produz imagens com mais qualidade. Vários fatores estão envolvidos na resolução do monitor:</p>
+          <p><ul>
+              <li>Pixel - O termo pixel é uma abreviação para elemento de imagem. Os pixels são os pequenos pontos que compõem a tela. Cada pixel é composto de vermelho, verde e azul.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Distância entre Pontos - É a distância entre os pixels na tela. Quanto menor a distância entre os pontos, melhor é a imagem.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Contraste - A relação de contraste é uma medida da diferença de intensidade de luz entre o ponto mais claro (branco) e o ponto mais escuro (negro). A relação de contraste de 10.000:1 mostra a intensidade de luz dos pontos brancos e negros mais leves do que um monitor com uma relação de contraste de 1.000.000:1.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Taxa de atualização - A taxa de atualização é referente a quantas vezes por segundo que a imagem é reconstruída. Uma taxa de atualização maior produz uma imagem melhor e reduz o nível de tremulação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Entrelaçado/Não-entrelaçado - Monitores entrelaçados criam imagens escaneando a tela duas vezes. O primeiro scan abrange as linhas ímpares, de cima para baixo, e o segundo as linhas pares. Monitores não-entrelaçados criam a imagem escaneando tela, uma linha de cada vez, de cima para baixo. A maioria dos monitores CRT de hoje são não-entrelaçado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Resolução horizontal, vertical e de cor - O número de pixels de uma linha é a resolução horizontal. O número de linhas de uma tela é a resolução vertical. O número de cores que podem ser reproduzidas é a resolução de cor.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Proporção - A proporção é a medida horizontal/vertical da área de visualização de um monitor. Por exemplo, uma proporção de 4:3 é aplicável para uma área de exibição que é de 16 polegadas de largura por 12 de altura. A proporção 4:3 também se aplica a uma área de visualização que é de 24 polegadas de largura por 18 de altura. Uma área de visualização que é de 22 polegadas de largura por 12 de altura tem uma proporção de 11:6.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Resolução nativa - Resolução nativa é o número de pixels que um monitor possui. Um monitor com uma resolução de 1280x1024 possui 1280 pixels horizontais e 1024 pixels verticais. O modo nativo é quando a imagem enviada para o monitor corresponde à resolução nativa do monitor.</li>
+            </ul>
+          </p>
+          <p>Os monitores possuem controles para a regular da qualidade da imagem. Essas são algumas configurações comuns de monitores:</p>
+          <p><ul>
+              <li>Brilho - Intensidade da imagem</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Contraste - Relação de luz para a escuridão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Posição - Localização vertical e horizontal da imagem na tela</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Reset - Retorna as configurações do monitor para as configurações de fábrica</li>
+            </ul>
+          </p>
+          <p>Adicionar monitores adicionais pode aumentar a eficiência do trabalho. Os monitores adicionais permitem expandir o tamanho da área de trabalho para que você possa visualizar mais janelas simultaneamente. A maioria dos computadores suportam múltiplos monitores. Veja a Figura 2 para obter mais informações sobre a configuração de vários monitores.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,9 @@
+﻿<textcomponents>
+<component id="ID_title_01">
+<text><![CDATA[<b>Diretrizes do Ambiente Operacional</b>]]></text>
+</component>
+<component id="ID_body01">
+  <text><![CDATA[<textformat blockindent='-16'><LI>Manter o papel seco.</LI><LI>Manter a impressora em um ambiente fresco e sem poeira.</LI><LI>Armazenar o toner em um ambiente limpo e seco.</LI><LI>Limpar o vidro dos scanners.</LI></textformat>]]></text> 
+  </component>
+
+</textcomponents>

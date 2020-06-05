@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.4.1 Pulseira Antiestática</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Uso Adequado das Ferramentas</h1>
+        <h2>Demonstrar o Uso Adequado das Ferramentas</h2>
+      </div>
+      <div id="content">
+          <p>Segurança no trabalho é responsabilidade de todos. É muito menos propenso a acontecer acidentes ou danificar componentes quando se utiliza as ferramentas adequadas para o trabalho.</p>
+          <p>Antes de limpar ou reparar o equipamento, certifique-se de que suas ferramentas estão em boas condições. Limpe, repare ou substitua os itens que não estão funcionando adequadamente.</p>
+          <p>Um exemplo de ESD é o pequeno choque que você recebe quando anda em uma sala com carpete e toca em uma maçaneta. Apesar do pequeno choque ser inofensivo a você, a mesma carga elétrica que passa de você para um computador pode danificar seus componentes. Auto-ligação à terra(aterramento) ou usar uma pulseira antiestática ESD pode evitar danos aos componentes do computador.</p>
+          <p>O objetivo do aterramento ou usar uma pulseira antiestática é equalizar a carga elétrica entre você e o equipamento. O aterramento é feito tocando em uma parte de metal sem pintura do gabinete do computador. A pulseira antiestática é um condutor que liga o seu corpo ao equipamento que você está trabalhando. Quando a eletricidade estática se acumula em seu corpo, a ligação feita pela pulseira antiestática ao equipamento ou aterramento, os canais de energia elétrica são direcionados ao fio da pulseira.</p>
+          <p>Como mostrado na imagem, a pulseira antiestática tem duas partes e é fácil de usar:</p>
+          <p>Passo 1. Enrole a tira em volta do pulso e prenda-a usando o feixe ou velcro. O metal na parte traseira da pulseira antiestática deve permanecer em contacto com a pele em todos os momentos.</p>
+          <p>Passo 2. Encaixe o conector na extremidade do fio da pulseira antiestática e ligue a outra extremidade ou no equipamento ou no mesmo ponto de aterramento que a manta antiestática está conectada. O esqueleto de metal do gabinete é um bom lugar para conectar o fio. Ao conectar o cabo ao equipamento que você está trabalhando, escolha uma superfície metálica, não pintada. A superfície pintada não conduz eletricidade tão bem como a superfície não pintada.</p>
+          <p>NOTA: Ligue o fio no equipamento do mesmo lado que a pulseira se encontra presa no seu braço. Isso ajuda a manter o fio fora do caminho enquanto você está trabalhando.</p>
+          <p>Apesar do uso da pulseira ajudar a evitar ESD, você pode reduzir ainda mais os riscos evitando usar roupas feitas de seda, poliéster ou lã. Estes tecidos são mais propensos a gerar uma carga estática.</p>
+          <p>NOTA: Os técnicos devem arregaçar as mangas, retirar lenços ou laços, e dobrar a camisas para evitar que a roupa interfira no processo. Certifique-se de que os brincos, colares e outras jóias soltas estão devidamente protegidas.</p>
+          <p>CUIDADO: Nunca use uma pulseira antiestática se você está consertando um monitor CRT ou uma fonte de alimentação.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

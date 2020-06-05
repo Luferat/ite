@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.3.8 Storage Devices and RAID</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Internal PC Components</h2>
+    </div>
+    <div id="content">
+          <p>Storage drives, as shown in Figure 1, read or write information to magnetic, optical, or semiconductor storage media. The drive can be used to store data permanently or to retrieve information from a media disk. Storage drives can be installed inside the computer case, such as a hard drive. For portability, some storage drives can connect to the computer using a USB port, a FireWire port, eSATA, or an SCSI port. These portable storage drives are sometimes referred to as removable drives and can be used on multiple computers. Here are some common types of storage drives:</p>
+          <p>
+            <ul>
+              <li>Floppy drive </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Hard drive </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Optical drive </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Flash drive </li>
+            </ul>
+          </p>
+          <p>
+            <b>Floppy Drive</b>
+          </p>
+          <p>A floppy drive, or floppy disk drive, is a storage device that uses removable 3.5-inch floppy disks. These magnetic floppy disks can store 720 KB or 1.44 MB of data. In a computer, the floppy drive is usually configured as the A: drive. The floppy drive can be used to boot the computer if it contains a bootable floppy disk. A 5.25-inch floppy drive is older technology and is seldom used.</p>
+          <p>
+            <b>Hard Drive</b>
+          </p>
+          <p>A hard drive, or hard disk drive, is a magnetic device used to store data. In a Windows computer, the hard drive is usually configured as the C: drive and contains the operating system and applications. The hard drive is often configured as the first drive in the boot sequence. The storage capacity of a hard drive ranges from gigabytes (GB) to terabytes (TB). The speed of a hard drive is measured in revolutions per minute (RPM). This is how fast the spindle turns the platters that hold data. The faster the spindle speed, the faster a hard drive can retrieve data from the platters. Common hard drive spindle speeds include 5400, 7200, 10,000, and up to 15,000 RPM in high-end server hard drives. Multiple hard drives can be added to increase storage capacity.</p>
+          <p>Traditional hard drives use magnetic-based storage. Magnetic hard drives have drive motors designed to spin the magnetic platters and move the drive heads. In contrast, the newer solid state drives (SSDs) do not have moving parts and use semiconductors to store data. Because an SSD has no drive motors and moving parts, it uses much less energy than a magnetic hard drive. Nonvolatile flash memory chips manage all storage on an SSD, which results in faster access to data, higher reliability, and reduced power usage. SSDs have the same form factor as magnetic hard drives and use ATA or SATA interfaces. You can replace a magnetic drive with an SSD.</p>
+          <p>
+            <b>Tape Drive</b>
+          </p>
+          <p>Magnetic tapes are most often used for backups or archiving data. The tape uses a magnetic read/write head. Although data retrieval using a tape drive can be fast, locating specific data is slow because the tape must be wound on a reel until the data is found. Common tape capacities vary between a few gigabytes to many terabytes.</p>
+          <p>
+            <b>Optical Drive</b>
+          </p>
+          <p>An optical drive uses lasers to read data on the optical media. There are three types of optical drives:</p>
+          <p>
+            <ul>
+              <li>Compact disc (CD) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Digital versatile disc (DVD) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Blu-ray disc (BD)</li>
+            </ul>
+          </p>
+          <p>CD, DVD, and BD media can be pre-recorded (read only), recordable (write once), or re-recordable (read and write multiple times). CDs have a data storage capacity of approximately 700 MB. DVDs have a data storage capacity of approximately 4.7 GB on a single-layer disc, and approximately 8.5 GB on a dual-layer disc. BDs have a storage capacity of 25 GB on a single-layer disc, and 50 GB on a dual-layer disc.</p>
+          <p>There are several types of optical media:</p>
+          <p>
+            <ul>
+              <li>
+                <b>CD-ROM</b> - CD read-only memory media that is pre-recorded</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>CD-R</b> - CD recordable media that can be recorded one time</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>CD-RW</b> - CD rewritable media that can be recorded, erased, and re-recorded</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DVD-ROM</b> - DVD read-only memory media that is pre-recorded</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DVD-RAM</b> - DVD RAM media that can be recorded, erased, and re-recorded</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DVD+/-R</b> - DVD recordable media that can be recorded one time</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DVD+/-RW</b> - DVD rewritable media that can be recorded, erased, and re-recorded</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>BD-ROM</b> - Blu-ray read-only media that is pre-recorded with movies, games, or software</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>BD-R</b> - Blu-ray recordable media that can record high-definition (HD) video and PC data storage one time</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>BD-RE</b> - Blu-ray rewritable format for HD video recording and PC data storage</li>
+            </ul>
+          </p>
+          <p>
+            <b>External Flash Drive</b>
+          </p>
+          <p>An external flash drive, also known as a thumb drive, is a removable storage device that connects to a USB port. An external flash drive uses the same type of nonvolatile memory chips as SSDs and does not require power to maintain the data. These drives can be accessed by the operating system in the same way that other types of drives are accessed.</p>
+          <p>
+            <b>Types of Drive Interfaces</b>
+          </p>
+          <p>Hard drives and optical drives are manufactured with different interfaces that are used to connect the drive to the computer. To install a storage drive in a computer, the connection interface on the drive must be the same as the controller on the motherboard. Here are some common drive interfaces:</p>
+          <p>
+            <ul>
+              <li>
+                <b>IDE</b> - Integrated Drive Electronics, also called Advanced Technology Attachment (ATA), is an early drive controller interface that connects computers and hard disk drives. An IDE interface uses a 40-pin connector. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>EIDE</b> - Enhanced Integrated Drive Electronics, also called ATA-2, is an updated version of the IDE drive controller interface. EIDE supports hard drives larger than 512 MB, enables Direct Memory Access (DMA) for speed, and uses the AT Attachment Packet Interface (ATAPI) to accommodate optical drives and tape drives on the EIDE bus. An EIDE interface uses a 40-pin connector. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PATA</b> - Parallel ATA refers to the parallel version of the ATA drive controller interface. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SATA</b> - Serial ATA refers to the serial version of the ATA drive controller interface. A SATA interface uses a 7-pin data connector. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>eSATA</b> - External Serial ATA provides a hot-swappable, external interface for SATA drives. Hot-swapping is the ability to connect and disconnect a device while a computer is powered on. The eSATA interface connects an external SATA drive using a 7-pin connector. The cable can be up to 6.56 ft (2 m) in length. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SCSI</b> - Small Computer System Interface is a drive controller interface that can connect up to 15 drives. SCSI can connect both internal and external drives. An SCSI interface uses a 50-pin, 68-pin, or 80-pin connector.</li>
+            </ul>
+          </p>
+          <p>RAID provides a way to store data across multiple hard disks for redundancy. To the operating system, RAID appears as one logical disk. See Figure 2 for a comparison of the different RAID levels. The following terms describe how RAID stores data on the various disks:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Parity </b>- Detects data errors.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Striping</b> - Writes data across multiple drives.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Mirroring</b> - Stores duplicate data on a second drive.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

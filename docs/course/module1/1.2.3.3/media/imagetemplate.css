@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.TabbedPanels {
+margin:0px;
+clear: none;
+width: 90%;
+}
+.TabbedPanelsTabGroup {
+margin: 0px;
+padding: 0px;
+float: right;
+width: 30px;
+background-image: url(../../../common/images/btn_bar.png);
+background-repeat: no-repeat;
+height: 398px;
+
+}
+
+
+.TabbedPanelsTab {
+position: relative;
+float: left;
+margin: 0px 1px 0px 0px;
+list-style: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+cursor: pointer;
+width: 25px;
+border: 2px solid #BDBBBC;
+height: 36px;
+background: #E9E8E8;
+border-radius: 4px;
+font-size: 20pt;
+text-align: center;
+line-height: 35px;
+font-weight:bold;
+}
+
+
+.TabbedPanelsTabHover {
+border-radius:4px;
+border: 2px solid #48963D;float:left; width:25px; height:36px; background: rgba(55, 179, 74, 1); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(55, 179, 74, 1) 0%, rgba(205, 220, 65, 1) 100%, rgba(205, 220, 65, 1) 100%, rgba(55, 179, 74, 1) 100%); /* FF3.6+ */
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cddc41), color-stop(1, #37b34a));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #cddc41 0%, #37b34a 100%);
+background: -o-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(205, 220, 65, 1) 100%,rgba(205, 220, 65, 1) 100%,rgba(55, 179, 74, 1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(205, 220, 65, 1) 100%,rgba(205, 220, 65, 1) 100%,rgba(55, 179, 74, 1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(205, 220, 65, 1) 100%,rgba(205, 220, 65, 1) 100%,rgba(55, 179, 74, 1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+list-style: none;
+font-size: 20pt;
+text-align: center;
+line-height: 35px;
+color:#FFFFFF;
+}
+
+.TabbedPanelsTabSelected {
+	/*background-color: #EEE;
+	border-bottom: 1px solid #EEE;*/
+border-radius:4px;
+border: 2px solid #48963D;float:left; width:25px; height:36px;background: rgba(55, 179, 74, 1); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(55, 179, 74, 1) 0%, rgba(205, 220, 65, 1) 100%, rgba(205, 220, 65, 1) 100%, rgba(55, 179, 74, 1) 100%); /* FF3.6+ */
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cddc41), color-stop(1, #37b34a));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #cddc41 0%, #37b34a 100%);
+background: -o-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(205, 220, 65, 1) 100%,rgba(205, 220, 65, 1) 100%,rgba(55, 179, 74, 1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(205, 220, 65, 1) 100%,rgba(205, 220, 65, 1) 100%,rgba(55, 179, 74, 1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(205, 220, 65, 1) 100%,rgba(205, 220, 65, 1) 100%,rgba(55, 179, 74, 1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+font-size: 20pt;
+text-align: center;
+line-height: 35px;
+color:#FFFFFF;
+    font-weight:bold;
+}
+
+.TabbedPanelsTab a {
+	color: black;
+	text-decoration: none;
+
+}
+
+.TabbedPanelsContentGroup {
+background-color: white;
+width: 100%;
+margin: 0 auto;
+text-align: center;
+}
+
+.TabbedPanelsContent {
+	overflow: hidden;
+	padding: 4px;
+    position:static !important;
+}
+
+.TabbedPanelsContentVisible {
+    position:static !important;
+}
+}
+
+.VTabbedPanels {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.VTabbedPanels .TabbedPanelsTabGroup {
+	float: left;
+	width: 10em;
+	height: 20em;
+	background-color: #EEE;
+	position: relative;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+.VTabbedPanels .TabbedPanelsTab {
+	float: none;
+	margin: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.VTabbedPanels .TabbedPanelsTabSelected {
+	background-color: #EEE;
+	border-bottom: solid 1px #999;
+}
+
+.VTabbedPanels .TabbedPanelsContentGroup {
+	clear: none;
+	float: left;
+	padding: 0px;
+	width: 30em;
+	height: 20em;
+}
+
+/* Styles for Printing */
+@media print {
+.TabbedPanels {
+	overflow: visible !important;
+}
+.TabbedPanelsContentGroup {
+	display: block !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+.TabbedPanelsContent {
+	overflow: visible !important;
+	display: block !important;
+	clear:both !important;
+}
+.TabbedPanelsTab {
+	 overflow: visible !important;
+	 display: block !important;
+	 clear:both !important;
+}

@@ -1,0 +1,81 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Serial Cable and Connector</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>RJ-11 Telephone and Modem Cable and Connector</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>External Modem Using Serial and Telephone Cables</b>]]></text>
+</component>
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>USB Cable and Connector</b>]]></text>
+</component>
+
+<component id="ID_s5_title">
+<text><![CDATA[<b>FireWire Cable and Connectors</b>]]></text>
+</component>
+
+<component id="ID_s6_title">
+<text><![CDATA[<b>Parallel Cable and Connector</b>]]></text>
+</component>
+
+<component id="ID_s7_title">
+<text><![CDATA[<b>50-Pin SCSI Cable and SCSI Connectors</b>]]></text>
+</component>
+
+<component id="ID_s8_title">
+<text><![CDATA[<b>Network Cable and Connector</b>]]></text>
+</component>
+
+<component id="ID_s9_title">
+<text><![CDATA[<b>PS/2 Cable and Connector</b>]]></text>
+</component>
+
+<component id="ID_s10_title">
+<text><![CDATA[<b>Audio and Gameport Connectors</b>]]></text>
+</component>
+
+
+
+
+<component id="ID_s7_txt01">
+<text><![CDATA[<b>80-Pin SCSI Connector</b>]]></text>
+</component>
+
+<component id="ID_s7_txt02">
+<text><![CDATA[<b>50-Pin SCSI Connector</b>]]></text>
+</component>
+
+<component id="ID_s7_txt03">
+<text><![CDATA[<b>68-Pin SCSI Connector</b>]]></text>
+</component>
+
+
+<component id="ID_s10_txt01">
+<text><![CDATA[<b>Line In</b>]]></text>
+</component>
+
+<component id="ID_s10_txt02">
+<text><![CDATA[<b>Microphone In</b>]]></text>
+</component>
+
+<component id="ID_s10_txt03">
+<text><![CDATA[<b>Line Out</b>]]></text>
+</component>
+
+<component id="ID_s10_txt04">
+<text><![CDATA[<b>Auxiliary In</b>]]></text>
+</component>
+
+<component id="ID_s10_txt05">
+<text><![CDATA[<b>gameport/MIDI</b>]]></text>
+</component>
+
+</textcomponents>

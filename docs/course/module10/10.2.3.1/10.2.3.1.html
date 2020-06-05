@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.3.1 Programas de Proteção Contra Softwares Maliciosos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Proteção contra softwares maliciosos</h2>
+      </div>
+      <div id="content">
+          <p>Certos tipos de ataques, como os realizados por spyware e phishing, coletam dados do usuário que podem ser utilizados ​​por um invasor para obter informações confidenciais.</p>
+          <p>Você deve executar uma varredura pelo antivírus e antispyware para detectar e remover os softwares indesejados. Muitos navegadores já vêm equipados com ferramentas especiais e configurações que impedem o funcionamento de vários softwares maliciosos. Podem ser utilizados vários programas diferentes e múltiplas varreduras para remover completamente todos os softwares maliciosos. Execute apenas um programa de proteção contra malware por vez.</p>
+          <p><ul>
+              <li>Proteção contra vírus - Um programa antivírus normalmente é executado automaticamente em segundo plano e monitora os problemas. Quando um vírus é detectado o usuário é alertado e o programa tenta enviá-lo para a quarentena ou eliminá-lo, conforme apresentado na Imagem 1.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Proteção contra spyware - Um programa anti-spyware procura por keyloggers, que capturam as teclas digitadas e outros malwares, para que eles possam ser removidos do computador, conforme apresentado na Imagem 2.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Proteção contra adware - Um programa anti-adware se atenta aos programas que exibem publicidade no seu computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Proteção contra phishing - Um programa Antiphishing bloqueia os endereços IPs dos sites de phishing conhecidos e avisa o usuário sobre sites suspeitos.</li>
+            </ul>
+          </p>
+          <p>NOTA: O software malicioso pode ficar embutido no sistema operacional. Ferramentas especiais para remoção são disponibilizadas por empresas de desenvolvimento de software de segurança e limpam o sistema operacional.</p>
+          <p>Antivírus Rogue</p>
+          <p>Ao navegar na Internet, é comum ver anúncios de produtos e softwares. Estes anúncios podem ser um método para infectar o computador do usuário. Alguns destes anúncios exibem mensagens que indicam que o computador do usuário está infectado por um vírus ou malware. O anúncio ou pop-up pode parecer uma janela real de aviso do Windows informando que o computador está infectado e deve ser limpo, conforme apresentado na Imagem 3. Clicar em Remover, Clean, OK, ou até mesmo Cancelar ou Sair podem iniciar o download e instalação do malware. Este tipo de ataque é chamado de antivírus falso (rogue antivirus).</p>
+          <p>Quando encontrar uma janela de aviso que é suspeita, nunca clique dentro da janela de aviso. Feche a aba ou o navegador para ver se a janela de aviso desaparece. Se a guia ou o navegador não fechar, pressione ALT + F4 para fechar a janela ou use o gerenciador de tarefas para finalizar o programa. Se a janela de aviso não desaparecer, realize uma varredura no computador através de um software conhecido, um bom programa antivírus ou de um programa contra adware para garantir que o computador não está infectado.</p>
+          <p>Corrigindo Sistemas Infectados</p>
+          <p>Quando um programa de proteção contra malware detecta que um computador está infectado, ele remove ou coloca a ameaça em quarentena. Mas o computador provavelmente ainda está em risco. O primeiro passo para remediar um computador infectado é remover o computador da rede para impedir que outros computadores sejam infectados. Fisicamente desconecte todos os cabos de rede do computador e desabilite todas as conexões sem fio.</p>
+          <p>O próximo passo é seguir as políticas de resposta a incidentes que estão no local. Isso pode incluir notificar o pessoal de TI, salvar os arquivos de log em uma mídia removível, ou desligar o computador. Para um usuário doméstico, atualize os programas de proteção contra softwares maliciosos que estão instalados e realize exames completos de todos os programas instalados no computador. Muitos programas antivírus podem ser configurados para rodar na inicialização do sistema antes de carregar o Windows. Isso permite que o programa acesse todas as áreas do disco sem que seja afetado pelo sistema operacional ou qualquer malware.</p>
+          <p>Os vírus e worms podem ser difíceis de remover de um computador. Ferramentas são necessários para remover os vírus e reparar o código de computador que o vírus modificou. Estas ferramentas são fornecidas por fabricantes de sistemas operacionais e empresas de software de segurança. Certifique-se de que você irá baixar essas ferramentas de um site legítimo.</p>
+          <p>Inicie o computador no Modo de Segurança para impedir que a maioria dos drivers sejam carregados. Instale programas adicionais de proteção contra malware e realize verificações completas para remover ou colocar em quarentena algum malware adicional. Pode ser necessário contactar um especialista para assegurar que o computador tenha sido completamente limpo. Em alguns casos, o computador deve ser reformatado e restaurado a partir de um backup ou o sistema operacional poderá ter de ser reinstalado.</p>
+          <p>O serviço de restauração do sistema pode incluir os arquivos infectados em um ponto de restauração. Depois que o computador estiver limpo de qualquer malware, os arquivos de restauração do sistema devem ser deletados. Se a restauração do sistema for usada para restaurar o computador, os pontos de restauração que contenham arquivos infectados não serão listados e, portanto, não irá re-infectar o computador.</p>
+          <p>Para excluir os arquivos de restauração do sistema atual no Windows 7, siga estes passos:</p>
+          <p>Passo 1. Clique com o botão direito do mouse em Computador > Propriedades > aba Proteção do Sistema.</p>
+          <p>Passo 2. Selecione a unidade que contém os pontos de restauração que você deseja excluir.</p>
+          <p>Passo 3. Clique em Configurar....</p>
+          <p>Passo 4. Clique em Excluir ao lado de Excluir todos os pontos de restauração (isso inclui as configurações do sistema e versões anteriores de arquivos).</p>
+          <p>No Windows Vista e Windows XP, siga estes passos:</p>
+          <p>Passo 1. Criar um ponto de restauração.</p>
+          <p>Passo 2. Clique com o botão direito do mouse na unidade que contém os pontos de restauração que você deseja excluir.</p>
+          <p>Passo 3. Selecione Propriedades > guia Geral > Limpeza de Disco.</p>
+          <p>Passo 4. O Windows irá analisar o disco.</p>
+          <p>Passo 5. Na limpeza de disco da janela (C:), clique na guia Mais Opções > Limpar....</p>
+          <p>Passo 6. Clique em Excluir na janela Limpeza de Disco para deletar tudo, menos o ponto de restauração mais recente.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

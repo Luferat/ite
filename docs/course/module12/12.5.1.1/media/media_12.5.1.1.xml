@@ -1,0 +1,171 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text>
+<![CDATA[<b> </b>]]>
+</text>
+</component>
+
+<component id='ID_table_01'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1: Identificação do Problema</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Questões Abertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Que tipo de impressora que você tem?</li>
+<li>Qual é a marca e o modelo da sua impressora?</li>
+<li>Que tipo de papel você está usando?</li>
+<li>Quais os problemas que você está enfrentando com a sua impressora?</li>
+<li>Quais softwares e hardwares foram alterados recentemente em seu computador?</li>
+<li>O que você estava fazendo quando o problema foi identificado?</li>
+<li>Quais mensagens de erro você recebeu?</li></font></textformat></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#FFFFFF'><font color='#393536'>Questões Fechadas</font></td>
+<td  valign="top" bgcolor='#FFFFFF'><textformat blockindent='-18'><font color='#393536'><li>A impressora está na garantia?</li>
+<li>Você consegue imprimir uma página de teste?</li>
+<li>Essa impressora é nova?</li>
+<li>A impressora está ligada?</li>
+<li>O problema acontece em todas as páginas?</li>
+<li>O papel foi trocado recentemente?</li>
+<li>O problema acontece só com esta impressora?</li>
+<li>O problema ocorre quando você usa os outros aplicativos?</li>
+<li>A impressora está conectada à rede sem fio?</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_02'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 2: Estabelecer a Teoria da Provável Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Causas comuns de problema de impressoras</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Cabos soltos</li>
+<li>Atolamento de papel</li>
+<li>Equipamentos de energia</li>
+<li>Avisos de pouca tinta</li>
+<li>Sem papel</li>
+<li>Erros no visor do equipamento</li>
+<li>Erros na tela do computador</li>
+<li>Cartucho de toner vazio</li>
+<li>Servidor de impressão não está funcionando</li>
+<li>A impressora não pode estabelecer uma conexão com a rede sem fio</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_03'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 3: Testar a Teoria para Determinar a Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Reiniciar a impressora</li>
+<li>Desconectar e reconectar os cabos</li>
+<li>Reinicie o computador</li>
+<li>Verifique a impressora em busca de atolamentos de papel</li>
+<li>Coloque novamente papel nas bandejas</li>
+<li>Abra e feche a bandeja da impressora</li>
+<li>Verifique se as portas da impressora estão fechadas</li>
+<li>Exclua os trabalhos na fila de impressão</li>
+<li>Reinicie o serviço de spooler de impressão</li>
+<li>Reinstale o software da impressora</li>
+<li>Remova a fita de embalagem do cartucho jato de tinta</li>
+<li>Reinicie o servidor de impressão</li>
+<li>Redefina as configurações sem fio da impressora</li></font></textformat></td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_04'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td bgcolor='#DAE17A' colspan='2'><font size='14' color='#393536'><b>Passo 4: Estabelecer um Plano de Ação para Resolver o Problema e Implementar a Solução</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Se nenhuma solução for alcançada na etapa anterior, novas pesquisas serão necessárias para implementar a solução</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Logs de Reparação do Helpdesk</li>
+<li>Outros Técnicos</li>
+<li>FAQs do Fabricante</li>
+<li>Websites Técnicos</li>
+<li>Grupos de Notícias</li>
+<li>Manuais do Computador</li>
+<li>Manuais dos Dispositivos</li>
+<li>Fóruns on-line</li>
+<li>Busca na Internet</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_05'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td bgcolor='#DAE17A' colspan='2'><font size='14' color='#393536'><b>Passo 5: Verifique a Funcionalidade Completa do Sistema e, se necessário, Implemente as Medidas Preventivas</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Verifique a Solução e a Funcionalidade Completa do Sistema </font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Reinicie o computador.</li>
+<li>Reinicie a impressora.</li>
+<li>Imprima uma página de teste a partir do painel de controle da impressora.</li>
+<li>Imprima um documento a partir de um aplicativo.</li>
+<li>Reimprima o documento com problema do cliente.</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_06'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 6: Documente as Descobertas, Ações e Resultados</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Documente as Descobertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7' class="width"><textformat blockindent='-18'><font color='#393536'><li>Discuta a solução implementada com o cliente</li>
+<li>O cliente deve verificar se o problema foi resolvido</li>
+<li>Forneça ao cliente toda a documentação</li>
+<li>Documente as medidas tomadas para resolver o problema na ordem de trabalho e no diário do técnico</li>
+<li>Documente quaisquer componentes utilizados no reparo.</li>
+<li>Documente o tempo gasto para resolver o problema</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+</textcomponents>

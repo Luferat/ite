@@ -1,0 +1,95 @@
+﻿<textcomponents>
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns</b></font></td>
+	</tr>  
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	 
+	<tr>
+		<td bgcolor='#A2AA23' width='120' valign="top"><font  color='#FFFFFF'><b>Identificação do Problema</b></font></td>
+		<td bgcolor='#A2AA23'  valign="top"><font  color='#FFFFFF'><b>Causas Prováveis</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>Soluções Possíveis</b></font></td>
+		
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O LED da NIC não está aceso.</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O cabo de rede está desconectado, ruim ou danificado.</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Reconecte ou substitua a conexão de rede do computador.</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O usuário não pode usar o telnet em um dispositivo remoto. </font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'><textformat blockindent='-16'>
+				<li>O dispositivo remoto não está configurado para o acesso Telnet.</li>
+				<li>Telnet não é permitido para o usuário ou para a rede particular.</li></textformat></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-16'>
+				<li>Configure o dispositivo remoto para o acesso Telnet.</li>
+				<li>Permita o acesso Telnet a partir do usuário ou da rede.</li></textformat></font></td>
+</tr>
+<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um laptop mais velho não consegue detectar o roteador sem fio.</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-16'><li>O roteador/ponto de acesso sem fio está configurado com um protocolo diferente do 802.11.</li>
+				<li>O SSID não está sendo transmitido.</li>
+				<li>A placa de rede sem fio do laptop está desativada.</li></textformat></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-16'><li>Configure o roteador sem fio com um protocolo compatível ao do laptop.</li>
+				<li>Configure o roteador wireless para transmitir o SSID.</li>
+				<li>Ative a NIC sem fio no laptop.</li></textformat></font></td>
+</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536' valign="top">O Computador possui um endereço IP de 169.254.x.x.</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-16'><li>O cabo de rede está desconectado.</li>
+				<li>O roteador está desligado ou a conexão está com problemas.</li>
+				<li>A NIC está com problemas.</li></textformat></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-16'><li>Reconecte o cabo de rede.</li>
+				<li>Verifique se o roteador está ligado e se está devidamente conectado à rede.</li>
+				<li>Substitua a NIC.</li>
+				<li>Libere e renove o endereço IP do computador.</li></textformat></font></td>
+</tr>	
+<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O dispositivo remoto não responde a uma solicitação de ping.</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-16'><li>O Firewall do Windows bloqueia o ping por padrão.</li>
+				<li>O dispositivo remoto está configurado para não responder a solicitações de ping.</li></textformat></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-16'><li>Configure o firewall para permitir o protocolo ping.</li>
+			 <li>Configure o dispositivo remoto para responder a solicitação ping.</li></textformat></font></td>
+</tr>	
+<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um usuário pode fazer logon na rede local, mas não pode acessar a Internet.</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>O endereço do gateway está incorreto. </font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Verifique se o endereço do gateway correto foi atribuído a NIC. </font></td>
+</tr>	
+<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A rede está totalmente funcional e a conexão sem fio do laptop está ativada, mesmo assim o laptop não pode se conectar à rede.</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font  color='#393536'><textformat blockindent='-16'><li>A NIC sem fio do laptop está desativada.</li>
+			<li>A antena wireless externa está desalinhada.</li>
+			<li>O laptop está fora do alcance sem fio.</li>
+			<li>Interferência de outros dispositivos sem fio que usam a mesma faixa de frequência.</li></textformat></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-16'><li>Ativar a placa de rede sem fio do laptop através das propriedade da NIC sem fio ou usando a tecla Fn.</li>
+			<li>Realinhe a antena wireless externa para captar o sinal wireless.</li>
+			<li>Aproxime-se do roteador/ponto de acesso sem fio.</li>
+			<li>Altere o canal do roteador sem fio para um canal diferente.</li></textformat></font></td>
+</tr>
+<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um computador Windows 7 que acabou de ser conectado em uma rede que possui apenas computadores Windows 7, não é capaz de visualizar os recursos compartilhados.</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'><textformat blockindent='-16'><li>Grupo de trabalho incorreto.</li>
+			<li>Local de rede incorreto.</li>
+			<li>Não se juntou ao grupo doméstico.</li>
+			<li>A descoberta de rede e o compartilhamento de arquivos está desativado.</li></textformat></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-16'><li>Altere o nome do grupo.</li>
+				<li>Mude o local de rede para Rede Doméstica.</li>
+				<li>Junte-se ao grupo doméstico.</li>
+				<li>Ative a descoberta de rede e o compartilhamento de arquivos.</li></textformat></font></td>
+</tr>	
+<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um usuário não pode mapear uma unidade através da rede. </font></td><td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-16'><li>Grupo de trabalho incorreto.</li>
+				<li>A descoberta de rede e o compartilhamento de arquivos está desativado.</li></textformat></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-16'><li>Altere o nome do grupo.</li><li>Ative a descoberta de rede e o compartilhamento de arquivos.</li></textformat></font></td>
+</tr>	
+</table>]]>
+</text>
+</component>
+</textcomponents>

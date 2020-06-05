@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.4.1.1 Compartilhando uma Impressora</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Compartilhando Impressoras</h1>
+        <h2>Configurações do Sistema Operacional para o Compartilhamento de Impressora</h2>
+      </div>
+      <div id="content">
+          <p>Para se conectar à impressora a partir de outro computador da rede, no Windows 7, siga estes passos:</p>
+          <p></p>
+          <p>Passo 1. Clique em Iniciar > Dispositivos e Impressoras > Adicionar uma impressora.</p>
+          <p>Passo 2. O Assistente para adicionar impressora será exibido.</p>
+          <p>Passo 3. Selecione a opção &quot;Adicionar uma impressora de rede, sem fio ou Bluetooth&quot;.</p>
+          <p>Passo 4. Uma lista de impressoras compartilhadas será exibida. Se a impressora não estiver na lista, selecione a opção &quot;A impressora que desejo não está na lista&quot;.</p>
+          <p>Passo 5. Depois de selecionar a impressora, clique em Avançar.</p>
+          <p>Passo 6. Uma porta virtual de impressora será criada e exibida na janela Adicionar Impressora. Os drivers necessários serão baixados do servidor de impressão e instalados no computador. O assistente finalizará a instalação.</p>
+          <p></p>
+          <p>Para se conectar à impressora a partir de outro computador da rede, no Windows Vista, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Impressoras > Adicionar uma impressora.</p>
+          <p>Passo 2. O Assistente para adicionar impressora será exibido.</p>
+          <p>Passo 3. Selecione a opção &quot;Adicionar uma impressora de rede, sem fio ou Bluetooth&quot;.</p>
+          <p>Passo 4. Uma lista de impressoras compartilhadas será exibida. Se a impressora não estiver na lista, selecione a opção &quot;A impressora que desejo não está na lista&quot;.</p>
+          <p>Passo 5. Depois de selecionar a impressora, clique em Avançar.</p>
+          <p>Passo 6. Uma porta virtual de impressora será criada e exibida na janela Adicionar Impressora. Os drivers necessários serão baixados do servidor de impressão e instalados no computador. O assistente finalizará a instalação.</p>
+          <p></p>
+          <p></p>
+          <p>Para se conectar à impressora a partir de outro computador da rede, no Windows XP, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Dispositivos e Impressoras > Adicionar uma impressora.</p>
+          <p>Passo 2. O Assistente para adicionar impressora será exibido.</p>
+          <p>Passo 3. Selecione a opção &quot;Adicionar uma impressora de rede, sem fio ou Bluetooth&quot;.</p>
+          <p>Passo 4. Uma lista de impressoras compartilhadas será exibida. Se a impressora não estiver na lista, selecione a opção &quot;A impressora que desejo não está na lista&quot;.</p>
+          <p>Passo 5. Depois de selecionar a impressora, clique em Avançar.</p>
+          <p>Passo 6. Uma porta virtual de impressora será criada e exibida na janela Adicionar Impressora. Os drivers necessários serão baixados do servidor de impressão e instalados no computador. O assistente finalizará a instalação.</p>
+          <p>O Windows permite que os usuários compartilhem suas impressoras com outros usuários na rede.</p>
+          <p>No Windows 7, para configurar o computador que possui a impressora conectada a aceitar a impressão de trabalhos de outros usuários da rede, como mostrado na Figura 1, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Centro de Rede e Compartilhamento > Alterar as configurações de compartilhamento avançadas.</p>
+          <p>Passo 2. Expanda a rede lista para visualizar o seu perfil.</p>
+          <p>Passo 3. Se o compartilhamento da impressora estiver desabilitado, embaixo do campo Compartilhamento de Arquivo e Impressora, selecione a opção Ativar Compartilhamento de Arquivo e Impressora e depois clique em Salvar Alterações.</p>
+          <p>No Windows Vista, para configurar o computador que possui uma impressora conectada a aceitar trabalhos de impressão de outros usuários da rede, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de controle > Hardware e Som > Impressoras.</p>
+          <p>Passo 2. Clique com o botão direito do mouse na impressora e clique em Compartilhamento. A caixa de diálogo Propriedades da Impressora será exibida.</p>
+          <p>Passo 3. Selecione Compartilhar esta impressora e digite o nome da impressora compartilhada desejada. Esse nome será exibido para os outros usuários.</p>
+          <p>Passo 4. Verifique se o compartilhamento foi bem sucedido. Na janela Impressoras, verifique se a impressora possui o ícone de compartilhamento sob ela, indicando que a mesma é um recurso compartilhado.</p>
+          <p>No Windows XP, para configurar o computador que possui uma impressora conectada a aceitar trabalhos de impressão de outros usuários da rede, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Impressoras e outros itens de hardware > Impressoras e aparelhos de fax.</p>
+          <p>Passo 2. Selecione a impressora que será compartilhada. A caixa Tarefas da Impressora será exibida à esquerda da tela.</p>
+          <p>Passo 3. Selecione Compartilhar esta impressora. A caixa de diálogo Propriedades da Impressora será exibida.</p>
+          <p>Passo 4. Na guia Compartilhamento, selecione a opção Compartilhar esta impressora e digite o nome da impressora. Esse nome será exibido para os outros usuários.</p>
+          <p>Passo 5. Verifique se o compartilhamento foi bem sucedido. Na pasta Impressoras e aparelhos de fax, verifique se o ícone da impressora possui uma mão sob ela, indicando que a mesma é um recurso compartilhado.</p>
+          <p>Os usuários, que agora são capazes de se conectar à impressora compartilhada, podem não ter os drivers necessários instalados. Eles também podem estar usando um sistema operacional diferente do computador que está hospedando a impressora compartilhada. O Windows pode baixar automaticamente os drivers corretos para esses usuários. Clique no botão Drivers Adicionais para selecionar os sistemas operacionais que os outros usuários estão usando. Quando você fechar a caixa de diálogo, clicando em OK, o Windows solicitará permissão obter esses drivers adicionais. Se os outros usuários também estiverem usando o mesmo sistema operacional Windows, você não precisará clicar em Drivers Adicionais.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.7.1.2 OSI</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>OSI and TCP/IP Data Models</h1>
+      <h2>Reference Models</h2>
+    </div>
+    <div id="content">
+          <p>In the early 1980s, the International Standards Organization (ISO) developed the Open Systems Interconnect (OSI) reference model to standardize the way devices communicate on a network. This model was a major step toward ensuring interoperability between network devices. </p>
+          <p></p>
+          <p>The OSI model divides network communications into seven distinct layers. Although other models exist, most network vendors today build their products using this framework.</p>
+          <p></p>
+          <p>A system that implements protocol behavior consisting of a series of these layers is known as a protocol stack. Protocol stacks can be implemented either in hardware or software, or a combination of both. Typically, only the lower layers are implemented in hardware, and the higher layers are implemented in software. Each layer is responsible for part of the processing to prepare data for transmission on the network. The chart in Figure 1 shows what each layer of the OSI model does.</p>
+          <p></p>
+          <p>In the OSI model, when data is transferred, it is said to virtually travel down the OSI model layers of the sending computer and up the OSI model layers of the receiving computer.</p>
+          <p></p>
+          <p>When a user sends data, such as an email, the encapsulation process starts at the application layer. The application layer provides network access to applications. Information flows through the top three layers and is considered to be data when it gets down to the transport layer.</p>
+          <p></p>
+          <p>At the transport layer, the data is broken down into more manageable segments, called protocol data units (PDUs), for orderly transport across the network. A PDU describes data as it moves from one layer of the OSI model to another. The transport layer PDU also contains information used for reliable data transport, such as port numbers, sequence numbers, and acknowledgement numbers.</p>
+          <p></p>
+          <p>At the network layer, each segment from the transport layer becomes a packet. The packet contains logical addressing and other Layer 3 control information.</p>
+          <p></p>
+          <p>At the data link layer, each packet from the network layer becomes a frame. The frame contains physical address and error correction information.</p>
+          <p></p>
+          <p>At the physical layer, the frame becomes bits. These bits are transmitted one at a time across the network medium.</p>
+          <p></p>
+          <p>At the receiving computer, the de-encapsulation process reverses the process of encapsulation. The bits arrive at the physical layer of the OSI model of the receiving computer. The process of traveling up the OSI model of the receiving computer brings the data to the application layer, where an email program displays the email.</p>
+          <p></p>
+          <p>NOTE: Mnemonics can help you remember the seven layers of the OSI. Some examples include “All People Seem To Need Data Processing” and “Please Do Not Throw Sausage Pizza Away.”</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

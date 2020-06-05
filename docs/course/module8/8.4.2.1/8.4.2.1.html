@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.4.2.1 Backup Remoto</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Métodos de Proteção de Dispositivos Móveis</h1>
+        <h2>Serviços de Nuvem em Smart Devices</h2>
+      </div>
+      <div id="content">
+          <p>Assim como em desktops e laptops, os dados presentes nos dispositivos móveis podem ser perdidos devido a falhas do dispositivo ou perda do mesmo. É necessário fazer backup de dados periodicamente para garantir que os dados perdidos poderão ser recuperados. As unidades de armazenamento dos dispositivos móveis muitas vezes são limitas e não permitem sua remoção. Para superar essas limitações, o usuário pode realizar backups remotos. Um backup remoto é quando um dispositivo copia seus dados para um website utilizando um aplicativo de backup. Se os dados precisarem ser restaurados em um dispositivo, execute o aplicativo de backup, conecte-se ao site onde os dados estão armazenados e recupere-os.</p>
+          <p>Aos usuários iOS são dados 5 GB de armazenamento gratuito. Se necessário, um armazenamento adicional pode ser adquirido por uma taxa anual. Estes são os itens que o iCloud pode fazer backup:</p>
+          <p><ul>
+              <li>Calendário</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>E-mail</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Contatos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O conteúdo adquirido na App Store da Apple (Esse conteúdo não consome os 5GB de armazenamento gratuito)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fotos tiradas com o seu dispositivo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Suas configurações</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dados dos aplicativos em execução</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ícones da tela</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>SMS e MMS</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ringtones</li>
+            </ul>
+          </p>
+          <p>Os seguintes itens são copiados automaticamente em dispositivos Android:</p>
+          <p><ul>
+              <li>Calendário</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>E-mail</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Contatos</li>
+            </ul>
+          </p>
+          <p>O Google também mantém o controle de todos os aplicativos e conteúdos que você adquiriu, portanto eles podem ser baixados novamente. Muitos aplicativos também estão disponíveis para realizar backup de outros itens. Pesquise no Google Play para encontrar aplicativos de backup que atendam as suas necessidades.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.2.2 Coaxial Cables</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Physical Components of a Network</h1>
+      <h2>Cables and Connectors</h2>
+    </div>
+    <div id="content">
+          <p>Coaxial cable, shown in Figure 1, is usually constructed of either copper or aluminum. It is used by cable television companies to provide service and for connecting the various components that make up satellite communication systems.</p>
+          <p></p>
+          <p>Coaxial cable (or coax) carries data in the form of electrical signals. It provides improved shielding compared to unshielded twisted-pair (UTP), so it has a lower signal-to-noise ratio and can therefore carry more data. However, twisted-pair cabling has replaced coax in LANs because, when compared to UTP, coax is physically harder to install, more expensive, and harder to troubleshoot. </p>
+          <p></p>
+          <p>Coaxial cable is enclosed in a sheath or jacket, as shown in Figure 2. There are several types of coaxial cable:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Thicknet or 10BASE5</b> – Used in networks and operated at 10 Mbps with a maximum length of 500 m (1640.4 ft) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Thinnet 10BASE2</b> – Used in networks and operated at 10 Mbps with a maximum length of 185 m (607 ft) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>RG-59</b> – Most commonly used for cable television in the United States</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>RG-6</b> – Higher quality cable than RG-59, with more bandwidth and less susceptibility to interference</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Cable service provider wiring inside a customer’s premises is coax. Several connecting methods are used to connect coaxial cable together. Two common connection types, shown in Figure 3, include:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>F series</b> – Primarily used in television cable and antenna applications up to 1 GHz</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>BNC </b>– Designed for military use and also used in video and RF applications to 2 GHz</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The F series connector has a standard thread pattern, but push-on designs are also available. The BNC uses a push, twist, and lock connector. Coaxial cable has no specific maximum bandwidth, and the type of signaling <a type="external" target="http://wiki.answers.com/Q/What_is_the_speed_of_coaxial_cables">technology</a> used determines the speed and limiting factors.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.2.3 Electricity and Ohm’s Law</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Cases and Power Supplies</h2>
+    </div>
+    <div id="content">
+          <p>These are the four basic units of electricity:</p>
+          <p>
+            <ul>
+              <li>Voltage (V) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Current (I) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Power (P) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Resistance (R) </li>
+            </ul>
+          </p>
+          <p>Voltage, current, power, and resistance are electronic terms that a computer technician must know.</p>
+          <p>
+            <ul>
+              <li>Voltage is a measure of the force required to push electrons through a circuit. Voltage is measured in volts (V). A computer power supply usually produces several different voltages. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Current is a measure of the amount of electrons going through a circuit. Current is measured in amperes, or amps (A). Computer power supplies deliver different amperages for each output voltage. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Power is a measure of the pressure required to push electrons through a circuit (voltage), multiplied by the number of electrons going through that circuit (current). The measurement is called watts (W). Computer power supplies are rated in watts. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Resistance is the opposition to the flow of current in a circuit, measured in ohms. Lower resistance allows more current, and therefore more power, to flow through a circuit. A good fuse has low resistance or almost 0 ohms. </li>
+            </ul>
+          </p>
+          <p>A basic equation, known as Ohm's Law, expresses how three of the terms relate to each other. It states that voltage is equal to the current multiplied by the resistance: V = IR.</p>
+          <p>In an electrical system, power is equal to the voltage multiplied by the current: P = VI.</p>
+          <p>In an electrical circuit, increasing the current or the voltage results in higher power.</p>
+          <p>For example, imagine a simple circuit that has a 9V light bulb hooked up to a 9V battery. The power output of the light bulb is 100W. Using the P = VI equation, you can calculate how much current in amps is required to get 100W out of this 9V bulb.</p>
+          <p>To solve this equation, we know that P = 100W and V = 9V.</p>
+          <p>
+            <b>I = P/V = 100W / 9V = 11.11A </b>
+          </p>
+          <p>What happens if a 12V battery and a 12V light bulb are used to get 100W of power?</p>
+          <p>
+            <b>I = P/V = </b>
+            <b>100W / 12V = 8.33A</b>
+          </p>
+          <p>This system produces the same power but with less current. </p>
+          <p>You can use Ohm’s Triangle, shown in Figure 1, to calculate voltage, current, or resistance when two of the variables are known. To see the correct formula, cover up the variable that is not known and perform the resulting calculation. For example, if voltage and current are known, cover the R to reveal the formula V / I. Calculate V / I to find R. You can use the Ohm’s Law chart shown in Figure 2 to calculate any of the four basic units of electricity using any two known units.</p>
+          <p>Computers normally use power supplies ranging from 250W to 800W output capacity. However, some computers need 1200W and higher capacity power supplies. When building a computer, select a power supply with sufficient wattage to power all components. Each component inside the computer uses a certain amount of power. Obtain the wattage information from the manufacturer’s documentation. When deciding on a power supply, make sure to choose one that has more than enough power for the current components. A power supply with a higher wattage rating has more capacity, therefore, it can handle more devices.</p>
+          <p>On the back of most power supplies is a small switch called the voltage selector switch. This switch sets the input voltage to the power supply to either 110V / 115V or 220V / 230V. A power supply with this switch is called a dual voltage power supply. The correct voltage setting is determined by the country where the power supply is used. Setting the voltage switch to the incorrect input voltage could damage the power supply and other parts of your computer. If a power supply does not have this switch, it automatically detects and sets the correct voltage.</p>
+          <p>
+            <b>CAUTION</b>: Do not open a power supply. Electronic capacitors located inside of a power supply, shown in Figure 3, can hold a charge for extended periods of time.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

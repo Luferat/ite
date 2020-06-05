@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.1.6 Ataques TCP/IP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ameaças de Segurança</h1>
+        <h2>Tipos de Ameaças de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>TCP/IP é o conjunto de protocolos que controla as comunicações na Internet. Infelizmente, algumas características do protocolo TCP/IP podem ser manipuladas, resultando em vulnerabilidades na rede.</p>
+          <p>Negação de Serviço (DoS - Denial of Service)</p>
+          <p>O DoS é uma forma de ataque que impede que os usuários acessem serviços comuns, tais como e-mail ou servidores de web, pois o sistema fica ocupado respondendo a uma grade quantidade de solicitações. Um DoS envia tantas solicitações para um recurso do sistema que o serviço solicitado é sobrecarregado e deixa de operar, conforme apresentado na Imagem 1.</p>
+          <p>Negação de Serviço Distribuída (DDoS - Distributed Denial of Service)</p>
+          <p>Um ataque DDoS utiliza vários computadores infectados, chamados de zumbis ou botnets, para iniciar um ataque. A intenção é de impedir ou sobrecarregar o acesso em um determinado servidor, conforme apresentado na Imagem 2. Computadores zumbis, que se encontram em diferentes localizações geográficas, dificultam o rastreamento da origem do ataque.</p>
+          <p>SYN Flood</p>
+          <p>Uma solicitação SYN (SYN request) é a primeira comunicação enviada para estabelecer uma conexão TCP. Um ataque SYN flood abrirá aleatoriamente as portas TCP da origem, vinculando-as aos equipamentos de rede ou computadores alvos com uma grande quantidade de falsos pedidos de SYN. Isto faz com que outras sessões sejam negadas, conforme apresentado na Imagem 3. Um SYN flood é um tipo de ataque DoS.</p>
+          <p>Spoofing</p>
+          <p>Em um ataque spoofing, um computador finge ser um computador confiável para obter acesso a determinados recursos. O computador utiliza um endereço IP ou MAC falso para representar um dispositivo confiável da rede.</p>
+          <p>Man-in-the-Middle</p>
+          <p>Um invasor realiza um ataque Man-in-the-middle para interceptar as comunicações entre os computadores, roubando as informações transmitidas na rede. O ataque Man-in-the-middle também pode ser usado para manipular mensagens e retransmitir informações falsas entre os hosts, conforme exibido na Imagem 4, pois os host não estarão cientes de que as mensagens foram modificados.</p>
+          <p>Replay</p>
+          <p>No ataque replay os dados transmitidos serão interceptados e gravados por um invasor. Além disso, estas transmissões serão replicadas para o computador de destino. O computador de destino compreende as informações recebidas como sendo autênticas e enviadas pela fonte original. Desta forma, um invasor obtém acesso não autorizado a um sistema ou a uma rede.</p>
+          <p>DNS Poisoning</p>
+          <p>Os registros do DNS em um sistema são alterados para direcionar o tráfego aos servidores impostores. O usuário tentará acessar um site legítimo, mas o seu tráfego será desviado para um site falso. Este site falso será utilizado para capturar informações confidenciais, como nomes de usuários e senhas, que poderão ser visualizados pelo atacante. Um invasor pode recuperar os dados a partir desse local.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

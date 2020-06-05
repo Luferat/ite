@@ -1,0 +1,44 @@
+﻿<textcomponents>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<b>Cooler do Gabinete</b>]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[<b>Placa-mãe</b>]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[<b>Cooler do Processador</b>]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[<b>Fonte de Alimentação</b>]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[<b>RAM</b>]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[<b>Disco Rígido</b>]]></text>
+</component>
+
+<component id='ID_s2_txt07'>
+	<text><![CDATA[<b>Placa de Rede</b>]]></text>
+</component>
+
+<component id='ID_s2_txt08'>
+	<text><![CDATA[<b>Placa de Som</b>]]></text>
+</component>
+
+<component id='ID_s2_txt09'>
+	<text><![CDATA[<b>Placa de Vídeo</b>]]></text>
+</component>
+
+<component id='ID_s2_txt10'>
+	<text><![CDATA[<b>SSD</b>]]></text>
+</component>
+
+
+</textcomponents>

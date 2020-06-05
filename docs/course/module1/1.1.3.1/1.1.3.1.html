@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.3.1 Portas e Cabos de Vídeo</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Portas e Cabos Externos</h2>
+      </div>
+      <div id="content">
+          <p>A porta de vídeo conecta um monitor a um computador utilizando um cabo. As portas de vídeo e os cabos dos monitores enviam sinais analógicos, digitais ou ambos. Os computadores são dispositivos digitais que criam sinais digitais. Os sinais digitais são enviados para a placa gráfica, onde são transmitidos através de um cabo para um display digital. Os sinais digitais podem também ser convertidos em sinais analógicos pela placa gráfica e transferido para um visor analógico. A conversão de um sinal digital em sinal analógico normalmente resulta em uma qualidade de imagem inferior. O monitor e o cabo que suportam sinais digitais devem proporcionar maior qualidade de imagem do que os que suportam apenas sinais analógicos. Existem várias portas de vídeo e tipos de conexão:</p>
+          <p><ul>
+              <li>Digital Visual Interface (DVI), como mostrado na Figura 1, tem 24 pinos para sinais digitais e 4 pinos para sinais analógicos. O DVI-I é usado para sinais analógicos e digitais. DVI-D trabalha apenas com sinais digitais, enquanto o DVI-A apenas com sinais analógicos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Displayport, como mostrado na Figura 2, tem 20 pinos e pode ser usado para a transmissão de áudio, vídeo ou ambos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conectores RCA, conforme mostrado na Figura 3, possui um núcleo central com um anel em torno e pode ser utilizado para transportar áudio ou vídeo. É comum encontrar conectores RCA em grupos de três, onde um conector amarelo transporta o vídeo e um par de conectores vermelho e branco transportam o canal esquerdo e direito de áudio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DB-15, como mostrado na Figura 4, possui 3 linhas e 15 pinos e é normalmente utilizado para vídeo analógico.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conectores BNC, como mostrado na Figura 5, conecta o cabo coaxial aos dispositivos utilizando o esquema de conexão quarter-turn. O BNC é usado para transmitir áudio ou vídeo, digital ou analógico.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>RJ-45, como mostrado na Figura 6, tem oito pinos e pode ser usado para realizar a transmissão de áudio ou vídeo, digital ou analógico.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>MiniHDMI que também é chamado de Tipo C, conforme apresentado na Figura 7, possui 19 pinos, é muito menor do que um conector HDMI e transporta os mesmos sinais que um conector HDMI.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Din-6, possui 6 pinos e é comumente utilizado para áudio analógico, vídeo e energia em aplicações de câmeras de segurança.</li>
+            </ul>
+          </p>
+          <p>Os cabos de vídeos transferem os sinais de vídeos do computador para o monitor. Existem vários tipos de cabos de vídeo:</p>
+          <p><ul>
+              <li>High-Definition Multimedia Interface (HDMI) - Transmite sinais digitais de áudio e vídeo. Os sinais digitais fornecem vídeo de alta qualidade e altas resoluções(Figura 8).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DVI - Transporta sinal de vídeo analógico, digital ou ambos (Figura 8).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Video Graphics Array (VGA) - Transporta sinais de vídeo analógicos. O vídeo analógico possui baixa qualidade e pode sofrer interferência por sinais elétricos e rádio (Figura 8).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Componente/RGB - Transporta sinais de vídeo analógico ao longo de três cabos blindados (vermelho, verde, azul) (Figura 8).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Composto - Transporta sinais de áudio e vídeo analógicos (Figura 9).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>S-Video - Transporta sinais de vídeo analógico (Figura 9).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Coaxial - Transporta sinais de áudio e vídeo analógicos, digitais ou ambos (Figura 8).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ethernet - Transporta sinais de áudio e vídeo analógicos, digitais ou ambos (Figura 8). Ethernet também pode transportar energia.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

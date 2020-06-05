@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.5.2.6 Disco Rígido e Unidade Óptica</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Hardware de Laptops e Componente de Instalação e Configuração</h1>
+        <h2>Substituindo Dispositivos de Hardware</h2>
+      </div>
+      <div id="content">
+          <p>O formato de um disco rígido interno de um laptop é menor do que um de desktop. Discos rígidos de laptops possuem 1,8 polegadas (4,57 centímetros) ou 2,5 polegadas (6,35 cm.) de largura, enquanto que os discos rígidos de desktop são de 3,5 polegadas (8,9 cm.). Os dispositivos de armazenamento são CRUs, a menos que uma garantia solicite assistência técnica.</p>
+          <p></p>
+          <p>Um disco rígido externo USB conecta-se a um laptop através da porta USB. Outro tipo de unidade externa são os discos rígidos IEEE 1394, que se conectam através da porta FireWire. Um laptop detecta automaticamente quando um disco rígido externo é conectado a uma porta USB ou FireWire.</p>
+          <p></p>
+          <p>Antes de comprar um novo dispositivo de armazenamento interno ou externo, verifique a documentação do laptop ou o site do fabricante para obter os requisitos de compatibilidade. A documentação muitas vezes contém FAQs que podem ser úteis. Também é importante pesquisar os problemas comuns dos componentes do laptop na Internet.</p>
+          <p></p>
+          <p>Na maior parte dos computadores portáteis, o disco rígido interno e a unidade óptica interna estão conectadas por trás de uma tampa, na parte de baixo da laptop. Em alguns laptops, o teclado deve ser removido para acessar estas unidades. Blu-ray, DVD e unidades de CD podem não ser intercambiáveis nos laptops. Alguns laptops podem não incluir unidades ópticas.</p>
+          <p></p>
+          <p>Para visualizar o dispositivo de armazenamento instalado, verifique a tela do POST ou na BIOS. Ao instalar um segundo disco rígido ou unidade óptica, confirme que não há ícones de erro ao lado do dispositivo no Gerenciador de Dispositivos.</p>
+          <p></p>
+          <p>Substituindo um Disco Rígido</p>
+          <p>Para remover e substituir um disco rígido, siga estes passos:</p>
+          <p></p>
+          <p>Passo 1. Desligue o laptop e desconecte o adaptador de energia.</p>
+          <p>Passo 2. Na parte inferior do notebook, remova os parafusos que prendem o disco rígido.</p>
+          <p>Passo 3. Deslize o conjunto para fora, conforme apresentado na Figura 1.</p>
+          <p>Passo 4. Remova a placa do disco rígido.</p>
+          <p>Passo 5. Fixe a placa no outro disco.</p>
+          <p>Passo 6. Encaixe disco no compartimento do disco rígido.</p>
+          <p>Passo 7. Na parte inferior do laptop, instale os parafusos que prendem o disco rígido.</p>
+          <p>Passo 8. Conecte o adaptador de energia e ligue o laptop.</p>
+          <p></p>
+          <p>Substituindo a Unidade Óptica</p>
+          <p>Para remover e substituir uma unidade óptica, siga estes passos:</p>
+          <p></p>
+          <p>Passo 1. Desligue o laptop e desconecte o adaptador de energia.</p>
+          <p>Passo 2. Pressione o botão para abrir a unidade e retire qualquer mídia existente. Feche a bandeja.</p>
+          <p>Passo 3. Na parte inferior do laptop, retire os parafusos que prendem a unidade óptica.</p>
+          <p>Passo 4. Deslize a trava para liberar a alavanca que prende a unidade.</p>
+          <p>Passo 5. Puxe a alavanca para expor a unidade. Remova a unidade, conforme apresentado na Figura 2.</p>
+          <p>Passo 6. Insira a unidade com segurança.</p>
+          <p>Passo 7. Empurre a alavanca para dentro.</p>
+          <p>Passo 8. Aperte o parafuso que prende a unidade no lugar.</p>
+          <p>Passo 9. Conecte o adaptador de energia e ligue o laptop.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

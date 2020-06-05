@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.2.1.2 Impressoras Laser</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Tipos de Impressoras</h1>
+        <h2>Tipos de Impressoras</h2>
+      </div>
+      <div id="content">
+          <p>A impressora a laser é uma impressora de alta qualidade, rápida e que utiliza um raio laser para criar uma imagem. A parte central da impressora a laser é o tambor de imagem. O tambor é um cilindro de metal que é revestido com um material isolante sensível à luz. Quando um feixe de luz laser atinge o tambor, ele se torna condutor no ponto onde a luz atinge.</p>
+          <p>À medida que o tambor roda, o feixe de laser desenha uma imagem electrostática sobre o tambor. A imagem subdesenvolvida ou latente é passada por um suprimento de tinta ou toner seco que é atraído por ele. Enquanto a imagem é exposta no tambor, uma folha individual de papel é prensada entre uma camada de separação e entre os rolos de captação, sendo assim alimentado para o tambor.</p>
+          <p>O tambor gira e faz com que a imagem exposta entre em contato com o papel, o que atrai a tinta a partir do tambor. O papel é então passado através de um conjunto de fusão, que é constituído por rolos quentes, que derretem o toner ao papel.</p>
+          <p>Processo de Impressão</p>
+          <p>O processo de impressão a laser envolve sete etapas para imprimir informações em uma única folha de papel.</p>
+          <p>1. Processamento - Os dados devem ser convertidos em um formato imprimível. A impressora converte os dados de linguagens comuns, tais como Adobe PostScript (PS) ou HP Printer Command Language (PCL), em uma imagem bitmap armazenada na memória da impressora. Algumas impressoras a laser fornecem suporte para interface GDI (Graphical Device Interface). A GDI é usada por aplicativos Windows para exibir as imagens impressas em um monitor, para que não haja necessidade de converter a saída para outro formato, como PostScript ou PCL.</p>
+          <p>2. Carga - A imagem latente anterior no tambor é removida e o tambor é condicionado para a nova imagem. Um fio, grade ou rolo recebe uma carga de cerca de -600 volts DC uniformemente em toda a superfície do tambor. O fio ou grade carregado é chamado de corona primária. O rolo é chamado de rolo de condicionamento.</p>
+          <p>3. Exposição - Para gravar a imagem, o tambor fotossensível é exposto com o feixe de laser. Cada porção do tambor que é escaneado com a luz tem a carga de superfície reduzida para cerca de -100 volts DC. Esta carga eléctrica tem uma carga negativa mais baixa do que o restante do tambor. A medida que o tambor gira, uma imagem invisível é criada no tambor.</p>
+          <p>4. Desenvolvimento - O toner é aplicado à imagem latente no tambor. O toner é uma combinação de carga negativa plástica e de partículas de metal. Uma lâmina de controle mantém o toner a uma distância microscópica do tambor. O toner, em seguida, move-se a partir da lâmina de controle, com a imagem latente carregada, para o tambor, carregado com uma carga mais positiva.</p>
+          <p>5. Transferência - O toner adicionado à imagem latente é transferido para o papel. O fio de corona coloca uma carga positiva sobre o papel. Como o tambor foi carregado negativamente, o toner no tambor é atraído para o papel. A imagem agora está no papel e é mantida no lugar pela carga positiva. Como as impressoras a cores têm três cartuchos de tinta, uma imagem colorida deve passar por múltiplas transferências para ser concluída. Para garantir imagens precisas, algumas impressoras coloridas escrevem várias vezes em uma correia de transferência que transfere a imagem completa para o papel.</p>
+          <p>6. Fusão - O toner é permanentemente fundido ao papel. O papel é enrolado entre um rolo aquecido e um rolo de pressão. Como o papel passa através dos rolos, o toner solto é derretido e fundido com as fibras do papel. O documento então é movido para a bandeja de saída como uma página impressa. As impressoras a laser com montagens duplex pode imprimir nos dois lados de uma folha de papel.</p>
+          <p>7. Limpeza - Quando uma imagem tiver sido depositada sobre o papel e o cilindro for separado do papel, o toner restante deve ser removido do tambor. Uma impressora pode ter uma lâmina que raspa o excesso de toner. Algumas impressoras usam uma tensão AC em um fio que remove a carga da superfície do tambor e permite que o excesso de toner caia para fora do tambor. O excesso de toner é armazenado em um recipiente de toner utilizado que é esvaziado ou descartado.</p>
+          <p>Estas são algumas das vantagens de uma impressora a laser:</p>
+          <p><ul>
+              <li>Baixo custo por página</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alto ppm</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alta capacidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As impressões são secas</li>
+            </ul>
+          </p>
+          <p>Estas são algumas das desvantagens de uma impressora a laser:</p>
+          <p><ul>
+              <li>Custo inicial alto</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os toner são caros</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Requer um alto nível de manutenção</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

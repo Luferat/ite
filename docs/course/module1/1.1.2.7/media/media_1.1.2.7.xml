@@ -1,0 +1,100 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+<component id='ID_s1_title'>
+<text><![CDATA[<b>Placa de Expansão</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b>Placa de Som</b>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<b>Placa de Rede (NIC)</b>]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[<b>Adaptador RAID</b>]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[<b>Placa de Vídeo</b>]]></text>
+</component>
+
+<!--Slide 2-->
+<component id='ID_s2_table'>
+	<text><![CDATA[<table header='none' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#918F90'><tr><td>teste</td></tr></table>]]></text>
+</component>
+
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Slots de Expansão</b>]]></text>
+</component>
+
+<component id='ID_s2_btn01'>
+	<text><![CDATA[<b>PCI</b>]]></text>
+</component>
+
+<component id='ID_s2_btn02'>
+	<text><![CDATA[<b>AGP</b>]]></text>
+</component>
+
+<component id='ID_s2_btn03'>
+	<text><![CDATA[<b>PCIe</b>]]></text>
+</component>
+
+<component id='ID_s2_btn04'>
+	<text><![CDATA[<b>ISA</b>]]></text>
+</component>
+
+<component id='ID_s2_btn05'>
+	<text><![CDATA[<b>EISA</b>]]></text>
+</component>
+
+<component id='ID_s2_btn06'>
+	<text><![CDATA[<b>MCA</b>]]></text>
+</component>
+
+<component id='ID_s2_btn07'>
+	<text><![CDATA[<b>PCI-X</b>]]></text>
+</component>
+
+<component id='ID_s2_btn08'>
+	<text><![CDATA[<b>Mini PCI</b>]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[Peripheral component interconnect(PCI) é um slot de expansão de 32 ou 64-bits. PCI é o slot padrão, atualmente utilizado na maioria dos computadores.]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[O AGP foi projetado para ser utilizado por placas de vídeo. Avanços na especificação AGP permitem o aumento da largura de banda. A largura de banda da porta pode ser multiplicada 2X, 4X ou 8X.]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[O PCI Express é um slot de expansão de barramento serial. PCIe tem os slots x1, x4, x8 e x16. O PCIe está substituindo o AGP como slot de expansão para adaptadores de vídeo e pode ser utilizado para outros tipos de adaptadores.]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[Industry Standard Architecture (ISA) é um slot de expansão de 8 ou 16 bits. Esta é uma tecnologia antiga e raramente é usada.]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[Extended Industry Standard Architecture (EISA) é um slot de expansão de 32 bits. Esta é uma tecnologia antiga e raramente é usada.]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[Microchannel Architecture (MCA) é um slot de expansão proprietário da IBM de 32 bits. Esta é uma tecnologia antiga e raramente é usada.]]></text>
+</component>
+
+<component id='ID_s2_txt07'>
+	<text><![CDATA[PCI-Extended (PCI-X) é um barramento de 32 bits com maior largura de banda do que o barramento PCI. O PCI-X pode operar até quatro vezes mais rápido do que o PCI.]]></text>
+</component>
+
+<component id='ID_s2_txt08'>
+	<text><![CDATA[Mini PCI é um barramento de 32 bits usados ​​por laptops. O Mini PCI possui três formas diferentes, Tipo I, Tipo II e Tipo III.]]></text>
+</component>
+
+
+
+</textcomponents>

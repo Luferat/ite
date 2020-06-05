@@ -1,0 +1,103 @@
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+	overflow:hidden !important;
+}
+
+
+
+
+
+
+table { width:100% !important;border-collapse:collapse;}
+table tbody tr { border-color:#DAE17A;}
+table tbody tr td { border-color:#a2aa23; font-size:14px !important; border:3px solid #DAE17A; border-collapse:collapse;letter-spacing:0px; padding-top:0px; padding-bottom:0px;width:100px;}
+table tbody tr td b { font-size:12px !important; font-weight:bold !important; border-collapse:collapse;}
+table tbody tr td font { font-size:12px !important; padding-top:0px; padding-bottom:0px; padding-right:0px; border-collapse:collapse;letter-spacing:0px;}
+.table_font { border-color:#a2aa23; font-size:12px !important; font-weight:bold !important; width:33% !important;}
+
+.t_header{ font-size:14px;} 
+
+.col_1 {line-height: 0; /*display:block;*/ margin-top:-11px; padding-bottom:5px;}
+#ID_table {box-shadow: 0 0 2px 2px #999999 !important; width:447px !important; height:350px !important; border-radius:5px !important;}
+.liner {line-height:1 !important;height: 0px !important; margin:0px; padding:0px;}
+.liner_top {line-height:0 !important;height: 0px !important; margin:0px; padding:1px;}
+li{margin-left:2em !important;}
+.title{line-height:0px;padding:10px 0 7px 0px;margin:0px;height:0px;}
+.title b{font-size:14px !important; font-weight:bold !important; border-collapse:collapse;line-height:0px;padding:0px;margin:0px;height:0px;}
+.font_forteen {font-size:14px !important; font-weight:bold !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Starts Global Css Reset*/
+body { margin:0px; padding:0px;}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, 
+form, fieldset, input, p, blockquote, table, th, td, embed, object, {
+	padding: 0px;
+	margin: 0px; 
+	}
+img,em,ol,ul,li,form,lable,span,table,caption,tbody,tfoot,font,h1,h2,h3,h4,h5,h6,p,a,dl,dt,dd {
+vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+        }
+body {
+	font-size: 100%;
+	}
+html {
+	font-size: 1em;
+	}
+a img, :link img, :visited img {
+	border: 0;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+fieldset, img, abbr {
+	border: 0;
+	}
+address, caption, cite, code, dfn, em, 
+h1, h2, h3, h4, h5, h6, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
+	}
+ol,ul {
+	list-style: none;
+	}
+caption, th {
+	text-align: left;
+	}
+h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+	font-size: 1.0em;
+	}
+q:before, q:after {
+	content: '';
+	}
+a, ins {
+	text-decoration: none;
+	}
+	
+/*End Global Css Reset*/

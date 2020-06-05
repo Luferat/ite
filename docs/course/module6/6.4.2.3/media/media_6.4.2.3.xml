@@ -1,0 +1,80 @@
+﻿<textcomponents> 
+<component id="ID_s1_title">
+  <text><![CDATA[<b>Cabeamento de Par Trançado</b>]]></text> 
+ </component>
+
+ <component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Características do Cabo Par Trançado</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#434321' colspan='3' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	<tr>
+		<td bgcolor='#A2AA23' valign="top" class="subtit"><font size='12' color='#ffffff'><b></b></font></td>
+		<td bgcolor='#A2AA23' valign="top" class="subtit"><font size='12' color='#ffffff'><b>Velocidade</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" class="subtit"><font size='12' color='#ffffff'><b>Características</b></font></td>
+	</tr> 
+	<tr>  
+		<td bgcolor='#F3F5E7' valign="top" ><font size='12' color='#393536'>Cat 3 UTP</font></td>
+		<td bgcolor='#F3F5E7' valign="top" ><font size='12' color='#393536'>10 Mb/s em 16 MHz</font></td>
+		<td bgcolor='#F3F5E7' valign="top" ><font size='12' color='#393536'><li>Indicado para LAN Ethernet.</li>
+			<li>Na maioria das vezes usado para linhas telefônicas.</li></font></td>
+	</tr>
+	<tr>  
+		<td bgcolor='#FFFFFF' width='80px' valign="top"><font size='12' color='#393536'>Cat 5 UTP</font></td>
+		<td bgcolor='#FFFFFF' width='90px' valign="top"><font size='12' color='#393536'>100 Mb/s em 100 MHz</font></td>
+		<td bgcolor='#FFFFFF'  valign="top"><font size='12' color='#393536'> Fabricados com padrão mais elevado do que Cat 3 para permitir maiores taxas de transferência de dados. </font></td>
+	</tr>
+	<tr>  
+		<td bgcolor='#F3F5E7'  valign="top"><font size='12' color='#393536'>Cat 5e UTP</font></td>
+		<td bgcolor='#F3F5E7'  valign="top"><font size='12' color='#393536'>1000 Mb/s em 100 MHz</font></td>
+		<td bgcolor='#F3F5E7'  valign="top"><font size='12' color='#393536'><li>Fabricados com padrão mais elevado do que Cat 5 para permitir maiores taxas de transferência de dados.</li>
+			<li>Mais tranças por metro que o Cat 5 para melhor prevenir a EMI e RFI a partir de fontes externas.</li></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'  valign="top"><font size='12' color='#393536'>Cat 6 UTP</font></td>
+		<td bgcolor='#FFFFFF'  valign="top"><font size='12' color='#393536'>1000 Mb/s em 250 MHz</font></td>
+		<td bgcolor='#F3F5E7'  rowspan='10' valign="top" height='290px'><font size='12' color='#393536'><li>Fabricados com padrão mais elevado do que o Cat 5e.</li>
+<li>Mais tranças por metro que Cat 5e para melhor prevenir EMI e RFI a partir de fontes externas.</li>
+<li>Cat 6a tem um melhor isolamento térmico e desempenho de Cat 6.</li>
+<li>Pode ter um divisor de plástico para separar os pares de fios dentro do cabo para melhor prevenir EMI e RFI.</li>
+<li>Boa escolha para os clientes que utilizam aplicações que exigem grandes quantidades de largura de banda, tais como videoconferência ou jogos.</li>
+<li>ScTP (Par Trançado Blindado) é muito caro e não é tão flexível quanto o UTP.</li></font></td>
+	</tr>
+	 <tr>  
+		<td bgcolor='#F3F5E7'  valign="top"><font size='12' color='#393536'>Cat 6A UTP</font></td>
+		<td bgcolor='#F3F5E7'  valign="top"><font size='12' color='#393536'>1000 Mb/s em 500 MHz</font></td>
+	</tr>
+	<tr>  
+		<td bgcolor='#FFFFFF' rowspan='8'  valign="top"><font size='12' color='#393536'>Cat 7 ScTP</font></td>
+		<td bgcolor='#FFFFFF' rowspan='8' valign="top"><font size='12' color='#393536'>10 Gb/s em 600 MHz</font></td>
+	</tr>
+	<tr> 
+	</tr>
+	<tr> 
+	</tr>
+	<tr> 
+	</tr>
+	<tr> 
+	</tr>
+	<tr> 
+	</tr>
+	<tr> 
+	</tr>
+	<tr> 
+	</tr>
+
+
+</table>]]></text>
+</component>
+
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Conectores RJ-11 e RJ-45</b>]]></text> 
+ </component>
+
+ 
+
+
+</textcomponents>

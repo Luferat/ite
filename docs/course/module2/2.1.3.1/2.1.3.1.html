@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.3.1 Materiais de Segurança e Data Sheet</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos Seguros de Laboratório</h1>
+        <h2>Procedimentos de Proteção do Ambiente</h2>
+      </div>
+      <div id="content">
+          <p>Computadores e periféricos contêm materiais que podem ser nocivos para o ambiente. Esses materiais perigosos são chamados, às vezes, de resíduos tóxicos. Estes materiais podem conter concentrações elevadas de metais pesados, como cádmio, chumbo ou mercúrio. Os regulamentos para o descarte de materiais perigosos variam em cada estado ou país. Contate um local de reciclagem ou as autoridades de remoção de resíduos da sua comunidade para obter informações sobre procedimentos e serviços de descarte.</p>
+          <p>O Material Safety and Data Sheet (MSDS) é uma ficha que resume as informações sobre identificação dos materiais, incluindo ingredientes perigosos que podem afetar a saúde de uma pessoa, riscos de incêndio e procedimentos de primeiros socorros. O MSDS contém informações sobre reatividade química e incompatibilidade. Ele também inclui medidas de proteção para o manuseio e armazenamento de materiais, derramamento, vazamento e procedimentos de descarte.</p>
+          <p>Para determinar se um material é classificado como perigoso, consulte o MSDS do fabricante. Nos Estados Unidos, a Occupational Safety and Health Administration (OSHA) exige que todos os materiais perigosos sejam acompanhados por um MSDS quando transferidos para um novo proprietário. As informações presentes no MSDS, referentes aos produtos adquiridos para conserto de computadores ou de manutenção, podem ser relevantes para técnicos de informática. O OSHA também requer que os funcionários sejam informados sobre os materiais que eles estão trabalhando, fornecendo materiais de informações de segurança.</p>
+          <p>NOTA: O MSDS é importante ao determinar como se desfazer de materiais potencialmente perigosos da forma mais segura. Sempre verifique as normas locais relativas aos métodos de descarte aceitáveis ​​antes de descartar qualquer equipamento eletrônico.</p>
+          <p>O MSDS contém informações valiosas:</p>
+          <p><ul>
+              <li>Nome do material</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Propriedades físicas do material</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Elementos perigosos contidos no material</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dados de reatividade, tais como incêndio e explosão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Procedimentos para derramamentos e vazamentos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Precauções especiais</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Riscos à saúde</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Requisitos de proteção especiais</li>
+            </ul>
+          </p>
+          <p>Na União Europeia, o regulamento de Registo, Avaliação, Autorização e Restrição de Substâncias Químicas (REACH) entrou em vigor em 1º de junho de 2007, substituindo diversas diretivas e regulamentos para um único sistema.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

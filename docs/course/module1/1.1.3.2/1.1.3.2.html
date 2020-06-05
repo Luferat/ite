@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.3.2 Outras Portas e Cabos</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Portas e Cabos Externos</h2>
+      </div>
+      <div id="content">
+          <p>As portas de entrada/saída (I/O) de um computador conectam os dispositivos periféricos, como impressoras, scanners e unidades portáteis. As seguintes portas e cabos são utilizadas com frequência:</p>
+          <p><ul>
+              <li>Serial</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>USB</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>FireWire</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Paralela</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>SCSI</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>PS/2</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Áudio</li>
+            </ul>
+          </p>
+          <p>Portas e Cabos Seriais</p>
+          <p>A porta serial pode utilizar um conector DB-9, conforme apresentado na Figura 1, ou um conector DB-25 macho. As portas seriais transmitem apenas um bit de dados por vez. Para conectar um dispositivo serial, como um modem ou impressora, você deverá utilizar um cabo serial. O cabo serial possui o comprimento máximo de 50 pés (15,2m).</p>
+          <p>Portas e Cabos de Modem</p>
+          <p>O cabo serial também pode ser utilizado para conectar um modem externo a um computador, sendo que um cabo de telefone conecta o modem a uma tomada de telefone. Este cabo utiliza o conector RJ-11, conforme apresentado na Figura 2. A conexão de modem através de um cabo de serial e um cabo telefônico é apresentada na Figura 3.</p>
+          <p>Portas e Cabos USB</p>
+          <p>O USB (Universal Serial Bus) é uma interface padrão que conecta dispositivos periféricos a um computador. Originalmente, ele foi projetado para substituir as conexões seriais e paralelas. Os dispositivos USB são hot-swappable, o que significa que os usuários podem conectá-los e desconectá-los com o computador ligado. A conexão USB pode ser encontrada em computadores, câmeras, impressoras, scanners, dispositivos de armazenamento e em muitos outros dispositivos eletrônicos. Um hub USB pode conectar vários dispositivos USB. Uma única porta USB de um computador pode suportar até 127 dispositivos conectados através do uso de vários hubs USB. Alguns dispositivos também podem ser alimentados através da porta USB, eliminando assim a necessidade de uma fonte de energia externa. A Figura 4 apresenta o cabo e o conector USB.</p>
+          <p>O USB 1.1 permite taxas de transmissão de até 12 Mb/s em modo full-speed e 1,5 Mb/s no modo low-speed. O cabo USB 1.1 tem um comprimento máximo de 9,8 pés (3 m). O USB 2.0 permite uma taxa de transmissão de até 480 Mb/s. O cabo USB 2.0 tem um comprimento máximo de 16,4 pés (5 m). A taxa de transmissão de um dispositivo USB é limitada pela velocidade suportada pela porta USB. A USB 3.0 permite uma taxa de transmissão de até 5 Gb/s. A USB 3.0 é compatível com as versões USB anteriores. O cabo USB 3.0 não tem um comprimento máximo definido, apesar disso, 9.8 pés (3m) costuma ser um tamanho aceitável para estes cabos.</p>
+          <p>Portas e Cabos FireWire</p>
+          <p>O FireWire é uma interface de alta velocidade, hot-swappable, que conecta dispositivos periféricos em um computador. Uma única porta FireWire pode suportar até 63 dispositivos. Alguns dispositivos também podem ser alimentados através da porta FireWire, eliminando assim a necessidade de uma fonte de energia externa. O FireWire utiliza o padrão IEEE 1.394, também conhecido por i.Link. O IEEE (Institute of Electrical and Electronics Engineers) define os padrões e normas das tecnologias. A Figura 5 apresenta os cabos e conectores FireWire.</p>
+          <p>O padrão IEEE 1394a suporta taxas de transmissão de dados de até 400Mb/s para um cabo de até 15 pés (4,5 m). Este padrão utiliza um conector de 4 ou 6 pinos. Os padrões IEEE 1394b e IEEE 1394c permitem uma maior variedade de conexões, incluindo cabos UTP CAT5 e fibra óptica. Dependendo dos meios utilizados, a taxa de dados suportada é de até 3,2 Gb/s para a distância de até 328 pés (100 m).</p>
+          <p>Portas e Cabos Paralelos</p>
+          <p>A porta paralela utiliza um conector padrão A DB-25 fêmea. O conexão paralela de uma impressora utiliza o conector Centronics padrão B de 36 pinos . Algumas impressoras mais atuais utilizam o conector alta densidade padrão C de 36 pinos. As portas paralelas utilizam o padrão IEEE 1284 e podem transmitir 8 bits de dados ao mesmo tempo. Para conectar um dispositivo paralelo, como uma impressora, você deverá utilizar o cabo paralelo. O cabo paralelo, conforme exibido na Figura 6, tem um comprimento máximo de 15 pés (4,5 m).</p>
+          <p>Cabos de Dados eSATA</p>
+          <p>Os cabos eSATA conectam dispositivos SATA à uma interface eSATA, utilizando um cabo de dados de 7 pinos. Este cabo não fornece alimentação para discos externos SATA. Portanto, é necessário um cabo de alimentação separado para fornecer energia ao disco.</p>
+          <p>Portas e Cabos SCSI</p>
+          <p>Uma porta SCSI pode transmitir dados em paralelo com taxas superiores a 320 Mb/s, além de suportar até 15 dispositivos conectados. Caso um único dispositivo esteja conectado em uma porta SCSI, o cabo poderá ter até 80 pés de comprimento (24,4 m). Caso múltiplos dispositivos estejam conectados a uma porta SCSI, o cabo poderá ter até 40 pés (12,2 m). Uma porta SCSI pode possuir conectores de 25, 50 ou 80 pinos, conforme apresentado na Figura 7.</p>
+          <p>NOTA: um dispositivo SCSI deve ser instalado no final da correte SCSI (SCSI chain). Verifique os procedimentos de terminação no manul do dispositivo.</p>
+          <p>ATENÇÃO: Alguns conectores SCSI lembram os conectores paralelos. Tenha cuidado para não conectar o cabo na porta errada. A tensão utilizada no conector SCSI pode danificar a interface paralela. Os conectores SCSI devem ser claramente identificados.</p>
+          <p>Portas e Cabos de Rede</p>
+          <p>Uma interface de rede, também conhecido como porta RJ-45, possui oito pinos e é utilizada para conectar um computador à rede. A velocidade da conexão depende do tipo de interface de rede. O padrão Ethernet possuí uma taxa de transmissão de até 10 Mb/s, o Fast Ethernet até 100 Mb/s e o Gigabit Ethernet 1000 Mb/s. O comprimento máximo de um cabo de rede é de 328 pés (100 m). Um conector de rede é exibido na Figura 8.</p>
+          <p>Portas PS/2</p>
+          <p>A porta PS/2 é utilizada para conectar um teclado ou mouse em um computador. A porta PS/2 possui um conector mini-DIN fêmea de 6 pinos. Os conectores do teclado e mouse normalmente possuem cores diferentes, conforme apresentado na Figura 9. Caso as portas não estiverem identificadas por cores, procure por uma pequena imagem de um teclado ou mouse para identificar a porta em questão.</p>
+          <p>Portas de Áudio</p>
+          <p>Este tipo de interface conecta dispositivos de áudio no computador. Algumas das seguintes interfaces de áudio são utilizadas com frequência, conforme apresentado na Figura 10:</p>
+          <p><ul>
+              <li>Line in - Utilizado para conectar uma origem externa, como um aparelho de som</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Microphone In - Utilizado para conectar um microfone</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Line out - Utilizado para conectar a caixa de som ou fone de ouvido</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sony/Philips Digital Interface Format (S/PDIF) - Utilizado para conectar o cabo coaxial usando o conectores RCA ou um cabo de fibra óptica com conectores TosLink para suportar áudio digital</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gameport/MIDI - Utilizado para conectar um joystick ou um dispositivo de interface MIDI</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,29 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+table { width:100% !important;border-collapse:collapse;}
+table tbody tr { border-color:#DAE17A;}
+table tbody tr td { border-color:#a2aa23; font-size:12px !important; border:3px solid #DAE17A; border-collapse:collapse;padding:0px;}
+table tbody tr td b { font-size:12px !important; font-weight:bold !important; border-collapse:collapse;}
+table tbody tr td font { border-collapse: collapse;display: block;font-size: 12px !important;margin-left: 4px !important;}
+.table_font { border-color:#a2aa23; font-size:12px !important; font-weight:bold !important; width:33% !important;}
+
+.col_1 {line-height: 0; /*display:block;*/ margin-top:-11px; padding-bottom:5px;}
+#ID_table {box-shadow: 0 0 2px 2px #999999 !important; width:360px !important; height:299px !important; border-radius:5px !important;padding:0px;}
+.liner {line-height:1 !important;height: 0px !important; margin:0px; padding:0px;}
+.liner_top {line-height:0 !important;height: 0px !important; margin:0px; padding:1.5px 0 1.5px 0;}
+li{margin-left:1.2em !important;font-size:12px !important;}
+.title{line-height:0px;margin:0px;height:0px;padding:10px 0px 10px;}
+.title b{font-size:14px !important; font-weight:bold !important; border-collapse:collapse;line-height:0px;padding:0px;margin:0px;height:0px;}
+ @media screen and (-webkit-min-device-pixel-ratio:0) {#ID_table {margin-left:30px;margin-top:-25px;box-shadow: 0 0 2px 2px #999999 !important; width:360px !important; height:349px !important; border-radius:5px !important;padding:0px;}}

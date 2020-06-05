@@ -1,0 +1,23 @@
+﻿<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>Nível Estimado de Tinta da Impressora</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b>Nível Estimado de Tinta</b>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[<b>Serviços do Dispositivo</b>]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[<b>Informações do Dispositivo</b>]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Nível estimado. O nível verdadeiro pode variar.]]></text>
+</component>
+
+</textcomponents>

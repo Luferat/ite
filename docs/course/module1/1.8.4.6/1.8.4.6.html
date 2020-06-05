@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.4.6 Network Shares and Mapping Drives</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>OS Configurations</h2>
+    </div>
+    <div id="content">
+          <p>After the network has been set up and tested, you can map the network drives. Mapping a local drive letter (A to Z) is a useful way to share a single file, specific folders, or an entire drive between different operating systems over a network. Mapping a drive allows you to use shared resources as if they were a local hard drive. For example, if Windows 7 and Windows Vista or Windows XP are being used in the same workgroup, a homegroup cannot be set up. However, drives can be mapped to shared resources in the same workgroup.</p>
+          <p>
+            <b>Network File Sharing</b>
+            <br/>First determine which resources will be shared over the network and the type of permissions users will have to the resources. Permissions define the type of access a user has to a file or folder.</p>
+          <p>
+            <ul>
+              <li>
+                <b>Read</b> – The user can view the file and subfolder names, navigate to subfolders, view data in files, and run program files.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Change</b> – In addition to Read permissions, the user can add files and subfolders, change the data in files, and delete subfolders and files.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Full Control</b> – In addition to Change and Read permissions, the user can change the permission of files and folders in an NTFS partition and take ownership of files and folders.</li>
+            </ul>
+          </p>
+          <p>Copy or move the resources to a share folder.</p>
+          <p>To share resources in Windows 7 and Windows Vista, use the following path:</p>
+          <p>Right-click the folder <b>></b><b>Properties ></b><b>Advanced Sharing > </b>select <b>Share this folder > Permissions</b>. Identify who has access to the folder and which permissions. Figure 1 shows the permissions window of a shared folder.</p>
+          <p>To share resources in Windows XP, use the following path:</p>
+          <p>Right-click the folder <b>></b> select <b>Sharing and Security > Share this folder</b>. Identify who has access to the folder and which permissions.</p>
+          <p>
+            <br/>Network Drive MappingTo map a network drive to a shared folder, use the following path:</p>
+          <p>
+            <b>Start ></b> right-click <b>Computer > Map network drive</b>. Locate the shared folder over the network and assign a drive letter, as shown in Figure 2.</p>
+          <p>Windows 7 is limited to a maximum of 20 simultaneous file-sharing connections. Windows Vista Business and Windows XP Professional are limited to a maximum of 10 simultaneous file-sharing connections. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

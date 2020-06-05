@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.1.4 Usuários e Senhas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Políticas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>O username e a senha são duas informações que o usuário precisa para fazer logon em um computador. Quando um intruso conhece uma destas informações, ele precisa apenas crackear ou descobrir a outra para acessar o sistema do computador. É importante alterar o nome de usuário padrão de contas como administrador ou convidado, pois estes nomes são amplamente conhecidos. Alguns equipamentos de redes domésticas possuem um username padrão que não pode ser alterado. Sempre que possível, modifique o username padrão de todos os usuários do computadores e equipamentos de rede.</p>
+          <p>O administrador do sistema normalmente define um padrão de nomenclatura para a criação de usernames e logins de rede. Um exemplo comum de um username é utilizar a primeira letra do nome da pessoa e, em seguida, o sobrenome. Utilize um padrão de nomenclatura simples para que as pessoas não tenham dificuldades em lembrá-lo. Usernames, assim como as senhas, são informações importantes e não devem ser revelados.</p>
+          <p>Senhas</p>
+          <p>A diretriz relacionada a senha é um componente importante em uma política de segurança. Qualquer usuário que faz login em um computador ou conecta-se em um recurso de rede deve possuir uma senha. As senhas ajudam a prevenir o roubo de dados e atos maliciosos. As senhas também ajudam a assegurar que o log dos eventos seja valido, garantindo que o usuário exibido é referente a pessoa em questão.</p>
+          <p>Os logins de rede auxiliam durante o processo de auditoria (logging) e ajudam a prevenir ou permitir acesso a determinados recursos. Caso você não consiga fazer logon em um computador, não use o username e senha de outro usuário, mesmo que eles pertençam ao seu colega de trabalho ou amigo, pois isso pode invalidar o logging. Em vez disso, informe ao administrador da rede sobre todos os seus problemas de autenticação identificados ao tentar acessar o computador ou os recursos da rede.</p>
+          <p>O uso de informações de login criptografadas em computadores que fazem acesso à rede deve ser um requisito mínimo para qualquer organização. Software malicioso pode monitorar a rede e registrar as senhas em texto puro. Caso as senhas sejam criptografadas, os invasores devem decifrar a criptografia para aprender as senhas.</p>
+          <p>Os invasores podem obter acesso a dados de computadores desprotegidos. A proteção por senha pode impedir o acesso não autorizado ao conteúdo. Todos os computadores devem ser protegidos por senhas. Os três níveis de proteção por senha recomendados são:</p>
+          <p><ul>
+              <li>BIOS - Evita que o sistema operacional de inicialização e as configurações da BIOS sejam alteradas sem o uso da senha correta, conforme apresentado na Figura 1.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Login - Impede o acesso não autorizado ao computador local, conforme apresentado na Figura 2.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede - Impede o acesso aos recursos da rede por pessoas não autorizadas, conforme apresentado na Figura 3.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

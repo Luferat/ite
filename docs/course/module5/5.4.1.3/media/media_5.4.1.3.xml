@@ -1,0 +1,41 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Requisitos de Sistema do Virtual PC</b>]]></text>
+</component>
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+         <tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr> 
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Processador</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><li>1 GHz</li>
+          <li>Processor 32-bit/64-bit</li></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Espaço em Disco</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>15 GB para cada S.O. Virtual</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Memória</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>2GB</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Sistemas Operacionais Suportados</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><li>Windows 7 Home Basic</li>
+          <li>Windows 7 Home Premium</li>
+          <li>Windows 7 Enterprise</li>
+          <li>Windows 7 Professional</li>
+          <li>Windows 7 Ultimate</li></font></td>
+        </tr>
+       <tr>
+      <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Sistemas Operacionais com Suporte de Convidados</font></td>
+      <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><li>Windows XP</li>
+      <li>Windows Vista</li>
+      <li>Windows 7</li></font></td></tr>
+    </table>
+]]>
+</text>
+</component>
+
+</textcomponents>

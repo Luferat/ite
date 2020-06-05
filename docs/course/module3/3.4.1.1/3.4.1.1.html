@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.4.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Este capítulo abordou com detalhes os passos utilizados para montar um computador e inicializar o sistema operacional pela primeira vez. Estes são alguns pontos importantes a serem lembrados:</p>
+          <p><ul>
+              <li>Os gabinetes do computador possuem uma variedade de tamanhos e configurações. Muitos componentes de um computador devem ser compatíveis com o formato de fábrica do gabinete.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A CPU é instalada na placa-mãe juntamente com um dissipador de calor e uma ventoinha.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A RAM é instalada nos slots de memória na placa-mãe.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placas de expansão são instaladas nos slots de expansão PCI e PCIe na placa-mãe.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os discos rígidos são instalados em baias de 3,5 polegadas (8,9 centímetros) localizadas dentro do gabinete.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As unidades ópticas são instaladas em baias de 5,25 polegadas (13,34 centímetros) que podem ser acessadas ​​pelo lado de fora do gabinete.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os drives de disquete são instalados em baias de 3,5 polegadas (8,9 centímetros) que podem ser acessadas pelo lado de fora do gabinete.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabos de alimentação são conectados em todas as unidades e na placa-mãe.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabos de dados internos enviam informações para todas as unidades.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabos externos conectam dispositivos periféricos ao computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Códigos de bip identificam quando há falhas de hardware.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A BIOS exibe informações sobre os componentes do computador e permite que o usuário altere as configurações do sistema.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os componentes do computador requerem atualizações periódicas e peças de reposição.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Discos rígidos adicionais podem fornecer tolerância a falhas e a capacidade de instalar outros sistemas operacionais.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

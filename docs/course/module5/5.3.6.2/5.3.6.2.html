@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.6.2 Utilitários Exclusivos do Windows Vista</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle Exclusivos para Versões Específicas do Windows</h2>
+      </div>
+      <div id="content">
+          <p>Uma série de utilitários do Painel de Controle são exclusivos para o Windows Vista, incluindo os seguintes:</p>
+          <p><ul>
+              <li>Configurações do Tablet PC</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Canetas e Dispositivos de Entrada</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Arquivos Offline</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Relatórios de Problemas e Soluções</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressoras</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Configurações do Tablet PC</p>
+          <p>O utilitário Configurações do Tablet PC, mostrado na Imagem 1, permite que você personalize a funcionalidade do seu tablet PC. Para acessar o utilitário Configurações do Tablet PC, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Configurações do Tablet PC</p>
+          <p></p>
+          <p>Canetas e Dispositivos de Entrada</p>
+          <p>O utilitário Caneta e Dispositivos de Entrada, mostrado na Imagem 2, permite que você defina as configurações para as canetas digitais e outros dispositivos de entrada. Para acessar o utilitário Caneta e Dispositivos de Entrada, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Caneta e Dispositivos de Entrada</p>
+          <p></p>
+          <p>Arquivos Offline</p>
+          <p>O utilitário Arquivos Offline, mostrado na Imagem 3, permite que você selecione os arquivos e pastas compartilhadas a partir de uma rede a para serem armazenado em um computador. Esses arquivos estarão disponíveis depois que o computador estiver desconectado da rede. Quando você se reconectar à rede, as mudanças que fez offline serão aplicadas aos arquivos originais na rede.</p>
+          <p>Para configurar um computador para usar arquivos e pastas off-line, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Arquivos Offline> clique na guia Geral> clique em Ativar Arquivos Offline</p>
+          <p>Para ver uma lista de todos os arquivos off-line, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Arquivos Offline> clique na guia Geral> clique em Exibir arquivos offline</p>
+          <p>Relatórios de Problemas e Soluções</p>
+          <p>O utilitário Relatórios de Problemas e Soluções, mostrado na Imagem 4, mantém um registro de problemas ocorridos no sistema e soluções que foram fornecidas pela Microsoft. Este utilitário foi transferido para a Central de Ações no Windows 7.</p>
+          <p></p>
+          <p>Para acessar o utilitário Relatórios de Problemas e Soluções, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Relatórios de Problemas e Soluções</p>
+          <p></p>
+          <p>Impressoras</p>
+          <p>O utilitário Impressoras, como mostrado na Imagem 5, permite que você adicione, remova e configure impressoras. Para acessar o utilitário Impressoras, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Impressoras</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

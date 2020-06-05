@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.2.4 Fiber-Optic Cables</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Physical Components of a Network</h1>
+      <h2>Cables and Connectors</h2>
+    </div>
+    <div id="content">
+          <p>An optical fiber is a glass or plastic conductor that transmits information using light. Fiber-optic cable has one or more optical fibers enclosed in a sheath or jacket, shown in Figure 1. Because it uses light to transmit signals, fiber-optic cable is not affected by EMI or RFI. All signals are converted to light pulses as they enter the cable, and converted back into electrical signals when they leave it. This means that fiber-optic cable can deliver signals that are clearer, can go farther, and have greater bandwidth than cable made of copper or other metals.</p>
+          <p>Fiber-optic cable can reach distances of several miles or kilometers before the signal needs to be regenerated. Either lasers or light emitting diodes (LEDs) generate the light pulses that are used to represent the transmitted data as bits on the media. Bandwidth reaches speeds of 100 Gbps and increases as standards are developed and adopted. </p>
+          <p></p>
+          <p>The speed of data transmitted over fiber-optic cable is limited by the devices connected to the cable, as well as impurities within the fiber cable. Electronic semiconductor devices called photodiodes detect the light pulses and convert them to voltages that can then be reconstructed into data frames. </p>
+          <p></p>
+          <p>Fiber-optic cable is usually more expensive to use than copper cable, and the connectors are more costly and harder to assemble. Common connectors for fiber-optic networks are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>SC </b>– 2.5 mm ferrule that uses a snap-in connector that latches with a simple push-pull motion</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ST </b>– 2.5 mm ferrule that uses a bayonet mount connector that is spring loaded</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>LC </b>– 1.25 mm ferrule that uses a snap-in connector that latches with a simple push-pull motion</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>These three types of fiber-optic connectors are half-duplex, which allows data to flow in only one direction. Therefore, two cables are needed to provide data flow in both directions.</p>
+          <p></p>
+          <p>These are the two types of glass fiber-optic cable:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Multimode</b> – Cable that has a thicker core than single-mode cable. It is easier to make, can use simpler light sources (LEDs), and works well over distances up to 2 km (6,560 ft). It often uses LEDs as the light source within LANs or distances of 200 meters within a campus network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Single-mode</b> – Cable that has a very thin core. It is harder to make, uses lasers as a light source, and can transmit signals up to 100 km, (62.14 mi). It often uses lasers as the light source within campus backbones for distances of several thousand meters,</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

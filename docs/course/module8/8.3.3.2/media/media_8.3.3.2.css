@@ -1,0 +1,32 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+	position:absolute !important;
+   z-index:1 !important;
+}
+#mainDiv {
+    height: 400px;
+    width: 440px;
+    position:absolute;
+    top:0px;
+}
+
+#ID_s2_term06,#ID_s2_term07{ border: 2px solid #fff;}
+
+#tick0{position:absolute;top:10px;}
+#tick1{position:absolute;top:14px;}
+#tick2{position:absolute;top:14px;}
+#ID_FEEDBACK{cursor:pointer !important;}
+#ID_CHECK{font-weight:bold;font-size:10px;}
+#button1 div{ margin-left:-8px;}
+#button0 div{ margin-left:-8px; }

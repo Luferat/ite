@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.3.4 Basic Network Setup</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Wireless and Wired Router Configurations</h2>
+    </div>
+    <div id="content">
+          <p>When logged in, the setup screen opens, as shown in Figure 1. The setup screen has tabs that help you configure the router. You must click <b>Save Settings</b> at the bottom of each screen after making any changes. </p>
+          <p>All routers designed for a home or small business are preconfigured with basic settings. It is good practice to make changes to the following default settings.</p>
+          <p>
+            <ul>
+              <li>
+                <b>Router Name</b> – Provide a name that can be easily recognized. This name is displayed when viewing networked devices from an operating system.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Network Device Access Permissions</b> – Many network devices built by a specific manufacturer have the same default username and password for accessing the device configuration screen. If left unchanged, unauthorized users can easily log on to the device and modify the settings. When first connecting to the network device, change the default username and password. On some devices, you can only the password. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Basic QoS </b>– The E2500 router supports QoS for applications, online gaming, VoIP, and video streaming.</li>
+            </ul>
+          </p>
+          <p>When using the configuration screens of the E2500 router, click the Help tab to see additional information about a tab. For information beyond what is shown on the help screen, consult the documentation. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

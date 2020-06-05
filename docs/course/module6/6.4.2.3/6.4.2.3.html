@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.2.3 Cabo de Par Trançado</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Cabos e Conectores</h2>
+      </div>
+      <div id="content">
+          <p>O par trançado é um tipo de cabeamento de cobre usado para comunicações telefônicas e na maioria das redes Ethernet. Um par de fios forma um circuito que pode transmitir os dados. O par é torcido para proporcionar proteção contra crosstalk, que é o ruído gerado pelos pares adjacentes de fios no cabo. Os pares de fios de cobre são encerrados em um isolamento de plástico com um código de cores e trançados. Um revestimento externo protege os pares trançados. Um cabo de par trançado é exibido na Imagem 1.</p>
+          <p>Quando a eletricidade flui através de um fio de cobre, um campo magnético é criado em torno do mesmo. Um circuito possui dois fios. Os dois fios de um circuito possuem campos magnéticos com cargas opostas. Quando os dois fios do circuito estão ao lado uns dos outros, os campos magnéticos se anulam mutuamente. Isto é o chamado efeito de cancelamento. Sem o efeito de cancelamento, as comunicações de rede podem se tornar lentas devido à interferência causada pelos campos magnéticos.</p>
+          <p>Existem dois tipos básicos de cabos par trançado:</p>
+          <p><ul>
+              <li>Par trançado não blindado (UTP - Unshielded twisted-pair) - Cabo que tem dois ou quatro pares de fios. Este tipo de cabo depende, exclusivamente, do efeito de cancelamento produzido pelos pares trançados de fios para limitar a degradação do sinal causada por interferência eletromagnética (EMI) e interferência de rádio freqüência (RFI). O cabeamento UTP é o mais comumente usado em redes. Eles possuem um comprimento máximo de até 330 pés (100 m.).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Par trançado blindado (STP - Shielded twisted-pair) - Cada par de fios é envolvido por uma folha metálica que protege melhor os fios de ruído. Os quatro pares de fios são envolvidos por uma trança metálica total ou papel alumínio. O STP reduz o ruído elétrico dentro do cabo. Ele também reduz a EMI e RFI do lado de fora do cabo.</li>
+            </ul>
+          </p>
+          <p>Embora o STP impeça a interferência melhor que o UTP, o STP é mais caro devido à blindagem extra e mais difícil de instalar por sua espessura. Além disso, a blindagem metálica deve ser aterrada em ambas as extremidades. Se for aterrado de maneira inadequada, o escudo funciona como uma antena que irá captar sinais indesejados. O STP é utilizado principalmente fora da América do Norte.</p>
+          <p>Classificação das Categorias</p>
+          <p>Os cabos de par trançado vêm em várias categorias (Cat). Estas categorias são baseadas no número de fios do cabo e o número de voltas nesses fios.</p>
+          <p>O tamanho da rede determina o tipo de cabo de rede que será utilizado. A maioria das redes hoje estão ligados através do cabo de cobre de par trançado. As características do cabo de par trançado são apresentadas na Imagem 2.</p>
+          <p>Edifícios de escritórios novos ou recentes, muitas vezes têm algum tipo de cabeamento UTP que conecta todos os escritórios a um ponto central, chamado de centro de distribuição principal (MDF). A limitação da distância do cabeamento UTP usado para dados é 330 pés (100 m.). Os cabos que excedem essa limitação de distância precisam de um switch, repetidor ou hub para estender a conexão com o MDF.</p>
+          <p>Cabos que estão instalados dentro das paredes ou tetos de edifícios devem ser plenum. Um cabo plenum é aquele que é seguro para a instalação entre um teto rebaixado e o teto estrutural de um edifício, onde a circulação de ar ocorre. Cabos Plenum são feitos de um material plástico especial que retarda o fogo e produz menos fumaça do que outros tipos de cabos.</p>
+          <p>NOTA: Os cabos Cat 3 utilizam um conector de 6 pinos RJ-11, e todos os demais cabos de par trançado usam um conector de 8 pinos RJ-45, conforme apresentado na Imagem 3.</p>
+          <p>Esquemas de fios</p>
+          <p>Existem dois padrões ou esquemas de fios diferentes, chamados T568A e T568B. Cada esquema de fios define o sistema de pinos ou a ordem das ligações dos fios, na extremidade do cabo. Os dois esquemas são semelhantes, exceto que dois dos quatro pares são invertidos na ordem de terminação.</p>
+          <p>Em uma instalação de rede, um dos dois esquemas de fios (T568A ou T568B) deve ser escolhido e seguido. É importante que o mesmo esquema de fiação seja utilizado para todo o projeto. Se estiver trabalhando em uma rede já existente, use o esquema existente.</p>
+          <p>Usando os esquemas T568A ou T568B, dois tipos de cabos podem ser criados: um cabo straight-through(direto) e um cabo crossover. Estes dois tipos de cabos encontram-se em instalações de dados.</p>
+          <p>Cabos straight-through (direto)</p>
+          <p>O cabo direto é o tipo de cabo mais comum. Ele mapeia um fio com os mesmos pinos em ambas as extremidades do cabo. Em outras palavras, se em uma extremidade do cabo está o padrão T568A, ele também estará na outra extremidade. Se em uma extremidade do cabo tem o padrão T568B, esse mesmo padrão estará na outra ponta. Isto significa que a ordem das ligações (a pinagem) para cada cor é exatamente o mesmo em ambas as extremidades.</p>
+          <p>Dois dispositivos conectados diretamente e utilizando diferentes pinos para transmissão e recepção são conhecidos como dispositivos unlike. Eles exigem um cabo straight-through para troca de dados. Há dois dispositivos unlike (diferentes) que exigem o cabo direto, tal como a conexão entre Switch - Roteador e HUB - PC.</p>
+          <p>Cabo Crossover</p>
+          <p>Um cabo crossover utiliza ambos os esquemas. O T568A em uma extremidade e o T568B na outra extremidade do mesmo cabo. Isto significa que a ordem de ligação em uma das extremidades do cabo não corresponde à ordem das ligações da outra extremidade.</p>
+          <p>Dispositivos que estão conectados diretamente e usam os mesmos pinos para transmitir e receber, são conhecidos como dispositivos like(semelhantes). Eles exigem a utilização de um cabo cross para a troca de dados. Dispositivos semelhantes que requerem um cabo crossover incluem:</p>
+          <p><ul>
+              <li>Switch - Switch</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Switch - Hub</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Hub - Hub</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Roteador - Roteador</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>PC - Roteador</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>PC - PC</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Se o tipo de cabo utilizado for incorreto, a ligação entre os dispositivos de rede não funcionará.</p>
+          <p>Alguns dispositivos podem detectar automaticamente quais os pinos são usados ​​para transmitir e receber e ajustar suas conexões internas em conformidade.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

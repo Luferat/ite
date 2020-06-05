@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.2.1 Informações de Componentes da BIOS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Inicializando o Computador</h1>
+        <h2>Configuração da BIOS</h2>
+      </div>
+      <div id="content">
+          <p>Um técnico pode utilizar as informações exibidas na BIOS para ter conhecimento sobre quais os componentes que estão instalados no computador e alguns de seus atributos. Essas informações podem ser útil na solução de problemas de um hardware que não está funcionando corretamente e também para determinar as opções de atualização. Essas são algumas das informações de componentes exibidas na BIOS:</p>
+          <p><ul>
+              <li>CPU - Exibe o fabricante e a velocidade da CPU. O número de processadores instalados também é exibido.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>RAM - Exibe o fabricante e a velocidade da memória RAM. O número de slots e em quais slots os módulos de memória RAM estão instalados também podem ser visualizados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Disco Rígido - Exibe o fabricante, o tamanho e o tipo dos discos rígidos. O tipo e o número de controladores de disco rígido também pode ser exibido.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Drive Óptico - Exibe o fabricante e o tipo das unidades ópticas.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

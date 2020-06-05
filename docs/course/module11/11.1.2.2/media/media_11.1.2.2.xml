@@ -1,0 +1,45 @@
+﻿<textcomponents>
+
+
+<!--slide 1-->
+<component id='ID_s1_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DAE17A' colspan='2'><font size='+2' color='#393536'><b class="font-forteen">Como colocar um cliente em espera</b></font></td>
+	</tr>
+	<tr class="liner_top">
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='2' color='#DAE17A'><span style="color:#DAE17A; display:block; margin-top:-6px;">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23'><font color='#FFFFFF'><b>O que fazer</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#FFFFFF'><b>O que não fazer</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Deixe o cliente terminar de falar.</li>
+		<li>Explique que você vai ter que colocá-lo em espera e o por quê.</li><li>Pergunte se está tudo certo para colocar o cliente em espera.</li><li>Uma vez dado o consentimento, diga ao cliente que você vai ser apenas alguns minutos.</li></textformat></font></td>
+		<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Interromper.</li><li>Colocar o cliente em espera repentinamente.</li><li>Colocá-lo em espera sem uma explicação e sem o consentimento do cliente.</li></textformat></font></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!--slide 2-->
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DAE17A' colspan='2' ><font size='+2' color='#393536'><b class="font-forteen">Como transferir uma chamada</b></font></td>
+	</tr>
+	<tr class="liner_top">
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='2' color='#DAE17A'><span style="color:#DAE17A; display:block; margin-top:-6px;">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' class="width"><font color='#FFFFFF'><b>O que fazer</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#FFFFFF'><b>O que não fazer</b></font></td>
+	</tr>
+	<tr>
+		  <td bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Deixe o cliente terminar de falar.</li><li>Explique que você vai ter que transferir a chamada, diga ao cliente a quem, e por quê.</li><li>Diga ao cliente o número que você está transferindo o cliente. </span><span id="spacer"> (Por exemplo, nº 142)</span></li><li>Pergunte se está tudo certo para transferir a chamada agora.</li><li>Uma vez dado o consentimento, inicie a transferência.</li><li>Diga ao novo técnico quem você é, o número de protocolo, e o nome do cliente.</li></textformat></font></td>
+		<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Interromper.</li><li>Transferir a chamada repentinamente.</li><li>Transferir sem uma explicação e o consentimento do cliente.</li><li>Transferir sem informar ao novo técnico.</li></textformat></font></td>
+	</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

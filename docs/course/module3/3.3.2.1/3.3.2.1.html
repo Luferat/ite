@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.2.1 Atualização de Discos Rígidos e RAID</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Atualizando e Configurando um PC</h1>
+        <h2>Dispositivos de Armazenamento</h2>
+      </div>
+      <div id="content">
+          <p>Em vez de comprar um novo computador para obter maior velocidade de acesso e espaço de armazenamento, você pode considerar adicionar um outro disco rígido. Há várias razões para a instalação de uma unidade adicional:</p>
+          <p><ul>
+              <li>Instalar um segundo sistema operacional</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fornecer espaço de armazenamento adicional</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fornecer um disco rígido mais rápido</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Armazena o arquivo de paginação (swap)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fazer backup do disco rígido original</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Aumentar a tolerância a falhas</li>
+            </ul>
+          </p>
+          <p>Quando duas unidades de disco rígido PATA são conectadas no mesmo cabo de dados, uma unidade deve ser escolhida como a unidade principal (master), e outra unidade deve ser escolhida como unidade escravo (slave). Isso permite ao computador comunicar-se com ambas as unidades individualmente. Conforme apresentado na Figura 1, os jumpers estão localizados na parte traseira do HD e pode configurar um disco rígido para ser uma unidade autônoma, master ou slave. Algumas unidades podem ser jumpeadas através do Cable Select (CS). A definição de CS permite a BIOS configurar automaticamente as unidades mestre e escravo de acordo com a ordem em que elas estão ligadas no cabo. Consulte o diagrama ou manual do disco rígido para verificar a configuração de jumpers correta.</p>
+          <p>Cada unidade de disco rígido SATA tem seu próprio cabo de dados e, portanto, não existe uma relação mestre-escravo entre as unidades.</p>
+          <p>O Redundant Array of Independent Disks (RAID) pode fornecer proteção de dados ou aumentar o desempenho quando vários discos rígidos são utilizados, conforme apresentado na Figura 2. O RAID requer dois ou mais discos rígidos. Você pode instalar o RAID usando hardware ou software. As instalações de hardware são geralmente mais confiável, porém são mais caras. Em uma implementação de hardware, um processador dedicado em uma placa de RAID ou na placa-mãe, fazem os cálculos necessários para executar as funções especiais de armazenamento em vários discos. As instalações de software são criadas e gerenciadas por alguns sistemas operacionais. É importante entender o custo, desempenho e confiabilidade de cada configuração RAID.</p>
+          <p>Depois de selecionar o disco rígido apropriado para o computador, siga estas diretrizes gerais durante a instalação:</p>
+          <p>Passo 1. Coloque o disco rígido em uma baia vazia e aperte os parafusos para fixá-lo.</p>
+          <p>Passo 2. Configure o disco rígido PATA como master, slave ou auto-detect. Se você tiver um disco rígido SCSI, defina o número de identificação e encerre a cadeia SCSI.</p>
+          <p>Passo 3. Conecte o cabo de alimentação e o cabo de dados no disco rígido. Certifique-se de que o pino 1 do cabo de dados PATA está bem alinhado.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

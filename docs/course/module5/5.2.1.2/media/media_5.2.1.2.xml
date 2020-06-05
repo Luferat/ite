@@ -1,0 +1,56 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Comparação de FAT32 e NTFS </b>]]></text>
+</component>
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+	<tr>
+		<td colspan='4' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	<tr>
+		<td bgcolor='#A2AA23' width="90" valign="top"> </td>
+		<td bgcolor='#A2AA23' width="90" valign="top" ><font  color='#FFFFFF'><b>FAT32</b></font></td>
+		<td bgcolor='#A2AA23' width="90" valign="top" ><font  color='#FFFFFF'><b>NTFS</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>exFAT (FAT64)</b></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Segurança</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Baixa segurança</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Níveis de permissões para arquivos e pastas criptografados</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>exFAT pode suportar listas de controle de acesso (ACLs) que definem as permissões de acesso do usuário</font></td>		
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Compatibilidade</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Compatível com Windows </font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Compatível com Windows</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Compatível com Windows XP com SP2 ou SP3, Windows Vista com SP1, Windows 7, Windows Server 2003 com SP2, Windows Server 2008 e Linux</font></td>		
+	</tr>
+	
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Tamanho de Arquivo</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Limite de 4 GB por arquivo e 32 GB por volume</br></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Limite de 16 TB por arquivo e 256 TB por volume</br> </font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Limite de 64 zetabytes (ZBs)por arquivo e 512 TB por volume</br></font></td>		
+	</tr>	
+
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Arquivos por Volume (Partição)</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>4.17 milhões</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>4.29 bilhões</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Máximo de 16 exabytes (EBs) </font></td>		
+	</tr>
+	</table>]]>
+</text>
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Nova partição para o Windows 7</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>Formatação Rápida vs Formatação Completa</b>]]></text>
+</component>
+
+</textcomponents>

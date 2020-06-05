@@ -1,0 +1,11 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>GUI do Android</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>GUI do iOS</b>]]></text>
+</component>
+ 
+</textcomponents>

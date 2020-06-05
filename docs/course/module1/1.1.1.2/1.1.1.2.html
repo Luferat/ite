@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.1.2 Fontes de Alimentação</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Gabinetes e Fontes de Alimentação</h2>
+      </div>
+      <div id="content">
+          <p>A fonte de alimentação deve fornecer energia suficiente para os componentes que estão instalados atualmente e permitir que outros componentes possam ser adicionados ao computador posteriormente. Se você optar por uma fonte que alimente apenas os componentes atuais, talvez seja necessário substituir a fonte de alimentação quando outros componentes forem adicionados.</p>
+          <p>A fonte de alimentação, mostrada na Figura 1, converte a corrente alternada (AC), que é fornecida da tomada da parede, em corrente continua (DC) e uma tensão mais baixa. A corrente continua é utilizada pelos componentes internos do computador. Existem três principais tamanhos de fontes de alimentação: Advanced Technology (AT), AT Extended (ATX) e ATX12V. O ATX12V é tamanho mais usado em computadores atualmente.</p>
+          <p>Um computador pode tolerar pequenas oscilações no fornecimento de energia, porém um desvio significativo pode fazer com que o fornecimento de energia falhe. Uma fonte de alimentação ininterrupta (UPS) pode proteger um computador de problemas causados ​​por oscilações de energia. O UPS utiliza um inversor de energia. O inversor de energia fornece energia AC para o computador a partir de uma bateria embutida, convertendo a corrente da bateria do UPS DC em AC. Esta bateria embutida é carregada continuamente via corrente contínua, que é convertida a partir da alimentação CA.</p>
+          <p>Conectores</p>
+          <p>A maioria dos conectores de hoje são chaveados. Um conector chaveado é projetado para ser inserido em uma única direção. Cada conector de energia usa uma tensão diferente, conforme apresentado na Figura 2. Diferentes adaptadores são usados ​​para ligar componentes específicos em vários conectores da placa-mãe.</p>
+          <p><ul>
+              <li>O conector Molex conecta os drives ópticos, discos rígidos ou outros dispositivos que usam uma tecnologia mais antiga.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O conector Berg se conecta a uma unidade de disquete. O conector Berg é menor do que o conector Molex.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O conector SATA se conecta a uma unidade óptica ou um disco rígido. O conector SATA é mais largo e mais fino do que um conector Molex.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Um conector de 20 pinos ou 24 pinos se conecta à placa-mãe. O conector de 24 pinos possui duas fileiras de 12 pinos em cada, enquanto que o conector de 20 pinos tem duas fileiras de 10 pinos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Um conector auxiliar de 4 a 8 pinos possui duas fileiras de 2 ou 4 pinos que são utilizados para alimentar todas as áreas da placa-mãe. O conector de alimentação auxiliar possui o mesmo formato que o conector de alimentação principal, porém ele é menor. Ele também ser usado para ligar outros dispositivos dentro do computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Um conector de alimentação PCIe de 6 ou 8 pinos possui duas fileiras de 3 ou 4 pinos que alimentam outros componentes internos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As fontes de alimentação mais antigas usavam ​​dois conectores chamados de P8 e P9 para se conectar à placa-mãe. P8 e P9 eram conectores que não eram chaveados. Eles podiam ser instalados de forma inversa, prejudicando potencialmente a placa-mãe ou a fonte de alimentação. A instalação da fonte exigia que os conectores fossem alinhados, mantendo os fios pretos juntos no meio da sequência.</li>
+            </ul>
+          </p>
+          <p>NOTA: Se você tem estiver com dificuldade de inserir um conector, tente reposicionar-lo ou certifique-se de que não existem pinos tortos ou objetos estranhos no caminho. Se estiver difícil de encaixar o conector do cabo, algo está errado. Os cabos, conectores e componentes são projetados para se encaixarem perfeitamente. Nunca force um conector ou componente. Se um conector estiver ligado de forma incorreta, o mesmo poderá danificar o plugue e o conector. Leve o tempo necessário e certifique-se que você está lidando com o hardware corretamente.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

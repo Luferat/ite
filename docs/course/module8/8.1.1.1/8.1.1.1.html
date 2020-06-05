@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.1.1 Peças Não-Reparáveis em Campo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Visão Geral do Hardware de Dispositivos Móveis</h1>
+        <h2>Hardware de Dispositivos Móvies</h2>
+      </div>
+      <div id="content">
+          <p>Ao contrário dos laptops, dispositivos móveis não têm peças reparáveis em campo. Os dispositivos móveis consistem de vários componentes compactos integrados em uma única unidade. Quando um dispositivo móvel está com algum tipo de mau funcionamento, geralmente ele é enviado para o fabricante para realizar o reparo ou a substituição do mesmo. Se o dispositivo ainda está na garantia, muitas vezes ele pode ser devolvido no local de compra para efetuar a troca.</p>
+          <p>Dispositivos móveis quebrados muitas vezes devem ser devolvidos ao fabricante para reparo ou substituição. Há peças e instruções disponíveis em muitos sites para reparar dispositivos móveis, incluindo telas sensíveis ao toque, vidro frontal ou traseiro e baterias. Instalar peças de dispositivos de outros fabricantes anula a garantia de fábrica e pode danificar o aparelho. Por exemplo, a bateria de um iPhone, conforme mostrado na Imagem 1, não deve ser substituída por uma bateria que não vem da Apple. Se a bateria substituta não atender a especificação elétrica exata do telefone em que ela é instalada, o telefone pode entrar em curto-circuito ou sobrecarga, tornando-se inutilizável.</p>
+          <p>Não há peças reparáveis ​​campo para dispositivos móveis, mas há algumas partes dos dispositivos móveis que são substituíveis em campo:</p>
+          <p><ul>
+              <li>Bateria - A bateria de alguns dispositivos móveis pode ser substituída, conforme mostrado na Imagem 2.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cartão de memória - Muitos dispositivos móveis usam cartões de memória para aumentar a capacidade de armazenamento, conforme mostrado na Imagem 3.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Subscriber Identity Module Card (Cartão SIM) - Este pequeno cartão contém informações usadas para autenticar um dispositivo para serviços de telefonia e de dados móveis, como mostrado na Imagem 4. Cartões SIM também podem armazenar dados do usuário, como contatos e mensagens de texto.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

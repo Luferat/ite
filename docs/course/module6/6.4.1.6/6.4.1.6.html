@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.1.6 Firewalls de hardware</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Dispositivos de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Firewalls de hardware, como roteadores integrados, protegem os dados e os equipamentos em uma rede contra o acesso não autorizado. Um firewall de hardware é uma unidade independente, que reside entre duas ou mais redes, conforme apresentado na imagem. Ele não usa os recursos dos computadores que está protegendo, portanto, não há impacto sobre o desempenho de processamento.</p>
+          <p></p>
+          <p>Um firewall deve ser usado em conjunto com o software de segurança. Uma firewall reside entre duas ou mais redes e controla o tráfego entre elas, bem como ajuda a prevenir o acesso não autorizado. Firewalls usam várias técnicas para determinar o que é permitido ou negado no acessos a um segmento de rede.</p>
+          <p></p>
+          <p>As considerações ao selecionar um firewall de hardware incluem:</p>
+          <p><ul>
+              <li>Espaço - local disponível e uso de hardware dedicado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Custo - O custo inicial de atualizações de hardware e software pode ser caro</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Número de computadores - Vários computadores podem ser protegidos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Requisitos de desempenho - Pouco impacto no desempenho do computador</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NOTA: Em uma rede segura, se o desempenho do computador não é um problema, ative o firewall do sistema operacional interno para segurança adicional. Alguns aplicativos podem não funcionar corretamente a menos que o firewall esteja configurado corretamente para eles.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

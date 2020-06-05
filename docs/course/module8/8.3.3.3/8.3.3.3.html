@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.3.3 Configuração de Email no Android</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e Email</h1>
+        <h2>Configurando o Email</h2>
+      </div>
+      <div id="content">
+          <p>Dispositivos Android são capazes de usar aplicações de comunicação avançadas e serviços de dados. Muitas destas aplicações e funcionalidades requerem o uso de serviços web fornecidos pelo Google. Quando você configura um dispositivo móvel Android pela primeira vez, será solicitado que você entre em sua conta do Google, utilizando seu endereço de e-mail e senha do Gmail.</p>
+          <p>Ao acessar sua conta do Gmail, o Google Play, dados e backup de configurações e outros serviços do Google se tornar acessíveis. O dispositivo sincroniza contatos, mensagens de e-mail, aplicativos, conteúdos baixados e outras informações dos serviços do Google que você usa em seu dispositivo. Se você não tiver uma conta do Gmail, você pode usar a página de login do Google para criar uma nova conta.</p>
+          <p>NOTA: Se você quiser restaurar as configurações do Android em um tablet no qual você realizou o backup anteriormente, você deve acessar sua conta quando configurar o tablet pela primeira vez. Você não pode restaurar as configurações do Android, caso você tenha feito o login depois da configuração inicial.</p>
+          <p>Após a configuração inicial, o acesso a sua caixa de email é feita tocando no ícone do aplicativo do Gmail. Dispositivos Android também tem um aplicativo de e-mail usado para se conectar a outras contas de e-mail.</p>
+          <p>Para adicionar uma conta de email, execute os seguintes passos:</p>
+          <p>Passo 1. Toque no ícone do aplicativo de E-mail.</p>
+          <p>Passo 2. Toque no botão Menu.</p>
+          <p>Passo 3. Toque em Configurações da Conta.</p>
+          <p>Passo 4. Toque em Adicionar conta.</p>
+          <p>Passo 5. Digite seu endereço de e-mail e senha.</p>
+          <p>Passo 6. Toque em Seguinte, ou em Configuração Manual, para inserir configurações de contas especiais.</p>
+          <p>Passo 7. Toque em Concluído.</p>
+          <p>Passo 8. Digite um nome para a conta de e-mail.</p>
+          <p>Passo 9. Toque em Concluído.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

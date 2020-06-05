@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.3.1.4 Computadores Gamers</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Configuração para um Sistema de Computador Especializado</h1>
+        <h2>Sistemas de Computadores Especializados</h2>
+      </div>
+      <div id="content">
+          <p>Muitas pessoas gostam de jogar jogos de computador. A cada ano, os jogos se tornam mais avançados e requerem hardware mais potente, novos tipos de hardware e recursos adicionais para garantir uma experiência de jogo suave e agradável.</p>
+          <p></p>
+          <p>Você pode ser obrigado a montar um computador projetado especificamente para jogos para um cliente. Estes são alguns dos hardwares necessários para montar um computador gamer:</p>
+          <p></p>
+          <p><ul>
+              <li>Processador Potente - Os jogos exigem que todos os componentes do computador trabalhem juntos sem problemas. Um processador potente ajuda a garantir que todos os dados de software e hardware possam ser processados em tempo hábil. Processadores de múltiplo núcleo ajudam a aumentar a capacidade de resposta.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placa de Vídeo - Jogos modernos usam altas resoluções e muitos detalhes. Uma placa de vídeo que possui uma GPU rápida e especializada e uma alta quantidade de de memória é necessária para assegurar que as imagens exibidas no monitor são de alta qualidade, claras e suaves. Algumas máquinas de jogos utilizam múltiplas placas de vídeo para produzir altas taxas de quadros ou para usar vários monitores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placa de Som - Videogames usam múltiplos canais de som de alta qualidade para imergir o jogador nos jogos. Uma boa placa de som aumenta a qualidade de som do computador. A placa de som dedicada também ajuda a melhorar o desempenho geral, tomando parte da demanda do processador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Refrigeração - Componentes de alto desempenho geralmente produzem mais calor do que os componentes padrão. Hardwares de refrigeração mais robustos são muitas vezes necessários para se certificar de que o computador ficará refrigerado sob cargas pesadas durante a execução dos jogos. Ventoinhas de grandes dimensões, dissipadores de calor e dispositivos de resfriamento de água são muitas vezes utilizados para manter as CPUs, GPUs e RAM refrigeradas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Grandes Quantidades de Memória RAM - Jogos de computador exigem grandes quantidades de memória para funcionar. Dados de vídeo, som e todas as informações necessárias para jogar o jogo são constantemente a acessadas. Quanto mais memória RAM o computador tiver, menos vezes o computador precisará ler a partir de um armazenamento mais lento, tais como discos rígidos ou SSDs. Memórias RAM mais rápidas ajudam o processador a manter todos os dados sincronizados, pois os dados que ele precisa calcular podem ser recuperados quando for necessário.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Unidades de 7.200 RPM e 10.000 RPM podem recuperar os dados em um ritmo muito mais rápido do que os discos rígidos de 5.400 rpm. Drives SSD são mais caros, porém melhoram o desempenho dos jogos de forma drástica.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Hardware de Games Específico - Alguns jogos envolvem a comunicação com outros jogadores. Um microfone é necessário para falar com eles e os alto-falantes ou fones de ouvido são necessários para ouvi-los. Descubra que tipo de jogos o seu cliente joga para determinar se é necessário um microfone ou fone de ouvido. Alguns jogos podem ser jogados em 3D. Óculos especiais e placas de vídeo específicas podem ser necessários para usar este recurso. Além disso, alguns jogos poderão se beneficiar da utilização de mais de um monitor. Simuladores de voo, por exemplo, pode ser configurado para exibir as imagens da cabine através de dois, três ou até mais monitores ao mesmo tempo.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.4.2.2 Servidores de Impressão</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Compartilhando Impressoras</h1>
+        <h2>Servidores de Impressão</h2>
+      </div>
+      <div id="content">
+          <p>Servidor de Impressão</p>
+          <p>Os servidores de impressão permitem que muitos usuários da rede utilizem uma única impressora. Um servidor de impressão é capaz de gerenciar a impressão dos usuários em redes cabeadas e sem fio. Uma vantagem de utilizar um servidor de impressão é que ele gerencia as impressões enviadas pelos computadores, os liberando para realizarem outras tarefas. Um servidor de impressão está sempre disponível aos usuários, ao contrário de uma impressora compartilhada a partir de outro computador.</p>
+          <p>Servidor de Impressão PC Dedicado</p>
+          <p>Um servidor de impressão PC dedicado gerencia as impressões dos cliente de maneira mais eficiente, além de poder controlar mais de uma impressora simultaneamente. Um servidor de impressão PC dedicado deve possuir os seguintes recursos para atender as solicitações de impressão:</p>
+          <p><ul>
+              <li>Processador de alto desempenho - O servidor de impressão PD dedicado utiliza o processador para gerenciar e rotear as informações de impressão, portanto ele deve ser rápido o bastante para lidar com todos os pedidos recebidos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Espaço em disco adequado - O servidor de impressão PC dedicado captura os trabalhos de impressão enviados pelos clientes, os coloca em uma fila e os envia para a impressora. Este processo requer que o computador tenha espaço de armazenamento suficiente para concentrar os dados até que a impressões estejam concluídas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Memória adequada - O processador e a memória RAM do servidor controlam o envio de trabalhos de impressão para a impressora. Se a memória disponível não for suficiente para lidar com o trabalho de impressão, o disco rígido deverá realizar esse envio, o que torna o processo muito mais lento.</li>
+            </ul>
+          </p>
+          <p>Impressoras Compartilhadas Através de Computadores</p>
+          <p>Um computador que possui uma impressora conectada pode compartilhá-la com outros usuários na rede, como mostrado na figura. Por exemplo, em uma rede doméstica, os usuários estariam aptos a imprimir os seus documentos em qualquer local da casa, utilizando a tecnologia Wi-Fi dos seus laptops. Em uma rede de escritório, compartilhar uma impressora significa que a mesma pode ser utilizada por muitos usuários.</p>
+          <p>Compartilhar um impressora também tem as suas desvantagens. O computador que compartilha a impressora utiliza seus próprios recursos para gerenciar os trabalhos destinados a mesma. Caso o usuário do computador que está compartilhando a impressora estiver, ao mesmo tempo, utilizando os recursos do PC, ele poderá notar quedas no desempenho de sua máquina. Além disso, a impressora não fica disponível para os outros usuários quando a máquina que realiza o compartilhamento é reiniciada ou desligada.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

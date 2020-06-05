@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.1.7 Documentando Descobertas, Ações e Resultados</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Processo de Solução de Problemas</h1>
+        <h2>Etapas do Processo de Solução de Problemas</h2>
+      </div>
+      <div id="content">
+          <p>Após os reparos do computador serem concluídos, finalize o processo de solução de problemas com o cliente. Comunique, verbalmente e por escrito, o problema e a solução para o cliente. A figura apresenta os passos a serem tomados quando você terminar o reparo.</p>
+          <p>Verifique a solução com o cliente. Se o cliente estiver disponível, demonstre como a solução corrigiu o problema do computador. Peça para o cliente testar a solução e tentar reproduzir problema. Quando o cliente verificar que o problema foi resolvido, você pode completar a documentação para a reparação na ordem de trabalho e em seu diário. Inclua as seguintes informações na documentação:</p>
+          <p><ul>
+              <li>Descrição do problema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passos para resolver o problema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Componentes usados ​​no reparo</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

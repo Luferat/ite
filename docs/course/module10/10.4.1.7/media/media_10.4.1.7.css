@@ -1,0 +1,31 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+table { width:100% !important;border-collapse:collapse;}
+table tbody tr { border-color:#DAE17A;}
+table tbody tr td { border-color:#a2aa23; font-size:12px !important; border:3px solid #DAE17A; border-collapse:collapse;}
+table tbody tr td b { font-size:12px !important; font-weight:bold !important; border-collapse:collapse;}
+table tbody tr td font { font-size:12px !important; border-collapse:collapse;}
+.table_font { border-color:#a2aa23; font-size:12px !important; font-weight:bold !important; width:33% !important;}
+
+.col_1 {line-height: 0; /*display:block;*/ margin-top:-11px; padding-bottom:5px;}
+#ID_table {box-shadow: 0 0 2px 2px #999999 !important; width:424px !important; height:150px !important; border-radius:5px !important;}
+.liner {line-height:0 !important;height: 0px !important; margin:0px !important; padding:1px !important;}
+.liner_top {line-height:0 !important;height: 0px !important; margin:0px; padding:1px !important;}
+li{margin-left:1em !important;}
+.title{line-height:0px;padding:10px 0 7px 0px;margin:0px;height:0px;}
+.title b{font-size:14px !important; font-weight:bold !important; border-collapse:collapse;line-height:0px;padding:0px;margin:0px;height:0px;}
+.width { width:51% !important}
+.line-height { line-height:8px !important;}
+#ID_title { font-weight:bold !important;}

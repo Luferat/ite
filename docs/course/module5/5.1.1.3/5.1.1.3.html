@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.1.3 Arquitetura de Processador</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Modernos</h1>
+        <h2>Termos e Características dos Sistemas Operacionais</h2>
+      </div>
+      <div id="content">
+          <p>A maneira que a CPU processa as informações pode afetar o desempenho do sistema operacional. Duas arquiteturas comuns usadas ​​para processar os dados são:</p>
+          <p></p>
+          <p><ul>
+              <li>x86 - A arquitetura de 32 bits que processa várias instruções com um único pedido. Um processador x86 usa menos registros do que um processador x64. Os registros são áreas de armazenamento utilizados pela CPU ao executar os cálculos. Um processador x86 pode suportar um sistema operacional de 32-bit.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>x64 - Esta arquitetura de 64-bit acrescenta registros adicionais especificamente para instruções que usam um espaço de endereçamento de 64 bits. Os registos adicionais permitem que a CPU processe as instruções muito mais rápido do que o x86. O processador x64 é compatível com o processador x86. Um processador x64 pode suportar sistemas operacionais de 32-bit e 64-bit.</li>
+            </ul>
+          </p>
+          <p>Um sistema operacional de 32 bits é capaz de endereçar apenas 4 GB de memória de sistema, enquanto um S.O de 64 bits pode endereçar mais de 128 GB. O gerenciamento de memória difere entre os dois sistemas. Um sistema de 64 bits possui um desempenho melhor. Ele também inclui recursos que fornecem segurança adicional.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

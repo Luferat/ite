@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.1.5 Requisitos de Senha</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Políticas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Ao atribuir senhas, o nível de controle da senha deve corresponder ao nível de proteção exigido. As senhas devem possuir um tamanho mínimo e incluir letras maiúsculas e minúsculas, combinadas com números e símbolos. Isso é chamado de senha segura. É comum que uma política de segurança exija que os usuários alterem suas senhas periodicamente e monitore o número de tentativas de inserção de senha antes que uma conta seja temporariamente bloqueada. Estas são algumas orientações para a criação de senhas fortes:</p>
+          <p><ul>
+              <li>Tamanho - Use pelo menos oito caracteres.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Complexidade - Inclua letras, números, símbolos e pontuação. Use uma variedade de teclas, não apenas letras e caracteres comuns.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Variação - Altere as senhas com frequência. Crie um lembrete para alterar sua senha de e-mail, bancos e sites de cartão de crédito, em média, de cada três a quatro meses.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Variedade - Use uma senha diferente para cada site ou computador que você usa.</li>
+            </ul>
+          </p>
+          <p>Para criar, remover ou modificar uma senha no Windows 7 ou Windows Vista, use o seguinte caminho, como mostrado na Imagem 1:</p>
+          <p>Iniciar> Painel de Controle> Contas de Usuário</p>
+          <p>Para criar, remover ou modificar uma senha no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Contas de Usuário> Alterar uma conta> clique na conta que deseja alterar</p>
+          <p>Para impedir que usuários não autorizados acessem os computadores locais e os recursos da rede, bloqueie sua estação de trabalho, laptop ou servidor quando você não estiver presente.</p>
+          <p>Proteção de Tela</p>
+          <p>É importante certificar-se de que os computadores estão seguros quando os usuários estão longe do mesmos. Uma política de segurança deve conter uma regra sobre necessidade de um computador ser bloqueado quando a proteção de tela estiver ativada. Isso garantirá que, após um curto período de tempo, a proteção de tela seja iniciada e, em seguida, o computador não possa ser usado até que o usuário faça login.</p>
+          <p>Para configurar a proteção de tela no Windows 7 e Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Personalização> Proteção de Tela. Escolha um protetor de tela e o tempo de espera e, em seguida, selecione a opção &quot;Ao reiniciar, exibir tela de logon&quot;, como mostrado na Imagem 2.</p>
+          <p>Para configurar a proteção de tela no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Vídeo> Proteção de Tela Escolha um protetor de tela e um tempo de espera e, em seguida, selecione a opção &quot;Ao reiniciar, exibir tela de logon&quot;.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

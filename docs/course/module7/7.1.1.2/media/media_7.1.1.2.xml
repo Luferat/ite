@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+<component id="ID_s01_title">
+<text><![CDATA[<b>Laptop Aberto</b>]]></text>
+</component>
+
+<component id="ID_s01_cap01">
+<text><![CDATA[O teclado é um dispositivo de entrada compacto que contém teclas multifuncionais.]]></text>
+</component>
+<component id="ID_s01_cap02">
+<text><![CDATA[Este dispositivo de entrara é o touchpad, que consiste de botões de clique primário e secundário e um controlador de ponteiro. O touchpad e o controlador de ponteiro podem ser usado ao invés de um mouse no laptop.]]></text>
+</component>
+<component id="ID_s01_cap03">
+<text><![CDATA[O leitor de impressão digital é um dispositivo de entrada utilizado para autenticação de segurança.]]></text>
+</component>
+<component id="ID_s01_cap04">
+<text><![CDATA[Os botões de volumes são botões que controlam a saída de áudio.]]></text>
+</component>
+<component id="ID_s01_cap05">
+<text><![CDATA[O botão de energia liga e desliga o laptop.]]></text>
+</component>
+
+<component id="ID_s02_title">
+<text><![CDATA[<b>Ícones do Laptop</b>]]></text>
+</component>
+
+<component id="ID_s02_cap01">
+<text><![CDATA[O LED wireless indica a atividade da conexão de rede sem fio.]]></text>
+</component>
+
+<component id="ID_s02_cap02">
+<text><![CDATA[O LED de status do Bluetooth indica quando o receptor wireless Bluetooth está ativado.]]></text>
+</component>
+
+<component id="ID_s02_cap03">
+<text><![CDATA[O LED num lock indica o status das teclas do teclado numérico.]]></text>
+</component>
+<component id="ID_s02_cap04">
+<text><![CDATA[O LED caps lock indica se o caps lock está ligado ou desligado.]]></text>
+</component>
+<component id="ID_s02_cap05">
+<text><![CDATA[O LED de atividade do disco rígido indica se há atividade na unidade.]]></text>
+</component>
+<component id="ID_s02_cap06">
+<text><![CDATA[O LED de energia indica o status de ligado/desligado do laptop.]]></text>
+</component>
+<component id="ID_s02_cap07">
+<text><![CDATA[O LED de status da bateria indica o status da bateria do laptop.]]></text>
+</component>
+<component id="ID_s02_cap08">
+<text><![CDATA[O LED do modo de hibernar ou espera indica se o computador está em modo de espera ou se ele está entrando ou saindo do modo de hibernação.]]></text>
+</component>
+
+
+
+
+<component id="ID_sub_inst">
+  <text><![CDATA[<b>Clique na área de destaque para visualizar os conteúdos importantes. Clique novamente para fechar. </b>]]></text> 
+  </component>  
+  
+<component id="transcript">
+  <text><![CDATA[<b>transcrição vai aqui</b>]]></text> 
+  </component>
+  
+</textcomponents>

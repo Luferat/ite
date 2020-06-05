@@ -1,0 +1,87 @@
+﻿<textcomponents> 
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr class="title">
+			<td colspan='4' bgcolor='#DAE17A' class="title"><font color='#393536 ' size="14"><b>Tipos comuns de soquete da CPU e Características</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='4' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width='60' height="20" valign="top"><font color='#ffffff '><b>Soquete</b></font></td>
+		<td bgcolor='#A2AA23' width='90' valign="top"><font color='#ffffff '><b>Arquitetura</b></font></td>
+		<td bgcolor='#A2AA23' width='185' valign="top"><font color='#ffffff '><b>Exemplos de processadores suportados</b></font></td>
+		<td bgcolor='#A2AA23' width='90' valign="top"><font color='#ffffff '><b>Fabricante</b></font></td>
+	</tr>
+	
+	<tr>
+		<td  bgcolor='#F3F5E7' valign="top"><font color='#393536'>775</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>LGA</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Pentium 4, Celeron D, Pentium D, Pentium Dual Core, Core 2 Duo, Core 2 Quad, Xeon, Celeron</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Intel </font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>1155</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>LGA</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Celeron, Core i3, Core i5, Core i7, Pentium, Xeon</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Intel</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1156</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>LGA</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Celeron, Core i3, Core i5, Core i7, Pentium, Xeon</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Intel</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>1366</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>LGA</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Core i7 (9xx series), Xeon (35xx, 36xx, 55xx, 56xx series), Celeron P1053</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Intel</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>940</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>PGA</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Athlon 64FX, Opteron</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>AMD</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>AM2</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>PGA</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Athlon 64, Athlon 64 X2, Athlon 64 FX, Opteron, Sempron, Phenom</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>AMD</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>AM2+</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>PGA</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Athlon 64, Athlon 64 X2, Athlon II, Opteron, Phenom, Phenom II</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>AMD</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>AM3</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>PGA</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Phenom II (Excluindo 940 e 920), Athlon II, Sempron, Opteron 138x</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>AMD</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>AM3+</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font  color='#393536'>PGA</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Phenom II (Excluindo 940 e 920), Athlon II, Sempron, Opteron 138x, FX-Series</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>AMD</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>FM1</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>PGA</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Processadores A-Series (Llano)</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>AMD</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>F</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>LGA</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Opteron 2xxx, 8xxx series, Athlon 64 séries FX e FX-7x series</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font  color='#393536'>AMD</font></td>
+	</tr>
+	
+</table>]]></text>
+</component>
+
+</textcomponents>

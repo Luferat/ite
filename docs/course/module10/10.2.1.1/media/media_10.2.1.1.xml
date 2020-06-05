@@ -1,0 +1,29 @@
+﻿<textcomponents>
+<component id="ID_title">
+  <text><![CDATA[<b>Checklist de Emergência na Política de Segurança</b>]]></text>
+</component> 
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Política de Segurança</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Tabela de Checklist Emergencial de Conteúdos(Exemplo)</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[<b>Perda de Dados - Devido ao roubo de equipamentos - Devido a escutas telefônicas - Devido a pessoas internas - Devido a pessoas externas - Devido ao pessoal temporário / empreiteiros / fornecedores<br> </b>]]></text>
+</component> 
+
+<component id="ID_txt08">
+  <text><![CDATA[<b>Emergências relacionadas com a energia - Queda de energia do edifício ou do andar - queda de energia local - queda de energia regional</b>]]></text>
+</component> 
+
+<component id="ID_txt09">
+  <text><![CDATA[<b>Ataques Terroristas - Ataque terrorista que leva à evacuação - Ataque terrorista que leva a um bloqueio</b>]]></text>
+</component> 
+<component id="ID_txt10">
+  <text><![CDATA[<b>Roubo - roubo físico do dispositivo de rede - roubo físico de computador desktop - roubo físico de laptop</b>]]></text>
+</component> 
+
+</textcomponents>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.3.1.4 Gerenciado Opções de Energia do Laptop</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Energia do Laptop</h1>
+        <h2>Configurações de Energia</h2>
+      </div>
+      <div id="content">
+          <p>O utilitário de Opções de Energia do Windows permite que você reduza o consumo de energia de dispositivos específicos ou de todo o sistema. Você pode gerenciar o uso de energia para o seguinte:</p>
+          <p><ul>
+              <li>Laptop</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Disco rígido.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tela</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Suspensão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Avisos de bateria fraca</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Para configurar as definições de energia no Windows 7 e Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Opções de Energia</p>
+          <p></p>
+          <p>Para definir as configurações de energia do Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Opções de Energia</p>
+          <p></p>
+          <p>Opções de Energia do Laptop</p>
+          <p>Se você não quiser desligar completamente o laptop quando você pressionar o botão de energia, você pode ajustar as configurações para reduzir o consumo de energia.</p>
+          <p></p>
+          <p>Para acessar a definição dos botões de energia e ativar o menu de proteção por senha no Windows 7 e Windows Vista, clique no link &quot;Escolher a função dos botões de energia&quot;, localizado a esquerda do utilitário Opções de Energia. No Windows XP, as configurações de botões de energia podem ser acessadas selecionando a guia Avançado no utilitário Opções de Energia.</p>
+          <p></p>
+          <p>No Windows 7 e Windows Vista, as opções são:</p>
+          <p><ul>
+              <li>Não fazer nada - O computador continua a funcionar a plena potência.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Suspender - Documentos e aplicativos são salvos na memória RAM, permitindo que o computador ligue rapidamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Hibernar - Documentos e aplicativos são salvos em um arquivo temporário no disco rígido. O laptop demora um pouco mais que a Suspensão para ligar.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>No Windows XP, as opções são:</p>
+          <p><ul>
+              <li>Espera - Documentos e aplicativos são salvos na memória RAM, permitindo que o computador ligue rapidamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Hibernar - Documentos e aplicativos são salvos em um arquivo temporário no disco rígido. O laptop demora um pouco mais que o modo de Espera para ligar.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A Figura 1 mostra a opção Hibernar habilitada no utilitário Opções de Energia do Windows 7.</p>
+          <p></p>
+          <p>Gerenciamento de Energia do Disco Rígido e da Tela</p>
+          <p>Dois dos maiores consumidores de energia em um laptop são o disco rígido e a tela. Conforme mostrado na Figura 2, você pode selecionar quando desligar o disco rígido ou a tela se o laptop estiver funcionando com bateria ou no adaptador de energia.</p>
+          <p></p>
+          <p>Para ajustar as configurações de energia para a unidade de disco rígido, tela ou outro componente do computador no Windows 7 e Windows Vista, siga estes passos:</p>
+          <p></p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Opções de Energia.</p>
+          <p>Passo 2. Localize o plano de energia.</p>
+          <p>Passo 3. Clique em Alterar configurações do plano.</p>
+          <p>Passo 4. Clique em Alterar configurações de energia avançadas.</p>
+          <p></p>
+          <p>Para acessar as configurações de energia avançadas no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Opções de Energia > guia Avançado</p>
+          <p></p>
+          <p>Suspensão</p>
+          <p>Temporizadores de Suspensão personalizados no Windows 7 e configurações de Planos de Energia no Windows Vista são mostrados na Figura 3. As definições dos esquemas de energia do Windows XP são apresentadas na Figura 4.</p>
+          <p></p>
+          <p>Para configurar os temporizadores de Suspensão no Windows 7 e Windows Vista, siga estes passos:</p>
+          <p></p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Opções de Energia.</p>
+          <p>Passo 2. Clique em Alterar quando o computador é suspenso e selecione o tempo desejado.</p>
+          <p></p>
+          <p>Para configurar os temporizadores de suspensão no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Opções de Energia e selecione o tempo desejado</p>
+          <p></p>
+          <p>Avisos da Bateria</p>
+          <p>No Windows, você pode definir os níveis de avisos da bateria. O padrão para um aviso de bateria fraca é de 10 porcento da capacidade restante. O padrão para o nível crítico da bateria é de 5 porcento. Você também pode definir o tipo de notificação e a ação a ser tomada, seja para suspender, hibernar ou desligar o laptop quando a capacidade da bateria atingir o nível especificado.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

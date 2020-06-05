@@ -1,0 +1,25 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Endereço IP</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>192.168.200.8</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>WWW.CISCO.COM 192.168.5.100</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>Business A 172.16.30.5</b>]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[<b>Business B 10.5.105.50</b>]]></text> 
+  </component>  
+  
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

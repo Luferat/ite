@@ -1,0 +1,27 @@
+﻿<textcomponents>
+
+
+
+ <component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 5: Verifique a funcionalidade completa do sistema e, se aplicável, implemente de medidas preventivas</b></font></td>
+	</tr> 
+	<tr>
+		<td bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	<tr>  
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Reinicie o computador.</li>
+			<li>Certifique-se de que múltiplas aplicações funcionem corretamente.</li>
+			<li>Verifique as conexões de rede e Internet.</li>
+			<li>Imprima um documento a partir de um único aplicativo.</li>
+			<li>Certifique-se de que todos os dispositivos conectados funcionam corretamente.</li>
+			<li>Certifique-se de que nenhuma mensagem de erro é recebida.</li></textformat></font></td>		 
+	</tr>
+	 
+</table>]]></text>
+</component>
+ 
+
+
+</textcomponents>

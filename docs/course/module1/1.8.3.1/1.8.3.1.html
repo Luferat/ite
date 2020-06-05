@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.3.1 Connecting to the Router</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Wireless and Wired Router Configurations</h2>
+    </div>
+    <div id="content">
+          <p>After the NIC drivers are installed, the network router can be connected for the first time. Plug a network cable, also called an Ethernet patch or straight-through cable, into the network port on the computer. Plug the other end into the network device or wall jack.</p>
+          <p>After connecting the network cable, look at the LEDs, or link lights, next to the Ethernet port on the NIC to see if there is any activity. Figure 1 shows the link lights on a NIC. If there is no activity, this might indicate a faulty cable, a faulty switch port, or even a faulty NIC. You might have to replace one or more of these devices to correct the problem.</p>
+          <p>After confirming that the computer is connected to the network and the link lights on the NIC indicate a working connection, the computer needs an IP address. Most networks are set up so that the computer receives an IP address automatically from a local DHCP server. If the computer does not have an IP address, enter a unique IP address in the TCP/IP properties of the NIC.</p>
+          <p>The following steps describe connecting to an E2500 router for the first time:</p>
+          <p>
+            <ul>
+              <li>The back of the Linksys E2500 router has five Ethernet ports. Connect a DSL or cable modem to the port labeled Internet. The switching logic of the device forwards all the packets through this port when there is communication to and from the Internet and other connected computers. Connect one computer to any remaining port to access the configuration web pages.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Turn on the broadband modem and plug in the power cord to the router. When the modem finishes establishing a connection to the ISP, the router automatically communicates with the modem to receive the network information from the ISP that is necessary to gain access to the Internet: IP address, subnet mask, and DNS server addresses. The Internet LED lights up to indicate communication with the modem.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When the router has established communication with the modem, you must configure the router to communicate with the devices on the network. Turn on the computer that is connected to the router. The NIC LED on the computer lights up to indicate communication with the router.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

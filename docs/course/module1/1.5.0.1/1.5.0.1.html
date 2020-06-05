@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.5.0.1 Logical and Physical Topologies</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Physical Components of a Network</h1>
+      <h2>Cables and Connectors</h2>
+    </div>
+    <div id="content">
+          <p>A logical topology describes how the hosts access the medium and communicate on the network. A physical topology defines the way in which computers, printers, and other devices are connected to a network. The type of topology determines the capabilities of the network, such as ease of setup, speed, and cable lengths. LAN architecture describes both the physical and logical topologies used in a network.</p>
+          <p></p>
+          <p>
+            <b>Logical Topologies</b>
+          </p>
+          <p>The two most common types of logical topologies are broadcast and token passing. In a broadcast topology, a host broadcasts a message to all hosts on the same network segment. There is no order that hosts must follow to transmit data. Messages are sent on a FIFO basis.</p>
+          <p></p>
+          <p>Token passing controls network access by passing an electronic token sequentially to each host. If a host wants to transmit data, the host adds the data and a destination address to the token, which is a specially-formatted frame. The token then travels to another host with the destination address. The destination host takes the data out of the frame. If a host has no data to send, the token is passed to another host.</p>
+          <p></p>
+          <p>
+            <b>Physical Topologies</b>
+            <br/>Figure 1 shows the common LAN physical topologies.</p>
+          <p></p>
+          <p>
+            <b>Bus Topology</b>
+            <br/>In a bus topology, as shown in Figure 1, each computer connects to a common cable. The cable connects one computer to the next, like a bus line going through a city. The cable has a small cap installed at the end called a terminator. The terminator prevents signals from bouncing back and causing network errors.</p>
+          <p></p>
+          <p>
+            <b>Ring Topology</b>
+            <br/>In a ring topology, as shown in Figure 2, hosts are connected in a physical ring or circle. Because the ring topology has no beginning or end, the cable is not terminated. A token travels around the ring stopping at each host. If a host wants to transmit data, the host adds the data and the destination address to the token. The token continues around the ring until it stops at the host with the destination address. The destination host takes the data out of the token.</p>
+          <p></p>
+          <p>
+            <b>Star Topology</b>
+            <br/>The star topology, as shown in Figure 3, has a central connection point, which is normally a device such as a hub, switch, or router. Each host on a network has a cable segment that attaches the host directly to the central connection point. The advantage of a star topology is that it is easy to troubleshoot. Each host is connected to the central device with its own wire. If there is a problem with that cable, only that host is affected. The rest of the network remains operational. </p>
+          <p></p>
+          <p>
+            <b>Hierarchical or Extended Star Topology</b>
+            <br/>A hierarchical or extended star topology, as shown in Figure 4, is a star network with an additional networking device connected to the main networking device. Typically, a network cable connects to one hub, and then several other hubs connect to the first hub. Larger networks, such as those of corporations or universities, use the hierarchical star topology.</p>
+          <p></p>
+          <p>
+            <b>Mesh Topology</b>
+            <br/>The mesh topology, as shown in Figure 5, connects all devices to each other. When every device is connected to every other device, a failure of any cable does not affect the network. The mesh topology is used in WANs that interconnect LANs.</p>
+          <p></p>
+          <p>
+            <b>Hybrid Topology</b>
+            <br/>A hybrid topology, as shown in Figure 6, is a combination of two or more basic network topologies, such as a star-bus, or star-ring topology. The advantage of a hybrid topology is that it can be implemented for a number of different network environments. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

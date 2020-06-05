@@ -1,0 +1,26 @@
+﻿<textcomponents>
+	<component id='ID_table'>
+		<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="title">
+					<td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 5: Verifique a Funcionalidade Completa do Sistema e, se possível, Implemente as Medidas Preventivas</b></font></td></tr>
+			 
+			 <tr>
+          		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+        	 </tr>
+			<tr>
+				<td width="120px" bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>Verifique a funcionalidade completa</font></td>
+			
+				<td valign="top" bgcolor='#F3F5E7'><font color='#393536'><li>Desligue o computador e ligue novamente</li>
+														<li>Verifique os logs de eventos para se certificar de que não há novos avisos ou erros</li>
+														<li>Verifique o Gerenciador de Dispositivos para verificar se não há erros ou avisos</li>
+														<li>Execute o DxDiag para ter certeza que o DirectX está funcionando corretamente</li>
+														<li>Certifique-se que os aplicativos estão sendo executados corretamente</li>
+														<li>Certifique-se de que os compartilhamentos de rede estão acessíveis</li>
+														<li>Certifique-se que a Internet pode ser acessada</li>
+														<li>Execute novamente o verificador de arquivos do sistema para garantir que todos os arquivos estão corretos</li>
+														<li>Verifique o Gerenciador de Tarefas para garantir que todos os programas estão Funcionando</li>
+														<li>Execute novamenete a ferramenta de diagnóstico de terceiros</li></font></td>
+			</tr>
+		</table>]]></text>
+	</component>
+</textcomponents>

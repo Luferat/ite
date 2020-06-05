@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.2.2 Contas de Usuário</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle</h2>
+      </div>
+      <div id="content">
+          <p>Uma conta de administrador é criada quando o sistema operacional Windows é instalado. Para criar uma conta de usuário, abra o utilitário Contas de usuário, conforme apresentado na Figura 1, e selecione Iniciar > Painel de Controle > Contas de Usuário.</p>
+          <p></p>
+          <p>O utilitário Contas de Usuário fornece opções para lhe ajudar a gerenciar sua senha, alterar sua imagem, mudar o nome e tipo de conta, gerenciar outra conta e alterar as configurações de Controle de Conta de Usuário (UAC).</p>
+          <p></p>
+          <p></p>
+          <p>NOTA: Alguns recursos do utilitário Contas de Usuário requerem privilégios administrativos e pode não ser acessíveis a uma conta de usuário padrão.</p>
+          <p></p>
+          <p>Configurações de Controle de Conta de Usuário</p>
+          <p>O UAC monitora programas em um computador e avisa os usuários quando uma ação pode representar uma ameaça para o sistema. No Windows 7, você pode ajustar o nível de monitoramento que o UAC executa, conforme apresentado na Figura 2. Quando o Windows 7 é instalado, o UAC para a conta principal é configurado no modo: Padrão - Notificar-me somente quando programas tentarem fazer alterações no meu computador</p>
+          <p></p>
+          <p>Para ajustar o nível de monitoramento do UAC, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Contas de Usuário > Alterar configurações de Controle de Conta de Usuário</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

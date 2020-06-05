@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.2.1 Selecionando uma NIC</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Adaptadores de Rede</h2>
+      </div>
+      <div id="content">
+          <p>A NIC é necessária para se conectar à rede. A NIC pode vir pré-instalada em um computador ou você pode ter que comprá-la. Você deve ser capaz de atualizar, instalar e configurar os componentes quando um cliente pede o aumento de velocidade ou uma nova funcionalidade para ser adicionada em uma rede. Se o seu cliente está adicionando mais computadores ou funcionalidade sem fio, você deve ser capaz de recomendar equipamentos com base em suas necessidades, tais como pontos de acesso e placas de rede sem fio. O equipamento que você sugerir dever ser compatível com os equipamentos e cabos existente, caso contrário a infra-estrutura existente deverá ser atualizada. Em casos raros, pode ser necessário atualizar o driver. Você pode usar o disco do driver, que vem com a placa-mãe ou placa de expansão, ou fornecer um driver que você baixou do site do fabricante.</p>
+          <p>Existem diversos tipos de interfaces de rede, como mostrado na figura:</p>
+          <p><ul>
+              <li>A maioria das interfaces de rede para computadores desktop são integradas na placa-mãe ou são uma placa de expansão que se encaixa em um slot de expansão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A maioria das interfaces de rede para laptops são integradas na placa-mãe ou se encaixam em um PC Card ou slot de expansão Expressbus.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Adaptadores de rede USB são conectados a uma porta USB e podem ser usados tanto em desktops, quanto em laptops.</li>
+            </ul>
+          </p>
+          <p>Antes de comprar uma placa de rede, pesquise a velocidade do cartão, formato e capacidade. Além disso, verifique a velocidade e capacidade do hub ou switch conectado ao computador.</p>
+          <p>Placas de rede Ethernet negociam automaticamente a velocidade mais rápida que é comum entre a NIC e o outro dispositivo. Por exemplo, se você tiver uma NIC de 10/100 Mbps conectado em um hub de apenas a 10 Mbps, a placa de rede operará em 10 Mbps. Se você tiver uma NIC de 10/100 Mbps conectado em um switch que opera a 100 Mbps, a placa de rede operará em 100 Mbps.</p>
+          <p>Se você tem um switch gigabit, muito provavelmente você precisará comprar uma placa de rede gigabit para combinar as velocidades. Se você tiver planos para atualizar a rede para Gigabit Ethernet, certifique-se de comprar placas de rede que podem dar suporte a essa velocidade. Os custos podem variar muito, portanto selecione NICs que correspondem às necessidades de seu cliente.</p>
+          <p>Para se conectar a uma rede sem fio, o computador deve ter um adaptador wireless. Um adaptador sem fio se comunica com outros dispositivos sem fio, como computadores, impressoras ou pontos de acesso. Antes de comprar um adaptador sem fio, certifique-se de que ele é compatível com outros equipamentos sem fio que já estão instalados na rede. Verifique se o adaptador sem fio possui um formato adequado para o computador do cliente. Você pode usar um adaptador USB wireless em qualquer computador, desktop ou laptop, que tenha uma porta USB.</p>
+          <p>Placas de rede sem fio estão disponíveis em diferentes formatos e capacidades. Selecione uma NIC sem fio com base no tipo de rede sem fio que está instalada:</p>
+          <p><ul>
+              <li>NICs 802.11b podem ser usadas em redes 802.11g.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>NICs 802.11a só podem ser usadas em redes 802.11a.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>NICs 802.11a dual-band, 802.11b e 802.11g podem ser usadas em redes 802.11n.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

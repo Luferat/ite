@@ -1,0 +1,10 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Web TV</b>]]></text>
+</component>
+
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

@@ -1,0 +1,87 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Problemas e Soluções Comuns de Impressoras</b>]]></text>
+</component>
+  <component id='ID_table'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+        <tr class="liner">
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A impressora imprime caracteres desconhecidos.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>A impressora pode ser conectada a um UPS.</li>
+<li>Um driver de impressão incorreto é instalado.</li>
+<li>Os cabos da impressora estão soltos.</li>
+<li>A impressora foi configurada para Pausar a Impressão.</li>
+<li>A impressora foi definida como Usar Impressora off-line.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Ligue a impressora diretamente à tomada de energia da parede.</li>
+<li>Desinstale o driver de impressão incorreto e instale o driver correto.</li>
+<li>Prenda os cabos da impressora.</li>
+<li>Configure a impressora para Usar Impressora on-line.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Atolamento de papel ao imprimir.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O tipo errado de papel está sendo usado.</li>
+<li>Umidade faz com que os papeis fiquem juntos.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua o papel pelo tipo de papel recomendado pelo fabricante.</li> 
+<li>Insira um novo papel na bandeja.</li></textformat></font></td>
+        </tr>
+
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A impressora não imprime imagens grandes ou complexas.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A impressora não tem memória suficiente.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Adicione mais memória à impressora. </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Impressora a laser imprime linhas verticais ou faixas em cada página.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O tambor está danificado.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua o tambor ou substitua o cartucho de toner quando contém o tambor.</li>
+<li>Retire e agite o cartucho de toner.</li></textformat></font></td>
+        </tr>
+		
+		
+		<tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>As páginas impressas mostram imagens fantasmas.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O tambor está riscado ou sujo.</li><li>A lâmina de limpeza do cilindro é usada.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Substitua o tambor ou substitua o cartucho de toner quando contém o tambor.</font></td>
+        </tr>	
+
+
+        <tr>
+            <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O toner não está aderindo ao papel.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O fusor está com defeito.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Troque o fusor.</font></td>
+       </tr>
+
+      <tr>
+            <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O papel é amassado após a impressão.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Os rolos de captação estão obstruídos, danificados ou sujos.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Limpe ou troque os rolos de coleta.</font></td>
+       </tr>
+
+       <tr>
+            <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O papel não está sendo introduzido na impressora.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Os rolos de captação estão obstruídos, danificados ou sujos.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Limpe ou troque os rolos de coleta.</font></td>
+       </tr>
+
+
+        <tr>
+            <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Cada vez que uma impressora de rede é reiniciada, os usuários recebem uma mensagem &quot;o documento falhou ao imprimir&quot;.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Configuração de IP da impressora está definido para DHCP.</li>
+<li>Um dispositivo na rede tem o mesmo endereço IP da impressora de rede.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Atribua um endereço IP estático para a impressora.</li>
+<li>Atribua um endereço IP estático diferente para a impressora.</li></textformat></font></td>
+       </tr>
+ 
+      </table>]]>
+    </text>
+  </component>
+</textcomponents>
+

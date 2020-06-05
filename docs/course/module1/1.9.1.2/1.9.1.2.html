@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.9.1.2 DSL and ADSL</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Select an ISP Connection Type</h1>
+      <h2>Connection Technologies</h2>
+    </div>
+    <div id="content">
+          <p>
+            <br/>Digital Subscriber Line (DSL) DSL<b></b>is an always-on technology, meanng that there is no need to dial up each time to connect to the Internet. DSL uses the existing copper telephone lines to provide high-speed digital data communication between end users and telephone companies. Unlike ISDN, where the digital data communications replaces the analog voice communications, DSL shares the telephone wire with analog signals. </p>
+          <p>With DSL, the voice and data signals are carried on different frequencies on the copper telephone wires. A filter prevents DSL signals from interfering with phone signals. You plug the filter into a phone jack, and plug the phone into the filter. </p>
+          <p>The DSL modem does not require a filter. The DSL modem is not affected by the frequencies of the telephone. Like a cable modem, a DSL modem can connect directly to your computer, or it can be connected to a networking device to share the Internet connection with multiple computers.</p>
+          <p>
+            <b>Asymmetric Digital Subscriber Line (ADSL)</b>
+            <br/>There are many different types of DSL. Typically a home user uses ADSL. ADSL has different bandwidth capabilities in each direction. ADSL has a fast downstream speed, ranging from 384 Kbps to 6 Mbps. Downstream is the process of transferring data from the server to the end user. This is beneficial to users who are downloading large amounts of data. The high-speed upload rate of ADSL is slower. ADSL does not perform well when hosting a web server or FTP server, both of which involve upload-intensive Internet activities. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

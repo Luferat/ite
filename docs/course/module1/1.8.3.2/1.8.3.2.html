@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.3.2 Setting the Network Location</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Wireless and Wired Router Configurations</h2>
+    </div>
+    <div id="content">
+          <p>The first time Windows 7 or Windows Vista connects to a network, a network location profile must be selected. Each network location profile has different default settings. Depending on the profile selected, file and printer sharing or network discovery can be turned off or on, and different firewall settings are applied. </p>
+          <p>Windows 7 has four network locations profiles called Home network, Work network, Public network, and Domain. Computers on a Home network can belong on a homegroup. A homegroup provides a simple method for file and printer sharing. Windows Vista does not support the homegroup feature. The Domain network profile is used for enterprise workplaces. This profile is controlled by the network administrator and cannot be selected or changed by users connected to the enterprise. </p>
+          <p>Figure 1 shows the three network locations profiles that are available to a user in Windows 7 and Windows Vista. When connecting to a network for the first time, use the following information to make the appropriate choice.</p>
+          <p>
+            <ul>
+              <li>
+                <b>Home Network</b> – Choose this network location for home networks or when you trust the people and devices on the network. Network discovery is turned on, which allows you to see other computers and devices on the network and other network users to see your computer.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Work Network</b> – Choose this network location for a small office or other workplace network. Network discovery is turned on. A homegroup cannot be created or joined.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Public Network</b> – Choose this network location for airports, coffee shops, and other public places. Network discovery is turned off. This network location provides the most protection. Also choose this network location if you connect directly to the Internet without using a router, or if you have a mobile broadband connection. Homegroup is not available.</li>
+            </ul>
+          </p>
+          <p>
+            <b>Note:</b> If there is only one computer on a network and file or printer sharing is not needed, the most secure choice is Public.</p>
+          <p>Windows XP does not support selecting a network location and is not a required step when connecting to a network.</p>
+          <p>If the Set Network Location window does not display, you might need to release and renew the IP address for the computer. After opening the command prompt on the computer, type <b>ipconfig /release</b> and then type <b>ipconfig /renew</b> to receive an IP address from the router.</p>
+          <p>You can change the default settings for all network location profiles. Changes to the default profile are applied to every network that uses the same network location profile.</p>
+          <p>To change network location profile settings in Windows 7, use the following path:</p>
+          <p>
+            <b>Start > Control Panel > Network and Sharing Center > </b>click the current network location profile<b>> </b>select a network location<b> > View or change settings in Network and Sharing Center > Choose homegroup and sharing option > Change advanced sharing settings</b></p>
+          <p>To change network location profile settings in Windows Vista, use the following path:</p>
+          <p>
+            <b>Start > Control Panel > Network and Sharing Center > Customize > </b>select a Location type<b> > Next > View or change network and sharing settings in Network and Sharing Center</b></p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

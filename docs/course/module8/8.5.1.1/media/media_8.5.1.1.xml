@@ -1,0 +1,38 @@
+﻿<textcomponents>
+     <component id='ID_table'>
+      <text>
+        <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+          
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1. Identificação do Problema</b></font></td>
+	</tr>  
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+
+	
+          <tr>
+            <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Questões Abertas </font></td>
+            <td  valign="top" bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Qual o problema que você está vivenciando?</li>
+                <li>Qual é a marca e o modelo do seu dispositivo móvel?</li>
+                <li>Qual é a sua provedora de serviço?</li>
+                <li>Quais aplicativos foram instalados recentemente?</li></textformat></font></td>
+          </tr>
+		  
+		  
+		  <tr>
+            <td width="150" valign="top" bgcolor='#FFFFFF'><font color='#393536'>Questões Fechadas </font></td>
+            <td  valign="top" bgcolor='#FFFFFF'><font color='#393536'><textformat blockindent='-18'><li>Este problema já aconteceu antes?</li>
+                <li>Mais alguém utiliza este dispositivo móvel?</li>
+                <li>O seu dispositivo está na garantia?</li>
+                <li>Você modificou o sistema operacional do seu dispositivo móvel?</li>
+				  <li>Você instalou algum aplicativo de fonte desconhecida?</li>
+				    <li>O dispositivo móvel se conecta à Internet?</li></textformat></font></td>
+          </tr>
+		  
+		  
+		  
+        </table>]]>
+      </text>
+    </component>
+  </textcomponents>

@@ -1,0 +1,26 @@
+﻿<textcomponents>
+	<component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr class="title">
+					<td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b></b></font></td>
+				</tr>		
+				<tr class="liner_top">
+					<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#A2AA23' width='180' valign="top"><font size='12' color='#ffffff'><b>TCP</b></font></td>
+					<td bgcolor='#A2AA23' valign="top"><font size='12' color='#ffffff'><b>UDP</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>Vantagens: Detecção de Erros - O TCP retransmite os pacotes perdidos, descarta os pacotes duplicados e garante que os dados serão entregues na ordem correta. Transmissão Confiável - O TCP rastreia os dados para garantir que tudo seja entregue ao destino.</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Vantagens: Baixo Overhead (Sobrecarga) - Utiliza menos largura de banda que o TCP. Sem Conexão - Não é necessário que o destino esteja disponível e pronto para receber os dados, além de não ser necessária a confirmação do recebimento de cada segmento.</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Aplicações: Email Páginas Web</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Aplicações: Transferência de Arquivos Simples - Envia dados, sem segurança, e não necessita de confirmação de recebimento. Network File System (NFS) - Sistema utilizado para acessar arquivos através de uma rede, é semelhante à forma com que os arquivos são acessados ​​localmente.</font></td>
+				</tr>				
+			</table>]]>
+		</text>
+	</component>
+</textcomponents>

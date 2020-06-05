@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.6.1.3 Ethernet Technologies</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Ethernet Standards</h1>
+      <h2>Cabled and Wireless</h2>
+    </div>
+    <div id="content">
+          <p>The IEEE 802.3 standard defines several physical implementations that support Ethernet. Figure 1 summarizes the transfer rates for Ethernet cable.</p>
+          <p></p>
+          <p>10BASE-T is an Ethernet technology that uses a star topology. 10BASE-T is a popular Ethernet architecture whose features are indicated in its name: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The 10 represents a speed of 10 Mbps. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>BASE represents baseband transmission. In baseband transmission, the entire bandwidth of a cable is used for one type of signal. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The T represents twisted-pair copper cabling. </li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

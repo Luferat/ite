@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.4.5 Sharing Resources in Windows XP</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>OS Configurations</h2>
+    </div>
+    <div id="content">
+          <p>The Windows XP Network Setup Wizard configures the computer settings for setting up a home network and sharing resources. The wizard sets up the following items:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>A connection to the Internet for the computer through a direct dial-up or broadband connection or through another computer on the home network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Internet Connection Sharing on a Windows XP-based computer for sharing a connection to the Internet with other computers on the home network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Computer name, computer description, and workgroup name.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>File and printer sharing</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To access the Network Setup Wizard, select <b>Start > Control Panel > Network Setup Wizard</b>.</p>
+          <p></p>
+          <p>The Network Setup Wizard is portable. You can create a Network Setup Wizard disk to automatically configure other Windows XP computers to have the same settings.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

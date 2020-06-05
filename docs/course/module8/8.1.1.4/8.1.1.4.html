@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.1.4 Solid State Drives</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Visão Geral do Hardware de Dispositivos Móveis</h1>
+        <h2>Hardware de Dispositivos Móvies</h2>
+      </div>
+      <div id="content">
+          <p>Os dispositivos móveis usam os mesmos componentes encontrados em SSDs para armazenar dados. Para reduzir os requisitos de tamanho, não existe nenhum gabinete que envolve os componentes. A placa de circuito, chips de memória flash e controlador de memória em SSDs são instalados diretamente no interior do dispositivo móvel. Estas são algumas das vantagens da utilização de armazenamento de memória flash em dispositivos móveis:</p>
+          <p></p>
+          <p><ul>
+              <li>Eficiência de Energia - A memória flash requer pouca energia para armazenar e recuperar dados. Isto reduz a frequência com a qual os dispositivos móveis precisam ser recarregadas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Confiabilidade - A memória flash pode suportar altos níveis de choque e vibração, sem falhar. A memória flash também é altamente resistente ao calor e ao frio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Leve - O peso dos dispositivos móveis não é significativamente afetado pela quantidade de memória instalada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compacto - A memória flash é compacta e os dispositivos móveis podem permanecer em tamanhos pequenos, independentemente da quantidade de memória instalada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Performance - A memória flash não possui partes móveis, por isso não há tempo de giro dos pratos, como um disco rígido convencional. Também não há cabeça de leitura que se desloca, reduzindo o tempo de busca para localizar os dados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ruido - A memória flash não faz barulho.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

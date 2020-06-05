@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.4.4 Compartilhamento de Recursos no Windows Vista</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>O Windows Vista controla como e quais recursos são compartilhados ao habilitar e desabilitar as opções de compartilhamento. A janela Compartilhamento e Descoberta, localizada na Central de Rede e Compartilhamento, gerencia as configurações de uma rede doméstica. Os seguintes itens podem ser controlados:</p>
+          <p><ul>
+              <li>Descoberta de rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhamento de arquivos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhamento de pasta pública</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhamento de impressora</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhamento protegido por senha</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhamento de mídia</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>Para acessar o Compartilhamento e Descoberta, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central de Rede e Compartilhamento</p>
+          <p></p>
+          <p>Para habilitar o compartilhamento entre computadores conectados no mesmo grupo de trabalho, as opções Descoberta de rede e Compartilhamento de arquivos devem estar habilitadas, conforme apresentado na figura.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

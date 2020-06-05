@@ -1,0 +1,87 @@
+﻿<textcomponents>
+
+
+
+
+ <component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='12' color='#393536'><b>Passo 3. Teste a Teoria para Determinar a Causa</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#434321' colspan='2' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	 
+	<tr> 
+		<td width='125' bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Passos comuns para determinar a causa</font></td>	
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Certifique-se de que o dispositivo está ligado.</li>
+			<li>Certifique-se que o interruptor de alimentação está ligado na tomada.</li>
+			<li>Certifique-se que o estabilizador está ligado.</li>
+			<li>Certifique-se que as conexões dos cabos externos estão firmes.</li>
+			<li>Certifique-se de que não há discos na unidade de disquete.</li>
+			<li>Verifique a sequência de boot na BIOS.</li></textformat></font></td>		 
+	</tr>
+	 
+</table>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[Cisco Systems, Inc.]]></text>
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Office Manager]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[170 West Tasman Drive, San Jose, CA 95134]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[408-526-4000]]></text>
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[HW]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[RESOLVIDO]]></text> 
+  </component>
+
+
+<component id="ID_txt07">
+  <text><![CDATA[Laptop]]></text>
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[N]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[Laptop]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[Não inicializa]]></text>
+  </component>
+<component id="ID_txt11">
+  <text><![CDATA[Cisco001]]></text> 
+  </component>
+<component id="ID_txt12">
+  <text><![CDATA[Conexão de rede sem fio]]></text> 
+  </component>
+
+<component id="ID_txt13">
+  <text><![CDATA[Médio]]></text>
+  </component>
+<component id="ID_txt14">
+  <text><![CDATA[Móvel]]></text> 
+  </component>
+<component id="ID_txt15">
+  <text><![CDATA[Windows 7]]></text> 
+  </component>
+
+<component id="ID_txt16">
+  <text><![CDATA[<div class="clear">Usuário reclama que o laptop não inicializa.</div>
+<div class="clear">Nenhum software foi adicionado recentemente. Não foi realizada nenhuma alteração no sistema operacional.</div>
+<div class="clear">Não foram adicionados novos periféricos.</div>]]></text>
+  </component>
+<component id="ID_txt17">
+  <text><![CDATA[<div>Tentativas de Reparos:<br/><br/><li>Substituição do adaptador de energia</li><br/><li>Bateria Reassegurada</li></div>
+<div class="clear"></div>
+ <div class="clear"></div>]]></text>
+  </component> 
+
+</textcomponents>

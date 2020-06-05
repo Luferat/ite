@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.7.1.2 OSI</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Modelos OSI e TCP/IP</h1>
+        <h2>Modelos de Referência</h2>
+      </div>
+      <div id="content">
+          <p>No início de 1980, a International Standards Organization (ISO) desenvolveu o modelo de referência Open Systems Interconnect (OSI) para padronizar a forma como os dispositivos se comunicam em uma rede. Este modelo foi um passo importante para garantir a interoperabilidade entre os dispositivos de rede.</p>
+          <p></p>
+          <p>O modelo OSI divide as comunicações de rede em sete camadas distintas. Apesar de outros modelos existentes, a maioria dos fornecedores de rede hoje constroem seus produtos utilizando o modelo OSI.</p>
+          <p></p>
+          <p>Um sistema que implementa protocolos de comportamento que consiste numa série destas camadas é conhecido como pilha de protocolo. As pilhas de protocolos podem ser implementadas em hardware, software ou em ambos. Normalmente, apenas as camadas inferiores são implementadas no hardware e as camadas superiores são implementadas no software. Cada camada é responsável por uma parte do processamento, que prepara os dados para a transmissão na rede. O gráfico mostra o que cada camada do modelo OSI faz.</p>
+          <p></p>
+          <p>No modelo de referência OSI, quando os dados são transferidos, eles viajam virtualmente nas camadas do modelo OSI do computador de envio e do computador de recebimento.</p>
+          <p></p>
+          <p>Quando um usuário envia dados, tais como um e-mail, o processo de encapsulamento começa na camada de aplicação. A camada de aplicação fornece acesso à rede aos aplicativos. A informação que flui através das três camadas do topo é considerada dados até o momento em que ela chega na camada de transporte.</p>
+          <p></p>
+          <p>Na camada de transporte, os dados são divididos em segmentos mais gerenciáveis, chamados de unidades de dados de protocolo (PDUs), para ordenar o transporte através da rede. A PDU descreve os dados a medida que eles se movem de uma camada do modelo OSI para outra. A PDU da camada de transporte também contém informações usadas para o transporte confiável de dados, tais como números de porta, números de sequência e números de confirmação.</p>
+          <p></p>
+          <p>Na camada de rede, cada segmento da camada de transporte torna-se um pacote. O pacote contém o endereçamento lógico e outras informações de controle da camada 3.</p>
+          <p></p>
+          <p>Na camada de enlace de dados, cada pacote da camada de rede torna-se um quadro. O quadro contém o endereço físico e informações de correção de erro.</p>
+          <p></p>
+          <p>Na camada física, o quadro torna-se bits. Estes bits são transmitidos um de cada vez através do meio físico da rede.</p>
+          <p></p>
+          <p>No computador de destino, o processo desencapsulamento realiza o processo inverso do encapsulamento. Os bits de chegam à camada física do modelo OSI do computador de destino. O processo de desencapsulamento do modelo OSI no computador de destino move os dados para a camada de aplicação, onde um programa de e-mail exibe o email.</p>
+          <p></p>
+          <p>NOTA: Mnemônicos podem ajudá-lo a se lembrar das sete camadas do modelo OSI. Alguns exemplos, em inglês, incluem “All People Seem To Need Data Processing” e “Please Do Not Throw Sausage Pizza Away”.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

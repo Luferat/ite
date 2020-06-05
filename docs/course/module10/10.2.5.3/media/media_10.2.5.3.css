@@ -1,0 +1,23 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+    margin:0;
+    height:100%;
+
+}
+#flashContent {
+    width:98%;
+    height:98%;
+}
+
+#mainDiv {
+    height: 400px;
+    width: 470px;
+    position:absolute;
+    top:0px;
+
+}
+#ID_FEEDBACK{cursor:pointer !important;}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>0.2.1.1 Educação e Certificações</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Indústria de TI</h1>
+        <h2>Certificações da Indústria de TI</h2>
+      </div>
+      <div id="content">
+          <p>Esse curso é focado em computadores e laptops. Ele também aborda dispositivos eletrônicos móveis, como tablets e smartphones.</p>
+          <p>Neste curso, você irá obter as habilidades técnicas especializadas necessárias para instalar, manter, proteger e reparar computadores. Adquirir uma certificação fornece confiança e aumenta suas oportunidades em TI.</p>
+          <p>Este curso é focado nas seguintes certificações:</p>
+          <p><ul>
+              <li>CompTIA A+</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Certificação de Administrador de TI(Módulos 1 e 2) da European Certification of Informatics Professional (EUCIP)</li>
+            </ul>
+          </p>
+          <p>Este curso é apenas uma introdução ao mundo de TI. Um técnico pode continuar o seu estudo e adquirir as seguintes certificações:</p>
+          <p><ul>
+              <li>CCNA - Cisco Certified Networking Associate</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CCNP - Cisco Certified Networking Professional</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CCIE - Cisco Certified Internetworking Expert</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CISSP - Certified Information Systems Security Professional</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>MCP - Microsoft Certified Professional</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>MCSA - Microsoft Certified Systems Administrator</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>MCSE - Microsoft Certified Systems Engineer</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Network+ - CompTIA Network Certification</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Linux+ - CompTIA Linux Certification</li>
+            </ul>
+          </p>
+          <p>Você pode usar estas certificações como créditos em faculdades e universidades nas áreas de informática e telecomunicações.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

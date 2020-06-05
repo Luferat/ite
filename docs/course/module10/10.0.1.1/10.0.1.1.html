@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.0.1.1 Introdução</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Segurança</h1>
+        <h2>Introdução</h2>
+      </div>
+      <div id="content">
+          <p>A segurança de redes e de computadores ajuda a garantir que somente pessoas autorizadas acessem determinados recursos. Ela também ajuda a manter os dados e equipamentos em funcionamento de forma adequada. As ameaças à segurança podem ser internas ou externas e o nível de dano em potencial pode variar muito:</p>
+          <p><ul>
+              <li>Ameaças Internas - Usuários e funcionários que têm acesso aos dados, equipamentos e à rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ameaças Externas - Usuários de fora da organização e que não têm acesso autorizado à rede ou ao seus recursos</li>
+            </ul>
+          </p>
+          <p>Roubo, perda, invasão e danos físicos são algumas das maneiras em que uma rede ou um computador podem ser prejudicados. Dano ou perda de equipamentos podem refletir na perda de produtividade. O reparo e a substituição do equipamento pode custar tempo e dinheiro. O uso não autorizado de uma rede pode expor informações confidenciais, violar a integridade dos dados e reduzir os recursos de rede.</p>
+          <p>Um ataque que intencionalmente degrada o desempenho de um computador ou da rede também pode prejudicar a produção de uma empresa. Medidas de segurança mal implementadas em dispositivos de rede wireless demonstram que a conectividade física não é necessária para que intrusos invadam uma rede.</p>
+          <p>As principais responsabilidades de um técnico incluem proteger os dados e a rede. Um cliente ou uma empresa podem depender de você para garantir que os seus dados e equipamentos de informática estão seguros. Talvez você precise executar tarefas que são mais importante do que aquelas atribuídas a maioria dos empregados. Você talvez precise reparar, ajustar e instalar algum equipamento. Você precisa saber como configurar e manter a rede segura, e ao mesmo tempo torná-la acessível para aqueles que acessam a mesma. Você deve garantir que os patches e atualizações dos softwares foram aplicados, que o antivírus está instalado e que o anti-spyware está sendo utilizado. Também pode ser solicitado que você instrua os usuários a como manter boas práticas de segurança ao utilizar equipamentos de informática.</p>
+          <p>Este capítulo analisa os tipos de ataques que ameaçam a segurança dos computadores e também os dados contidos neles. Um técnico é responsável pela segurança dos dados e dos equipamentos presentes em uma empresa. Este capítulo descreve como você pode trabalhar com os clientes para garantir que o melhor nível proteção possível esteja em vigor.</p>
+          <p>Para proteger com sucesso os computadores e rede, um técnico deve entender os dois tipos de ameaças existentes:</p>
+          <p><ul>
+              <li>Física - Eventos ou ataques que roubam, danificam ou destroem equipamentos, como servidores, switches e cabeamento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Lógica - Eventos ou ataques que removem, corrompem, negam acesso a usuários autorizados, permitim acesso a usuários não autorizados ou roubam informações</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

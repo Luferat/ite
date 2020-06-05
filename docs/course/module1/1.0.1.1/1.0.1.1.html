@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.0.1.1 Introdução</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Introdução ao Sistema de Computador Pessoal</h1>
+        <h2>Introdução</h2>
+      </div>
+      <div id="content">
+          <p>O computador é um aparelho eletrônico que realiza cálculos com base em um conjunto de instruções. Os primeiros computadores eram máquinas enormes, do tamanho de uma sala, que necessitavam de uma equipe inteira para construir, gerenciar e manter. Os computadores de hoje são exponencialmente mais rápidos e possuem apenas uma fracção do tamanho dos computadores originais.</p>
+          <p>Um computador consiste em componentes de hardware e software. O hardware é o equipamento físico. Ele inclui o gabinete, unidades de armazenamento, teclado, mouse, monitor, cabos, alto-falantes e impressoras. O software inclui o sistema operacional e os programas. O sistema operacional instrui o computador a como realizar as suas operações. Estas operações incluem a identificação, acesso e processamento das informações. Programas ou aplicações executam funções diferentes. Os programas variam muito, dependendo do tipo de informação que é acessada ou gerada. Por exemplo, as instruções para equilibrar um talão de cheques são diferentes das instruções para simular um mundo de realidade virtual na Internet.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

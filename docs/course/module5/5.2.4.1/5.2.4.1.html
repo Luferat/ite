@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.4.1 Procedimentos de Multiboot</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Multiboot</h2>
+      </div>
+      <div id="content">
+          <p>Você pode ter vários sistemas operacionais em um único computador. Alguns aplicativos podem precisar da versão mais recente de um sistema operacional, enquanto outros aplicativos precisam de uma versão mais antiga. Existe um processo chamado dual-boot, utilizado quando há vários sistemas operacionais em um computador. Durante o processo de inicialização, se o Windows Boot Manager (BOOTMGR) determinar de que existem mais do que um sistema operacional, será solicitado que você escolha qual sistema operacional deseja carregar, como mostrado na Imagem 1.</p>
+          <p>Para criar um sistema dual-boot no Windows, o disco rígido deve conter mais de uma partição.</p>
+          <p>O sistema operacional mais antigo deve ser instalado na partição primária ou no disco rígido marcado como primeira partição ativa. Instale o segundo sistema operacional na segunda partição ou disco rígido. Os arquivos de inicialização são instalados automaticamente na partição ativa.</p>
+          <p>Arquivo BOOTMGR</p>
+          <p>Durante a instalação, o arquivo BOOTMGR é criado na partição ativa para permitir a escolha do sistema operacional para a inicialização. Você pode editar o arquivo BOOTMGR para alterar a ordem dos sistemas operacionais. Você também pode alterar o período de tempo de espera, durante a fase de inicialização, utilizado para selecionar o sistema operacional. Normalmente, o tempo espera padrão é de 30 segundos. Este período de tempo atrasa o tempo de inicialização do computador por um tempo específico, a menos que o usuário intervenha e selecione um determinado sistema operacional. Se o disco tiver apenas um sistema operacional, altere o tempo para 5 ou 10 segundos, agilizando assim a inicialização do computador.</p>
+          <p>NOTA: No Windows XP, o arquivo BOOT.INI age como o arquivo BOOTMGR.</p>
+          <p>Para alterar o tempo de exibição dos sistemas operacionais, use o seguinte caminho:</p>
+          <p>Selecione Iniciar> Painel de Controle> Sistema e Segurança> Sistema> Configurações avançadas do sistema> clique na guia Avançado > Na área Inicialização e Recuperação, selecione Configurações</p>
+          <p>Para editar os dados de configuração de inicialização gerais no Windows 7 e Vista, use a ferramenta de linha de comando bcdedit.exe, como mostrado na Imagem 2. Para acessar a ferramenta bcdedit.exe, use o seguinte caminho:</p>
+          <p>Iniciar> Todos os Programas> Acessórios> botão direito do mouse em Prompt de Comando> Executar como administrador> Continuar> digite bcdedit.exe</p>
+          <p></p>
+          <p>Para editar o arquivo boot.ini no Windows XP, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar> botão direito do mouse em Meu Computador> Propriedades> guia Avançado> na área Inicialização e Recuperação, selecione Configurações> clique em Editar</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

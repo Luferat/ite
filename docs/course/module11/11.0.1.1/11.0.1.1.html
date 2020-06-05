@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.0.1.1 Introdução</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>O Profissional de TI</h1>
+        <h2>Introdução</h2>
+      </div>
+      <div id="content">
+          <p>Qualquer um pode aprender o conhecimento técnico necessário para trabalhar na industria de TI. No entanto, é preciso mais do que conhecimento técnico para se tornar um profissional de TI bem sucedido. Um profissional de TI deve estar familiarizado com as questões legais e éticas que são inerentes a esta indústria. Existem preocupações relacionadas a privacidade e confidencialidade que você deve levar em consideração a medida que interage com os clientes em campo, no escritório ou por telefone. Caso você se torne um técnico de bancada, embora você não possa interagir com os clientes diretamente, você terá acesso aos seus dados privados e confidenciais. Este capítulo aborda algumas questões legais e éticas.</p>
+          <p>Os técnicos de call center trabalham exclusivamente por telefone com os clientes. Esse capítulo aborda os procedimentos utilizados ao trabalhar com clientes.</p>
+          <p>Como um profissional de TI, você irá solucionar e corrigir problemas de computadores e frequentemente você se comunicará com clientes e colegas de trabalho. Na verdade, a solução de problemas é muito mais sobre a comunicação com o cliente do que saber como consertar um computador. Neste capítulo, você aprenderá a usar boas habilidades de comunicação.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

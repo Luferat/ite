@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.2.1 Ferramentas de Gerenciamento de Disco</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Uso Adequado das Ferramentas</h1>
+        <h2>Ferramentas de Software</h2>
+      </div>
+      <div id="content">
+          <p>Ferramentas de software ajudam a diagnosticar problemas do computador e da rede, além de determinar qual dispositivo de computador não está funcionando corretamente. Um técnico deve ser capaz de utilizar uma série de ferramentas de software para diagnosticar problemas, manter o hardware e proteger os dados armazenados em um computador.</p>
+          <p>Você deve ser capaz de identificar qual o software utilizar em diferentes situações. Ferramentas de gerenciamento de disco ajudam a detectar e corrigir erros no disco, preparar um disco para armazenamento de dados e remover arquivos indesejados.</p>
+          <p>A figura exibe informações sobre as seguintes ferramentas de gerenciamento de disco:</p>
+          <p><ul>
+              <li>FDISK - Cria e exclui as partições em um disco rígido. Essa ferramenta FDISK não está disponível no Windows XP, Vista ou 7. A mesma foi substituída pela ferramenta Gerenciamento de Disco.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gerenciamento de Disco - Inicializa os discos, cria e formata partições.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Format - Prepara um disco rígido para armazenar informações.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Scandisk ou CHKDSK - Verifica a integridade de arquivos e pastas em um disco rígido, verificando o sistema de arquivos. Essas ferramentas também verifica a superfície do disco em busca de erros físicos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Defrag - Otimiza o espaço no disco rígido para permitir o acesso mais rápido aos programas e dados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Limpeza de Disco - Limpa espaço em um disco rígido, procurando arquivos que podem ser excluídos com segurança.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>System File Checker (SFC) - Verifica os arquivos críticos do sistema operacional e substitui os arquivos que estão corrompidos. Use o disco de inicialização do Windows 7 para solucionar problemas e reparar arquivos corrompidos. O disco de inicialização do Windows 7 repara arquivos do sistema, restaura arquivos danificados ou perdidos e reinstala o sistema operacional. Ferramentas de software de terceiros também estão disponíveis para auxiliar na resolução de problemas.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

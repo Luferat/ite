@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.6.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Dispositivos Móveis</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Este capítulo introduziu-lhe aos dispositivos móveis, aos sistemas operacionais usados ​​por dispositivos móveis, como proteger os dispositivos móveis, o uso de serviços cloud-enabled e a forma com que os dispositivos móveis se conectam à rede, dispositivos e periféricos. Conceitos básicos de solução de problemas relacionados à dispositivos móveis foram discutidos, apresentando exemplos de soluções simples para problemas comuns. Os seguintes conceitos deste capítulo são importantes para serem lembrados:</p>
+          <p><ul>
+              <li>O hardware dos dispositivos móveis possui poucas unidades reparáveis em campo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os dispositivos móveis frequentemente são substituídos ao invés de reparados, devido ao alto custo dos consertos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os dispositivos móveis muitas vezes contêm peças exclusivas que não podem ser trocadas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os touchscreens são usados ​​no lugar de outros dispositivos de entrada, tais como mouse e teclado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Discos SSDs são usados ​​em dispositivos móveis devido ao seu tamanho, eficiência energética e funcionamento silencioso.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os softwares de código aberto podem ser modificados por qualquer pessoa com pouco ou nenhum custo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Utilize apenas ​​fontes de conteúdo confiáveis para evitar malwares e conteúdos inseguros.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tanto Android, quanto o iOS possuem GUIs semelhante para usar aplicativos e acessar outros conteúdos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os dispositivos móveis utilizam sensores, como GPS e acelerômetros, para melhorar a sua funcionalidade.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As conexões de rede para dispositivos móveis são feitas através das redes celular, Wi-Fi e Bluetooth.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As contas de e-mail ficam atreladas aos dispositivos móveis, fornecendo diversos serviços de sincronização de dados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dispositivos Android usam aplicativos para sincronizar os dados que não são sincronizados automaticamente pelo Google.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dispositivos iOS usam o iTunes para sincronizar dados e outros conteúdos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Padrões de segurança e senhas são usados para protegem os dispositivos móveis.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Backups remotos podem ser realizados para armazenar dados dos dispositivos móveis na nuvem.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Bloqueio ou o apagamento remoto são recursos usados para proteger um dispositivo móvel que foi perdido ou roubado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Softwares de antivírus são frequentemente usados em dispositivos móveis para impedir a transferência de programas maliciosos para outros dispositivos ou computadores.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

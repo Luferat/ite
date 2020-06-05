@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.2.4 Diagnóstico e Monitoramente de Hardware da BIOS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Inicializando o Computador</h1>
+        <h2>Configuração da BIOS</h2>
+      </div>
+      <div id="content">
+          <p>Os recursos de monitoramento de hardware embutidos da BIOS são úteis para coletar informações e monitorar a atividade do hardware conectado à placa-mãe. O tipo e o número de recursos de monitoramento varia conforme o modelo da placa-mãe. Use a página de monitoramento de hardware para ver a temperaturas, velocidades do ventoinha, tensão e outros itens. Esta área também pode conter informações sobre os dispositivos de detecção de intrusão.</p>
+          <p></p>
+          <p>Temperaturas</p>
+          <p>Placas-mãe têm sensores de calor utilizados para monitorar hardwares sensíveis ao calor. Um sensor de calor comum está localizado sob o soquete da CPU. Este sensor monitoriza a temperatura da CPU e pode aumentar a velocidade da ventoinha da CPU para resfriar o processador caso ele venha a ficar muito quente. Algumas configurações da BIOS também diminuem a velocidade da CPU para reduzir a sua temperatura. Em alguns casos, a BIOS desliga o computador para evitar danos à CPU.</p>
+          <p></p>
+          <p>Outros sensores de calor monitoram a temperatura no interior do gabinete ou da fonte de energia. Além disso, sensores de calor monitoram as temperaturas dos módulos de memória RAM, chipsets e outros equipamentos especializados. O BIOS aumenta a velocidade das ventoinhas ou desliga o computador para evitar o superaquecimento e danos.</p>
+          <p></p>
+          <p>Velocidades da Ventoinha</p>
+          <p>A velocidade da ventoinha é monitorada pela BIOS. Algumas configurações da BIOS permitem que você configure perfis para definir a velocidade da ventoinha para alcançar um resultado específico. Estes são alguns dos perfis comuns de velocidade da ventoinha:</p>
+          <p></p>
+          <p><ul>
+              <li>Padrão - O ventilador ajusta automaticamente, dependendo da temperatura da CPU, gabinete, fonte de alimentação ou outro hardware.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Turbo - Velocidade máxima da ventoinha.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Silencioso - Minimiza a velocidade da ventoinha para diminuir o seu barulho.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Manual - O usuário pode atribuir configurações de controle de velocidade da ventoinha.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Tensão</p>
+          <p>É possível controlar a tensão da CPU ou os reguladores de tensão na placa-mãe, como mostrado na Figura 1. Se as tensões estivem muito alta ou muito baixa, os componentes do computador podem ser danificados. Se você achar que o nível de tensão não estão na quantidade correta ou próxima a ela, certifique-se de que a fonte de alimentação está funcionando corretamente. Se a fonte de alimentação estiver fornecendo o nível de tensão correto, os reguladores de tensão da placa-mãe podem estar danificados. Neste caso, a placa-mãe pode ter que ser reparada ou substituída.</p>
+          <p></p>
+          <p>Clock e Velocidade do Barramento</p>
+          <p>Em algumas configurações da BIOS, é possível monitorizar a velocidade do processador, como mostrado na Figura 2. Algumas configurações da BIOS também permitem que você monitore um ou mais barramentos. Você pode precisar olhar para estes itens para determinar se as configurações corretas de CPU foram detectados pela BIOS ou se foram inseridas manualmente por um cliente ou pelo técnico que montou o computador. Velocidades de barramento incorretas podem causar aumento de temperatura da CPU e dos hardwares conectados, ou causar danos em placas adaptadoras e memória RAM.</p>
+          <p></p>
+          <p>Detecção de Intrusão</p>
+          <p>Alguns gabinetes têm um interruptor que é acionado quando o mesmo é aberto. Você pode configurar a BIOS para registrar quando o interruptor é acionado para que o proprietário possa dizer se o gabinete foi adulterado. O interruptor está conectado à placa-mãe.</p>
+          <p></p>
+          <p>Diagnóstico Embutido</p>
+          <p>Se você tiver um problema com um dispositivo conectado ao sistema ou a função básica, como uma ventoinha ou controle de temperatura e tensão, você pode usar diagnósticos embutidos do sistema para determinar onde está o problema. Muitas vezes, o programa fornece uma descrição do problema ou um código de erro para solucionar o mesmo. Estes são alguns diagnósticos embutidos comuns:</p>
+          <p></p>
+          <p><ul>
+              <li>Teste de Inicialização - Verifica os principais componentes para certificar de que eles estão funcionando corretamente. Utilize este teste quando o computador não inicializa corretamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teste do Disco Rígido - Verifica o disco rígido em busca de áreas danificadas. Se a área danificada for encontrada, ele tentará recuperar os dados e movê-los para uma boa área e marcar a área danificada para que ela não seja mais utilizada. Utilize este teste se você suspeitar que o disco rígido não está funcionando corretamente, se o computador não inicializar ou se o disco rígido estiver fazendo alguns ruídos estranhos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teste de Memória - Verifica os módulos de memória para certificar de que eles estão funcionando corretamente. Utilize este teste caso o computador apresente um comportamento estranho ou falhe ao inicializar. Substitua a memória imediatamente se este teste relatar erros.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teste de Bateria - Verifica se a bateria está funcionando corretamente. Utilize este teste se a bateria não estiver funcionando corretamente, não manter a carga ou relatar um nível de carga incorreto. Substitua a bateria se a mesma falhar neste teste.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Os programas de diagnóstico mantêm um registro que contém os problemas encontrados. Você pode usar estas informações para investigar problemas e códigos de erro. Quando o dispositivo estiver na garantia, você pode usar esta informação para transmitir o problema para o suporte do produto.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

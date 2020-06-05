@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.6.1.2 IEEE 802.3</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Ethernet Standards</h1>
+      <h2>Cabled and Wireless</h2>
+    </div>
+    <div id="content">
+          <p>Ethernet protocols describe the rules that control how communication occurs on an Ethernet network. To ensure that all Ethernet devices are compatible with each other, the IEEE developed standards for manufacturers and programmers to follow when developing Ethernet devices.</p>
+          <p></p>
+          <p>The Ethernet architecture is based on the IEEE 802.3 standard. The IEEE 802.3 standard specifies that a network implement the Carrier Sense Multiple Access with Collision Detection (CSMA/CD) access control method. </p>
+          <p></p>
+          <p>In CSMA/CD, all end stations listen to the network wire for clearance to send data. This process is similar to waiting to hear a dial tone on a phone before dialing a number. When the end station detects that no other host is transmitting, the end station attempts to send data. If no other station sends any data at the same time, this transmission arrives at the destination computer with no problems. If another end station observed the same clear signal and transmitted at the same time, a collision occurs on the network media, as shown in Figure 1. </p>
+          <p></p>
+          <p>The first station that detects the collision, or the doubling of voltage, sends out a jam signal that tells all stations to stop transmitting and to run a backoff algorithm. A backoff algorithm calculates random times in which the end station tries transmitting again. This random time is typically in 1 or 2 milliseconds (ms). This sequence occurs every time there is a collision on the network and can reduce Ethernet transmission by up to 40 percent.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

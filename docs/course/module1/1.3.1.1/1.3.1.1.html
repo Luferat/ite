@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.3.1.1 Estações de Trabalho CAx</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Configurações para um Sistema de Computador Especializado</h1>
+        <h2>Sistemas de Computadores Especializados</h2>
+      </div>
+      <div id="content">
+          <p>Talvez você precise projetar, construir e instalar computadores de um cliente para que ele possa realizar uma tarefa específica. Todos os computadores podem executar programas, armazenar dados e utilizar os dispositivos I/O.</p>
+          <p>Um cliente padrão normalmente possui um computador de mesa tradicional, que atende aos requisitos recomendados pelo Windows e executa algumas aplicações. Porém, um computador especializado deve oferecer suporte de hardware e software que permita ao usuário realizar tarefas que um cliente padrão não pode executar. Um exemplo de computador especializado é uma estação de trabalho usada para executar softwares de projetos auxiliados por computador (CAD) e manufaturas auxiliadas por computador (CAM).</p>
+          <p>Uma estação de trabalho CAD ou CAM (CAx), como mostrado na figura, é utilizada para desenvolver produtos e controlar o processo de fabricação. Estações de trabalho CAx são usadas ​​para projetar desenhos técnicos de casas, carros, aviões e muitas das peças dos produtos que você usa todos os dias. A CAx é usado até mesmo para desenvolver as peças de computador usadas ​​em estações de trabalho CAx. Um computador usado para executar softwares CAx deve suportar as necessidades dos software e dos dispositivos I/O que o usuário precisa para projetar e fabricar produtos. Software CAx muitas vezes são complexos e requerem um hardware robusto. Considere o seguinte hardware quando você precisar executar um software CAx:</p>
+          <p><ul>
+              <li>Processador poderoso - Softwares CAx devem realizar enormes quantidades de cálculos muito rapidamente. Você deve atender as necessidades do software ao escolher uma CPU.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placa de vídeo de alto desempenho - Alguns softwares CAx são usados para criar modelos 3D. Sombreamento realista e a texturização aumentam a complexidade dos modelos, desta forma, uma placa de vídeo que pode lidar com altas resoluções e altos níveis de detalhes é necessária. Muitas vezes, vários monitores são desejados, ou necessários, para que o usuário possa trabalhar com código, renderizar modelos 2D e 3D, tudo ao mesmo tempo. Escolha uma placa de vídeo que suporte múltiplos monitores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>RAM - Devido à grande quantidade de dados processados ​​por uma estação de trabalho CAx, a RAM é muito importante. Quanto mais memória RAM estiver instalada, mais dados o processador poderá calcular antes de precisar consultar um armazenamento mais lento, como discos rígidos. Instale o máximo de memória que é suportado pela placa-mãe e pelo sistema operacional. A quantidade e velocidade da memória devem exceder o mínimo recomendado pela aplicação CAx.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

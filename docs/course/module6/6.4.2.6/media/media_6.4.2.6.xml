@@ -1,0 +1,42 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Projeto de Fibra</b>]]></text>
+</component>
+
+<component id="ID_image01_txt01">
+<text><![CDATA[<b><b>Capa de Proteção (Tipicamente em PVC)</b></b>]]></text>
+</component>
+<component id="ID_image01_txt02">
+<text><![CDATA[<b><b>Matrial de Reforço (Cordão de Fibra Aramid)</b></b>]]></text>
+</component>
+<component id="ID_image01_txt03">
+<text><![CDATA[<b><b>Buffer</b></b>]]></text>
+</component>
+<component id="ID_image01_txt04">
+<text><![CDATA[<b>Revestimento Interno</b>]]></text>
+</component>
+<component id="ID_image01_txt05">
+<text><![CDATA[<b>Núcleo</b>]]></text>
+</component>
+
+<component id="ID_image02_txt01">
+<text><![CDATA[<b>Capa de Proteção</b>]]></text>
+</component>
+<component id="ID_image02_txt02">
+<text><![CDATA[<b>Cordão de Fibra Aramid</b>]]></text>
+</component>
+<component id="ID_image02_txt03">
+<text><![CDATA[<b>Buffer</b>]]></text>
+</component>
+<component id="ID_image02_txt04">
+<text><![CDATA[<b>Revestimento Interno</b>]]></text>
+</component>
+<component id="ID_image02_txt05">
+<text><![CDATA[<b>Núcleo</b>]]></text>
+</component>
+
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

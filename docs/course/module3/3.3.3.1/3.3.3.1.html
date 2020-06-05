@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.3.1 Atualização de Dispositivos de Entrada e Saída</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Atualizando e Configurando um PC</h1>
+        <h2>Dispositivos de Entrada e Saída</h2>
+      </div>
+      <div id="content">
+          <p>Se um dispositivo de entrada ou saída parar de funcionar, você pode ter que substituir o mesmo. Alguns clientes querem atualizar seus dispositivos de entrada ou saída para aumentar o desempenho e produtividade.</p>
+          <p>Os teclados ou mouses ergonômicos, apresentado na Figura 1, podem ser mais confortáveis de usar. Às vezes, uma reconfiguração é necessária para permitir que um usuário possa executar tarefas especiais, como a digitação de uma segunda língua com caracteres adicionais. Substituir ou reconfigurar um dispositivo de entrada ou de saída também pode tornar mais fácil a acomodação de usuários com deficiência.</p>
+          <p>Você pode adicionar filtros de privacidade e anti-reflexo a um monitor. Um filtro de privacidade é feito especialmente para ser colocado na tela e evitar que as pessoas ao lado de um monitor leiam as informações. Somente o usuário e as pessoas que estão diretamente atrás do usuário são capazes de ler as informações na tela. Um filtro anti-reflexo alocado à tela ajuda a prevenir que o brilho do sol e as luzes reflitam na tela. Um filtro anti-reflexo torna muito mais fácil de ler a tela à luz do dia ou quando a luz estiver atrás do usuário.</p>
+          <p>Alguns clientes precisam adicionar monitores adicionais, tal como mostrado na Figura 2. Muitas vezes, uma placa de vídeo mais avançada ou uma segunda placa, é necessária para suportar as conexões adicionais. Adição de monitores pode aumentar a produtividade, permitindo que o usuário exiba mais informações e mova dados entre programas abertos com mais facilidade e rapidez.</p>
+          <p>Às vezes não é possível realizar uma atualização usando os slots de expansão existentes. Neste caso, você pode utilizar uma conexão USB. Se o computador não tiver uma porta USB extra, você deve instalar uma nova placa adaptadora USB ou adquirir um hub USB, como mostrado na Figura 3.</p>
+          <p>Após a obtenção de um novo hardware, você pode ter que instalar novos drivers. Normalmente você pode fazer isso usando a mídia de instalação. Se você não tiver a mídia de instalação, você pode obter os drivers atualizados no site do fabricante.</p>
+          <p>NOTA: Um driver assinado é um driver que passou no teste de laboratório de qualidade de hardware do Windows e foi dada uma assinatura do driver pela Microsoft. A instalação de um driver não assinado pode causar instabilidade no sistema, mensagens de erro e problemas de inicialização. Durante a instalação do hardware, se um driver não assinado for detectado, você será perguntado se você quer parar ou continuar a instalação. Somente instale drivers não assinados se você confiar na fonte dos drivers.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

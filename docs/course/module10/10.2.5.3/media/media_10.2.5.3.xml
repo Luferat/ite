@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Atividade de Segurança Física</b>]]></text>
+</component>
+
+<component id="ID_s1_drag01">
+<text><![CDATA[Utiliza um chip de circuito integrado para armazenar dados de forma segura.]]></text>
+</component>
+<component id="ID_s1_drag02">
+<text><![CDATA[Utiliza um pequeno sistema de rádio para se comunicar com o computador.]]></text>
+</component>
+<component id="ID_s1_drag03">
+<text><![CDATA[Utiliza características físicas do utilizador que auxiliam durante a identificação do usuário.]]></text>
+</component>
+
+<component id="ID_s1_def01">
+<text><![CDATA[Smart card]]></text>
+</component>
+<component id="ID_s1_def02">
+<text><![CDATA[Chave Transmissora (Key fob)]]></text>
+</component>
+<component id="ID_s1_def03">
+<text><![CDATA[Dispositivos biométricos]]></text>
+</component>
+
+<component id="ID_s1_target01">
+<text><![CDATA[<I>- Arraste a opção aqui -</I>]]></text>
+</component>
+<component id="ID_s1_target02">
+<text><![CDATA[<I>- Arraste a opção aqui -</I>]]></text>
+</component>
+<component id="ID_s1_target03">
+<text><![CDATA[<I>- Arraste as opções aqui -</I>]]></text>
+</component>
+
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Escolha as respostas, arraste as opções para a posição e, em seguida, clique em Verificar.</b>]]></text>
+</component>
+
+   	<component id="ID_CORRECT_TITLE">
+		<text><![CDATA[Correto]]></text> 
+	</component>
+	<component id="ID_CORRECT_BODY">
+		<text><![CDATA[Está correto.]]></text> 
+	</component>
+	<component id="ID_INCORRECT_TITLE">
+		<text><![CDATA[Incorreto]]></text> 
+	</component>
+	<component id="ID_INCORRECT_BODY">
+		<text><![CDATA[Está incorreto.]]></text> 
+	</component>
+   
+   	<component id="ID_CHECK">
+		<text><![CDATA[Verificar]]></text> 
+	</component>
+	<component id="ID_RESET">
+		<text><![CDATA[Reiniciar]]></text> 
+	</component>
+
+
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

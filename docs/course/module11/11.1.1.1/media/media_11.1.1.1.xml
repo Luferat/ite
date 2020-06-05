@@ -1,0 +1,13 @@
+﻿<textcomponents>
+
+<component id="ID_title_01">
+<text><![CDATA[<b>Recursos Técnico</b>]]></text>
+</component>
+<component id="ID_body01">
+  <text><![CDATA[<textformat blockindent='-16'><LI>Experiência Pessoal</LI><LI>Scripts</LI><LI>Websites</LI><LI>Ferramentas de Busca</LI><LI>FAQs Online</LI><LI>Colegas de Trabalho</LI><LI>Suporte do Vendedor</LI><LI>Ferramentas de reparação e diagnóstico</LI><LI>Manuais do fabricante</LI><LI>Email</LI></textformat>]]></text> 
+  </component>
+
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

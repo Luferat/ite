@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.5.1.3 Determinando a Topologia da Rede</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Topologias de Rede</h1>
+        <h2>Topologias</h2>
+      </div>
+      <div id="content">
+          <p>É necessário entender as necessidades do cliente e determinar o layout geral da nova rede para determinar corretamente a topologia da rede. Estas decisões de rede precisam ser discutidas com o cliente:</p>
+          <p></p>
+          <p><ul>
+              <li>Padrões de cabo e wireless</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Capacidade de expansão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Número e localização dos usuários</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>O número de usuários e a quantidade estimada de um crescimento futuro determina a topologia física e lógica inicial da rede. Uma inspeção, chamada de site survey, deve ser feita no início do projeto. O site survey é uma inspeção física do local para ajudar a determinar uma topologia física básica. Crie uma lista de verificação para registrar as necessidades de seu cliente para determinar a topologia física:</p>
+          <p></p>
+          <p><ul>
+              <li>Localização dos computadores dos usuários</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Posição dos equipamentos de rede, como switches e roteadores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Posição dos servidores</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A planta ou projeto pode ser útil para determinar a disposição física dos equipamentos e cabos. A disposição física é muitas vezes determinada com base no espaço disponível, força, segurança e refrigeração (ar condicionado). A imagem apresenta uma típica topologia de rede. Se uma planta ou projeto não estiver disponível, faça um desenho de onde os dispositivos de rede estarão localizados, incluindo a localização da sala do servidor, impressoras, estações de trabalho e lances de cabos. Este desenho pode ser usado para discussões quando o cliente tomar as decisões finais do layout.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

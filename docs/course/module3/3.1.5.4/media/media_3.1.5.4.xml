@@ -1,0 +1,29 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Conectores do Painel Frontal</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Conector do Painel do Sistema</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Seta indicadora do Pino 1</b>]]></text>
+</component>
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Conector do Painel de Sistema para o Pino 1</b>]]></text>
+</component>
+
+<component id="ID_s5_title">
+<text><![CDATA[<b>Conectores USB da Placa-mãe</b>]]></text>
+</component>
+
+<component id="ID_s6_title">
+<text><![CDATA[<b>Conectores USB internos</b>]]></text>
+</component>
+
+</textcomponents>

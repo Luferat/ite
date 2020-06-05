@@ -1,0 +1,143 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Assistente de Inicialização do Windows</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<font face='_typewriter' size='10' class="ID_s1_txt01"><b>Assistente de Inicialização do Windows</b></font>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<font color="#FFFFFF" face='_typewriter' class="ID_s1_txt02">Escolha um sistema operacional para iniciar ou pressione TAB para selecionar uma ferramenta: (Use as setas do teclado para indicar a sua escolha e, em seguida, pressione ENTER.)</font>]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[<font color="#FFFFFF" face='_typewriter' class="ID_s1_txt02">Para especificar uma opção avançada para esta escolha, pressione F8. Após alguns segundos a opção indicada será iniciada automaticamente: 29Tools:<textformat blockindent='25'><span class="ID_s1_txt02">Diagnostico de Memória do Windows</span></textformat></font>]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[<font color="#FFFFFF" face='_typewriter' class="ID_s1_txt04">Windows 7 ></font>]]></text>
+</component>
+<component id='ID_s1_txt05'>
+	<text><![CDATA[<font color="#FFFFFF" face='_typewriter' class="ID_s1_txt05">Windows XP<b></font>]]></text>
+</component>
+
+<!--Slide 2-->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>bcdedit.exe ferramenta de linha de comando</b>]]></text>
+</component>
+
+<component id='ID_s2_txt0'>
+	<text><![CDATA[<font><b class="ID_s2_txt01">C:\</b></font>]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<font><b class="ID_s2_txt01">Administrador: C:\Windows\system32\cmd.exe</b></font>]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[<font color="#E9E7E8" face='_typewriter' size='10'><textformat tabstops='[150]'>C:\Users\John Doe>bcedit.exeWindows Boot Manager--------------------identifier {bootmgr}device partition=\Device\HarddiskVolume1description Windows Boot Managerlocale en-USinherit &lt;globalsettings>default &lt;current>resumeobject &lt;a11177bd-a5cf-11e1-acab-950c0ec54e74>displayorder &lt;current>toolsdisplayorder &lt;memdiag>timeout 30Windows Boot Loader-------------------identifier &lt;current>device partition=C:path \Windows\system32\winload.exedescription Windows 7locale en-USinherit &lt;bootloadersettings>recoverysequence &lt;a11177bf-a5cf-11e1-acab-950c0ec54e74>recoveryenabled Yesosdevice partition=C:systemroot\Windowsresumeobject &lt;a11177bd-a5cf-11e1-acab-950c0ec54e74>nx OptInC:\Users\John Doe></textformat></font>]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[<font color="#E9E7E8" face='_typewriter'>C:\Users\John Doe>bcedit.exeWindows Boot Manager------------------------------<br><table>
+							<tr>
+								<td width="40%">identificador</td>
+								<td>{bootmgr}</td>
+							</tr>
+							<tr>
+								<td>dispositivo</td>
+								<td>partição=\Device\HarddiskVolume1</td>
+							</tr>
+							<tr>
+								<td>descrição</td>
+								<td>Assistente de Inicialização do Windows</td>
+							</tr>
+							<tr>
+								<td>localidade</td>
+								<td>en-US</td>
+							</tr>							
+							<tr>
+								<td>herdar</td>
+								<td>&lt;globalsettings></td>
+							</tr>							
+							<tr>
+								<td>padrão</td>
+								<td>&lt;current></td>
+							</tr>							
+							<tr>
+								<td>resumeobject</td>
+								<td>&lt;a11177bd-a5cf-11e1-acab-950c0ec54e74></td>
+							</tr>							
+							<tr>
+								<td>displayorder</td>
+								<td>&lt;current></td>
+							</tr>							
+							<tr>
+								<td>toolsdisplayorder</td>
+								<td>&lt;memdiag></td>
+							</tr>							
+							<tr>
+								<td>timeout</td>
+								<td>30</td>
+							</tr>
+						</table><br>O Windows Boot Loader ------------------------------<br><table>							
+							<tr>
+								<td width="40%">identificador</td>
+								<td>&lt;current></td>
+							</tr>							
+							<tr>
+								<td>dispositivo</td>
+								<td>partition=C:</td>
+							</tr>							
+							<tr>
+								<td>caminho</td>
+								<td>\Windows\system32\winload.exe</td>
+							</tr>							
+							<tr>
+								<td>descrição</td>
+								<td>Windows 7</td>
+							</tr>							
+							<tr>
+								<td>localidade</td>
+								<td>en-US</td>
+							</tr>							
+							<tr>
+								<td>herdar</td>
+								<td>&lt;bootloadersettings></td>
+							</tr>							
+							<tr>
+								<td>recoverysequence</td>
+								<td>&lt;a11177bf-a5cf-11e1-acab-950c0ec54e74></td>
+							</tr>							
+							<tr>
+								<td>recoveryenabled</td>
+								<td>Sim</td>
+							</tr>							
+							<tr>
+								<td>osdevice</td>
+								<td>partition=C:</td>
+							</tr>							
+							<tr>
+								<td>systemroot\Windows</td>
+								<td></td>
+							</tr>							
+							<tr>
+								<td>resumeobject</td>
+								<td>&lt;a11177bd-a5cf-11e1-acab-950c0ec54e74></td>
+							</tr>							
+							<tr>
+								<td>nx</td>
+								<td>OptIn</td>
+							</tr>							
+							<tr>
+								<td></td>
+								<td></td>
+							</tr>
+						</table><br/>C:\Users\John Doe><br/><br/></font>]]></text>
+</component>
+
+</textcomponents>

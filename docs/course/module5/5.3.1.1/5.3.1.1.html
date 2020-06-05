@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.1.1 Windows Desktop</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Desktop, Ferramentas e Aplicações</h2>
+      </div>
+      <div id="content">
+          <p>Depois que o S.O. foi instalado, você pode personalizar a área de trabalho do computador para atender as suas necessidades individuais. A área de trabalho do computador é uma representação gráfica do espaço de trabalho, comumente chamado de GUI. A área de trabalho possui ícones, barras de ferramentas e menus para manipular arquivos. Você pode adicionar ou alterar imagens, sons e cores para proporcionar um visual mais personalizado. Juntos, esses itens personalizáveis ​​compõem um tema. O Windows 7 e Windows Vista usam um tema padrão chamado Aero. O Aero tem bordas de janelas translúcidas, numerosas animações e ícones que são imagens em miniatura do conteúdo de um arquivo. Devido aos gráficos avançados necessários para executar o tema, o Aero está disponível apenas em computadores que atendam aos seguintes requisitos de hardware:</p>
+          <p><ul>
+              <li>Processador de 1 GHz 32 ou 64 bits</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>1 GB de RAM</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placa de vídeo de 128 MB</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Processador gráfico classe DirectX9 que suporte o Modelo de Driver de Exibição do Windows, Pixel Shader 2.0 em hardware e 32 bits por pixel.</li>
+            </ul>
+          </p>
+          <p>NOTA: O Windows 7 Starter e Windows Vista Home Basic não incluem o tema Aero.</p>
+          <p>O Windows 7 inclui os seguintes novos recursos do Aero:</p>
+          <p><ul>
+              <li>Shake - Minimiza todas as janelas que não estão sendo utilizadas, clicando na barra de título de uma janela e agitando o mouse. Para maximizar as janelas novamente, clique na barra de título da janela visível e agite o mouse.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Peek - Visualiza os ícones e gadgets na área de trabalho apontando o mouse na borda direita da barra de tarefas para tornar todas as janelas transparentes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Snap - Redimensiona uma janela arrastando-a para um dos cantos da tela. Arrastar a janela para a borda esquerda da área de trabalho encaixa a janela na metade esquerda da tela. Arrastar a janela para a borda direita da área de trabalho encaixa a janela na metade direita da tela. Arrastar a janela para a borda superior da área de trabalho maximiza a janela para preencher a tela inteira.</li>
+            </ul>
+          </p>
+          <p>Gadgets</p>
+          <p>No Windows 7 e Windows Vista, os usuários podem colocar Gadgets na área de trabalho. Gadgets são pequenos aplicativos, como jogos, notas ou um relógio. Milhares de Gadgets estão disponíveis para acessar diferentes tipos de dados. A Figura 1 mostra os Gadgets de tempo, calendário e relógio em um desktop do Windows 7. Você pode alterar a posição dos gadgets para os lados e cantos da área de trabalho, bem como alinhá-los com outros gadgets.</p>
+          <p></p>
+          <p>NOTA: O Windows XP não possui Gadgets.</p>
+          <p>Para adicionar gadgets no desktop, siga estes passos:</p>
+          <p>Passo 1. Clique com o botão direito do mouse em qualquer lugar da área de trabalho e selecione Gadgets.</p>
+          <p>Passo 2. Execute qualquer dos seguintes procedimentos:</p>
+          <p><ul>
+              <li>Arraste e solte o gadget para o desktop.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Clique duas vezes no gadget para adicioná-lo à área de trabalho.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Clique com o botão direito do mouse no gadget e selecione Adicionar.</li>
+            </ul>
+          </p>
+          <p>Passo 3. Para encaixar um gadget, arraste-o para o local de trabalho desejado. O gadget se alinha com as bordas da tela e outros gadgets.</p>
+          <p></p>
+          <p>No Windows Vista, você também pode personalizar um recurso chamado Sidebar, como mostrado na Figura 2. Sidebar é um painel gráfico na área de trabalho que mantém os gadgets organizados. O Sidebar não está disponível no Windows 7.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

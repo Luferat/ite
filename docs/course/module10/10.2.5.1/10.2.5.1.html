@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.5.1 Métodos de Proteção de Equipamentos Físicos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Protegendo os Equipamentos Físicos</h2>
+      </div>
+      <div id="content">
+          <p>A segurança física é tão importante quanto a segurança dos dados. Quando um computador é tomado, os dados também são roubados. É importante restringir o acesso às instalações utilizando cercas, fechaduras e portões. Proteja a infra-estrutura de rede, como cabos, equipamentos de telecomunicações e dispositivos de rede, utilizando as seguintes recomendações:</p>
+          <p><ul>
+              <li>Proteja as salas de telecomunicações, armários, equipamentos e gabinetes</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Utilize travas de segunraça nos dispositivos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Detecção sem fio para pontos de acesso não autorizados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Firewalls de Hardware</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sistema de gerenciamento de rede que detecta alterações nos cabos e patch panels</li>
+            </ul>
+          </p>
+          <p>Desabilitar o AutoRun</p>
+          <p>Outro método de segurança é desativar o recurso AutoRun do sistema operacional. O AutoRun executa automaticamente as instruções presentes no arquivo autorun.inf, quando o mesmo é encontrado em novas mídias. AutoPlay é diferente do AutoRun. O recurso de reprodução automática (AutoPlay) é uma maneira simples de identificar automaticamente quando novas mídias, como discos ópticos, discos rígidos externos ou pen drives, são inseridos ou conectados no computador. O AutoPlay solicita que o usuário escolha uma ação com base no conteúdo das novas mídias, como executar um programa, tocar música ou explorar a media.</p>
+          <p>No Windows, o AutoRun é executado primeiro, a menos que ele esteja desativado. Se AutoRun não estiver desativado, o computador seguirá as instruções do arquivo autorun.inf. No Windows Vista e Windows 7, não é permitido que o AutoRun ignore as instruções do AutoPlay. No entanto, no Windows XP, o AutoRun ignora o AutoPlay e pode iniciar uma aplicação sem avisar o usuário. Isto é um risco de segurança, pois pode executar automaticamente um programa malicioso e comprometer o sistema. Devido a este fato é recomendável desabilitar o AutoRun.</p>
+          <p>Para desabilitar o AutoRun no Windows XP, siga esses passos:</p>
+          <p>Passo 1. Selecione Iniciar > Executar.</p>
+          <p>Passo 2. Digite regedit e clique em OK.</p>
+          <p>Passo 3. Navegue até HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Cdrom.</p>
+          <p>Passo 4. Clique duas vezes em AutoRun. Na caixa Dados do valor, digite 0 e clique em OK, como mostrado na Figura 1.</p>
+          <p>Passo 5. Feche o Editor de Registro.</p>
+          <p>Passo 6. Você terá que fazer logout e, em seguida, fazer login novamente para que esta alteração entre em vigor.</p>
+          <p>Autenticação por Dois Fatores</p>
+          <p>Os equipamentos e dados do computador podem ser protegidos usando técnicas de proteção sobrepostas, evitando assim o acesso não autorizado a dados sensíveis. Um exemplo de proteção sobreposta é quando uma senha e um smart card é utilizado para proteger uma sala de equipamentos. Isto é conhecido como a Autenticação por Dois Factores, como mostrado na Figura 2. Ao avaliar um método de segurança, o custo da implementação deve estar equilibrado com o valor dos dados ou do equipamento a ser protegido.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

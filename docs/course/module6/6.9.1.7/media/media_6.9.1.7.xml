@@ -1,0 +1,59 @@
+﻿<textcomponents>
+ 
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="liner">
+		     <td colspan='4' bgcolor='#DAE17A'><font size='14' color='#393536'><b class="font_forteen">Detalhes de Conexão com o ISP</b></font></td>				
+	   </tr>
+	   <tr>
+		<td class="liner_top" colspan='4' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width='90' valign="top"><font size='12' color='#ffffff'><b>Tipo</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font size='12' color='#ffffff'><b>Vantagens</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font size='12' color='#ffffff'><b>Desvantagens</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font size='12' color='#ffffff'><b>Velocidade</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>POTS</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Amplamente disponível</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Velocidade baixa e Não pode receber chamadas enquanto estiver conectado</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>MAX56 kbps</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>ISDN</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Velocidades superiores a POTS</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Ainda muito mais lento do que outras tecnologias de banda larga</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>BRI - até 128 kbps PRI - até 2.048 Mb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>DSL</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Baixo custo</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Distância para o CO impacta na velocidade</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>24 kbps - 100 Mb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Cabo</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Velocidade muito alta</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Reduz a velocidade de upload</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>27 kbps - 160 Mb/s</font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Satélite</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Disponível onde DSL e cabo não chegam</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Mais caro do que outras tecnologias de banda larga, e é suscetível às condições climáticas</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>9 kbps - 24 Mb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Celular</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Disponível para usuários móveis</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Não é acessível em todos os lugares</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>20 kbps ou superior, dependendo da tecnologia utilizada</font></td>
+	</tr>
+	
+</table>]]></text>
+</component>
+
+</textcomponents>

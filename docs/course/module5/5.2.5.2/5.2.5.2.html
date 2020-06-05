@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.5.2 Usuário e Sistema de Arquivos Locais</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Estrutura de Diretório e Atributos de Arquivos</h2>
+      </div>
+      <div id="content">
+          <p>Locais de Arquivos do Usuário</p>
+          <p>Por padrão, o Windows 7 e Windows Vista armazenam a maioria dos arquivos criados pelos usuários na pasta C:\Usuários\nome_do_usuário\. O Windows XP usa a pasta C:\Documents and Settings\nome_do_usuário\.</p>
+          <p>A pasta de cada usuário contém pastas de músicas, vídeos, sites, fotos, entre outros, conforme apresentado na Figura 1. Muitos programas também armazenam dados de usuário específicos nesta pasta. Se um único computador tiver muitos usuários, cada usuário terá sua própria pasta que contém os seus favoritos, itens do desktop e cookies. Os cookies são arquivos que contêm informações das páginas da web que o usuário visitou.</p>
+          <p>Pasta do Sistema</p>
+          <p>Quando o sistema operacional Windows é instalado, todos os arquivos que são usados ​​para executar o computador estão localizados na pasta C:\Windows\system32. O conteúdo da pasta de Sistema é mostrado na Figura 2.</p>
+          <p>Fontes</p>
+          <p>A pasta C:\Windows\Fonts contém as fontes instaladas no computador. As fontes vêm em vários formatos, incluindo TrueType, OpenType, Composite e PostScript. Alguns exemplos de tipos de fontes são Arial, Times New Roman e Courier. Você pode acessar a pasta Fontes através do Painel de Controle. Você pode instalar as fontes usando o menu Arquivo > Instalar Nova Fonte.</p>
+          <p>Arquivos Temporários</p>
+          <p>A pasta de arquivos temporários contém arquivos criados pelo sistema operacional e programas que são necessários por um curto período de tempo. Por exemplo, os arquivos temporários podem ser criados enquanto um aplicativo está sendo instalado para disponibilizar mais memória RAM para outros programas.</p>
+          <p>Quase todos os programas utilizam arquivos temporários, que normalmente são excluídos automaticamente quando o aplicativo ou o sistema operacional é finalizado. No entanto, alguns arquivos temporários devem ser apagados manualmente. Como os arquivos temporários ocupam espaço no disco rígido que poderia ser usado para outros arquivos, é uma boa ideia excluí-los a cada dois ou três meses.</p>
+          <p>No Windows Vista e Windows 7, os arquivos temporários geralmente estão localizados nas seguintes pastas:</p>
+          <p><ul>
+              <li>C:\Windows\Temp</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>C:\Usuário\Nome_do_Usuário\AppData\Local\Temp</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>%USERPROFILE%\AppData\Local\Temp</li>
+            </ul>
+          </p>
+          <p>No Windows XP, os arquivos temporários geralmente estão localizados nas seguintes pastas:</p>
+          <p><ul>
+              <li>C:\Temp</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>C:\Tmp</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>C:\Windows\Temp</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>C:\Windows\Tmp</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>C:\Documents and Settings\%USERPROFILE%\Local Settings\Temp</li>
+            </ul>
+          </p>
+          <p>NOTA: %USERPROFILE% é uma variável de ambiente definida pelo sistema operacional com o nome do usuário que está atualmente conectado ao computador. As variáveis ​​de ambiente são utilizadas pelo sistema operacional, aplicativos e programas de instalação de software.</p>
+          <p>Para ver as variáveis ​​de ambiente que estão configuradas no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Sistema > Configurações Avançadas do Sistema > guia Avançado > Variáveis de Ambiente</p>
+          <p>Para ver as variáveis ​​de ambiente que estão configuradas no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Sistema > Configurações Avançadas do Sistema > guia Avançado > Variáveis de Ambiente</p>
+          <p>Para ver as variáveis ​​de ambiente que estão configuradas no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Sistema > Avançado > Variáveis ​​de Ambiente</p>
+          <p>Arquivos de Programas</p>
+          <p>A pasta Arquivos de Programas é usada pela maioria dos programas de instalação de aplicativo para instalar o software. Em sistemas de 32 bits, os programas geralmente são instalado na pasta C:\Arquivos de Programas. Em sistemas de 64 bits, os programas de 64 bits geralmente são instalados na pasta C:\Arquivos de Programas, enquanto os programas de 32 bits geralmente são instalados na pasta C:\Arquivos de Programas (x86).</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

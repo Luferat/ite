@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.3.4 Desempenho e Diagnostico de Memória do Windows</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Ferramentas Administrativas</h2>
+      </div>
+      <div id="content">
+          <p>O Monitor de Desempenho, como mostrado na imagem, possui duas partes distintas: o Monitor do Sistema e os Logs e Alertas de Desempenho. Você deve ter privilégios administrativos para acessar a console do Monitor de Desempenho.</p>
+          <p>O Monitor do Sistema exibe informações em tempo real sobre os processadores, discos, memória e uso da rede. Use o Monitor do Sistema para exibir dados detalhados sobre os recursos que você está usando para realizar tarefas específicas ou múltiplas tarefas. Os dados mostrados podem ajudar a compreender como a carga de trabalho do computador afeta os recursos do sistema, como a CPU, memória e rede. Você pode facilmente resumir os dados de uso com histogramas, gráficos e relatórios. Os dados também podem ajudar a determinar quando uma atualização pode ser necessária.</p>
+          <p>Logs e Alertas de Desempenho permite-lhe registrar os dados de desempenho e configurar alertas. Alertas notificam-o quando um uso específico caiu ou ultrapassa um limiar. Você pode configurar os alertas para criar entradas no log de eventos, enviar uma mensagem de rede, iniciar um log de desempenho, executar um programa específico ou uma combinação destes recursos.</p>
+          <p>Para abrir o Monitor de Desempenho no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Ferramentas Administrativas> Monitor de Desempenho</p>
+          <p>No Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Ferramentas Administrativas> Monitor de Confiabilidade e Desempenho> Continuar</p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Ferramentas Administrativas> Performance</p>
+          <p>O Diagnóstico de Memória do Windows é uma ferramenta administrativa que verifica erros presentes na memória física instalada no computador.</p>
+          <p>Para acessar o Diagnóstico de Memória do Windows no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Ferramentas Administrativas> Diagnóstico de Memória do Windows</p>
+          <p>Para acessar o Diagnostico de Memória do Windows no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Ferramentas Administrativas> Ferramenta de Diagnostico de Memória</p>
+          <p>O Diagnostico de Memória do Windows não está incluso no Windows XP.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.1.3 Comunicações de Celulares</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e Email</h1>
+        <h2>Rede de Dados sem fio Celular</h2>
+      </div>
+      <div id="content">
+          <p>Quando as pessoas começaram a usar celulares, haviam poucos padrões industriais para a tecnologia de telefonia celular. Sem normas, era difícil e caro fazer chamadas para as pessoas que estavam em uma rede diferente. Hoje, operadoras de telefonia celular usam padrões da indústria, tornando mais fácil o uso de telefones celulares para fazer chamadas.</p>
+          <p>Os padrões celulares não foram aplicados de forma uniforme em todo o mundo. Alguns telefones celulares são capazes de utilizar vários padrões, enquanto outros só podem usar um padrão. Como resultado, alguns celulares podem operar em muitos países, enquanto outros só podem ser utilizados localmente.</p>
+          <p>A primeira geração (1G) de telefones celulares começou em 1980. Os telefones da primeira geração usavam principalmente os padrões analógicos. Com a utilização do sinal analógico, tornava-se difícil separar a interferência e o ruído do sinal de voz. Esse problema limita o uso dos sistemas analógicos. Poucos dispositivos 1G ainda estão em uso atualmente.</p>
+          <p>Em 1990, a segunda geração (2G) de dispositivos móveis foi marcada pela mudança do sinal analógico para padrões digitais. Os padrões digitais proporcionam maior qualidade de chamada. Estes são alguns padrões 2G comuns:</p>
+          <p><ul>
+              <li>Global System for Mobile (GSM)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Integrated Digital Enhanced Network (iDEN)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Code Division Multiple Access (CDMA)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Personal Digital Cellular (PDC)</li>
+            </ul>
+          </p>
+          <p>Com o desenvolvimento dos padrões de telefonia celular 3G, foram adicionadas extensões e recursos para os padrões 2G existentes. Estas normas de transição são conhecidas como padrões de 2.5G. Estas são algumas extensões comuns do padrão 2.5G:</p>
+          <p><ul>
+              <li>General Packet Radio Service (GPRS)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Enhanced Data Rates for GSM Evolution (EDGE)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CDMA2000</li>
+            </ul>
+          </p>
+          <p>Os padrões da terceira geração (3G) permitem aos dispositivos móveis irem além da comunicação de voz e de dados simples. Agora é comum que dispositivos móveis enviem e recebam mensagens de texto, fotos, áudio e vídeo. O 3G também oferece largura de banda suficiente para realizar videoconferências. Dispositivos móveis 3G também são capazes de acessar a Internet, jogar jogos, ouvir músicas e assistir a vídeos. Estes são alguns padrões 3G comuns:</p>
+          <p><ul>
+              <li>Universal Mobile Telecommunications System (UMTS)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CDMA2000</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Evolution-Data Optimized (EV-DO)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Freedom of Mobile Multimedia Access (FOMA)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Time Division Synchronous Code Division Multiple Access (TD-SCDMA)</li>
+            </ul>
+          </p>
+          <p>Padrões da quarta geração (4G) fornecem acesso à Internet com altas taxas de velocidade. Taxas de transmissão de dados maiores permitem aos usuários fazer download de arquivos muito mais rápido, realizar videoconferência ou assistir à televisão de alta definição. Estes são alguns padrões 4G comuns:</p>
+          <p><ul>
+              <li>Mobile WiMAX</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Long Term Evolution (LTE)</li>
+            </ul>
+          </p>
+          <p>A especificação para dispositivos 4G exige uma comunicação máxima de 100Mbps de para dispositivos altamente móveis, como os aparelhos presentes em um carro. Essa mesma especificação também requer um máximo de 1Gbps para dispositivos usados ​​por pessoas que se deslocam lentamente ou que estão paradas.</p>
+          <p>WiMAX e LTE</p>
+          <p>Mesmo que o WiMAX Móvel e o LTE fiquem aquém da taxa de dados para serem compatível com a tecnologia 4G (128 Mbps e 100 Mbps, respectivamente), eles ainda são considerados padrões 4G, porque eles oferecem muitas melhorias em relação ao desempenho do 3G. O WiMAX e o LTE também são os precursores para as versões que serão compatíveis com as especificações completas do 4G.</p>
+          <p>Tecnologias que acrescentam multimídia e funcionalidades de rede podem ser agrupadas com os padrões celulares. Os dois mais comuns são o Short Message Service (SMS), usado para enviar mensagens de texto, e Multimedia Message Service (MMS), utilizado para o enviar e receber fotos e vídeos. A maioria dos provedores de telefonia celular cobram taxas extra para fornecer esses recursos.</p>
+          <p>Para habilitar ou desabilitar o serviço de dados de celular em um dispositivo Android, conforme apresentado na Figura 1, use o seguinte caminho:</p>
+          <p>Configurações > toque em Redes sem fio e outras > Redes Móveis > habilite a opção Dados Móveis (Dados Habilitados)</p>
+          <p>Para habilitar ou desabilitar o serviço de dados de celular em um dispositivo iOS, conforme apresentado na Figura 2, use o seguinte caminho:</p>
+          <p>Ajustes > Celular > Dados do Celular > habilite o serviço de dados de celular.</p>
+          <p>A medida que um dispositivo móvel se move de uma área de cobertura 4G para a cobertura 3G, o dispositivo desliga o rádio 4G e liga o rádio 3G automaticamente. As conexões não são perdidas durante esta transição.</p>
+          <p>Modo Avião</p>
+          <p>A maioria dos dispositivos móveis também tem uma configuração chamada Modo Avião, que desliga todos os serviços de envio e recebimento de dados e voz, Wi-Fi, Bluetooth e rádio. O Modo Avião é útil quando se viaja em um avião ou se está em um local onde o acesso a dados é caro ou proibido. Ao usar o modo avião, a maioria das funções do dispositivos ainda são utilizáveis, porém não é possível realizar qualquer tipo de comunicação.</p>
+          <p>Para habilitar ou desabilitar o modo avião em um dispositivo Android, use o seguinte caminho:</p>
+          <p>Configurações > Mais > Modo Avião > OK</p>
+          <p>Para habilitar ou desabilitar o modo avião em um dispositivo iOS, use o seguinte caminho:</p>
+          <p>Ajustes > habilite o modo avião</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

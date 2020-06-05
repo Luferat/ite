@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.2.2 Outros Métodos de Instalação</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Opções de Instalação Personalizada</h2>
+      </div>
+      <div id="content">
+          <p>A instalação padrão do Windows 7 é suficiente para a maioria dos computadores utilizados em ambientes domésticos ou em escritórios. A instalação personalizada do Windows 7 pode economizar tempo e proporcionar uma configuração consistente em todos os computadores de uma rede grande. Ao instalar o Windows em vários computadores, os técnicos podem optar por usar um ambiente de pré-instalação, tal como o Windows PE. Ambientes de pré-instalação são sistemas operacionais básicos que permitem ao usuário particionar e formatar unidades ou iniciar uma instalação pela rede.</p>
+          <p></p>
+          <p>O Windows 7 tem vários tipos diferentes de instalações personalizadas.</p>
+          <p><ul>
+              <li>Instalação pela Rede - Exige que todos os arquivos de instalação sejam copiados para um servidor de rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Preboot Execution Environment (PXE) - Utiliza um programa de inicialização PXE e a placa de rede do cliente para acessar os arquivos de instalação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instalação Autônoma - Usa um ponto de distribuição de rede que utiliza um arquivo de resposta</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instalação Baseada em Imagem - Utiliza o Sysprep e um programa de imagem de disco, como o ImageX, que copia a imagem do sistema operacional diretamente para o disco rígido, sem intervenção do usuário</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instalação Remota - Faz o download da instalação através da rede. A instalação pode ser solicitada pelo usuário ou forçada pelo administrador.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NOTA: Para simplificar a implantação de sistema operacional em toda a organização, considere a utilização do OS Deployment Feature Pack juntamente ao Microsoft System Center Configuration Manager (SCCM).</p>
+          <p>Instalação de Rede</p>
+          <p>Para instalar o Windows 7 ou Windows Vista através da rede, siga estes passos:</p>
+          <p>Passo 1. Prepare o computador, criando uma partição NTFS de pelo menos 5 GB. Você deve criar uma partição de inicialização e incluir um cliente de rede. Você também pode usar um disco de inicialização que contém um cliente para que o computador possa se conectar a um servidor de arquivos na rede.</p>
+          <p>Passo 2. Copie a mídia de instalação para o servidor de rede. Certifique-se de compartilhar o diretório para que os clientes possam se conectar e usar os arquivos.</p>
+          <p>Passo 3. Inicie o computador e conecte-se ao diretório compartilhado.</p>
+          <p>Passo 4. A partir do diretório compartilhado, execute o programa de instalação, setup.exe, localizado no diretório chamado Sources. O programa de instalação copiará os arquivos de instalação para o seu disco rígido. Depois que os arquivos de instalação forem copiados, a instalação irá continuar.</p>
+          <p>Para instalar o Windows XP através da rede, siga estes passos:</p>
+          <p>Passo 1. Prepare o computador criando uma partição FAT ou FAT32 de pelo menos 1,5 GB. Você deve criar uma partição de inicialização e incluir um cliente de rede. Você também pode usar um disco de inicialização que contém um cliente para que o computador possa se conectar a um servidor de arquivos na rede.</p>
+          <p>Passo 2. Copie os arquivos de instalação do Windows XP (pasta I386 do disco de instalação) para o servidor de rede. Certifique-se de compartilhar o diretório para que os clientes possam se conectar e usar os arquivos.</p>
+          <p>Passo 3. Inicie o computador e conecte-se ao diretório compartilhado.</p>
+          <p>Passo 4. No diretório compartilhado, execute o programa de instalação, WINNT.EXE. O programa de instalação copiará os arquivos de instalação da rede em seu disco rígido. Depois que os arquivos de instalação forem copiados, a instalação irá continuar.</p>
+          <p>Instalação PXE</p>
+          <p>A instalação PXE utiliza um método semelhante a uma instalação da rede. A única diferença é que uma instalação PXE utiliza um arquivo de inicialização PXE em vez de um disco de boot. O arquivo de inicialização PXE permite que a placa de rede (NIC) se comunique com o servidor e obtenha os arquivos de configuração. Depois que um cliente tem acesso aos arquivos de configuração, é aberta uma janela do prompt de comando, onde é solicitado o nome de usuário e a senha da rede.</p>
+          <p></p>
+          <p>Instalação Autônoma no Windows 7 e Vista</p>
+          <p>Uma instalação autônoma usando um arquivo de resposta unattend.txt ou um arquivo autounattend.xml é o método de instalação alternativo mais fácil para se executar em uma rede. Para personalizar uma instalação padrão do Windows 7 ou Windows Vista, o System Image Manager (SIM) é usado para criar o arquivo de resposta de instalação. Você também pode adicionar pacotes, tais como aplicações ou drivers, para um arquivo de resposta autônomo ou um arquivo autounattend.xml.</p>
+          <p></p>
+          <p>A imagem mostra um exemplo de um arquivo de resposta. Depois que todas as perguntas foram respondidas, o arquivo é copiado para a pasta de distribuição compartilhada em um servidor. Neste ponto, você pode fazer um destes dois procedimentos:</p>
+          <p><ul>
+              <li>Execute o arquivo unattended.bat na máquina cliente para preparar o disco rígido e instalar o sistema operacional do servidor através da rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Crie um disco de boot que inicialize o computador e se conecte ao servidor de distribuição. Em seguida, execute o arquivo de batch para instalar o S.O. através da rede.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NOTA: O Windows SIM faz parte do Kit de Instalação Automatizada do Windows (AIK - Automated Installation Kit). Você pode baixá-lo através do site da Microsoft.</p>
+          <p></p>
+          <p>NOTA: No Windows XP, você pode criar um arquivo de resposta usando a aplicação setupmgr.exe, localizada no arquivo deploy.cab dentro da mídia do Windows XP.</p>
+          <p></p>
+          <p>Instalação Baseada em Imagem</p>
+          <p>Ao realizar instalações baseadas na imagem, comece configurando completamente um computador em um estado operacional. Em seguida, execute o Sysprep para preparar o sistema e gerar a imagem. A aplicação de unidade de geração de imagens prepara uma imagem completa do computador, que pode ser gravado em um DVD. Então, você poderá copiar a imagem em computadores com configurações de hardware compatíveis (HAL - Hardware Access Layers) e realizar a instalação em vários computadores. Depois que a imagem for copiada, inicialize o computador. Após a inicialização, pode ser necessário ter que definir algumas configurações, como o nome do computador e domínio.</p>
+          <p></p>
+          <p>Instalação Remota</p>
+          <p>Com serviços de instalação remota (RIS), o processo é semelhante ao de uma instalação baseada em imagem, exceto que você não usa um utilitário para criá-la. Você pode usar uma pasta compartilhada de rede RIS como sendo a fonte dos arquivos do sistema operacional Windows. Você pode instalar sistemas operacionais em computadores que possuem um cliente capaz de inicializar o sistema remotamente. Você também pode iniciar os computadores dos usuários que estão conectados à rede com um disco de inicialização remota ou com um adaptador de rede capaz de inicializar o computador. O usuário então poderá fazer logon com as credenciais da conta de usuário.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

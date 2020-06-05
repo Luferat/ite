@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.4.6 Materiais de Limpeza</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Uso Adequado das Ferramentas</h1>
+        <h2>Demonstrar o Uso Adequado das Ferramentas</h2>
+      </div>
+      <div id="content">
+          <p>Manter o computador limpo por dentro e por fora é uma parte vital de um programa de manutenção. A sujeira pode causar problemas na operação física das ventoinhas, botões e outros componentes mecânicos. A Figura 1 mostra um grande acúmulo de poeira nos componentes do computador. Em componentes elétricos, um acúmulo excessivo de poeira age como um isolante e prende o calor. Este isolamento prejudica a capacidade dos dissipadores de calor e ventiladores para manter os componentes resfriados, causando o superaquecimento e falhas em chips e circuitos.</p>
+          <p>NOTA: Ao usar o ar comprimido para limpar o interior do computador, sopre o ar em torno dos componentes com uma distância mínima de 4 polegadas (10 cm) do bico. Limpe a fonte de alimentação e a ventoinha na parte de traseira do gabinete.</p>
+          <p>ATENÇÃO: Antes de limpar qualquer dispositivo, desligue-o e desconecte-o da fonte de alimentação.</p>
+          <p>Gabinetes e Monitores</p>
+          <p>Limpe o gabinete do computador e o exterior dos monitores com uma solução de limpeza suave e um pano úmido que não solte fiapos. Misture uma gota de detergente líquido por 118 ml (4 onças) de água para formar a solução de limpeza. Se algumas gostas de água caírem no interior do gabinete, deixe-o secar por tempo suficiente antes de ligar o computador.</p>
+          <p>Telas LCD</p>
+          <p>Não use limpadores de vidro com amoníaco ou qualquer outra solução em uma tela de LCD, a menos que o limpador seja projetado especificamente para este efeito. Produtos químicos danificam o revestimento na tela. Não há um vidro que protege essas telas, portanto, seja cuidadoso ao limpá-las e não pressione com firmeza a tela.</p>
+          <p>Telas CRT</p>
+          <p>Para limpar as telas dos monitores CRT, umedeça um pano macio, limpo e sem fiapos com água destilada e limpe a tela de cima para baixo. Em seguida, use um pano macio e seco para limpar a tela e remover riscos.</p>
+          <p>Limpe os componentes empoeirados com uma lata de ar comprimido. O ar comprimido não causa acúmulo eletrostático nos componentes. Certifique-se que você está em uma área bem ventilada antes de soprar a poeira para fora do computador. A melhor prática é usar uma máscara de pó para se certificar de que você não está respirando as partículas de poeira.</p>
+          <p>Sopre a poeira através de pequenas rajadas de ar comprimido. Nunca incline a lata ou use a lata de cabeça para baixo. Não deixe que as pás do ventilador girem com a força gerada pelo ar comprimido. Segure a ventoinha no lugar. O motor das ventoinhas pode ser danificado caso ela gire quando o motor não está ligado.</p>
+          <p>Contato dos Componentes</p>
+          <p>Limpe os contatos dos componentes com álcool isopropílico. Não use álcool convencional. O álcool convencional contém impurezas que podem danificar os contatos. Certifique-se de que nenhum fiapo do pano ou cotonete ficou preso nos contatos. Antes da reinstalação, use o ar comprimido para soprar o fiapo fora dos contatos.</p>
+          <p>Teclado</p>
+          <p>Limpe o teclado de um desktop com ar comprimido e, em seguida, use um aspirador de pó de mão com uma escova para remover a poeira solta.</p>
+          <p>CUIDADO: Nunca use um aspirador de pó padrão dentro do gabinete de um computador. As peças de plástico do aspirador de pó podem acumular eletricidade estática e descargá-la nos componentes. Utilize apenas aspiradores de pó que são aprovados para componentes eletrônicos.</p>
+          <p>Mouse</p>
+          <p>Use um limpador de vidro e um pano macio para limpar a parte externa do mouse. Não borrife o limpador de vidro diretamente sobre o mouse. Para limpar a bola de um mouse de esfera, você pode remover a bola e limpá-la com limpador de vidro e um pano macio. Limpe os roladores dentro do mouse com o mesmo pano. Não borrife quaisquer líquidos no interior do mouse.</p>
+          <p>O gráfico da Figura 2 apresenta os itens do computador que devem ser limpos e os materiais de limpeza.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

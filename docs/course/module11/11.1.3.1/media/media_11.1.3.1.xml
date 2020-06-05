@@ -1,0 +1,16 @@
+﻿<textcomponents>
+<component id='ID_s1_title'>
+		<text><![CDATA[<b>Quadro de Chamados</b>]]></text>
+	</component>
+	
+	<component id='ID_s3_txt01'>
+	<text><![CDATA[<b>Maneiras de Relaxar</b>]]></text>
+	</component>
+	
+	<component id='ID_s3_body01'>
+	<text><![CDATA[<textformat blockindent='-18'><li>Pratique a respiração relaxada: inspire, segure, expire. Repita esse processo.</li><li>Ouça sons suaves.</li><li>Massageie suas têmporas.</li><li>Faça uma pausa - faça uma caminhada rápida ou suba alguns degraus de escadas.</li><li>Coma alguma coisa - lanches com proteínas são os mais indicados.</li><li>Planeje o seu fim de semana.</li><li>Evite estimulantes, como café, refrigerantes e chocolate. Todos contêm cafeína e podem aumentar o stress.</textformat></li>]]></text>
+	</component>
+	
+	
+
+</textcomponents>

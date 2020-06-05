@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.5.2.1 Visão Geral de Substituição de Hardware</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Hardware de Laptops e Componente de Instalação e Configuração</h1>
+        <h2>Substituindo Dispositivos de Hardware</h2>
+      </div>
+      <div id="content">
+          <p>Algumas partes de um laptop, normalmente chamados de CRUs (unidades substituíveis pelo cliente), podem ser substituídas pelo cliente. CRUs incluem componentes como a bateria do laptop e a memória RAM. Peças que não devem ser substituídos pelo cliente são chamados FRUs (unidades substituíveis em campo). FRUs incluem componentes como a placa-mãe, monitor LCD, como mostrado na Imagem 1, e um teclado, como mostrado na Imagem 2. Normalmente, substituir FRUs requer uma quantidade considerável de habilidade técnica. Em muitos casos, o dispositivo pode ser devolvido ao local de compra, a um centro de serviço certificado ou ao fabricante.</p>
+          <p></p>
+          <p>Um centro de reparo pode prestar serviço para laptops feitos por diferentes fabricantes ou especializar-se em apenas uma marca específica e ser considerado um revendedor autorizado para serviços de garantia e reparo. Os seguintes são reparos comuns realizados em centros de reparo local:</p>
+          <p><ul>
+              <li>Diagnóstico de hardware e software</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Transferência e recuperação de dados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instalação do disco rígido e atualizações</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instalação e atualização de RAM</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Substituição do teclado e da ventoinha</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Limpeza interna do laptop</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Reparo da tela de LCD</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Reparo do inversor de LCD e da luz de fundo</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A maioria dos reparos em monitores LCD devem ser realizados em um centro de reparos. Os reparos incluem a substituição da tela, a luz de fundo que brilha através da tela para iluminar o ecrã e o inversor que produz a alta tensão necessária para a iluminação.</p>
+          <p></p>
+          <p>Se não houver serviços locais disponíveis, talvez você precise enviar o laptop para um centro de reparo regional ou para o fabricante. Se o dano no laptop for grave ou ele exigir software e ferramentas especializadas, o fabricante pode optar por substituir o laptop em vez de repará-lo.</p>
+          <p></p>
+          <p>ATENÇÃO: Antes de tentar reparar um laptop ou um dispositivo portátil, verifique a garantia para ver se os reparos durante o período de cobertura devem ser feitos em um centro de serviço autorizado para evitar a invalidação da mesma. Se você mesmo reparar um laptop, sempre faça um backup dos dados e desligue o aparelho da fonte de alimentação. Este capítulo fornece instruções gerais para a substituição e reparo de componentes do laptop. Sempre consulte o manual de serviço antes de iniciar um reparo no laptop.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

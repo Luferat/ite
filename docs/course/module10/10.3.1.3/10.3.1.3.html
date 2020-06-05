@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.3.1.3 Backup de Dados</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva Comum para a Segurança</h1>
+        <h2>Manutenção de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Você pode fazer o backup do Windows manualmente ou agendar o computador para fazendo automaticamente. Para realizar o realizar o backup e restaurar os dados no Windows com sucesso, é necessário possuir os direitos e privilégios apropriados do usuário.</p>
+          <p><ul>
+              <li>Todos os usuários podem fazer backup de seus arquivos e pastas. Eles também podem fazer o backup dos arquivos para os quais eles têm a permissão de leitura.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Todos os usuários podem restaurar arquivos e pastas para os quais eles têm permissão de gravação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Membros dos grupos Administradores, Operadores de Backup e Operadores do Servidor (se associado a um domínio) podem fazer backup e restaurar todos os arquivos, independentemente das permissões atribuídas. Por padrão, os membros desses grupos possuem permissão para fazer Backup e Restaurar os Arquivos e Diretórios.</li>
+            </ul>
+          </p>
+          <p>Para iniciar o Assistente de Backup de dados do Windows 7 pela primeira vez, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Manutenção > Backup e Restauração > Configurar backup</p>
+          <p>Para alterar as configurações de Backup no Windows 7 após o assistente de Backup de dados for concluído, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Manutenção > Backup e Restauração > Alterar configurações > Alterar configurações de backup > Continuar</p>
+          <p>Para restaurar um arquivo de backup no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Manutenção > Backup e Restauração > Restaurar meus arquivos</p>
+          <p>Para iniciar o Assistente de Backup de dados do Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Manutenção > Centro de Backup e Restauração > Fazer backup de arquivos</p>
+          <p>Para alterar as configurações de backup, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Manutenção > Centro de Backup e Restauração > Alterar configurações > Alterar configurações de backup > Continuar</p>
+          <p>Para restaurar um arquivo de backup no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Manutenção > Centro de Backup e Restauração > Restaurar arquivos</p>
+          <p>Os arquivos de backup do Windows Vista ou Windows 7 possuem a extensão .zip. Os dados de backup são compactado automaticamente, e cada arquivo tem um tamanho máximo comprimido de 200 MB. Você pode salvar os arquivos de backup do Windows 7 ou Windows Vista em um disco rígido, qualquer mídia gravável ou em um outro computador conectado à sua rede. O backup só pode ser criado a partir de uma partição NTFS. O disco rígido de destino deve ser NTFS ou FAT.</p>
+          <p>NOTA: Você pode excluir os diretórios de backup no Windows 7 manualmente ou, no Windows XP, através do assistente de restauração. Esse recurso não é suportado no Assistente de Backup de Arquivos do Windows Vista.</p>
+          <p>Para iniciar o Assistente de Backup e restauração do Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Acessórios > Ferramentas do Sistema > Backup</p>
+          <p>O Assistente de Backup e Restauração será iniciado. Para alterar a configuração de backup, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Acessórios > Ferramentas de Sistema > Backup Avançado > Ferramentas > Opções</p>
+          <p>Para restaurar um arquivo de backup no Windows XP pelo Assistente de Backup e Restauração, use o seguinte caminho:</p>
+          <p>Avançar > Restaurar Arquivos e Configurações > Avançar. Selecione o arquivo de backup e clique em Avançar > Concluído</p>
+          <p>O Assistente de Backup e Restauração e outros aplicativos de backup geralmente fornecem os seguintes tipos de backup:</p>
+          <p>Os arquivos do Assistente de Backup e Restauração do Windows XP possuem a extensão .bkf. Você pode salvar um arquivo .Bkf em um disco rígido, DVD ou qualquer outra mídia gravável. O local de origem e a unidade de destino podem ser NTFS ou FAT.</p>
+          <p>Você pode executar operações de backup no Windows XP pela linha de comando ou a partir de um arquivo batch, usando o comando NTBACKUP. Os parâmetros padrão para o NTBACKUP são definidos no utilitário de backup do Windows XP. As opções que você deseja substituir devem ser incluídas na linha de comando. Você não pode restaurar arquivos a partir da linha de comando usando o comando NTBACKUP.</p>
+          <p>No Windows 7 ou Windows Vista, use o comando WBADMIN. Você não pode usar os backups feitos com o comando NTBACKUP no Windows XP e restaurá-los usando o comando WBADMIN no Windows 7 ou Windows Vista. Para restaurar backups do Windows XP no Windows 7 ou Windows Vista, faça o download de uma versão especial do comando NTBACKUP da Microsoft.</p>
+          <p>A combinação dos tipos de backup permite que os dados a sejam copiados de forma eficiente. Os tipos de backup estão descritos na figura ao lado. Fazer o backup dos dados pode levar algum tempo, por isso é preferível fazer backups durante os momentos em que a utilização dos computadores e da rede são baixos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.1.2 Dispositivos Comuns de Entrada e LEDs do Laptops</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes de Laptops</h1>
+        <h2>Componentes de Laptops</h2>
+      </div>
+      <div id="content">
+          <p>Os Laptops são projetados para serem compactos e portáteis, ao mesmo tempo em que mantêm grande parte das funcionalidades presentes em um desktop. Desta forma, os dispositivos de entrada essenciais estão embutidos nos laptops. Quando o laptop estiver aberto, os seguintes dispositivos de entrada poderão ser visualizados:</p>
+          <p></p>
+          <p><ul>
+              <li>Touchpad</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Apontador (Pointing Stick)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teclado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Leitor de Impressão Digital</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Microfone</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Webcam</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Clique nas áreas destacadas, exibidas na Figura 1, para obter mais informações sobre os dispositivos de entrada.</p>
+          <p></p>
+          <p>NOTA: Os dispositivos de entrada que estão embutidos nos laptops podem ser configurados ou otimizados em velocidade, sensibilidade, scroll ou número de cliques necessários, da mesma maneira que os dispositivos de entrada conectados nos desktops.</p>
+          <p></p>
+          <p>Os Laptops possuem LEDs que exibem o status de dispositivos e componentes específicos. Normalmente, os LEDs estão localizados abaixo da tela ou acima do teclado. Clique nas áreas destacadas, exibidas na Figura 2, para obter mais informações sobre estes LEDs.</p>
+          <p></p>
+          <p>NOTA: OS LEDs variam conforme o modelo laptop.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.2.6 Módulos de Memória</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Componentes Internos do Computador</h2>
+      </div>
+      <div id="content">
+          <p>Os primeiros computadores tinham chips individuais de memória RAM instalados na placa-mãe. Os chips de memória individuais, chamados de chips Dual Inline Package (DIP), eram difíceis de instalar e muitas vezes se soltavam. Para resolver este problema, os chips de memória começaram a serem soldados em uma placa de circuito especial para criar um módulo de memória. Os diferentes tipos de módulos de memória são descritos na Figura 1.</p>
+          <p>NOTA: Os módulos de memória podem ser single-sided ou double-sided. Módulos de memória single-sided possuem memória RAM em apenas um dos lados do módulo. Módulos de memória double-sided possuem RAM em ambos os lados.</p>
+          <p>A velocidade da memória tem impacto direto sobre a quantidade de dados que um processador pode processar, isso porque a memória RAM melhora o desempenho do processador. Conforme a velocidade do processador aumenta, a velocidade da memória também aumenta. Por exemplo, uma memória single-channel é capaz de transferir 64 bits de dados por ciclo. Já uma memória dual-channel aumenta a velocidade de clock utilizando um segundo canal de memória, criando assim uma taxa de transferência de dados de 128 bits.</p>
+          <p>A tecnologia Double Data Rate, DDR, duplica a largura de banda máxima de uma memória SDRAM (Synchronous Dynamic RAM). A DDR2 oferece uma performance mais rápida, utilizando menos energia. Já a DDR3 opera em velocidades ainda mais elevadas que o DDR2. No entanto, nenhuma das tecnologias DDR antigas são compatíveis com as atuais. Os tipos de memórias comuns e suas velocidades são exibidos na Figura 2.</p>
+          <p>Cache</p>
+          <p>A RAM estática, SRAM, é usada como memória cache para armazenar dados e instruções recentes mais acessadas. A SRAM permite que o processador recupere, de forma mais rápida, os dados que estão armazenados em uma RAM mais lenta, como a RAM estática (DRAM), ou na memorial principal. Os três tipos mais comuns de memória cache estão descritos na Figura 3.</p>
+          <p>Verificação de Erros</p>
+          <p>Erros de memória ocorrem quando os dados não são armazenados corretamente nos chips de memória RAM. O computador utiliza métodos diferentes para detectar e corrigir erros de dados na memória. Os diferentes tipos de verificação de erros estão descritos na Figura 4.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

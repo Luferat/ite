@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.1.10 Selecionando Dispositivos de Entrada e Saída</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando os Componentes para Substituição no Computador</h1>
+        <h2>Selecionando os Componentes do PC</h2>
+      </div>
+      <div id="content">
+          <p>Para selecionar os dispositivos de entrada e saída é necessário saber em primeiro lugar o que o cliente deseja. Em seguida, selecione o hardware e software, pesquisando na Internet possíveis soluções. Depois de determinar qual dispositivo de entrada ou saída supre as necessidades do cliente, você deverá determinar a forma de conectá-los ao computador. A Imagem 1 apresenta os conectores mais comuns de entrada e saída.</p>
+          <p>Os técnicos devem ter uma boa compreensão de diversos tipos de interfaces:</p>
+          <p><ul>
+              <li>FireWire (IEEE 1394) - Transfere dados a 100, 200 ou 400 Mb/s e o IEEE 1394b a 800 Mb/s.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Paralelo (IEEE 1284) - Transfere dados a uma velocidade máxima de 3 MB/s.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Serial (RS-232) - As primeiras versões foram limitadas a 20 Kb/s, mas as versões mais recentes podem atingir taxas de transferência de 1,5 Mb/s.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>SCSI (Ultra-320 SCSI) - Conecta até 15 dispositivos com uma taxa de transferência de 320 MB/s.</li>
+            </ul>
+          </p>
+          <p>A interface USB é muito difundida e utilizada por muitos dispositivos diferentes. A Imagem 2 apresenta os plugs e conectores mais comuns do USB 1.1 e 2.0. A Imagem 3 apresenta os plugs e conectores mais comuns do USB 3.0.</p>
+          <p>A interface SATA tornou-se comum nos últimos anos. O SATA é a substituição do IDE e EIDE como a interface padrão dos discos rígidos e SSDs. Os cabos SATA são mais fáceis de conectar, pois eles possuem apenas duas extremidades e não precisam de jumpers. Além disso, se a placa-mãe suportar a conexão automática (hot-plugging), as unidades eSATA podem ser conectadas com o computador ligado. A Imagem 4 compara as velocidades entre PATA e SATA.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

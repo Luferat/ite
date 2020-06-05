@@ -1,0 +1,36 @@
+﻿<textcomponents>
+	
+	
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Gerenciador de Dispositivos</b>]]></text>
+	</component>
+	
+	<component id="ID_s2_table">
+		<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+        <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#A2AA23' width="150" valign="top" class="tdWid"><font  color='#FFFFFF'><b>Ícones do Gerenciador de Dispositivos</b></font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>Explicação</b></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><div class="icons_1"></div></font></td>
+          <td bgcolor='#FFFFFF' valign="top" class="wide"><font color='#393536'>O dispositivo possui um erro. O código do problema é exibido para explicar o problema.</font></td>
+        </tr>
+		<tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><div class="icons_2"></div></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O dispositivo está desativado. O dispositivo está instalado no computador, mas o driver não foi carregado.</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><div class="icons_3"></div></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O dispositivo foi selecionado manualmente. A opção Usar Configurações Automáticas não está selecionada para o dispositivo.</font></td>
+        </tr>
+		<tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><div class="icons_4"></div></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O driver do dispositivo específico não está disponível. Um driver compatível foi instalado.</font></td>
+        </tr>
+		</table>
+		]]></text>
+	</component>
+</textcomponents>

@@ -1,0 +1,15 @@
+﻿<textcomponents>
+	<component id="ID_s1_title">
+  		<text><![CDATA[<b>Hibernar Habilitada no Utilitário Opções de Energia</b>]]></text> 
+	</component>
+	<component id="ID_s2_title">
+ 		 <text><![CDATA[<b>Configurações Avançadas de Opções de Energia</b>]]></text> 
+	 </component>
+	<component id="ID_s3_title">
+  		<text><![CDATA[<b>Editar Plano de Energia no Windows 7</b>]]></text> 
+	</component>
+	<component id="ID_s4_title">
+ 		 <text><![CDATA[<b>Editar Esquema de Energia no Windows XP</b>]]></text> 
+	 </component>
+	
+</textcomponents>

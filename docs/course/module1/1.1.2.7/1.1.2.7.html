@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.2.7 Placas Expansão e Slots de Expansão</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Componentes Internos do Computador</h2>
+      </div>
+      <div id="content">
+          <p>Placas adaptadoras aumentam a funcionalidade de um computador, adicionando controladoras de dispositivos específicos ou substituindo interfaces com defeito. A Imagem 1 apresenta vários tipos de placas adaptadoras, muitas dos quais podem ser integradas na placa-mãe. Estas são algumas das placas adaptadoras comuns que são usadas ​​para expandir e personalizar a capacidade de um computador:</p>
+          <p><ul>
+              <li>Cartão de Interface de Rede (NIC) - Conecta um computador a uma rede, usando um cabo de rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>NIC sem fio - Conecta um computador a uma rede usando frequências de rádio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Adaptador de Som - Fornece capacidades de áudio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Adaptador de vídeo - Fornece capacidades gráficas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placa de captura - Envia um sinal de vídeo a um computador para que o sinal pode ser armazenado no disco rígido do computador, através de um software de captura de vídeo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placa sintonizadora de TV - Oferece a capacidade de assistir e gravar sinais de televisão em um PC através da conexão de um cabo ou recepção de sinais de satélite ou antena para a placa sintonizadora instalada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Adaptador Modem - Conecta um computador à Internet usando uma linha telefônica.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Small Computer System Interface (SCSI) - Conecta dispositivos SCSI, como discos rígidos ou unidades de fita, ao computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Redundant Array of Independent Disks (RAID) - Conecta múltiplos discos rígidos de um computador para fornecer redundância e melhorar o desempenho.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Universal Serial Bus (USB) - Conecta um computador a dispositivos periféricos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Porta paralela - Conecta um computador a dispositivos periféricos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Porta serial - Conecta um computador a dispositivos periféricos.</li>
+            </ul>
+          </p>
+          <p>Os computadores possuem slots de expansão na placa-mãe, utilizados para instalar placas adaptadoras. O tipo de conector da placa adaptadora deve coincidir com o slot de expansão. Os diferentes tipos de slots de expansão são mostrados na Imagem 2.</p>
+          <p></p>
+          <p>A placa riser foi usada em computadores com o formato LPX, permitindo assim que placas adaptadores fossem instaladas na horizontal. A placa riser foi utilizada principalmente em computadores desktop slim.</p>
+          <p></p>
+          <p>Communications and Networking Riser (CNR) é um slot especial usado para algumas redes ou placas de expansão de áudio. O CNR não está mais em uso, pois muitas das funções do CNR são encontradas nas placas on-board das placas-mães.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.2.12 Central de Ações</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle</h2>
+      </div>
+      <div id="content">
+          <p>As configurações de segurança são um aspecto importante da manutenção de um sistema operacional, pois elas protegem o computador contra ameaças existentes. A Central de Ações presentes no Windows 7 e Windows Vista permite que você defina as configurações de segurança do computador. No Windows XP, a Central de Ações é chamada de Central de Segurança.</p>
+          <p></p>
+          <p>Para acessar o Central de Ações no Windows 7 e Windows Vista, conforme apresentado na figura, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central de Ações</p>
+          <p></p>
+          <p>Para acessar a Central de Segurança do Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central de Segurança</p>
+          <p></p>
+          <p>A Central de Ações tem uma série de utilitários:</p>
+          <p><ul>
+              <li>Proteção contra vírus - habilita ou desabilita os programas de proteção contra vírus.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Configuração de Backup - Os usuários com privilégios administrativos podem configurar o backup do Windows.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alterar configurações da Central de Ações - habilita e desabilita os avisos de programas de segurança e manutenção.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alterar configurações de Controle de Conta de Usuário - Usuários com privilégios administrativos podem ajustar as configurações de controle de contas de usuário (UAC).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Exibir mensagens arquivadas - Exibi as mensagens arquivadas sobre os problemas antigos do computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Exibir as informações de desempenho - Visualiza e avalia o desempenho dos componentes do sistema.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

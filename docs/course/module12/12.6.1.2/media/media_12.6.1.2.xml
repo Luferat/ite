@@ -1,0 +1,224 @@
+﻿<textcomponents>
+  <component id='ID_table_01'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e soluções comuns para Malware</b></font></td></tr>
+	   <tr>
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+<tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+
+<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A mensagem &quot;MBR foi alterado ou modificado&quot; aparece na inicialização. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um vírus do setor de inicialização mudou o Master Boot Record (MBR). </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Inicialize o computador com um disco de boot ou pendrive e execute o antivírus para remover o vírus do setor de inicialização.</font></td>
+        </tr>
+		
+		
+		
+		
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O Windows 7 ou Windows Vista inicia com a mensagem de erro &quot;Loading Operating System Error&quot;. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um vírus danificou o Master Boot Record.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Inicialize o computador a partir da mídia de instalação.</li>
+<li>Na tela de instalação do Windows, selecione Reparar o computador.</li>
+<li>No prompt de comando, digite bootrec.exe /fixmbr.</li></textformat></font></td>
+        </tr>
+
+		<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O Windows 7 ou Windows Vista inicia com a mensagem de erro &quot;Atenção: este disco rígido pode estar infectado por vírus&quot;. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um vírus danificou o setor de inicialização. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Inicialize o computador a partir da mídia de instalação.</li>
+<li>Na tela de instalação do Windows, selecione Reparar o computador.</li>
+<li>No prompt de comando, digite bootrec.exe /fixboot.</li></textformat></font></td>
+        </tr>
+		
+		
+		
+		
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um computador com o Windows XP não inicializa.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um vírus danificou o Master Boot Record. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Inicialize o computador a partir da mídia de instalação do XP.</li>
+<li>Na tela de configuração, selecione R - Console de Recuperação.</li>
+<li>No prompt de comando, use o comando fixmbr.</li></textformat></font></td>
+        </tr>
+		
+
+<tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um computador com Windows 7 não inicializa.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um vírus danificou os arquivos de sistema do Windows. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Inicialize o computador a partir do Windows PE.</li> 
+            <li>Acesse a ferramenta de reparo de inicialização do Windows para recuperar os arquivos corrompidos do sistema.</li></textformat></font></td>
+        </tr>
+    
+		 <tr>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Seus contatos estão recebendo spam de sua conta de email.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Seu email foi invadido por um vírus ou spyware.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Execute o antivírus para reparar, excluir ou colocar em quarentena os arquivos infectados.</li>
+		  <li>Execute o anti-spyware para remover todas as infecções de spyware.</li>
+		   <li>Depois que o computador estiver limpo, mude a senha da conta de email.</li></textformat></font></td>
+        </tr>
+		
+    
+		
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_02'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Permissões de Usuários</b></font></td>
+	</tr> 
+	  <tr>
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+	  <tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  <tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O usuário pode fazer logon, mas recebe uma mensagem de &quot;acesso negado&quot; ao tentar acessar algumas pastas e arquivos. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O usuário não é um membro do grupo que tem acesso às pastas e arquivos. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Adicione o usuário ao grupo correto.</li>
+<li>Adicionar as permissões corretas relacionadas aos usuários para as pastas e arquivos.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O usuário pode localizar um arquivo no servidor, mas não pode baixá-lo. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>As permissões de usuários não estão corretas. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Altere as permissões do usuário no arquivo para ler e executar (read and execute). </font></td>
+        </tr>
+		<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O usuário tem acesso a uma subpasta que deve ser inacessível. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A subpasta herdou as permissões da pasta de nível superior. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Altere as configurações de permissão da subpasta para que ela não herde as permissões da pasta principal. Defina as permissões adequadas para a subpasta. </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Os usuários de um grupo não podem ver uma pasta que eles deveriam ter acesso. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>As permissões da pasta estão definidas como negar. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Altere as permissões da pasta para permitir. </font></td>
+        </tr>
+		<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Os arquivos criptografados que são movidos ao longo da rede para um novo computador não estão mais criptografados.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O novo computador não tem uma partição NTFS.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Converta a partição no novo computador para NTFS e re-criptografe os arquivos.</font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+
+  <component id='ID_table_03'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Configurações de Segurança do Computador</b></font></td>
+	</tr> 
+	<tr>
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+	  <tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  <tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Lentidão do computador no mesmo período de todos os dias. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O antivírus está configurado para verificar o computador no mesmo horário todos os dias. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Configure o antivírus para verificar o computador quando o mesmo não está em uso.</font></td></tr>
+		
+		
+		
+		
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Usuário reclama que as configurações da BIOS do computador continuam mudando.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A senha da BIOS não está definida, permitindo que outros usuarios alterem as configurações.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Defina uma senha para proteger o acesso às configurações da BIOS.</font></td>
+        </tr>
+		
+		<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>TPM (Trusted Platform Module) não aparece no Gerenciador de Dispositivos.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O TPM está desativado.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Ative o TPM na BIOS.</font></td>
+        </tr>	       
+      </table>]]>
+    </text>
+  </component>
+	
+	
+  <component id='ID_table_04'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Firewall ou Configurações de Proxy</b></font></td>
+	</tr> 
+	<tr>
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+<tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  <tr>
+				<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador não executa com sucesso o ping em um outro computador da rede.</font></td>
+				<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O Firewall do Windows está bloqueando solicitações de ping.</li>
+<li>Um roteador está bloqueando solicitações de ping.</li></textformat></font></td>
+				<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Configure o Firewall do Windows para permitir solicitações de ping.</li><li>Configurar o roteador para permitir as solicitações de ping.</li></textformat></font></td>
+    </tr>
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>As exceções de firewall do laptop estão permitindo conexões não autorizadas a partir de computadores não autorizados.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>As configurações do Firewall do Windows estão incorretas.</li>
+<li>O Firewall do Windows está desativado.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Defina o Firewall do Windows para &quot;Não permitir exceções quando se usa uma rede pública.&quot;</li>
+<li>Ative o Firewall do Windows.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador não pode realizar telnet para outro computador.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O Firewall do Windows bloqueia por padrão a porta 23.</li>
+<li>O roteador está bloqueando a porta 23.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Configure o Firewall do Windows para abrir a porta 23.</li>
+<li>Configure o roteador para permitir a porta 23.</li></textformat></font></td>
+        </tr>
+		
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O programa de email está configurado corretamente, mas não pode se conectar ao servidor de email.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O servidor de email está desligado.</li>
+<li>O Firewall do Windows está bloqueando o programa de email.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Verifique se o servidor de email está operacional.</li>
+<li>Crie uma exceção no Firewall do Windows para o seu software de email.</li></textformat></font></td>
+        </tr>
+		
+			<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador pode pingar fora da rede local, mas não tem conectividade com a Internet.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O Firewall do Windows está bloqueando a porta 80.</li>
+<li>O roteador está bloqueando a porta 80.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Configure o Firewall do Windows para abrir a porta 80.</li>
+<li>Configure o roteador para permitir a porta 80.</li></textformat></font></td>
+		</tr>
+		
+		 <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador pode executar ping no servidor de proxy, mas não tem conectividade com a Internet. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>As configurações do servidor de proxy do navegador estão incorretas.</li>
+<li>O servidor de proxy está offline.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Introduza novamente as definições do servidor de proxy, incluindo o endereço IP, porta do servidor de proxy e todas as exceções que devem ser definidas.</li>
+<li>Reinicie o servidor de proxy.</li></textformat></font></td>
+        </tr>
+		
+      </table>]]>
+    </text>
+  </component>
+  
+  
+</textcomponents>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.5.2 Output Devices</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Input and Output Devices</h2>
+    </div>
+    <div id="content">
+          <p>An output device presents information to the user from a computer. Here are some examples of output devices:</p>
+          <p>
+            <ul>
+              <li>Monitors and projectors </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Printers, scanners, and fax machines </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Speakers and headphones </li>
+            </ul>
+          </p>
+          <p>
+            <b>Monitors and Projectors</b>
+          </p>
+          <p>Monitors and projectors are primary output devices for a computer. There are different types of monitors, as shown in Figure 1. The most important difference between these monitor types is the technology used to create an image.</p>
+          <p>
+            <ul>
+              <li>
+                <b>CRT </b>- The cathode-ray tube (CRT) has three electron beams. Each beam is directed at colored phosphor dots on the screen that glow red, blue, or green when struck by the beam. Areas not struck by an electron beam do not glow. The combination of glowing and non-glowing areas creates the image on the screen. Some televisions use this technology. CRTs usually have a degauss button on the front that the user can press to remove discoloration caused by magnetic interference.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>LCD </b>- Liquid crystal display (LCD) is commonly used in flat panel monitors, laptops, and some projectors. It consists of two polarizing filters with a liquid crystal solution between them. An electronic current aligns the crystals so that light can either pass through or not pass through. The effect of light passing through in certain areas and not in others is what creates the image. LCD comes in two forms, active matrix and passive matrix. Active matrix is sometimes called thin film transistor (TFT). TFT allows each pixel to be controlled, which creates very sharp color images. Passive matrix is less expensive than active matrix but does not provide the same level of image control. Passive matrix is not commonly used in laptops.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>LED</b> - A light-emitting diode (LED) display is an LCD display that uses LED backlighting to light the display. LED has lower power consumption than standard LCD backlighting, allows the panel to be thinner, lighter, brighter, and display better contrast.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>OLED</b> - An organic LED display uses a layer of organic material that responds to electrical stimulus to emit light. This process allows each pixel to light individually, resulting in much deeper black levels than LED. OLED displays are also thinner and lighter than LED displays.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Plasma</b> - Plasma displays are another type of flat panel monitor that can achieve high levels of brightness, deep black levels, and a very wide range of colors. Plasma displays can be created in sizes larger than 150 inches (381 cm). Plasma displays get their name from the use of tiny cells of ionized gas that light up when stimulated by electricity. Plasma displays are often used in home theater applications because of their accurate representation of video.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DLP</b> - Digital Light Processing (DLP) is another technology used in projectors. DLP projectors use a spinning color wheel with a microprocessor-controlled array of mirrors called a digital micromirror device (DMD). Each mirror corresponds to a specific pixel. Each mirror reflects light toward or away from the projector optics. This creates a monochromatic image of up to 1024 shades of gray in between white and black. The color wheel then adds the color data to complete the projected color image. </li>
+            </ul>
+          </p>
+          <p>
+            <b>All-in-One Printers</b>
+          </p>
+          <p>Printers are output devices that create hard copies of computer files. Some printers specialize in particular applications, such as printing color photographs. All-in-one printers, like the one shown in Figure 2, are designed to provide multiple services, such as printing, scanning, faxing, and copying.</p>
+          <p>
+            <b>Speakers and Headphones</b>
+          </p>
+          <p>Speakers and headphones are output devices for audio signals. Most computers have audio support either integrated into the motherboard or on an adapter card. Audio support includes ports that allow input and output of audio signals. The audio card has an amplifier to power headphones and external speakers, shown in Figure 3.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

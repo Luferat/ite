@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.4.7 Firewalls</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Técnicas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>O firewall de hardware é um componente físico de filtragem que inspeciona os pacotes de dados da rede antes que eles cheguem nos computadores ou em outros dispositivos da rede. O firewall de hardware é uma unidade autônoma que não utiliza recursos dos computadores que está protegendo, portanto, não há impacto no desempenho e processamento dos mesmos. O firewall pode ser configurado para bloquear várias portas individuais, um intervalo de portas ou até mesmo tráfegos específicos de um aplicativo. O roteador wireless Linksys E2500 também é um firewall de hardware.</p>
+          <p>Um firewall de hardware permite a entrada de dois tipos diferentes de tráfego em sua rede:</p>
+          <p><ul>
+              <li>Respostas para o tráfego que se originou dentro da sua rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tráfego destinado a uma porta que você intencionalmente permitiu o acesso</li>
+            </ul>
+          </p>
+          <p>Existem vários tipos de configurações de firewall:</p>
+          <p><ul>
+              <li>Filtro de pacotes (Packet filter) - Os pacotes não pode passar através do firewall, a não ser que eles correspondam a regra estabelecida e configurada no firewall. O tráfego pode ser filtrado com base em diferentes atributos, como o endereço IP de origem, endereço IP de destino, porta de origem ou porta de destino. O tráfego também podem ser filtrado com base no serviços de destino ou protocolo, como WWW ou FTP.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Inspeção Stateful (Stateful packet inspection) - Este firewall mantém o controle do estado das conexões de rede que viajam através do firewall. Os pacotes que não fazem parte de uma conexão conhecida são descartados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Camada de Aplicação - Todos os pacotes que viajam para ou a partir de um aplicativo são interceptados. Todo o tráfego de externo indesejado é impedido de alcançar os dispositivos protegidos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Proxy - Este firewall é instalado em um servidor de proxy que inspeciona todo o tráfego e permite ou nega os pacotes com base nas regras configuradas. O proxy server é um servidor que se encontra entre o cliente e o servidor de destino na Internet.</li>
+            </ul>
+          </p>
+          <p>Firewalls de software e hardware protegem os dados e os equipamentos em uma rede, impedindo o acesso não autorizado. O firewall deve ser usado em conjunto com os softwares de segurança. A Figura 1 compara os firewalls de hardware e software.</p>
+          <p>Para definir as configurações de firewall de hardware no Linksys E2500, conforme apresentado na Figura 2, use o seguinte caminho:</p>
+          <p>Security > Firewall > habilite a opção Enable for SPI Firewall Protection. Em seguida, selecione os filtros de internet e web necessários para proteger a rede. Clique em Save Settings > Continue</p>
+          <p>Nota: Mesmo em uma rede segura, você deve habilitar o firewall do sistema operacional interno para fornecer segurança adicional. Alguns aplicativos podem não funcionar corretamente, a menos que o firewall interno esteja configurado corretamente.</p>
+          <p>Zona Demilitarizada</p>
+          <p>A DMZ (Demilitarized Zone) é uma sub-rede que fornece serviços a uma rede não confiável. Um servidor de e-mail, web ou FTP muitas vezes é colocado na DMZ para que o tráfego destinado a esses equipamentos não acesse a rede local. Esse esquema protege a rede interna de ataques, porém não protege os servidores alocados na DMZ. É comum que um firewall ou proxy gerencie o tráfego que entra e sai da DMZ.</p>
+          <p>No Linksys E2500, você pode criar uma DMZ para um dispositivo, enviando todo o tráfego da Internet para um determinado endereço IP ou MAC. Servidores, maquinas de jogos ou câmeras web podem estar localizados na DMZ para que este dispositivo possa ser acessado por qualquer pessoa. Porém, os dispositivos na DMZ ficam expostos a ataques de hackers na Internet.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

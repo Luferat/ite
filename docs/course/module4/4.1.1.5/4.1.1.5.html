@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.1.1.5 Preocupações Sobre o Ambiente</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Manutenção Preventiva</h1>
+        <h2>Visão Geral de Manutenção Preventiva de PC</h2>
+      </div>
+      <div id="content">
+          <p>Um ambiente adequado de funcionamento é um local limpo, livre de contaminantes potenciais e dentro do intervalo de temperatura e umidade especificados pelo fabricante. Como a maioria dos computadores pessoais, o ambiente pode ser controlado. No entanto, devido à natureza portável dos laptops, nem sempre é possível controlar a temperatura, umidade e as condições de trabalho. Os computadores são construídos para resistir à ambientes adversos, porém os técnicos devem sempre tomar precauções para proteger o computador contra danos e perda de dados.</p>
+          <p>Siga essas diretrizes para ajudar a garantir o desempenho operacional ideal do computador:</p>
+          <p><ul>
+              <li>Não obstrua as aberturas ou fluxo de ar dos componentes internos. Um computador pode superaquecer se a circulação de ar estiver obstruída.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mantenha a temperatura ambiente entre 45 a 90 graus Fahrenheit (7 a 32 graus Celsius).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mantenha o nível de umidade entre 10% e 80%.</li>
+            </ul>
+          </p>
+          <p>As recomendações de temperatura e umidade variam de acordo com o fabricante do computador. Você deve pesquisar os valores recomendados, especialmente se você planeja usar o computador em condições extremas. Consulte a figura para obter exemplos sobres os diferentes níveis de umidade e temperatura.</p>
+          <p>CUIDADO: Para evitar danificar as superfícies do computador, use um pano macio e que não solte fiapos com uma solução de limpeza aprovada. Aplique a solução de limpeza no pano e não diretamente no computador.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

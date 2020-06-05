@@ -1,0 +1,23 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+   <text><![CDATA[<b>Rede Cliente/Servidor</b>]]></text>
+   </component>
+
+<component id="ID_txt05">
+   <text><![CDATA[<b>Navegador Web, Cliente de E-mail e Cliente de Acesso a Arquivos</b>]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[<b>Navegador Web e Cliente de Acesso a Arquivos</b>]]></text> 
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[<b>Navegador Web e Cliente de E-mail</b>]]></text> 
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[<b>Cliente de Acesso a Arquivos</b>]]></text> 
+   </component>
+<component id="ID_txt01">
+   <text><![CDATA[<b>Servidor de Email, Servidor de Web e Servidor de Arquivos</b>]]></text> 
+   </component>
+
+</textcomponents>

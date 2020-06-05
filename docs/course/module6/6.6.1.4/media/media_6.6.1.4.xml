@@ -1,0 +1,50 @@
+﻿<textcomponents>
+ <component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		     <td valign="top" colspan='5' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Padrões Ethernet Sem Fio</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321' ><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	<tr>
+		<td valign="top" bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Padrão</b></font></td>
+		<td valign="top" bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Largura de Banda</b></font></td>
+		<td valign="top" bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Frequência</b></font></td>
+		<td valign="top" bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Alcance Máximo</b></font></td>
+		<td valign="top" bgcolor='#A2AA23' width="120px"><font size='12' color='#ffffff'><b>Interoperabilidade</b></font></td>
+	 
+	</tr> 
+	<tr>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>IEEE 802.11a</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Até 54 Mbps</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>5 GHz</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>45,7 m (150 pés)</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Incompatível com 802.11b e 802.11g</font></td>
+	</tr>
+	<tr>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>IEEE 802.11b</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Até 11 Mbps</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>2.4 GHz</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>91 m (300 pés)</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Compatível com 802.11g</font></td>
+	</tr>
+	<tr>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>IEEE 802.11g</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Até 54 Mbps</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>2.4 GHz</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>91 m (300 pés)</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Compatível com 802.11b</font></td>
+	</tr>
+	
+	<tr>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>IEEE 802.11n</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Até 600 Mbps</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>2.4 GHz ou 5 GHz</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>250 m (984 pés)</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Compatível com 802.11a, 802.11b e 802.11g</font></td>
+	</tr> 
+</table>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.7.1.1 TCP/IP</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>OSI and TCP/IP Data Models</h1>
+      <h2>Reference Models</h2>
+    </div>
+    <div id="content">
+          <p>An architectural model is a common frame of reference for explaining Internet communications and developing communication protocols. It separates the functions of protocols into manageable layers. Each layer performs a specific function in the process of communicating over a network. </p>
+          <p></p>
+          <p>The TCP/IP model was created by researchers in the U.S. Department of Defense (DoD). The TCP/IP suite of protocols is the dominant standard for transporting data across networks and the Internet. It consists of layers that perform functions necessary to prepare data for transmission over a network. The chart in Figure 1 shows the four layers of the TCP/IP model.</p>
+          <p></p>
+          <p>A message begins at the top application layer and moves down the TCP/IP layers to the bottom network access layer. Header information is added to the message as it moves down through each layer and is then transmitted. After reaching the destination, the message travels back up through each layer. The header information that was added to the message is stripped away as the message moves up through the layers toward its destination.</p>
+          <p></p>
+          <p>Application Layer Protocols <br/>Application layer protocols provide network services to user applications, such as web browsers and email programs. Common protocols that operate at the application layer include HTTP, Telnet, FTP, SMTP, DNS, and HTML.</p>
+          <p></p>
+          <p>Transport Layer Protocols <br/>Transport layer protocols provide end-to-end management of the data. One of the functions of these protocols is to divide the data into manageable segments for easier transport across the network. Common protocols that operate at the transport layer include TCP and UDP.</p>
+          <p></p>
+          <p>Internet Layer Protocols <br/>Internet layer protocols provide connectivity between hosts in the network. Common protocols that operate at the Internet layer include IP, ICMP, RIP, and ARP.</p>
+          <p></p>
+          <p>Network Access Layer Protocols<br/>Network access layer protocols describe the standards that hosts use to access the physical media. The IEEE 802.3 Ethernet standards and technologies, such as CSMA/CD and 10BASE-T, are defined in this layer.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

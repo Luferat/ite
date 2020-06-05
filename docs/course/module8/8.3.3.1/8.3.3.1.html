@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.3.1 Introdução ao Email</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e Email</h1>
+        <h2>Configurando o Email</h2>
+      </div>
+      <div id="content">
+          <p>Softwares de email podem ser instalados como parte de um navegador web ou como um aplicativo independente. Qualquer programa de email pode ser usado no Windows 7. O Windows Live Mail é um programa de email recomendado pela Microsoft. Ele gerencia várias contas de email, calendários e contatos, como mostrado na Figura 1. Para instalar o Windows Live Mail, baixe e instale o Windows Essentials da Microsoft. O Windows Live Mail está incluso no Windows Essentials.</p>
+          <p>Você deve ter as seguintes informações ao configurar uma conta de email:</p>
+          <p><ul>
+              <li>Nome de Exibição - Este pode ser o seu verdadeiro nome, apelido ou qualquer outro nome que você quer que as pessoas vejam.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Endereço de email - Este é o endereço que as pessoas utilizam para enviar emails para você. Um endereço de email é um nome de usuário seguido do símbolo @ e o domínio do servidor de email (user@example.net).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Protocolo usado pelo servidor de emails - Diferentes protocolos fornecem diversos serviços de email.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Nomes de servidores de email de entrada e saída - Esses nomes são fornecidos pelo administrador da rede ou ISP.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usuário - Isto é usado para fazer logon nos servidores de email.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Senha da conta - A senha deve ser forte, pois as contas de email muitas vezes estão disponíveis a partir de sites.</li>
+            </ul>
+          </p>
+          <p>Os protocolos utilizados no email incluem os seguintes:</p>
+          <p><ul>
+              <li>Post Office Protocol versão 3 (POP3)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Internet Message Access Protocol (IMAP)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Simple Mail Transfer Protocol (SMTP)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Multipurpose Internet Mail Extensions (MIME)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Secure Socket Layer (SSL)</li>
+            </ul>
+          </p>
+          <p>Você precisa saber como configurar um dispositivo para aceitar o formato correto de emails recebidos. Você pode configurar o software cliente de email usando um assistente, como mostrado na Figura 2.</p>
+          <p>POP3</p>
+          <p>O POP3 recupera emails a partir de um servidor remoto via TCP/IP. O POP3 não deixar uma cópia do email no servidor, no entanto, algumas implementações permitem aos usuários especificar que o email é salvo por algum período de tempo. POP3 oferece suporte a usuários finais que possuem conexões intermitentes, como dial-up. Um usuário POP3 pode se conectar, baixar email a partir do servidor e, em seguida, se desconectar. POP3 geralmente usa a porta 110.</p>
+          <p>IMAP</p>
+          <p>O IMAP permite que os clientes de email locais recuperem emails de um servidor. Como o POP3, IMAP permite que você baixe email a partir de um servidor de email usando um software cliente. A diferença é que o IMAP permite ao usuário organizar os email no servidor de da rede e baixar cópias de email. O email original permanece no servidor da rede. Ao contrário do POP3, o IMAP normalmente deixa o e-mail original no servidor até que você mova o email em uma pasta pessoal em seu aplicativo. O IMAP sincroniza pastas de email entre o servidor e o cliente. O IMAP é mais rápido do que o POP3, porém requer mais espaço em disco no servidor e mais recursos da CPU. A versão mais recente do IMAP é IMAP4. IMAP4 é frequentemente utilizado em grandes redes, como um campus universitário. IMAP normalmente usa a porta 143.</p>
+          <p>SMTP</p>
+          <p>O SMTP é um protocolo simples, baseado em texto que transmite emails através de uma rede TCP/IP e é o formato de email para texto que usa apenas a codificação ASCII. SMTP deve ser implementado para enviar email. O SMTP envia mensagens de um cliente de email para um servidor ou de um servidor de para outro. Uma mensagem é enviada depois que os destinatários são identificados e verificados. O SMTP normalmente usa a porta 25.</p>
+          <p>MIME</p>
+          <p>O MIME estende o formato de email para incluir o texto no padrão ASCII, bem como outros formatos, como imagens e documentos de processamento de texto. O MIME normalmente usado em conjunto com o SMTP.</p>
+          <p>SSL</p>
+          <p>O SSL foi desenvolvido para transmitir arquivos de forma segura. Todos os dados trocados entre o cliente de email e o servidor são criptografados. Ao configurar um cliente de email para usar o SSL, certifique-se de usar o número correto da porta para o servidor de email.</p>
+          <p>Exchange</p>
+          <p>Exchange é um servidor de email, gerenciador de contatos e calendário criado pela Microsoft. O Exchange usa uma arquitetura de mensagens proprietária chamada Messaging Application Programming Interface (MAPI). O MAPI é usado pelo Microsoft Office Outlook para se conectar a servidores Exchange, fornecer email, calendário e gerenciamento de contatos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

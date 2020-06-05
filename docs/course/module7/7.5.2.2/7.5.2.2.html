@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.5.2.2 Energia</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Hardware de Laptops e Componente de Instalação e Configuração</h1>
+        <h2>Substituindo Dispositivos de Hardware</h2>
+      </div>
+      <div id="content">
+          <p>Estes são alguns sinais de que a bateria, como mostrado na Figura 1, pode precisar ser substituída:</p>
+          <p><ul>
+              <li>O laptop é desligado imediatamente quando a energia é removida.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A bateria está vazando.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A bateria está superaquecendo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A bateria não segura a carga.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Se você estiver vivenciando problemas e suspeite que está relacionado com a bateria, troque-a por uma bateria boa e compatível. Se não encontrar uma bateria para substituição leva a bateria com problema a um centro de reparo autorizado para testes.</p>
+          <p></p>
+          <p>A bateria para substituição deve atender ou exceder as especificações do fabricante do laptop. As baterias novas devem usar o mesmo formato que a bateria original. A tensão, as classificações de energia e os adaptadores de energia também devem atender as especificações do fabricante.</p>
+          <p></p>
+          <p>NOTA: Quando carregar uma nova bateria, sempre siga as instruções fornecidas pelo fabricante. O laptop pode ser usado durante uma carga inicial, mas não desligue o adaptador de energia Baterias recarregáveis de Ni-Cad e NiMH ​​devem ocasionalmente ser descarregada completamente para remover o efeito memória. Quando a bateria estiver completamente descarregada, ela deve ser carregada até a sua capacidade máxima.</p>
+          <p></p>
+          <p>ATENÇÃO: Manuseie as baterias com cuidado. As baterias podem explodir se estiverem em curto, forem manuseadas de forma errada ou indevidamente carregadas. Certifique-se de que o carregador da bateria foi projetado para a química, tamanho e tensão da bateria. As baterias são consideradas resíduos tóxicos e devem ser eliminadas de acordo com as leis locais.</p>
+          <p></p>
+          <p>Substituindo uma Bateria</p>
+          <p>Para remover e instalar uma bateria, siga estes passos:</p>
+          <p>Passo 1. Desligue o laptop e desconecte o adaptador de energia.</p>
+          <p>Passo 2. Remova a tampa da bateria, se necessário.</p>
+          <p>Passo 3. Destrave a bateria, movendo suas travas.</p>
+          <p>Passo 4. Mantenha a alavanca na posição destravada e remova a bateria.</p>
+          <p>Passo 5. Certifique-se de que os contatos dentro do notebook e da bateria estão livres de sujeira e corrosão.</p>
+          <p>Passo 6. Insira a nova bateria.</p>
+          <p>Passo 7. Certifique-se de que as duas alavancas da bateria estão bloqueadas.</p>
+          <p>Passo 8. Substitua a tampa da bateria, se necessário.</p>
+          <p>Passo 9. Conecte o adaptador de energia e ligue o laptop.</p>
+          <p></p>
+          <p>Substituindo a Tomada DC</p>
+          <p>A tomada DC, como mostrado na Figura 2, recebe energia do conversor AC/DC do laptop e fornece a mesma para a placa do sistema.</p>
+          <p></p>
+          <p>Se o sua toma DC for substituível, siga estes passos:</p>
+          <p>Passo 1. Desligue o laptop e desconecte o adaptador de energia.</p>
+          <p>Passo 2. Remova a bateria e quaisquer outros componentes, tal como descritos pelo fabricante.</p>
+          <p>Passo 3. Solte a tomada DC da carcaça do laptop.</p>
+          <p>Passo 4. Solte o cabo de alimentação que está ligado à tomada DC.</p>
+          <p>Passo 5. Desconecte o conector do cabo de alimentação da placa-mãe e remova a tomada DC da carcaça.</p>
+          <p>Passo 6. Ligue o conector do cabo de alimentação à placa-mãe.</p>
+          <p>Passo 7. Fixe os cabos de alimentação que estão ligados à tomada DC na carcaça.</p>
+          <p>Passo 8. Prenda a tomada DC na carcaça.</p>
+          <p>Passo 9. Insira a bateria e reinstale todos os outros componentes que foram removidos.</p>
+          <p>Passo 10. Conecte o adaptador de energia e ligue o laptop.</p>
+          <p></p>
+          <p>NOTA: Se a tomada DC for soldada na placa-mãe, a placa-mãe deve ser substituída de acordo com o fabricante do laptop.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

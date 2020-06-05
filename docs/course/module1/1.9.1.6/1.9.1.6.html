@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.9.1.6 Selecting an ISP for the Customer</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Select an ISP Connection Type</h1>
+      <h2>Connection Technologies</h2>
+    </div>
+    <div id="content">
+          <p>Several WAN solutions are available for connecting between sites or to the Internet. WAN connection services provide different speeds and levels of service. You should understand how users connect to the Internet and the advantages and disadvantages of different connection types. The ISP that you choose can have a noticeable effect on network service. Some private resellers that connect to a phone company may sell more connections than allowed, which slows the overall speed of the service to customers.</p>
+          <p>There are four main considerations for an Internet connection:</p>
+          <p>
+            <ul>
+              <li>Cost</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Speed</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Reliability</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Availability</li>
+            </ul>
+          </p>
+          <p>Research the connection types that the ISPs offer before selecting an ISP. Check the services available in your area. Compare connection speeds, reliability, and cost before committing to a service agreement.</p>
+          <p>
+            <b>POTS</b>
+            <br/>A POTS connection is extremely slow, but it is available wherever there is a telephone. There are two major disadvantages of using the phone line with an analog modem. The first is that the telephone line cannot be used for voice calls while the modem is in use. The second is the limited bandwidth provided by analog phone service. The maximum bandwidth using an analog modem is 56 Kbps, but in reality, it is usually much lower than that. An analog modem is not a good solution for the demands of busy networks.</p>
+          <p>
+            <b>ISDN</b>
+            <br/>ISDN is very reliable because it uses POTS lines. ISDN is available in most places where the telephone company supports digital signaling to carry the data. Because it uses digital technology, ISDN offers faster connection times, faster speeds, and higher quality voice than traditional analog telephone service. It also allows multiple devices to share a single telephone line.</p>
+          <p>
+            <b>DSL</b>
+            <br/>DSL, like ISDN, allows multiple devices to share a single telephone line. DSL speeds are generally higher than ISDN. DSL allows the use of high-bandwidth applications or multiple users to share the same connection to the Internet. In most cases, the copper wires already in your home or business are capable of carrying the signals needed for DSL communication.</p>
+          <p>There are limitations to DSL technology: </p>
+          <p>
+            <ul>
+              <li>DSL service is not available everywhere, and it works better and faster the closer the installation is to the telephone provider's central office (CO). </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>DSL is much faster when receiving data over the Internet than it is when sending it. In some cases, the lines that are in place to carry telephone signals do not technically qualify to carry DSL signals. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The voice information and data carried by DSL must be separated at the customer site. A device called a splitter separates the connection to the phones and the connection to the local network devices.</li>
+            </ul>
+          </p>
+          <p>
+            <b>Cable</b>
+            <br/>Cable television reaches many homes, making it an alternative for people unable to receive DSL service. Theoretically, the bandwidth of cable is higher than DSL, but it can be affected by limitations of the cable provider. Most homes that have cable television have the option to install high-speed Internet service. Many cable companies offer telephone service as well.</p>
+          <p>
+            <b>Satellite</b>
+            <br/>People who live in rural areas often use satellite broadband because they need a faster connection than dialup, and no other broadband connection is available. The cost of installation and the monthly service fees are much higher than those for DSL and cable subscribers. Heavy storm conditions can degrade the quality of the connection between the user and the satellite, or the satellite to the provider, slowing down or even disconnecting the connection.</p>
+          <p>
+            <b>Cellular</b>
+            <br/>Many types of wireless Internet services are available. The same companies that offer cellular service may offer Internet service. PC Card/ExpressBus, USB, or PCI and PCIe cards are used to connect a computer to the Internet. The service is not available in all areas.</p>
+          <p>Service providers may offer wireless Internet service using microwave technology in limited areas. Signals are transmitted directly to an antenna on the roof of the house or building. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

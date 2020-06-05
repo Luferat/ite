@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.2.2 Instalando a RAM</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Instalação da Placa-Mãe</h2>
+      </div>
+      <div id="content">
+          <p>A RAM pode ser instalada na placa-mãe antes da mesma ser presa no gabinete do computador. Antes da instalação, consulte a documentação da placa-mãe ou o site do fabricante para garantir que a memória RAM é compatível com a mesma.</p>
+          <p>A RAM fornece um armazenamento rápido dos dados temporários para a CPU enquanto o computador estiver em funcionamento. A RAM é a memória volátil, o que significa que seu conteúdo é perdido quando o computador é desligado. Normalmente, o aumento de memória RAM melhora o desempenho do computador.</p>
+          <p>Para instalar a RAM, siga estes passos:</p>
+          <p>Passo 1. Alinhe os encaixes do módulo de memória RAM com as chaves do slot e pressione para baixo até que as abas laterais sejam encaixadas.</p>
+          <p>Passo 2. Certifique-se de que as abas laterais tenham travado o módulo da memória RAM.</p>
+          <p>Passo 3. Verifique visualmente por contatos expostos.</p>
+          <p>Repita estas etapas para os módulos adicionais.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

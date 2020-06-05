@@ -1,0 +1,121 @@
+﻿<textcomponents>
+<component id='ID_table'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+	<td colspan='3' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns</b></font></td>
+</tr>
+<tr class="liner">
+	<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+	<td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+	<td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+	<td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+</tr>
+<tr>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O documento de uma aplicação não imprime.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Existe um erro na fila de impressão do documento.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Gerencie os trabalhos de impressão cancelando os documentos na fila de impressão e imprima novamente.</font></td>
+</tr>
+<tr>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A impressora não pode ser adicionada ou há um erro de spooler de impressão.</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O serviço de impressão está parado ou não está funcionando corretamente.</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Inicie o spooler de impressão e, se necessário, reinicie o computador. </font></td>
+</tr>
+<tr>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Trabalhos de impressão são enviados para a fila de impressão, mas não são impressos.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A impressora foi instalada na porta errada.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Use as propriedades e configurações da impressora para configurar a porta da impressora.</font></td>
+</tr>
+<tr>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A fila de impressão está funcionando corretamente, mas a impressora não imprime.</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Há uma conexão de cabo ruim.</li>
+		<li>A impressora está no modo de espera.</li>
+		<li>A impressora tem um erro, como falta de papel, toner ou atolamento de papel.</li></textformat></font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Verifique se há pinos tortos no cabo da impressora e verifique as conexões do cabo da impressora para o computador.</li>
+		<li>Manualmente tire a impressora de standby ou reinicie a impressora.</li>
+		<li>Verifique o status da impressora e corrija os eventuais erros.</li></textformat></font></td>
+</tr>
+<tr>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A impressora está imprimindo caracteres desconhecidos ou não imprimi uma página de teste.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O driver de impressão instalado está incorreto ou desatualizado.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Desinstale o driver de impressão atual e instale o correto.</font></td>
+</tr>
+
+
+<tr>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A impressora imprime caracteres desconhecidos ou não imprime nada.</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>A impressora pode estar conectada a uma UPS.</li><li>Driver de impressão incorreto instalado.</li><li>Cabos da impressora estão soltos.</li><li>Não há papel na impressora.</li></textformat></font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Ligue a impressora diretamente na tomada ou estabilizador.</li> <li>Desinstale o driver de impressão incorreto e instale o driver correto.</li> <li>Fixe os cabos da impressora.</li><li>Coloque papel na impressora.</li></textformat></font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Atolamentos de papel ao imprimir.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>A impressora está suja.</li> <li>O tipo errado de papel está sendo usado.</li><li>Umidade faz com que os papeis fiquem juntos.</li></textformat></font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Limpe a impressora.</li> <li>Substitua o papel pelo recomendado pelo fabricante.</li> <li>Insira um novo papel na bandeja.</li></textformat></font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A impressão está desbotada.</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><font color='#393536'><li>O cartucho de toner está com pouca carga.</li>
+		<li>O cartucho de toner está com defeito.</li>
+		<li>O papel é incompatível com a impressora.</li></font></textformat></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua o cartucho de toner.</li>
+		<li>Substitua o papel.</li></textformat></font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O toner não está aderindo ao papel.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O cartucho de toner está vazio.</li>
+		<li>O cartucho de toner está com defeito.</li>
+		<li>O papel é incompatível com a impressora.</li> </textformat></font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua o cartucho de toner.</li> 
+		<li>Substitua o papel.</li></textformat></font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O papel é amassado após a impressão.</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O papel está com defeito.</li>
+		<li>O papel foi colocado incorretamente.</li></textformat></font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Retire o papel da impressora, verifique por defeitos e substitua.</li>
+		<li>Remova, alinhe e substitua o papel.</li></textformat></font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O papel não está sendo alimentado na impressora.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O papel está amassado.</li>
+	<li>A impressora foi configurada para imprimir em um tamanho de papel diferente do atualmente carregado.</li></textformat></font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Remova o papel amassado da bandeja de impressão.</li> 
+	<li>Altere o tamanho do papel nas configurações da impressora.</li></textformat></font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O usuário recebe uma mensagem &quot;documento falhou ao imprimir&quot;. </font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Um cabo está solto ou desconectado.</li>
+	<li>A impressora não está mais compartilhada.</li></textformat></font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Verifique e reconecte o cabo Paralelo, USB ou o cabo de alimentação.</li>
+	<li>Configure a impressora para compartilhada.</li></textformat></font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O usuário recebe uma mensagem &quot;Acesso negado&quot; ao tentar instalar uma impressora.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O usuário não tem privilégios administrativos ou avançados.</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Saia e faça login como administrador ou usuário avançado.</font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A impressora está imprimindo cores incorretas.</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O cartucho de impressão está vazio.</li>
+		<li>O cartucho de impressão está com defeito.</li>
+		<li>Cartucho incorreto instalado.</li>
+		<li>As cabeças de impressão precisam ser limpas e calibradas.</li></textformat></font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Substitua o cartucho da impressora.</li>
+		<li>Limpe e calibre a impressora usando o software fornecido.</li></textformat></font></td>
+</tr>
+
+</table>]]>
+</text>
+</component>
+</textcomponents>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.1.5 Ferramentas de Diagnóstico</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Uso Adequado das Ferramentas</h1>
+        <h2>Ferramentas de Hardware</h2>
+      </div>
+      <div id="content">
+          <p>Multímetro Digital</p>
+          <p>Um multímetro digital, conforme apresentado na Imagem 1, é um dispositivo que pode realizar vários tipos de medições. Ele testa a integridade dos circuitos e da qualidade da energia elétrica nos componentes do computador. Um multímetro digital apresenta a informação em um tela de LCD ou LED.</p>
+          <p></p>
+          <p>Adaptador Loopback</p>
+          <p>Um adaptador de auto-retorno (loopback), conforme apresentado na Imagem 2, também é chamado de tomada de loopback, testa a funcionalidade básica das portas do computador. O adaptador é específico para a porta que você deseja testar.</p>
+          <p></p>
+          <p>Testador de Cabo (Toner Probe)</p>
+          <p>O testador de cabo, conforme apresentado na Imagem 3, é uma ferramenta de duas partes. Uma parte do testador (Toner) é conectado a uma das extremidades de um cabo utilizando adaptadores específicos, tais como o RJ-45 e o coaxial. O testador gera um tom que percorre pelo cabo. A outra parte do testador (Probe) indica o cabo que foi traçado pelo Toner. Quando esta parte (Probe) estiver próxima ao cabo em que o testador (Toner) foi conectado, um tom poderá ser ouvido através do alto-falante.</p>
+          <p></p>
+          <p>Case de Disco Rígido Externo</p>
+          <p>Apesar da case do disco rígido externo, conforme apresentado na Imagem 4, não ser uma ferramenta de diagnóstico, ela é frequentemente utilizada para diagnosticar e reparar os computadores. O disco rígido do cliente é colocado na case externa para inspeção, diagnóstico e reparação utilizando um computador conhecido pelo técnico. Os backups também podem ser gravados para a unidade de uma case externa para evitar que os dados sejam corrompidos durante a reparação dos computadores.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

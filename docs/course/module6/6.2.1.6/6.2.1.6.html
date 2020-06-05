@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.1.6 Redes Peer-to-Peer (Ponto-a-Ponto)</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Identificando Redes</h1>
+        <h2>Tipos de Redes</h2>
+      </div>
+      <div id="content">
+          <p>Em uma rede ponto-a-ponto, não há hierarquia entre os computadores, nem existem servidores dedicados. Cada dispositivo, também chamado de um cliente, tem capacidades e responsabilidades equivalentes. Os usuários individuais são responsáveis ​​por seus próprios recursos e podem decidir quais dados e dispositivos compartilham ou instalam. Como os usuários individuais são responsáveis ​​pelos recursos em seus próprios computadores, a rede não tem nenhum ponto central de controle ou administração.</p>
+          <p>Redes ponto-a-ponto funcionam melhor em ambientes com dez ou menos computadores. Redes ponto-a-ponto também podem existir dentro de redes maiores. Mesmo em uma grande rede de clientes, os usuários ainda poderão compartilhar recursos diretamente com outros usuários sem o uso de um servidor de rede. Em sua casa, se você tiver mais de um computador, você pode configurar uma rede ponto-a-ponto. Você pode compartilhar arquivos com outros computadores, enviar mensagens entre computadores e documentos de impressão para uma impressora compartilhada.</p>
+          <p>Redes ponto-a-ponto possuem várias desvantagens:</p>
+          <p><ul>
+              <li>Não há nenhuma administração de rede centralizada, o que torna difícil determinar quem controla os recursos da rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não há segurança centralizada. Cada computador deve utilizar medidas de segurança separadas para proteção de dados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A rede se torna mais complexa e difícil para gerenciar quando o número de computadores aumenta.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pode não haver nenhum armazenamento de dados centralizado. Backups de dados separados serão mantidos. Essa responsabilidade recai sobre os usuários individuais.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

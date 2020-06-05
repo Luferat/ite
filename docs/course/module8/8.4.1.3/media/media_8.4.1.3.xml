@@ -1,0 +1,75 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>iPad Desativado</b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Tentativas de Código Falhas do iOS</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>Segurança do iPad Extra</b>]]></text>
+</component>
+  
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>Apagar Todos os Dados de Definições.</b>]]></text>
+</component>   
+  
+	<component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr class="title">
+					<td colspan='3' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Tentativas de Código Falhas do iOS</b></font></td>
+				</tr>		
+				<tr >
+					<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#A2AA23' width='110'><font size='12' color='#ffffff'><b>Tentativas Falhas</b></font></td>
+					<td bgcolor='#A2AA23' width='160'><font size='12' color='#ffffff'><b>Tempo Adicional que o Dispositivo Ficará Desativado</b></font></td>
+					<td bgcolor='#A2AA23' width='150'><font size='12' color='#ffffff'><b>Tempo Total que o Dispositivo Ficará Desativado</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7'><font size='12'color='#393536'>1 a 5</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>0</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>0</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>6</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>1 minuto</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>1 minuto</font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>7</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>5 minutos</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>6 minutos</font></td>
+				</tr>							
+				<tr>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>8</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>15 minutos</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>21 minutos</font></td>
+				</tr>							
+				<tr>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>9</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>60 minutos</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>81 minutos</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>10</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>60 minutos</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>141 minutos</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>11</font></td>
+					<td colspan = '2' bgcolor='#F3F5E7'><font size='12' color='#393536'><i>Dados são Deletados do Dispositivo</i></font></td>
+				</tr>		
+				
+			</table>]]>
+		</text>
+	</component>  
+  
+  
+  
+<component id="transcript">
+  <text><![CDATA[<b>transcrição vai aqui</b>]]></text> 
+  </component>
+</textcomponents>

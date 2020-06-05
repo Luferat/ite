@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.3.1 Itens da Tela Inicial</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Móveis</h1>
+        <h2>Interface de Toque do iOS</h2>
+      </div>
+      <div id="content">
+          <p>A interface iOS funciona de uma forma muito similar a interface Android. As telas iniciais são usadas ​​para organizar os aplicativos, que são executados com o toque. Existem algumas diferenças muito importantes:</p>
+          <p><ul>
+              <li>Não há ícones de navegação - Para acessar a tela inicial, um botão físico deve ser pressionado, ao invés de tocar em ícones de navegação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sem Widgets - Apenas aplicativos e outros conteúdos podem ser instalados em dispositivos iOS.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não há atalhos de aplicativos - Os ícones exibidos na tela inicial representem o aplicativo real e não um atalho.</li>
+            </ul>
+          </p>
+          <p>Botão Home</p>
+          <p>Diferente do Android, dispositivos iOS não usam ícones de navegação para executar funções. Um único botão chamado o botão Home executa muitas das mesmas funções que os botões de navegação para Android realizam. O botão home está localizado na parte inferior do dispositivo, conforme apresentado na Figura 1. O botão Home executa as seguintes funções:</p>
+          <p><ul>
+              <li>Despertar o dispositivo - Quando a tela estiver desligada, pressione o botão Home para ativá-la.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Retornar à tela inicial - Pressione o botão Home, enquanto estiver usando um app, para acessar a última tela inicial que foi usada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Retornar à tela inicial principal - Pressione o botão Home, enquanto estiver em qualquer outra tela inicial ou na tela de busca para ir para a tela inicial principal.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Abrir a barra de multitarefa - Pressione duas vezes o botão Home para abrir a barra de multitarefa. A barra de multitarefa mostra os aplicativos mais recentes que têm sido utilizados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Iniciar o controle por voz Siri - Segure o botão home para iniciar o controle de voz Siri. O Siri é um software especial que entende comandos de voz avançados. Em dispositivos que não possuem Siri, os controles básicos de voz podem ser utilizados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Controles de áudio - Pressione duas vezes o botão Home quando a tela estiver bloqueada para abrir os controles de áudio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Abrir a tela de pesquisa - Pressione o botão Home, enquanto estiver na tela inicial principal para ir para a tela de pesquisa.</li>
+            </ul>
+          </p>
+          <p>Centro de Notificações</p>
+          <p>Dispositivos iOS possuem um centro de notificação que exibe todos os alertas de aplicativos em um único local, conforme apresentado na Figura 2. Para abrir a área de notificação em dispositivos iOS, toque e segure a parte superior da tela e arraste o dedo para baixo. As seguintes ações podem ser tomadas quando as notificações estiverem abertas:</p>
+          <p><ul>
+              <li>Responder a um alerta tocando-o.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Remover um alerta ao tocar no ícone X.</li>
+            </ul>
+          </p>
+          <p>Para alterar as opções de notificação, use o seguinte caminho:</p>
+          <p>Ajustes > Central de Notificações</p>
+          <p>Pesquisa</p>
+          <p>Na tela inicial principal, arraste o dedo da esquerda para a direita ou pressione duas vezes o botão Home para abrir o recurso de pesquisa, chamado Spotlight, conforme apresentado na Figura 3. Digite o item de pesquisa. Todos os resultados são listados de acordo com a aplicação que contém os resultados. Para realizar uma pesquisa na Internet, toque em pesquisa na web, localizado na parte inferior da lista, depois que os resultados da pesquisa forem exibidos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

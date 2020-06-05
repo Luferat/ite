@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.4.3 Windows 7 Homegroup</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>OS Configurations</h2>
+    </div>
+    <div id="content">
+          <p>All Windows 7 computers that belong to the same workgroup can also belong to a homegroup. There can only be one homegroup per workgroup on a network. Computers can only be a member of one homegroup at a time. The homegroup option is not available in Windows Vista or Windows XP.</p>
+          <p>Only one user in the workgroup creates the homegroup. The other users can join the homegroup, provided they know the homegroup password. The following guidelines outline which network location profiles are allowed to create or join a homegroup:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Home Network</b> – Home networks are allowed to create or join a homegroup.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Work Network</b> – Work networks are not allowed to create or join a homegroup, but you can see and share resources with other computers.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Public Network</b> – Homegroup is not available. </li>
+            </ul>
+          </p>
+          <p>
+            <b>Note:</b> Windows 7 Starter and Windows 7 Home Basic can join a homegroup, but not create a homegroup.</p>
+          <p>To change a computer to the Home network, network location profile, use the following path:</p>
+          <p>
+            <b>Start > Control Panel > Network and Sharing Center ></b> click the network location profile listed below View your active networks, as shown in Figure 1, <b>> </b>select <b>Home network</b></p>
+          <p>To create a homegroup, use the following path:</p>
+          <p>
+            <b>Start > Control Panel > HomeGroup > Create a homegroup</b>, as shown in Figure 2<b> ></b> select files to share then <b>Next ></b> record the homegroup password <b>> Finish</b>.</p>
+          <p>When a computer joins a homegroup, all user accounts on the computer, except the Guest account, become members of the homegroup. Being part of a homegroup makes it easy to share pictures, music, videos, documents, libraries, and printers with other people in the same homegroup. Users control access to their own resources. Users can also create or join a homegroup with a virtual machine in Windows Virtual PC.</p>
+          <p>To join a computer to a homegroup, use the following path:</p>
+          <p>
+            <b>Start ></b>
+            <b>Control Panel > HomeGroup > Join now</b>, as shown in figure 3<b> > </b>select files to share then <b>Next ></b> type in the homegroup password then <b>Next > Finish</b></p>
+          <p>To change the files shared on a computer, select <b>Start > Control Panel > HomeGroup</b>. After you make your changes, click <b>Save change</b>.</p>
+          <p>
+            <b>Note:</b> If a computer belongs to a domain, you can join a homegroup and access files and resources on other homegroup computers. You are not allowed to create a new homegroup or share your own files and resources with a homegroup.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.5.2.9 Alto Falantes</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Hardware de Laptops e Componente de Instalação e Configuração</h1>
+        <h2>Substituindo Dispositivos de Hardware</h2>
+      </div>
+      <div id="content">
+          <p>Antes de substituir os alto-falantes do laptop, verifique se o volume não está silenciado ou se ele se encontra no estado mute.</p>
+          <p></p>
+          <p>Para remover e substituir os alto falantes, siga estes passos:</p>
+          <p>Passo 1. Desligue o computador e, em seguida, desconecte o adaptador da energia.</p>
+          <p>Passo 2. Remova a bateria e quaisquer outros componentes recomendados pelo fabricante, incluindo o teclado ou invólucro superior.</p>
+          <p>Passo 3. Desconecte todos os cabos que conectam o laptop na placa-mãe.</p>
+          <p>Passo 4. Remova todos os parafusos que prendem os alto falantes.</p>
+          <p>Passo 5. Remova os alto falantes.</p>
+          <p>Passo 6. Insira os alto falantes.</p>
+          <p>Passo 7. Fixe os alto falantes no laptop, apertando todos os parafusos.</p>
+          <p>Passo 8. Conecte os cabos que ligam o laptop na placa-mãe.</p>
+          <p>Passo 9. Insira a bateria, junto com todos os outros componentes que foram removidos.</p>
+          <p>Passo 10. Conecte o adaptador de energia e ligue o computador para verificar a sua funcionalidade.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

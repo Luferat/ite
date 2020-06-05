@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.6.1.4 IEEE 802.11</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Ethernet Standards</h1>
+      <h2>Cabled and Wireless</h2>
+    </div>
+    <div id="content">
+          <p>IEEE 802.11 is the standard that specifies connectivity for wireless networks. IEEE 802.11, or Wi-Fi, refers to a collective group of standards, as shown in Figure 1. These protocols specify the frequencies, speeds, and other capabilities of the different Wi-Fi standards.</p>
+          <p></p>
+          <p>
+            <b>802.11a</b> – Allows WLANs to achieve data rates as high as 54 Mbps. Devices operate in the 5 GHz radio frequency range and within a maximum range of 45.7 m (150 ft). </p>
+          <p></p>
+          <p>
+            <b>802.11b</b> – Operates in the 2.4 GHz frequency range with a maximum theoretical data rate of 11 Mbps. Devices operate within a maximum range of 91 m (300 ft).</p>
+          <p></p>
+          <p>
+            <b>802.11g</b> – Provides the same theoretical maximum speed as 802.11a, which is 54 Mbps, but operates in the same 2.4 GHz spectrum as 802.11b. Unlike 802.11a, 802.11g is backward-compatible with 802.11b. 802.11g also has a maximum range of 91 m (300 ft).</p>
+          <p></p>
+          <p>
+            <b>802.11n</b> – Has a theoretical bandwidth of 600 Mbps and operates in either the 2.4 GHz or 5 GHz frequency range with a maximum range of 250 m (984 ft). The 802.11n standard is backward-compatible with 802.11a, 802.11b, and 802.11g.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

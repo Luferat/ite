@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.5.1.1 Conteúdo do Plano de Manutenção Preventiva</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para os Sistemas Operacionais</h1>
+        <h2>Plano de Manutenção Preventiva para Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Para garantir que um sistema operacional permaneça totalmente funcional, você deve implementar um plano de manutenção preventiva. Um plano de manutenção preventiva oferece os seguintes benefícios para os usuários e as organizações:</p>
+          <p><ul>
+              <li>Diminuição do tempo de inatividade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desempenho otimizado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Maior confiabilidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Custos de reparo menor</li>
+            </ul>
+          </p>
+          <p>Planejamento de Manutenção Preventiva</p>
+          <p>Os planos de manutenção preventiva devem incluir informações detalhadas sobre a manutenção de todos os computadores e equipamentos de rede. O plano deve priorizar equipamentos que mais afetam a organização caso haja uma indisponibilidade. Manutenção preventiva de um S.O. inclui a automatização de tarefas para executar atualizações programadas. A manutenção preventiva inclui também a instalação de service packs, que ajudam a manter o sistema atualizado e compatível com o novo software e hardware. A manutenção preventiva inclui as seguintes tarefas importantes:</p>
+          <p><ul>
+              <li>Backup de disco rígido</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desfragmentação do disco rígido</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Atualizações do sistema operacional e programas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Atualizações de antivírus e outros softwares de proteção</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Verifição de erros no disco rígido</li>
+            </ul>
+          </p>
+          <p>Realize a manutenção preventiva regularmente e registre todas as ações tomadas e observações feitas. O log de reparo ajuda a determinar quais equipamentos são confiáveis ou não. Ele também fornece um histórico de quando o computador foi reparado anteriormente, como foi feito esse reparo e qual era o problema.</p>
+          <p></p>
+          <p>Algumas manutenções preventivas devem ser feitas em um determinado momento que cause o mínimo de interrupção possível para as pessoas que usam os computadores. Isso muitas vezes leva ao agendamento de tarefas à noite, no início da manhã ou no fim de semana. Também existem ferramentas e técnicas que podem automatizar muitas tarefas de manutenção preventiva.</p>
+          <p></p>
+          <p>Segurança</p>
+          <p>A segurança é um aspecto importante em seu programa de manutenção preventiva. Instale os softwares de proteção contra vírus e malware e realize varreduras regulares nos computadores para ajudar a garantir que eles permaneçam livres de softwares maliciosos. Use a Ferramenta de Remoção de Software Malicioso do Windows para verificar um computador em busca de softwares mal-intencionados específicos e predominantes. Se um vírus for encontrado, a ferramenta irá removê-lo. Cada vez que uma nova versão da ferramenta é disponibilizada pela Microsoft, baixe-a e realize a varredura do seu computador em busca de novas ameaças. Este deve ser um item padrão em seu programa de manutenção preventiva, juntamente com as atualizações regulares do seu antivírus e das ferramentas de remoção de spyware.</p>
+          <p></p>
+          <p>Inicialização de Programas</p>
+          <p>Alguns programas, como antivírus e ferramentas de remoção de spyware, não iniciam automaticamente quando o computador é inicializado. Para garantir que estes programas serão executados sempre que o computador for inicializado, adicione o programa na pasta de inicialização do Menu Iniciar. Muitos programas têm botões que permitem que o programa execute uma ação específica, inicie sem ser exibido ou vá para a bandeja do Windows. Verifique a documentação para determinar se os programas permitem o uso de botões especiais.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

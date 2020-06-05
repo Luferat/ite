@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.5.7 Instalação dos Cabos Externos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Instalação dos Cabos</h2>
+      </div>
+      <div id="content">
+          <p>Após encaixar os painéis do gabinete, conecte os cabos na parte traseira do computador. Aqui estão alguns exemplos de conexões comuns:</p>
+          <p><ul>
+              <li>Monitor</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teclado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mouse</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>USB</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ethernet</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Energia</li>
+            </ul>
+          </p>
+          <p>NOTA: Conecte o cabo de alimentação depois de conectar todos os outros cabos.</p>
+          <p>Ao conectar os cabos, verifique se eles estão encaixados nos locais corretos. Por exemplo, sistemas mais antigos usam o mesmo tipo de conector PS/2 para conectar os cabos do mouse e do teclado, porém eles são identificados por cores para evitar que o dispositivo seja conectado de forma incorreta. Geralmente, um ícone utilizado para identificar o dispositivo é exibido próximo ao conector.</p>
+          <p>CUIDADO: Ao ligar os cabos, nunca force uma conexão.</p>
+          <p>Para instalar os vários cabos externos, siga esses passos:</p>
+          <p>Passo 1. Conecte o cabo do monitor à porta de vídeo (Figura 1). Prenda o cabo apertando os parafusos do conector.</p>
+          <p>Passo 2. Conecte o cabo do teclado na porta teclado PS/2 (Figura 2).</p>
+          <p>Passo 3. Conecte o cabo do mouse na porta mouse PS/2 (Figura 3).</p>
+          <p>Passo 4. Conecte o cabo USB em uma porta USB (Figura 4).</p>
+          <p>Passo 5. Conecte o cabo de rede na porta de rede (Figura 5).</p>
+          <p>Passo 6. Conecte a antena wireless no conector da placa de rede (Figura 6).</p>
+          <p>Passo 7. Conecte o cabo de alimentação na fonte de energia (Figura 7).</p>
+          <p>NOTA: Algumas placas-mãe não possuem portas PS/2 para conectar o teclado e mouse. Conecte um teclado USB e um mouse USB neste tipo de placa-mãe.</p>
+          <p>A Figura 8 mostra todos os cabos externos conectados à parte traseira do computador.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

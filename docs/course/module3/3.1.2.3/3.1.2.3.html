@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.2.3 Instalação da placa-mãe</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Instalação da Placa-Mãe</h2>
+      </div>
+      <div id="content">
+          <p>A placa-mãe está pronta para ser instalada no gabinete do computador, conforme apresentado na Imagem 1. Espaçadores (standoffs) de plástico e de metal são usados ​​para montar a placa e para impedi-la de tocar as porções metálicas do gabinete. Instale apenas os pinos que se alinham com os furos na placa-mãe. A instalação de suportes adicionais pode impedir que a placa-mãe seja encaixada corretamente no gabinete do computador.</p>
+          <p>Como as conexões de I/O (entrada e saída) de cada placa-mãe podem variar, uma placa de I/O, conforme apresentado na Imagem 2, é fornecida com a placa-mãe. A placa de I/O possui recortes específicos na parte traseira para os conectores. A placa de I/O é instalada na parte traseira do gabinete do computador para permitir que os conectores possam ser utilizados quando a placa-mãe é instalada no gabinete.</p>
+          <p>Para instalar a placa-mãe, siga estes passos:</p>
+          <p>Passo 1. Instale os espaçadores no gabinete do computador alinhado os mesmos com as posições dos furos de montagem na placa-mãe.</p>
+          <p>Passo 2. Instale a placa de I/O na parte traseira do gabinete.</p>
+          <p>Passo 3. Alinhe os conectores de I/O da parte traseira da placa-mãe com as aberturas na placa de I/O.</p>
+          <p>Passo 4. Alinhe os orifícios dos parafusos da placa-mãe com os espaçadores.</p>
+          <p>Passo 5. Insira todos os parafusos da placa-mãe.</p>
+          <p>Passo 6. Aperte todos os parafusos da placa-mãe.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

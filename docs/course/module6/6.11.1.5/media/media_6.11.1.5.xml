@@ -1,0 +1,23 @@
+﻿<textcomponents>
+	<component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr>
+					<td colspan='2' bgcolor='#DAE17A'><font size='14' color='#393536'><b>Passo 5: Verifique a Funcionalidade Completa do Sistema e, se possível, Implemente as Medidas Preventivas</b></font></td>
+				</tr>
+				<tr>
+					<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>
+				<tr>
+					<td width="100px" bgcolor='#F3F5E7' valign="top" style="padding-left:3px;"><font size='12'color='#393536'>Verifique a funcionalidade completa</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Use o comando ipconfig /all para exibir as informações de endereço IP de todos os adaptadores da rede.</li>
+						<li>Use o ping para verificar a conectividade de rede. Ele irá enviar um pacote para o endereço especificado e exibirá as informações de resposta.</li>
+						<li>Use o NSLookup para consultar um servidor de nomes de domínio da Internet. Ele irá retornar uma lista de hosts em um domínio ou a informação de um host.</li>
+						<li>Use o Tracert para determinar a rota tomada pelos pacotes quando viajam através da rede. Ele mostrará onde a comunicação entre o seu computador e o outro pode estar com problema.</li>
+						<li>Use o Net View para exibir uma lista de computadores em um grupo de trabalho. Ele exibirá os recursos compartilhados disponíveis em uma rede.</li></textformat></font></td>
+				</tr>
+			</table>]]>
+		</text>
+	</component>
+	
+</textcomponents>

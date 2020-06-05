@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.4.3 Instalar uma Placa de Rede Sem Fio</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Instalar Placas de Expansão</h2>
+      </div>
+      <div id="content">
+          <p>A placa de rede sem fio permite que um computador se conecte a uma rede wireless. Elas utilizam os slots de expansão PCI e PCIe na placa-mãe. Algumas placas de rede sem fio são instaladas externamente através de um conector USB.</p>
+          <p>Para instalar uma placa de rede sem fio, siga os passos abaixo:</p>
+          <p>Passo 1. Alinhe a placa de rede sem fio no slot de expansão apropriado da placa-mãe.</p>
+          <p>Passo 2. Pressione suavemente a placa de rede sem fio até que ela esteja totalmente encaixada.</p>
+          <p>Passo 3. Fixe a placa de rede sem fio no gabinete, utilizando os parafusos apropriados.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

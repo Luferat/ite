@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.1.2 Selecionando a Placa-mãe</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando os Componentes para Substituição no Computador</h1>
+        <h2>Selecionando os Componentes do PC</h2>
+      </div>
+      <div id="content">
+          <p>Novas placas-mãe têm, frequentemente, novos recursos ou padrões que podem ser incompatíveis com componentes mais antigos. Ao selecionar uma placa-mãe de substituição, certifique-se que ela suporta a CPU, memória RAM, placa de vídeo e as outras placas de expansão. O soquete e o chipset da placa-mãe devem ser compatíveis com a CPU. A placa-mãe também deve acomodar o dissipador de calor e a ventoinha existente ao reutilizar a CPU. Preste atenção ao número e os tipos de slots de expansão. Certifique-se de que a placa mãe coincida com as placas de expansão existentes e também suporte as novas que serão utilizadas. A fonte de alimentação existente deve ter conectores que se encaixem na nova placa-mãe. Finalmente, a nova placa-mãe deve caber fisicamente no gabinete atual do computador.</p>
+          <p>Diferentes placas-mãe usam diferentes chipsets. Um chipset é composto de circuitos integrados que controlam a comunicação entre a CPU e os outros componentes. O chipset determina quanta memória pode ser adicionada em uma placa-mãe e o tipo de conector da placa. Ao montar um computador, escolha um chipset que forneça os recursos que você precisa. Por exemplo, você pode comprar uma placa-mãe com um chipset que suporte várias portas USB, conexões eSATA, som surround e vídeo.</p>
+          <p>As placas-mãe possuem diferentes tipos sockets e slots da CPU. Este socket ou slot fornece o ponto de conexão e a interface elétrica para a CPU. O pacote da CPU deve corresponder ao tipo de soquete da placa-mãe ou do tipo slot da CPU. O pacote da CPU contêm a CPU, pontos de conexão e os materiais que cercam a CPU e dissipam o calor.</p>
+          <p>Os dados viajam de uma parte a outra do computador através de um conjunto de fios conhecidos como o barramentos. O barramento possui duas partes. A porção de dados do barramento, conhecido como o barramento de dados, transporta dados entre os componentes do computador. A parte do endereço, conhecido como barramento de endereços, traz os endereços de memória dos locais onde os dados são lidos ou gravados pela CPU.</p>
+          <p>O tamanho do barramento determina a quantidade de dados que podem ser transmitidos de uma vez. Um barramento de 32 bits transmite 32 bits de dados de uma só vez do processador para a memória RAM ou para outros componentes da placa-mãe, enquanto que um barramento de 64 bits transmite 64 bits de dados de uma só vez. A velocidade em que os dados viajam através do barramento é determinada pela velocidade do clock, medido em MHz ou GHz.</p>
+          <p>Slots de expansão PCI se conectam a um barramento paralelo, que envia vários bits ao longo de vários fios simultaneamente. Os slots de expansão PCI estão sendo substituídos por slots de expansão PCIe, que se conectam a um barramento serial, enviando um bit de cada vez em um ritmo mais rápido. Ao montar um computador, escolha uma placa-mãe que tenha slots para atender às suas necessidades atuais e futuras. Por exemplo, se você está montando um computador para jogos avançados que necessitam de duas placas gráficas, você pode escolher uma placa-mãe que tem dois slots PCIe x16.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

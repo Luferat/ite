@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.3.4 ROM</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Internal PC Components</h2>
+    </div>
+    <div id="content">
+          <p>Memory chips store data in the form of bytes. Bytes represent information such as letters, numbers, and symbols. A byte is a grouping of 8 bits. Each bit is stored as either 0 or 1 in the memory chip.</p>
+          <p>Read-only memory (ROM) chips are located on the motherboard and other circuit boards. ROM chips contain instructions that can be directly accessed by a CPU. Basic instructions for operation, such as booting the computer and loading the operating system, are stored in ROM. ROM chips retain their contents even when the computer is powered down. The contents cannot be erased or changed by normal means. </p>
+          <p>
+            <b>NOTE</b>: ROM is sometimes called firmware. This is misleading, because firmware is actually the software that is stored in a ROM chip.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.4.1.3 Rede WAN de Celulares</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Tecnologias de Comunicação Sem Fio de Laptops</h1>
+        <h2>Recursos e Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Para conectar um laptop a uma WAN de celular, é necessário instalar um adaptador projetado para enviar dados neste tipo de rede. Adaptadores WAN para redes celular, conforme apresentado na Figura 1, são dispositivos plug-and-play (PnP). Quando este adaptador não é embutido no hardware do laptop, é necessário conectar as placas adaptadoras no slot PC Card. A WAN celular também pode ser acessada através do uso de um adaptador USB ou de um hotspot móvel, conforme apresentado na Figura 2. O hotspot móvel pode ser conectado ao laptop usando a tecnologia Wi-Fi. Alguns telefones celulares também oferecem funcionalidade hotspot móvel.</p>
+          <p></p>
+          <p>Para os laptops que possuem recursos de WAN celular integrado, não é necessário instalar nenhum software, antena ou acessório adicional para fazer uso deste recurso. Ao ligar o laptop, os recursos de WAN integrado já estão prontos para serem usados. Se a conexão WAN celular não estiver ativa, procure por um botão na parte frontal ou lateral do laptop para ativá-la, seguindo os seguintes passos:</p>
+          <p></p>
+          <p>Passo 1. Antes de instalar e configurar o dispositivo, certifique-se de que a WAN celular está habilitada na BIOS.</p>
+          <p>Passo 2. Instale o software utilitário da placa WAN celular do fabricante.</p>
+          <p>Passo 3. Utilize o utilitário do software para gerenciar a conexão de rede.</p>
+          <p></p>
+          <p>O software utilitário da WAN celular geralmente está localizado na barra de tarefas ou em Iniciar > Programas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

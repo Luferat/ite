@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.4.1.4 Wi-Fi</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Tecnologias de Comunicação sem Fio de Laptops</h1>
+        <h2>Recursos e Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Laptops acessam a internet usando adaptadores sem fio. Os adaptadores sem fio podem estar embutidos ao laptop ou conectados através de uma porta de expansão. Existem três tipos principais de dispositivos sem fios que são utilizados em laptops, como mostrado na figura.</p>
+          <p></p>
+          <p><ul>
+              <li>Mini-PCI - Comumente utilizado em laptops mais antigos. Cartões Mini-PCI têm 124 pinos e são suportam os padrões de conexão sem fio para LAN 802.11a, 802.11b e 802.11g.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mini-PCIe - Tipo mais comum de cartão sem fio em laptops. Cartões Mini-PCIe têm 54 pinos e suportam todos os padrões LAN sem fio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Micro PCI Express - Comumente encontrado em laptops mais novos e menores, como Ultrabooks, pois possui metade do tamanho de cartões Mini-PCIe. Cartões Micro PCI Express têm 54 pinos e suportam todos os padrões de LAN sem fios.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Placas de expansão sem fio não são usadas ​​em laptops mais novos com frequência, pois a maioria deles possuem placas de adaptadores sem fio embutidas. É mais comum a utilização de adaptadores USB para adicionar ou atualizar recursos sem fio em um laptop.</p>
+          <p></p>
+          <p>Para configurar as definições Ethernet sem fio em um laptop com o Windows 7 e Windows Vista, siga estes passos:</p>
+          <p></p>
+          <p>Passo 1. Certifique-se de que o software do modem e do roteador estão instalados e que ambos os dispositivos estão ligados.</p>
+          <p>Passo 2. Selecione Iniciar> Painel de Controle> Central de Rede e Compartilhamento> Configurar uma nova conexão ou rede.</p>
+          <p>Passo 3. Se uma conexão ou uma rede já tiver sido estabelecida, clique em Conectar e selecione a rede.</p>
+          <p>Passo 4. Utilize a opção Configurar uma nova conexão ou Assistente de rede para estabelecer a nova conexão ou configurar a nova rede.</p>
+          <p></p>
+          <p>Para configurar as definições Ethernet sem fio em um laptop com o Windows XP, siga estes passos:</p>
+          <p>Passo 1. Certifique-se de que o software do modem e do roteador estão instalados e que ambos os dispositivos estão ligados.</p>
+          <p>Passo 2. Selecione Iniciar> Painel de Controle> Rede e Internet> Conexões de rede.</p>
+          <p>Passo 3. Se uma conexão ou uma rede já tiver sido estabelecida, clique em Conectar e selecione a rede.</p>
+          <p>Passo 4. Se uma conexão ou rede ainda não estiver sido estabelecida, clique no link Criar uma nova conexão.</p>
+          <p>Passo 5. Utilize a opção Configurar uma nova conexão ou Assistente de rede para estabelecer a nova conexão ou configurar a nova rede.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,21 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_caption">
+<text><![CDATA[Uma pulseira antiestática é utilizada para evitar danos ESD nos equipamentos de informática.]]></text>
+</component>
+
+<component id="ID_s2_caption">
+<text><![CDATA[Uma manta antiestática é utilizada para acomodar o hardware a fim de evitar que a eletricidade estática se acumule.]]></text>
+</component>
+
+<component id='ID_btn01'>
+	<text><![CDATA[<b>Pulseira antiestática</b>]]></text>
+</component>
+
+<component id='ID_btn02'>
+	<text><![CDATA[<b>Manta antiestática</b>]]></text>
+</component>
+
+</textcomponents>

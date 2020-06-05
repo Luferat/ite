@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.1.5 Selecionando Placas de Expansão</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando os Componentes para Substituição no Computador</h1>
+        <h2>Selecionando os Componentes do PC</h2>
+      </div>
+      <div id="content">
+          <p>As placas adaptadoras, também conhecidas por placas de expansão, são projetadas para realizar uma tarefa específica e adicionar funcionalidades extras ao computador. A figura mostra algumas das placas adaptadoras disponíveis. Antes de comprar uma placa adaptadora, responda às seguintes perguntas:</p>
+          <p><ul>
+              <li>Existe um slot de expansão disponível?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A placa é compatível com o slot disponível?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quais são as necessidades atuais e futuras do cliente?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quais são as opções de configuração possíveis?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quais os motivos que levaram a escolha da placa?</li>
+            </ul>
+          </p>
+          <p>Se a placa não possuir um slot de expansão compatível, um dispositivo externo pode ser uma opção desejável. Outros fatores que afetam o processo de seleção incluem o custo, garantia, marca, disponibilidade e formato.</p>
+          <p>Placas de Vídeo</p>
+          <p>O tipo e o modelo da placa de vídeo instalada afeta o desempenho geral do computador. Os dispositivos e recursos dos quais a placa de vídeo pode auxiliar são a memória RAM, a CPU ou ambos. Existem vários fatores a serem considerados quando se compra uma nova placa vídeo:</p>
+          <p><ul>
+              <li>Tipo de Slot</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo de porta</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quantidade e velocidade de memória RAM de vídeo (VRAM)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Unidade de Processamento Gráfico (GPU)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Resolução Máxima</li>
+            </ul>
+          </p>
+          <p>Um sistema de computador deve ter slot, memória RAM e CPU para suportar todas as funcionalidades da placa de vídeo e usufruir de todos os benefícios da mesma. Escolha a placa de vídeo correta com base nas necessidades, atuais e futuras, dos clientes. Por exemplo, se um cliente quiser jogar jogos 3D, a placa de vídeo deve atender ou exceder os requisitos mínimos para qualquer jogo que ele queira jogar.</p>
+          <p>Algumas GPUs são integradas na CPU. Quando a GPU é integrada na CPU, não há necessidade de comprar uma placa de vídeo, a menos que recursos de vídeo avançados, como gráficos 3D ou alta resolução, sejam necessários. Para fazer uso dos recursos gráficos embutidos em uma CPU, compre uma placa-mãe que suporte esse recurso.</p>
+          <p>Placas de Som</p>
+          <p>O tipo de placa de som instalada determina a qualidade do som do seu computador. Há vários fatores a serem considerados ao comprar uma placa de som:</p>
+          <p><ul>
+              <li>Tipo de Slot</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Processador de sinal digital (DSP)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Taxa de amostragem (Sample rate)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipos de portas e conectores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Decodificador de hardware</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Relação sinal-ruído</li>
+            </ul>
+          </p>
+          <p>Um computador deve possuir alto-falantes e um subwoofer de qualidade para suportar todas as funcionalidades de uma placa de som atual. Escolha a placa de som correta com base nas necessidades atuais e futuras de seus clientes. Por exemplo, se um cliente desejar ouvir um tipo específico de som surround, a placa de som deve ter o decodificador de hardware correto para reproduzi-lo. Além disso, o cliente pode optar por melhorar a precisão de som utilizando uma placa que possui taxa de amostragem mais elevada.</p>
+          <p>Controladoras de Armazenamento</p>
+          <p>Uma controladora de armazenamento é um chip que pode ser integrado na placa-mãe ou em um slot de expansão. Controladoras de armazenamento permitem a expansão das unidades internas e externas de um computador. Controladoras de armazenamento, tais como controladoras RAID, podem fornecer tolerância a falhas ou aumento de velocidade. Há vários fatores a serem considerados ao comprar uma nova controladora de armazenamento:</p>
+          <p><ul>
+              <li>Tipo de Slot</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo da unidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Número de conectores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Localização do conector</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tamanho da placa</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Memória RAM da controladora</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Processador da controladora</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>RAID</li>
+            </ul>
+          </p>
+          <p>A quantidade de dados e o nível de proteção de dados necessário influencia no tipo de controladora de armazenamento necessária. Escolha a controladora de armazenamento correta com base nas necessidades atuais e futuras dos seus clientes. Por exemplo, se um cliente quiser implementar RAID 5, é necessário uma controladora de armazenamento RAID com pelo menos três unidades.</p>
+          <p>Cartões I/O</p>
+          <p>Instalar uma placa de I/O em um computador é uma maneira rápida e fácil de adicionar portas de entrada e saída. Há vários fatores a serem considerados ao comprar um cartão de I/O:</p>
+          <p><ul>
+              <li>Tipo de Slot</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo de portas I/O</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Número de portas I/O</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Requisitos adicionais de energia.</li>
+            </ul>
+          </p>
+          <p>Portas fireWire, USB, paralela e seriais são algumas das interfaces frequentemente instadas em computadores. Escolha o adaptador I/O correto com base nas necessidades atuais e futuras dos seus clientes. Por exemplo, se um cliente quiser adicionar um leitor de cartão interno e a placa-mãe não possuir conectores USB disponíveis, um cartão USB I/O com uma conexão USB interna será necessário.</p>
+          <p>Placas de rede (NICs)</p>
+          <p>Os clientes podem substituir seu cartão de interface de rede (NIC - Network Interface Card) para obter mais velocidades, maior largura de banda e melhorar o acesso à rede. Há vários fatores a serem considerados ao comprar uma placa de rede:</p>
+          <p><ul>
+              <li>Tipo de Slot</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Velocidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo do conector</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo de conexão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compatibilidade com padrões</li>
+            </ul>
+          </p>
+          <p>Placas de Captura</p>
+          <p>Uma placa de captura importa imagens de vídeo para um computador e as grava no disco rígido. Adicionar uma placa de captura com um sintonizador de televisão permite-lhe ver e gravar programas de televisão. Há vários fatores a serem considerados ao comprar uma placa de captura:</p>
+          <p><ul>
+              <li>Tipo de Slot</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Resolução e taxa de quadros</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Porta I/O</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Padrões de formato</li>
+            </ul>
+          </p>
+          <p>O computador deve possuir um processador eficiente, memória RAM adequada e um sistema de armazenamento de alta velocidade para suportar a captura, gravação e edição das demandas do cliente. Escolha a placa de captura correta com base nas necessidades atuais e futuras dos seus clientes. Por exemplo, se um cliente quiser gravar um programa enquanto assiste a outro, tanto múltiplas placas de captura ou uma placa de captura com 2 sintonizadores de TV, deve ser instalada.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

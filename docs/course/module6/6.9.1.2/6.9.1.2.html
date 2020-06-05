@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.9.1.2 DSL e ADSL</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando um Tipo de Conexão ISP</h1>
+        <h2>Tecnologias de Conexão</h2>
+      </div>
+      <div id="content">
+          <p>Digital Subscriber Line</p>
+          <p>DSL é um serviço always-on, o que significa que não há necessidade de discar cada vez que quiser se conectar à Internet. DSL usa as linhas telefônicas de cobre existentes para fornecer comunicação digital de dados em alta velocidade entre os usuários finais e empresas de telefonia. Ao contrário do ISDN, onde a comunicação digital de dados substitui a comunicação de voz analógica, o DSL compartilha o fio de telefone com sinais analógicos.</p>
+          <p>Com DSL, os sinais de voz e dados são transmitidos em diferentes frequências nos fios telefônicos de cobre. Um filtro impede que os sinais DSL interfiram nos sinais do telefone. Um filtro DSL está ligado entre cada telefone e tomada de telefone.</p>
+          <p>O modem DSL não requer um filtro. O modem DSL não é afetado pelas frequências do telefone. O modem DSL pode se conectar diretamente ao seu computador, ou pode ser conectado a um dispositivo de rede para compartilhar a conexão de Internet com vários computadores.</p>
+          <p>Asymmetric Digital Subscriber Line</p>
+          <p>A ADSL possui diferentes capacidades de largura de banda em cada direção. O download é o recebimento de dados do servidor para o usuário final. O upload é o envio de dados do utilizador final para o servidor. O ADSL possui uma taxa de download rápida que é benéfica para os usuários que estão baixando grandes quantidades de dados. A taxa de upload do ADSL é mais lenta do que a taxa de download. ADSL não possui um bom desempenho ao hospedar um servidor web ou servidor de FTP, pois eles envolvem atividades intensivas de upload na Internet.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

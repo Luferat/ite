@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.3.3 Cooling Systems</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Internal PC Components</h2>
+    </div>
+    <div id="content">
+          <p>The flow of current between the electronic components generates heat. Computer components perform better when kept cool. If the heat is not removed, the computer may run slower. If too much heat builds up, computer components can be damaged.</p>
+          <p>Increasing the air flow in the computer case allows more heat to be removed. A case fan installed in the computer case, shown in Figure 1, makes the cooling process more efficient. In addition to a case fan, a heat sink draws heat away from the CPU core. A fan on top of the heat sink, shown in Figure 2, moves the heat away from the CPU. </p>
+          <p>Other components are also susceptible to heat damage and are sometimes equipped with fans. Video adapter cards also produce a lot of heat. Fans are dedicated to cool the graphics-processing unit (GPU), as seen in Figure 3. </p>
+          <p>Computers with extremely fast CPUs and GPUs might use a water-cooling system. A metal plate is placed over the processor, and water is pumped over the top to collect the heat that the processor generates. The water is pumped to a radiator to release the heat into the air and is then recirculated.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

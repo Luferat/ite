@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.1.6 Permissões de Pastas e Arquivos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Políticas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Os níveis de permissão são configurados para limitar o acesso de um indivíduo ou grupo de usuários à dados específicos. Ambos os sistemas de arquivos FAT32 e NTFS permitem o compartilhamento e as permissões de nível de pasta para usuários com acesso à rede. As permissões de pasta são exibidas na Figura 1. Níveis adicionais de permissão de segurança podem ser fornecidos somente com o uso do NTFS. As permissões de pastas são exibidas na Figura 2.</p>
+          <p>Para configurar permissões de pastas e arquivos, use o seguinte caminho:</p>
+          <p>Clique com o botão direto do mouse no arquivo ou pasta desejado e selecione Propriedades > Segurança > Editar...</p>
+          <p>Ao configurar as permissões de compartilhamento de rede em um computador NTFS, compartilhe as informações e atribua as permissões para cada usuário ou grupo. Apenas os usuários e grupos que possuem permissões NFTS e de compartilhamento, podem acessar a rede compartilhada.</p>
+          <p>Para configurar as permissões de compartilhamento de pasta no Windows 7, use o seguinte caminho:</p>
+          <p>Clique com o botão direito do mouse na pasta e selecione Compartilhar</p>
+          <p>Existem quatro opções de compartilhamento de arquivos:</p>
+          <p><ul>
+              <li>Ninguém - A pasta não é compartilhada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Grupo Doméstico (Read) - A pasta é compartilhada apenas com os membros do grupo doméstico. Os membros do grupo doméstico só podem ler o conteúdo da pasta.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Grupo Doméstico (Read/Write) - A pasta é compartilhada apenas com os membros do grupo doméstico. Os membros do grupo doméstico podem ler o conteúdo da pasta e criar arquivos e pastas no diretório.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pessoas Específicas... - Abre a caixa de diálogo Compartilhamento de Arquivos. Escolha os usuários e grupos para compartilhar o conteúdo da pasta e determine o nível de permissão de cada um.</li>
+            </ul>
+          </p>
+          <p>Para configurar as permissões de compartilhamento de pasta no Windows Vista, use o seguinte caminho:</p>
+          <p>Clique com o botão direito do mouse em uma pasta e selecione Compartilhar...</p>
+          <p>Para configurar as permissões de compartilhamento de pasta no Windows XP, use o seguinte caminho:</p>
+          <p>Clique com o botão direito do mouse em uma pasta e selecione Compartilhamento e Segurança ...</p>
+          <p>Todos os sistemas de arquivos mantém o controle dos recursos, mas apenas os sistemas de arquivos journals, que são áreas especiais onde as mudanças dos arquivos são gravadas antes de serem feitas, podem registrar o acesso por usuário, data e hora. O sistema de arquivos FAT32 não possui journaling e recursos de criptografia. Como resultado, situações que exigem um nível maior de segurança geralmente são implantadas usando NTFS. Se o aumento da segurança for necessário, é possível executar determinados utilitários, como o CONVERT, para atualizar um sistema de arquivos FAT32 para NTFS. O processo de conversão é irreversível. É importante definir corretamente os seus objetivos antes de fazer a transição. Uma comparação entre os dois sistemas de arquivo é exibida na Figura 3.</p>
+          <p>Princípio do Menor Privilégio</p>
+          <p>Os usuários devem ter o seu acesso limitado apenas aos recursos que necessitam da rede ou de um computador. Por exemplo, os usuários não devem ser capazes de acessar todos os arquivos de um servidor, caso eles precisem acessar apenas uma única pasta. Pode ser mais fácil fornecer aos usuários o acesso a toda a unidade, mas é recomendado que se limite o acesso a apenas à pasta necessária para que o mesmo realize o seu trabalho. Isto é conhecido como o princípio do menor privilégio. Limitar o acesso aos recursos também impede que programas maliciosos acessem o mesmo, caso o computador do usuário seja infectado.</p>
+          <p>Restringir as Permissões do Usuário</p>
+          <p>As permissões de compartilhamento de pastas e da rede podem ser concedidas aos indivíduos específicos ou por meio de um grupo. Seu um indivíduo ou um grupo tiver uma permissão de compartilhamento de rede negada, essa negação substitui qualquer outra regra de permissão dada. Por exemplo, se você negar que alguém compartilhe algo na rede, o usuário não poderá fazê-lo, mesmo se ele for um administrador ou participar de um grupo de administradores. A política de segurança local deve delinear quais recursos e o tipo de acesso permitido para cada usuário e grupo.</p>
+          <p>Quando as permissões de uma pasta são alteradas, você tem a opção de aplicar as mesmas para todas as sub-pastas. Isto é conhecido como propagação de permissão. A propagação de permissão é uma maneira fácil de aplicar permissões a vários arquivos e pastas rapidamente. Depois que as permissões da pasta pai forem definidas, as pastas e arquivos criados dentro da pasta pai herdam as suas permissões.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

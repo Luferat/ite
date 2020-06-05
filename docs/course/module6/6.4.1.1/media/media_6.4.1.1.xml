@@ -1,0 +1,15 @@
+﻿<textcomponents>
+
+<component id='ID_title'> 
+	 <text><![CDATA[<b>Modems</b>]]></text>
+</component>
+<component id='ID_txt01'> 
+	 <text><![CDATA[<b>Modem a Cabo</b>]]></text>
+</component>
+<component id='ID_txt02'> 
+	 <text><![CDATA[<b>Modem DSL</b>]]></text>
+</component>
+<component id='ID_txt03'> 
+	 <text><![CDATA[<b>Adaptador Modem</b>]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.5.2 Segurança de Hardware</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Protegendo os Equipamentos Físicos</h2>
+      </div>
+      <div id="content">
+          <p>A segurança de hardware ajuda a prevenir violações de segurança e perda de dados ou equipamentos. Medidas de controle de acesso de segurança física incluem bloqueios, sistemas de vigilância e guardas de segurança. Os cartões chaves (Card Key) protegem determinadas áreas, permitindo apenas o acesso de pessoas autorizadas. Se um cartão chave for perdido ou roubado, apenas o mesmo deve ser desativado. O sistema de cartão chave é mais caro do que fechaduras de segurança, porém quando uma chave convencional é perdida, a fechadura deve ser substituída.</p>
+          <p>Os equipamentos de rede devem ser mantidos em áreas protegidas. Todo o cabeamento deve ser instalado dentro de eletrodutos ou no interior das paredes, evitando assim a adulteração ou acesso não autorizado dos cabos de rede. Um eletroduto é um invólucro que protege a infra-estruturas do meio físico de danos e acesso não autorizado. As interfaces de rede que não estão em uso devem ser desativadas.</p>
+          <p>Dispositivos biométricos, que analisam as características físicas de um usuário, são ideais para ambientes altamente protegidos e críticos. No entanto, para a maioria das pequenas empresas, este tipo de solução é muito caro e inviável.</p>
+          <p>A política de segurança deve identificar os equipamentos e hardwares que podem ser usados para prevenir e impedir o vandalismo, roubo e a perda de dados. A segurança dos equipamentos físicos envolve quatro aspectos inter-relacionados: acesso, dados, infra-estrutura e o computador.</p>
+          <p>Existem vários métodos de proteger fisicamente um computador e outros equipamentos, tal como mostrado nas Figuras 1 e 2:</p>
+          <p><ul>
+              <li>Utilize cabos de bloqueio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mantenha as salas de telecomunicação bloqueadas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Prenda o equipamento com parafusos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use caixas de segurança ao redor do equipamento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rótule e instale sensores, tais como Radio Frequency Identification (RFID), nos equipamento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instale alarmes físicos que são acionados por sensores de detecção de movimento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use webcams com detecção de movimento e softwares de vigilância.</li>
+            </ul>
+          </p>
+          <p>Existem vários métodos para proteger o acesso às instalações:</p>
+          <p><ul>
+              <li>Catões chave que armazenam dados de usuário, incluindo nível de acesso</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sensores biométricos que identificam características físicas do usuário, como impressões digitais ou retina</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Guarda de Segurança</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sensores, como etiquetas RFID, usadas para monitorar equipamentos</li>
+            </ul>
+          </p>
+          <p>Utilize travas de gabinete, cabos de bloqueio e docking station para impedir que os laptops sejam removidos de seu local. Utilize disco rígidos com fechaduras para realizar o armazenamento o e transporte dos backups, evitando assim a perda e o roubo dos dados.</p>
+          <p>Protegendo os Dados Durante o Uso</p>
+          <p>Para os usuários que precisam acessar recursos de rede confidenciais, um token pode ser usado para fornecer autenticação de dois fatores. Um token pode ser um hardware, como um cartão pin, mostrado na Figura 3, ou um software, como o programa de Softoken, mostrado na Figura 4. O token é atribuído a um computador e cria, em determinados momentos, um código único. Quando os usuários acessam um recurso de rede, eles digitam o código PIN e o número exibido pelo token. O número exibido pelo token é criado a partir de um cálculo feito com o seu relógio interno e um número aleatório codificado no token na fábrica. Este número é autenticado em um banco de dados que sabe o número do token e pode calcular o mesmo número.</p>
+          <p>As informações exibidas nas telas dos computador podem ser protegidas dos olhares indiscretos utilizando uma tela de privacidade. A tela de privacidade é um painel que é frequentemente feito de plástico. Ela impede que a luz se projete em ângulos baixos, de modo que somente o usuário que olhar diretamente para tela poderá ver o que está sendo exibido. Por exemplo, em um avião, um usuário pode impedir que a pessoa sentada no assento ao lado veja o que está sendo exibido na tela de seu laptop.</p>
+          <p>Mix Correto de Segurança</p>
+          <p>Fatores que determinam qual é o equipamento de segurança mais eficaz a ser usado para proteger equipamentos e dados incluem:</p>
+          <p><ul>
+              <li>Como o equipamento é usado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Onde o equipamento está localizado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Que tipo de acesso aos dados é necessário</li>
+            </ul>
+          </p>
+          <p>Por exemplo, um computador em um local público, como uma biblioteca, exige proteção adicional contra roubo e vandalismo. Em um call center, é necessário que o servidor seja colocado em uma sala de equipamentos trancada. Sempre que for necessário usar um laptop num local público, utilize um dongle de segurança, mostrado na Figura 5, para assegurar que o sistema fique bloqueado enquanto o laptop está separado do usuário.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

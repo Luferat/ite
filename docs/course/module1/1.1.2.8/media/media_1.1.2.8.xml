@@ -1,0 +1,115 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Dispositivos de Armazenamento</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Unidade de Disquete</b>]]></text>
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Comparação dos Níveís de RAID</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Unidade de Disco Rígido</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Unidade Óptica</b>]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>Dispositivo Flash Externo</b>]]></text>
+</component>
+
+
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='5' class="title"><font color="#393536"><b>Comparação dos Níveís de RAID</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width='50' valign="top"><font size='12' color='#FFFFFF'><b>Nível de RAID</b></font></td>
+		<td bgcolor='#A2AA23' width='55' valign="top"><font size='12' color='#FFFFFF'><b>Quantidade Mínima de Unidades</b></font></td>
+		<td bgcolor='#A2AA23' width='85' valign="top"><font size='12' color='#FFFFFF'><b>Descrição</b></font></td>
+		<td bgcolor='#A2AA23' width='105' valign="top"><font size='12' color='#FFFFFF'><b>Vantagens</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font size='12' color='#FFFFFF'><b>Desvantagens</b></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>0</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>2</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Distribuição de dados sem redundância</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Maior desempenho</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Sem proteção de dados, a falha de um dos discos resulta na perda de todos os dados</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><b>1</b></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>2</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Espelhamento de disco</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Alta performance e proteção de dados, pois todos os dados são duplicados</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Alto custo de implementação, pois uma unidade adicional de capacidade igual ou maior é necessária</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>2</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>2</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Codificação de correção de erros</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Este nível não é mais usado</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>O mesmo nível de desempenho pode ser alcançado, a um custo menor, com o RAID 3</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><b>3</b></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>3</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Dados distribuidos com paradidade dedicada</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Para grandes solicitações de dados sequenciais</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Não suporta múltiplas solicitações de leitura e escrita simultaneas.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>4</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>3</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Distribuição de dados em nível de bloco com paridade dedicada</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Suporta vários solicitações de leitura e, se um disco falhar, o disco de paridade dedicado é usado para criar um disco de substituição</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Cria gargalo devido as solicitações de leitura nos discos de paridade dedicados</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><b>5</b></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>3</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Combinação distribuição de dados e paridade</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><textformat blockindent='-16'><li style="font-size:10px">Suporta várias solicitações de leitura e escrita simultaneamente</li><li style="font-size:10px">Os dados são gravados em todas as unidades de disco pareadas</li><li style="font-size:10px">Os dados podem ser reconstruídos a partir de informações encontradas em outras unidades</li></textformat></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>A escrita de dados é mais lenta do que no RAID 0 e 1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>6</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>4</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Discos de dados independentes com dupla paridade</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Distribuição em nível de bloco com paridade de dados por todos os discos, podendo lidar com duas falhas simultâneas das unidades</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Desempenho inferior ao RAID 5, e não é suportado por todos os controladores de disco</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><b>RAID 0 +1</b></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>4</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Combinação de distribuição de dados e espelhamento</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Alta performance, maior proteção de dados</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Sobrecarga de alto custo, pois a duplicação de dados requer o dobro da capacidade de armazenamento</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>10</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>4 (deve ser esse número)</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Espelhado definido em um conjunto distribuído</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Fornece tolerância a falhas e melhor desempenho</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Sobrecarga de alto custo, pois a duplicação de dados requer o dobro da capacidade de armazenamento</font></td>
+	</tr>
+	
+</table>]]>
+</text>
+</component>
+
+</textcomponents>

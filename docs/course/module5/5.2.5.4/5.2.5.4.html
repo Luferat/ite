@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.5.4 Propriedades de Pastas, Arquivos e de Aplicações</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Estrutura de Diretório e Atributos de Arquivos</h2>
+      </div>
+      <div id="content">
+          <p>Para visualizar ou alterar as propriedades de uma aplicação, arquivo ou pasta, clique com o botão direito no ícone e selecione Propriedades.</p>
+          <p>Propriedades do Aplicação e do Arquivo</p>
+          <p>A janela de Propriedades de uma aplicação ou arquivo, conforme apresentado na Figura 1, contém as seguintes guias:</p>
+          <p><ul>
+              <li>Geral - Exibe informações básicas, incluindo o local e os atributos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Segurança - Oferece a opção de alterar as permissões de acesso a arquivos para contas de usuário e do sistema.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Detalhes - Exibe informações básicas sobre o arquivo, incluindo os atributos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compatibilidade - Fornece opções para configurar o modo de compatibilidade de arquivos e configurações operacionais. No Windows 7, o modo de compatibilidade permite que um usuário execute um programa criado para versões anteriores do sistema operacional Windows. Para o Windows Vista e Windows XP, o número de opções disponíveis no modo de compatibilidade é limitada.</li>
+            </ul>
+          </p>
+          <p>Propriedades da Pasta</p>
+          <p>A visualização Propriedades de uma pasta, conforme apresentado na Figura 2, contém as seguintes guias:</p>
+          <p><ul>
+              <li>Geral - Exibe informações básicas, tais como local e tamanho. Oferece opções para alterar os atributos, como criar uma pasta somente leitura ou oculta.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhamento - Exibe opções para o compartilhamento da pasta. Os usuários podem compartilhar pastas com computadores da mesma rede. Configurações de proteção por senha também podem ser realizadas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Segurança - Exibe opções para configuração de segurança básica e avançada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Versões Anteriores - Exibe opções para restaurar a pasta a partir de uma versão anterior.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Personalizado - Exibe opções para personalizar a aparência da pasta e otimizá-la para determinados tipos de arquivos, como arquivos de música ou foto.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Shadow Copy (Cópia de Sombra)</p>
+          <p>A Cópia de Sombra, Shadow Copy, é uma característica dos sistemas operacionais Windows que cria automaticamente cópias de backup de arquivos e dados em um disco rígido. Esse recurso pode ser encontrado na guia Versões Anteriores e muitas vezes é referido como o recurso Versões Anteriores. A Cópia de Sombra requer que o disco rígido seja formatado em NTFS e funcione em conjunto com o Backup do Windows e a Restauração do Sistema. Antes que a Cópia de Sombra possa ser utilizada, ela deve ser habilitada. Para habilitar a Cópia de Sombra, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar > Painel de Controle > Sistema > Link Proteção do Sistema > Clique na caixa de seleção próxima às unidades desejadas > Clique em OK.</p>
+          <p></p>
+          <p>Depois que a Cópia de Sombra foi ativada, os usuários podem visualizar, copiar ou restaurar versões anteriores do arquivo. Selecionar a opção de visualização irá abrir o arquivo como somente leitura, enquanto a opção de cópia irá salvar uma versão mais antiga do arquivo em uma outra pasta. A opção Restaurar irá substituir o arquivo atual.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

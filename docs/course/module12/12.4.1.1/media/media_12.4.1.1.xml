@@ -1,0 +1,166 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text>
+<![CDATA[<b> </b>]]>
+</text>
+</component>
+
+<component id='ID_table_01'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1: Identificação do Problema</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Questões Abertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7' class="width_1"><textformat blockindent='-18'><font color='#393536'><li>Em que ambiente você está usando o laptop?</li>
+<li>Quando o problema começou?</li>
+<li>Quais problemas que você está tendo?</li>
+<li>O que acontece quando laptop inicializa?</li>
+<li>O que você pode ver em sua tela?</li>
+<li>Existe alguma coisa que você pode me dizer sobre o problema?</li></font></textformat></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#FFFFFF'><font color='#393536'>Questões Fechadas</font></td>
+<td  valign="top" bgcolor='#FFFFFF'><textformat blockindent='-18'><font color='#393536'><li>Alguém realizou trabalhos de reparo no laptop recentemente?</li>
+<li>Alguém mais usou o laptop?</li>
+<li>O laptop se conecta à Internet?</li>
+<li>Existe uma placa de rede sem fio no laptop?</li>
+<li>Você já teve algum problema como este antes?</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_02'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 2: Estabelecer a Teoria da Provável Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Causas comuns de problemas de laptop</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>A bateria do laptop não tem carga</li>
+<li>A bateria do laptop não carrega</li>
+<li>Cabos soltos</li>
+<li>O inversor não funciona</li>
+<li>O teclado externo não funciona</li>
+<li>A tecla Num Lock está ligada</li>
+<li>A RAM está solta</li>
+<li>A tecla Fn desativou a capacidade</li>
+<li>Um botão ou tecla desativou a conexão sem fio</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_03'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 3: Teste a Teoria para Determinar a Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Use a alimentação AC ao invés de bateria</li>
+<li>Substitua adaptador AC</li>
+<li>Remova e reinsira a bateria</li>
+<li>Substitua a bateria</li>
+<li>Verifique as configurações da BIOS</li>
+<li>Desconecte e reconecte os cabos, um de cada vez</li>
+<li>Substitua o inversor</li>
+<li>Verifique as configurações de tecla Fn</li>
+<li>Verifique se o botão de conexão sem fio está na posição correta</li>
+<li>Desconecte e reconecte os periféricos, um de cada vez</li>
+<li>Verifique se a tecla Num Lock está desativada</li>
+<li>Reinstale a RAM</li>
+<li>Reinicie o laptop</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_04'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td bgcolor='#DAE17A' colspan='2'><font size='14' color='#393536'><b>Passo 4: Estabelecer um Plano de Ação para Verificar o Problema e Implementar a Solução</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Se, na etapa anterior, nenhuma solução for alcançada, novas pesquisas serão necessárias para implementar a solução</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Logs de Reparação do Helpdesk</li>
+<li>Outros Técnicos</li>
+<li>FAQs do Fabricante</li>
+<li>Websites Técnicos</li>
+<li>Grupos de Notícias</li>
+<li>Manuais do Computador</li>
+<li>Manuais dos Dispositivos</li>
+<li>Fóruns on-line</li>
+<li>Busca na Internet</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_05'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td bgcolor='#DAE17A' colspan='2'><font size='14' color='#393536'><b>Passo 5: Verifique a Funcionalidade Completa do Sistema e, se necessário, Implemente as Medidas Preventivas</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Verifique a Solução e a Funcionalidade Completa do Sistema </font></td>
+<td  valign="top" bgcolor='#F3F5E7' class="width_5"><textformat blockindent='-18'><font color='#393536'><li>Reinicie o computador</li>
+<li>Conecte todos os periféricos</li>
+<li>Use o laptop usando apenas a bateria</li>
+<li>Imprima um documento a partir de uma aplicação</li>
+<li>Digite algum documento para testar o teclado</li>
+<li>Verifique o Visualizador de Eventos em busca de avisos ou erros</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_06'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 6: Documente as Descobertas, Ações e Resultados</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Documente as Descobertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7' class="width_6"><textformat blockindent='-18'><font color='#393536'><li>Discuta a solução implementada com o cliente</li>
+<li>O cliente deve verificar se o problema foi resolvido</li>
+<li>Forneça ao cliente toda a documentação</li>
+<li>Documente as medidas tomadas para resolver o problema na ordem de trabalho e no diário do técnico</li>
+<li>Documente quaisquer componentes utilizados no reparo.</li>
+<li>Documente o tempo gasto para resolver o problema</li></font></textformat></td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+</textcomponents>

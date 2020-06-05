@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.4.3.1 Antivírus</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Métodos de Proteção de Dispositivos Móveis</h1>
+        <h2>Software de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Os computadores são vulneráveis ​​a softwares maliciosos. Smartphones e outros dispositivos móveis são como computadores e, portanto, também são vulneráveis. Aplicativos de antivírus estão disponíveis para Android e iOS. Dependendo das permissões concedidas aos aplicativos de antivírus quando eles são instalados em um dispositivo Android, o aplicativo pode não ser capaz de verificar os arquivos automaticamente ou executar verificações agendadas. As varreduras de arquivos devem ser iniciadas manualmente.</p>
+          <p>O iOS não permite varreduras automáticas ou agendadas. Este é um recurso de segurança para evitar que programas mal-intencionados usem recursos não autorizados ou contamine o sistema ou outros aplicativos. Alguns aplicativos de antivírus também oferecem serviços de localizador, bloqueio ou para apagar as informações de forma remota.</p>
+          <p>Aplicativos de dispositivos móveis executados em modo sandbox. O sandbox é um local do sistema operacional que mantém o código isolado de outros recursos ou outros códigos. É difícil para programas maliciosos infectarem um dispositivo móvel, pois os aplicativos são executados dentro do sandbox. Um aplicativo Android solicita permissão para acessar determinados recursos durante a instalação. Um aplicativo malicioso tem acesso a todos os recursos e permissões que foram permitidos durante a instalação. É importante baixar aplicativos apenas de fontes confiáveis.</p>
+          <p>Devido à natureza do sandbox, é muito mais provável que um dispositivo móvel transfira um programa malicioso para outro dispositivo, como um laptop ou desktop. Por exemplo, se um programa malicioso for baixado de um e-mail, internet ou outro dispositivo, o programa poderá ser transferido para um laptop na próxima vez que ele estiver conectado.</p>
+          <p>Rooting e Jailbreaking</p>
+          <p>Os dispositivos móveis contém um bootloader. Um bootloader é o código que é executado antes do sistema operacional iniciar. Ele é semelhante ao código encontrado na BIOS dos PCs e laptops. O bootloader fornece instruções ao hardware para iniciar o sistema operacional. Bootloaders são bloqueados para impedir a modificação e acesso a áreas sensíveis do sistema de arquivos. Fabricantes bloqueiam o acesso aos bootloaders por muitas razões:</p>
+          <p><ul>
+              <li>Alterar o software do sistema pode danificar um dispositivo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Um software não testado pode ser prejudicial para a rede da operadora de celular.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Um S.O. modificado pode fornecer recursos além do que estão inclusos em um contrato de serviço.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O acesso ao diretório raiz é prevenido.</li>
+            </ul>
+          </p>
+          <p>O processo de Rooting em dispositivos Android e o Jailbreaking em dispositivos iOS envolve desbloquear o bootloader. Após o bootloader for desbloqueado, um sistema operacional personalizado pode ser instalado. Milhares de sistemas operacionais personalizados estão disponíveis para dispositivos móveis. Estes são alguns dos benefícios do rooting ou jailbreaking de um dispositivo móvel:</p>
+          <p><ul>
+              <li>A interface do usuário pode ser totalmente personalizada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tweaks podem ser feitos no sistema operacional para melhorar a velocidade e capacidade de resposta do dispositivo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A CPU e GPU podem ser receber overclock para aumentar o desempenho do dispositivo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Recursos como tethering, que são desativados pela operadora, podem ser habilitados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Apps que não podem ser removidos de dentro do S.O. padrão, conhecidos como bloatware, podem ser removidos.</li>
+            </ul>
+          </p>
+          <p>O rooting e o jailbreak são processos muito arriscados que anulam a garantia do fabricante. Utilizar um sistema operacional personalizado pode abrir brechas para ataques maliciosos no dispositivo. Um sistema operacional personalizado pode conter programas maliciosos, ou pode não oferecer o mesmo nível de segurança encontrado no sistema operacional padrão. Um dispositivo &quot;rooted&quot; ou &quot;jailbroken&quot; aumenta consideravelmente o risco de infecção por vírus, pois ele podem não criar ou manter corretamente os recursos de sandboxing. O S.O. personalizado também fornece acesso ao usuário no diretório raiz, o que significa que os programas mal-intencionados também podem ter acesso a esta área sensível do sistema de arquivos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

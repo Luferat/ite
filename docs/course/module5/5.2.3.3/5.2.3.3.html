@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.3.3 Registros do Windows</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Sequência de Inicialização e Arquivos de Registro</h2>
+      </div>
+      <div id="content">
+          <p>Registros do Windows</p>
+          <p>Os arquivos de registro do Windows são uma parte importante do processo de inicialização do sistema operacional. Esses arquivos são identificados pelos seus nomes específicos, que começam com HKEY_, conforme apresentado na figura, seguido pelo nome do local do sistema sob o seu controle. Cada configuração no Windows, desde a mudança do plano de fundo da área de trabalho, a cor dos botões da tela e até a licença das aplicações, são armazenadas nos Registros. Quando um usuário faz alterações nas configurações do Painel de Controle, associações dos arquivos, políticas do sistema ou instala novos softwares, essas alterações são armazenadas no Registro.</p>
+          <p>Cada conta de usuário possui uma seção dedicada nos Registros. Durante o processo de login do Windows, as configurações do sistema presentes no Registro são acessadas para reconfigurar o sistema para cada conta de usuário.</p>
+          <p></p>
+          <p>Os Registros também são responsáveis por gravar a localização dos arquivos DLL (Dynamic Link Library). Um arquivo DLL consiste em um código de programa que pode ser utilizado por diferentes aplicações para executar as tarefas comuns. Como resultado, os arquivos DLL são muito importantes para a funcionalidade de um sistema operacional e para todos os programas que os usuários venham a instalar.</p>
+          <p></p>
+          <p>Para garantir que uma DLL possa ser localizada pelo sistema operacional ou por um programa, ela deve ser registrada. Normalmente, uma DLL é registrada automaticamente durante o processo de instalação. Pode ser necessário que um usuário tenha que registrar manualmente uma DLL quando um problema for identificado. Registrar uma DLL mapeia o caminho para acessar o arquivo, tornando mais fácil para os programas localizar as DLLs necessárias. Para registrar um arquivo DLL no Windows usando o prompt de comando, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar > digite cmd > digite regsvr32 Nome_Do_Arquivo.dll</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

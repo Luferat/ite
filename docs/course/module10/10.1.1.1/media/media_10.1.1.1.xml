@@ -1,0 +1,51 @@
+﻿<textcomponents>
+   
+	<component id="ID_title">
+   <text><![CDATA[<b>Adware, Spyware e Phishing</b>]]></text>
+   </component>
+   
+   
+   
+   <component id="ID_term01">
+		<text><![CDATA[<B>Um atacante que pretende representar uma organização externa legítima</B>]]></text> 
+	</component>
+	<component id="ID_term02">
+		<text><![CDATA[<B>Exibe anúncios indesejados em seu computador. Geralmente vem junto com softwares gratuitos baixados</B>]]></text> 
+	</component>
+	<component id="ID_term03">
+		<text><![CDATA[<B>Monitora as atividades do usuário e encaminha relatórios para a pessoa que o enviou.</B>]]></text> 
+	</component>
+
+   
+	<component id="ID_drag01">
+		<text><![CDATA[Spyware]]></text> 
+	</component>
+	<component id="ID_drag02">
+		<text><![CDATA[Phishing]]></text> 
+	</component>
+	<component id="ID_drag03">
+		<text><![CDATA[Adware]]></text> 
+	</component>  
+
+   
+   	<component id="ID_CORRECT_TITLE">
+		<text><![CDATA[Correto]]></text> 
+	</component>
+	<component id="ID_CORRECT_BODY">
+		<text><![CDATA[Está correto.]]></text> 
+	</component>
+	<component id="ID_INCORRECT_TITLE">
+		<text><![CDATA[Incorreto]]></text> 
+	</component>
+	<component id="ID_INCORRECT_BODY">
+		<text><![CDATA[Está incorreto.]]></text> 
+	</component>
+   
+   	<component id="ID_CHECK">
+		<text><![CDATA[Verificar]]></text> 
+	</component>
+	<component id="ID_RESET">
+		<text><![CDATA[Reset]]></text> 
+	</component>
+   
+</textcomponents>

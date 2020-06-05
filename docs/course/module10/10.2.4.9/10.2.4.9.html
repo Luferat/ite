@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.4.9 Encaminhamento de Porta e Port Triggering</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Técnicas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Os firewalls de hardware podem ser usados para bloquear as portas e impedir o acesso não autorizado dentro e fora de uma LAN. No entanto, há situações em que determinadas portas devem ser abertas para que determinados programas possam se comunicar com dispositivos em redes diferentes. O encaminhamento de porta é um método baseado na regra de direcionar o tráfego entre dispositivos em redes separadas. Este método de exposição de dispositivos para a Internet é muito mais seguro do que uma DMZ.</p>
+          <p>Quando o tráfego atinge o roteador, ele determina se o tráfego deve ser encaminhado para um determinado dispositivo com base no número de porta encontrado no tráfego. Os números de porta são associados a serviços específicos, tais como FTP, HTTP, HTTPS e POP3. As regras determinam quais tráfegos são enviados para a LAN. Por exemplo, um roteador pode ser configurado para encaminhar tráfegos da porta 80, a qual está associada ao protocolo HTTP. Quando o roteador recebe um pacote com a porta de destino 80, o roteador encaminha o tráfego para o servidor Web dentro da rede.</p>
+          <p>Para habilitar o encaminhamento de porta, conforme apresentado na figura, siga estes passos:</p>
+          <p>Passo 1. Clique em Applications &amp; Gaming > Single Port Forwarding.</p>
+          <p>Passo 2. Selecione ou digite o nome da aplicação. Talvez seja necessário digitar o número de porta externo, número da porta da Internet e o tipo de protocolo.</p>
+          <p>Passo 3. Digite o endereço IP do computador que receberá os pedidos.</p>
+          <p>Passo 4. Clique em Enable > Save Settings > Continue.</p>
+          <p>O Port Triggering permite que o roteador encaminhe temporariamente dados através das portas de entrada para um dispositivo específico. Você pode usar o Port Triggering para enviar dados para um computador apenas quando um intervalo de porta designado é usado para fazer um pedido de saída. Por exemplo, um video game pode usar as portas de 27000 a 27100 para se conectar com os outros jogadores. Estas são as portas de gatilho (trigger). Um cliente de chat pode utilizar a porta 56 para se conectar aos mesmos, de modo que os jogadores possam interagir uns com os outros. Neste caso, se houver tráfego de jogos em uma porta de saída dentro do intervalo de portas, o tráfego de bate-papo de entrada na porta 56 é enviado para o computador que está sendo usado para jogar e para realizar o bate-papo com os amigos. Quando o jogo é finalizado e as portas acionadas não estão mais em uso, a porta 56 não é mais permitida para o envio de tráfego de qualquer tipo de computador.</p>
+          <p>Para configurar o Port Triggering, siga estes passos:</p>
+          <p>Passo 1. Selecione Applications &amp; Gaming > Port Range Triggering.</p>
+          <p>Passo 2. Digite o nome da aplicação. Digite o início e término do intervalo de portas acionado, e também o ínicio e o término do intervalo de portas encaminhadas.</p>
+          <p>Passo 3. Clique em Enable > Save Settings > Continue.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

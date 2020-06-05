@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.1.3 Atualizando a CPU, Dissipador de Calor e Ventoinha</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Atualizando e Configurando um PC</h1>
+        <h2>Placa-mãe e seus Componentes</h2>
+      </div>
+      <div id="content">
+          <p>Uma forma de aumentar o desempenho de um computador é aumentar a velocidade de processamento. Você pode fazer isso trocando a CPU. No entanto, você deve atender alguns requisitos.</p>
+          <p><ul>
+              <li>A nova CPU deve caber no soquete da CPU existente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A nova CPU deve ser compatível com o chipset da placa-mãe.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A nova CPU deve funcionar com a placa-mãe e a fonte de alimentação existente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A nova CPU deve operar com a memória RAM existente. A memória RAM talvez precise ser atualizada ou expandida para obter o máximo de proveito da nova CPU.</li>
+            </ul>
+          </p>
+          <p>Se a placa-mãe for antiga, você pode não encontrar uma CPU compatível. Nesse caso, você deve substituir a placa-mãe.</p>
+          <p>CUIDADO: Sempre trabalhe com uma manta e uma pulseira antiestática durante a instalação e remoção de CPUs. Coloque a CPU na manta antiestática até que você esteja pronto para usá-la. Armazene a CPU um uma embalagem antiestática.</p>
+          <p>Para trocar a CPU, retire a CPU existente, liberando-a do soquete, usando a alavanca de força de inserção zero. Diferentes soquetes têm mecanismos um pouco diferentes, mas todos servem para bloquear a CPU no lugar e orientá-la corretamente no soquete.</p>
+          <p>Insira o nova CPU. Não force a CPU em seu soquete ou use força excessiva para fechar as barras de travamento. A força excessiva pode danificar a CPU ou o seu soquete. Se você encontrar resistência, certifique-se de que você alinhou a CPU corretamente. A maioria tem um padrão de pinos que se encaixam apenas de uma forma:</p>
+          <p><ul>
+              <li>Soquete SEC - Alinhe os encaixes na CPU para as chaves no soquete SEC.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Soquete PGA, LIF e ZIF - Alinhe a CPU ao indicador de conexão 1, que está alinhado com o pino 1 no soquete da CPU.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Socket LGA - Alinhe a CPU para que as duas ranhuras se encaixam nas duas extensões do soquete.</li>
+            </ul>
+          </p>
+          <p>A nova CPU pode exigir um dissipador de calor e uma ventoinha diferente. O dissipador e a ventoinham devem acomodar fisicamente a CPU e devem ser compatíveis com o soquete do processador. Eles também devem remover, de forma adequada, o calor gerado pela nova CPU.</p>
+          <p>ATENÇÃO: Você deve aplicar pasta térmica entre o novo processador e o dissipador de calor.</p>
+          <p>Veja as configurações térmicas na BIOS para determinar se há algum problema com a CPU, o dissipador de calor e a ventoinha. Aplicativos de terceiros também podem relatar informações sobre a temperatura da CPU em um formato fácil de ler. Consulte a placa-mãe ou a documentação de usuário da CPU para determinar se o chip está operando na faixa de temperatura correta.</p>
+          <p>Para instalar ventiladores adicionais no gabinete para ajudar a resfriar a placa-mãe e a CPU, siga estes passos:</p>
+          <p>Passo 1. Alinhe o ventilador na direção correta, quer seja inserir o ar para dentro do gabinete ou soprar o ar para fora.</p>
+          <p>Passo 2. Prenda o ventilador utilizando os furos do gabinete. Para puxar o ar para dentro do gabinete, monte o ventilador na parte inferior do gabinete. Para direcionar o ar quente para fora, monte o ventilador no topo do gabinete.</p>
+          <p>Passo 3. Conecte os ventiladores à fonte de alimentação ou a placa-mãe, dependendo do modelo.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

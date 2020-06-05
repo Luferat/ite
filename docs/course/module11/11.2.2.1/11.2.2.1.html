@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.2.1 Computação Forense</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Questões Éticas e Legais na Indústria de TI</h1>
+        <h2>Visão Geral de Procedimentos Legais</h2>
+      </div>
+      <div id="content">
+          <p>Dados de sistemas de computadores, redes, comunicações sem fio e dispositivos de armazenamento podem ter a necessidade de serem recolhidos e analisados ​​no curso de uma investigação criminal. O recolhimento e a análise dos dados para este fim é chamado de computação forense. O processo de computação forense abrange tanto a TI quanto as leis específicas que garantem que todos os dados coletados sejam admissíveis como prova em um tribunal.</p>
+          <p></p>
+          <p>Dependendo do país, o computador ou a rede de uso ilegal podem incluir:</p>
+          <p><ul>
+              <li>Roubo de identidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usar um computador para vender produtos falsificados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usar software pirata em um computador ou uma rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usando um computador ou rede para criar cópias não autorizadas de materiais protegidos por direitos autorais, como filmes, programas de televisão, música e jogos de vídeo game</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usar um computador ou uma rede para vender cópias não autorizadas de materiais protegidos por direitos autorais</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pornografia</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Esta não é uma lista completa.</p>
+          <p></p>
+          <p>Dois tipos básicos de dados são coletados na realização de procedimentos de informática forense: dados persistentes e dados voláteis.</p>
+          <p></p>
+          <p>Dados persistentes - Os dados persistentes são armazenados em uma unidade local, como um disco rígido interno, externo ou uma unidade óptica. Quando o computador é desligado os dados são preservados.</p>
+          <p></p>
+          <p>Dados voláteis - RAM, cache e registros que contêm dados voláteis. Dados em trânsito entre um meio de armazenamento e o processador também são voláteis. É importante saber como capturar esses dados, pois eles desaparece logo que o computador é desligado.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

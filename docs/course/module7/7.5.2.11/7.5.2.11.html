@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.5.2.11 Placa do Sistema</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Hardware de Laptops e Componente de Instalação e Configuração</h1>
+        <h2>Substituindo Dispositivos de Hardware</h2>
+      </div>
+      <div id="content">
+          <p>A substituição da placa do sistema de um laptop normalmente requer que o técnico remova todos os outros componentes do mesmo. Antes de substituir uma placa-mãe do laptop, certifique-se que a nova placa atende as especificações do modelo.</p>
+          <p></p>
+          <p>Para remover e substituir a placa-mãe, siga estes passos:</p>
+          <p>Passo 1. Desligue o computador e desconecte do adaptador de energia (AC - corrente alternada).</p>
+          <p>Passo 2. Remova a bateria e quaisquer outros componentes recomendados pelo fabricante.</p>
+          <p>Passo 3. Solte o conector de energia DC da carcaça do laptop. Solte o cabo de alimentação da carcaça e o desconecte da placa-mãe.</p>
+          <p>Passo 4. Remova todos os parafusos restantes que ligam a placa-mãe à carcaça.</p>
+          <p>Passo 5. Remova a placa-mãe.</p>
+          <p>Passo 6. Prenda a placa-mãe na carcaça do laptop. Aperte todos os parafusos necessários.</p>
+          <p>Passo 7. Conecte o jack de energia DC na carcaça do laptop, prenda o cabo de alimentação na carcaça e o conecte na placa-mãe.</p>
+          <p>Passo 8. Substitua todos os componentes removidos.</p>
+          <p>Passo 9. Insira a bateria, conecte o adaptador de energia AC e ligue o computador para garantir que o sistema está funcionando.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

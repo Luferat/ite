@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.5.3 Monitor Characteristics</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Input and Output Devices</h2>
+    </div>
+    <div id="content">
+          <p>Monitor resolution refers to the level of image detail that can be reproduced. Figure 1 is a chart of common monitor resolutions. Higher resolution settings produce better image quality. Several factors are involved in monitor resolution.</p>
+          <p>
+            <ul>
+              <li>
+                <b>Pixel </b>- The term pixel is an abbreviation for picture element. Pixels are the tiny dots that comprise a screen. Each pixel consists of red, green, and blue. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dot pitch </b>- Dot pitch is the distance between pixels on the screen. A lower dot pitch number produces a better image.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Contrast ratio</b> - The contrast ratio is a measurement of the difference in intensity of light between the brightest point (white) and the darkest point (black). A 10,000:1 contrast ratio shows dimmer whites and lighter blacks than a monitor with a contrast ratio of 1,000,000:1.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Refresh rate </b>- The refresh rate is how often per second the image is rebuilt. A higher refresh rate produces a better image and reduces the level of flicker. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interlace/Non-Interlace </b>- Interlaced monitors create the image by scanning the screen two times. The first scan covers the odd lines, top to bottom, and the second scan covers the even lines. Non-interlaced monitors create the image by scanning the screen, one line at a time from top to bottom. Most CRT monitors today are non-interlaced. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Horizontal vertical color </b>- The number of pixels in a line is the horizontal resolution. The number of lines in a screen is the vertical resolution. The number of colors that can be reproduced is the color resolution. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Aspect ratio</b> - Aspect ratio is the horizontal to vertical measurement of the viewing area of a monitor. For example, a 4:3 aspect ratio applies to a viewing area that is 16 inches wide by 12 inches high. A 4:3 aspect radio also applies to a viewing area that is 24 inches wide by 18 inches high. A viewing area that is 22 inches wide by 12 inches high has an aspect ratio of 11:6.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Native resolution</b> - Native resolution is the number of pixels that a monitor has. A monitor with a resolution of 1280x1024 has 1280 horizontal pixels and 1024 vertical pixels. Native mode is when the image sent to the monitor matches the native resolution of the monitor.</li>
+            </ul>
+          </p>
+          <p>Monitors have controls for adjusting the quality of the image. Here are some common monitor settings:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Brightness</b> - Intensity of the image </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Contrast</b> - Ratio of light to dark </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Position</b> - Vertical and horizontal location of the image on the screen </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reset</b> - Returns the monitor settings to factory settings </li>
+            </ul>
+          </p>
+          <p>Adding additional monitors can increase work efficiency. The added monitors allow you to expand the size of the desktop so you can view more open windows. Many computers have built-in support for multiple monitors. See Figure 2 for more information about configuring multiple monitors.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

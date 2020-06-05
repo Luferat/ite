@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.5.1.1 Summary</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Introduction to the Personal Computer</h1>
+      <h2>Summary</h2>
+    </div>
+    <div id="content">
+          <p>This chapter introduced the IT industry, options for training and employment, and some of the industry-standard certifications. This chapter also covered the components that comprise a personal computer system and how to consider upgrade components. Much of the content in this chapter will help you throughout this course.</p>
+          <p>
+            <ul>
+              <li>Information technology encompasses the use of computers, network hardware, and software to process, store, transmit, and retrieve information.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A personal computer system consists of hardware components and software applications.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The computer case and power supply must be chosen carefully to support the hardware inside the case and allow for the addition of components.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The internal components of a computer are selected for specific features and functions. All internal components must be compatible with the motherboard.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Use the correct type of ports and cables when connecting devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Typical input devices include the keyboard, mouse, touch screen, and digital cameras.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Typical output devices include monitors, printers, and speakers.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Cases, power supplies, the CPU and cooling system, RAM, hard drives, and adapter cards, must be upgraded when devices fail or no longer meet customer needs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Specialized computers require hardware specific to their function. The type of hardware used in specialized computers is determined by how a customer works and what a customer wants to accomplish.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

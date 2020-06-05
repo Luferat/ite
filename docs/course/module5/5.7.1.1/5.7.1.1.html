@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.7.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Este capítulo introduziu os sistemas operacionais de computadores. Como técnico, você deve ser capaz de instalar, configurar e solucionar problemas de um sistema operacional. Os seguintes conceitos deste capítulo são importantes para serem lembrados:</p>
+          <p><ul>
+              <li>Vários diferentes sistemas operacionais estão disponíveis e você deve considerar as necessidades e o ambiente do cliente ao escolher o S.O.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os principais passos na configuração do computador do cliente incluem a preparação do disco rígido, instalação do sistema operacional, criação de contas de usuário e a configuração das opções de instalação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A GUI (interface gráfica) mostra os ícones de todos os arquivos, pastas e aplicativos no computador. Um dispositivo apontador, como um mouse, é usado para navegar na área de trabalho da interface gráfica.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A CLI utiliza comandos para concluir tarefas e navegar no sistema de arquivos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Você deve estabelecer uma estratégia de backup que permite a recuperação de dados. Normal, cópia, diferencial, incremental, e backups diários são todas as opções de ferramentas de backup disponíveis nos sistemas operacionais Windows.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Com um gerenciador de máquina virtual, os recursos do sistema de um computador podem ser alocados para executar máquinas virtuais. As máquinas virtuais executam sistemas operacionais e os utilizam para fornecer, aos usuários, uma maior funcionalidade do sistema.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Técnicas de manutenção preventiva ajudam a garantir o melhor desempenho do sistema operacional.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Algumas das ferramentas disponíveis para solucionar problemas com S.O. incluem ferramentas administrativas, ferramentas de sistema e comandos CLI.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

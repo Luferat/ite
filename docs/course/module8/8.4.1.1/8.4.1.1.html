@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.4.1.1 Visão de Geral de Códigos de Bloqueio</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Métodos de Proteção de Dispositivos Móveis</h1>
+        <h2>Senhas de Bloqueio</h2>
+      </div>
+      <div id="content">
+          <p>Smartphones, tablets e outros dispositivos móveis contêm dados sensíveis. Se um dispositivo móvel for perdido, quem encontrar o dispositivo terá acesso aos contatos, mensagens de texto e as contas da web. Um método para evitar o roubo de informações privadas a partir de dispositivos móveis é usar um código de bloqueio. O código de bloqueio bloqueia um dispositivo e coloca o mesmo em um estado de economia de energia. O bloqueio também pode ser adiado para ocorrer após um determinado período de tempo depois que o dispositivo entrou no estado de economia de energia. Um método comum para colocar um dispositivo móvel em um estado de economia de energia é pressionar rapidamente o botão de alimentação principal. O dispositivo também pode ser configurado para entrar no estado de sleep depois de uma certa quantidade de tempo.</p>
+          <p>Muitos tipos diferentes de códigos de bloqueio estão disponíveis, conforme apresentado na Figura 1. Alguns tipos de códigos são mais difíceis de adivinhar do que outros. O código deve ser digitado toda vez que o dispositivo é ligado ou sai de um estado de economia de energia. Estes são alguns dos tipos mais comuns de códigos de bloqueio:</p>
+          <p><ul>
+              <li>Nenhum - Remove qualquer outro tipo de código de bloqueio configurado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Deslizar - O utilizador deslizar um ícone, tal como um cadeado ou uma seta, para desbloquear o dispositivo. Esta opção é o menos segura.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desbloqueio facial - Usa a câmera para reconhecer o rosto. Depois que o rosto armazenado é reconhecido, o dispositivo é desbloqueado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Padrão - Bloqueia o dispositivo quando o usuário desliza o dedo sobre a tela, desenhando um determinado padrão. Para desbloquear o dispositivo, o padrão exato deve ser repetido na tela.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>PIN - Usa um PIN privado para proteger o dispositivo. Quando o pin é digitado corretamente o é aparelho desbloqueado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Senha - Usa uma senha para proteger o dispositivo. Esta opção é menos conveniente, especialmente se a palavra for complicada ou longa, mas pode ser o método mais seguro.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Código Simples - Apenas para dispositivos iOS. Quando esta opção é configurada, o código deve ser um número de quatro dígitos. Quando esta opção está desativada, as senhas mais complexas que usam caracteres, números e símbolos podem ser usadas.</li>
+            </ul>
+          </p>
+          <p>Depois que o código de bloqueio é definido, ele deve ser digitado sempre que o dispositivo for ligado ou sair de um estado de economia de energia.</p>
+          <p>Para definir um código em um dispositivo Android, use o seguinte caminho:</p>
+          <p>Configurações > Local e Segurança > Bloqueio de Tela Escolha o tipo de senha para usar e defina as configurações de segurança restantes.</p>
+          <p>Para configurar um código de acesso em um dispositivo iOS, use o seguinte caminho:</p>
+          <p>Ajustes > Geral > Bloqueio por Código > Ativar Código. Digite um código de quatro dígitos, conforme apresentado na Figura 2. Introduza o mesmo número na segunda vez para verificação.</p>
+          <p>Se o código de acesso para um dispositivo iOS for esquecido, você deve conectá-lo ao computador para o qual foi sincronizado pela última vez e realizar uma restauração via iTunes.</p>
+          <p>Você também pode executar uma restauração de um dispositivo Android. Isso é feito pressionando os botões de volume ao ligar o aparelho, depois que uma opção de restauração é exibida. Verifique com o fabricante do seu dispositivo Android para obter instruções específicas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,111 @@
+﻿<textcomponents>
+	
+	<component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr class="title">
+					<td colspan='3' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Protocolos de Rede e Portas Comuns</b></font></td>
+				</tr>		
+				<tr class="liner_top">
+					<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#A2AA23' width='90' valign="top"><font size='12' color='#ffffff'><b>Protocolo</b></font></td>
+					<td bgcolor='#A2AA23' width='90' valign="top"><font size='12' color='#ffffff'><b>Porta</b></font></td>
+					<td bgcolor='#A2AA23' valign="top"><font size='12' color='#ffffff'><b>Descrição</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>TCP/IP</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Não disponível</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Um conjunto de protocolos utilizados para o transporte de dados na Internet</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>NetBEUI/ NetBIOS</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>137, 139, 150</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Protocolo pequeno e rápido que foi projetado para uma rede de grupo de trabalho que não requer conexão com a Internet</font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>HTTP</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>80</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Um protocolo de comunicação que estabelece uma conexão de solicitação/resposta sobre a Internet</font></td>
+				</tr>							
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>HTTPS</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>443</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Usa autenticação e criptografia para proteger os dados que trafegam entre o cliente e o servidor Web</font></td>
+				</tr>							
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>FTP</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>20/21</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Fornece serviços para transferência de arquivos e manipulação</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>SSH</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>22</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Fornece segurança para se conectar ao dispositivo de uma rede remota</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Telnet</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>23</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Protocolo para se conectar ao dispositivo de uma rede remota</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>POP3</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>110</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Transferências de mensagens de email de um servidor de email</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>IMAP</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>143</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Transferências de mensagens de email de um servidor de email</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>SMTP</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>25</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Envia email em uma rede TCP/IP</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>LDAP</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>389</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Acessa diretórios de informação</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>SNMP</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>161</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Gerencia e monitora os dispositivos em uma rede</font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>SMB</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>445</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Fornece acesso compartilhado a arquivos, impressoras e comunicação entre os pontos de uma rede</font></td>
+				</tr>							
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>SFTP</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>115</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Fornece um serviço de transferência de arquivos seguro</font></td>
+				</tr>							
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>DNS</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>53</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Resolve nomes de host para endereços IP</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>RDP</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>3389</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Usado para fornecer acesso a um computador remoto</font></td>
+				</tr>
+			</table>]]>
+		</text>
+	</component>
+	<!--
+	<component id="ID_txt02">
+	  <text><![CDATA[<b>Determine end-user requirements</b>]]></text> 
+	</component>
+	<component id="ID_txt03">
+	  <text><![CDATA[<b>Determine choices and select OS</b>]]></text> 
+	</component>
+	<component id="transcript">
+	  <text><![CDATA[<b>transcript goes here</b>]]></text> 
+	</component>
+	-->
+</textcomponents>

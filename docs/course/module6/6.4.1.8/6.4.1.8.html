@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.1.8 Aquisição de Dispositivos de Rede Autênticos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Dispositivos de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Os problemas do computador e da rede podem estar relacionados a componentes falsificados. As diferenças estéticas entre um produto autêntico e uma falsificação podem ser extremamente sutis ou inexistentes. Também há diferenciais de desempenho entre os produtos autênticos e as falsificações. Muitos fabricantes têm equipes que estão em serviço com os engenheiros atentos ​​nestes diferenciais.</p>
+          <p></p>
+          <p>Os produtos falsificados representam riscos à segurança e saúde pessoal. O tráfico de computadores falsificados e equipamentos de rede é um crime que acarreta sérias penalidades. Em 2008, um dono de uma empresa de informática foi condenado a 30 meses de prisão e obrigado a pagar uma grande soma em restituição, como resultado de sua condenação por tráfico de componentes de computador falsificados. Este tipo de caso serve como um lembrete importante para os clientes sobre o risco de comprar fora de locais autorizados de vendas pelo fabricante e por canais de distribuição.</p>
+          <p></p>
+          <p>Para ajudar a garantir que você está recebendo produtos autênticos, considere estes pontos ao fazer encomendas ou solicitar orçamentos:</p>
+          <p><ul>
+              <li>Sempre compre o seu equipamento diretamente de canais autorizados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Confirme se o equipamento é novo, autêntico e que não comprado anteriormente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Suspeite quando os preços parecerem bons demais para ser verdade.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O produto é oferecido com um desconto muito maior do que os produtos autênticos. Estes descontos podem ser altíssimos, por exemplo de 70 a 90% de desconto.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Verifique se o equipamento vem com uma licença de software válida.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Verifique se o equipamento tem uma garantia completa em anexo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pergunte se o equipamento inclui suporte de serviço.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O produto parece ter rotulagem apropriada, logotipos e marca, mas o desempenho ou a aparência é inferior quando comparado a produtos autênticos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Suspeite de uma embalagem que parece ser inferior, não original, adulterada ou utilizada anteriormente.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Não faça negócios com qualquer fornecedor que insista que você:</p>
+          <p><ul>
+              <li>Compre imediatamente para evitar um aumento de preço.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tire proveito de uma oferta especial que está prestes a expirar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Reserve os últimos produtos restantes em estoque.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compras especiais OEM.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tire proveito de Internet, email ou ofertas de telemarketing que enviam representantes para pegar seu pagamento em pessoa ou solicitam o dinheiro na entrega do produto.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

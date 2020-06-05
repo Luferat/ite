@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.2.7 Configurando uma Placa de Rede</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Adaptadores de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Após o driver da placa de rede ser instalado, configure o endereço IP. Se a placa de rede estiver configurada com um endereço IP estático, talvez seja necessário alterá-lo para que o computador possa ser conectado a outra rede. Portanto, talvez seja mais prático habilitar o DHCP no computador para que o mesmo receba as informações do endereçamento IP.</p>
+          <p>Toda placa de rede (NIC) deve ser configurada com as seguintes informações:</p>
+          <p><ul>
+              <li>Protocolos - Os mesmos protocolos devem ser implementados, conforme exibido na Imagem 1, para a comunicação entre dois computadores da mesma rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Endereço IP - Este endereço é configurável e deve ser exclusivo para cada dispositivo. O endereço IP pode ser configurado manualmente ou atribuído automaticamente através de um servidor DHCP.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Endereço MAC - Cada dispositivo possui um endereço MAC único. Este endereço é atribuído pelo fabricante e não pode ser alterado.</li>
+            </ul>
+          </p>
+          <p>No Windows 7, utilize o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central de Rede e Compartilhamento > Alterar as configurações do adaptador > clique com o botão direito do mouse em Conexão Local > Propriedades > Protocolo TCP/IP Versão 4 (TCP/IPv4) > Propriedades > configure o endereço IP > OK > OK</p>
+          <p>No Windows Vista, utilize o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central de Rede e Compartilhamento > Gerenciar conexões de rede > clique com o botão direito do mouse em Conexão Local > Propriedades > Protocolo TCP/IP Versão 4 (TCP/IPv4) > Propriedades > configure o endereço IP > OK > OK</p>
+          <p>No Windows XP, utilize o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Conexões de Rede > clique com o botão direito do mouse em Conexão Local > Propriedades > Protocolo Internet (TCP/IP) > Propriedades > configure o endereço IP > OK > OK</p>
+          <p>Configurações Alternativas do Endereçamento IP</p>
+          <p>Uma alternativa para simplificar a movimentação entre uma rede que utiliza o serviço de DHCP e outra que utiliza o IP estático é a configuração do endereço IP alternativo. Caso um computador não consiga se comunicar com o servidor DHCP de uma rede, o Windows atribuirá o endereço IP alternativo à placa de rede. A configuração do endereçamento IP alternativo também substitui o endereço APIPA, atribuído ao computador quando um servidor DHCP não for encontrado.</p>
+          <p>Para definir a configuração do endereçamento IP alternativo, conforme apresentado na Imagem 2, clique na guia Configuração Alternativa (ou Avançado...) na janela de propriedades da placa de rede.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

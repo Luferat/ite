@@ -1,0 +1,26 @@
+﻿<textcomponents>
+     <component id='ID_table'>
+      <text>
+        <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+          
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 5. Verificar Funcionalidade Total do Sistema e, se for o caso, Implemente as Medidas Preventivas</b></font></td>
+	</tr>  
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	
+          <tr>
+            <td width="127" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Verificar Funcionalidade Total do Sistema e, se for o caso, Implemente as Medidas Preventivas </font></td>
+            <td  valign="top" bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Reinicie o dispositivo móvel.</li>
+                <li>Navegue na Internet utilizando o Wi-Fi.</li>
+                <li>Navegue na Internet utilizando, 4G, 3G, ou outro tipo de conexão de rede.</li>
+                <li>Faça uma chamada telefônica.</li>
+                <li>Envie uma mensagem de texto.</li>
+                <li>Abra diferentes tipos de aplicativos.</li>
+                <li>Opere o dispositivo móvel utilizando somente a bateria.</li></textformat></font></td>
+          </tr>
+        </table>]]>
+      </text>
+    </component>
+  </textcomponents>

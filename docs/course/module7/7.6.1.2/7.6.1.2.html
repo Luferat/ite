@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.6.1.2 Procedimentos de limpeza</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para Laptops</h1>
+        <h2>Manutenção Programada para Laptops</h2>
+      </div>
+      <div id="content">
+          <p>A limpeza adequada de rotina é a maneira mais fácil e menos cara para proteger e prolongar a vida útil de um computador portátil. É importante usar os produtos e procedimentos corretos quando limpar um laptop. Sempre leia os rótulos de advertência nos produtos de limpeza. Os componentes são sensíveis e devem ser manuseados com cuidado. Consulte o manual do laptop para obter mais informações e sugestões de limpeza.</p>
+          <p></p>
+          <p>Os seguintes procedimentos de limpeza comuns ajudam a manter e prolongar a vida útil de um computador portátil.</p>
+          <p></p>
+          <p>ATENÇÃO: Use um pano macio e que não solte fiapos com uma solução de limpeza adequada para evitar danos nas superfícies do laptop. Aplique a solução de limpeza no pano e não diretamente no laptop.</p>
+          <p></p>
+          <p>Antes de limpar algum componente do laptop, siga estes passos:</p>
+          <p>Passo 1. Desligue o laptop.</p>
+          <p>Passo 2. Desconecte todos os dispositivos conectados.</p>
+          <p>Passo 3. Desligue o laptop da tomada.</p>
+          <p>Passo 4. Remova a bateria.</p>
+          <p></p>
+          <p>Teclado</p>
+          <p>Limpe o laptop e o teclado com um pano macio e que não solte fiapos, levemente umedecido com água ou solução de limpeza suave.</p>
+          <p></p>
+          <p>Ventoinhas</p>
+          <p>Utilize ar comprimido ou um aspirador não-eletrostático para limpar a poeira das aberturas e das ventoinhas atrás da saída de ar. Use uma pinça para remover qualquer resíduo.</p>
+          <p></p>
+          <p>Display LCD</p>
+          <p>Limpe a tela com um pano macio e que não solte fiapos, levemente umedecido com uma solução de limpeza para telas de computadores.</p>
+          <p></p>
+          <p>ATENÇÃO: Não utilize soluções de limpeza diretamente na tela LCD. Use produtos feitos especificamente para a limpeza de monitores LCD.</p>
+          <p></p>
+          <p>Touchpad</p>
+          <p>Limpe a superfície do touchpad delicadamente com um pano macio que não solte fiapos umedecido com um produto de limpeza adequado. Nunca use um pano molhado.</p>
+          <p></p>
+          <p>Unidade Óptica</p>
+          <p>Sujeira, poeira e outros tipos de resíduos podem se acumular nas unidades ópticas. Unidades sujas podem causar mau funcionamento, perda de dados, mensagens de erro e perda de produtividade.</p>
+          <p></p>
+          <p>Para limpar uma unidade óptica, siga estes passos:</p>
+          <p>Passo 1. Use um CD ou DVD de limpeza.</p>
+          <p>Passo 2. Remova todas as mídia da unidade óptica.</p>
+          <p>Passo 3. Insira o disco de limpeza e deixe-o girar pelo tempo sugerido para limpar todas as áreas de contato.</p>
+          <p></p>
+          <p>CD e DVD</p>
+          <p>Inspecione se o disco tem riscos de ambos os lados. Substitua os discos que contenham riscos profundos, pois eles podem gerar erros de dados. Se você detectar algum problema, como o CD/DVD &quot;pulando&quot; dentro da unidade ou diminuição da qualidade de reprodução, limpe os discos. Produtos comerciais que limpam os discos e fornecem proteção contra poeira, impressões digitais e arranhões estão disponíveis. Produtos de limpeza para CDs são seguros para o uso em DVDs.</p>
+          <p></p>
+          <p>Para limpar CDs ou DVDs, siga estes passos:</p>
+          <p>Passo 1. Segure o disco pela borda exterior ou interior.</p>
+          <p>Passo 2. Delicadamente, limpe o disco com um pano de algodão que não solte fiapos. Nunca use papel ou qualquer material que possa riscar o disco ou deixar marcas.</p>
+          <p>Passo 3. Comece limpando do centro do disco para fora. Nunca use um movimento circular.</p>
+          <p>Passo 4. Aplique uma solução de limpeza de CD ou DVD no pano e limpe novamente se qualquer sujeira permanecer no disco.</p>
+          <p>Passo 5. Deixe o disco secar antes de inseri-lo na unidade.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

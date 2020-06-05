@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.1.6 Selecionando Disco Rígidos e Unidades Floppy</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando os Componentes para Substituição no Computador</h1>
+        <h2>Selecionando os Componentes do PC</h2>
+      </div>
+      <div id="content">
+          <p>Você pode precisar substituir um dispositivo de armazenamento quando ele já não atende às necessidades do seu cliente ou quando o mesmo apresenta falhas. Os sinais de que indicam que um dispositivo de armazenamento está falhando podem incluir:</p>
+          <p><ul>
+              <li>Ruídos estranhos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Vibrações incomuns</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mensagens de erros</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dados ou programas corrompidos</li>
+            </ul>
+          </p>
+          <p>Unidade de Disco Flexível</p>
+          <p>Enquanto unidades de disquete (FDDs) ainda tem alguns usos limitados, elas têm sido em grande parte substituída por unidades flash USB, discos rígidos externos, CDs, DVDs e cartões de memória. Se um FDD existente falhar, substitua-o por um dos dispositivos de armazenamento mais recentes.</p>
+          <p>Disco Rígido</p>
+          <p>Um disco rígido armazena dados em discos magnéticos. Existem vários tipos e tamanhos de discos rígidos diferentes. Os discos rígidos usam diferentes tipos de conexão. A Figura 1 mostra os conectores PATA, SATA, eSATA e SCSI. Há vários fatores a se considerar quando se compra um novo disco rígido:</p>
+          <p><ul>
+              <li>Adicionar ou substituir</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Interno ou externo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Localização no gabinete</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compatibilidade do sistema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Calor gerado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ruído</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Requisitos de Energia</li>
+            </ul>
+          </p>
+          <p>Discos rígidos PATA usam cabos de 40 pinos/80 condutores ou cabos de 40 pinos/40 condutores. Escolha o disco rígido PATA se o sistema do seu cliente for um sistema legado ou não suportar SATA.</p>
+          <p>Discos rígidos SATA e eSATA utilizam um cabo de 7 pinos/4 condutores. Embora os cabos SATA e eSATA sejam semelhantes, eles não são intercambiáveis. Unidades SATA são internas. Unidades eSATA são externas. Escolha um disco rígido SATA ou eSATA se o cliente precisar de uma taxa muito maior de transferência de dados do que a fornecida por unidades PATA e se o sistema suportar SATA ou eSATA.</p>
+          <p>Discos rígidos SCSI usam conectores de 50, 68 ou 80 pinos. Até 15 drives SCSI podem ser conectados a uma controladora SCSI. O uso típico das unidades SCSI são em servidor ou em implementações RAID. Dispositivos SCSI são tipicamente ligados em série, formando uma cadeia, que geralmente é chamada de daisy chain, conforme apresentado na Figura 2. A Figura 3 mostra os diferentes tipos de SCSIs.</p>
+          <p>Cada dispositivo na cadeia SCSI deve ter um ID único para que o computador possa se comunicar com o dispositivo correto. Isto inclui o adaptador SCSI. Normalmente, é dado o valor mais elevado ao adaptador SCSI. Para o SCSI estreito, o IDs de 0 a 7 estão disponíveis. Para o SCSI largo, o IDs de 0 a 15 estão disponíveis. A controladora é identificada pelos valores 7 ou 15, e os outros dispositivos na cadeia utilizam os IDs restantes. Em instalações SCSI mais antigas, jumpers eram usados para atribuir os IDs para os adaptadores e dispositivos SCSI. A maioria dos adaptadores modernos atribuem os IDs utilizando um programa instalado no adaptador ou no sistema operacional.</p>
+          <p>Algumas unidades são hot-swappable. Unidades hot-swappable podem ser conectadas e desconectadas sem a necessidade de desligar o computador. Normalmente, para instalar um disco rígido eSATA, você deve desligar o computador, conectar a unidade e ligar o computador novamente. Uma unidade eSATA hot-swappable pode ser conectada no computador a qualquer momento. Discos rígidos USB externos também são hot-swappable. Verifique a documentação de sua placa-mãe para determinar se você pode usar unidades hot-swappable.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

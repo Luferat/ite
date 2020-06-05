@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.3.2.2 IPv4</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Basic Networking Concepts and Technologies</h1>
+      <h2>Networked Equipment Addressing</h2>
+    </div>
+    <div id="content">
+          <p>An IPv4 address consists of a series of 32 binary bits (ones and zeros). It is difficult for humans to read a binary IPv4 address. For this reason, the 32 bits are grouped into four segments of 8 bits called octets. An IPv4 address, even in this grouped format, is hard for humans to read, write, and remember. Therefore, each octet is presented as its decimal value, separated by a decimal point or period. This format is referred to as dotted-decimal notation. When a host is configured with an IPv4 address, it is entered as a dotted-decimal number, such as 192.168.1.5. Imagine if you had to enter the 32-bit binary equivalent of this: 11000000101010000000000100000101. If just one bit were mistyped, the address would be different, and the host might not be able to communicate on the network. </p>
+          <p>The logical 32-bit IPv4 address is hierarchical and is composed of two parts. The first part identifies the network, and the second part identifies a host on that network. Both parts are required. For example, if a host has IPv4 address 192.168.18.57, the first three octets, 192.168.18, identify the network portion of the address, and the last octet, 57 identifies the host. This is known as hierarchical addressing, because routers only need to communicate with networks and not individual hosts. A router is a networking device that forwards data packets across networks toward their destinations.</p>
+          <p>IPv4 addresses are divided into the following classes:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Class A</b> – Large networks implemented by large companies and some countries </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Class B</b> – Medium-sized networks implemented by universities </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Class C</b> – Small networks implemented by Internet service providers (ISPs) for customer subscriptions </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Class D</b> – Special use for multicasting </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Class E</b> – Used for experimental testing </li>
+            </ul>
+          </p>
+          <p>In addition to creating separate classes, the IETF reserved some Internet address space for private networks. Private networks have no connection to public networks. Private network addresses are not routed across the Internet. This allows networks in different locations to use the same private addressing scheme without creating addressing conflicts. An example of when these private addresses are useful is in a classroom lab where you want to prevent access outside of your network. </p>
+          <p>Each of these classes has a range of private IP addresses:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Class A</b> – 10.0.0.0 to 10.255.255.255</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Class B</b> – 172.16.0.0 to 172.31.255.255</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Class C</b> – 192.168.0.0 to 192.168.255.255</li>
+            </ul>
+          </p>
+          <p>
+            <b>IPv4 Subnet Mask</b>
+            <br/>The subnet mask indicates the network portion of an IPv4 address. Like the IPv4 address, the subnet mask is a dotted-decimal number. Usually all hosts within a LAN use the same subnet mask. Figure 1 shows the default subnet masks for usable IPv4 addresses that are mapped to the first three classes of IPv4 addresses:</p>
+          <p>
+            <ul>
+              <li>
+                <b>255.0.0.0</b> – Class A, which indicates that the first octet of the IPv4 address is the network portion </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>255.255.0.0</b> – Class B, which indicates that the first two octets of the IPv4 address is the network portion </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>255.255.255.0</b> – Class C, which indicates that the first three octets of the IPv4 address is the network portion </li>
+            </ul>
+          </p>
+          <p>If an organization owns one Class B network but needs to provide IPv4 addresses for four LANs, the organization must subdivide the Class B address into four smaller parts. Subnetting is a logical division of a network. It provides a way to divide a network, and the subnet mask specifies how it is subdivided. An experienced network administrator typically performs subnetting. After the subnetting scheme has been created, the proper IPv4 addresses and subnet masks can be configured on the hosts in the four LANs. These skills are taught in the Cisco Networking Academy courses related to Cisco Certified Network Associate (CCNA) level networking skills.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

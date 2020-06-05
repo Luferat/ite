@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.1.2 Tipos de Conexões de Impressoras Cabeadas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Recursos Comuns da Impressora</h1>
+        <h2>Características e Capacidades</h2>
+      </div>
+      <div id="content">
+          <p>A impressora deve ter uma interface compatível com o computador para que ela possa imprimir. Normalmente, as impressoras se conectam aos computadores domésticos usando uma interface paralela, USB ou sem fio. As impressoras podem se conectar a uma rede usando um cabo ou uma interface wireless.</p>
+          <p>Serial.</p>
+          <p>A transferência de dados em série (serial) é o nome dado ao fluxo de cada bit de informação em um único ciclo. Uma conexão serial pode ser utilizada para conectar impressoras matriciais, pois elas não necessitam de altas taxas de transferência de dados.</p>
+          <p>Paralela</p>
+          <p>A transferência de dados paralela é mais rápida do que a transferência de dados em série. Uma interface paralela envia múltiplos bits de informação em um único ciclo. O caminho de transferência de dados em uma interface paralela é mais largo do que em uma interface serial, permitindo assim que os dados se movam rapidamente para ou a partir da impressora.</p>
+          <p>O padrão utilizado pelas portas paralelas de uma impressora é o IEEE 1284. O Enhanced Parallel Port (EPP) e o Enhanced Capabilities Port (ECP) são dois modos de operação do padrão IEEE 1284 que permitem a comunicação bidirecional.</p>
+          <p>SCSI</p>
+          <p>O Small Computer System Interface (SCSI) usa a tecnologia de comunicação paralela para atingir altas taxas de transferência de dados.</p>
+          <p>USB</p>
+          <p>O USB é uma interface de comunicação de dados comumente utilizada para conectar impressoras e outros dispositivos. Quando um dispositivo USB é adicionado a um computador que suporta plug-and-play, o mesmo é automaticamente detectado e o processo de instalação do driver é iniciado.</p>
+          <p>FireWire</p>
+          <p>O FireWire, também conhecido como i.LINK ou IEEE 1394, é um barramento de comunicação de alta velocidade que é independente de plataforma. O FireWire conecta dispositivos digitais, tais como impressoras, scanners, câmeras e discos rígidos.</p>
+          <p>O FireWire permite que dispositivos periféricos, como uma impressora, se conectem diretamente em um computador. Ele também permite que o dispositivo seja hot-swappable. O FireWire fornece uma única conexão plug-and-socket que pode conectar até 63 dispositivos. Além disso, o FireWire possui uma taxa de transferência de dados de até 400 Mbps.</p>
+          <p>Ethernet</p>
+          <p>Conectar uma impressora à rede requer cabeamento compatível tanto com a rede, quanto com a interface instalada na impressora. A maioria das impressoras de rede usam uma interface RJ-45 ou sem fio para se conectar à rede.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

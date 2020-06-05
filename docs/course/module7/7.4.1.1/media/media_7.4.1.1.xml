@@ -1,0 +1,118 @@
+﻿<textcomponents>
+<!--SLIDE 1-->
+<component id="ID_s1_title">
+   <text><![CDATA[<b>Características do Bluetooth</b>]]></text>
+</component>
+
+<component id='ID_s1_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	
+	<tr>
+		<td colspan='1' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Tecnologia sem fio de curto alcance designada para eliminar a necessidade de cabos entre dispositivos portáteis ou de configuração fixa</font></td>		
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Opera em 2,4 até 2,485 GHz na banda Industrial, Cientifica e Médica sem licença.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Baixo custo, baixo consumo e tamanho pequeno</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Utilização de adaptive frequency hopping</font></td>
+	</tr>	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Versão 1.2 opera até 1.2 Mbps</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Versão 2.0+ Enhanced Data Rate (EDR) opera até 3 Mbps</font></td>
+	</tr>	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Versão 3.0+ High Speed (HS) opera até 24 Mbps</font></td>
+	</tr>
+</table>]]>
+</text>
+</component>
+
+
+<!--SLIDE 2-->
+<component id="ID_s2_title">
+   <text><![CDATA[<b>Classificações Bluetooth</b>]]></text>
+</component>
+
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	
+	<tr>
+		<td bgcolor='#A2AA23' width='120' valign="top"><font  color='#FFFFFF'><b>Classe</b></font></td>
+		<td bgcolor='#A2AA23'  valign="top"><font  color='#FFFFFF'><b>Potência Máxima Permidita mW</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>Distância Aproximada</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Casse 1</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>100 mW</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>~330 pés (100m)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Classe 2</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>2.5 mW</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>~33 pés (10m)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Classe 3</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1 mW</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>~3 pés (1 m)</font></td>
+	</tr>
+</table>]]>
+</text>
+</component>
+
+
+<!--SLIDE 3-->
+<component id="ID_s3_title">
+   <text><![CDATA[<b>Especificações Bluetooth</b>]]></text>
+</component>
+
+<component id='ID_s3_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	
+	<tr>
+		<td bgcolor='#A2AA23' width='120' valign="top"><font color='#FFFFFF'><b>Especificação</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font  color='#FFFFFF'><b>Versão</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>Taxa de transferência de dados</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1.0</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>v1.2</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1 Mb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>2.0</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>v2.0 + EDR</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>3 Mb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>3.0</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>v3.0 + HS</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>24 Mb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>4.0</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>v4.0 + LE</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>24 Mb/s</font></td>
+	</tr>
+</table>]]>
+</text>
+</component>
+
+
+</textcomponents>

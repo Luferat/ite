@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.1.1 Adware, Spyware e Phishing</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ameaças de Segurança</h1>
+        <h2>Tipos de Ameaças de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Malware é qualquer software criado para realizar atos maliciosos. Malware inclui adware, spyware, grayware, phishing, vírus, worms, cavalos de Tróia e rootkits. Um Malware geralmente é instalado em um computador sem o conhecimento do usuário. Estes programas abrem portas no computador ou alteram as configuração do mesmo. O Malware é capaz de modificar os navegadores (browsers) para abrir páginas web específicas que não são as desejadas. Isto é conhecido como o redirecionamento do navegador (browser redirection). Os Malwares também podem coletar informações armazenadas no computador sem o consentimento do usuário.</p>
+          <p>Adware</p>
+          <p>O Adware é um programa que exibe anúncios no seu computador. Normalmente, os Adware são distribuídos através dos downloads de softwares. Na maioria das vezes, o Adware é exibido em uma janela pop-up. As janelas de pop-up, por vezes, são difíceis de controlar, pois as novas janelas abrem mais rápido do que os usuários são capazes de fechá-las.</p>
+          <p>Spyware</p>
+          <p>O Spyware é semelhante ao Adware. Ele é distribuído sem a intervenção ou conhecimento do usuário. Após o Spyware ser instalado e executado, ele monitora a atividade do computador. Em seguida, o Spyware envia essas informações para o indivíduo ou organização responsável pelo lançamento do mesmo.</p>
+          <p>Grayware</p>
+          <p>Ele é distribuído sem intervenção do usuário ou conhecimento. O Grayware pode ser malicioso e às vezes ser instalado com o consentimento do usuário. Por exemplo, um programa de software livre pode requerer a instalação de uma barra de ferramentas que exibe anúncios ou rastreia histórico do navegador do usuário.</p>
+          <p>Phishing</p>
+          <p>O Phishing ocorre quando um atacante pretende representar uma organização legítima, tal como um banco. A vítima em potencial é contactada via e-mail, telefone ou mensagem de texto. O atacante poderá solicitar a verificação de informações, tais como senha ou nome de usuário, para possivelmente evitar que uma terrível consequência ocorra.</p>
+          <p>Muitos ataques de Malwares são do tipo Phishing que tentam persuadir o leitor para fornecer acesso às informações pessoais. Ao preencher o formulário on-line, os dados são enviados ao atacante. Os Malwares podem ser removidos através de antivírus, antispyware ou ferramentas de remoção de Adware.</p>
+          <p>NOTA: Raramente há uma necessidade de fornecer informações confidenciais, pessoais ou financeira on-line. Empresas legítimas não solicitam informações confidenciais por email. Fique atento. Em caso de dúvida, entre em contato por e-mail ou telefone para garantir a veracidade do pedido.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

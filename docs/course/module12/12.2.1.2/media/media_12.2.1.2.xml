@@ -1,0 +1,337 @@
+﻿<textcomponents>
+  <!--<component id="ID_title">
+    <text>
+      <![CDATA[<b>Common Problems and Solutions for Operating Systems</b>]]>
+    </text>
+  </component>-->
+  <component id='ID_table'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Sistemas Operacionais</b></font></td></tr> 
+        <tr class="liner">
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificação do Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador exibe um erro &quot;Invalid Boot Disk&quot; após o POST.</font></td> 
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>A mídia que está na unidade não possuí um sistema operacional.</li>
+	      <li>A ordem de inicialização não está definida corretamente nas configurações da BIOS.</li>
+              <li>O disco rígido não foi detectado ou os jumpers não estão alinhados corretamente.</li>
+              <li>O disco rígido não possuí um sistema operacional instalado.</li>
+              <li>A MBR está corrompida.</li>
+              <li>O computador foi infectado por um vírus no setor de inicialização.</li>
+              <li>O disco rígido está falhando.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Remova todas as mídias das unidades.</li>
+              <li>Altere a ordem de inicialização nas configurações da BIOS para iniciar com a unidade de inicialização correta.</li>
+              <li>Reconecte os cabos do disco rígido ou realoque os jumpers do disco rígido.</li>
+              <li>Instale um sistema operacional.</li>
+              <li>Use o comando bootrec/fixmbr a partir das opções de recuperação do sistema do Windows 7 ou Vista.</li>
+              <li>Execute o comando fdisk /mbr na CLI do Windows XP (apenas).</li>
+              <li>Execute o software de remoção de vírus.</li>
+              <li>Substitua o disco rígido.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador exibe o erro &quot;Inaccessible Boot Device&quot; (Dispositivo de inicialização inacessível) após o POST.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>O driver de dispositivo instalado recentemente é incompatível com o controlador de inicialização.</li>
+			  <li>O BOOTMGR do Windows 7 ou Windows Vista está corrompido.</li>
+              <li>NTLDR do Windows XP está corrompido.</li>
+            </textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Use a última configuração válida para inicializar o computador.</li>
+              <li>Inicie o computador em modo de segurança e recupere o sistema através do ponto de restauração criado antes da instalação do novo hardware.</li>
+              <li>Restaure o arquivo BOOTMGR do Windows 7 ou Windows Vista através da mídia de instalação.</li>
+              <li>Restaure o NTLDR através da mídia de instalação do Windows XP.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador exibe o erro &quot;BOOTMGR está faltando&quot; (BOOTMGR is missing) após o POST no Windows 7 e no Windows Vista</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>BOOTMGR está faltando ou danificado.</li>
+			  <li>Os dados da configuração de inicialização estão faltando ou danificados.</li>
+              <li>A ordem de inicialização não está definida corretamente nas configurações da BIOS.</li>
+			  <li>A MBR está corrompida.</li>
+              <li>O disco rígido está falhando.</li>
+              <li>Os jumpers do disco rígido não estão alocados corretamente.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Restaure o BOOTMGR através da mídia de instalação.</li>
+              <li>Restaure os dados da configuração de inicialização através da mídia de instalação.</li>
+              <li>Altere a ordem de inicialização nas configurações da BIOS para iniciar com a unidade de inicialização correta.</li>
+              <li>Execute o comando chkdsk /F /R na console de recuperação.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador exibe o erro &quot;Falta NTLDR&quot; (Missing NTLDR) após o POST no Windows XP</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>NTLDR está faltando ou danificado.</li>
+              <li>Ntdetect.com está faltando ou danificado.</li>
+              <li>Boot.ini está faltando ou danificado.</li>
+              <li>A ordem de inicialização não está definida corretamente nas configurações da BIOS.</li>
+              <li>A MBR está corrompida.</li>
+              <li>O disco rígido está falhando.</li>
+              <li>Os jumpers do disco rígido não estão alocados corretamente.</li>
+            </textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Restaure NTLDR através da mídia de instalação.</li>
+              <li>Restaure o ntdetect.com através da mídia de instalação.</li>
+              <li>Restaure o boot.ini através da mídia de instalação.</li>
+              <li>Altere a ordem de inicialização nas configurações da BIOS para iniciar com a unidade de inicialização correta.</li>
+              <li>Execute o comando fdisk /mbr no prompt de comando.</li>
+              <li>Execute o comando chkdsk /F /R na console de recuperação.</li>
+              <li>Realoque os jumpers do disco rígido.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um serviço não pôde ser iniciado após o computador ser inicializado.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>O serviço não está ativo.</li>
+              <li>O serviço está definido como Manual.</li>
+              <li>O serviço que não iniciou requer que outro serviço esteja ativado.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Habilite o serviço.</li>
+              <li>Defina o serviço para Automático.</li>
+              <li>Reative ou reinstale o serviço necessário.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um dispositivo não inicia quando o computador é inicializado. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>O dispositivo externo não está ligado.</li>
+              <li>Os cabos de alimentação de dados não estão conectados nos dispositivos.</li>
+              <li>O dispositivo foi desativado nas configurações da BIOS.</li>
+              <li>O dispositivo falhou.</li>
+              <li>O dispositivo está com conflito com outro recém-instalado.</li>
+              <li>O driver está corrompido.</li>
+              <li>O driver ainda está sendo instalado.</li>
+            </textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Ligue o dispositivo externo.</li>
+			  <li>Fixe os cabos de energia e dados do dispositivo..</li>
+              <li>Ative o dispositivo nas configurações da BIOS.</li>
+              <li>Substitua o dispositivo.</li>
+              <li>Remova o dispositivo recém instalado.</li>
+              <li>Reinstale ou reverta o driver.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um programa listado no registro não foi encontrado. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Um ou mais arquivos dos programas foram excluídos.</li>
+              <li>O programa de desinstalação não funcionou corretamente.</li>
+              <li>O diretório da instalação foi removido.</li>
+              <li>O disco rígido foi corrompido.</li>
+              <li>O computador foi infectado por um vírus.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Reinstale o programa.</li>
+              <li>Reinstale o programa e execute sua desinstalação novamente.</li>
+              <li>Execute o comando chkdsk /F /R para reparar as entradas de arquivos no disco rígido.</li>
+              <li>Verifique e remova os vírus.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador reinicia continuamente sem exibir a área de trabalho. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>O computador está configurado para reiniciar quando houver uma falha.</li>
+              <li>O arquivo de inicialização foi corrompido.</li>
+            </textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Pressione F8 para abrir o Menu de Opções Avançadas, selecione a opção desativar a reinicialização automática em caso de falha do sistema.</li>
+              <li>Execute o comando chkdsk /F /R na console de recuperação.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador exibe uma tela preta ou uma tela azul (BSOD - Blue Screen of Death).</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>O driver não é compatível com o hardware.</li>
+              <li>A memória RAM está falhando.</li>
+              <li>A fonte de alimentação está falhando.</li>
+              <li>O processador (CPU) está falhando.</li>
+              <li>A placa-mãe está falhando.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Investigue o erro de interrupção e o nome do módulo que o produziu.</li>
+              <li>Substitua qualquer dispositivo com falha por dispositivos de qualidade.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador trava sem exibir nenhuma mensagem de erro.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>As configurações da CPU ou do FSB estão incorretas na placa-mãe ou na BIOS.</li>
+              <li>O computador está superaquecendo.</li>
+              <li>Uma atualização corrompeu o sistema operacional.</li>
+              <li>A memória RAM está falhando.</li>
+              <li>O disco rígido está falhando.</li>
+              <li>A fonte de alimentação está falhando.</li>
+              <li>O computador foi infectado por um vírus.</li>
+            </textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Verifique e redefina as definições da CPU e FSB.</li>
+              <li>Verifique e substitua todos os dispositivos de refrigeração, se necessário.</li>
+	      <li>Desinstale a atualização do software ou execute a restauração do sistema.</li>
+              <li>Execute o comando chkdsk /F /R na console de recuperação.</li>
+              <li>Substitua qualquer dispositivo com falha por dispositivos de qualidade.</li>
+              <li>Verifique e remova os vírus.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um aplicativo não pôde ser instalado.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>O instalador do aplicativo baixado contém um vírus e foi impedido de ser instalado pelo software de proteção.</li>
+              <li>O disco de instalação ou o arquivo está corrompido.</li>
+              <li>A aplicação não é compatível com o sistema operacional.</li>
+              <li>Existem muitos programas em execução e não há memória suficiente para instalar o aplicativo.</li>
+              <li>O hardware não atende aos requisitos mínimos.</li>
+              <li>O aviso de segurança foi ignorado ou cancelado.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Obtenha um novo disco de instalação ou exclua o arquivo e faça o download do arquivo de instalação novamente.</li>
+              <li>Execute a instalação em modo de compatibilidade.</li>
+              <li>Feche as aplicações antes de instalar um novo programa.</li>
+              <li>Instale o hardware que atenda aos requisitos mínimos da instalação.</li>
+              <li>Execute a instalação novamente e aceite o aviso de segurança.</li>
+            </textformat></font></td>
+        </tr>
+      
+     	   <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador com o Windows 7 instalado não executa a função Aero.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'> O computador não atende aos requisitos mínimos de hardware para executar o Aero.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Atualize o processador, memória RAM e placa de vídeo para atender aos requisitos mínimos da Microsoft e utilizar Aero.</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O recurso de pesquisa demora muito tempo para encontrar os resultados.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>O serviço de índice (Index Service) não está sendo executado.</li>
+              <li>O serviço de índice (Index Service) não está classificando (indexing) nos locais corretos.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Inicie o Index Service (Windows Search) utilizando o comando services.msc.</li>
+              <li>Altere as configurações do serviço de índice em Opções Avançadas (opções de Indexação), localizado no painel de controle.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O UAC (Controle de Conta de Usuário) não solicita permissão ao usuário.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O UAC foi desativado.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Habilite o UAC através do aplicativo Contas de Usuário, localizado no Painel de Controle.</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Nenhum gadget é exibido na área de trabalho.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Os gadgets não foram instalados ou foram desinstalados.</li>
+              <li>O XML necessário para exibir o gadget está corrompido ou não foi instalado.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Clique com o botão direito do mouse na área de trabalho > Gadgets > clique com botão direito do mouse no Gadget > Adicionar.</li>
+              <li>Registre o arquivo msxml3.dll inserindo o comando regsvr32 msxml3.dll no prompt de comando.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador está lento e demorando para responder.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Um processo está usando a maior parte dos recursos da CPU.</li>
+			<li>O hardware não atende os requisitos mínimos para o funcionamento do Aero.</li>
+    </textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Reinicie o processo através do services.msc.</li>
+              <li>Se o processo não for necessário, finalize-o com o Gerenciador de Tarefas.</li>
+              <li>Reinicie o computador.</li>
+              <li>Desative o Aero.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Não há um sistema operacional</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>A partição não está definida como ativa.</li>
+              <li>Falta de arquivos de inicialização do Windows.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Defina a partição ativa usando o utilitário de gerenciamento de disco.</li>
+              <li>Executar o Startup Repair (reparo de inicialização) do Windows.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Quando você executa um programa, uma mensagem de DLL faltando ou corrompido é exibida.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Um ou mais programas que usavam o arquivo DLL foram desinstalados e o arquivo DLL que era necessário para outro programa foi removido.</li>
+              <li>O arquivo DLL não foi registrado.</li>
+              <li>O arquivo DLL foi corrompido durante uma instalação mal sucedida.</li>
+            </textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Reinstale o programa que tem um arquivo DLL faltando ou corrompido.</li>
+              <li>Reinstale o aplicativo que desinstalou a DLL.</li>
+              <li>Registre o arquivo DLL usando o comando Regsvr32.</li>
+              <li>Execute o comando sfc /scannow no Modo de Segurança.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O RAID não é detectado durante a instalação.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Windows 7 não tem os drivers adequados para reconhecer o RAID.</li>
+              <li>As configurações de RAID na BIOS estão incorretas.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Instale os drivers corretos.</li>
+              <li>Altere as configurações da BIOS para permitir o RAID.</li>
+            </textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Uma pasta do sistema está corrompida.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador foi desligado de maneira incorreta.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Repare o computador a partir do menu de opções de inicialização avançada.</li>
+              <li>Inicialize o computador no modo de segurança e execute o comando sfc /scannow.</li>
+              </textformat></font></td>
+        </tr>
+
+<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A GUI não aparece para todos os usuários ou a GUI não é carregada. </font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+  <li>Falta de arquivos de inicialização do Windows.</li>
+  <li>As atualizações do Windows Update corromperam o sistema operacional.</li>
+</textformat></font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+  <li>Repare o computador a partir do menu de opções de inicialização avançada.</li>
+  <li>Executar o Startup Repair (reparo de inicialização) do Windows.</li>
+  <li>Reinstale o Sistema Operacional.</li>
+</textformat></font></td>
+</tr>
+
+
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador foi desligado sem avisos. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um programa pode estar causando o desligamento inesperado do Windows. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Inicialize no modo de segurança e gerencie os aplicativos de inicialização usando o utilitário de linha de comando msconfig.</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Inicialização do computador em modo de segurança. </font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Um programa que faz com que o computador inicialize em modo de segurança foi instalado.</li>
+              <li>O computador foi configurado para iniciar no Modo de Segurança.</li>
+            </textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'>
+              <li>Use o msconfig para ajustar as configurações de inicialização do programa.</li>
+              <li>Use o msconfig para configurar o computador para iniciar normalmente.</li>
+            </textformat></font></td>
+        </tr>
+
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>A inicialização do computador ocorre apenas no modo VGA. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O driver de vídeo está corrompido. </font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Reinstale o driver de vídeo.</font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>   
+</textcomponents>
+

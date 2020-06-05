@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.2.1 Instalando a CPU, Dissipador de Calor e a Ventoinha</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Instalação da Placa-Mãe</h2>
+      </div>
+      <div id="content">
+          <p>A CPU, dissipador de calor e ventoinha podem ser instalados na placa-mãe antes da mesma ser colocada no gabinete do computador. Isto permite manobrar os componentes em um espaço maior, durante a instalação.</p>
+          <p>CPU</p>
+          <p>A Figura 1 exibe um close-up na CPU e na placa-mãe. A CPU e a placa-mãe são sensíveis à descarga eletrostática. Ao manusear a CPU e a placa-mãe, certifique-se de colocar ambos sobre uma manta antiestática aterrada. Use uma pulseira antiestática ao trabalhar com esses componentes.</p>
+          <p>CUIDADO: Ao manusear uma CPU, não toque em seus contatos em momento algum.</p>
+          <p>A CPU é presa ao soquete da placa-mãe através de uma trava de segurança. Antes de instalar uma CPU no soquete da placa-mãe, certifique-se que você está familiarizado com o sistema de bloqueio.</p>
+          <p>A pasta térmica ajuda a dissipar o calor gerado pela CPU. Quando você estiver instalando uma CPU usada, limpe o topo da CPU e a base do dissipador com álcool isopropílico e um pano que não solte fiapos. Um filtro de café de papel funciona bem como um pano que não solta fiapos. Isto remove a pasta térmica antiga. As superfícies estão prontas para uma nova camada de pasta térmica. Siga as recomendações do fabricante para aplicar a pasta térmica.</p>
+          <p>A Figura 2 mostra a pasta térmica sendo aplicada na CPU. Na maioria dos casos, aplique uma quantidade muito pequena de pasta térmica na CPU. A pasta térmica se espalha uniformemente sob o peso e a pressão do dissipador de calor e da ventoinha.</p>
+          <p>Dissipador de Calor e Ventoinha</p>
+          <p>A Figura 3 mostra o dissipador de calor e a ventoinha. Trata-se de um dispositivo de resfriamento composto por duas partes. O dissipador de calor retira o calor da CPU. A ventoinha move o calor para fora do dissipador de calor. O conjunto geralmente possui um conector de alimentação de 3 pinos.</p>
+          <p>A Figura 4 mostra o cabo e o conector da placa-mãe utilizado para conectar o dissipador de calor e a ventoinha.</p>
+          <p>Para instalar a CPU, dissipador de calor e ventoinha, siga estes passos:</p>
+          <p>Passo 1. Alinhe a CPU para que o indicador de conexão 1 esteja alinhado com o pino 1 no soquete. Isto assegura que as ranhuras de orientação da CPU estejam alinhadas com as chaves de orientação do soquete da CPU.</p>
+          <p>Passo 2. Encaixe suavemente a CPU no soquete.</p>
+          <p>Passo 3. Feche a placa de segurança da CPU. Fixe-a no lugar, fechando a alavanca de segurança e movendo-a sob a aba de retenção da alavanca.</p>
+          <p>Passo 4. Aplique uma pequena quantidade de pasta térmica na CPU. Siga as instruções fornecidas pelo fabricante da pasta térmica.</p>
+          <p>Passo 5. Alinhe o dissipador de calor e a ventoinha com os furos na placa-mãe.</p>
+          <p>Passo 6. Coloque o conjunto sobre o soquete do processador, tomando cuidado para não prender os fios do ventilador da CPU.</p>
+          <p>Passo 7. Aperte os fixadores de montagem para fixar o conjunto no lugar.</p>
+          <p>Passo 8. Conecte o cabo de alimentação ao conector do ventilador da CPU na placa-mãe.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

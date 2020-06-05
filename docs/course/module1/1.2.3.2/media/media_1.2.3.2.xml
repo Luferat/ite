@@ -1,0 +1,15 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+		<text><![CDATA[<b>PGA CPU and Socket</b>]]></text>
+</component>
+<component id="ID_s2_title">
+		<text><![CDATA[<b>LGA CPU and Socket</b>]]></text>
+</component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Slot CPU</b>]]></text> 
+</component>
+<component id="ID_s4_title">
+  <text><![CDATA[<b>Motherboard with CPU Slot</b>]]></text> 
+</component>
+</textcomponents>

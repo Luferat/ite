@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.1.2 Aplicação e Fontes de Conteúdo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Móveis</h1>
+        <h2>Android vs iOS</h2>
+      </div>
+      <div id="content">
+          <p>Os apps são programas que são executados em dispositivos móveis. Os dispositivos móveis contam com uma série de diferentes aplicativos pré-instalados para fornecer a funcionalidade básica. Existem aplicativos para realizar chamadas telefônicas, enviar e receber emails, ouvir música, tirar fotos, assistir vídeos ou jogar. Muitos outros tipos de aplicativos possibilitam a recuperação de informações, personalização do dispositivo e desempenho.</p>
+          <p>Os aplicativos são usados ​​em dispositivos móveis da mesma maneira que os programas são usados ​​em computadores. Em vez de ser instalado a partir de um disco óptico, os aplicativos são baixados a partir de uma fonte de conteúdo. Alguns aplicativos podem ser baixados gratuitamente, enquanto outros devem ser adquiridos. Muitas vezes, os aplicativos gratuitos estão carregados de anúncios que ajudam a pagar os custos de desenvolvimento. Várias fontes de conteúdo estão disponíveis para dispositivos móveis Android:</p>
+          <p><ul>
+              <li>Google Play, conforme apresentado na Figura 1</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Amazon App Store</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Androidzoom</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>AppsAPK</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>1Mobile</li>
+            </ul>
+          </p>
+          <p>Existem muitos outros sites onde os aplicativos Android podem ser encontrados. Estes sites costumam oferecer conteúdo seguro, porém, às vezes, eles disponibilizam conteúdo inseguro. É importante instalar aplicativos apenas de fontes confiáveis. Se um site questionável tiver um aplicativo desejável, verifique no Google Play ou o Amazon App Store para ver se ele pode ser baixado de uma fonte confiável. Isso garantirá que o download seja confiável. O aplicativo Google Play só permitirá a instalação de aplicativos em dispositivos que são compatíveis com eles.</p>
+          <p>Às vezes um website contém uma código Quick Response (QR), tal como apresentado na Figura 2. O código QR é semelhante a um código de barras, porém eles pode conter muito mais informação. Para usar um código QR, um aplicativo especial acessa a câmera de um dispositivo móvel para escanear o código. Ele contém um link web que permite o download direto de um aplicativo. Tenha cuidado ao usar os códigos QR, e só permita downloads e instalações de fontes confiáveis.</p>
+          <p>A Apple App Store, conforme apresentado na Figura 3, é a única fonte de conteúdo que usuários iOS podem usar para obter aplicativos e conteúdos. Isso garante que a Apple certificou o conteúdo como sendo livre de código malicioso, que o código atende diretrizes rigorosas de desempenho e não infringe os direitos autorais.</p>
+          <p>Outros tipos de conteúdos também estão disponíveis para download. Assim como os aplicativos, alguns conteúdos são gratuitos, enquanto outros devem ser adquiridos. O conteúdo que você possui atualmente também pode ser carregado em um dispositivo móvel através de uma conexão de cabo de dados ou através de Wi-Fi. Alguns conteúdos que estão disponíveis incluem:</p>
+          <p><ul>
+              <li>Música</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Programas de televisão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Filmes</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Revistas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Livros</li>
+            </ul>
+          </p>
+          <p>Push vs Pull</p>
+          <p>Existem dois métodos principais para a instalação de conteúdo em dispositivos móveis: push e pull. Tanto o Google Play quanto a Apple App Store suportam push e pull. Quando um usuário executa o Google Play ou o App Store da Apple a partir de um dispositivo móvel, os aplicativos e conteúdos que são baixados são puxados (pull) a partir de um servidor para o dispositivo.</p>
+          <p>Com os dispositivos Android, o usuário pode navegar pelo Google Play usando qualquer computador desktop ou laptop e comprar um conteúdo. O conteúdo é &quot;empurrado&quot; (push) para o dispositivo Android a partir do servidor. Usuários iOS são capaz de comprar o conteúdo do iTunes tanto de um desktop quanto de um laptop o que faz com que o mesmo seja empurrado para um dispositivo iOS.</p>
+          <p>Quando um aplicativo Android está sendo instalado, uma lista contendo todas as permissões necessárias é exibida, conforme apresentado na Figura 4. Um jogo pode precisar acessar a Internet, gerenciar as configurações de som, ou ativar a vibração, por exemplo. No entanto, o jogo não tem necessidade de acessar a lista de contatos armazenados no smartphone. Você deve concordar em conceder as permissões listadas para que ele possa ser instalado. Sempre leia a lista de permissões com cuidado e não instale aplicativos que solicitem permissão para acessar itens e características que ele não deve ter acesso.</p>
+          <p>Sideloading</p>
+          <p>Existe outra maneira de instalar aplicativos em dispositivos móveis. Os aplicativos podem ser baixados a partir de diferentes fontes na Internet e transferidos para um dispositivo móvel através da rede Wi-Fi, Bluetooth, cabo de dados ou outros métodos. Isto é chamado sideloading. Depois que o aplicativo for transferido para o dispositivo móvel, ele pode ser instalado ao tocar nele utilizando um aplicativo explorador de arquivos. No entanto, aplicativos sideloading não são recomendados, pois muitas fontes não são confiáveis. Somente instale aplicativos de fontes e desenvolvedores confiáveis.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

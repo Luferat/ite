@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.3.2.5 DHCP Addressing</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Basic Networking Concepts and Technologies</h1>
+      <h2>Networked Equipment Addressing</h2>
+    </div>
+    <div id="content">
+          <p>If more than a few computers are a part of the LAN, manually configuring IP addresses for every host on the network can be time consuming and prone to errors. A Dynamic Host Configuration Protocol (DHCP) server automatically assigns IP addresses, which simplifies the addressing process. Automatically configuring TCP/IP also reduces the possibility of assigning duplicate or invalid IP addresses. </p>
+          <p>The DHCP server maintains a list of IP addresses to assign and manages the process so that every device on the network receives a unique IP address. When the DHCP server receives a request from a host, the server selects IP address information from a set of predefined addresses that are stored in a database. When the IP address information is selected, the DHCP server offers these values to the requesting host on the network. If the host accepts the offer, the DHCP server assigns the IP address for a specific period of time. This is called leasing. When the lease expires, the DHCP server can use this address for another computer that joins the network. A device, however, can renew its lease to retain the IP address.</p>
+          <p>Before a computer on the network can take advantage of the DHCP services, the computer must be able to identify the server on the local network. A computer can be configured to accept an IP address from a DHCP server by selecting the <b>Obtain an IP address automatically </b>option in the NIC configuration window, as shown in Figure 1. When a computer is set to obtain an IP address automatically, all other IP addressing configuration boxes are not available. The DHCP settings are configured the same for a wired or wireless NIC.</p>
+          <p>A computer continually requests an IP address at 5-minute intervals from a DHCP server. If your computer cannot communicate with the DHCP server to obtain an IP address, the Windows OS automatically assigns a link-local IP. If your computer is assigned a link-local IP address, which is in the range of 169.254.0.0 to 169.254.255.255, your computer can only communicate with computers connected to the same network within this IP address range.</p>
+          <p>A DHCP server can assign the following IP address configuration information to a host: </p>
+          <p>
+            <ul>
+              <li>IP address </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Subnet mask </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Default gateway </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Optional values, such as a DNS server address, as shown in Figure 2</li>
+            </ul>
+          </p>
+          <p>In Windows 7:</p>
+          <p>
+            <b>Start > Control Panel > Network and Sharing Center > Change adapter setting > </b>right click<b> Local Area Connection > Properties > TCP/IPv4 > Properties > </b>select radio button <b>Obtain an IP address automatically > OK > OK.</b></p>
+          <p>In Windows Vista:</p>
+          <p>
+            <b>Start > Control Panel > Network and Sharing Center > Manage network connections > </b>right click<b> Local Area Connection > Properties > TCP/IPv4 > Properties > </b>select radio button <b>Obtain an IP address automatically > OK > OK.</b></p>
+          <p>In Windows XP: </p>
+          <p>
+            <b>Start > Control Panel > Network Connections > </b>right click<b> Local Area Connection > Properties > TCP/IP > Properties > </b>select radio button <b>Obtain an IP address automatically > OK > OK.</b></p>
+          <p>
+            <b>Configuring Alternate IP Settings</b>
+            <br/>Setting up an alternate IP configuration in Windows simplifies moving between a network that requires using DHCP and a network that uses static IP settings. If a computer cannot communicate with the DHCP server on the network, Windows uses the alternate IP configuration assigned to the NIC. The alternate IP configuration also replaces the APIPA address assigned when a DHCP server cannot be contacted.</p>
+          <p>To create the alternate IP configuration, as shown in Figure 3, click the <b>Alternate Configuration</b> tab located in the NIC Properties window. </p>
+          <p>
+            <b>DNS</b>
+          </p>
+          <p>To access a DNS server, a computer uses the IP address configured in the DNS settings of the NIC in the computer. DNS resolves or maps host names and URLs to IP addresses.</p>
+          <p></p>
+          <p>All Windows computers contain a DNS cache that stores host names that have recently been resolved. The cache is the first place that the DNS client looks for host name resolution. Because it is a location in memory, the cache retrieves resolved IP addresses more quickly than using a DNS server and does not create network traffic. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

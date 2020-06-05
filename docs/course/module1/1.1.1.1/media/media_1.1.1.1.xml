@@ -1,0 +1,64 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Tipos de Gabinetes do Computador</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Escolhendo um gabinete de computador</b>]]></text>
+</component>
+
+<component id="ID_s2_header01">
+<text><![CDATA[<b>Fator</b>]]></text>
+</component>
+<component id="ID_s2_header02">
+<text><![CDATA[<b>Descrição</b>]]></text>
+</component>
+
+<component id="ID_s2_btn01">
+<text><![CDATA[<b>Modelo Tipo</b>]]></text>
+</component>
+<component id="ID_s2_btn02">
+<text><![CDATA[<b>Tamanho</b>]]></text>
+</component>
+<component id="ID_s2_btn03">
+<text><![CDATA[<b>Espaço Disponível</b>]]></text>
+</component>
+<component id="ID_s2_btn04">
+<text><![CDATA[<b>Fonte de Alimentação</b>]]></text>
+</component>
+<component id="ID_s2_btn05">
+<text><![CDATA[<b>Aparência</b>]]></text>
+</component>
+<component id="ID_s2_btn06">
+<text><![CDATA[<b>Tela de Status</b>]]></text>
+</component>
+<component id="ID_s2_btn07">
+<text><![CDATA[<b>Ventilação</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Existem dois modelos principais de gabinetes. Um tipo de gabinete para PCs é o desktop e o outro é a torre. O tipo de placa-mãe que você escolher determina o tipo de gabinete que pode ser usado. O tamanho e a forma devem corresponder exatamente.]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[Se um computador possui muitos componentes, ele precisará de mais espaço para o fluxo de ar para manter o sistema refrigerado.]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[O gabinetes desktop permitem que os espaços reduzidos sejam conservados uma vez que o monitor pode ser colocado sobre o topo da unidade. O design de um gabinete desktop pode limitar o número e o tamanho dos componentes que podem ser adicionados.]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[Você deve combinar a potência e o tipo do conector da fonte de alimentação com o tipo da placa-mãe escolhida.]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[Para algumas pessoas, o visual do gabinete não importa. Para outros, é crítico. Existem diversos modelos de gabinetes para escolher se for necessário dispor de um gabinete mais atraente.]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[O que está acontecendo dentro do gabinete pode ser muito importante. Os LEDs indicados na parte externa do gabinete podem dizer se o sistema está recebendo energia, quando o disco rígido está sendo usado e quando o computador está em modo sleep ou hibernando.]]></text>
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[Todos os gabinetes possuem uma ventoinha na fonte de alimentação e em alguns há outro orifícios na parte traseira para ajudar o ar entrar ou sair do gabinete. Alguns gabinetes são projetados com mais aberturas para ventoinhas, no caso de que o sistema necessite de uma forma de dissipar uma quantidade alta de calor. Esta situação pode ocorrer quando vários dispositivos estiverem instalados próximos uns dos outros no gabinete.]]></text>
+</component>
+
+
+
+</textcomponents>

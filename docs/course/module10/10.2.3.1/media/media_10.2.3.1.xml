@@ -1,0 +1,12 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Detecção de Vírus</b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Programa Anti-spyware</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>Antivírus Rogue</b>]]></text>
+</component>
+	
+</textcomponents>

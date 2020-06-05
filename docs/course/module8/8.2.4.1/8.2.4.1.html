@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.1 Orientação e Calibragem da Tela</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Móveis</h1>
+        <h2>Características Comuns de Dispositivos Móveis</h2>
+      </div>
+      <div id="content">
+          <p>Orientação da Tela</p>
+          <p>A maioria das telas dos dispositivos móveis possuem um formato retangular. Este formato permite que o conteúdo a seja visto de duas maneiras diferentes: retrato e paisagem. Alguns conteúdos se encaixam melhor em uma visão específica. Por exemplo, o vídeo preenche toda a tela no modo paisagem, mas ele só preenche metade da tela quando está no modo retrato. Além disso, um livro ou revista visualizado em modo retrato parece muito natural, pois é semelhante a sua forma real. Geralmente, os usuários podem escolher o modo de visualização que é mais confortável para eles em cada tipo de conteúdo.</p>
+          <p>Muitos dispositivos móveis contêm sensores, como um acelerômetro, que podem determinar como o dispositivo está sendo segurado. Assim, o conteúdo é rodado automaticamente para a posição do aparelho, horizontal ou vertical. Esse recurso é útil ao tirar uma fotografia, por exemplo. Quando o dispositivo está no modo paisagem, o aplicativo da câmera também se transforma em modo paisagem. Além disso, quando um usuário está criando um texto, virar o aparelho para o modo paisagem altera o aplicativo para o modo paisagem, tornando o teclado maior e mais largo, facilitando assim o seu uso.</p>
+          <p>Quando se utiliza um dispositivo Android, para permitir a rotação automática, conforme mostrado na Figura 1, utilize o seguinte caminho:</p>
+          <p>Configurações > Tela > selecione Girar tela automaticamente</p>
+          <p>Quando se utiliza um dispositivo iOS, para permitir a rotação automática, conforme mostrado na Figura 2, utilizar o seguinte caminho:</p>
+          <p>Pressione duas vezes o botão Home > arraste a barra multitarefa, da esquerda para a direita > pressione o ícone do cadeado, à esquerda</p>
+          <p>Calibragem da Tela</p>
+          <p>Ao usar um dispositivo móvel, talvez você possa precisar ajustar o brilho da tela. Aumente o nível de brilho da tela ao usar um dispositivo móvel ao ar livre, pois a luz solar brilhante dificulta a leitura das informações na tela. Por outro lado, um brilho muito baixo é útil ao ler um livro em um dispositivo móvel durante a noite. Alguns dispositivos móveis podem ser configurados para ajustar automaticamente o brilho, dependendo da quantidade de luz ambiente. O dispositivo deve ter um sensor de luz para usar o brilho automático.</p>
+          <p>A tela de LCD na maioria dos dispositivos móveis utiliza mais energia. Diminuir o brilho ou usar o brilho-automático ajuda a conservar energia. Ajuste o brilho para o nível mais baixo para obter uma maior duração da bateria do dispositivo.</p>
+          <p>Ao utilizar um dispositivo Android para configurar o brilho da tela, como mostrado na Figura 3, use o seguinte caminho:</p>
+          <p>Configurações > Tela > Brilho > Ajuste o brilho para o nível desejado ou selecione a opção Brilho Automático > OK</p>
+          <p>Ao usar um iPad, para configurar o brilho da tela, use o seguinte caminho:</p>
+          <p>Pressione duas vezes o botão Home > arraste a barra multitarefa, da esquerda para a direita > Ajuste o brilho para o nível desejado > Clique no botão Home</p>
+          <p>Para configurar o brilho no menu Ajustes, utilize o seguinte caminho:</p>
+          <p>Ajustes > Imagens de Fundo e Brilho > Ajuste o brilho para o nível desejado ou selecione a opção Brilho Automático > clique no botão Home</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

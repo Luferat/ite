@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.1.1 Características e Capacidades de Impressoras</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Recursos Comuns da Impressora</h1>
+        <h2>Características e Capacidades</h2>
+      </div>
+      <div id="content">
+          <p>Como um técnico de computador, você pode ser obrigado a comprar, reparar ou cuidar de uma impressora. O cliente pode solicitar que você execute as seguintes tarefas:</p>
+          <p><ul>
+              <li>Selecione uma impressora</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instale e configure uma impressora</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Solucione problemas em uma impressora</li>
+            </ul>
+          </p>
+          <p>Atualmente, as impressoras disponíveis geralmente são impressoras a laser, que usam tambores de imagem, ou a jato de tinta, com tecnologia de pulverização eletrostática. As impressoras matriciais que utilizam tecnologia de impacto são utilizadas em aplicações que exigem cópias de carbono. A Figura 1 mostra três tipos de impressoras.</p>
+          <p>Capacidade e Velocidade</p>
+          <p>As capacidades da impressora e a sua velocidade são fatores a considerar ao escolher uma impressora. A velocidade de uma impressora é medida em páginas por minuto (ppm). A velocidade da impressora varia entre marcas e modelos. A velocidade também é afetada pela complexidade da imagem e pela qualidade desejada pelo utilizador. Por exemplo, um texto na qualidade rascunho imprime mais rápido do que um texto em alta qualidade. Uma imagem digital colorida na qualidade rascunho imprime mais rápido que na qualidade fotografia. Impressoras jato de tinta geralmente são mais lentas, porém muitas vezes são suficientes para uma casa ou pequeno escritório.</p>
+          <p>Corida ou Preto e Branco</p>
+          <p>Um monitor de computador produz cores através da mistura aditiva de pontos que são exibidos na tela. Os pontos produzem a gama de cores usando o pontos azuis, vermelhos e verdes(RGB). Em contraste, a impressora produz cores usando a mistura subtrativa. A Figura 2 mostra uma roda de cores CMYK. O modelo de cores CMYK é um modelo de cores subtrativas usado na impressão das cores. CMYK é a sigla de um sistema de cores composta por quatro cores: ciano, magenta, amarelo e preto (representado pela &quot;Key&quot;, como cor de base).</p>
+          <p>A escolha entre uma impressora a preto-e-branco e uma impressora colorida depende das necessidades do cliente. Se o cliente estiver imprimindo principalmente cartas e não precisar de recursos coloridos, uma impressora a preto-e-branco é suficiente, podendo de ser mais econômica. Um professor do ensino fundamental pode precisar de uma impressora colorida para adicionar emoção as suas aulas.</p>
+          <p>Qualidade</p>
+          <p>A qualidade de impressão é medida em pontos por polegada (dpi). Quanto maior o número de dpi, melhor a resolução da imagem. Quando a resolução é maior, o texto e as imagens são mais nítidos. Para produzir as melhores imagens de alta resolução, use tinta e papel de alta qualidade.</p>
+          <p>Confiabilidade</p>
+          <p>A impressora deve ser confiável. Devido aos vários tipos de impressoras disponíveis no mercado, analise as especificações das impressoras antes de escolher uma. Estas são algumas opções do fabricante a serem consideradas:</p>
+          <p><ul>
+              <li>Garantia - Identifique o que é coberto pela garantia.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Programa manutenção - A manutenção é baseada no uso esperado. Informações de uso estão presentes na documentação ou no site do fabricante.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tempo médio entre falhas (MTBF) - A impressora deve funcionar sem falhas durante um período médio de tempo. Esta informação está presente na documentação ou no site do fabricante.</li>
+            </ul>
+          </p>
+          <p>Custo Total de Propriedade</p>
+          <p>Ao comprar uma impressora, há mais do que apenas o custo inicial da impressora a considerar. O custo total de propriedade (TCO) inclui uma série de fatores:</p>
+          <p><ul>
+              <li>Preço de compra inicial</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Custo de material, como papel e tinta</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Páginas por mês</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Preço por página</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Custo de manutenção</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Custos de garantia</li>
+            </ul>
+          </p>
+          <p>Ao calcular o TCO, considere a quantidade de impressão necessária e o tempo de vida esperado da impressora.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

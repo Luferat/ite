@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.2.14 Opções de Energia</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle</h2>
+      </div>
+      <div id="content">
+          <p>O utilitário Opções de Energia do Windows permite que você reduza o consumo de energia de determinados dispositivos, ou de todo o sistema, como mostrado na figura. Utilize as opções de energia para maximizar o desempenho ou economizar energia, configurando o plano de energia do sistema. Os planos de energia são um conjunto de configurações de hardware e do sistema que controlam o uso de energia do computador. No Windows XP, estes planos são chamados de Esquemas de Energia.</p>
+          <p>Ambos Windows 7 e Windows Vista têm planos de energia pré-definidos, enquanto o Windows XP tem esquemas de energia pré-definidos. Estas são as configurações padrão, criadas quando o sistema operacional é instalado. Você pode usar as configurações padrão ou os planos de energia personalizados, que são criados baseados em exigências de trabalho específicas.</p>
+          <p>NOTA: As opções de energia detectam automaticamente alguns dispositivos conectados ao computador. Portanto, as janelas de Opções de Energia variam de acordo com o hardware detectado.</p>
+          <p>Para acessar o utilitário Opções de Energia, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Opções de Energia</p>
+          <p>Você pode escolher entre as seguintes opções:</p>
+          <p><ul>
+              <li>Exigir senha ao despertar</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Escolher função dos botões de energia</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Escolher a função do fechamento da tampa (apenas para laptops)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Criar um plano de energia</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Escolher tempo para desligar o vídeo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alterar quando o computador é suspenso</li>
+            </ul>
+          </p>
+          <p>Selecionar Escolher a função dos botões de energia ou Escolher a função do fechamento da tampa define como um computador agirá quando o botão de energia ou suspender for pressionado ou quando a tampa de um laptop for fechada. Caso os usuários não queiram desligar completamente um computador, as seguintes opções estão disponíveis:</p>
+          <p><ul>
+              <li>Não fazer nada - O computador continua a funcionar a plena potência.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Suspender - Documentos e aplicativos são salvos na memória RAM, permitindo que o computador ligue rapidamente. No Windows XP, essa opção é chamada de Espera.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Hibernar - Documentos e aplicativos são salvos em um arquivo temporário no disco rígido. Neste modo, o computador leva um pouco mais de tempo para ligar, comparado à opção Suspender.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.5.2.4 Teclado, Touchpad e Tela</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Hardware de Laptops e Componente de Instalação e Configuração</h1>
+        <h2>Substituindo Dispositivos de Hardware</h2>
+      </div>
+      <div id="content">
+          <p>O teclado e o touchpad são dispositivos de entrada considerados FRUs. A substituição de um teclado ou touchpad normalmente requer a remoção da carcaça de plástico que cobre o interior de um laptop, como mostrado na Figura 1. Em alguns casos, um touchpad é conectado à carcaça de plástico, tal como mostrado na Figura 2.</p>
+          <p></p>
+          <p>Substituição do Teclado</p>
+          <p>Para remover e substituir um teclado, siga estes passos:</p>
+          <p>Passo 1. Desligue o laptop, desconecte o adaptador de energia e remova a bateria.</p>
+          <p>Passo 2. Abra o laptop.</p>
+          <p>Passo 3. Remova todos os parafusos que prendem o teclado.</p>
+          <p>Passo 4. Remova todas as travas de plástico que prendem o teclado.</p>
+          <p>Passo 5. Levante o teclado e desconecte o cabo que o conecta na placa-mãe.</p>
+          <p>Passo 6. Remova o teclado.</p>
+          <p>Passo 7. Conecte o cabo do novo teclado na placa-mãe.</p>
+          <p>Passo 8. Insira o teclado e prenda-o.</p>
+          <p>Passo 9. Substitua todos os parafusos necessários para fixar o teclado.</p>
+          <p>Passo 10. Feche a tela e vire o laptop.</p>
+          <p>Passo 11. Conecte o adaptador de energia e ligue o laptop.</p>
+          <p></p>
+          <p>Substituição do Touchpad</p>
+          <p>Para remover e substituir um touchpad, siga estes passos:</p>
+          <p>Passo 1. Se o touchpad estiver conectado à carcaça, remova a carcaça. Se ele for um componente separado, remova todos os dispositivos que bloqueiam o acesso ao touchpad.</p>
+          <p>Passo 2. Feche a tela e vire o computador.</p>
+          <p>Passo 3. Retire o carcaça inferior do laptop.</p>
+          <p>Passo 4. Desconecte os cabos que ligam o touchpad à placa-mãe.</p>
+          <p>Passo 5. Remova os parafusos que prendem o touchpad.</p>
+          <p>Passo 6. Remova o touchpad.</p>
+          <p>Passo 7. Insira o novo touchpad e fixe-o na carcaça do laptop.</p>
+          <p>Passo 8. Substitua os parafusos que prendem o touchpad.</p>
+          <p>Passo 9. Conecte os cabos do touchpad na placa-mãe.</p>
+          <p>Passo 10. Encaixe a carcaça inferior do latptop.</p>
+          <p>Passo 11. Vire o laptop e abra a tela.</p>
+          <p>Passo 12. Ligue o laptop e garanta que o touchpad está funcionando corretamente.</p>
+          <p></p>
+          <p>Substituição da Tela</p>
+          <p>A tela de um laptop geralmente é o componente de substituição mais caro. Infelizmente, ela também é um dos mais susceptíveis a danos, devido a danos e pressão causados na tela.</p>
+          <p></p>
+          <p>Para substituir uma tela, siga estes passos:</p>
+          <p></p>
+          <p>Passo 1. Remova o adaptador de energia e a bateria do laptop, juntamente com quaisquer outros componentes informados pelo fabricante.</p>
+          <p>Passo 2. Remova a parte superior da carcaça do laptop e o teclado.</p>
+          <p>Passo 3. Desconecte o cabo do monitor da placa-mãe.</p>
+          <p>Passo 4. Remova todos os parafusos que prendem a tela.</p>
+          <p>Passo 5. Separe o conjunto de armação da tela.</p>
+          <p>Passo 6. Insira a armação da tela na carcaça do laptop.</p>
+          <p>Passo 7. Fixe a tela, substituindo os parafusos.</p>
+          <p>Passo 8. Conecte o cabo do monitor na placa-mãe.</p>
+          <p>Passo 9. Conecte de volta o teclado e encaixe a parte superior do laptop.</p>
+          <p>Passo 10. Insira a bateria e conecte o adaptador de energia. Ligue o laptop e verifique se a nova tela está funcionando.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

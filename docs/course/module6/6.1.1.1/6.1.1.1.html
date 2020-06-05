@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.1.1 Definição de Redes de Computadores</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Princípios da Rede</h1>
+        <h2>Redes de Computadores</h2>
+      </div>
+      <div id="content">
+          <p>As redes sãos sistemas formados por links. Por exemplo, as estradas que ligam grupos de pessoas, juntas, criam uma rede física. Conexões com seus amigos criam sua rede pessoal. Os sites que permitem aos indivíduos se conectar à páginas uns dos outros são chamados de redes sociais.</p>
+          <p></p>
+          <p>As pessoas usam as seguintes redes todos os dias:</p>
+          <p><ul>
+              <li>Sistema de entrega de correio</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sistema telefônico</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sistema de transporte público</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede corporativa de computadores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Internet</li>
+            </ul>
+          </p>
+          <p>As redes compartilham informações e usam vários métodos para controlar a maneira com que as informações fluem. A informação na rede vai de um lugar para outro, por vezes através de caminhos diferentes, para chegar ao destino apropriado. Por exemplo, o sistema de transporte público é uma rede semelhante a uma rede de computadores. Os carros, caminhões e outros veículos são como as mensagens que trafegam na rede. Cada motorista define um ponto de partida (computador de origem) e um ponto final (computador de destino). Dentro deste sistema, existem regras, tais como placas e semáforos, que controlam o fluxo da origem para o destino. As redes de computadores também usam regras para controlar o fluxo de dados entre os hosts em uma rede.</p>
+          <p></p>
+          <p>Um host é qualquer dispositivo que envia e recebe informação na rede. Alguns dispositivos podem agir como hosts ou periféricos. Por exemplo, uma impressora conectada a um latptop que está em uma rede age como um periférico. Se a impressora estiver conectada diretamente a uma rede, ela estará agindo como um host.</p>
+          <p></p>
+          <p>Diferentes tipos de dispositivos podem se conectar a uma rede:</p>
+          <p><ul>
+              <li>Computadores Desktop</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Laptops</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tablets</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Smartphones</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressoras</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Servidores de arquivos e impressão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Consoles de jogo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Eletrodomésticos</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As redes de computadores são utilizadas globalmente em empresas, residências, escolas e agências governamentais. Muitas das redes são conectadas uma à outra por meio da Internet. Uma rede pode compartilhar diversos tipos de recursos e dados:</p>
+          <p><ul>
+              <li>Serviços, tais como impressão ou digitalização</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O espaço de armazenamento em dispositivos removíveis, como discos rígidos ou drives ópticos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Aplicações, tais como bancos de dados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Informação, armazenadas em outros computadores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Documentos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Calendários, sincronizado entre um computador e um smartphone</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Os dispositivos de rede usam vários tipos de conexões:</p>
+          <p><ul>
+              <li>Cabeamento de cobre - Utiliza os sinais elétricos para transmitir dados entre dispositivos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabeamento de fibra óptica - usa fibra de vidro ou fibra de plástico para transportar informações como pulsos de luz</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conexão sem fio - usa sinais de rádio, tecnologia de infravermelho ou transmissões de satélite</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

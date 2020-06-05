@@ -1,0 +1,84 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+    margin:0;
+    height:98%;
+
+}
+#flashContent {
+    width:98%;
+    height:98%;
+}
+
+#mainDiv {
+    height: 410px;
+    width: 440px;
+    position:absolute;
+    top:0px;
+}
+
+#ID_s2_term06,#ID_s2_term07{ border: 2px solid #fff;}
+
+
+#ID_FEEDBACK{cursor:pointer !important;}
+
+
+#textID_s2_drag01{
+    font-size: 10px !important;
+    line-height: 12px !important;
+    padding: 0px 0 0 4px !important;
+    text-align: left !important;
+    width: 146px !important;
+}
+
+
+#textID_s2_drag02{
+    font-size: 10px !important;
+    line-height: 12px !important;
+    padding: 0px 0 0 4px !important;
+    text-align: left !important;
+    width: 146px !important;
+}
+
+#textID_s2_drag03{
+    font-size: 10px !important;
+    line-height: 12px !important;
+    padding: 0px 0 0 4px !important;
+    text-align: left !important;
+    width: 146px !important;
+}
+
+#textID_s2_drag04{
+    font-size: 10px !important;
+    line-height: 12px !important;
+    padding: 0px 0 0 4px !important;
+    text-align: left !important;
+    width: 146px !important;
+}
+
+#textID_s2_drag05{
+    font-size: 10px !important;
+    line-height: 12px !important;
+    padding: 0px 0 0 4px !important;
+    text-align: left !important;
+    width: 146px !important;
+}
+
+#textID_s2_drag06{
+    font-size: 10px !important;
+    line-height: 12px !important;
+    padding: 0px 0 0 4px !important;
+    text-align: left !important;
+    width: 146px !important;
+}
+
+#textID_s2_drag07{
+    font-size: 10px !important;
+    line-height: 12px !important;
+    padding: 0px 0 0 4px !important;
+    text-align: left !important;
+    width: 146px !important;
+}

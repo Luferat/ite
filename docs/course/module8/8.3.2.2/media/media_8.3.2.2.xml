@@ -1,0 +1,5 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Solicitação de Senha (PIN) Bluetooth</b>]]></text>
+	</component>
+</textcomponents>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.12.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Redes</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Este capítulo introduziu-lhe os fundamentos de rede, os benefícios de se ter uma rede, as formas de se conectar computadores em uma rede e o planejamento, implementação e modernização de redes e componentes de rede. Os diferentes aspectos da solução de problemas de uma rede foram discutidos com exemplos de como analisar e implementar soluções simples. Os seguintes conceitos deste capítulo são importantes para serem lembrados:</p>
+          <p><ul>
+              <li>Uma rede de computadores é composta por dois ou mais computadores que compartilham dados e recursos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Existem vários tipos de rede diferentes, tais como LAN, WLAN, PAN, MAN e WAN.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Em uma rede peer-to-peer, os dispositivos são conectados diretamente um ao outro. Uma rede peer-to-peer é fácil de instalar e não é necessário nenhum equipamento adicional ou administrador dedicado. Os usuários controlam seus próprios recursos, sendo que essa rede funciona melhor com um pequeno número de computadores. A rede cliente/servidor usa um sistema dedicado que funciona como servidor. O servidor responde as solicitações feitas por usuários ou clientes conectados à rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A topologia da rede define a forma na qual os computadores, impressoras e outros dispositivos são conectados. A topologia física descreve a disposição do fio e dos dispositivos, bem como os caminhos utilizados pela transmissão de dados. A topologia lógica é o caminho que sinaliza a viagem de um ponto a outro. As topologias incluem barramento, estrela, anel, malha e híbrida.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dispositivos de rede são usados ​​para conectar computadores e periféricos para que eles possam se comunicar. Estes incluem hubs, bridges, switches, roteadores e dispositivos multifuncionais. O tipo de dispositivo implementado depende do tipo de rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os meios de rede pode ser definidos como os meios pelos quais os sinais ou dados são enviados, de um computador para outro. Os sinais podem ser transmitidos via cabo ou sem fio. Os tipos de mídia discutidos foram o cabo coaxial, par trançado, fibra óptica e as frequências de rádio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A Ethernet atualmente é o mais popular tipo de arquitetura LAN. Arquitetura refere-se a estrutura geral de um computador ou sistema de comunicações. Ela determina as capacidades e limitações do sistema. A arquitetura de Ethernet baseia-se na norma IEEE 802.3. O padrão IEEE 802.3 especifica que a rede implemente o método de controle de acesso CSMA/CD.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O modelo de referência OSI é uma estrutura padrão que divide as funções de rede em sete camadas distintas: aplicação, apresentação, sessão, transporte, rede, enlace de dados e física. É importante compreender a finalidade de cada camada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O conjunto de protocolos TCP/IP tornou-se o padrão dominante para a Internet. O TCP/IP representa um conjunto de normas comuns que especificam como os pacotes de informação são trocados entre computadores de uma ou mais redes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A NIC é um dispositivo que se conecta a uma placa-mãe e fornece interfaces para conexões de cabo de rede. Ele é a interface LAN do computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Recursos são compartilhados em uma rede quando os computadores pertencem ao mesmo grupo de trabalho e grupo doméstico.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Testes de conectividade de rede podem ser realizados através da CLI, como o ping, ipconfig, net, tracert e nslookup.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os três métodos de transmissão utilizados para enviar sinais através de canais de dados são simplex, half-duplex e full-duplex. Tecnologia de rede full-duplex aumenta o desempenho, pois os dados podem ser enviados e recebidos ao mesmo tempo. DSL, cabo e outras tecnologias de banda larga operam em modo full-duplex.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os dispositivos de rede e os meios de comunicação, tais como componentes do computador, devem ser preservados. É importante limpar o equipamento regularmente e usar uma abordagem proativa para evitar problemas. Repare ou substitua o equipamento quebrado para evitar tempo de inatividade.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Muitos riscos de segurança estão associados a ambientes de rede, dispositivos e meios de comunicação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tome decisões de projeto de rede que atendam as necessidades e os objetivos de seus clientes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Selecione os componentes de rede que oferecem os serviços e recursos necessários para implementar uma rede baseada nas necessidades do cliente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Planeje as instalações de rede com base nos serviços e equipamentos necessários.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Atualizar uma rede pode envolver equipamentos ou cabos adicionais.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Evite problemas de rede, através do desenvolvimento e implementação de uma política de manutenção preventiva abrangente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ao solucionar problemas de rede, ouça o que o seu cliente lhe diz para que você possa formular perguntas abertas e fechadas que irão ajudá-lo a determinar onde começar a corrigir o problema. Verifique as questões óbvias e utilize as soluções rápidas antes de escalar o processo de solução de problemas.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

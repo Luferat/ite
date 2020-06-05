@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.5.1.14 Backup do Disco Rígido</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para os Sistemas Operacionais</h1>
+        <h2>Plano de Manutenção Preventiva para o Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>É importante estabelecer uma estratégia de backup que inclua a recuperação de dados pessoais. Você pode usar o Utilitário de Backup da Microsoft, apresentado na figura, para realizar backups, conforme necessário. O uso do computador, bem como os requisitos organizacionais, determinam a frequência com que os dados devem ser copiados e o tipo de backup executado.</p>
+          <p></p>
+          <p>Você pode escolher entre diversos tipos de backups, dependendo das suas necessidades.</p>
+          <p></p>
+          <p>Backup Normal</p>
+          <p>Um backup normal também é chamado de backup completo. Durante um backup normal, todos os arquivos selecionados no disco são arquivados na mídia de backup. Estes arquivos são marcados como arquivados, limpando o bit de arquivo.</p>
+          <p></p>
+          <p>Backup de Cópia</p>
+          <p>Um backup de cópia copia todos os arquivos selecionados. Ele não marca os arquivos como arquivado.</p>
+          <p></p>
+          <p>Backup Incremental</p>
+          <p>O backup incremental faz backup de todos os arquivos e pastas que foram criados ou modificados desde o último backup normal ou incremental. Ele marca os arquivos como arquivados, limpando o bit de arquivo. O efeito disso é avançar a ponto de partida dos backups diferenciais, sem ter que re-arquivar todo o conteúdo da unidade. Para recuperar um backup incremental, o último backup completo deve ser recuperado, seguido por todos os backups incrementais em ordem.</p>
+          <p></p>
+          <p>Backup Diferencial</p>
+          <p>O backup diferencial realiza o backup de todos os arquivos e pastas que foram criados ou modificados desde de o último backup normal ou incremental. Um backup diferencial não marca os arquivos como arquivado. As cópias são feitas a partir do mesmo ponto de partida de um backup incremental ou completo realizado. Fazer backups diferenciais é importante, pois apenas os últimos backups completos e diferenciais são necessários para restaurar todos os dados.</p>
+          <p></p>
+          <p>Backup Diário</p>
+          <p>Os backups diários armazenam os arquivos que foram alterados no dia do backup. Backups diários não modificam o bit de arquivo.</p>
+          <p></p>
+          <p>Ele pode demorar um tempo longo para executar o backup. Se a estratégia de backup for seguida com atenção, não é necessário fazer o backup de todos os arquivos toda vez. Em vez disso, apenas os arquivos que foram alterados desde o último backup precisam ser copiados.</p>
+          <p></p>
+          <p>Para acessar o utilitário de backup no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Backup e Restauração</p>
+          <p></p>
+          <p>Para acessar o utilitário de backup no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Acessórios > Ferramentas do Sistema > Status de Backup e Configuração</p>
+          <p></p>
+          <p>Para acessar o utilitário de backup no Windows XP Professional, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Acessórios > Ferramentas do Sistema > Backup</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.1.4 Testar a Teoria para Determinar a Causa</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Processo de Solução de Problemas</h1>
+        <h2>Etapas do Processo de Solução de Problemas</h2>
+      </div>
+      <div id="content">
+          <p>Para solucionar um problema, você deve testar as suas teorias, uma de cada vez, começando pelas soluções mais simples e rápidas. A Figura 1 exibe alguns passos comuns para determinar a causa do problema. Após identificar a causa do problema, você deverá determinar quais passos são necessários para resolvê-lo. Conforme você vai ganhando mais experiência na solução de problemas, mais rápido você trabalhará em cada etapa deste processo. Por agora, pratique cada um dos passos para entender melhor o processo de solução de problemas.</p>
+          <p>Se não for possível determinar a causa exata do problema depois de testar todas as suas teorias, estabeleça uma nova ​​e teste-a. Se necessário, encaminhe o problema para um técnico mais experiente. Antes de encaminhar o problema, documente cada teste que você realizou, conforme apresentado na Figura 2.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

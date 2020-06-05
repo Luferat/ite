@@ -1,0 +1,37 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+
+#htmlMedia {
+    overflow: auto;
+    position: relative;
+
+}
+
+
+.maintabPan{
+    width:94%;
+    height:auto;
+    border:0px;
+    text-align:center;
+	
+}
+
+.bottomtext
+{   font-weight:bold;
+    text-align:left;
+    padding:8px 0 0 76px;
+    font-size:12pt;
+}
+
+#flashContent {
+    width:98%;
+    height:98%;
+    overflow:hidden !important;
+}

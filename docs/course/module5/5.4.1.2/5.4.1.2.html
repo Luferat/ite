@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.4.1.2 Hypervisor: Virtual Machine Manager</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Virtualização Client-Side</h1>
+        <h2>Propósito e Requisitos da Virtualização</h2>
+      </div>
+      <div id="content">
+          <p>O software que cria e gerencia uma máquina virtual em uma máquina host é chamado de hypervisor ou Virtual Machine Manager (VMM). O hypervisor pode executar várias máquinas virtuais em um único computador hospedeiro. Cada máquina virtual executa seu próprio sistema operacional. O número de máquinas virtuais que podem ser executadas depende dos recursos de hardware da máquina hospedeira. O hypervisor aloca recursos físicos do sistema, como CPU, RAM e disco rígido para cada máquina virtual, de acordo com a sua necessidade. Isto garante que a operação de uma máquina virtual não interfira no funcionamento de uma outra.</p>
+          <p></p>
+          <p>Existem dois tipos de hypervisors: Tipo 1 (native) e Tipo 2 (hosted). O hypervisor tipo 1 é executado diretamente no hardware de um host, gerenciando assim a alocação de recursos do sistema para os sistemas operacionais convidados. O tipo 2 é hospedado por um OS. O Windows Virtual PC é um exemplo de hypervisor tipo 2.</p>
+          <p></p>
+          <p>Windows Virtual PC</p>
+          <p>Windows Virtual PC é a plataforma de virtualização para o Windows 7. O Virtual PC permite particionar recursos do sistema para máquinas virtuais que executam um sistema operacional Windows, utilizando um cópia licenciada do Windows 7, Windows Vista e Windows XP. Você pode baixar o Virtual PC a partir do site da Microsoft. A figura mostra os requisitos de hardware necessários para executar o Virtual PC. É necessário utilizar o Virtual PC para executar o programa Windows XP Mode no Windows 7.</p>
+          <p>Windows XP Mode</p>
+          <p>O Windows XP Mode é um programa disponível para as versões Professional, Enterprise e Ultimate do Windows 7. O Windows XP Mode usa tecnologia de virtualização que permite aos usuários executar programas do Windows XP no Windows 7. Ele abre uma máquina virtual no área de trabalho do Windows 7, fornecendo uma versão totalmente funcional do Windows XP, incluindo o acesso a todos os recursos do sistema. Depois de instalar um programa no Windows XP Mode, você poderá executar o programa no modo XP e acessá-lo a partir do menu Iniciar do Windows 7.</p>
+          <p>NOTA: Antes de usar o Windows XP Mode, baixe e instale o Windows Virtual PC.</p>
+          <p>Para acessar o Windows XP Mode no Windows 7, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar> Todos os Programas.</p>
+          <p>Passo 2. Clique em Windows Virtual PC> Windows XP Mode.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

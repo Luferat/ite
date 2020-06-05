@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.4.2 Utilitário de Gerenciamento de Disco</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Multiboot (Inicialização Múltipla)</h2>
+      </div>
+      <div id="content">
+          <p>A configuração multiboot requer vários discos rígidos ou um disco rígido que tenha várias partições. Para criar uma nova partição, acesse o utilitário de gerenciamento de disco, como mostrado na Imagem 1. Você também pode usar o utilitário de gerenciamento de disco para completar as seguintes tarefas:</p>
+          <p></p>
+          <p><ul>
+              <li>Exibir o status da unidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Estender partições</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dividir partições</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Atribuir letras à unidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Adicionar unidades</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Adicionar matrizes</li>
+            </ul>
+          </p>
+          <p>Para acessar o utilitário Gerenciamento de disco no Windows 7 e Windows Vista, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar > botão direito do mouse em Computador > Gerenciar > selecione Gerenciamento de disco</p>
+          <p></p>
+          <p>Para acessar o utilitário Gerenciamento de disco no Windows XP, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar > botão direito do mouse em Meu Computador > Gerenciar > selecione Gerenciamento de disco</p>
+          <p>Status da unidade</p>
+          <p>O utilitário de Gerenciamento de disco apresenta o estado de cada disco, como mostrado na Imagem 2. Os drivers no computador exibem uma das seguintes condições:</p>
+          <p><ul>
+              <li>Exterior - Um disco dinâmico que foi movido para um computador a partir de outro computador com o Windows XP</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Saudável - Um volume que está funcionando corretamente</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Inicialização - Um disco básico que está sendo convertido em um disco dinâmico</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Em falta - Um disco dinâmico que está corrompido, desligado ou desconectado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não inicializado - Um disco que não contenha uma assinatura válida</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Online - Um disco básico ou dinâmico que é acessível e não apresenta problemas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Online (Errors) - erros de I/O detectado em um disco dinâmico</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Offline - Um disco dinâmico que está corrompido ou não disponível</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ilegível - Um disco básico ou dinâmico que sofreu falha de hardware, corrompido ou erros de I/O</li>
+            </ul>
+          </p>
+          <p>Outros indicadores de status da unidade podem ser exibidos ao usar outros drivers que não os do disco rígido, como um CD de áudio que está na unidade óptica ou uma unidade removível que está vazia.</p>
+          <p>Estendendo Partições</p>
+          <p>No Gerenciador de disco, você pode estender partições primárias e unidades lógicas se houver espaço não alocado no disco rígido. Para estender um disco básico, ele deve ser formatado com o formato de arquivo NTFS. Estender um disco rígido aumenta a quantidade de espaço disponível em uma partição primária ou unidade lógica. Unidades lógicas e volumes do sistema deve ser estendidos para ter mais espaço contíguo e o tipo de disco deve ser convertido para dinâmico. Outras partições podem ser estendidas para o espaço não contíguo, e o tipo de disco deve ser convertido para dinâmico</p>
+          <p></p>
+          <p>Para estender uma partição no Gerenciador de Disco, siga estes passos:</p>
+          <p></p>
+          <p>Passo 1. Clique com botão direito do mouse na partição desejada.</p>
+          <p>Passo 2. Clique em Estender Volume.</p>
+          <p>Passo 3. Siga as instruções na tela.</p>
+          <p></p>
+          <p>Dividindo Partições</p>
+          <p>Se um disco rígido foi particionado automaticamente no Windows 7 e Windows Vista, há apenas uma partição. Se você quer dividir a partição, você pode usar o recurso Diminuir Volume. Esta característica reduz a dimensão da partição do original, o que cria um espaço de disco não atribuído, que é usada para criar uma nova partição. Você deve formatar o espaço não alocado e atribuir uma letra de unidade a ele.</p>
+          <p></p>
+          <p>Para diminuir uma partição no Windows 7 e Windows Vista a partir do utilitário Gerenciamento de disco, clique com o botão direito na unidade e selecione Diminuir Volume.</p>
+          <p></p>
+          <p>Atribuir letras a unidade</p>
+          <p>Você pode alterar, adicionar e remover letras de unidade e caminhos. Por padrão, o Windows atribui uma letra a uma partição ou unidade depois de ser criado ou adicionado. Você pode alterar a designação de uma letra a uma unidade, desde que a nova letra não esteja sendo usada por outra unidade.</p>
+          <p></p>
+          <p>Para alterar uma letra de unidade no Windows 7 pelo utilitário Gerenciamento de disco, clique com botão direito na unidade e selecione Alterar letra de unidade e caminho.</p>
+          <p></p>
+          <p>Adicionando Unidades</p>
+          <p>Para aumentar a quantidade de espaço de armazenamento disponível em um computador, ou implementar uma configuração RAID, você pode adicionar unidades ao computador. Se o disco rígido adicional foi instalado corretamente, o BIOS deve reconhecê-lo automaticamente. Depois que a unidade está instalada, você pode verificar se ela é reconhecida usando o utilitário de gerenciamento de disco. Se o disco estiver disponível, ele provavelmente requer formatação antes de poder ser utilizado. Se ele não aparecer, solucione o problema.</p>
+          <p></p>
+          <p>Adição de Matrizes (Arrays)</p>
+          <p>Para configurar um RAID, duas ou mais unidades devem ser instaladas em um computador. Você pode adicionar uma matriz com o utilitário Gerenciamento de disco. Você tem as seguintes opções:</p>
+          <p><ul>
+              <li>Novo Volume Expandido - Cria uma partição de disco, que consiste no espaço em um disco a partir de mais de um disco físico. O dado em um volume expandido não é tolerante a falhas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>New Volume Distribuído - Uma partição dinâmica que armazena dados em listras em mais de um disco físico. Os dados em um volume distribuído não são tolerante a falhas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Novo Volume Espelhado - duplica dados de um disco para um ou mais discos físicos adicionais. Os dados espelhados em um volume são tolerante a falhas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Novo Volume RAID-5 - Uma partição dinâmica que armazena dados em camadas(segmentadas) em mais de um disco físico, além de fornecer paridade para cada camada. Os dados em um volume RAID-5 são tolerantes a falhas.</li>
+            </ul>
+          </p>
+          <p>NOTA: As opções disponíveis para a adição de uma matriz são baseados em limitações do sistema. Nem todas as opções podem estar disponíveis.</p>
+          <p>Para adicionar uma matriz no utilitário Gerenciamento de disco, clique com o botão direito no disco desejado e selecione uma opção.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,37 @@
+﻿<textcomponents>
+	<component id='ID_s1_title'>
+		<text><![CDATA[<b>Comparação entre Firewall de Hardware e Software</b>]]></text>
+	</component>
+	<component id='ID_s2_title'>
+		<text><![CDATA[<b>E2500 Firewall</b>]]></text>
+	</component>
+	<component id='ID_table'>
+	<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		 		
+		<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		<tr>
+			<td valign="top" bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Firewall de Hardware</b></font></td>
+			<td valign="top" bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Firewall de Software</b></font></td> 
+		</tr> 
+		<tr>
+			<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Componente de hardware dedicado</font></td>
+			<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Disponível como software de terceiros, sendo que o seu custo varia de acordo com o fabricante</font></td> 
+		</tr>
+		<tr>
+			<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>O custo inicial do hardware e de suas atualizações pode ser caro</font></td>
+			<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Versão gratuita inclusa nos sistemas operacionais Windows</font></td> 
+		</tr>
+		<tr>
+			<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Vários computadores podem ser protegidos</font></td>
+			<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Normalmente protege apenas o computador no qual está instalado</font></td> 
+		</tr>
+		<tr>
+			<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Nenhum impacto no desempenho do computador</font></td>
+			<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Usa a CPU, gerando um impacto em potencial sobre o desempenho do computador</font></td> 
+		</tr>
+	</table>]]></text>
+	</component>
+	
+</textcomponents>

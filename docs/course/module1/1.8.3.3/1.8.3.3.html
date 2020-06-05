@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.3.3 Logging In to the Router</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Wireless and Wired Router Configurations</h2>
+    </div>
+    <div id="content">
+          <p>When the router has established communication with the modem, configure the router to communicate with the devices on the network. Open a web browser. In the Address field, enter <b>192.168.1.1</b>. This is the default private IP address for the Linksys E2500 router configuration and management interface. </p>
+          <p>The first time you connect to the Linksys E2500, you are asked to either install the Cisco Connect software or connect to the router in an open and unsecured network. When connecting to an open and unsecured E2500 router, a security window, as shown in Figure 1, prompts for authentication to access the router configuration screens. The username field must be left blank. Enter <b>admin</b> as the default password. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

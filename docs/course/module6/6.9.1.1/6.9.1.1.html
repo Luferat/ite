@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.9.1.1 Breve Histórico das Tecnologias de Conexão</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando um Tipo de Conexão ISP</h1>
+        <h2>Tecnologias de Conexão</h2>
+      </div>
+      <div id="content">
+          <p>Na década de 1990, a Internet era tipicamente utilizada para transferência de dados. As velocidades de transmissão eram lentas comparadas com as conexões de alta velocidade que estão disponíveis hoje. A largura de banda adicional permite a transmissão de voz e de vídeo, bem como de dados. Hoje existem muitas maneiras de se conectar à Internet. Empresas de telecomunicações de telefone, cabo, satélite e privadas oferecem conexões de Internet de banda larga para empresas e para uso doméstico.</p>
+          <p>Telefone Analógico</p>
+          <p>Telefones analógicos, também conhecidos por serviço de telefonia convencional (POTS), transmite voz através de linhas telefônicas convencionais. Este tipo de serviço usa um modem analógico para fazer uma chamada telefônica para outro modem em um local remoto, como um provedor de serviços de Internet. O modem utiliza a linha telefónica para transmitir e receber dados. Este método de conexão é conhecido como dial-up.</p>
+          <p>Integrated Services Digital Network</p>
+          <p>O ISDN usa múltiplos canais e pode transportar diferentes tipos de serviços, portanto o IDSN é considerado um tipo tecnologia banda larga. ISDN é um padrão utilizado para a transmissão de voz, vídeo e dados através de fios de telefone convencionais. A tecnologia ISDN utiliza os fios de telefone como um serviço de telefonia analógico.</p>
+          <p>Banda Larga</p>
+          <p>A banda larga é uma tecnologia que é utilizada para transmitir e receber múltiplos sinais, utilizando diferentes frequências através de um cabo. Por exemplo, o cabo utilizado para levar o sinal de televisão fechada para a sua casa pode carregar transmissões de rede de computadores ao mesmo tempo. Como os dois tipos de transmissão utilizam diferentes frequências, eles não interferem uns com os outros.</p>
+          <p>A banda larga utiliza uma ampla gama de frequências que podem ser divididas em canais. Em redes, o termo banda larga descreve métodos de comunicação que transmitem dois ou mais sinais ao mesmo tempo. Enviar de dois ou mais sinais simultaneamente aumenta a taxa de transmissão. Algumas conexões comuns de redes banda larga incluem cabo, DSL, ISDN e satélite. A figura mostra os equipamentos utilizados para conectar-se ou transmitir sinais de banda larga.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

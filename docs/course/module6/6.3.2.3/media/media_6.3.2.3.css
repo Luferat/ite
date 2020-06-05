@@ -1,0 +1,40 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+	
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+table { width:100% !important; border-collapse:collapse;}
+table tbody tr { border-color:#DAE17A;}
+table tbody tr td { border-color:#a2aa23; font-size:10px !important; border:3px solid #DAE17A; border-collapse:collapse;padding:1px;}
+table tbody tr td b { font-size:14px !important; font-weight:bold !important; border-collapse:collapse;}
+.table_font { border-color:#a2aa23; font-size:10px !important; font-weight:bold !important; width:33% !important;}
+.font_title_mid {font-size:10px !important; font-weight:bold !important;}
+.col_1 {line-height: 0; /*display:block;*/ margin-top:-11px; padding-bottom:5px;}
+#ID_s1_table01 {box-shadow: 0 0 2px 2px #999999 !important; width:435px !important; height:30px !important; border-radius:5px !important;overflow:auto;}
+#ID_s1_table02 {box-shadow: 0 0 2px 2px #999999 !important; width:420px !important; height:76px !important; border-radius:5px !important;}
+#ID_s2_table {box-shadow: 0 0 2px 2px #999999 !important; width:435px !important; height:205px !important; border-radius:5px !important;}
+#ID_s4_table {box-shadow: 0 0 2px 2px #999999 !important; width:414px !important; height:260px !important; border-radius:5px !important;}
+.liner {line-height:0 !important;height: 0px !important; margin:0px; padding:1px;}
+.liner_thin {line-height:0 !important;height:0px !important; margin:0px; padding:1px;}
+li {
+    margin-left: 2em !important;padding-left:8px;
+}
+.first_colum_width { width:27% !important;}
+
+table tbody tr td font {line-height:0 !important;height:0px !important; margin:0px; padding:0px;}
+.liner_top {line-height:0 !important;height: 0px !important; margin:0px; padding:1px 0 1px 0;}
+.subnetId{font-size:9px; font-weight:bold !important; border-collapse:collapse;}
+
+.titleFont{font-size:13px; font-weight:bold !important; border-collapse:collapse;}
+
+.tableFont{font-size:13px !important;;}

@@ -1,0 +1,128 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>IPv4</b>]]></text>
+</component>
+<component id='ID_table_01'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr class="liner">
+					<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#a2aa23' valign="top"><font  color='#393536'><b>Classe A</b></font></td>
+					<td bgcolor='#a2aa23' valign="top"><font  color='#393536'><b>Rede</b></font></td>
+					<td  colspan='3' bgcolor='#a2aa23' valign="top"><font size='12' color='#393536'><b>Host</b></font></td>
+				</tr>
+				<tr>
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'><b>Octeto</b></font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>1</font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>2</font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>3</font></td>
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>4</font></td>			
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'><b>Máscara de sub-rede padrão</b></font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>255</font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>0</font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>0</font></td>
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>0</font></td>			
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#F3F5E7'><font  color='#393536'><b>Intervalo de Endereços IP</b></font></td>	
+					<td colspan='4' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>1.0.0.0 a 126.255.255.255</font></td>
+							
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#FFFFFF'><font  color='#393536'><b>Hosts por rede</b></font></td>	
+					<td colspan='4' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>2^24-2=16,777,214</font></td>
+							
+				</tr>
+				</table>]]>
+			
+		</text>
+		</component>
+<component id='ID_table_02'>
+	<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr>
+		<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>			
+				<tr>
+					<td bgcolor='#a2aa23'><font  color='#393536'><b>Classe B</b></font></td>	
+					<td bgcolor='#a2aa23' colspan='2'><font color='#393536'><b>Rede</b></font></td>	
+					<td  colspan='2' bgcolor='#a2aa23'><font size='12' color='#393536'><b>Host</b></font></td>				
+				</tr>
+				<tr>
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'><b>Octeto</b></font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>1</font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>2</font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>3</font></td>
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>4</font></td>			
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#FFFFFF'><font size='12' color='#393536'><b>Máscara de sub-rede padrão</b></font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>255</font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>255</font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>0</font></td>
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>0</font></td>			
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#F3F5E7'><font  color='#393536'><b>Intervalo de Endereços IP</b></font></td>	
+					<td colspan='4' bgcolor='#F3F5E7'><font  color='#393536'>128.0.0.0 a 191.255.255.255</font></td>	
+							
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#FFFFFF'><font  color='#393536'><b>Hosts por rede</b></font></td>	
+					<td colspan='4' bgcolor='#FFFFFF'><font  color='#393536'>2^16-2=65,534</font></td>	
+							
+				</tr>
+				
+			</table>]]>
+			
+		</text>
+	</component>
+	
+<component id='ID_table_03'>
+	<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+				<tr>
+		<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>		
+				<tr>
+					<td bgcolor='#a2aa23'><font  color='#393536'><b>Classe C</b></font></td>	
+					<td colspan='3' bgcolor='#a2aa23'><font  color='#393536'><b>Rede</b></font></td>	
+					<td bgcolor='#a2aa23'><font size='12' color='#393536'><b>Host</b></font></td>				
+				</tr>
+				<tr>
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'><b>Octeto</b></font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>1</font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>2</font></td>	
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>3</font></td>
+					<td colspan='1' bgcolor='#F3F5E7' valign="top"><font  color='#393536'>4</font></td>			
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#FFFFFF'><font size='12' color='#393536'><b>Máscara de sub-rede padrão</b></font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>255</font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>255</font></td>	
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>255</font></td>
+					<td colspan='1' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>0</font></td>			
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#F3F5E7'><font  color='#393536'><b>Intervalo de Endereços IP</b></font></td>	
+					<td colspan='4' bgcolor='#F3F5E7'><font  color='#393536'>192.0.0.0 a 223.255.255.255</font></td>	
+							
+				</tr>
+				<tr>
+					<td width='150' colspan='1' bgcolor='#FFFFFF'><font color='#393536'><b>Hosts por rede</b></font></td>	
+					<td colspan='4' bgcolor='#FFFFFF'><font  color='#393536'>2^8-2=254</font></td>	
+							
+				</tr>
+				
+			</table>]]>
+			
+		</text>
+	</component>
+<component id="ID_text">
+<text><![CDATA[<b>Os endereços da classe D são usados ​​por grupos de multicast, como webcasts e streaming de vídeo. Os endereços da Classe E são reservados apenas para pesquisas.</b>]]></text>
+</component>
+</textcomponents>

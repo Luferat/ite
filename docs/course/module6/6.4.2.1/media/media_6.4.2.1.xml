@@ -1,0 +1,19 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Cabos de rede</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Par Trançado</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Cabo Coaxial</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Fibra Óptica</b>]]></text> 
+  </component>
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

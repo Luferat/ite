@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.2.3 Configuring a NIC</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Network Cards</h2>
+    </div>
+    <div id="content">
+          <p>After the NIC driver is installed, configure the IP address settings. If the NIC is configured with a static IP address, you might need to change the IP address if your computer joins a different network. Therefore, it might be more practical to enable DHCP on your computer to receive IP address information from the DHCP server. </p>
+          <p>Every NIC must be configured with the following information:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Protocols</b> – The same protocol must be implemented, as shown in Figure 1, between any two computers that communicate on the same network. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IP address</b> – This address is configurable and must be unique to each device. The IP address can be manually configured or automatically assigned by DHCP. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>MAC address</b> – Each device has a unique MAC address. The MAC address is assigned by the manufacturer and cannot be changed. </li>
+            </ul>
+          </p>
+          <p>In Windows 7:</p>
+          <p>
+            <b>Start > Control Panel > Network and Sharing Center > Change adapter setting > </b>right-click<b> Local Area Connection > Properties > TCP/IPv4 > Properties > </b>configure IP settings<b> > OK > OK.</b></p>
+          <p>In Windows Vista:</p>
+          <p>
+            <b>Start > Control Panel > Network and Sharing Center > Manage network connections > </b>right-click<b> Local Area Connection > Properties > TCP/IPv4 > Properties > </b>configure IP settings<b> > OK > OK.</b></p>
+          <p>Windows XP: </p>
+          <p>
+            <b>Start > Control Panel > Network Connections > </b>right-click<b> Local Area Connection > Properties > TCP/IP > Properties > </b>configure IP setting<b> > OK > OK.</b></p>
+          <p>
+            <b>Configure Alternate IP Settings</b>
+            <br/>Setting up an alternate IP configuration in Windows simplifies moving between a network that requires using DHCP and a network that uses static IP settings. If a computer cannot communicate with the DHCP server on the network, Windows uses the alternate IP configuration assigned to the NIC. The alternate IP configuration also replaces the APIPA address assigned when the DHCP server cannot be contacted.</p>
+          <p>To create an alternate IP configuration, as shown in Figure 2, click the <b>Alternate Configuration</b> tab in the Properties window for the NIC. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

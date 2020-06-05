@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.9.1.5 Outras Tecnologias de Banda Larga</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando um Tipo de Conexão ISP</h1>
+        <h2>Tecnologias de Conexão</h2>
+      </div>
+      <div id="content">
+          <p>A tecnologia de banda larga oferece várias opções diferentes para conectar pessoas e dispositivos com a finalidade de comunicar e compartilhar informações. Cada uma oferece diferentes características ou é projetada para atender necessidades específicas. É importante ter uma compreensão clara das várias tecnologias de banda larga e como elas podem auxiliar um cliente.</p>
+          <p>Celular</p>
+          <p>Tecnologia celular permite a transferência de voz, vídeo e dados. Com um adaptador WAN celular instalado, o usuário pode acessar a Internet através da rede celular. Existem diferentes características de WAN celulares:</p>
+          <p><ul>
+              <li>1G - Envia apenas sinais de voz analógicos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>2G - Voz Digital, chamadas em conferência e identificador de chamadas; velocidades de dados menores que 9,6 Kbps</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>2.5G - Velocidades de dados entre 30 Kbps e 90 Kbps, suporta navegação na web, visualização de pequenos clipes de áudio e vídeo, jogos e aplicações e download de ringtones</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>3G - Velocidade de dados entre 144 Kbps e 2 Mbps, suporta vídeo full-motion, streaming de música, jogos 3D e navegação na web mais rápida</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>3.5G - Velocidades de dados entre 384 Kbps e 14,4 Mbps, suporta streaming de vídeo de alta qualidade, vídeo-conferência de alta qualidade e VoIP</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>4G - Velocidades de dados entre 5,8 Mbps e 672 Mbps quando em movimento e até 1 Gbps quando parado; suporta voz baseada em IP, serviços de jogos, multimídia streaming de alta qualidade e IPv6</li>
+            </ul>
+          </p>
+          <p>Redes celulares utilizam uma ou mais das seguintes tecnologias:</p>
+          <p><ul>
+              <li>Global System for Mobile communications (GSM) - Padrão utilizado pela rede de telefonia celular em todo o mundo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>General Packet Radio Service (GPRS) - Serviço de dados para usuários de GSM</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quad-band - Permite que um telefone celular opere em todas as quatro frequências GSM: 850 MHz, 900 MHz, 1800 MHz e 1900 MHz</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Short Message Service (SMS) - Serviço de dados usado para enviar e receber mensagens de texto</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Multimedia Messaging Service (MMS) - Serviço de dados usado para enviar e receber mensagens de texto que podem incluir conteúdos de multimídias</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Enhanced Data Rates for GSM Evolution (EDGE) - Aumento das taxas de dados e maior confiabilidade dos dados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Evolution-Data Optimized (EV-DO) - Melhoria na velocidades de upload e QoS</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>High Speed ​​Downlink Packet Access (HSDPA) - Melhoria na velocidade de acesso 3G</li>
+            </ul>
+          </p>
+          <p>Cabo</p>
+          <p>Uma conexão de Internet a cabo não utiliza linhas telefônicas. A conexão a cabo usa linhas de cabo coaxial, originalmente desenvolvidos para o transporte de imagem da televisão a cabo. Um modem a cabo conecta seu computador ao ISP. Você pode conectar seu computador diretamente ao modem a cabo ou conectar um roteador, switch, hub ou um dispositivo de rede multifuncional para que vários computadores possam compartilhar a conexão com a Internet. Como uma rede DSL, o cabo oferece altas velocidades e um serviço sempre disponível, o que significa que, mesmo quando a conexão não estiver em uso, a conexão com a Internet ainda estrá disponível.</p>
+          <p>Satélite</p>
+          <p>A banda larga via satélite é uma alternativa para os clientes que não conseguem conexões de cabo ou DSL. A conexão via satélite não requer uma linha telefônica ou cabo, porém ela usa uma antena parabólica para fornecer uma comunicação bidirecional. A antena parabólica transmite e recebe sinais de e para um satélite que transmite esses sinais de volta para um provedor de serviço, conforme apresentado na figura. As velocidades de download são de até 1 Gbps; a de upload estão próximas a 10 Mbps. Leva tempo para que o sinal da antena parabólica seja transmitido ao seu ISP, através do satélite na órbita da Terra. Devido a esta latência, é difícil de usar aplicações sensíveis ao tempo, como jogos, VoIP e videoconferência.</p>
+          <p>Banda Larga de Fibra Óptica</p>
+          <p>A banda larga de fibra oferece velocidades de conexão e largura de banda superiores aos modems a cabo, DSL e ISDN. Banda larga de fibra pode oferecer uma infinidade de serviços digitais, tais como telefone, vídeo, dados e videoconferência simultaneamente.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

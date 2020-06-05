@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.2.13 Firewall do Windows</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle</h2>
+      </div>
+      <div id="content">
+          <p>Além das configurações de segurança disponíveis na Central de Ações, você pode evitar ataques maliciosos em seu sistema utilizando o Firewall do Windows, conforme apresentado na figura. Um firewall implementa uma política de segurança seletivamente permitindo e negando o tráfego de dados para um computador. A origem do nome firewall vem dos muros de tijolos e argamassa projetados para evitar a propagação de fogo de uma parte do edifício para outras.</p>
+          <p>Você pode ajustar as configurações do firewall para redes domésticas, redes de corporativas e redes públicas. Outras mudanças podem ser feitas usando as seguintes opções:</p>
+          <p><ul>
+              <li>Permitir um programa ou recurso pelo Firewall do Windows - Determine quais programas podem se comunicar através do Firewall do Windows.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alterar configurações de notificação - Usuários com privilégios administrativos podem gerenciar as notificações do Firewall do Windows.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ativar ou Desativar o Firewall do Windows - Os usuários com privilégios administrativos podem habilitar ou desabilitar o Firewall do Windows.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Restaurar padrões - Os usuários com privilégios administrativos podem restaurar o Firewall do Windows para as configurações padrão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Configurações avançadas - Usuários com privilégios administrativos podem ajustar as configurações de segurança avançadas.</li>
+            </ul>
+          </p>
+          <p>Para acessar o Firewall do Windows, no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Firewall do Windows</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

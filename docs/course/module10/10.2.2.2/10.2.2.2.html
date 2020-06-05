@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.2.2 Biometria e Smart Cards</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Protegendo os Dados</h2>
+      </div>
+      <div id="content">
+          <p>A segurança biométrica compara características físicas com perfis armazenados para autenticar pessoas. Um perfil é um arquivo de dados contendo as características conhecidas de um indivíduo. Uma impressão digital, como mostrado na Figura 1, um padrão de face ou exame de retina, como mostrado na Figura 2, são exemplos de dados biométricos. Em teoria, a biométrica é mais eficaz do que o uso de senhas ou smart cards, pois as senhas podem ser descobertas e cartões roubados. Dispositivos biométricos incluem leitores de impressões digitais, scanners de retina e de face e dispositivos de reconhecimento por voz. O usuário terá acesso garantido se suas características coincidem com as configurações salvas e se as informações de login fornecidas estiverem corretas.</p>
+          <p>Os dispositivos biométricos, quando combinados com uma medida de segurança secundária (como uma senha ou PIN), são ideais para áreas de alta segurança. No entanto, para a maioria das pequenas empresas, este tipo de solução é muito cara.</p>
+          <p>Smart Card</p>
+          <p>Um smart card é um pequeno cartão de plástico, do tamanho de um cartão de crédito, que possui um pequeno chip embutido no mesmo, conforme mostrado na Figura 3. O chip é um portador de dados inteligente, capaz de processar e armazenar dados de forma segura. Os smart cards armazenam informações pessoais, como números de contas bancárias, identificação pessoal, registros médicos e assinaturas digitais. Os smart cards fornecem autenticação e criptografia para manter os dados seguros.</p>
+          <p>Doggle de Segurança USB</p>
+          <p>Um doggle de segurança é um pequeno dispositivo que se assemelha a um dispositivo de armazenamento USB, como mostrado na Figura 4. Ele possui um pequeno sistema de rádio que se comunica com o computador a um curto alcance. Esse doggle é pequeno o suficiente para que possa ser colocado em um porta-chaves. O computador deve detectar o sinal do dispositivo antes de aceitar um nome de usuário e senha.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

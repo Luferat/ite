@@ -1,0 +1,18 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+width:96%;
+	height:96%;
+}
+
+/*#ID_title,#ID_ES,#ID_AO,#ID_RTR,#ID_AH,#ID_MS,#ID_WS,#ID_FS,#ID_SWT,#ID_CH,#ID_CH2,#ID_CH3,#ID_C1,#ID_C2,#ID_C3,#ID_internet1{
+	border: 2px solid #000;
+}*/
+

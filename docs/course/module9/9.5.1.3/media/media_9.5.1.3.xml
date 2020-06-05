@@ -1,0 +1,62 @@
+﻿<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>Serviços da Impressora</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b>Nível Estimado de Tinta</b>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[<b>Serviços do Dispositivo</b>]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[<b>Informações do Dispositivo</b>]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[<b>Alinhar os Cartuchos de Tinta</b>]]></text>
+</component>
+<component id='ID_txt08'>
+	<text><![CDATA[O alinhamento fornece uma excelente qualidade de impressão. Se você perceber que as cores ou linhas estão desalinhadas, realize um alinhamento.]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[<b>Limpar os Cartuchos de Tinta</b>]]></text>
+</component>
+<component id='ID_txt09'>
+	<text><![CDATA[Se a impressão está riscada ou possui cores incorretas ou ausentes, os cartuchos de tinta podem precisar de uma limpeza. Este processo utiliza tinta e uma folha de papel.]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[<b>Informação de Diagnóstico da Impressora</b><br />]]></text>
+</component>
+<component id='ID_txt10'>
+	<text><![CDATA[Imprime informações que podem ser usadas para determinar o estado da impressora.]]></text>
+</component>
+<component id='ID_txt07'>
+	<text><![CDATA[<b>Limpeza da Impressora</b><br />]]></text>
+</component>
+<component id='ID_txt11'>
+	<text><![CDATA[Limpe a impressora para evitar manchas na parte de trás de páginas.]]></text>
+</component>
+<!-- 
+<component id='ID_txt04'>
+	<text><![CDATA[<font size="11"><font size="+2"><b>Align Ink Cartridges</b></font><br /><textformat blockindent='18'>Alignment gives you excellent print quality. If you see misaligned colors or lines, perform an alignment.</textformat></font>]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[<font size="11"><font size="+2"><b>Clean Ink Cartridges</b></font><br /><textformat blockindent='18'>If your printing is streaked or has incorrect or missing colors, the ink cartridges may need cleaning. This process uses ink and one sheet of paper.</textformat></font>]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[<font size="11"><font size="+2"><b>Print Diagnostic Information</b></font><br /><textformat blockindent='18'>Prints information that can be used to determine the condition of your printer.</textformat></font>]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[<font size="11"><font size="+2"><b>Clean Printer</b></font><br /><textformat blockindent='18'>Cleans the printer to prevent smears on the back of pages.</textformat></font>]]></text>
+</component> -->
+
+</textcomponents>

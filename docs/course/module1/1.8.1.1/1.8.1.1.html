@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.1.1 Network Installation Completion List</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Network Installation Steps</h2>
+    </div>
+    <div id="content">
+          <p>Having a clear understanding of all the steps required to physically building a network improves the success of a project. You may need to install network cards, wireless and wired network devices, and configure network equipment.</p>
+          <p>When installing a wireless network, you can use a wireless access point or a multipurpose device. The Linksys E2500 is a multipurpose device that provides both router and access point capabilities. You have to decide where you want to install access points to provide the maximum range of connectivity. </p>
+          <p>After you have determined the location of all the network devices, you are ready to install the network cables. If you are installing the cable yourself, make sure that all the necessary materials are available at the site, as well as a blueprint of the network’s physical topology.</p>
+          <p>These steps outline the process for physically creating a network.</p>
+          <p>
+            <ul>
+              <li>Make sure all Ethernet wall port locations are properly marked and meet the current and future requirements for the customer. To install the cable in ceilings and behind walls, you perform a cable pull: One person pulls the cable, and another feeds the cable through the walls. Make sure to label the ends of every cable. Follow a labeling scheme that is already in place, or follow the guidelines outlined in TIA/EIA 606-A.<b></b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>After the cables are terminated at both ends, use a cable tester to make sure that there are no shorts or interference.<b></b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Use a floor plan to find the locations for access points that allow maximum coverage. The best place for a wireless access point is at the center of the area you are covering, with line of sight between the wireless devices and the access point.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Connect the access point to the existing network.<b></b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Make sure that the network interfaces are properly installed in the desktops, laptops, and network printers. After the network interfaces are installed, configure the client software and the IP address information on all the devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Make sure to install switches and routers in a secured, centralized location. All LAN connections terminate in this area. In a home network, you might need to install these devices in separate locations, or you might have only one device.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Install an Ethernet patch cable from the wall connection to each network device. Check whether you have a link light on all network interfaces and on each network device port that connects to a device.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When all devices are connected and all link lights are functioning, test the network for connectivity. Use the <b>ipconfig /all</b> command to view the IP configuration on each workstation. Use the <b>ping</b> command to test basic connectivity. You should be able to ping other computers on the network, including the default gateway and remote computers. After confirming basic connectivity, configure and test the network applications, such as email and the web browser.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

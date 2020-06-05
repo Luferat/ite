@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.2.1.4 Impressoras de Impacto</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Tipos de Impressoras</h1>
+        <h2>Tipos de Impressoras</h2>
+      </div>
+      <div id="content">
+          <p>As impressoras de impacto possuem cabeças de impressão que atingem uma fita com tinta, fazendo com que os caracteres sejam impressos no papel. Matricial e Daisy Wheel são exemplos de impressoras de impacto.</p>
+          <p>A seguir estão algumas vantagens de uma impressora de impacto:</p>
+          <p><ul>
+              <li>A tinta utilizada é mais barata do que a tinta das impressoras Jato de tinta e Laser</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Utiliza papel de alimentação contínua</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Possibilidade de impressão com cópia carbono</li>
+            </ul>
+          </p>
+          <p>A seguir estão algumas desvantagens de uma impressora de impacto:</p>
+          <p><ul>
+              <li>Causa muito ruído (barulho)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Baixa resolução</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Limitação de Cores</li>
+            </ul>
+          </p>
+          <p>Tipos de Impressoras de Impacto</p>
+          <p>A impressora Daisy Wheel utiliza uma roda que contém as letras, números e caracteres especiais. Esta roda gira até que o caractere desejado esteja alinhado e, em seguida, um martelo eletromecânico pressiona a letra contra a fita de tinta. Após atingir a fita de tinta, o caractere será impresso no papel.</p>
+          <p>A impressora matricial é semelhante a uma impressora Daisy Wheel, exceto por ter apenas uma cabeça de impressão contendo os pinos que são cercados por eletroímãs em vez de uma roda. Quando energizado, os pinos avançam para a fita de tinta, criando o carácter no papel. O número de pinos de uma cabeça de impressão, 9 ou 24, indica a qualidade da impressão. A melhor qualidade de impressão produzida por uma impressora matricial é conhecida por near letter quality(NLQ).</p>
+          <p>Impressoras matriciais usam papel de alimentação contínua, também conhecido como alimentação trator. O papel possuí perfurações entre cada folha e tiras perfuradas em sua lateral, que são utilizadas ​​para manter o papel e evitar a inclinação ou mudança de posição. O alimentador contínuo, que imprime uma página por vez, também está disponível para algumas impressoras com qualidade superior. Um grande rolo, também chamado de cilindro, pressiona o papel para impedir que o mesmo escorregue. Caso um papel com cópia de carbono seja utilizado, você poderá ajustar o espaçamento do rolo para a espessura do papel.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

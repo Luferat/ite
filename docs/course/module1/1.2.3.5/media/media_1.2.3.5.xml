@@ -1,0 +1,63 @@
+﻿<textcomponents>
+<component id="ID_title">
+  <text><![CDATA[<b>RAM Types</b>]]></text>
+  </component>
+  
+ <component id="ID_btn01">
+  <text><![CDATA[<b>DRAM</b>]]></text>
+  </component>
+<component id="ID_btn02">
+  <text><![CDATA[<b>SRAM</b>]]></text> 
+  </component>
+<component id="ID_btn03">
+  <text><![CDATA[<b>FPM Memory</b>]]></text> 
+  </component>
+<component id="ID_btn04">
+  <text><![CDATA[<b>EDO Memory</b>]]></text>
+  </component>
+<component id="ID_btn05">
+  <text><![CDATA[<b>SDRAM</b>]]></text> 
+  </component>
+<component id="ID_btn06">
+  <text><![CDATA[<b>DDR SDRAM</b>]]></text> 
+  </component>  
+<component id="ID_btn07">
+  <text><![CDATA[<b>DDR2 SDRAM</b>]]></text>
+  </component>
+<component id="ID_btn08">
+  <text><![CDATA[<b>DDR3 SDRAM</b>]]></text> 
+  </component>
+<component id="ID_btn09">
+  <text><![CDATA[<b>RDRAM</b>]]></text> 
+  </component>   
+  
+<component id="ID_txt01">
+  <text><![CDATA[Dynamic RAM is a memory chip that is used as main memory. DRAM must be constantly refreshed with pulses of electricity in order to maintain the data stored within the chip]]></text>
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Static RAM is a memory chip that is used as cache memory. SRAM is much faster than DRAM and does not have to be refreshed as often.]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Fast Page Mode DRAM is memory that supports paging. Paging enables faster access to the data than regular DRAM. Most 486 and Pentium systems from 1995 and earlier use FPM memory.]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Extended Data Out RAM is memory that overlaps consecutive data accesses. This speeds up the access time to retrieve data from memory, because the CPU does not have to wait for one data access cycle to end before another data access cycle begins.]]></text>
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Synchronous DRAM is DRAM that operates in synchronization with the memory bus. The memory bus is the data path between the CPU and the main memory.]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Double Data Rate SDRAM is memory that transfers data twice as fast as SDRAM. DDR SDRAM increases performance by transferring data twice per cycle.]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[Double Data Rate 2 SDRAM is a faster than DDR-SDRAM memory. DDR2 SDRAM improves performance over DDR SDRAM by decreasing noise and crosstalk between the signal wires.]]></text>
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[Double Data Rate 3 SDRAM expands memory bandwidth by doubling the clock rate of DDR2 SDRAM. DDR3 SDRAM consumes less power and generates less heat than DDR2 SDRAM.]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[RAMBus DRAM is a memory chip that was developed to communicate at very high rates of speed. RDRAM chips are not commonly used.]]></text> 
+  </component>  
+  
+  
+</textcomponents>

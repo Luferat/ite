@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.2.4 Criptografia de Dados</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Protegendo os Dados</h2>
+      </div>
+      <div id="content">
+          <p>A criptografia é muitas vezes utilizada para proteger os dados. A criptografia é o ato de transformar os dados, usando um algoritmo complicado, fazendo que o mesmo se torne ilegível. Uma chave especial deve ser usada para tonar as informações ilegíveis de volta em dados legíveis. Programas e softwares são usados para criptografar arquivos, pastas e até unidades inteiras.</p>
+          <p>O Encrypting File System (EFS) é um recurso do Windows que pode criptografar os dados. EFS está diretamente ligado a uma conta de usuário específica. Somente o usuário que criptografou os dados será capaz de acessá-lo depois de criptografado pelo EFS. Para criptografar os dados usando o EFS, siga esses passos:</p>
+          <p>Passo 1. Selecione um ou mais arquivos ou pastas.</p>
+          <p>Passo 2. Clique com o botão direito do mouse nos dados selecionados > Propriedades.</p>
+          <p>Passo 3. Clique em Avançado....</p>
+          <p>Passo 4. Selecione a opção Criptografar os conteúdo para proteger os dados</p>
+          <p>Passo 5. Os arquivos e pastas que foram criptografados com EFS são exibidos em verde, conforme mostrado na figura.</p>
+          <p>No Windows 7 e Windows Vista Ultimate e Enterprise, um recurso chamado BitLocker está incluído para criptografar todo o volume do disco rígido. BitLocker também é capaz de criptografar unidades removíveis. Para usar o BitLocker, pelo menos dois volumes devem estar presentes em um disco rígido. Um volume do sistema, de pelo menos 100 MB, é deixado sem criptografia. Este volume contém os arquivos do Windows necessários para inicializar o sistema. Windows 7 cria este volume por padrão quando ele é instalado.</p>
+          <p>Ao usar o BitLocker no Windows Vista, uma ferramenta especial chamada BitLocker Drive Preparation Tool pode ser usada para diminuir o volume da unidade que contém o sistema operacional. Uma vez que o volume foi reduzido, um sistema de arquivo pode ser criado para cumprir com as exigências do BitLocker.</p>
+          <p>Depois que o volume do sistema for criado, o módulo TPM deve ser inicializado. O TPM (Trusted Platform Module) é um chip especializado instalado na placa-mãe de computador utilizado para a autenticação de hardware e de software. O TPM armazena informações específicas do sistema host, como as chaves de criptografia, certificados digitais e senhas. As aplicações que utilizam criptografia podem fazer uso do chip TPM para proteger informações de autenticação de usuário, proteção de licença de softwares e arquivos criptografados, como pastas e discos. A integração de segurança de hardware, tais como TPM e softwares de segurança, resulta em um sistema de computador muito mais seguro do que o apenas uso de um software de segurança.</p>
+          <p>Para inicializar o módulo TPM, siga estes passos:</p>
+          <p>Passo 1. Inicie o computador e entre na BIOS.</p>
+          <p>Passo 2. Procure a opção TPM dentro das telas de configuração da BIOS. Consulte o manual de sua placa-mãe para localizar a tela correta.</p>
+          <p>Passo 3. Selecione a opção Enable e aperte Enter.</p>
+          <p>Passo 4. Salve as alterações feitas na BIOS.</p>
+          <p>Passo 5. Reinicie o computador.</p>
+          <p></p>
+          <p>Para ativar o BitLocker, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Segurança > Criptografia de Unidade de Disco BitLocker</p>
+          <p>Passo 2. Se uma mensagem do Contas de Usuários (UAC) aparecer, clique em Continuar.</p>
+          <p>Passo 3. Na página Criptografia de Unidade de Disco BitLocker, clique em Ativar BitLocker no volume do sistema operacional.</p>
+          <p>Passo 4. Se o TPM não estiver inicializado, o Assistente de Hardware de Segurança TPM aparecerá. Siga as instruções fornecidas pelo assistente para inicializar o TPM. Reinicie o computador.</p>
+          <p>Passo 5. A página Salvar a senha de recuperação possui as seguintes opções:</p>
+          <p><ul>
+              <li>Salvar a senha em um drive USB - Esta opção armazena a senha em uma unidade USB.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Salvar a senha em uma pasta - Esta opção salva a senha para uma unidade de rede ou em outro local.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Imprimir a senha - Esta opção irá imprimir a senha.</li>
+            </ul>
+          </p>
+          <p>Passo 6. Depois de salvar a senha de recuperação, clique em Avançar.</p>
+          <p>Passo 7. Na página Criptografar o volume de disco selecionado, selecione a opção Verificar o sistema BitLocker.</p>
+          <p>Passo 8. Clique em Continuar.</p>
+          <p>Passo 9. Clique em Reiniciar agora.</p>
+          <p>Passo 10. Será exibido uma barra de status informando o progresso da criptografia.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

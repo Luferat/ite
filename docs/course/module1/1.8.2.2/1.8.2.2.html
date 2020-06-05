@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.2.2 Installing and Updating a NIC</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Network Cards</h2>
+    </div>
+    <div id="content">
+          <p>To install a NIC adapter in a desktop computer, you must remove the case cover. Then remove the cover of the available PCI slot or PCI express slot. After the NIC is securely installed, replace the case cover. A wireless NIC has an antenna connected to the back of the card or attached with a cable so that it can be positioned for the best signal reception. You must connect and position the antenna.</p>
+          <p>Sometimes a manufacturer publishes new driver software for a NIC. A new driver might enhance the functionality of the NIC, or it might be needed for operating system compatibility.</p>
+          <p>When installing a new driver, disable virus protection software to ensure that the driver installs correctly. Some virus scanners detect a driver update as a possible virus attack. Install only one driver at a time; otherwise, some updating processes might conflict. A best practice is to close all applications that are running so that they are not using any files associated with the driver update. Before updating a driver, visit the website of the manufacturer. In many cases, you can download a self-extracting executable driver file that automatically installs or updates the driver. </p>
+          <p>After the NIC and the driver are installed and configured, you might need to configure other OS settings. You might also need to install a modem to connect to the Internet. If not, you can simply connect the computer to the existing network. </p>
+          <p>You can also manually update a NIC driver, as shown in Figure 1.</p>
+          <p>In Windows 7 and Windows Vista, select<b> Start > Control Panel > Device Manager</b>.<b></b></p>
+          <p>In Windows XP, use the following path:</p>
+          <p>
+            <b>Start > Control Panel > System ></b>
+            <b>Hardware</b> tab <b>> Device Manager</b></p>
+          <p>To view the network adapters installed, in Windows 7 click the arrow next to the category. In Windows Vista and Windows XP, click the <b>+</b> next to the Network adapter category. To view and change the properties of the adapter, double-click the adapter. In the Adapter Properties window, select the <b>Driver</b> tab.</p>
+          <p>
+            <b>Note: </b>Sometimes the driver installation process prompts you to reboot the computer.</p>
+          <p>If a new NIC driver does not perform as expected after it has been installed, you can uninstall the driver or roll back to the previous driver. Double-click the adapter in the Device Manager. In the Adapter Properties window, select the <b>Driver</b> tab and click <b>Roll Back Driver</b>. If no driver was installed before the update, this option is not available, as shown in Figure 1. In that case, you must find a driver for the device and install it manually if the operating system could not find a suitable driver for the NIC.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

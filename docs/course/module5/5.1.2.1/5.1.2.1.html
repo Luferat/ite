@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.2.1 Sistemas Operacionais de Desktop</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Modernos</h1>
+        <h2>Tipos de Sistemas Operacionais</h2>
+      </div>
+      <div id="content">
+          <p>Pode ser solicitado a um técnico escolher e instalar um sistema operacional para um cliente. Existem dois tipos diferentes de sistemas operacionais: desktop e de rede. Um sistema operacional desktop é destinado ao uso em um pequeno escritório, home office (SOHO), um ambiente com um número limitado de usuários. Um sistema operacional de rede (NOS) é projetado para um ambiente corporativo, servindo vários usuários com uma vasta gama de necessidades.</p>
+          <p></p>
+          <p>Um sistema operacional desktop tem as seguintes características:</p>
+          <p><ul>
+              <li>Suporta um único usuário</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Executa aplicativos de um único usuário</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilha arquivos e pastas em uma pequena rede com segurança limitada</li>
+            </ul>
+          </p>
+          <p>No mercado de software atual, os sistemas operacionais de desktop mais utilizados se dividem em três grupos: Microsoft Windows, Apple Mac OS e Linux. Este capítulo se concentra em sistemas operacionais da Microsoft.</p>
+          <p>Microsoft Windows</p>
+          <p>O Windows é um dos sistemas operacionais mais populares hoje em dia. As seguintes versões do Windows estão disponíveis:</p>
+          <p><ul>
+              <li>Windows 7 Starter - Usado em computadores e netbooks que facilitam a utilização de redes</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows 7 Home Premium - usado em computadores domésticos para compartilhar mídia facilmente</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows 7 Professional - usados ​​em computadores de pequenas empresas para proteger informações críticas e fazer tarefas rotineiras mais fáceis de completar</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows 7 Enterprise - Usado em computadores para fornecer aumento de produtividade, segurança e recursos de gerenciamento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows 7 Ultimate - usado em computadores para combinar a facilidade de uso do Windows 7 Home Premium com os recursos comerciais do Windows 7 Professional e proporcionar maior segurança de dados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows Vista Home Basic - usado em computadores domésticos para computação básica</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows Vista Home Premium - usado em computadores domésticos para expandir a produtividade pessoal e entretenimento digital para além do básico</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows Vista Business - usados ​​em computadores de pequenas empresas para aumentar a segurança e tecnologia avançada mobilidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows Vista Enterprise - Usado em computadores para negócios que fornece o aumento de produtividade, segurança e recursos de gerenciamento</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows Vista Ultimate - usado em computadores para combinar todas as necessidades dos usuários domésticos e empresariais</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows XP Professional - Utilizado na maioria dos computadores que se conectam a um servidor Windows em uma rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows XP Home - usado em computadores domésticos com segurança limitada</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows XP Media Center - usados ​​em computadores de entretenimento para ver filmes e ouvir músicas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows XP 64-bit Professional - Usado para computadores com processadores de 64 bits</li>
+            </ul>
+          </p>
+          <p>Apple Mac OS</p>
+          <p>Computadores da Apple são proprietários e usam um sistema operacional chamado Mac OS. O Mac OS é projetado para ser um sistema operacional com uma interface gráfica(GUI) &quot;amigável&quot;. As versões atuais do Mac OS são baseadas em uma versão personalizada do UNIX.</p>
+          <p>Linux</p>
+          <p>Linux é baseado em UNIX, que foi introduzido na década de 1960 e é um dos sistemas operacionais mais antigos. Linus Torvalds Linux projetado em 1991 como um sistema operacional open-source(código fonte aberto). Programas de código fonte aberto(open-source) permitem que o código fonte seja distribuído e modificado por qualquer pessoa como um download gratuito ou por desenvolvedores, a um custo muito menor do que outros sistemas operacionais.</p>
+          <p>NOTA: Neste curso, todos comandos e caminhos fazem referencia ao Microsoft Windows, salvo algumas exceções.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.2.6 Cabos de Fibra Óptica</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Cabos e Conectores</h2>
+      </div>
+      <div id="content">
+          <p>A fibra óptica é um meio de plástico ou vidro que transmite informações usando a luz. O cabo de fibra óptica possui uma ou mais fibras ópticas colocadas entre um invólucro, conforme mostrado na figura. Devido ao uso da luz para transmitir sinais, cabos de fibra óptica não são afetados por EMI ou RFI. Todos os sinais são convertidos em pulsos de luz quando entram no cabo, e convertido novamente em sinais elétricos quando saem do mesmo. Isso significa que o cabo de fibra óptica pode oferecer sinais que são mais claros, que podem alcançar distâncias maiores e fornecem uma maior largura de banda que o cabo de cobre ou outros metais.</p>
+          <p>Cabos de fibra óptica podem alcançar distâncias de vários quilômetros ou milhas, antes que o sinal precise ser regenerado. Tanto os lasers como os diodos emissores de luz (LEDs), geram os pulsos de luz utilizados para representar os dados transmitidos como bits no meio. A largura de banda atinge velocidades de 100 Gbps e aumentam a medida que os padrões são desenvolvidos e aprovados.</p>
+          <p></p>
+          <p>A velocidade dos dados transmitidos através de um cabo de fibra óptica é limitada pelos dispositivos conectados ao cabo, bem como as impurezas presentes dentro do cabo. Dispositivos semicondutores eletrônicos, chamado de fotodiodos, detectam os pulsos de luz e convertem-os em tensões que podem então ser transformadas em pacotes de dados.</p>
+          <p></p>
+          <p>Cabos de fibra óptica geralmente são mais caros do que os cabos de cobre, além dos conectores serem mais caros e mais difíceis de montar. Conectores comuns para redes de fibra óptica são:</p>
+          <p><ul>
+              <li>SC - Possui uma ponta de 2,5 milímetros que usa um conector snap-in que trava com um simples movimento</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>ST - Possui uma ponta de 2,5 milímetros e usa um conector baioneta</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>LC - Possui uma ponta de 1,25 milímetros e usa um conector snap-in que trava com um simples movimento</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Estes três tipos de conectores de fibra óptica são simplex, o que permite que os dados fluam em uma única direção. Portanto, dois cabos são necessários para fornecer o fluxo de dados em ambas as direções.</p>
+          <p></p>
+          <p>Estes são os dois tipos de cabos de fibra óptica de vidro:</p>
+          <p><ul>
+              <li>Multímodo - Cabo que possui um núcleo mais grosso que a monomodo. É mais fácil de fazer, pode usar fontes de luz mais simples (LEDs) e funciona bem em distâncias de até 6.560 pés (2 km). Muitas vezes, usam LEDs como fonte de luz e opera dentro de LANs ou em distâncias de 200 metros dentro da rede de um campus.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Monomodo - Cabo que tem um núcleo muito fino. É mais difícil de fazer, usa laser como fonte de luz e pode transmitir sinais em até 62,14 mi (100 km). Ele frequentemente usa lasers como fonte de luz e opera em backbones de campus ou em locais onde a distância é de vários milhares de metros.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

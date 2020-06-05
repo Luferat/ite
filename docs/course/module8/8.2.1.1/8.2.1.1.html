@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.1.1 Open Source Vs Código Fechado</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Móveis</h1>
+        <h2>Android vs iOS</h2>
+      </div>
+      <div id="content">
+          <p>Os dispositivos móveis usam um sistema operacional para executar suas tarefas semelhante à maneira como desktops e laptops fazem. Este capítulo foca nos dois sistemas operacionais móveis mais utilizados: Android e iOS. O Android é desenvolvido pela Google, enquanto o iOS é desenvolvido pela Apple.</p>
+          <p>Lançado em 2008 no HTC Dream, o sistema operacional Android é open source. Open source significa que o código de programação do desenvolvedor, conhecido como código-fonte, é publicado quando o mesmo é liberado. O público pode alterar, copiar ou redistribuir o código sem pagar taxas de royalty para o desenvolvedor do software.</p>
+          <p>O software de código aberto permite a qualquer pessoa contribuir para o desenvolvimento e evolução do mesmo. O Android foi adaptado para uso em uma ampla gama de dispositivos eletrônicos. Como o Android é aberto e personalizável, os programadores podem usá-lo para operar dispositivos como laptops, TVs inteligentes e leitores de e-book. Alguns outros dispositivos também executam o Android, como câmeras, sistemas de navegação e reprodutores de mídia portátil.</p>
+          <p>Lançado em 2007 no primeiro iPhone, o iOS é de código fechado, o que significa que o código fonte não é liberado para o público. Para copiar ou redistribuir o iOS com ou sem alterações é necessário solicitar a permissão da Apple. A Apple cobra taxas de royalty para qualquer lucro obtido através do seu S.O.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

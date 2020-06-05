@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.2.8 Configurações Avançadas da NIC</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Adaptadores de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Na maioria dos ambientes de rede, o único parâmetro da NIC que você deve configurar é o endereço IP. Você pode deixar as configurações avançadas da NIC nos valores padrões. No entanto, quando um computador se conecta a uma rede que não suporta algumas ou todas as configurações padrões, você deve fazer as alterações necessárias nas configurações avançadas. Essas mudanças podem ser necessárias para que o computador possa se conectar à rede, habilitar os recursos exigidos pela rede ou conseguir uma melhor conexão de rede.</p>
+          <p></p>
+          <p>Definir os recursos avançados de forma inadequada pode levar à falhas de conexão ou degradação de desempenho. Os recursos avançados estão localizados na aba Avançado, na janela de configuração da NIC. A guia Avançado contém todos os parâmetros que o fabricante da NIC tem disponível.</p>
+          <p></p>
+          <p>NOTA: Os recursos avançados disponíveis e guia Layout de recursos depende do sistema operacional, da placa de rede específica e do driver instalado.</p>
+          <p></p>
+          <p>Duplex e Velocidade</p>
+          <p>As configurações de duplex e velocidade na NIC podem diminuir as taxas de transferência de dados em um computador, caso elas não correspondam com o dispositivo no qual estão conectadas. A incompatibilidade de duplex é quando uma NIC com uma velocidade de link específica ou duplex está conectada em uma placa de rede definida com valores diferentes. O padrão é o modo auto, mas você pode ter que alterar o duplex, a velocidade ou ambos. A Figura 1 mostra as configurações de velocidade e duplex.</p>
+          <p></p>
+          <p>Wake on LAN</p>
+          <p>Configurações WoL são usadas ​​para acordar um computador em rede a partir de um estado de energia muito baixo. Esse modo de energia muito baixo significa que o computador está desligado, porém ainda está conectado a uma fonte de energia. Para suportar o WOL, o computador deve ter uma fonte de alimentação ATX compatível e uma placa de rede compatível com WoL. A mensagem wake-up, chamada de pacote mágico, é enviado para a placa de rede do computador. O pacote mágico contém o endereço MAC da NIC conectada ao computador. Quando a NIC recebe o pacote mágico, o computador acorda.</p>
+          <p></p>
+          <p>Você pode configurar o WoL tanto na BIOS da placa mãe quanto no firmware do driver da NIC. A Figura 2 mostra a configuração do firmware da unidade.</p>
+          <p></p>
+          <p>Qualidade de Serviço</p>
+          <p>QoS, também chamado 802.1q QoS, é uma variedade de técnicas que controlam o fluxo de tráfego na rede, melhoraram a velocidade de transmissão e melhoraram o tráfego de comunicações em tempo real. Tanto o computador e o dispositivo de rede devem ter o QoS habilitado para o serviço funcionar. Quando o QoS está instalado e ativado em um computador, o Windows pode limitar a largura de banda disponível para acomodar o tráfego de alta prioridade. Quando o QoS está desativado, todo o tráfego é tratado da mesma forma. A Figura 3 mostra a instalação do serviço de rede, chamado de QoS Packet Scheduler.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

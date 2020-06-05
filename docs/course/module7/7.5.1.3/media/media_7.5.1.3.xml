@@ -1,0 +1,12 @@
+﻿<textcomponents>  
+
+ 
+<component id="ID_s1_title">
+  <text><![CDATA[<b>Memória SODIMM Instalada em um Laptop</b>]]></text> 
+  </component>
+  
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Informações da RAM no Utilitário Sistema</b>]]></text> 
+  </component>
+
+</textcomponents>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.4.6 Acesso à Rede Sem Fio</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Técnicas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Antenas sem fio</p>
+          <p>O ganho de sinal e o padrão de antena ligada ao ponto de acesso sem fio podem influenciar onde o sinal será recebido. Evite transmitir o sinal de sua rede sem fio para fora da área da mesma através da instalação de uma antena com um padrão diferente e que serve apenas aos seus utilizadores.</p>
+          <p>Alguns dispositivos sem fio permitem que você altere a potência das ondas de rádio emitidas pela antena. Isto pode ser bom de duas formas:</p>
+          <p><ul>
+              <li>A cobertura da rede sem fio pode ser reduzida para impedir o acesso em áreas indesejadas. Use um laptop ou um dispositivo portátil para determinar a área de cobertura. Diminua o nível de potência de rádio até que área de cobertura seja o tamanho desejado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Aumentar o nível de potência de rádio em áreas com muitas redes sem fio ajuda a manter a interferência de outras redes em um nível minimo, mantendo assim os usuários conectados.</li>
+            </ul>
+          </p>
+          <p>Acesso aos Dispositivos de Rede</p>
+          <p>Muitos dispositivos sem fio feitos por um fabricante específico utilizam o mesmo usuário e senha padrão para acessar e configurar a rede wireless. Caso essas informações não sejam alteradas, usuários não autorizados poderão, facilmente, fazer logon no ponto de acesso e modificar as configurações. Ao se conectar pela primeira vez no dispositivo de rede, altere o usuário e a senha padrão. Alguns dispositivos permitem que você mude tanto o nome de usuário quanto a senha, enquanto outros só permitem que você altere a senha.</p>
+          <p>Para alterar a senha padrão, como mostrado na figura, use o seguinte caminho:</p>
+          <p>Administration > Management > digite a nova senha > digite novamente a senha > Save Settings</p>
+          <p>Wi-Fi Protected Setup</p>
+          <p>Para muitas pessoas, configurar um roteador sem fio e inserir manualmente as configurações é um trabalho difícil. No passado, muitas pessoas simplesmente conectariam o dispositivo e o usariam com as configurações padrões. Estas configurações permitem que os dispositivos se conectem facilmente, porém deixam uma série de falhas de segurança, tais como a falta de criptografia e o uso do SSID e da senha de gerenciamento padrão. O WPS foi desenvolvido para ajudar as pessoas a configurar e proteger uma rede sem fio de forma rápida e fácil.</p>
+          <p>Com o WPS, a maneira mais comum para um usuário se conectar é o método PIN. Com o método de PIN, o roteador wireless tem um PIN de fábrica que é impresso em uma etiqueta ou exibido em um display. Quando um dispositivo wireless tenta se conectar ao roteador sem fio, o roteador pede o PIN. Depois que o usuário digitar o PIN correto, ele estará conectado à rede e a segurança estará ativada.</p>
+          <p>O WPS tem uma grande falha de segurança. Softwares capazes de interceptar o tráfego e recuperar o WPS PIN e a chave de criptografia pré-compartilhada foram desenvolvidos. Como uma prática recomendada de segurança, sempre que possível desative o WPS no roteador sem fio.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

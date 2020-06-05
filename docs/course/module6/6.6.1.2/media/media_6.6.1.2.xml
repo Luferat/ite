@@ -1,0 +1,50 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Controle de Acesso ao Meio em Ethernet</b>]]></text>
+</component>
+<component id="ID_btn01">
+<text><![CDATA[<b>Enviar</b>]]></text>
+</component>
+<component id="ID_btn02">
+  <text><![CDATA[<b>Redefinir</b>]]></text> 
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Hub</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>H2</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>H3</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>H4</b>]]></text>
+</component>
+<component id="ID_txt06">
+<text><![CDATA[<b>H5</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>H6</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>H7</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>H8</b>]]></text>
+</component>
+
+
+
+
+</textcomponents>

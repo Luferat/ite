@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.2.3 Backups de Dados</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Protegendo os Dados</h2>
+      </div>
+      <div id="content">
+          <p>Um backup de dados armazena uma cópia das informações de um computador em uma mídia removível, podendo ser mantido em um local seguro. O backup é uma das maneiras mais eficazes de se proteger contra a perda de dados. Os dados podem ser perdidos ou danificados em circunstâncias como roubo, falha do equipamento ou em um desastre. Se o hardware do computador falhar, os dados podem ser restaurados a partir de um backup funcional.</p>
+          <p>O backup dos dados deve ser realizado em uma base regular e estar incluso em um plano de segurança. O backup mais atual normalmente é armazenado fora do local de onde ele foi feito, de forma a proteger a mídia caso algo aconteça com a instalação principal. As mídia de backup são frequentemente reutilizadas para economizar e diminuir os gastos com as mesmas. Siga sempre as orientações de reutilização de mídias da empresa.</p>
+          <p>Estas são algumas considerações ao realizar backups de dados:</p>
+          <p><ul>
+              <li>Frequência - Os backups podem demorar muito tempo para serem concluídos. Às vezes, é mais fácil fazer um backup mensal ou semanal completo, e em seguida, fazer backups parciais frequentes de todos os dados que foram alterados desde o último backup completo. No entanto, muitos backups parciais aumentam o tempo necessário para restaurar os dados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Armazenamento - Para maior segurança, os backups devem ser transportados para um local de armazenamento externo aprovado em uma rotação diária, semanal ou mensal, conforme exigido pela política de segurança.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Segurança - Os backups podem ser protegidos com senhas. Uma senha é inserida antes dos dados presentes na mídia de backup serem restaurados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Validação - Sempre valide os backups para garantir a integridade dos dados.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

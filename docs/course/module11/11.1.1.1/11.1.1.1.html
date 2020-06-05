@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.1.1 Relação entre Habilidades de Comunicação e Solução de Problemas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Habilidades de Comunicação e Profissionais de TI</h1>
+        <h2>Habilidades de Comunicação, Resolução de Problemas e Comportamento Profissional</h2>
+      </div>
+      <div id="content">
+          <p>Pense em uma vez em que você teve que chamar um técnico para consertar alguma coisa. Ele sentiu que o seu problema era uma emergência para você? Talvez você tenha tido uma experiência ruim com o técnico. Talvez essa pessoa não pareceu se preocupar com você ou com o seu problema. Você chamaria esta pessoa para resolver um outro problema?</p>
+          <p>Talvez você tenha tida uma boa experiência com um técnico. Essa pessoa ouviu você a medida que você explicava o seu problema e, em seguida, lhe fez algumas perguntas para obter mais informações. Será que você aprecia quando o técnico é simpático e receptivo? Você chamaria esta pessoa para resolver um outro problema?</p>
+          <p>A boa capacidade de comunicação de um técnico é uma ferramenta no processo de solução de problemas. É preciso tempo e experiência para desenvolver boas habilidades de comunicação e de resolução de problemas. Tal como os seus conhecimentos de hardware, software e de sistemas operacionais aumentam, sua capacidade de determinar rapidamente um problema e encontrar uma solução vai melhorar. O mesmo princípio se aplica para o desenvolvimento de habilidades de comunicação. Quanto mais você praticar boas habilidades de comunicação, mais eficaz você se tornará ao trabalhar com os clientes. Um técnico experiente e que possui uma boa capacidade de comunicação sempre terá demanda no mercado de trabalho.</p>
+          <p>Para solucionar problemas de um computador, você precisa ter um conhecimento detalhado do problema do cliente. Provavelmente, as pessoas que necessitam de algum conserto estão, de algum modo, estressadas. Se você estabelecer um bom relacionamento com o cliente, o cliente poderá relaxar um pouco. Com o cliente relaxado é mais provável que ele seja capaz de fornecer a informação que você precisa para determinar a origem do problema e, em seguida, corrigi-lo.</p>
+          <p>Falar diretamente com o cliente normalmente é o primeiro passo para resolver o problema do computador. Como técnico, você também tem acesso a várias ferramentas de pesquisa e comunicação. Todos estes recursos podem ser utilizados para ajudá-lo a obter a informação que será utilizada no processo de resolução de problemas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

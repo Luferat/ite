@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.3.1.7 Configurando o Firewall do Windows</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva Comum para a Segurança</h1>
+        <h2>Manutenção de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Um firewall seletivamente nega determinados tipos de tráfego com destinados a um computador ou rede. Firewalls geralmente trabalham abrindo e fechando as portas usadas por várias aplicações. Ao abrir apenas as portas necessárias no firewall, você está implementando uma política de segurança restritiva. Qualquer pacote não permitido explicitamente será negado. Por outro lado, uma política de segurança permissiva permite o acesso através de todas as portas, exceto aquelas que foram negadas. No passado, firewalls de software e hardware eram enviados com configurações permissivas. Como os usuários recusavam-se a configurar o seu equipamento, as configurações padrão permissivas deixavam muitos dispositivos expostos aos invasores. A maioria dos dispositivos já vêm com as configurações mais restritivas possíveis, permitindo ainda uma fácil configuração.</p>
+          <p>A configuração de Firewall no Windows 7 ou Windows Vista pode ser concluída de duas maneiras:</p>
+          <p><ul>
+              <li>Automaticamente - O usuário é solicitado a manter Bloqueado, Desbloquear ou Perguntar Depois quando uma solicitação de um serviço é exibida. Estas solicitações podem ser de aplicações legítimas que não foram previamente configuradas ou de um vírus/worm que infectou o sistema.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gerenciar Configurações de Segurança - O usuário adiciona manualmente os programa ou portas que são necessários para o uso dos aplicativos na rede.</li>
+            </ul>
+          </p>
+          <p>Para permitir o acesso de um programa através do Firewall do Windows no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Firewall do Windows> Permitir um programa ou recurso pelo Firewall do Windows> Permitir outro programa ...</p>
+          <p>Para permitir o acesso de um programa através do Firewall do Windows no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Central de Segurança> Firewall do Windows> Alterar Configurações> Continuar> Exceções> Adicionar Programa</p>
+          <p>Para permitir o acesso de um programa através do Firewall do Windows no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Central de Segurança> Firewall do Windows> Exceções> Adicionar Programa</p>
+          <p>Para desativar o Firewall do Windows no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Firewall do Windows> Ativar ou Desativar o Firewall do Windows> Desativar o Firewall do Windows (não recomendado)> OK</p>
+          <p>Para desativar o Firewall do Windows no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Central de Segurança> Firewall do Windows> Ativar ou Desativar o Firewall do Windows> Continuar> Desativado (não recomendável)> OK</p>
+          <p>Para desativar o Firewall do Windows no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Central de Segurança> Firewall do Windows</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

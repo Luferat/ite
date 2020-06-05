@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.1.2 Formatação do Disco Rígido</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Procedimentos de Configuração do Disco Rígido</h2>
+      </div>
+      <div id="content">
+          <p>Os procedimentos de formatação do um sistema operacional faz com que o disco rígido retorne ao estado de quando foi adquirido. Nenhuma informação atualmente armazenada na unidade é preservada. Durante a primeira fase do processo de instalação de um S.O. é realizado o particionamento e a formatação do disco. Estes processos preparam o disco para aceitar o novo sistema de arquivos. O sistema de arquivos fornece a estrutura de diretórios que organiza o sistema operacional do usuário, aplicações, configurações e arquivos de dados.</p>
+          <p>Os sistemas operacionais Windows utilizam um dos seguintes sistemas de arquivos:</p>
+          <p><ul>
+              <li>New Technology File System (NTFS) - Em teoria, suporta tamanhos de partições de até 16 exabytes. O NTFS incorpora mais recursos de segurança e estende os atributos do sistema de arquivos FAT.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>File Allocation Table, 32 bits (FAT32) - Suporta tamanhos de partições de até 2 TB ou 2.048 GB. O sistema de arquivos FAT32 é utilizado pelo Windows XP e por outras versões anteriores do sistema operacional.</li>
+            </ul>
+          </p>
+          <p>O sistema de arquivo indicado para a formatação e instalação do Windows é o NTFS. A segurança é uma das diferenças mais importantes entre o FAT32 e o NTFS. O NTFS suporta mais e maiores arquivos quando comparado com o FAT32, além de fornecer recursos de segurança mais flexíveis para os arquivos e pastas. A Figura 1 apresenta uma comparação entre os sistemas de arquivos do Windows.</p>
+          <p>Para utilizar os recursos avançados de segurança do NTFS, você pode converter as partições FAT32 para NTFS utilizando o utilitário CONVERT.EXE. Para tornar uma partição NTFS em FAT32, faça backup dos dados, formate a partição e restaure os dados a partir do backup.</p>
+          <p>ATENÇÃO: Antes de converter um sistema de arquivos, lembre-se sempre de fazer backup dos dados.</p>
+          <p>O Windows 7 e o Windows Vista criam automaticamente uma partição utilizando todo o disco rígido. Se o usuário não criar uma partição personalizada utilizando a opção Novo, conforme apresentado na Figura 2, o sistema formatará a partição e começará a instalação do Windows. Caso o usuário crie uma partição, ele poderá determinar qual será o tamanho da mesma. No Windows 7 e Windows Vista, não há nenhuma opção para selecionar o sistema de arquivos. Todas as partições são formatadas em NTFS.</p>
+          <p>Antes de instalar o Windows XP, os usuários devem criar uma nova partição. Ao criar uma nova partição, o usuário terá que escolher o tamanho dela. Depois que partição foi criada, o Windows XP oferece aos usuários a opção de formatá-la utilizando os sistemas de arquivos FAT ou NTFS. Um técnico também deve estar familiarizado com os seguintes sistemas de arquivos de multimídia:</p>
+          <p><ul>
+              <li>exFAT (FAT 64) - Criado para resolver algumas das limitações do FAT, FAT32 e NTFS ao formatar dispositivos flash USB, tais como o tamanho do arquivo e o tamanho do diretório.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compact Disc File System (CDFS) - Criado especificamente para a mídia de disco óptico.</li>
+            </ul>
+          </p>
+          <p>Formatação Rápida Vs Formatação Completa</p>
+          <p>Durante a instalação do Windows XP, você pode formatar a partição utilizando a formatação rápida ou a formatação completa, conforme apresentado na Figura 3. A formatação rápida remove os arquivos da partição, porém não verifica os setores defeituosos do disco. Verificar o disco em busca de setores defeituosos pode prevenir a perda de dados no futuro. Por esta razão, não utilizem a formatação rápida nos discos que foram formatados anteriormente. A opção de formatação rápida não é disponibilizada durante a instalação do Windows 7 ou Windows Vista.</p>
+          <p>A formatação completa remove os arquivos de uma partição durante a varredura de setores defeituosos. Ela é necessária para todos os novos discos rígidos. A formatação completa leva mais tempo para ser concluída.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

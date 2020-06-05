@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.4.2 Other Ports and Cables</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>External Ports and Cables</h2>
+    </div>
+    <div id="content">
+          <p>Input/output (I/O) ports on a computer connect peripheral devices, such as printers, scanners, and portable drives. The following ports and cables are commonly used:</p>
+          <p>
+            <ul>
+              <li>Serial </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>USB </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>FireWire </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Parallel </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>SCSI </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Network </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>PS/2 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Audio </li>
+            </ul>
+          </p>
+          <p>
+            <b>Serial Ports and Cables</b>
+          </p>
+          <p>A serial port can be either a DB-9, as shown in Figure 1, or a DB-25 male connector. Serial ports transmit one bit of data at a time. To connect a serial device, such as a modem or printer, you must a serial cable. A serial cable has a maximum length of 50 feet (15.2 m).</p>
+          <p>
+            <b>Modem Ports and Cables </b>
+          </p>
+          <p>In addition to the serial cable used to connect an external modem to a computer, a telephone cable connects the modem to a telephone outlet. This cable uses an RJ-11 connector, as shown in Figure 2. A traditional setup of an external modem using a serial cable and a telephone cable is shown in Figure 3. </p>
+          <p>
+            <b>USB Ports and Cables</b>
+          </p>
+          <p>The Universal Serial Bus (USB) is a standard interface that connects peripheral devices to a computer. It was originally designed to replace serial and parallel connections. USB devices are hot-swappable, which means that users can connect and disconnect the devices while the computer is powered on. USB connections can be found on computers, cameras, printers, scanners, storage devices, and many other electronic devices. A USB hub connects multiple USB devices. A single USB port in a computer can support up to 127 separate devices with the use of multiple USB hubs. Some devices can also be powered through the USB port, eliminating the need for an external power source. Figure 4 shows USB cables with connectors.</p>
+          <p>USB 1.1 allowed transmission rates of up to 12 Mb/s in full-speed mode and 1.5 Mb/s in low-speed mode. USB 2.0 allows transmission speeds up to 480 Mb/s. USB devices can only transfer data up to the maximum speed allowed by the specific port. USB 3.0 allows transmission speeds up to 5 Gb/s. USB 3.0 is backward-compatible with previous versions of USB.</p>
+          <p>
+            <b>FireWire Ports and Cables</b>
+          </p>
+          <p>FireWire is a high-speed, hot-swappable interface that connects peripheral devices to a computer. A single FireWire port in a computer can support up to 63 devices. Some devices can also be powered through the FireWire port, eliminating the need for an external power source. FireWire uses the IEEE 1394 standard and is also known as i.Link. Figure 5 shows FireWire cables with connectors.</p>
+          <p>The IEEE 1394a standard supports data rates up to 400 Mb/s for cable lengths of 15 feet (4.5 m) or less. This standard uses a 4-pin or 6-pin connector. The IEEE 1394b and IEEE 1394c standards allow for a greater range of connections, including CAT5 UTP and optical fiber. Depending on the media used, data rates are supported up to 3.2 Gb/s for distances of a 100 meters or less. </p>
+          <p>
+            <b>Parallel Ports and Cables </b>
+          </p>
+          <p>A parallel port on a computer is a standard Type A DB-25 female connector. The parallel connector on a printer is a standard Type B 36-pin Centronics connector. Some newer printers may use a Type C high-density 36-pin connector. Parallel ports can transmit 8 bits of data at one time and use the IEEE 1284 standard. To connect a parallel device, such as a printer, you must use a parallel cable. A parallel cable, as shown in Figure 6, has a maximum length of 15 feet (4.5 m). </p>
+          <p>
+            <b>eSATA Data Cables</b>
+          </p>
+          <p>The eSATA cable connects SATA devices to the eSATA interface using a 7-pin data cable. This cable does not supply any power to the SATA external disk. A separate power cable provides power to the disk. </p>
+          <p>
+            <b>SCSI Ports and Cables</b>
+          </p>
+          <p>A SCSI port can transmit parallel data at rates in excess of 320 Mb/s and can support up to 15 devices. If a single SCSI device is connected to a SCSI port, the cable can be up to 80 feet long (24.4 m). If multiple SCSI devices are connected to a SCSI port, the cable can be up to 40 feet (12.2 m). A SCSI port on a computer can be a 50-pin, 68-pin, or 80-pin connector, as shown in Figure 7</p>
+          <p>
+            <b>NOTE:</b> A SCSI device must terminate at the endpoint of the SCSI chain. Check the device manual for termination procedures.</p>
+          <p>
+            <b>CAUTION:</b> Some SCSI connectors resemble parallel connectors. Be careful not to connect the cable to the wrong port. The voltage used in the SCSI format may damage the parallel interface. SCSI connectors should be clearly labeled.</p>
+          <p>
+            <b>Network Ports and Cables</b>
+          </p>
+          <p>A network port, also known as an RJ-45 port, has 8 pins and connects a computer to a network. The connection speed depends on the type of network port. Standard Ethernet can transmit up to 10 Mb/s, Fast Ethernet can transmit up to 100 Mb/s, and Gigabit Ethernet can transmit up to 1000 Mb/s. The maximum length of network cable is 328 feet (100 m). A network connector is shown in Figure 8.</p>
+          <p>
+            <b>PS/2 Ports</b>
+          </p>
+          <p>A PS/2 port connects a keyboard or a mouse to a computer. The PS/2 port is a 6-pin mini-DIN female connector. The connectors for the keyboard and mouse are often colored differently, as shown in Figure 9. If the ports are not color-coded, look for a small figure of a mouse or keyboard next to each port.</p>
+          <p>
+            <b>Audio Ports</b>
+          </p>
+          <p>An audio port connects audio devices to the computer. Some of the following audio ports are commonly used, as shown in Figure 10:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Line in</b> - Connects to an external source, such as a stereo system.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Microphone</b> - Connects to a microphone.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Line out</b> - Connects to speakers or headphones.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Sony/Philips Digital Interface Format (S/PDIF)</b> - Connects to fiber-optic cable to support digital audio.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>TosLink</b> - Connects to coaxial cable to support digital audio.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Gameport/MIDI</b> - Connects to a joystick or MIDI-interfaced device </li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

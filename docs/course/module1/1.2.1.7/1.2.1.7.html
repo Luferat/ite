@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.1.7 Selecionando Discos SSD e Leitores de Mídia</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando os Componentes para Substituição no Computador</h1>
+        <h2>Selecionando os Componentes do PC</h2>
+      </div>
+      <div id="content">
+          <p>Solid State Drives</p>
+          <p>Um SSD utiliza uma RAM estática, ao invés de pratos magnéticos, para armazenar dados, como mostrado na Figura 1. SSDs são considerados altamente confiáveis, pois eles não têm partes móveis.</p>
+          <p>Escolha um SSD caso o seu cliente precise para fazer quaisquer das seguintes opções:</p>
+          <p><ul>
+              <li>Operar em ambientes extremos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usar menos energia</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Produzir menos calor</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Reduzir o tempo de inicialização</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Leitores de Mídia</p>
+          <p>Um leitor de mídia é um dispositivo que lê e grava em diferentes tipos de cartões de mídia, por exemplo aqueles encontrados em uma câmera digital, smartphones ou MP3 players. Ao substituir um leitor de mídia, verifique se ele suporta os tipos de cartões utilizados e a capacidade de armazenamento dos cartões a serem lidos. Existem vários fatores a serem considerados ao comprar um novo leitor de mídia:</p>
+          <p><ul>
+              <li>Interno ou externo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo de conector usado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo de cartões de mídia suportados</li>
+            </ul>
+          </p>
+          <p>Escolha o leitor de mídia correto com base nas necessidades atuais e futuras do seu cliente. Por exemplo, se um cliente precisa usar vários tipos de cartões de mídia, um leitor de mídia de múltiplos formatos é necessário. Estes são alguns cartões de mídia comuns, conforme mostrado na Figura 2:</p>
+          <p><ul>
+              <li>Secure Digital (SD) - Os cartões SD foram projetados para uso em dispositivos portáteis, como câmeras, MP3 players e tablets. Os cartões SD podem armazenar até 4 GB. Os SDs de Alta Capacidade (SDHC - High Capacity SD) armazenam até 32 GB, enquanto que cartões SD de Capacidade Estendida (SDXC) podem armazenar até 2 TB de dados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>microSD - Uma versão muito menor do SD, comumente usada ​​em telefones celulares.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CompactFlash - CompactFlash é um formato mais antigo, porém muito utilizado devido à sua alta capacidade (geralmente, de até 128 GB) e alta velocidade. A CompactFlash é frequentemente utilizada como dispositivo de armazenamento em câmeras de vídeo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Memory Stick - Memória flash proprietária criada pela Sony Corporation. A Memory Stick é usado em câmeras, MP3 players, sistemas portáteis de videogames, telefones celulares, câmeras e outros eletrônicos portáteis.</li>
+            </ul>
+          </p>
+          <p>Outro tipo de cartão de mídia é o Digital Extreme (xD ou xD-Picture Card). Cartões xD foram desenvolvidos para uso em muitas câmeras e gravadores de voz, mas desde então se tornaram obsoletos devido ao amplo uso de cartões SD. Cartões xD possuem uma capacidade máxima de 2 GB.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

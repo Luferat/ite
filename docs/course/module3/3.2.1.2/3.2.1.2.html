@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.1.2 Configuração da BIOS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Inicializando o Computador</h1>
+        <h2>POST e BIOS</h2>
+      </div>
+      <div id="content">
+          <p>A BIOS contém um programa utilizado para configurar as definições dos dispositivos de hardware. Os dados de configuração são salvos em um chip de memória chamado de Complementary Metal Oxide Semiconductor (CMOS), conforme apresentado na Figura 1. A CMOS é mantida pela bateria do computador. Se a bateria descarregar, os dados de configuração da BIOS serão perdidos. Caso isso aconteça, substitua a bateria e reconfigure a BIOS.</p>
+          <p>Muitas placas-mãe modernas usam a memória não volátil para armazenar as configurações da BIOS. Este tipo de memória não precisa de energia para armazenar as configurações. Nesse caso, a bateria é utilizada apenas para armazenar a hora e data correta no relógio. As configurações da BIOS não são perdidas quando a bateria descarrega ou é removida.</p>
+          <p>Para acessar o programa de configuração da BIOS, pressione a tecla ou a sequência de teclas apropriadas durante o POST. Muitas placas-mãe exibem imagens enquanto o computador passa pelo processo de POST. Assim, o computador pode não exibir a tecla ou a sequência de teclas necessárias. A maioria dos computadores usam a tecla DEL ou uma tecla de função para acessar a BIOS. Consulte o manual da placa-mãe para descobrir a tecla ou sequência de teclas utilizada pelo seu computador.</p>
+          <p>A Figura 2 apresenta o exemplo de um programa de configuração da BIOS. Estas são algumas opções presentes no menu de configuração da BIOS:</p>
+          <p><ul>
+              <li>Main - Configurações básica do sistema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Advanced - Configurações avançadas do sistema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Boot - Opções de dispositivos e ordem de inicialização</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Segurança - Configurações de segurança</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Power - Configurações de gerenciamento avançado de energia</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>JUSTw00t! - Configurações avançadas de tensão e clock</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Exit - Opções de saída da BIOS e para carregar as configurações padrão</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

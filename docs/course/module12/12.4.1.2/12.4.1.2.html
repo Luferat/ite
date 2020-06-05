@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>12.4.1.2 Problemas e Soluções Comuns de Laptops</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Laptops</h1>
+        <h2>Aplicar o Processo de Solução de Problemas em Laptops</h2>
+      </div>
+      <div id="content">
+          <p>Problemas de laptops podem ser atribuídos a hardware, software, redes ou alguma combinação dos três. Você resolverá alguns problemas de laptops encontrados com mais frequência do que outros problemas.</p>
+          <p>Se você precisar substituir os componentes do laptop, certifique-se de que você tenha o componente de reposição correto e as ferramentas recomendadas pelo fabricante.</p>
+          <p>A Figura 1 é um gráfico dos problemas e soluções de laptops mais comuns. Antes de substituir as peças do laptop, certifique-se de que você compreende as etapas envolvidas e possui as habilidades necessárias para a instalação.</p>
+          <p>A Figura 2 é um gráfico dos problemas e soluções comuns relacionados a dispositivos de armazenamento e memória RAM. A maioria das etapas de substituição dos dispositivos de armazenamento e memórias seguem um processo de instalação genérico.</p>
+          <p>A Figura 3 é um gráfico dos problemas e soluções comuns relacionados a dispositivos de entrada e de energia. A maioria das etapas de substituição de uma bateria de laptop seguem um processo de instalação genérico.</p>
+          <p>A Figura 4 é um gráfico dos problemas e soluções comuns relacionados a ventilação, CPU, som e cartões de expansão. Todas as placas de expansão do PC, incluindo a ExpressCard, são inseridas e removidas utilizando passos semelhantes.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

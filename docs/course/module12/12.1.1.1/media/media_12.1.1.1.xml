@@ -1,0 +1,156 @@
+﻿<textcomponents>
+  <component id="ID_title">
+    <text>
+      <![CDATA[<b> </b>]]>
+    </text>
+  </component>
+  <component id='ID_table_01'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1: Identificação do Problema</b></font></td>
+	</tr> 
+                <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Questões Abertas</font></td>
+          <td  valign="top" bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Que tipo de computador você tem?</li><li>Qual é a marca e modelo do computador?</li><li>Você pode descrever o que acontece quando o computador é inicializado?</li><li>Com que frequência o computador falha ao inicializar?</li><li>Qual é a primeira tela que você vê quando o computador é ligado?</li><li>Que som o computador faz quando é ligado?</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#FFFFFF'><font color='#393536'>Questões Fechadas</font></td>
+          <td  valign="top" bgcolor='#FFFFFF'><textformat blockindent='-18'><font color='#393536'><li>Alguém fez algum reparo no computador recentemente?</li>
+							<li>Alguém usou o computador?</li>
+							<li>Alguma mídia está inserida na unidade de disquete ou óptica?</li>
+							<li>O computador possui um drive USB conectado?</li>
+							<li>O computador pode ser usado para se conectar em uma rede sem fio?</li>
+							<li>Durante a noite, o computador é protegido em uma sala trancada?</li>
+							<li>Você possui uma mídia de instalação do Windows disponível?</li></font></textformat></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_02'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 2: Estabelecer a Teoria da Provável Causa</b></font></td>
+	</tr> 
+              <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Causas comuns de problemas de hardware</font></td>
+          <td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Problemas de alimentação do computador</li>
+						<li>Cabos externos soltos</li>
+						<li>Cabo de dados solto</li>
+						<li>Placa de expansão solta</li>
+						<li>RAM defeituosa</li>
+						<li>Driver incorreto do dispositivo</li>
+						<li>As ventoinhas estão sujas</li>
+						<li>Configurações incorretas de jumpers</li>
+						<li>Problema na bateria da CMOS</li>
+						<li>Firmware incorreto</li>
+						<li>Peças defeituosas</li></font></textformat></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_03'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 3: Teste a Teoria para Determinar a Causa</b></font></td>
+	</tr> 
+               <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+          <td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Reinicie o computador</li>
+						<li>Desconecte e reconecte os cabos externos</li>
+						<li>Desconecte e reconecte os cabos internos</li>
+						<li>Fixe a placa de expansão</li>
+						<li>Reverta ou reinstale o driver do dispositivo</li>
+						<li>Substitua a RAM</li>
+						<li>Limpe as ventoinhas</li>
+						<li>Redefina os jumpers</li>
+						<li>Fixe ou substitua a bateria da CMOS</li>
+						<li>Atualize o firmware</li>
+						<li>Escute os beeps</li>
+						<li>Procure os códigos ou mensagens de erro</li></font></textformat></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_04'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 4: Estabelecer um Plano de Ação para Verificar o Problema e Implementar a Solução</b></font></td>
+	</tr> 
+          <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Se nenhuma solução for alcançada na etapa anterior, novas pesquisas serão necessárias para implementar a solução</font></td>
+          <td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Logs de Reparação do Helpdesk</li>
+						<li>Outros Técnicos</li>
+						<li>FAQs do Fabricante</li>
+						<li>Websites Técnicos</li>
+						<li>Grupos de Notícias</li>
+						<li>Manuais do Computador</li>
+						<li>Manuais dos Dispositivos</li>
+						<li>Fóruns on-line</li>
+						<li>Busca na Internet</li></font></textformat></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_05'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 5: Verifique a Funcionalidade Completa do Sistema e, se necessário, Implemente as Medidas Preventivas</b></font></td>
+	</tr> 
+          <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Verifique a Solução e a Funcionalidade Completa do Sistema </font></td>
+          <td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Reinicie o computador</li>
+						<li>Reinicie os dispositivos externos</li>
+						<li>Acesse todas as unidades e recursos compartilhados</li>
+						<li>Imprima um documento</li>
+						<li>Acesse e edite um arquivo em todos os dispositivos de armazenamento</li>
+						<li>Valide a quantidade de memória RAM, CPU, velocidade, bem como a data e hora</li>
+						<li>Teste a conectividade da rede</li>
+						<li>Execute os programas mais utilizados</li></font></textformat></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_06'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 6: Documente as Descobertas, Ações e Resultados</b></font></td>
+	</tr> 
+          <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Documente as Descobertas</font></td>
+          <td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Discuta a solução implementada com o cliente</li>
+						<li>O cliente deve verificar se o problema foi resolvido</li>
+						<li>Forneça ao cliente toda a documentação</li>
+						<li>Documente as medidas tomadas para resolver o problema na ordem de trabalho e no diário do técnico</li>
+						<li>Documente quaisquer componentes utilizados no reparo.</li>
+						<li>Documente o tempo gasto para resolver o problema</li></font></textformat>
+				</td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  
+</textcomponents>

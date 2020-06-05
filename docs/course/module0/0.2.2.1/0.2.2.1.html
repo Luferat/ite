@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>0.2.2.1 Técnicos de Campo, Remoto e de Bancada</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Indústria de TI</h1>
+        <h2>Resumo dos Trabalhos Técnico</h2>
+      </div>
+      <div id="content">
+          <p>Sua experiência de trabalho com computadores e uma certificação técnica pode ajudá-lo a tornar-se qualificado para qualquer emprego da lista à seguir:</p>
+          <p><ul>
+              <li>Técnico de Campo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Técnico Remoto</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Técnico de Bancada</li>
+            </ul>
+          </p>
+          <p>Técnicos em diferentes carreiras de informática podem trabalhar em ambientes diferentes. No entanto, as habilidades exigidas por cada carreira podem ser muito similar. O grau para o qual são necessários diferentes capacidades variam de um trabalho para outro. Quando você treinar para se tornar um técnico de informática, é necessário desenvolver as seguintes competências:</p>
+          <p><ul>
+              <li>Construção e modernização de computadores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Execução de instalações</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instalação, configuração e otimização de software</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Realizar manutenção preventiva</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Solução de problemas e reparação de computadores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Se comunicar claramente com o cliente</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Documentar o feedback do cliente e as etapas envolvidas para encontrar a solução de um problema</li>
+            </ul>
+          </p>
+          <p>Um técnico de campo, como mostrado na Imagem 1, trabalha em uma variedade de lugares, incluindo casas particulares, empresas e escolas. Você pode trabalhar para uma empresa e dar suporte apenas para os sistemas de computador e da rede que ela possui. Como outra alternativa, você pode trabalhar para uma empresa que fornece o reparo dos equipamentos de informática para uma variedade de empresas e clientes no local dos mesmos. Em qualquer uma destas situações, você precisa de excelentes habilidades de resolução de problemas e habilidades de atendimento ao cliente, porque você está em contato regular com os clientes e trabalha com uma grande variedade de hardware e software.</p>
+          <p>Se você é um técnico remoto, você pode trabalhar em um help desk, atendimento de chamadas ou e-mails de clientes que possuem problemas no computador, conforme apresentado na Imagem 2. Você pode criar ordens de trabalho e se comunicar com o cliente para tentar diagnosticar e reparar o problema. Boa capacidade de comunicação são importantes, pois o cliente deve entender claramente suas perguntas e instruções. Alguns help desks usam um software para se conectar diretamente ao computador de um cliente para resolver o problema. Como um técnico remoto, você pode trabalhar com uma equipe de técnicos de um site de negócios ou em sua própria casa.</p>
+          <p>Como um técnico de bancada, você normalmente não trabalhará diretamente com os clientes. Técnicos de bancada são muitas vezes contratados para executar o serviço de garantia do computador em um depósito central ou local de trabalho, conforme apresentado na Imagem 3.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

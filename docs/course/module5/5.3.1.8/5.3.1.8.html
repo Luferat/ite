@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.1.8 Computador e Windows Explorer</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Desktop, Ferramentas e Aplicações</h2>
+      </div>
+      <div id="content">
+          <p>Computador</p>
+          <p>O recurso Computador permite que você acesse várias unidades instaladas no PC. No o Windows 7 ou Windows Vista, clique em Iniciar e selecione Computador. No Windows XP, esse recurso é chamado de Meu computador, e você pode acessá-lo clicando duas vezes no ícone Meu computador na área de trabalho.</p>
+          <p>Windows Explorer</p>
+          <p>O Windows Explorer permite que você navegue no sistema de arquivos. O painel de navegação do Windows 7, conforme apresentado na figura, inclui o caminho da pasta ou arquivo acessado atualmente no topo, uma barra de busca no canto superior direito, uma barra de ferramentas embaixo da listagem do caminho e da barra de pesquisa, um painel de navegação à esquerda e um painel de visualização à direita do painel de navegação. Você pode usar a barra de busca para encontrar um aplicativo específico, arquivo ou pasta. A barra de ferramentas permite que você organize os arquivos, adicione novas pastas, altere o layout de arquivos no Windows Explorer, exiba um painel de pré-visualização de arquivos e pastas, além de abrir o recurso de ajuda do Windows. O painel de navegação inclui uma lista padrão de pastas, incluindo os Favoritos, Bibliotecas, Computador e Rede. Você pode usar o painel de visualização para acessar ou manipular aplicativos, arquivos e pastas.</p>
+          <p>O windows 7 adiciona as seguintes funcionalidades para o Windows Explorer:</p>
+          <p><ul>
+              <li>Caixa de Pesquisa - Acessa pesquisas anteriores. Você também pode filtrar os resultados das buscas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Nova pasta - Cria novas pastas com apenas um clique.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Organizar por: - Organiza os itens facilmente com diferentes critérios.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Botão do painel de visualização - Habilita ou desabilitada o painel de visualização.</li>
+            </ul>
+          </p>
+          <p>Iniciando Aplicativos e Abrindo Arquivos</p>
+          <p>Você pode iniciar um aplicativo de várias maneiras:</p>
+          <p><ul>
+              <li>Clique no ícone de um aplicativo no Menu Iniciar ou na barra de tarefas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dê um duplo clique no executável do aplicativo ou no ícone de atalho localizado no desktop ou no Windows Explorer.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Inicie o aplicativo a partir da janela Executar ou da console de linha de comando.</li>
+            </ul>
+          </p>
+          <p>Você pode abrir os arquivos da mesma forma que as aplicações. Quando você abre um arquivo, o Windows determina qual aplicativo está associado com o arquivo. O Windows compara a extensão do arquivo com as aplicações instaladas capazes de abrir o arquivo. Por exemplo, se você abrir um arquivo docx., O Windows iniciará o Microsoft Word e abrirá o arquivo.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

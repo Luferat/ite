@@ -1,0 +1,14 @@
+﻿<textcomponents> 
+<component id="ID_title_01">
+<text><![CDATA[<b>Netiqueta Básica</b>]]></text>
+</component>
+<component id="ID_body01">
+  <text><![CDATA[<textformat blockindent='-16'><li><textformat blockindent='-18'>Seja agradável e educado.</textformat></li><li><textformat blockindent='-18'>Comece cada email, mesmo que seja uma resposta, com uma saudação adequada.</textformat></li><li><textformat blockindent='-18'>Nunca envie correntes via email.</textformat></li><li><textformat blockindent='-18'>Não envie ou resposta à provocações (flames).</textformat></li><li><textformat blockindent='-18'>Use letras maiúsculas e minúsculas. TEXTOS ESCRITOS EM LETRAS MAIÚSCULAS DÃO A ENTENDER QUE A PESSOA QUE O ENVIOU ESTÁ GRITANDO.</textformat></li><li><textformat blockindent='-18'>Verifique a gramática e a ortografia antes de enviar.</textformat></li><li><textformat blockindent='-18'>Seja ético.</textformat></li><li><textformat blockindent='-18'>Nunca envie uma mensagem que você não diria cara a cara à alguém.</textformat></li></textformat>]]></text> 
+ 
+  </component>
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>
+
+ 

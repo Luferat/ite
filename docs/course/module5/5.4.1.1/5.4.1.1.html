@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.4.1.1 Objetivo das Máquinas Virtuais</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Virtualização Client-Side</h1>
+        <h2>Propósito e Requisitos da Virtualização</h2>
+      </div>
+      <div id="content">
+          <p>Em um ambiente de negócios, as empresas devem gerenciar os recursos tecnológicos de uma forma que lhes permitam manter a competitividade, reduzindo custos e alocando os recursos com sabedoria. Como resultado, a virtualização client-side tornou-se um método popular de fornecer apoio à recursos críticos, tais como aplicações, serviços de compartilhamento de arquivos e outras ferramentas de produtividade. A virtualização também tem vantagens para usuários SOHO (Small Office/Home Office), pois pode fornecer acesso à programas que não estão disponíveis em um sistema operacional específico.</p>
+          <p>A virtualização ocorre quando uma máquina hospedeira (host) usa seus recursos de sistema para hospedar uma máquina virtual. Uma máquina virtual é também conhecida por guest. A máquina hospedeira deve ser uma máquina física, ligada e controlada por um usuário. A máquina virtual usa os recursos de sistema presentes na máquina física para inicializar e executar o sistema operacional. O sistema operacional da máquina virtual é independente do sistema operacional instalado na máquina host.</p>
+          <p></p>
+          <p>Hospedar de uma máquina virtual permite que os usuários acessem as funcionalidade e recursos fornecidos por um outro sistema operacional que está completamente isolado do sistema operacional do computador host. Por exemplo, uma máquina host executando o Windows 7 pode hospedar uma máquina virtual com o Windows XP instalado. Esta máquina virtual pode executar um software específico para o Windows XP. A instalação do Windows XP não interfere na instalação do Windows 7, presente na máquina host. Se necessário, os utilizadores podem aumentar ainda mais a funcionalidade dos seus recursos de sistema, executando múltiplas máquinas virtuais.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

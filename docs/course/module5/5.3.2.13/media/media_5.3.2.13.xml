@@ -1,0 +1,5 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Firewall do Windows</b>]]></text>
+	</component>
+</textcomponents>

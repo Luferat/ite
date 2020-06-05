@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.4.1 Tipos de Dados a Serem Sincronizados</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e Email</h1>
+        <h2>Sincronização de Dispositivos Móveis</h2>
+      </div>
+      <div id="content">
+          <p>Muitas pessoas usam desktops, laptops, tablets e smartphones para acessar e armazenar informações. É útil quando uma informação específica está armazenada em vários dispositivos. Por exemplo, ao agendar uma consulta usando um programa de calendário, cada novo compromisso terá de ser inserido em cada dispositivo para garantir que todos estejam atualizados. A sincronização de dados elimina a necessidade de fazer mudanças constantes em cada dispositivo.</p>
+          <p>A sincronização de dados é a troca de informações entre dois ou mais dispositivos, mantendo os mesmos consistentes sobre esses dispositivos. Alguns dos tipos de dados que podem ser sincronizados são:</p>
+          <p><ul>
+              <li>Contatos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Email</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Calendário</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Imagens</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Música</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Aplicativos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Vídeo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Configurações e links do navegador.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

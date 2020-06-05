@@ -1,0 +1,63 @@
+﻿<textcomponents>
+<component id="ID_title">
+  <text><![CDATA[<b>Tipos de RAM</b>]]></text>
+  </component>
+  
+ <component id="ID_btn01">
+  <text><![CDATA[<b>DRAM</b>]]></text>
+  </component>
+<component id="ID_btn02">
+  <text><![CDATA[<b>SRAM</b>]]></text> 
+  </component>
+<component id="ID_btn03">
+  <text><![CDATA[<b>Memória FPM</b>]]></text> 
+  </component>
+<component id="ID_btn04">
+  <text><![CDATA[<b>Memória EDO</b>]]></text>
+  </component>
+<component id="ID_btn05">
+  <text><![CDATA[<b>SDRAM</b>]]></text> 
+  </component>
+<component id="ID_btn06">
+  <text><![CDATA[<b>SDRAM DDR</b>]]></text> 
+  </component>  
+<component id="ID_btn07">
+  <text><![CDATA[<b>SDRAM DDR2</b>]]></text>
+  </component>
+<component id="ID_btn08">
+  <text><![CDATA[<b>SDRAM DDR3</b>]]></text> 
+  </component>
+<component id="ID_btn09">
+  <text><![CDATA[<b>RDRAM</b>]]></text> 
+  </component>   
+  
+<component id="ID_txt01">
+  <text><![CDATA[A RAM Dinâmica, DRAM, é um chip de memória utilizado como memória principal. A DRAM deve ser constantemente atualizada com pulsos eléctricos, a fim de manter os dados memorizados no chip.]]></text>
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[A RAM estática, SRAM, é um chip de memória utilizado como memória cache. A SRAM é muito mais rápida do que a DRAM e não precisa ser atualizada com tanta frequência. As memórias SRAM são muito mais caras do que as DRAM.]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[A memória FPM, Fast Page Mode (FPM DRAM), é um tipo de memória que suporta paginação. A paginação permite o acesso aos dados de forma mais rápida do que as memórias DRAM regulares. A memória FPM era utilizada em sistemas Intel 486 e Pentium.]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[A memória EDO, Extended Data Out (EDO RAM), é a memória que sobrepõe acessos de dados consecutivos. Isso acelera o tempo necessário para recuperar os dados da memória, pois a CPU não tem que esperar que um ciclo de acesso a dados termine antes que outro ciclo comece.]]></text>
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[A DRAM síncrona, Synchronous DRAM (SDRAM), é uma memória que opera em sincronia com o barramento de memória. O barramento da memória é o caminho de dados entre a CPU e a memória principal. Sinais de controle são utilizados para coordenar a troca de dados entre a SDRAM e a CPU.]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[A Double Data Rate SDRAM, DDR SDRAM, é a memória que transfere dados duas vezes mais rápido do que a SDRAM. DDR SDRAM aumenta o desempenho ao transferir o dobro de dados por ciclo.]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[Double Data Rate 2 SDRAM, DDR2 SDRAM, é mais rápida que a memória DDR SDRAM. A memória DDR2 SDRAM supera o desempenho da memória DDR SDRAM, diminuindo o ruído e a interferência entre os sinais.]]></text>
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[A Double Data Rate 3 SDRAM, DDR3 SDRAM, expande a largura de banda da memória, dobrando assim a velocidade de clock da memória DDR2 SDRAM. A memória DDR3 SDRAM consome menos energia e gera menos calor do que a DDR2 SDRAM.]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[A RAMBus DRAM, RDRAM, é um chip de memória que foi desenvolvido para se comunicar em altas taxas de velocidade. Não é comum o uso de memórias RDRAM.]]></text> 
+  </component>  
+  
+  
+</textcomponents>

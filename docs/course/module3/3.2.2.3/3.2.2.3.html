@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.2.3 Configurações de Segurança da BIOS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Inicializando o Computador</h1>
+        <h2>Configuração da BIOS</h2>
+      </div>
+      <div id="content">
+          <p>A BIOS pode suportar muitos recursos de segurança para proteger suas configurações e os dados no disco rígido, além de também ajudar a recuperar o computador em caso de roubo. Existem vários recursos comuns de segurança encontrados na BIOS.</p>
+          <p></p>
+          <p>Senhas da BIOS - As senhas permitem diferentes níveis de acesso às configurações da BIOS, conforme apresentado na figura.</p>
+          <p><ul>
+              <li>Senha Supervisor - Esta senha pode acessar todas as senhas de acesso de usuários e todas as telas e configurações da BIOS.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Senha Usuário - Esta senha torna-se disponível após a senha de supervisor estiver habilitada. Use essa senha para definir o nível de acesso aos usuários.</li>
+            </ul>
+          </p>
+          <p>Estes são alguns níveis comuns de acesso de usuário:</p>
+          <p><ul>
+              <li>Acesso Total - Todas as telas e configurações estão disponíveis, exceto a configuração da senha de supervisor.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Limitado - Apenas algumas mudanças e configurações podem ser feitas, por exemplo, a data e hora.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Visualização Apenas - Todas as telas estão disponíveis, mas nenhuma configuração pode ser alterada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sem acesso - Nenhum acesso é fornecido ao utilitário de configuração da BIOS.</li>
+            </ul>
+          </p>
+          <p>Criptografia de Unidade - O disco rígido pode ser criptografado para evitar o roubo de dados. A criptografia altera os dados em código que não podem ser entendidos. Sem a senha correta, o computador não inicia e também não descriptografa os dados. Mesmo que o disco rígido seja colocado em outro computador, os dados criptografados permanecem criptografados.</p>
+          <p>Trusted Platform Module - O chip TPM contém itens de segurança, tais como chaves de criptografia e senhas.</p>
+          <p>Lojack - Este é um sistema de duas partes utilizados para proteger os computadores da Absolute Software. A primeira parte é um programa chamado de Módulo de Persistência que está instalado na BIOS pelo fabricante. A segunda parte é um programa chamado Agente de Aplicação que é instalado pelo usuário. Quando o Agente de Aplicação é instalado, o Módulo de Persistência é ativado. O Módulo Persistência instala o Agente de Aplicação caso ele seja removido do computador. O Módulo de Persistência não pode ser desligado após ser ativado. O Agente de Aplicação chama o Centro de Monitoramento Absoluto pela Internet para relatar informações sobre o dispositivo e localização em um cronograma definido. Se o computador for roubado, o proprietário pode entrar em contato Absolute Software e realizar as seguintes funções:</p>
+          <p><ul>
+              <li>Bloquear o computador remotamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Exibe uma mensagem de modo que o computador perdido possa ser devolvido para o proprietário.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Excluir os dados confidenciais do computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Localiza o computador utilizando geotecnologia.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.4.1 Dispositivos de Entrada</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Dispositivos de Entrada e Saída</h2>
+      </div>
+      <div id="content">
+          <p>Um dispositivo de entrada introduz dados ou instruções para um computador. Aqui estão alguns exemplos de dispositivos de entrada:</p>
+          <p><ul>
+              <li>Mouse e teclado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gamepad e joystick</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Câmera e filmadora digital</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dispositivo de autenticação biométrica</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Touch screen</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Digitalizador</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Scanner</li>
+            </ul>
+          </p>
+          <p>Mouses e Teclados</p>
+          <p>O mouse e o teclado são os dois dispositivos de entrada mais utilizados. O mouse é usado para navegar pela interface gráfica do usuário (GUI). O teclado é usado para digitar comandos de texto que controlam o computador.</p>
+          <p>Um switch KMV é um dispositivo de hardware que pode ser usado para controlar mais de um computador usando apenas um único teclado, monitor e mouse. Para as empresas, os switches KVM fornecem acesso de custo-eficiente para vários servidores. Os usuários domésticos podem economizar espaço usando um switch KVM, como exibido naFigura 1, para conectar vários computadores a um teclado, monitor e mouse.</p>
+          <p>Os switches KVM mais recentes também são capazes de compartilhar dispositivos USB e alto-falantes para vários computadores. Normalmente, ao pressionar um botão no switch KVM, o usuário pode alternar o controle de um computador conectado para outro. Alguns modelos de switch KVM controlam a troca de um computador para outro através de uma sequência de teclas específicas, como Ctrl > Ctrl > A > Enter para controlar o primeiro computador conectado ao switch e depois Ctrl > Ctrl > B > Enter para transferir o controle para o próximo computador.</p>
+          <p>Gamepads e Joysticks</p>
+          <p>Os dispositivos de entrada utilizados para jogar jogos incluem os gamepads (controles) e os joysticks, como mostrado na Figura 2. Gamepads permitem ao usuário controlar o movimento e a visão do jogo através de botões cursores movidos pelo polegar do jogador. Vários botões são pressionados para alcançar resultados específicos dentro de um jogo, como pular ou atirar. Muitos gamepads ainda têm botões de gatilhos que registram a quantidade de pressão que o jogador coloca sobre eles. Por exemplo, aplicar mais pressão em um gatilho faz com que o jogador acelere em um jogo de corrida.</p>
+          <p>Joysticks também são usados ​​para jogar jogos e executar simulações. O melhor uso dos joystick são nos jogos de simulação de voo, pois puxando o mesmo, o usuário faz com que, por exemplo, o avião do simulador suba.</p>
+          <p>Câmera e Filmadora Digital</p>
+          <p>As câmera e filmadoras digitais, mostradas na Figura 3, criam imagens que podem ser armazenadas em meio magnético. A imagem é armazenada como um arquivo que pode ser visualizado, impresso ou alterado. As webcams são dispositivos utilizados para capturar imagens em tempo real e podem estar embutidas em monitores e laptops ou simplesmente serem um dispositivo autônomo (stand alone). As webcams são muito utilizadas para criar vídeos e postar na internet ou a realizar de sessões de bate-papo de vídeo com outras pessoas. Elas também podem armazenar vídeos e imagens no computador. Um microfone permite que o usuário se comunique com outras pessoas de forma audível durante uma sessão de bate-papo de vídeo ou uma gravação de voz durante a criação de um vídeo.</p>
+          <p>Dispositivos de Identificação Biométrica</p>
+          <p>A identificação biométrica faz uso de características únicas de cada usuário individual para autenticá-lo, tais como impressões digitais, reconhecimento de voz ou varredura de retina. Quando combinado com usuários comuns, a biometria garante que a pessoa autorizada está acessando os dados. A Figura 4 mostra um computador portátil que possui um leitor de impressões digitais integrado. Ao verificar a impressão digital do usuário, o mesmo terá acesso se as características da impressão corresponderem ao banco de dados e as informações de login fornecidas estiverem corretas.</p>
+          <p>Touch Screens</p>
+          <p>A tela touch screen possui um painel transparente sensível ao toque. O computador recebe instruções específicas no local na tela que o usuário toca.</p>
+          <p>Digitalizadores</p>
+          <p>Um digitalizador (digitizer), mostrado na Figura 5, permite que um designer ou artista crie projetos, imagens ou outros trabalhos artísticos utilizando uma caneta, chamada de estilete, em cima de uma superfície que detecta onde a caneta está localizada. Alguns digitalizadores possuem mais de uma superfície ou sensor e permitem ao usuário criar modelos 3D através da realização de ações com a caneta no ar.</p>
+          <p>Scanners</p>
+          <p>O scanner digitaliza uma imagem ou documento. A imagem digitalizada é armazenada como um arquivo que pode ser visualizado, impresso ou alterado. Um leitor de código de barras é um tipo de scanner que lê o código do produto universal (UPC - universal product code). Ele é amplamente utilizado para preços e informações de inventário.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

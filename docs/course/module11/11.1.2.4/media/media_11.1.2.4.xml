@@ -1,0 +1,134 @@
+﻿<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>Transferir uma Chamada</b>]]></text>
+</component>
+<!--Instructions-->
+<component id='ID_continue_btn'>
+	<text><![CDATA[Continuar]]></text>
+</component>
+<component id='ID_DnD_inst_title'>
+	<text><![CDATA[<b>Atividade - Transferindo uma Chamada</b>]]></text>
+</component>
+
+<component id='ID_DnD_inst_body'>
+	<text><![CDATA[<p>Arraste as peças marcadas com Faça e Não Faça para as caixas à esquerda das declarações. Quando tiver preenchido todas as caixas clique em Verificar.</p><br /><p>Clique no botão Continuar para começar. Clique no ? para ver as instruções novamente.</p>]]></text>
+</component>
+
+<component id='ID_DnD_inst_body1'>
+	<text><![CDATA[<p>Arraste as peças marcadas com Faça e Não Faça para as caixas à esquerda das declarações. Quando tiver preenchido todas as caixas clique em Verificar.</p><p>Clique no botão Continuar para começar. Clique no ? para ver as instruções novamente.</p>]]></text>
+</component>
+
+<!--Drag Sources-->
+<component id="ID_ds_do">
+	<text><![CDATA[Faça]]></text> 
+</component>
+<component id="ID_ds_donot">
+	<text><![CDATA[Não Faça]]></text> 
+</component>
+
+<!--Drop Targets-->
+<component id="ID_dt_01">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<component id="ID_dt_02">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<component id="ID_dt_03">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<component id="ID_dt_04">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<component id="ID_dt_05">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<component id="ID_dt_06">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<component id="ID_dt_07">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<component id="ID_dt_08">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<component id="ID_dt_09">
+	<text><![CDATA[Faça ou Não Faça?]]></text> 
+</component>
+
+<!--Questions-->
+<component id='ID_q01'>
+	<text><![CDATA[Peça permissão ao cliente para transferir a chamada.]]></text><!--Do-->
+</component>
+
+<component id='ID_q02'>
+	<text><![CDATA[Explique que você terá que transferir a chamada e o porquê.]]></text><!--Do Not-->
+</component>
+
+<component id='ID_q03'>
+	<text><![CDATA[Comece a responder uma pergunta antes que o cliente termine de falar.]]></text><!--Do-->
+</component>
+
+<component id='ID_q04'>
+	<text><![CDATA[Dê ao novo técnico, a quem você está transferindo a chamada, o nome do cliente e o número do ticket do problema.]]></text><!--Do Not-->
+</component>
+
+<component id='ID_q05'>
+	<text><![CDATA[Transfira a chamada do cliente sem pedir a permissão do mesmo.]]></text><!--Do Not-->
+</component>
+
+<component id='ID_q06'>
+	<text><![CDATA[Transfira a chamada sem avisar ao cliente o que você está prestes a fazer.]]></text><!--Do-->
+</component>
+
+<component id='ID_q07'>
+	<text><![CDATA[Fale enquanto o cliente está falando.]]></text><!--Do-->
+</component>
+
+<component id='ID_q08'>
+	<text><![CDATA[Forneça ao cliente o número do telefone ou ramal da pessoa a quem você está transferindo a chamada.]]></text><!--Do Not-->
+</component>
+
+<component id='ID_q09'>
+	<text><![CDATA[Forneça ao cliente o nome da pessoa a quem você está transferindo a chamada.]]></text><!--Do-->
+</component>
+
+<component id='ID_q10'>
+	<text><![CDATA[Transfira a chamada sem a permissão do técnico que irá receber a chamada.]]></text><!--Do-->
+</component>
+
+<component id='ID_q11'>
+	<text><![CDATA[Permita que o cliente termine de falar.]]></text><!--Do-->
+</component>
+
+<!--Feedback-->
+<component id="ID_CORRECT_TITLE">
+	<text><![CDATA[Correto]]></text> 
+</component>
+<component id="ID_CORRECT_BODY">
+	<text><![CDATA[Está correto.]]></text> 
+</component>
+<component id="ID_INCORRECT_TITLE">
+	<text><![CDATA[Incorreto]]></text> 
+</component>
+<component id="ID_INCORRECT_BODY">
+	<text><![CDATA[Está incorreto.]]></text> 
+</component>
+
+<!--Buttons-->
+<component id="ID_CHECK">
+	<text><![CDATA[Verificar]]></text> 
+</component>
+<component id="ID_RESET">
+	<text><![CDATA[Redefinir]]></text> 
+</component>
+
+</textcomponents>

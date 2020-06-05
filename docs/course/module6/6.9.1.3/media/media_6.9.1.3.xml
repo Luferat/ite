@@ -1,0 +1,9 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Linha de Visão de um Provedor de Internet Wireless</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<b>Linha de Visão da Transmissão</b>]]></text> 
+  </component>
+</textcomponents>

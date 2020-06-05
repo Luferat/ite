@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.1.1 Gabinete e Fonte de Alimentação</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando os Componentes para Substituição no Computador</h1>
+        <h2>Selecionando os Componentes do PC</h2>
+      </div>
+      <div id="content">
+          <p>Antes de fazer qualquer compra ou realizar alguma atualização, determine as necessidades do cliente. Pergunte ao cliente quais dispositivos serão conectados ao computador, tanto na parte interna quanto na externa. O gabinete do computador deve ser capaz de acomodar o tamanho e a forma da fonte de alimentação.</p>
+          <p>O gabinete do computador mantém a fonte de alimentação, placa-mãe, memória e outros componentes. Se você está comprando um gabinete para o computador e fonte de alimentação separados, certifique-se que todos os componentes se encaixam no novo gabinete e que o fornecimento de energia é suficiente para operar todos os componentes. Muitas vezes um gabinete vem com uma fonte de alimentação pré-instalada. Nesta situação, você ainda precisa verificar se a fonte de alimentação fornece energia suficiente para operar todos os componentes que serão instalados no gabinete.</p>
+          <p>Fontes de alimentação convertem a energia de entrada AC (corrente alternada) para DC (corrente contínua). As fontes de alimentação são medidas pela potência e fornecem tipicamente tensões de 12v, 5v, e 3,3v. Recomenda-se que a fonte de alimentação tenha cerca de 25% acima da potência exigida por todos os componentes. Para determinar a potência total requerida, adicione a potência necessária de cada componente. Se a potência não é listada em um componente, realize o cálculo multiplicando a sua voltagem e amperagem. Se o componente necessita de diferentes níveis de potência, utilize o maior valor. Depois de determinar a potência necessária, certifique-se de que a fonte tem os conectores necessários para todos os componentes.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

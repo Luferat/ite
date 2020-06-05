@@ -1,0 +1,53 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Estrutura do Disco Rígido</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>eixo do disco</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>braço do atuador</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>eixo do atuador</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>Discos</b>]]></text> 
+  </component>
+  
+<component id="ID_txt05">
+<text><![CDATA[<b>Trilha</b>]]></text>
+</component>
+<component id="ID_txt06">
+  <text><![CDATA[<b>Setor</b>]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[<b>Cluster</b>]]></text> 
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[<b>Gap entre setores</b>]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[<b>Gap entre trilhas</b>]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[<b>Código de Correção de Erro (ECC)</b>]]></text> 
+  </component>
+<component id="ID_txt11">
+  <text><![CDATA[<b>Sincronização de informações</b>]]></text> 
+  </component>
+<component id="ID_txt12">
+  <text><![CDATA[<b>Discos</b>]]></text> 
+  </component>
+<component id="ID_txt13">
+  <text><![CDATA[<b>Cabeçalho</b>]]></text> 
+  </component>
+<component id="ID_txt14">
+  <text><![CDATA[<b>Dados</b>]]></text> 
+  </component>
+<component id="ID_txt15">
+  <text><![CDATA[<b>Trailer</b>]]></text> 
+  </component>
+</textcomponents>

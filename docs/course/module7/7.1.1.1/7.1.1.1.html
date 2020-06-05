@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.1.1 Características Externas Exclusivas de Laptops</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes de Laptops</h1>
+        <h2>Componentes de Laptops</h2>
+      </div>
+      <div id="content">
+          <p>Os laptops e desktops usam os mesmos tipos de portas para que os periféricos possam ser intercambiáveis. Essas portas são projetadas especificamente para a conexão de periféricos.</p>
+          <p></p>
+          <p>A localização das portas, conexões e unidades é única devido ao design compacto de cada modelo de laptop. Portas, conexões e unidades estão localizadas na parte exterior do laptop, na frente, atrás e nas laterais. Alguns laptops possuem slots PC Card ou ExpressCard para adicionar funcionalidades, como cartões de memória removíveis, modens ou conexões de rede.</p>
+          <p></p>
+          <p>Laptops requerem uma porta para alimentação externa. Os laptops podem operar utilizando uma bateria ou um adaptador de energia AC. Você pode usar esta porta para ligar o computador ou carregar a bateria.</p>
+          <p></p>
+          <p>Indicadores de status, portas, slots, conectores, baías, jacks, saídas de ar e fechadura estão localizados na parte externa do laptop.</p>
+          <p></p>
+          <p>A Figura 1 exibe três LEDs localizado na parte superior do laptop.</p>
+          <p></p>
+          <p>NOTA: Os LED variam entre os laptops. Consulte o manual do laptop para verificar o status específico que o LED exibe.</p>
+          <p></p>
+          <p>A Figura 2 mostra três componentes localizados na parte de trás do laptop.</p>
+          <p></p>
+          <p>Um laptop opera utilizando uma bateria ou um adaptador de energia AC. As baterias dos laptops são fabricadas em formatos e tamanhos diferentes. Elas usam diferentes tipos de produtos químicos e metais para armazenar energia. A Figura 3 compara as baterias recarregáveis.</p>
+          <p></p>
+          <p>O lado esquerdo do laptop é exibido na Figura 4 e possui 10 componentes.</p>
+          <p></p>
+          <p>Uma fechadura de segurança permite que o utilizador fixe o laptop em um local, tal como uma mesa de trabalho, conforme mostrado na Figura 4.</p>
+          <p></p>
+          <p>A frente do laptop é exibida na Figura 5.</p>
+          <p></p>
+          <p>O lado direito do laptop é exibido na Figura 6.</p>
+          <p></p>
+          <p>A parte inferior do laptop é exibida na Figura 7.</p>
+          <p></p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

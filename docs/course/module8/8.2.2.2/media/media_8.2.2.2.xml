@@ -1,0 +1,18 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Aplicativos, Widgets e Pastas</b>]]></text>
+</component>
+<component id='ID_txt01'>
+	<text><![CDATA[<b>Widgets</b>]]></text>
+</component>
+<component id='ID_txt02'>
+	<text><![CDATA[<b>Pastas</b>]]></text>
+</component>
+<component id='ID_txt03'>
+	<text><![CDATA[<b>Ícone de Aplicativos</b>]]></text>
+</component>
+<component id='ID_txt04'>
+	<text><![CDATA[<b>Aplicativos</b>]]></text>
+</component>
+
+</textcomponents>

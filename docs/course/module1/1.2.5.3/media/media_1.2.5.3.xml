@@ -1,0 +1,159 @@
+﻿<textcomponents>
+
+
+<component id='ID_s1_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' >
+	<tr>
+			<td colspan='3' bgcolor='#DAE17A' class="title"><font color='#393536 ' size="14"><b>Display Resolutions</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width="133"><font color='#ffffff'><b>Display Standard</b></font></td>
+		<td bgcolor='#A2AA23' width="140"><font color='#ffffff'><b>Linear Pixels (HXV)</b></font></td>
+		<td bgcolor='#A2AA23' width="133"><font color='#ffffff'><b >Aspect Ratio</b></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>CGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>320x200</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>16:10</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>EGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>640x350</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>11:6</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>VGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>640x480</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>4:3</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>WVGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>854x480</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>16:9</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>SVGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>800x600</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>4:3</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>XGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>1024x768</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>4:3</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>WXGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>1280x800</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>16:10</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>SXGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>1280x1024</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>5:4</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>SXGA+</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>1400x1050</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>4:3</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>WSXGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>1600x1024</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>25:16</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>UXGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>1600x1200</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>4:3</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>HDTV</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>1920x1080</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>16:9</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>WUXGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>1920x1200</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>16:10</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>QXGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>2048x1536</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>4:3</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>QSXGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>2560x2048</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>5:4</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>WQUXGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>3840x2400</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>16:10</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>HXGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>4096x3072</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>4:3</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>WHXGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>5120x3200</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>8:5</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>HSXGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>5120x4096</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>5:4</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>WHSXGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>6400x4096</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>25:16</font></td>
+	</tr>
+		<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>HUXGA</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>6400x4800</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>4:3</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>WHUXGA</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>7680x4800</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>8:5</font></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Connecting Multiple Monitors to a Single Computer</b>]]></text> 
+  </component>
+  
+ <component id="ID_s2_btn01">
+  <text><![CDATA[<b>Hardware Needed</b>]]></text>
+  </component>
+<component id="ID_s2_btn02">
+  <text><![CDATA[<b>Software Configuration</b>]]></text> 
+  </component>
+<component id="ID_s2_btn03">
+  <text><![CDATA[<b>Advantages</b>]]></text> 
+  </component>
+  
+ <component id="ID_s2_txt01">
+  <text><![CDATA[<textformat blockindent='-16'><LI>Two video ports are needed. Install a video adapter for an additional port or purchase an adapter with two video ports. Disable the motherboard video port if necessary. Note that some motherboards automatically disable the integrated video port if a video adapter is installed.</LI><LI>Additional monitor(s)</LI></textformat>]]></text>
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[In Windows XP, enable Dualview:<BR/><BR/>1. Right click the desktop, and then choose Properties.<BR/><BR/>2. Click Display Properties > Settings tab. (The Settings window should show two monitor icons.)<BR/><BR/>3. From the Display list, click the external monitor. (If multiple monitors are not displayed on the screen, the monitor may not support Dualview.)<BR/><BR/>4. Click the Extend my Windows desktop onto this monitor check box.<BR/><BR/>5. Click Identify. Windows XP will display large numbers to identify the two monitors. Drag and drop the monitor icons to match the physical arrangement of the monitors.<BR/><BR/>6. Click OK.]]></text> 
+  </component>
+<component id="ID_s2_txt03">
+  <text><![CDATA[<textformat blockindent='-16'><LI>Dual Inline Memory Module is a circuit board that holds SDRAM, DDR SDRAM, and DDR2 SDRAM chips. There are 168-pin SDRAM DIMMs, 184-pin DDR DIMMs, and 240-pin DDR2 DIMMs.Extending the Windows desktop across two monitors is an inexpensive way to enhance a computer.</LI><LI>Dualview can also be used to add a second monitor to laptops.</LI><LI>Using multiple monitors increases productivity. For example, a user can use one screen to video conference while taking notes in an application displayed on the other monitor.</LI></textformat>]]></text> 
+  </component>
+    
+<component id="transcript">
+  <text><![CDATA[<b>transcript goes here</b>]]></text> 
+  </component>
+</textcomponents>

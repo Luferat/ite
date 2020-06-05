@@ -1,0 +1,28 @@
+﻿<textcomponents>
+	<component id="ID_table">
+		<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="title">
+					<td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 3: Teste a Teoria para Determinar a Causa</b></font></td>
+				</tr>
+	 
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	<tr>
+		<td width="120px" bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>Passos comuns para determinar a causa</font></td>	
+	
+		<td valign="top" bgcolor='#F3F5E7'><font color='#393536'><li>Efetue o login como um usuário diferente</li>
+												<li>Use um software de diagnóstico de terceiro</li>
+												<li>Verifique se um novo software ou uma atualização foi instalada</li>
+												<li>Desinstale as aplicações recém instaladas</li>
+												<li>Efetue o boot do sistema em modo de segurança para determinar se o problema está relacionado ao driver</li>
+												<li>Reverta os drivers recém atualizados</li>
+												<li>Use o Gerenciador de Dispositivos para identificar conflitos nos dispositivos</li>
+												<li>Examine os logs de avisos ou erros</li>
+												<li>Verifique se há erros no disco rígido e corrija os problemas do sistema de arquivos</li>
+												<li>Use o verificador de arquivos do sistema para recuperar arquivos corrompidos</li>
+												<li>Use a restauração do sistema, caso uma atualização ou service pack tenha sido instalado</li></font></td>
+	</tr>
+	</table>]]></text>
+	</component>
+</textcomponents>

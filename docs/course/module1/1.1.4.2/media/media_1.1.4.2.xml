@@ -1,0 +1,22 @@
+﻿<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Tipos de monitores</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>LCD, LED e OLED</b>]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[<b>CRT (Tubo)</b>]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[<b>Projetor</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Impressoras All-in-One</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Alto-falantes e fones de ouvido</b>]]></text>
+	</component>
+	
+	
+</textcomponents>

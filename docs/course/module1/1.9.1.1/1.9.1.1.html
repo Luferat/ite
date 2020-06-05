@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.9.1.1 Telephone and ISDN</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Select an ISP Connection Type</h1>
+      <h2>Connection Technologies</h2>
+    </div>
+    <div id="content">
+          <p>In the 1990s, the Internet was typically used for data transfer. Transmission speeds were slow compared to the high-speed connections that are available today. The additional bandwidth allows for transmission of voice and video as well as data. Today there are many ways to connect to the Internet. Phone, cable, satellite, and private telecommunications companies offer broadband Internet connections for businesses and home use.</p>
+          <p>Broadband is a technique used to transmit and receive multiple signals using different frequencies over one cable. For example, the cable used to bring cable television to your home can carry computer network transmissions at the same time. Because the two transmission types use different frequencies, they do not interfere with each other.</p>
+          <p>Broadband uses a wide range of frequencies that can be further divided into channels. In networking, the term broadband describes communication methods that transmit two or more signals at the same time. Sending two or more signals simultaneously increases the rate of transmission. Some common broadband network connections include cable, DSL, ISDN, and satellite. Figure 1 shows equipment used to connect to or transmit broadband signals.</p>
+          <p>
+            <b>Analog Telephone</b>
+            <br/>Analog telephone, also called plain old telephone service (POTS), transmits over standard voice telephone lines. This type of service uses an analog modem to place a telephone call to another modem at a remote site, such as an Internet service provider. The modem uses the telephone line to transmit and receive data. This method of connection is known as dialup.</p>
+          <p>
+            <b>Integrated Services Digital Network (ISDN)</b>
+            <br/>ISDN uses multiple channels and can carry different types of services; therefore, it is considered a type of broadband. ISDN is a standard for sending voice, video, and data over normal telephone wires. ISDN technology uses the telephone wires as an analog telephone service. </p>
+          <p>ISDN uses two different types of communications channels. The B channel carries the information, which might be data, voice, or video. The D channel is usually used for controlling and signaling, but can be used for data.</p>
+          <p>ISDN digital connections offer three services: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Basic Rate Interface (BRI)</b> – Offers a dedicated 128 Kbps connection using two 64 Kbps B channels. BRI also uses one 16 Kbps D channel for call setup, control, and teardown.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Primary Rate Interface (PRI)</b> – Offers up to 1.544 Mbps over 23 B channels in North America and Japan or 2.048 Mbps over 30 B channels in Europe and Australia. PRI also uses one 64 Kbps D channel for call maintenance.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Broadband ISDN (BISDN)</b> – Manages different types of service all at the same time. BISDN is mostly used in network backbones.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

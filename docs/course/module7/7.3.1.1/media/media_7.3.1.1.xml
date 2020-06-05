@@ -1,0 +1,42 @@
+﻿<textcomponents>
+<component id="ID_title">
+	 	 <text><![CDATA[<b>Padrões de Energia ACPI</b>]]></text> 
+	</component>
+	<component id='ID_table'>
+		<text><![CDATA[
+			<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+				<tr >
+					<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#A2AA23' width="100"><font size='12' color='#ffffff'><b>Padrão</b></font></td>
+					<td bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Descrição</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>S0</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>O computador está ligado e a CPU está funcionando.</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>S1</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>A CPU e a memória RAM ainda estão recebendo energia, porém os dispositivos não utilizados são desligados.</font></td>
+				</tr>	
+				<tr>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>S2</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>A CPU está deligada, mas a RAM está revigorada. O sistema está em um modo abaixo do S1.</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>S3</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>A CPU está desligada e a memória RAM é configurada para uma taxa de atualização baixa. Este modo é geralmente chamado &quot;salvar na RAM&quot;. No Windows XP, este estado é conhecido com modo suspenso.</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>S4</font></td>
+					<td bgcolor='#F3F5E7'><font size='12' color='#393536'>A CPU e RAM estão desligadas. O conteúdo da RAM foi salvo em um arquivo temporário no disco rígido. Este modo é geralmente chamado &quot;salvo no disco&quot;. No Windows 7, Windows Vista e Windows XP, este estado é conhecido como modo hibernado.</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>S5</font></td>
+					<td bgcolor='#FFFFFF'><font size='12' color='#393536'>O computador está off.</font></td>
+				</tr>	
+			</table>]]>
+		</text>
+	</component>
+</textcomponents>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.4.2.2 Aplicativos de Localização</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Métodos de Proteção de Dispositivos Móveis</h1>
+        <h2>Serviços de Nuvem em Smart Devices</h2>
+      </div>
+      <div id="content">
+          <p>Se um dispositivo móvel for perdido ou roubado, é possível encontrá-lo usando aplicativos de localização. Um aplicativo de localização geralmente é instalado e configurado em cada dispositivo móvel antes de o mesmo ser perdido ou roubado. Existe também um aplicativo que pode ser baixado, depois que um telefone Android for perdido, para enviar um e-mail ou mensagem de texto com a localização do telefone desaparecido.</p>
+          <p>Tanto Android e iOS possuem muitos aplicativos diferentes utilizados para localizar remotamente um dispositivo, porém a maioria dos usuários do iOS usam o aplicativo Find My iPhone. O primeiro passo é instalar o aplicativo, iniciá-lo e siguir as instruções para configurar o software. O aplicativo Find My iPhone pode ser instalado em um dispositivo iOS diferente para localizar o aparelho perdido. Se este segundo dispositivo iOS não estiver disponível, o dispositivo também pode ser encontrado acessando o site do iCloud e usando o recurso Find My iPhone. Em dispositivos Android, o método para localizar o dispositivo é específico para a aplicação que foi instalada. Faça o login no site indicado pelo aplicativo para encontrar o dispositivo Android perdido. Muitas vezes, uma conta deve ser criada quando o aplicativo é instalado pela primeira vez. Faça o login no site usando esta conta.</p>
+          <p>Depois de iniciar a opção de localização, a partir de um website ou através de um segundo dispositivo iOS, o localizador utilizará ondas de rádio para determinar a localização do dispositivo. O aplicativo localizador usa dados de localização de torres de celular, pontos de acesso Wi-Fi e GPS.</p>
+          <p><ul>
+              <li>Torres de Celulares - O aplicativo calcula a localização do dispositivo por meio da análise da intensidade do sinal das torres as quais o dispositivo pode se conectar. Devido ao fato de que as torres estão em posições conhecidas, a localização do dispositivo pode ser determinada. Isto é conhecido como triangulação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pontos de Acesso Wi-Fi - O aplicativo procura o local aproximado de pontos de acesso Wi-Fi, os quais o dispositivo pode detectar. Um arquivo que contém muitos pontos conhecidos e a sua localização é armazenado no dispositivo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>GPS - O aplicativo usa dados do receptor GPS para determinar a localização do dispositivo.</li>
+            </ul>
+          </p>
+          <p>NOTA: Se o aplicativo não conseguir localizar o dispositivo perdido, talvez o mesmo possa ter sido desligado ou desconectado. O dispositivo deve estar conectado a uma rede celular ou sem fio para receber comandos a partir do aplicativo ou enviar informações de localização para o usuário.</p>
+          <p>Depois que o dispositivo for localizado, você poderá realizar funções adicionais, tais como o envio de uma mensagem ou a reprodução de um som. Estas opções são úteis caso você tenha perdido o seu dispositivo. Se o dispositivo estiver por perto, o som indicará exatamente onde ela está. Se o dispositivo estiver em outro local, o envio de uma mensagem para ser exibida na tela permite que alguém entre em contato com você, caso essa pessoa tenha encontrado o mesmo.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

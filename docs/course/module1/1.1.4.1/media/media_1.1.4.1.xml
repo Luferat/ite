@@ -1,0 +1,18 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+		<text><![CDATA[<b>Switch KVM</b>]]></text>
+</component>
+<component id="ID_s2_title">
+		<text><![CDATA[<b>Joystick e Gamepad</b>]]></text>
+</component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Câmeras Digitais</b>]]></text> 
+</component>
+<component id="ID_s4_title">
+  <text><![CDATA[<b>Scanner de Impressão Digital</b>]]></text> 
+</component>
+<component id="ID_s5_title">
+  <text><![CDATA[<b>Digitalizador</b>]]></text> 
+</component>
+</textcomponents>

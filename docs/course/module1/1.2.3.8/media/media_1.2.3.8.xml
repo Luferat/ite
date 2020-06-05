@@ -1,0 +1,115 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Storage Drives</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Floppy Drive</b>]]></text>
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>RAID Level Comparison</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Hard Drive</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Optical Drive</b>]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>External Flash Drive</b>]]></text>
+</component>
+
+
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='5' class="title"><font color="#393536"><b>RAID Level Comparison</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width='50' valign="top"><font size='12' color='#FFFFFF'><b>RAID Level</b></font></td>
+		<td bgcolor='#A2AA23' width='55' valign="top"><font size='12' color='#FFFFFF'><b>Min # of Drives</b></font></td>
+		<td bgcolor='#A2AA23' width='85' valign="top"><font size='12' color='#FFFFFF'><b>Description</b></font></td>
+		<td bgcolor='#A2AA23' width='105' valign="top"><font size='12' color='#FFFFFF'><b>Advantages</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font size='12' color='#FFFFFF'><b>Disadvantages</b></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>0</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>2</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Data striping without redundancy</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Highest performance</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>No data protection, failure of one drive results in all loss of all data</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><b>1</b></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>2</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Disk mirroring</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>High performance, high data protection because all data is duplicated</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>High cost of implementation because an additional drive of equal or larger capacity is required</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>2</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>2</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Error-Correcting Coding</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>This level is no longer used</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Same performance can be achieved at a lower cost using RAID 3</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><b>3</b></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>3</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Byte-level data striping with dedicated parity</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>For large, sequential data requests</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Does not support multiple, simultaneous read and write requests</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>4</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>3</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Block-level data striping with dedicated parity</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Supports multiple read requests, if a disk fails the dedicated parity disk is used to create a replacement disk</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Write requests are bottlenecked due to the dedicated parity drive</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><b>5</b></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>3</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Combination of data striping and parity</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><textformat blockindent='-16'><li style="font-size:10px">Supports multiple simultaneous reads and writes</li><li style="font-size:10px">Data is written across all drives with parity</li><li style="font-size:10px">Data can be rebuilt from information found on the other drives</li></textformat></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Write performance is slower than RAID 0 and 1</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>6</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>4</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Independent Data Disks with Double Parity</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Block-level striping with parity data distributed across all disks, can handle two simultaneous drive failures</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Lower performance than RAID 5, not supported on all disk controllers</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'><b>RAID 0+1</b></font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>4</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>Combination of data striping and mirroring</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>High performance, highest data protection</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='10' color='#393536'>High cost overhead because duplication of data requires twice the storage capacity</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'><b>10</b></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>4 (must be even number)</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Mirrored set in a striped set</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>Provides fault tolerance and improved performance</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='10' color='#393536'>High cost overhead because duplication of data requires twice the storage capacity</font></td>
+	</tr>
+	
+</table>]]>
+</text>
+</component>
+
+</textcomponents>

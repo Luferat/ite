@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.0.1.1 Introdução</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Dispositivos Móveis</h1>
+        <h2>Introdução</h2>
+      </div>
+      <div id="content">
+          <p>Com o aumento da demanda por mobilidade, a popularidade dos dispositivos móveis continuam a crescer. Um dispositivo móvel é um aparelho de mão, leve e que normalmente possui uma tela sensível ao toque (touchscreen) para a entrada de comandos. Como um computador desktop ou laptop, os dispositivos móveis utilizam um sistema operacional para executar os aplicativos (apps), jogos e reproduzir filmes e músicas. Alguns exemplos de dispositivos móveis incluem o Android, como o tablet Samsung Galaxy e o smartphone Galaxy Nexus, e a Apple, como o iPad e iPhone.</p>
+          <p>Para facilitar a mobilidade, os dispositivos móveis utilizam as tecnologias sem fio. Muitos dispositivos móveis possuem componentes, sistemas operacionais e softwares que são proprietários. É importante se familiarizar com o máximo de dispositivos móveis possíveis.</p>
+          <p>Poderá ser necessário saber como configurar, manter e reparar vários dispositivos móveis. Alguns conhecimentos adquiridos nos computadores desktop e laptop poderão ajudá-lo, entretanto, existem diferenças importantes entre as tecnologias.</p>
+          <p>Dominar as habilidades necessárias para trabalhar com dispositivos móveis é importante para progredir na sua carreira. Este capítulo enfatiza as diversas caracteristicas dos dispositivos móveis e seus recursos, incluindo a configuração, sincronização e backup dos dados.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

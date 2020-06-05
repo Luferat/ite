@@ -1,0 +1,174 @@
+﻿<textcomponents>
+
+
+
+<!--Slide 1-->
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1. Identificação do Problema</b></font></td>
+	</tr>  
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>  
+	 
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font  color='#393536'>Informações do Cliente</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font  color='#393536'><textformat blockindent='-18'>
+			<li>Nome da Empresa</li>
+			<li>Nome do Contato</li>
+			<li>Endereço</li>
+			<li>Número de Telefone</li></textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Configuração do Computador</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'><textformat blockindent='-18'>
+			<li>Fabricante e Modelo</li>
+			<li>Sistema Operacional</li>
+			<li>Ambiente de Rede</li>
+			<li>Tipo de Conexão</li></textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font  color='#393536'>Descrição do Problema</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font  color='#393536'><textformat blockindent='-18'>
+			<li>Questões-Abertas</li>
+			<li>Questões-Fechadas</li> </textformat></font></td> 	
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' colspan='2' valign="top"><font color='#393536'>Mensagens de Erro</font></td>
+	</tr>							
+	<tr>
+		<td bgcolor='#F3F5E7' colspan='2'><font  color='#393536'>Sequência de Beep</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' colspan='2' valign="top"><font  color='#393536'>LEDs</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' colspan='2'><font  color='#393536'>POST</font></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!--Slide 2-->
+
+<!--Drag and Drop Activity-->
+<component id='ID_continue_btn'>
+	<text><![CDATA[Continuar]]></text>
+</component>
+<component id='ID_DnD_inst_title'>
+	<text><![CDATA[<b>Atividade Arrasta e Solta</b>]]></text>
+</component>
+
+<component id='ID_DnD_inst_body'>
+	<text><![CDATA[<p>Esta atividade possui perguntas as quais um técnico pode fazer ao cliente para ajudar a identificar o problema. Identifique quais perguntas são utilizada para questões-abertas e quais são utilizadas para questões-fechadas.</p><br /><p>Arraste as peças marcadas por Questões-abertas e Questões-fechadas para as caixa localizadas à esquerda, em frente as perguntas. Quando você tiver preenchido todas as caixas, clique em Verificar.</p><br /><p>Clique no botão Continuar para começar. Clique no ? para ver as instruções novamente.</p>]]></text>
+</component>
+
+<component id='ID_DnD_inst_body1'>
+	<text><![CDATA[<p>Esta atividade possui perguntas as quais um técnico pode fazer ao cliente para ajudar a identificar o problema. Identifique quais perguntas são utilizada para questões-abertas e quais são utilizadas para questões-fechadas.</p><p>Arraste as peças marcadas por Questões-abertas e Questões-fechadas para as caixa localizadas à esquerda, em frente as perguntas. Quando você tiver preenchido todas as caixas, clique em Verificar.</p><p>Clique no botão Continuar para começar. Clique no ? para ver as instruções novamente.</p>]]></text>
+</component>
+
+
+<!--Drag Sources-->
+<component id="ID_ds_open">
+	<text><![CDATA[Questões-abertas]]></text> 
+</component>
+<component id="ID_ds_closed">
+	<text><![CDATA[Questões-fechadas]]></text> 
+</component>
+
+<!--Drop Targets-->
+<component id="ID_dt_01">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<component id="ID_dt_02">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<component id="ID_dt_03">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<component id="ID_dt_04">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<component id="ID_dt_05">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<component id="ID_dt_06">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<component id="ID_dt_07">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<component id="ID_dt_08">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<component id="ID_dt_09">
+	<text><![CDATA[Tipo de Questão]]></text> 
+</component>
+
+<!--questions-->
+<component id='ID_q01'>
+	<text><![CDATA[Alguém usou o computador recentemente?]]></text>
+</component>
+
+<component id='ID_q02'>
+	<text><![CDATA[Você recebeu alguma mensagens de erro no computador?]]></text>
+</component>
+
+<component id='ID_q03'>
+	<text><![CDATA[Quais os problemas que você está enfrentando no seu computador ou rede?]]></text>
+</component>
+
+<component id='ID_q04'>
+	<text><![CDATA[Você pode reproduzir o problema?]]></text>
+</component>
+
+<component id='ID_q05'>
+	<text><![CDATA[Quais softwares foram instalados recentemente em seu computador ?]]></text>
+</component>
+
+<component id='ID_q06'>
+	<text><![CDATA[O que você estava fazendo quando o problema foi identificado?]]></text>
+</component>
+
+<component id='ID_q07'>
+	<text><![CDATA[Você alterou sua senha recentemente?]]></text>
+</component>
+
+<component id='ID_q08'>
+	<text><![CDATA[Quais mudanças de hardware foram feitas recentemente em seu computador?]]></text>
+</component>
+
+<component id='ID_q09'>
+	<text><![CDATA[Você está conectado à rede nesse momento?]]></text>
+</component>
+
+<!--Feedback-->
+<component id="ID_CORRECT_TITLE">
+	<text><![CDATA[Correto]]></text> 
+</component>
+<component id="ID_CORRECT_BODY">
+	<text><![CDATA[Está correto.]]></text> 
+</component>
+<component id="ID_INCORRECT_TITLE">
+	<text><![CDATA[Incorreto]]></text> 
+</component>
+<component id="ID_INCORRECT_BODY">
+	<text><![CDATA[Está incorreto.]]></text> 
+</component>
+<!--Buttons-->
+<component id="ID_CHECK">
+	<text><![CDATA[Verificar]]></text> 
+</component>
+<component id="ID_RESET">
+	<text><![CDATA[Redefinir]]></text> 
+</component>
+
+</textcomponents>

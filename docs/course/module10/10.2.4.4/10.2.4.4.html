@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.4.4 Modos de Segurança sem fio</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Técnicas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Utilize técnicas de criptografia sem fio para codificar as informações enviadas e impedir a captura e utilização indesejada dos dados. Ambas as extremidades de cada link devem usar o mesmo tipo de criptografia.</p>
+          <p>Os pontos de acesso sem fio suportam diversos modos de segurança diferentes. Os mais comuns são:</p>
+          <p><ul>
+              <li>Wired Equivalent Privacy (WEP) - A primeira geração de padrão de segurança para redes sem fio. Os atacantes rapidamente descobriram que a criptografia WEP é fácil de ser quebrada. As chaves de criptografia usadas para codificar as mensagens poderiam ser detectadas através de programas de monitoração. Depois que as chaves eram obtidas, as mensagens podiam ser facilmente descodificadas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Wi-Fi Protected Access (WPA) - Uma versão melhorada do WEP, o WPA cobre todo o padrão 802.11i (camada de segurança para sistemas sem fio). O WPA usa uma criptografia muito mais forte do que o WEP.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Wi-Fi Protected Access 2 (WPA2) - Uma versão melhorada do WPA. Este protocolo fornece níveis mais altos de segurança do que o WPA. WPA2 suporta criptografia robusta, proporcionando segurança de nível governamental. WPA2 possui duas versões: Personal (autenticação por senha) e Enterprise (autenticação através de um servidor).</li>
+            </ul>
+          </p>
+          <p>Recursos do WPA e do WPA2</p>
+          <p>Outros recursos de segurança foram adicionados ao padrão WPA.</p>
+          <p><ul>
+              <li>Temporal Key Integrity Protocol (TKIP) - Esta tecnologia muda a chave de criptografia em uma base por pacote e fornece um método para verificar a integridade das mensagens.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Extensible Authentication Protocol (EAP) - Utiliza um servidor de autenticação centralizado para aumentar a segurança.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Protected Extensible Authentication Protocol (PEAP) - Um protocolo que não usa um servidor de certificados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Advanced Encryption Standard (AES) - Um método de criptografia de chave simétrica adicionado apenas ao WPA2.</li>
+            </ul>
+          </p>
+          <p>Para melhorar a segurança sem fio, use o seguinte caminho, como mostrado na figura:</p>
+          <p>Wireless > Wireless Security > selecione Security Mode > selecione Encryption Type > digite a senha (Pre-shared Key) > selecione Key Renewal > Save Settings > Continue</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

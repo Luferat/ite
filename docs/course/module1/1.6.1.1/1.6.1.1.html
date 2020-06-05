@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.6.1.1 Standards Organizations</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Ethernet Standards</h1>
+      <h2>Cabled and Wireless</h2>
+    </div>
+    <div id="content">
+          <p>Several international standards organizations are responsible for setting networking standards. Standards are used by manufacturers as a basis for developing technology, especially communications and networking technologies. Standards ensure that the devices from one manufacturer will be compatible with those made by another manufacturer using the same technology. The standards groups create, examine, and update standards. These standards are applied to the development of technology to meet the demands for higher bandwidth, efficient communication, and reliable service.</p>
+          <p></p>
+          <p>Figure 1 provides information about several standards organizations.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

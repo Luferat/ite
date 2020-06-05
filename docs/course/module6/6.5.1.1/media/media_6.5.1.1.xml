@@ -1,0 +1,38 @@
+﻿<textcomponents>
+
+
+<component id="ID_title">
+<text><![CDATA[<b>Topologias Físicas</b>]]></text>
+</component>
+
+
+
+<component id="ID_btn01">
+<text><![CDATA[<b>Topologia de Barramento</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[<b>Topologia Anel</b>]]></text>
+</component> 
+
+<component id="ID_btn03">
+<text><![CDATA[<b>Topologia Estrela</b>]]></text>
+</component> 
+
+<component id="ID_btn04">
+<text><![CDATA[<b>Estrela Estendida</b>]]></text>
+</component>
+
+<component id="ID_btn05">
+<text><![CDATA[<b>Topologia em Malha</b>]]></text>
+</component> 
+
+<component id="ID_btn06">
+<text><![CDATA[<b>Topologia Híbrida</b>]]></text>
+</component>
+
+</textcomponents>

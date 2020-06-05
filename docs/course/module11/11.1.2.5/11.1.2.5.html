@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.2.5 Manter o Foco do Cliente no Problema</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Habilidades de Comunicação e Profissionais de TI</h1>
+        <h2>Trabalhando com um Cliente</h2>
+      </div>
+      <div id="content">
+          <p>Parte do seu trabalho é manter o foco do cliente durante o telefonema. Ao fazer com que o cliente mantenha o seu foco no problema, você terá o controle da chamada. Isso reduzirá o tempo utilizado durante a resolução do problema. Não faça quaisquer comentários pessoais e não revide quaisquer comentários ou críticas. Se você manter a calma com o cliente, encontrar a solução do problema continuará a ser o foco principal da ligação.</p>
+          <p>Assim como existem muitos problemas de computador diferentes, existem muitos tipos de clientes diferentes. A figura mostra estratégias para lidar com diferentes tipos de clientes difíceis. A lista dos tipos clientes problemáticos abaixo não é abrangente e, muitas vezes, um cliente pode exibir uma combinação de várias características listadas. Tente identificar as características que o cliente está exibindo. Reconhecer essas características lhe ajudará a controlar a chamada.</p>
+          <p>Clientes que Falam Muito</p>
+          <p>Durante a chamada, o cliente que fala muito discute tudo, exceto o problema. O cliente muitas vezes usa a chamada como uma oportunidade de socializar. Pode ser difícil fazer com que esse cliente se concentre no problema.</p>
+          <p>Clientes Indelicados</p>
+          <p>Um cliente indelicado reclama durante a chamada e, muitas vezes, faz comentários negativos sobre o produto, o serviço e/ou o técnico. Este tipo de cliente às vezes é abusivo e não coopera, agravando assim a situação.</p>
+          <p>Clientes Irritados</p>
+          <p>Um cliente irritado fala alto e, muitas vezes, tenta interromper quando o técnico está falando. Clientes irritados geralmente estão frustrados e chateados, pois possuem um problema e têm que chamar alguém para resolvê-lo.</p>
+          <p>Clientes Instruídos</p>
+          <p>Um cliente instruído quer falar com um técnico que é igualmente experiente em computadores. Este tipo de cliente geralmente tenta controlar a chamada e não quer falar com um técnico de um nível.</p>
+          <p>Clientes Inexperientes</p>
+          <p>Um cliente inexperiente tem dificuldade em descrever o problema. Estes clientes normalmente não são capazes de seguir as instruções corretamente e de comunicar os erros encontrados.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

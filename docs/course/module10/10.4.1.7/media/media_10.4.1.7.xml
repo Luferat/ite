@@ -1,0 +1,27 @@
+﻿<textcomponents> 
+<component id="ID_title">
+	<text><![CDATA[Troubleshooting Process Steps]]></text>
+</component>
+
+ <component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	 
+	<tr class="liner-top">
+		<td bgcolor='#DAE17A' class="liner-top"><font size='14' color='#393536'><b>Step 6. Document Findings</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#434321' class="liner"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>  
+	<tr> 
+		<td bgcolor='#F3F5E7'><font color='#393536'>
+			<textformat blockindent='-18'><li>Discuss the solution implemented with customer.</li>
+			<li>Have the customer verify problem has been solved.</li>
+			<li>Provide the customer with all paperwork.</li>
+			<li>Document the steps taken to solve the problem in the work order and the technician's journal.</li>
+			<li>Document any components used in the repair.</li>
+			<li>Document the time spent to resolve the problem.</li></textformat>
+		</font></td>		 
+	</tr>
+	 
+</table>]]></text>
+</component>
+</textcomponents>

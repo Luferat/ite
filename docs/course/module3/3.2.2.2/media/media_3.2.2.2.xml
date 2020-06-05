@@ -1,0 +1,24 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Data e Hora da BIOS</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Configuração dos Dispositivos na BIOS</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Ordem de Boot da BIOS</b>]]></text>
+</component>
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Velocidade de Clock da CPU na BIOS</b>]]></text>
+</component>
+
+<component id="ID_s5_title">
+<text><![CDATA[<b>Configurações de Virtualização da BIOS</b>]]></text>
+</component> 
+</textcomponents>

@@ -1,0 +1,47 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Ohm's Triangle</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Capacitors</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Ohm's Law Chart</b>]]></text> 
+  </component>
+  
+<component id="ID_s2_txt01">
+  <text><![CDATA[<b>Power</b>]]></text> 
+  </component>  
+<component id="ID_s2_txt02">
+  <text><![CDATA[<b>Current</b>]]></text> 
+  </component>   
+<component id="ID_s2_txt03">
+  <text><![CDATA[<b>Voltage</b>]]></text> 
+  </component> 
+<component id="ID_s2_txt04">
+  <text><![CDATA[<b>Resistance</b>]]></text> 
+  </component> 
+  
+<component id="ID_s2_txt05">
+  <text><![CDATA[<b>Watts</b>]]></text> 
+  </component>  
+<component id="ID_s2_txt06">
+  <text><![CDATA[<b>Amps</b>]]></text> 
+  </component>   
+<component id="ID_s2_txt07">
+  <text><![CDATA[<b>Volts</b>]]></text> 
+  </component> 
+<component id="ID_s2_txt08">
+  <text><![CDATA[<b>Ohms</b>]]></text> 
+  </component>  
+  
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Power Supply Capacitors</b>]]></text> 
+  </component>
+  
+  
+  
+</textcomponents>

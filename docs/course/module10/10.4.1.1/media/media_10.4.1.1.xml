@@ -1,0 +1,38 @@
+﻿<textcomponents>
+<component id="ID_title">
+  <text></text>
+</component>
+
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="line-height">
+		<td bgcolor='#DAE17A' colspan='2'><font size='14' color='#393536'><b class="font-forteen">Passo 1. Identificar o Problema</b></font></td>				
+	</tr>  
+	<tr class="liner">
+		<td colspan='2' bgcolor='#434321' class="liner"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 	 
+	<tr>
+		<td bgcolor='#F3F5E7' class="width"><font color='#393536' class="text-top">Questões em Aberto</font></td>
+		<td bgcolor='#F3F5E7'><font  color='#393536'><textformat blockindent='-18'>
+			<li>Quando o problema começou?</li>
+			<li>Quais os problemas que você está tendo?</li>
+			<li>Quais os websites que você visitou recentemente?</li>		
+			<li>Qual software de segurança está instalado em seu computador?</li>
+			<li>Quem mais usou o seu computador recentemente?</li> 
+		</textformat></font></td>		 
+	</tr>	 
+
+	<tr>
+		<td bgcolor='#FFFFFF' width='150'><font color='#393536' class="text-bottom">Questões Encerradas</font></td>
+		<td bgcolor='#FFFFFF'><font  color='#393536'><textformat blockindent='-18'>
+			<li>O seu software de segurança está atualizado?</li>
+			<li>Você escaneou o seu computador recentemente em busca de vírus?</li>
+			<li>Você abriu quaisquer anexos vindos de um e-mail suspeito?</li>
+			<li>Você alterou sua senha recentemente?</li>
+			<li>Você compartilhou sua senha com alguém?</li> 
+		</textformat></font></td>		 
+	</tr>	 
+</table>]]></text>
+</component>
+
+</textcomponents>

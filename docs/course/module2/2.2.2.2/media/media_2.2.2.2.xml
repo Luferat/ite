@@ -1,0 +1,17 @@
+﻿<textcomponents>
+<component id='ID_btn01'>
+	<text><![CDATA[<font align="center"><b>Central de Ações do Windows 7</b></font>]]></text>
+</component>
+
+<component id='ID_btn02'>
+	<text><![CDATA[<b>Antivírus</b>]]></text>
+</component>
+
+<component id='ID_btn03'>
+	<text><![CDATA[<b>Antispyware</b>]]></text>
+</component>
+
+<component id='ID_btn04'>
+	<text><![CDATA[<b>Firewall do Windows 7</b>]]></text>
+</component>
+</textcomponents>

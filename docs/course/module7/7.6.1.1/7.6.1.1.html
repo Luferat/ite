@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.6.1.1 Manutenção Programada</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para Laptops</h1>
+        <h2>Manutenção Programada para Laptops</h2>
+      </div>
+      <div id="content">
+          <p>Como os laptops são portáteis, eles são usados em diferentes tipos de ambientes. Como consequência, eles são mais propensos do que os computadores a serem expostos a materiais e situações prejudiciais como:</p>
+          <p><ul>
+              <li>Sujeira e contaminação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Derramamento</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desgaste</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quedas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Calor ou frio excessivo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Umidade excessiva</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Muitos dos componentes são instalados em uma área muito pequena, diretamente abaixo do teclado. Derramar líquidos ou detritos sobre o teclado pode resultar em danos internos graves.</p>
+          <p></p>
+          <p>É importante manter o laptop limpo e assegurar que ele está sendo usado no melhor ambiente possível. Os cuidados e manutenções podem ajudar que alguns componentes do laptop executem suas tarefas com mais eficiência e prolonguem a vida útil do equipamento.</p>
+          <p></p>
+          <p>Programa de Manutenção Preventiva</p>
+          <p>Um programa de manutenção preventiva é importante para abordar essas questões e deve incluir uma rotina de manutenção. A maioria das organizações possuem um cronograma de manutenção preventiva em vigor. Se não existir um cronograma, trabalhe com o gerente para criar um. Os programas de manutenção preventiva mais eficazes requerem um conjunto de rotinas a serem realizadas mensalmente, além de permitir que uma manutenção seja realizada caso necessário.</p>
+          <p></p>
+          <p>O cronograma de manutenção preventiva para um laptop pode incluir práticas que são exclusivas para uma determinada organização, mas também deve incluir esses procedimentos padrão:</p>
+          <p><ul>
+              <li>Limpeza</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Manutenção da unidade de disco rígido</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Atualizações de software</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Para manter um laptop limpo, seja proativo e não reativo. Mantenha líquidos e alimentos longe do laptop. Feche o laptop quando o mesmo não estiver sendo usado. Quando for limpar um laptop, nunca utilize produtos de limpeza agressivos ou soluções que contenham amônia. Materiais não abrasivos para a limpeza de um laptop incluem:</p>
+          <p><ul>
+              <li>Ar comprimido</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Solução de limpeza suave</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cotonetes</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pano de limpeza macio e sem fiapos</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>ATENÇÃO: Antes de limpar um laptop, desligue-o de todas as fontes de energia e remova a bateria.</p>
+          <p></p>
+          <p>A manutenção de rotina inclui a limpeza mensal desses componentes do laptop:</p>
+          <p><ul>
+              <li>Parte externa</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Aberturas de ventilação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Portas de I/O</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tela</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teclado</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NOTA: Se for óbvio que o laptop precisa ser limpo, você deve limpá-lo. Não espere pela próxima manutenção programada.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.3.9 Internal Cables</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Internal PC Components</h2>
+    </div>
+    <div id="content">
+          <p>Drives require both a power cable and a data cable. A power supply might have SATA power connectors for SATA drives, Molex power connectors for PATA drives, and Berg connectors for floppy drives. The buttons and the LED lights on the front of the case connect to the motherboard with the front panel cables.</p>
+          <p>Data cables connect drives to the drive controller, which is located on an adapter card or on the motherboard. Here are some common types of data cables:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Floppy disk drive (FDD) data cable</b> - Has up to two 34-pin drive connectors and one 34-pin connector for the drive controller. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PATA (IDE/EIDE) 40-conductor data cable</b> - Originally, the IDE interface supported two devices on a single controller. With the introduction of Extended IDE, two controllers capable of supporting two devices each were introduced. The 40-conductor ribbon cable uses 40-pin connectors. The cable has two connectors for the drives and one connector for the controller. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PATA (EIDE) 80-conductor data cable</b> - As the data rates available over the EIDE interface increased, the chance of data corruption during transmission increased. An 80-conductor cable was introduced for devices transmitting at 33.3 MB/s and over, allowing for a more reliable balanced data transmission. The 80-conductor cable uses 40-pin connectors. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SATA data cable</b> - This cable has seven conductors, one keyed connector for the drive, and one keyed connector for the drive controller. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SCSI data cable</b> - There are three types of SCSI data cables. A narrow SCSI data cable has 50 conductors, up to seven 50-pin connectors for drives, and one 50-pin connector for the drive controller, also called the host adapter. A wide SCSI data cable has 68 conductors, up to 15 68-pin connectors for drives, and one 68-pin connector for the host adapter. An Alt-4 SCSI data cable has 80 conductors, up to 15 80-pin connectors for drives, and one 80-pin connector for the host adapter. </li>
+            </ul>
+          </p>
+          <p>
+            <b>NOTE</b>: A colored stripe on a cable identifies Pin 1 on the cable. When installing a data cable, always ensure that Pin 1 on the cable aligns with Pin 1 on the drive or drive controller. Keyed cables can be connected only one way to the drive and drive controller.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

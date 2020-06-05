@@ -1,0 +1,20 @@
+﻿<textcomponents>
+
+<component id="ID_page_header">
+<text><![CDATA[Acordo de Nível de Serviço (SLA)]]></text>
+</component>
+
+<component id="ID_header01">
+<text><![CDATA[<b>4.2.4 SERVIÇO DE MONITORAMENTO</b>]]></text>
+</component>
+<component id="ID_header02">
+<text><![CDATA[<b>4.2.5 CONTINGÊNCIA</b>]]></text>
+</component>
+<component id="ID_header03">
+<text><![CDATA[<b>4.2.6 JANELA DE MANUTENÇÃO</b>]]></text>
+</component>
+<component id="ID_header04">
+<text><![CDATA[<b>Garantia do Tempo de Resposta</b>]]></text>
+</component>
+
+</textcomponents>

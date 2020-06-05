@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.2.1.1 Impressoras Jato de Tinta</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Tipos de Impressoras</h1>
+        <h2>Tipos de Impressoras</h2>
+      </div>
+      <div id="content">
+          <p>Impressoras jato de tinta produzem impressões de alta qualidade. As impressoras de jato de tinta são fáceis de utilizar e mais baratas, quando comparadas com as impressoras a laser. A qualidade de impressão de uma impressora jato de tinta é medida em pontos por polegada (dpi). Quanto maior o dpi, melhore será o nível de detalhe da imagem. A Imagem 1 mostra um dispositivo de all-in-one que contém uma impressora jato de tinta. A Imagem 2 mostra os componentes da impressora jato de tinta.</p>
+          <p>Impressoras jato de tinta usam cartuchos de tinta que borrifam a tinta em uma página por meio de pequenos orifícios. Os pequenos orifícios são chamados bicos e estão localizados na cabeça de impressão. A cabeça de impressão dos cartuchos de tinta estão localizados sobre o transporte, o qual é acoplado a um cinto e ao motor. Como os rolos puxam o papel, o cartucho se move para trás e para a frente, ao longo do papel, pulverizando a tinta na página.</p>
+          <p>Existem dois tipos de bicos de jato de tinta:</p>
+          <p><ul>
+              <li>Térmico - Um pulso de corrente elétrica é aplicado para câmaras de aquecimento em torno dos bicos. O calor cria uma bolha de vapor na câmara. O vapor obriga a tinta a sair do bico para o papel.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Piezoelétrico - Cristais piezoeléctricos estão localizados no reservatório de tinta, localizado na parte de trás de cada um dos bicos. Uma carga é aplicada no cristal, fazendo-o vibrar. Esta vibração do cristal controla o fluxo de tinta sobre o papel.</li>
+            </ul>
+          </p>
+          <p>Impressoras jato de tinta usam papel comum para produzir impressões econômicas. Papeis para fins especiais podem ser usados ​​para criar cópias de alta qualidade de fotografias. Uma impressora jato de tinta com um conjunto duplex pode imprimir nos dois lados de uma folha de papel. Quando o papel sai da impressora, a tinta ainda está molhada. Você deve evitar tocar nas impressões, de 10 a 15 segundos, para não manchá-las. Se a qualidade de impressão da impressora jato de tinta estiver degradada, verifique a calibragem da mesmo usando o software da impressora.</p>
+          <p>Estas são algumas das vantagens de uma impressora jato de tinta:</p>
+          <p><ul>
+              <li>Baixo custo inicial</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alta resolução</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rápida para aquecer</li>
+            </ul>
+          </p>
+          <p>Estas são algumas das desvantagens de uma impressora jato de tinta:</p>
+          <p><ul>
+              <li>Bicos são propensos a entupimento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os cartuchos de tinta são caros.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A tinta permanece molhada após a impressão.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

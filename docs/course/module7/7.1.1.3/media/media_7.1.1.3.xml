@@ -1,0 +1,62 @@
+﻿<textcomponents>
+
+
+
+<!--Slide 1-->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Comparação de Placa-mãe</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b>Placa-mãe do Laptop</b>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<b>Placa-mãe de Desktop</b>]]></text>
+</component>
+
+<!--Slide 2-->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Comparação do Design do Laptop e Desktop</b>]]></text>
+</component>
+
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Comparação do Design do Laptop e Desktop</b></font></td>
+	</tr>  
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	 
+	<tr>
+		<td bgcolor='#A2AA23' width='140'><font color='#FFFFFF'><b>Componente</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#FFFFFF'><b>Laptop</b></font></td>
+		<td bgcolor='#A2AA23' width='150'><font color='#FFFFFF'><b>Desktop</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Formato de fábrica da placa mãe</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Proprietário</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>AT, LPX, NLX, ATX, BTX</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Slot de Expansão</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Mini-PCI</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>PCI, PCIe, ISA, AGP</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Tipo de slot de RAM</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>SODIMM</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>SIMM, DIMM, RIMM</font></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<!--Slide 3-->
+<component id='ID_s3_title'>
+	<text><![CDATA[<b>SODIMM</b>]]></text>
+</component>
+
+</textcomponents>

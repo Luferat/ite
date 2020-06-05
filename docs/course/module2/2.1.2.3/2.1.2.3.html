@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.2.3 Dispositivos de Proteção de Energia</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos Seguros de Laboratório</h1>
+        <h2>Procedimentos para Proteger Equipamentos e Dados</h2>
+      </div>
+      <div id="content">
+          <p>Para ajudar a proteger contra problemas de oscilação de energia, são utilizados dispositivos para proteger os dados e os equipamentos de informática:</p>
+          <p><ul>
+              <li>Supressor - Ajuda a proteger contra danos causados ​​por surtos e picos. Um supressor de surtos desvia a tensão elétrica extra que está na linha para o terra.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fonte de alimentação ininterrupta (UPS) - Ajuda a proteger contra possíveis problemas de energia através do fornecimento de um nível inconsistente de energia elétrica de um computador a outro dispositivo. A bateria está em constante recarga enquanto o UPS está em uso. A UPS oferece uma qualidade consistente de energia quando ocorrem quedas de energia e/ou apagões. Muitos dispositivos UPS podem comunicar-se diretamente com o sistema operacional do computador. Essa comunicação permite que a UPS desligue de modo seguro o computador e salve os dados antes que a UPS perca toda a energia elétrica.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fornecimento de energia em standby (SPS) - Ajuda a proteger contra possíveis problemas de energia elétrica, proporcionando uma bateria de backup para fornecer energia quando a tensão de entrada estiver abaixo do nível normal. A bateria fica em modo de espera durante a operação normal. Quando a tensão diminui, a bateria fornece energia DC a um inversor de energia, que converte em energia AC para o computador. Este dispositivo não é tão confiável quanto um no-break (UPS) por causa do tempo que leva pra passar para a bateria. Se o dispositivo falhar, a bateria não poderá fornecer energia para o computador.</li>
+            </ul>
+          </p>
+          <p>ATENÇÃO: os fabricantes de UPS nunca sugerem ligar uma impressora a laser à um USP, pois a impressora pode sobrecarregar o mesmo.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.4.2 Conectando-se em um Grupo de Trabalho ou Domínio</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Antes que os computadores possam compartilhar recursos, eles devem fazer parte do mesmo domínio ou grupo de trabalho. Os sistemas operacionais mais antigos possuem mais restrições para nomear um grupo de trabalho. Se o grupo de trabalho for constituído por sistemas operacionais atuais e antigos, utilize o nome do grupo presente no computador com o sistema operacional mais antigo.</p>
+          <p>NOTA: Para remover um computador do domínio e colocá-lo em grupo de trabalho, é necessário utilizar um usuário e senha de alguma conta que esteja no grupo de administrador do domínio local.</p>
+          <p>Para alterar o nome do grupo de trabalho no Windows 7 e no Windows Vista, conforme apresentado na Figura 1, use o seguinte caminho:</p>
+          <p>Iniciar > botão direito do mouse em Computador > Propriedades > Alterar configurações > Alterar</p>
+          <p>Para alterar o nome do grupo de trabalho no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > botão direito do mouse em Meu Computador > Propriedades > selecione a guia Nome do computador > Alterar</p>
+          <p>O Windows também possui um assistente, conforme apresentado na Figura 2, que auxilia o usuário a ingressar em um domínio ou grupo de trabalho. Depois de mudar de domínio ou grupo de trabalho, você deverá reiniciar o computador para que as alterações entrem em vigor.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

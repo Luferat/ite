@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.2.11 Opções de Pasta</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle</h2>
+      </div>
+      <div id="content">
+          <p>Garantir o acesso adequado aos arquivos requer a gestão do diretório e as configurações de pasta. Para definir as configurações de pastas no Windows, use o utilitário Opções de Pasta.</p>
+          <p>Para acessar o utilitário Opções de Pasta no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Opções de Pasta</p>
+          <p>Opções de Pasta, conforme apresentado na imagem, possuem três guias.</p>
+          <p>Guia Geral</p>
+          <p>Utilize a guia Geral para ajustar a exibição básica e as configurações de acesso.</p>
+          <p><ul>
+              <li>Procurar pastas - Configura como uma pasta é exibida quando for aberta.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Clicar nos itens da seguinte maneira - Especifica o número de cliques necessários para abrir um arquivo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Painel de navegação - Determina se todas as pastas são apresentadas e se a pasta é automaticamente expandida quando ela é selecionada no painel de navegação.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Guia Modo de Exibição</p>
+          <p>Use a guia Exibir para ajustar as configurações de exibição e atributos para as pastas, incluindo a capacidade de ver pastas ocultas.</p>
+          <p><ul>
+              <li>Modo de exibição - Aplica as configurações de exibição para uma pasta que está sendo visualizada a todas as pastas do mesmo tipo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Configurações avançadas - Personaliza as experiências de visualização.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Guia Pesquisar</p>
+          <p>Use a guia Pesquisar para personalizar as configurações de busca das pastas.</p>
+          <p><ul>
+              <li>O que pesquisar - Configurações de busca baseados em locais indexados e não indexados para fazer os arquivos e pastas mais fáceis de encontrar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Como pesquisar - Determina quais opções levar em conta durante a pesquisa.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ao pesquisar locais não indexados - Determina se os diretórios do sistema e os arquivos compactados são incluídos na pesquisa locais não indexados.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

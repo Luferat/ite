@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.5.1.1 Identificando o Problema</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Processo Básico de Solução de Problemas em Dispositivos Móveis</h1>
+        <h2>Aplicando o Processo de Solução de Problemas em Dispositivos Móveis</h2>
+      </div>
+      <div id="content">
+          <p>Ao solucionar os problemas em dispositivos móveis, verifique se o aparelho está na garantia. Caso ele ainda esteja na garantia, o dispositivo pode trocado no local onde a compra foi feita. Se o dispositivo não está mais na garantia, avalie se vale pena repará-lo. Para determinar qual a melhor ação a ser tomada, compare o custo do reparo com o custo de um novo aparelho. Devido ao rápido avanço e desenvolvimento de novos designs e funcionalidades, normalmente é mais caro reparar um dispositivo móvel do que substituí-lo. Por esta razão, os dispositivos móveis normalmente são substituídos.</p>
+          <p>Siga as etapas descritas nesta seção para identificar, reparar e documentar o problema.</p>
+          <p>Problemas de dispositivos móveis podem ser resultado de uma combinação de hardware, software e problemas rede. Os técnicos devem ser capazes de analisar o problema e determinar a causa do erro, para então reparar o dispositivo. Este processo é chamado de troubleshooting (solução de problemas).</p>
+          <p>O primeiro passo no processo de solução de problemas é identificar o problema. A figura apresenta uma lista de questões que devem ser feitas aos clientes.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

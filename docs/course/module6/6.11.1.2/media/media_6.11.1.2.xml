@@ -1,0 +1,23 @@
+﻿<textcomponents>
+	<component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr class="title">
+					<td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 2: Estabelecendo uma Teoria da Provável Causa</b></font></td>
+				</tr>
+				<tr>
+					<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>Causas comuns de problemas de rede</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Cabos soltos</li>
+						<li>Placa de rede instalada incorretamente</li>
+						<li>ISP inacessível</li>
+						<li>Baixa potência do sinal wireless</li>
+						<li>Endereço IP inválido</li></textformat></font></td>
+				</tr>
+			</table>]]>
+		</text>
+	</component>
+	
+</textcomponents>

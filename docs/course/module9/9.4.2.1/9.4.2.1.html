@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.4.2.1 Objetivo dos Servidores de Impressão</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Compartilhando Impressoras</h1>
+        <h2>Servidores de Impressão</h2>
+      </div>
+      <div id="content">
+          <p>Muitas impressoras geralmente necessitam de um servidor de impressão separado para permitir a conectividade de rede, pois essas impressoras não possuem interfaces de rede embutidas. Um servidor de impressão é um dispositivo que possui placa de rede e memória, porém ele não é um computador. Ele se conecta à rede e possibilita que as impressoras sejam compartilhadas.</p>
+          <p>Um computador também pode ser utilizado como um servidor de impressão. A maioria dos sistemas operacionais de computadores são capazes de compartilhar uma impressora.</p>
+          <p>Os servidores de impressão permitem que vários usuários acessem uma única impressora. O servidor de impressão realiza três tarefas básicas:</p>
+          <p><ul>
+              <li>Permite que os usuários da rede acessem os recursos de impressão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Administra os trabalhos de impressão armazenando-os em uma fila até que o dispositivo de impressão esteja pronto para eles e, em seguida, envia as informações necessárias para a impressora.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fornece feedback aos usuários.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

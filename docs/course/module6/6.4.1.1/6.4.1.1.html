@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.1.1 Modems</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Dispositivos de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Para suportar a entrega imediata das milhões de mensagens trocadas entre as pessoas de todo o mundo, dependemos de um conjunto de redes interconectadas. A padronização dos vários elementos da rede possibilita que equipamentos e dispositivos criados por diferentes empresas trabalhem em conjunto. É importante que os técnicos de TI entendam o propósito e a função dos diferentes equipamentos de rede utilizados para dar suporte as operações pessoais e corporativas.</p>
+          <p></p>
+          <p>Um modem é um dispositivo eletrônico que conecta-se à Internet através de um ISP. O modem converte dados digitais em sinais analógicos para a transmissão através de uma linha telefônica. O fato dos sinais analógicos mudarem gradualmente, e de forma contínua, possibilita que eles sejam desenhados como ondas. Neste sistema, os sinais digitais são representados como bits binários. Os sinais digitais devem ser convertidos para um formato de ondas ao viajar através de linhas telefônicas. Eles são convertidos de volta para bits pelo modem de recepção, de modo que o computador receptor possa processar os dados.</p>
+          <p></p>
+          <p>O modem na extremidade receptora reconverte os sinais analógicos de volta para os sinais digitais, para que assim eles possam ser interpretados pelo computador. O processo de conversão de sinais analógicos em digitais e vice-versa é chamado de modulação/demodulação. A precisão da transmissão baseada em modem aumentou com o desenvolvimento de protocolos de detecção e correção de erros, o que reduziu ou eliminou o ruído e a interferência em linhas telefônicas.</p>
+          <p></p>
+          <p>Um modem interno se conecta a um slot de expansão na placa-mãe. Modems externos se conectam a um computador através das portas seriais e USB. Os drivers de software devem ser instalados e as portas de conexão devem ser configuradas para que o modem possa funcionar corretamente.</p>
+          <p></p>
+          <p>Quando os computadores usam o sistema de telefonia pública para se comunicar, é chamado de rede dial-up (DUN). Modems se comunicam entre si usando sinais de tom de áudio. Isto significa que os modems são capazes de duplicar as características de discagem de um telefone. DUN cria um Protocolo Ponto-a-Ponto (PPP). PPP é simplesmente uma conexão entre dois computadores através de uma linha telefônica.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

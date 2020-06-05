@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.1.10 Instalar e Desinstalar Aplicações</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Desktop, Ferramentas e Aplicações</h2>
+      </div>
+      <div id="content">
+          <p>Como técnico, você será responsável por adicionar e remover softwares dos computadores de seus clientes. A maioria das aplicações utilizam um processo de instalação automático assim que o disco da aplicação é inserido na unidade óptica. O processo de instalação atualiza o utilitário Adicionar ou Remover Programas. O usuário é obrigado a clicar durante o assistente de instalação e fornecer informações quando solicitadas.</p>
+          <p>Adicionando uma Aplicação</p>
+          <p>No Windows 7 e Windows Vista, insira o CD/DVD ou abra o arquivo do programa baixado. O programa de instalação deve iniciar. Se ele não iniciar, execute os arquivos &quot;setup&quot; ou &quot;install&quot;, presentes no disco, para iniciar a instalação ou baixe o programa novamente.</p>
+          <p>Depois que o aplicativo for instalado, você pode iniciar o aplicativo a partir do menu Iniciar ou no ícone de atalho que o aplicativo criou na área de trabalho. Verifique a aplicação para garantir que ela está funcionando corretamente. Se houver problemas, repare ou desinstale o aplicativo usando o utilitário Desinstalar ou Alterar um Programa. Algumas aplicações, como o Microsoft Office, fornecem uma opção de reparo no processo de instalação. Você pode usar essa função para tentar corrigir um programa que não está funcionando corretamente.</p>
+          <p>NOTA: No Windows XP, se um programa ou aplicativo não for instalado automaticamente quando o disco é inserido, você poderá usar a opção Adicionar ou Remover Programas para instalar o aplicativo. Clique no botão Adicionar Novos Programas e selecione o local onde o aplicativo está localizado.</p>
+          <p>Desinstalar ou Alterar um Programa</p>
+          <p>Se o programa não for desinstalado corretamente, você pode estar deixando os arquivos no disco rígido e configurações desnecessárias no registro, o que esgota o espaço em disco e os recursos do sistema. Arquivos desnecessários também podem reduzir a velocidade na qual o registo é lido. A Microsoft recomenda que você sempre use o utilitários Programas e Recursos, como mostrado na figura, ao remover, alterar ou reparar os programas. O utilitário orienta o usuário durante o processo de remoção de software e remove todos os arquivos que foram instalados.</p>
+          <p></p>
+          <p>Em alguns casos, você pode instalar ou desinstalar os recursos opcionais de um aplicativo utilizando o utilitário Programas e Recursos. Nem todos os programas oferecem essa opção.</p>
+          <p></p>
+          <p>Para abrir o utilitário Programas e Recursos no Windows 7 e Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Programas e Recursos</p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Adicionar ou Remover Programas</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

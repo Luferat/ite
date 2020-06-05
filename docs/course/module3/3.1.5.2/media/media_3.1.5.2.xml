@@ -1,0 +1,29 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Conector de dados PATA da Placa-mãe</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Conector de dados PATA da Unidade Óptica</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Conector de dados SATA da Placa-mãe</b>]]></text>
+</component>
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Conector de dados SATA do Disco Rígido</b>]]></text>
+</component>
+
+<component id="ID_s5_title">
+<text><![CDATA[<b>Conector de dados Floppy da Placa-mãe</b>]]></text>
+</component>
+
+<component id="ID_s6_title">
+<text><![CDATA[<b>Conector de dados Floppy da Unidade de Disquete</b>]]></text>
+</component>
+
+</textcomponents>

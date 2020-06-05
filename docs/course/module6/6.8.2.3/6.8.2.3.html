@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.2.3 Instalando e Atualizando uma NIC</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Adaptadores de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Para instalar uma placa de rede (NIC) em um computador desktop, você deve remover a tampa do gabinete. Em seguida, retire a tampa do slot PCI ou slot PCI Express disponível. Depois que a NIC estiver instalada firmemente, feche o gabinete. Uma placa de rede sem fio possui uma antena conectada na parte de trás da placa ou ligada através de um cabo, de modo que ele pode ser posicionada para a obter melhor recepção de sinal. Você deve conectar e posicionar a antena.</p>
+          <p>De tempos em tempos, o fabricante disponibiliza um novo driver para a placa de rede. O novo driver pode melhorar a funcionalidade da placa de rede ou simplesmente adicionar compatibilidade a um sistema operacional.</p>
+          <p>Ao instalar um novo driver, desative o software de proteção contra vírus para garantir que o mesmo seja instalado corretamente. Alguns antivírus detectam uma atualização de driver como um possível ataque. Instale apenas um driver de cada vez, caso contrário, alguns processos de atualização podem entrar em conflito. A melhor prática é fechar todos os aplicativos que estão sendo executados para que eles não usem nenhum arquivo associado com a atualização do driver. Antes de atualizar um driver, visite o site do fabricante. Em muitos casos, você pode baixar um arquivo de driver executável auto-extraível que instala ou atualiza o driver automaticamente.</p>
+          <p>Depois que a NIC e o driver estiverem instalados e configurados, talvéz você precise ajustar outras configurações do sistema operacional. Pode ser que você precise instalar um modem para se conectar à Internet. Caso não seja necessário, você pode simplesmente conectar o computador à rede existente.</p>
+          <p>Você também pode atualizar manualmente um driver da NIC. No Windows 7 e Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Gerenciador de Dispositivos</p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Sistema > guia Hardware > Gerenciador de Dispositivos</p>
+          <p>No Windows 7, para exibir os adaptadores de rede instalados, clique na seta próxima a essa categoria. No Windows Vista e Windows XP, clique no simbolo de + ao lado da categoria adaptadores de rede. Para visualizar e alterar as propriedades do adaptador, clique duas vezes no mesmo. Na janela Propriedades do adaptador, selecione a guia Driver.</p>
+          <p>NOTA: Às vezes, o processo de instalação de driver solicita que você reinicie o computador.</p>
+          <p>Se o novo driver da NIC não funcionar como o esperado depois de ter sido instalado, você pode desinstalá-lo ou reverter para o driver anterior. Clique duas vezes no adaptador, presente no janela Gerenciador de Dispositivos. Na janela Propriedades do adaptador, selecione a guia Driver e clique em Reverter driver. Caso nenhum driver tenha sido instalado antes da atualização, esta opção não estará disponível, conforme apresentado na figura. Nesse caso, você deve encontrar um driver para o dispositivo e instalá-lo manualmente, caso o sistema operacional não tenha encontrado o driver adequado para a NIC.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

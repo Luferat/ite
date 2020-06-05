@@ -1,0 +1,9 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Pastas de Usuários</b>]]></text>
+</component> 
+<component id="ID_s2_title">
+<text><![CDATA[<b>Pastas do Sistema</b>]]></text>
+</component> 
+ 
+</textcomponents>

@@ -1,0 +1,27 @@
+﻿<textcomponents>
+	<component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr class="liner">
+					<td colspan='2' bgcolor='#DAE17A'><font size='14' color='#393536'><b>Passo 4: Estabelecer um Plano de Ação para Verificar o Problema e Implementar a Solução</b></font></td>
+				</tr>
+				<tr>
+					<td class="liner_top" colspan='2' bgcolor='#434321'><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' width="200" valign="top"><font size='12'color='#393536'>Se nenhuma solução for alcançada na etapa anterior, novas pesquisas serão necessárias para implementar a solução</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Logs de reparo do Helpdesk</li>
+						<li>Outros técnicos</li>
+						<li>FAQs do site do fabricante</li>
+						<li>Sites técnicos</li>
+						<li>Grupos de notícias</li>
+						<li>Manuais do computador</li>
+						<li>Manuais do dispositivo</li>
+						<li>Fóruns on-line</li>
+						<li>Buscas na Internet</li></textformat></font></td>
+				</tr>
+			</table>]]>
+		</text>
+	</component>
+	
+</textcomponents>

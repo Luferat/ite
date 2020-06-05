@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.2.1 Introdução aos Utilitários do Painel de Controle</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle</h2>
+      </div>
+      <div id="content">
+          <p>O Windows centraliza as configurações de muitos recursos que controlam o comportamento e a aparência do computador. Essas configurações são categorizadas em utilitários, ou pequenos programas, encontrado no Painel de Controle, como mostrado na Imagem 1. Adicionar ou remover programas, alterar configurações de rede e alterar as configurações de segurança são algumas das opções de configuração disponíveis no Painel de Controle.</p>
+          <p></p>
+          <p>Os nomes das diferentes categorias no painel de controle variam um pouco, dependendo da versão do Windows instalada. Por padrão, os ícones são agrupados nas seguintes categorias no Windows 7:</p>
+          <p><ul>
+              <li>Sistema e Segurança - Utilizado para configurar as definições de segurança e do sistema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede e Internet - Utilizado para configurar os tipos de conexão de rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Hardware e Sons - Utilizado para configurar os dispositivos conectados ao computador e as configurações de som</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Programas - Utilizado para remover, alterar e reparar aplicativos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Contas de Usuário e Segurança Familiar - Utilizado para criar e remover contas de usuário e configurar os controles dos pais</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Aparência e Personalização - Utilizado para controlar a aparência da interface de usuário do Windows</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Relógio, Idioma e Região - Utilizado para especificar a localização e o idioma</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Facilidade de Acesso - Utilizado para configurar o Windows conforme as necessidades visuais, auditivas e motoras</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>No Windows, você pode alterar a forma em que o Painel de Controle é exibido. O tipo de visualização que você selecionar determina quais utilitários podem ser acessados imediatamente no Painel de Controle. No Windows 7, as opções de exibição incluem:</p>
+          <p><ul>
+              <li>Categoria - Conjuntos de utilitários do Painel de Controle em grupos de fácil navegação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ícones Grandes - Exibe os utilitários em ordem alfabética, usando ícones grandes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ícones Pequenos - Exibe os utilitários em ordem alfabética, usando ícones pequenos.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NOTA: Este curso utiliza a opção &quot;Ícones Grandes&quot;, como mostrado na Imagem 2.</p>
+          <p></p>
+          <p>No Windows Vista, há duas opções de visualização:</p>
+          <p><ul>
+              <li>Página Inicial do Painel de Controle - Conjunto de utilitários do Painel de Controle em grupos de fácil navegação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Modo de Exibição Clássico - Exibe todos os utilitários do Painel de Controle individualmente.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>No Windows XP, existem duas opções de visualização:</p>
+          <p><ul>
+              <li>Categoria - Conjuntos de utilitários do Painel de Controle em grupos de fácil navegação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Modo de Exibição Clássico - Exibe todos os utilitários do Painel de Controle individualmente.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

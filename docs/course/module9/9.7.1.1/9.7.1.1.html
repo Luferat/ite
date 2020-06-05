@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.7.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Impressoras</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Neste capítulo, foram discutidos vários tipos de impressoras. Você aprendeu que existem muitos tipos e tamanhos de impressoras diferentes, cada uma com diferentes capacidades, velocidade e uso. Você também aprendeu que as impressoras podem ser conectadas diretamente a computadores ou compartilhadas em uma rede. O capítulo introduziu os diferentes tipos de cabos e interfaces disponíveis para conexão de uma impressora.</p>
+          <p>Os seguintes conceitos deste capítulo são importantes para serem lembrados:</p>
+          <p><ul>
+              <li>Algumas impressoras têm baixa produção e são adequadas para uso doméstico, enquanto outras impressoras têm alto rendimento e são projetadas para uso comercial.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressoras podem ter diferentes velocidades e qualidades de impressão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressoras antigas usam cabos e portas paralelas. Impressoras mais recentes costumam usar cabos e conectores USB ou FireWire.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Com impressoras mais recentes, o computador instala automaticamente os drivers necessários.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Se os drivers de dispositivo não forem instalados automaticamente pelo computador, você pode baixá-los no site do fabricante ou usar o CD fornecido.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A maioria das optimizações são feitas através de drivers, softwares e utilitários.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Depois que você configurar a impressora, você pode compartilhar o dispositivo com outros usuários na rede. Este arranjo é eficiente em relação ao custo, pois cada usuário não precisa ter uma impressora dedicada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Um bom programa de manutenção preventiva aumenta a vida útil da impressora e mantém um bom desempenho da mesma.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sempre siga os procedimentos de segurança ao trabalhar com impressoras. Muitas peças interiores das impressoras podem conter alta tensão ou ficarem muito quente com o uso.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use uma sequência de passos para resolver um problema. Começe com tarefas simples antes de decidir sobre um curso de ação. Chame um técnico de impressora certificado quando um problema for difícil demais para que você possa consertá-lo.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.3.1 Ferramentas de Referência</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Uso Adequado das Ferramentas</h1>
+        <h2>Ferramentas de Organização</h2>
+      </div>
+      <div id="content">
+          <p>Um técnico deve documentar todos os reparos e problemas do computador. A documentação pode então ser usada como uma referência para problemas futuros ou problemas de outros técnicos. Os documentos podem ser de papel, mas é recomendado a utilização de formulários eletrônicos, pois eles podem ser facilmente pesquisados ​​para problemas específicos.</p>
+          <p>É importante que um técnico documente todos os serviços e reparos. Estes documentos precisam ser armazenados de forma centralizada e disponibilizados a todos os outros técnicos. A documentação pode então ser usada como material de referência para problemas futuros semelhantes. Um bom atendimento ao cliente inclui o fornecimento de uma descrição detalhada do problema e da solução.</p>
+          <p>Ferramentas de Referência Pessoal</p>
+          <p>Ferramentas de referência pessoais para solução de problemas incluem guias, manuais do fabricante, guias de referência rápida e revistas de reparo. Além do registro de fatura, um técnico deve manter um diário de atualizações e reparos. A documentação do diário inclui descrições do problema, as possíveis soluções que foram tentadas e as medidas tomadas para reparar o problema. Observe as alterações de configuração feitas no equipamento e quaisquer peças de reposição utilizadas no reparo. Esta documentação é valiosa ao se deparar com situações semelhantes no futuro.</p>
+          <p><ul>
+              <li>Anotações - Faça anotações à medida que você avança no processo de reparo e solução de problemas. Consulte as anotações para evitar repetir os passos anteriores e para determinar quais medidas tomar em seguida.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Diário - Documente as atualizações e reparos que você realiza. Inclua descrições do problema, as possíveis soluções que foram tentadas e as medidas tomadas para reparar o mesmo. Observe as alterações de configuração feitas no equipamento e quaisquer peças de reposição utilizadas no reparo. O seu diário, junto com as suas anotações, pode ser valioso ao se deparar com situações semelhantes no futuro.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Histórico de reparos - Faça uma lista detalhada dos problemas e reparos, incluindo data, peças de reposição e informações do cliente. O histórico permite que um técnico determine qual trabalho foi realizado em um computador específico anteriormente.</li>
+            </ul>
+          </p>
+          <p>Ferramentas de Referência da Internet</p>
+          <p>A Internet é uma excelente fonte de informações sobre problemas específicos de hardware e suas respectivas soluções possíveis:</p>
+          <p><ul>
+              <li>Ferramentas de busca da Internet</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Grupos de notícias</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>FAQs do Fabricante</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Manuais on-line do computador</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fóruns on-line e chats</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sites técnicos</li>
+            </ul>
+          </p>
+          <p>A figura mostra um exemplo de um site técnico.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

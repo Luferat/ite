@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.1.4 Gaming PCs</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Configurations for Specialized Computer Systems</h1>
+      <h2>Specialized Computer Systems</h2>
+    </div>
+    <div id="content">
+          <p>Many people enjoy playing computer games. Each year, games become more advanced and require more powerful hardware, new hardware types, and additional resources to ensure a smooth and enjoyable gaming experience.</p>
+          <p></p>
+          <p>You may be required to build a computer for a customer designed specifically for playing games. This is some of the hardware required when building a gaming computer.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Powerful processor</b> - Games require all the components in the computer to work together seamlessly. A powerful processor helps ensure that all the software and hardware data can be addressed in a timely fashion. Multiple core processors can help increase the responsiveness of hardware and software.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>High-end video card</b> - Modern games use high resolutions and intricate detail. A video card that has a fast, specialized GPU and high amounts of fast video memory is necessary to ensure that the images displayed on the monitor are high quality, clear, and smooth. Some gaming machines use multiple video cards to produce high frame rates or use multiple monitors.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>High-end sound card</b> - Video games use multiple channels of high-quality sound to immerse the player in games. A high-quality sound card increases the quality of sound above that of built-in sound on a computer. A dedicated sound card also helps improve overall performance by taking some of the demand off of the processor.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>High-end cooling</b> - High-end components often produce more heat than standard components. More robust cooling hardware is often needed to make sure that the computer stays cool under heavy loads while playing advanced games. Oversized fans, heat sinks, and water cooling devices are often used to keep CPUs, GPUs, and RAM cool.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Large amounts of fast RAM</b> - Computer games require large amounts of memory to function. Video data, sound data, and all the information needed to play the game are constantly being accessed. The more RAM that the computer has, the less often the computer needs to read from slower storage, such as hard drives or SSDs. Faster RAM helps the processor keep all the data in sync, because the data that it needs to calculate can be retrieved when it is needed.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Fast storage</b> - 7200 RPM and 10000 RPM drives can retrieve data at a much faster rate than 5400 RPM hard drives. SSD drives are more expensive, but they improve the performance of games dramatically.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Gaming-specific hardware</b> - Some games involve communicating with other players. A microphone is required to talk to them, and speakers or headphones are required to hear them. Find out what type of games your customer plays to determine if a microphone or headset is needed. Some games can be played in 3D. Special glasses and specific video cards may be required to use this feature. Also, some games might benefit from the use of more than one monitor. Flight simulators, for example, can be configured to display cockpit images across two, three, or even more monitors at the same time. </li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

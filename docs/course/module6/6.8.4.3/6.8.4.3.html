@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.4.3 Grupos Domésticos do Windows 7</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Todos os computadores com Windows 7 que pertencem ao mesmo grupo de trabalho também podem pertencer a um grupo doméstico. Pode haver apenas um grupo doméstico por grupo de trabalho em uma rede. Cada computador apenas poderá ser membro de um grupo doméstico por vez. A opção de grupo doméstico não está disponível no Windows Vista ou no Windows XP.</p>
+          <p>Somente um usuário no grupo de trabalho pode criar o grupo doméstico. Outros usuários poderão se juntar ao grupo doméstico, desde que saibam a senha do mesmo. A disponibilidade do grupo doméstico depende do seu perfil de rede local:</p>
+          <p><ul>
+              <li>Rede Domestica - permissão para criar ou participar de um grupo doméstico</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede Corporativa - não é permitido criar ou participar de um grupo doméstico, porém você pode ver e compartilhar recursos com outros computadores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede Pública - o grupo doméstico não está disponível</li>
+            </ul>
+          </p>
+          <p>NOTA: Computadores com o Windows 7 Starter ou Windows 7 Home Basic instalado podem participar de um grupo doméstico, porém não podem criá-lo.</p>
+          <p>Para alterar o perfil de rede para Rede Doméstica em um computador, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Central de Rede e Compartilhamento.</p>
+          <p>Passo 2. Clique no perfil de rede local listado na seção Exibir Redes Ativas, conforme apresentado na Imagem 1.</p>
+          <p>Passo 3. Clique em Grupo Doméstica.</p>
+          <p>Passo 4. Escolha o que deseja compartilhar (por exemplo, imagens, música, vídeos, documentos e impressoras) e, em seguida, clique em Avançar.</p>
+          <p>Passo 5. Entre ou crie um grupo doméstico.</p>
+          <p></p>
+          <p>Para criar um grupo doméstico, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Grupo Doméstico.</p>
+          <p>Passo 2. Clique em Criar um Grupo Doméstico, conforme apresentado na Imagem 2.</p>
+          <p>Passo 3. Selecione os arquivos que deseja compartilhar e, em seguida, clique em Avançar.</p>
+          <p>Passo 4. Defina a senha do grupo doméstico</p>
+          <p>Passo 5. Clique em Concluir.</p>
+          <p>Quando um computador entra em um grupo doméstico, todas as contas de usuário do computador, exceto a conta de convidado, tornam-se membros do grupo doméstico. Fazer parte de um grupo doméstico torna fácil o compartilhamento de fotos, músicas, vídeos, documentos, bibliotecas e impressoras com outras pessoas do mesmo grupo. Os usuários controlam o acesso a seus próprios recursos. Os usuários também podem criar ou participar de grupos domésticos em máquinas virtuais no Windows Virtual PC.</p>
+          <p>Para inserir um computador em um grupo doméstico, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Grupo Doméstico.</p>
+          <p>Passo 2. Clique em Ingressar Agora, conforme apresentado na Imagem 3.</p>
+          <p>Passo 3. Selecione os arquivos que deseja compartilhar e, em seguida, clique em Avançar.</p>
+          <p>Passo 4. Digite a senha do grupo doméstico e clique em Avançar.</p>
+          <p>Passo 5. Clique em Concluir.</p>
+          <p>Para alterar os arquivos compartilhados em um computador, clique em Iniciar > Painel de Controle > Grupo Doméstico. Após realizar as alterações, clique em Salvar.</p>
+          <p>NOTA: Se um computador pertencer a um domínio, você poderá se juntar a um grupo doméstico e acessar os arquivos e recursos dos computadores desse grupo. Você não terá permissão para criar um novo grupo doméstico ou compartilhar seus próprios arquivos e recursos com o grupo.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

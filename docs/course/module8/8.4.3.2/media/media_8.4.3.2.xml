@@ -1,0 +1,11 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Corrigindo e Atualizando Sistemas Operacionais</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Notificação de Atualização</b>]]></text>
+</component>
+
+</textcomponents>

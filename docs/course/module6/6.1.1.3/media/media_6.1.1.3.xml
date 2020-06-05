@@ -1,0 +1,52 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Atividade - Vantagens e Desvantagens</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<font size="14"><b>CON</b></font>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<font size="14"><b>PRO</b></font>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Escolha a sua resposta, arrastando as opções para a posição adequada. Em seguida, clique em Verificar.]]></text>
+	</component>
+	
+<!--drag sources-->	
+	<component id="ID_drag01">
+		<text><![CDATA[<b>As redes devem ser administradas.</b>]]></text>
+	</component>
+	<component id="ID_drag02">
+		<text><![CDATA[<b>Permitir acesso de um grupo aos documentos.</b>]]></text>
+	</component>
+	<component id="ID_drag03">
+		<text><![CDATA[<b>Pode ser difícil de realizar o troubleshoot</b>]]></text>
+	</component>
+	<component id="ID_drag04">
+		<text><![CDATA[<b>Backup centralizado de dados</b>]]></text>
+	</component>
+	<component id="ID_drag05">
+		<text><![CDATA[<b>Os periféricos podem ser compartilhados.</b>]]></text>
+	</component>
+	
+<!--feedback-->
+	<component id="ID_CORRECT_TITLE">
+		<text><![CDATA[Correto]]></text> 
+	</component>
+	<component id="ID_CORRECT_BODY">
+		<text><![CDATA[Está correto.]]></text> 
+	</component>
+	<component id="ID_INCORRECT_TITLE">
+		<text><![CDATA[Incorreto]]></text> 
+	</component>
+	<component id="ID_INCORRECT_BODY">
+		<text><![CDATA[Está incorreto.]]></text> 
+	</component>
+	<component id="ID_CHECK">
+		<text><![CDATA[Verificar]]></text> 
+	</component>
+	<component id="ID_RESET">
+		<text><![CDATA[Redefinir]]></text> 
+	</component>
+</textcomponents>

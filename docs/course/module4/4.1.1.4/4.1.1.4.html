@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.1.1.4 Inspecionando Componentes Internos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Manutenção Preventiva</h1>
+        <h2>Visão Geral de Manutenção Preventiva de PC</h2>
+      </div>
+      <div id="content">
+          <p>O melhor método de manter um computador em bom estado é examinar o computador em um horário regular. Esta é uma lista básica de componentes para inspecionar.</p>
+          <p><ul>
+              <li>Dissipador de calor da CPU e ventoinha - Examine o dissipador de calor da CPU e ventoinha para retirar o acúmulo de poeira. Certifique-se de que a ventoinha pode girar livremente. Verifique se o cabo de alimentação do ventilador está seguro. Verifique a ventoinha enquanto o aparelho estiver ligado para ver ela girando.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conexões de RAM - Os chips de memória RAM devem ser bem encaixada nos slots de memória RAM. Às vezes, os clipes que prendem a memória podem afrouxar. Recoloque-os, se necessário. Use ar comprimido para remover o pó.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dispositivos de Armazenamento - fiscalize todos os dispositivos de armazenamento. Todos os cabos devem estar conectados com firmeza. Verifique se há jumpers soltos, faltando ou configurados incorretamente. A unidade não deve estar chacoalhando, batendo ou com sons de atrito. Leia a documentação do fabricante para saber como limpar a unidade óptica e as cabeças de fitas. Você pode comprar kits de limpeza de lentes a laser para as unidades ópticas do computador. Kits de limpeza de cabeça de fita também estão disponíveis.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placas de expansão - Devem ser encaixadas corretamente nos slots de expansão. Placas soltas podem causar curtos-circuitos. Prenda as placas de expansão com o parafuso de fixação ou clip para evitar que as placas se soltam de seus slots. Utilize ar comprimido para remover a sujeira e poeira nas placas e slots de expansão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Parafusos - Parafusos soltos podem causar problemas se não forem imediatamente corrigidos ou removidos. Um parafuso solto no gabinete pode provocar um curto-circuito ou rolar para uma posição onde fica difícil remove-lo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabos - Examine todas as conexões dos cabos. Procure pinos quebrados e/ou dobrados. Certifique-se de que todos os parafusos de fixação estão apertados. Certifique-se que os cabos não estão prensados, comprimidos, ou severamente dobrados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dispositivos de Energia - Inspecionar as réguas de energia, supressores de surto (protetores de surto de energia) e dispositivos UPS. Certifique-se de que há ventilação adequada e desobstruída. Substitua a fonte de alimentação se ela não funcionar corretamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teclado e mouse - Utilize o ar comprimido para limpar o teclado, o mouse e o sensor do mouse.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

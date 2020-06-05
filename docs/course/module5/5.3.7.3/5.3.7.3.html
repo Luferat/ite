@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.7.3 Utilitário Executar (Run Line)</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Ferramentas de Linha de Comando</h2>
+      </div>
+      <div id="content">
+          <p>O utilitário Executar, mostrado na Figura 1, permite que você digite os comandos para configurar as definições do Windows. Muitos destes comandos são usados ​​para diagnóstico e modificações do sistema.</p>
+          <p>Para acessar o Executar do Windows 7, use o seguinte caminho:</p>
+          <p>Iníciar > caixa de pesquisa > digite Executar > Enter</p>
+          <p>Para acessar o utilitário Executar no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Iniciar Pesquisa > digite Executar > Enter</p>
+          <p>Para acessar o utilitário Executar no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Executar</p>
+          <p>Esta é uma lista de comandos comuns:</p>
+          <p><ul>
+              <li>CMD - Usado para abrir o prompt de comando, conforme apresentado na Figura 2.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DXDIAG - Exibe detalhes de todos os componentes e drivers DirectX que estão instalados em um computador, conforme apresentado na Figura 3. Use este utilitário para garantir que o DirectX está instalado e configurado corretamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>EXPLORER - Abre o Windows Explorer.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>MMC - Abre a Console de Gerenciamento Microsoft (MMC), mostrado na Figura 4, que permite que você organize ferramentas de gestão, chamado de snap-ins, em um único local, facilitando a administração. Você também pode adicionar links de páginas web, tarefas, controles ActiveX e pastas. Você pode criar quantas MMCs personalizadas forem necessárias, cada uma com um nome diferente. Isto é útil quando vários administradores gerenciaram diferentes aspectos do mesmo computador. Cada administrador pode ter uma MMC individualizada para monitorar e configurar o computador. Você deve ter privilégios administrativos para acessar a MMC.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>MSCONFIG - Abre o utilitário de Configuração do Sistema, conforme apresentado na Figura 5, que executa procedimentos de diagnóstico nos arquivos de inicialização do Windows. Você deve estar logado com permissões de administrador para completar o processo de solução de problemas. Use o MSCONFIG quando o computador for inicializado e não carregar corretamente o Windows.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>MSINFO32 - Apresenta um resumo completo do sistema do computador, incluindo componentes de hardware e informação de softwares, tal como mostrado na Figura 6.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>MSTSC - Abre a Conexão de Área de Trabalho Remota</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>NOTEPAD - Abre o Bloco de Notas, conforme apresentado na Figura 7, que é um editor de texto básico.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>REGEDIT - Abre o utilitário Editor do Registro, conforme apresentado na Figura 8, que permite ao usuário editar o registro. Usar o Editor do Registro incorretamente pode causar problemas de hardware, aplicativo ou no sistema operacional, incluindo problemas que exigem a reinstalação do S.O.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>SERVICES.MSC - Abre o utilitário Serviços.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>MSCONFIG</p>
+          <p>MSCONFIG é oficialmente chamado de Configuração do Sistema no Windows 7 e Windows Vista, e é chamado Utilitário de Configuração do Sistema Microsoft no Windows XP. Este utilitário pode ser usado para desativar ou reativar unidades do dispositivo, serviços do Windows e softwares. Ele também pode alterar parâmetros de inicialização.</p>
+          <p>As cinco guias a seguir são usadas ​​para gerenciar as diferentes características:</p>
+          <p><ul>
+              <li>Geral - Utilizado para selecionar os métodos Inicialização Normal, Diagnóstico e Seletiva</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Inicialização do Sistema - Oferece opções de inicialização que podem ser habilitadas e desabilitadas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Serviços - Usado para desativar e ativar serviços em execução</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Inicialização de Programas - Usado para ativar ou desativar os itens que são carregados automaticamente quando o computador é ligado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ferramentas - Usado para executar os recursos do Windows que normalmente são encontrados no Painel de Controle</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

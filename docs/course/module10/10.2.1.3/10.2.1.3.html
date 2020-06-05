@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.1.3 Requisitos da Política de Segurança</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Políticas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>O valor do equipamento físico geralmente é muito menor do que o valor dos dados que ele contém. A perda de dados confidenciais de uma empresa para competidores ou criminosos pode ter um custo muito alto. Tais perdas podem resultar em uma falta de confiança da empresa para com os funcionários de TI e também na demissão dos técnicos responsáveis ​​pela segurança dos dados. Para proteger os dados, vários métodos de segurança podem ser implementados.</p>
+          <p>Uma organização deve se esforçar para alcançar o melhor e mais acessível nível de proteção contra perda de dados ou danos a software e equipamentos. Os técnicos de rede e os gestores da organização devem trabalhar em conjunto para desenvolver uma política de segurança que garante que os dados e equipamentos sejam protegidos contra todas as ameaças de segurança. No desenvolvimento da política, os gestores devem calcular o custo da perda dos dados em relação ao custo da proteção de segurança e determinar quais relações de compromisso são aceitáveis. Uma política de segurança inclui uma declaração completa sobre o nível de segurança necessário e como ele será alcançado.</p>
+          <p>Você pode estar envolvido no desenvolvimento de uma política de segurança para um cliente ou organização. Ao criar uma política de segurança, faça as seguintes perguntas para determinar os fatores de segurança:</p>
+          <p><ul>
+              <li>O computador está localizado em uma rede doméstica ou comercial? - Computadores domésticos são vulneráveis ​​a invasões via rede sem fio. Computadores empresariais possuem um alto risco de intrusão de rede, devido ao fato de que as empresas são alvos mais atraentes para os hackers e também porque os usuários legítimos possam abusar dos privilégios de acesso.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os usuários possuem acesso à Internet em tempo integral? - Quanto maior o tempo em que um computador estiver conectado à Internet, maior a chance de sofrer ataques. Um computador com acesso à Internet deve utilizar softwares de proteção, como antivírus e firewall.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O dispositivo do usuário é um laptop? - A segurança física é um grande problema para computadores portáteis. Existem medidas para proteger os laptops, tais como travas de cabo, biometria e técnicas de rastreamento.</li>
+            </ul>
+          </p>
+          <p>Ao criar uma política de segurança, estas são algumas áreas-chave para atuar:</p>
+          <p><ul>
+              <li>Processo de tratamento de incidentes de segurança de rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Processo de auditoria da segurança de rede existente</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Estrutura de segurança geral e implementação de segurança de rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Comportamentos permitidos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Comportamentos proibidos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O que fazer e como armazenar os logs: Visualizador de Eventos, arquivos de log do sistema e arquivos de log de segurança</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Acesso a recursos de rede por meio de permissões de conta</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tecnologias de autenticação para acesso a dados: nomes de usuário, senhas, biometria e smart cards</li>
+            </ul>
+          </p>
+          <p>A política de segurança também deve fornecer informações detalhadas sobre as seguintes questões em caso de emergência:</p>
+          <p><ul>
+              <li>Medidas a serem tomadas após uma violação de segurança</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quem contactar em caso de emergência</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Informações a serem compartilhadas com clientes, fornecedores e meios de comunicação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Locais secundários para usar em uma evacuação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Medidas a tomar após um estado de emergência, incluindo a prioridade dos serviços a serem restaurados</li>
+            </ul>
+          </p>
+          <p>O escopo da política e as consequências do não cumprimento devem ser claramente descritos. As políticas de segurança devem ser revisadas ​​periodicamente e atualizadas conforme necessário. Mantenha um histórico de revisão para acompanhar todas as mudanças da política. A segurança é responsabilidade de cada pessoa dentro da empresa. Todos os funcionários, incluindo os prestadores de serviço que não usam computadores, devem ser treinados para entender a política de segurança e notificados de todas as atualizações feitas na política de segurança.</p>
+          <p>Você também deve definir o acesso dos funcionários aos dados. A política deve proteger os dados altamente confidenciais do acesso público, ao mesmo tempo que assegura que os funcionários podem realizar suas tarefas de trabalho. Os dados podem ser classificados como dados públicos a confidenciais, tendo ainda vários níveis diferentes entre eles. Uma informação pública pode ser vista por qualquer pessoa e não possui requisitos de segurança. A informação pública não pode ser usada de forma maliciosa para ferir uma empresa ou um indivíduo. Uma informação confidencial necessita de segurança, pois a exposição destes dados pode ser extremamente prejudicial para um governo, empresa ou indivíduo.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

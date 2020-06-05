@@ -1,0 +1,33 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+b { font-size:12px !important; font-weight:bold !important;}
+
+li {
+    margin-left: 1.2em !important;
+}
+
+#ID_title b { font-size:16px !important;}
+
+#ID_bodyTxt01 { width:244px !important;}
+#ID_bodyTxt02 { width:244px !important; margin-top:13px !important; height:285px !important;}
+#ID_bodyTxt03 { width:244px !important;}
+#ID_bodyTxt04 { width:244px !important;}
+#ID_bodyTxt05 { width:244px !important;}
+
+#ID_titleTxt01 b { margin-left:3px !important;}
+#ID_titleTxt02 b { margin-left:3px !important;}
+#ID_titleTxt03 b { margin-left:3px !important;}
+#ID_titleTxt04 b { margin-left:3px !important;}
+#ID_titleTxt05 b { margin-left:3px !important;}

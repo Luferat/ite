@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>12.0.1.1 Introdução</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Troubleshooting Avançado</h1>
+        <h2>Introdução</h2>
+      </div>
+      <div id="content">
+          <p>Em sua carreira como técnico, é importante que você desenvolva habilidades avançadas de troubleshooting e métodos de diagnóstico para os componentes dos computadores, sistemas operacionais, redes, notebooks, impressoras e segurança. O processo de solução de problemas avançado pode, por vezes, significar que o problema é complexo ou que a solução é difícil de executar. Em muitas ocasiões, o troubleshooting avançado significa que a causa do problema é difícil de se diagnosticar.</p>
+          <p></p>
+          <p>A solução de problemas avançados utiliza não apenas suas habilidades avançadas de diagnosticar hardware e software, mas também de sua interação com o cliente e com outros técnicos. A maneira em que você trabalha com clientes e com outros técnicos pode determinar o quão rápido e de forma o problema será diagnosticado e resolvido. Tire proveito de seus recursos, outros técnicos e de comunidades técnicas on-line para obter informações e respostas para suas dificuldades de diagnósticas. Você pode ser capaz de ajudar outros técnicos com outros problemas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

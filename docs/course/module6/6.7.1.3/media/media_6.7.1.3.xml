@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Comparação dos Modelos OSI e TCP/IP</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<font size="14"><b>Modelo OSI</b></font>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[Aplicação]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[Apresentação]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[Sessão]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[Transporte]]></text>
+</component>
+
+<component id='ID_s1_txt06'>
+	<text><![CDATA[Rede]]></text>
+</component>
+
+<component id='ID_s1_txt07'>
+	<text><![CDATA[Enlace de Dados]]></text>
+</component>
+
+<component id='ID_s1_txt08'>
+	<text><![CDATA[Física]]></text>
+</component>
+
+<component id='ID_s1_txt09'>
+	<text><![CDATA[<font size="14"><b>Modelo TCP/IP</b></font>]]></text>
+</component>
+
+<component id='ID_s1_txt10'>
+	<text><![CDATA[Aplicação]]></text>
+</component>
+
+<component id='ID_s1_txt11'>
+	<text><![CDATA[Transporte]]></text>
+</component>
+
+<component id='ID_s1_txt12'>
+	<text><![CDATA[Internet]]></text>
+</component>
+
+<component id='ID_s1_txt13'>
+	<text><![CDATA[Acesso à rede]]></text>
+</component>
+
+
+
+</textcomponents>

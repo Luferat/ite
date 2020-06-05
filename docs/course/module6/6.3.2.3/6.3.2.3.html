@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.2.3 IPv6</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Endereçando os Equipamentos da Rede</h2>
+      </div>
+      <div id="content">
+          <p>Trabalhar com números de 128 bits é difícil. Dessa forma, a notação que o endereço IPv6 utiliza para representar os 128 bits é de 32 dígitos hexadecimais. Os 32 dígitos hexadecimais são subdivididos em oito campos com quatro dígitos hexadecimais, utilizando dois pontos (:) como delimitadores. Cada campo de quatro dígitos hexadecimais é chamado de bloco.</p>
+          <p>O endereço IPv6 possui uma hierarquia de três partes, conforme apresentado na Imagem 1. O prefixo global, também chamado de site prefix, corresponde aos três primeiros blocos do endereço e é atribuído a uma organização por um registro de nomes de Internet (Internet names registry). O ID da sub-rede inclui o quarto bloco do endereço, e a identificação da interface inclui os últimos quatro blocos do endereço. O administrador de rede controla a sub-rede e o ID da interface.</p>
+          <p>Como exemplo, se um host possui o endereço IPv6 3ffe:6a88:85a3:08d3:1319:8a2e:0370:7344, o endereço de prefixo global é fe80:6a88:85a3, o endereço do ID da sub-rede é 08d3 e o endereço ID da interface é 1319:8a2e:0370:7344.</p>
+          <p>Um endereço IPv6 pode ser abreviado respeitando as seguintes regras:</p>
+          <p><ul>
+              <li>Omitir zeros à esquerda em um valor de 16-bit.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Substituir um grupo de zeros consecutivos por uma dupla dois pontos (::).</li>
+            </ul>
+          </p>
+          <p>A imagem 2 apresenta um exemplo de como essas regras são aplicadas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

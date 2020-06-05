@@ -1,0 +1,67 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+   <text><![CDATA[<b>Atividade - TCP vs UDP</b>]]></text>
+   </component>
+   
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Arraste as opções para a posição correta.</b>]]></text>
+</component>
+   
+   <component id="ID_s1_term01">
+		<text><![CDATA[<B>TCP</B>]]></text> 
+	</component>
+	<component id="ID_s1_term02">
+		<text><![CDATA[<B>UDP</B>]]></text> 
+	</component>
+
+   
+	<component id="ID_s1_drag01">
+		<text><![CDATA[Sem conexão]]></text> 
+	</component>
+	<component id="ID_s1_drag02">
+		<text><![CDATA[Transferência de arquivo simples]]></text> 
+	</component>
+	<component id="ID_s1_drag03">
+		<text><![CDATA[Navegar na Web]]></text> 
+	</component>  
+	<component id="ID_s1_drag04">
+		<text><![CDATA[Detecção de Erros]]></text> 
+	</component>  
+	<component id="ID_s1_drag05">
+		<text><![CDATA[Menor sobrecarga]]></text> 
+	</component>  
+	<component id="ID_s1_drag06">
+		<text><![CDATA[Entrega não confiável]]></text> 
+	</component>  
+	<component id="ID_s1_drag07">
+		<text><![CDATA[Entrega confiável]]></text> 
+	</component>   
+   	<component id="ID_s1_drag08">
+		<text><![CDATA[Email]]></text> 
+	</component> 
+   	<component id="ID_s1_drag09">
+		<text><![CDATA[Sistemas de arquivos de rede (NFS)]]></text> 
+	</component> 
+   
+   	<component id="ID_CORRECT_TITLE">
+		<text><![CDATA[Correto]]></text> 
+	</component>
+	<component id="ID_CORRECT_BODY">
+		<text><![CDATA[Está correto.]]></text> 
+	</component>
+	<component id="ID_INCORRECT_TITLE">
+		<text><![CDATA[Incorreto]]></text> 
+	</component>
+	<component id="ID_INCORRECT_BODY">
+		<text><![CDATA[Está incorreto.]]></text> 
+	</component>
+   
+   	<component id="ID_CHECK">
+		<text><![CDATA[Verificar]]></text> 
+	</component>
+	<component id="ID_RESET">
+		<text><![CDATA[Reiniciar]]></text> 
+	</component>
+   
+</textcomponents>

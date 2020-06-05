@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>12.4.1.1 Seis Passos para Realizar a Solução de Problemas Avançados em Laptops</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Laptops</h1>
+        <h2>Aplicar o Processo de Solução de Problemas em Laptops</h2>
+      </div>
+      <div id="content">
+          <p>O processo de resolução de problemas ajuda a resolver problemas com laptops. Estes problemas vão desde os mais simples, como atualizar um driver, até problemas mais complexos, como a substituição de um inversor. Use as etapas de solução de problemas como um guia para ajudá-lo a diagnosticar e reparar problemas.</p>
+          <p>O primeiro passo no processo de solução de problemas é identificar o problema. A Figura 1 apresenta uma lista de questões que devem ser feitas aos clientes.</p>
+          <p>Após conversar com o cliente, você poderá criar uma teoria das prováveis causas. A Figura 2 mostra uma lista de algumas prováveis ​​causas comuns para problemas de laptop.</p>
+          <p>Após desenvolver algumas teorias sobre o que está errado, teste-as para determinar a causa do problema. A Figura 3 apresenta uma lista de procedimentos rápidos que podem determinar a causa exata do problema ou até mesmo corrigi-lo. Se um procedimento rápido corrigir o problema, você pode ir direto para o passo 5 e verificar a funcionalidade completa do sistema. Se um procedimento rápido não corrigir o problema, poderá ser necessário investigar o mesmo para estabelecer a causa exata.</p>
+          <p>Após determinar a causa exata do problema, estabeleça um plano de ação para encontrar o problema e implementar a solução. A Figura 4 apresenta algumas fontes que podem ser usadas ​​para coletar informações adicionais necessárias para resolver um problema.</p>
+          <p>Após corrigir o problema, verifique a funcionalidade completa do sistema e, se for o caso, implemente as medidas preventivas. A Figura 5 mostra uma lista das etapas utilizadas para verificar a solução.</p>
+          <p>Na etapa final do processo de solução de problemas, documente suas descobertas, ações e resultados. A Figura 6 apresenta uma lista das tarefas necessárias para documentar o problema e a sua solução.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

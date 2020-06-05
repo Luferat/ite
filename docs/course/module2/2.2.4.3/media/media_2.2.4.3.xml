@@ -1,0 +1,180 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Uso Adequado da Chave de Fenda</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b>Sentido horário</b>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<b>Sentido anti-horário</b>]]></text>
+</component>
+
+<!--Slide 2-->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Parafuso Danificado</b>]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<b>Dano</b>]]></text>
+</component>
+
+<!--Slide 3-->
+<component id='ID_s3_title'>
+	<text><![CDATA[<b>Chave de Fenda</b>]]></text>
+</component>
+
+
+<!--Slide 4-->
+<component id='ID_s4_title'>
+	<text><![CDATA[<b>Chave Phillips</b>]]></text>
+</component>
+
+
+<!--Slide 5-->
+<component id='ID_s5_title'>
+	<text><![CDATA[<b>Chave Hexagonal</b>]]></text>
+</component>
+
+
+<!--Slide 6-->
+<component id='ID_s6_title'>
+	<text><![CDATA[<b>Ferramentas para Recuperação de Componentes</b>]]></text>
+</component>
+
+
+<!--Slide 7-->
+<component id='ID_s7_title'>
+	<text><![CDATA[<b>Multímetro</b>]]></text>
+</component>
+
+<component id='ID_s7_inst'>
+	<text><![CDATA[<b><p>Para explorar as diferentes funções do multímetro, clique nos botões, condutores e no seletor.</p></b>]]></text>
+</component>
+
+<component id='ID_s7_titleTxt'>
+	<text><![CDATA[<b>Multímetro Fluke Networks 110</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt'>
+	<text><![CDATA[<p>O Multímetro Fluke Networks 110 é um exemplo de equipamento usado para o teste de tensão. Para explorar as diferentes funções do multímetro, clique sobre os botões e no seletor de posições.</p>]]></text>
+</component>
+
+<component id='ID_s7_titleTxt01'>
+	<text><![CDATA[<b>Visor</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt01'>
+	<text><![CDATA[Para visualizar as informações exibidas.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt02'>
+	<text><![CDATA[<b>Espera</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt02'>
+	<text><![CDATA[O HOLD está habilitado. A tela congela a leitura atual. No modo MIN MAX AVG, o MIN MAX AVG da gravação é interrompido.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt03'>
+	<text><![CDATA[<b>MIN MAX AVG</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt03'>
+	<text><![CDATA[O modo MIN MAX AVG está habilitado. O mínimo, máximo ou a média de leitura é exibida.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt04'>
+	<text><![CDATA[<b>Range</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt04'>
+	<text><![CDATA[O multímetro seleciona a faixa com a melhor resolução. No modo de faixa manual, o usuário seleciona o intervalo.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt05'>
+	<text><![CDATA[<b>Hz</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt05'>
+	<text><![CDATA[Frequência de 50 Hz a 5 kHz. Nota: A tensão AC e corrente AC-coupled, TRUE RMS de até 500 Hz.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt06'>
+	<text><![CDATA[<b>COM</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt06'>
+	<text><![CDATA[Terminal comum (de retorno) para todas as medições. Ao medir a tensão, esta é muitas vezes referida como o terra.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt07'>
+	<text><![CDATA[<b>Terminal de entrada</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt07'>
+	<text><![CDATA[Terminal de entrada para a tensão, continuidade, resistência, teste de diodo, capacitância e medições de frequência da tensão.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt08'>
+	<text><![CDATA[<b>Power Off</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt08'>
+	<text><![CDATA[Desligar.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt09'>
+	<text><![CDATA[<b>AC</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt09'>
+	<text><![CDATA[Corrente alternada, a partir de 300 mV a 600 V.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt10'>
+	<text><![CDATA[<b>DC</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt10'>
+	<text><![CDATA[Corrente contínua, a partir de 1 mV a 600 V.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt11'>
+	<text><![CDATA[<b>Beeper</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt11'>
+	<text><![CDATA[O beeper liga em menos de 20 Ohms e desliga a mais de 250 Ohms.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt12'>
+	<text><![CDATA[<b>Ohms</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt12'>
+	<text><![CDATA[Ohms de 0,1 Ohms a 40 Mega Ohms.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt13'>
+	<text><![CDATA[<b>Diodo</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt13'>
+	<text><![CDATA[Testes de diodo. Um resultado de &quot;OL&quot; indica que um diodo aberto está presente.]]></text>
+</component>
+
+<component id='ID_s7_titleTxt14'>
+	<text><![CDATA[<b>Capacitância</b>]]></text>
+</component>
+
+<component id='ID_s7_bodyTxt14'>
+	<text><![CDATA[Capacitância, a partir de 1 nF a 9999 µF.]]></text>
+</component>
+
+
+</textcomponents>

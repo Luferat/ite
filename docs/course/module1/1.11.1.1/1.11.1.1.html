@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.11.1.1 Identify the Problem</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Basic Troubleshooting for Networks</h1>
+      <h2>Applying the Troubleshooting Process to Networking</h2>
+    </div>
+    <div id="content">
+          <p>Network problems can be simple or complex, and can result from a combination of hardware, software, and connectivity issues. Computer technicians must be able to analyze the problem and determine the cause of the error to repair the network issue. This process is called troubleshooting.</p>
+          <p>To assess how complicated the problem is, determine how many computers on the network are experiencing the problem. If there is a problem with one computer on the network, start the troubleshooting process at that computer. If there is a problem with all computers on the network, start the troubleshooting process in the network room where all computers are connected. As a technician, you should develop a logical and consistent method for diagnosing network problems by eliminating one problem at a time.</p>
+          <p>Follow the steps outlined in this section to accurately identify, repair, and document the problem. The first step in the troubleshooting process is to identify the problem. Figure 1 is a list of open-ended and closed-ended questions to ask the customer.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

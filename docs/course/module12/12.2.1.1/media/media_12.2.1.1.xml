@@ -1,0 +1,162 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text>
+<![CDATA[<b> </b>]]>
+</text>
+</component>
+
+<component id='ID_table_01'>
+<text>
+	<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="title">
+			<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1: Identificação do Problema</b></font></td>
+		</tr> 
+		<tr>
+			<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		<tr>
+			<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Questões Abertas</font></td>
+			<td valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Qual é o sistema operacional que está instalado no computador?</li>
+				<li>Quais programas foram instalados recentemente?</li>
+				<li>Quais atualizações ou service packs foram instalados?</li>
+				<li>Quais mensagens de erro você recebeu?</li>
+				<li>O que você estava fazendo quando o problema foi descoberto?</li></font></textformat></td>
+		</tr>
+		<tr>
+		<td width="150" valign="top" bgcolor='#FFFFFF'><font color='#393536'>Questões Fechadas</font></td>
+		<td  valign="top" bgcolor='#FFFFFF'><textformat blockindent='-18'><font color='#393536'><li>Mais alguém tem este problema?</li>
+			<li>Você alterou sua senha recentemente?</li>
+			<li>Você fez alguma alteração no seu computador?</li>
+			<li>Alguém tem acesso ao seu computador?</li>
+			<li>Este problema já aconteceu antes?</li></font></textformat>		</td>
+		</tr>
+	</table>]]>
+</text>
+</component>
+
+<component id='ID_table_02'>
+<text>
+	<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="title">
+			<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 2: Estabelecer a Teoria da Provável Causa</b></font></td>
+		</tr> 
+		<tr>
+			<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		<tr>
+			<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Causas comuns de problemas no sistema operacional</font></td>
+			<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Arquivos de sistema corrompidos ou ausentes</li>
+				<li>Driver incorreto do dispositivo</li>
+				<li>Falha na atualização ou instalação do service pack</li>
+				<li>Registro corrompido</li>
+				<li>Falha ou defeito no disco rígido</li>
+				<li>Senha incorreta</li>
+				<li>Infecção por vírus</li>
+				<li>Spyware</li></font></textformat></td>
+		</tr>
+	</table>]]>
+</text>
+</component>
+
+<component id='ID_table_03'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 3: Teste a Teoria para Determinar a Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Reinicie o computador.</li>
+<li>Examine os logs de eventos.</li>
+<li>Execute o comando sfc /scannow.</li>
+<li>Reverta ou reinstale o driver do dispositivo.</li>
+<li>Desinstale as atualizações ou service packs recentes.</li>
+<li>Execute a restauração do sistema.</li>
+<li>Execute CHKDSK.</li>
+<li>Efetue login como um usuário diferente.</li>
+<li>Inicialize a partir da última configuração válida.</li>
+<li>Execute a verificação de vírus.</li>
+<li>Execute a verificação de spyware.</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_04'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 4: Estabelecer um Plano de Ação para Verificar o Problema e Implementar a Solução</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Se nenhuma solução for alcançada na etapa anterior, novas pesquisas serão necessárias para implementar a solução</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Logs de Reparação do Helpdesk</li>
+<li>Outros técnicos</li>
+<li>FAQs do Fabricante</li>
+<li>Websites Técnicos</li>
+<li>Grupos de Notícias</li>
+<li>Manuais do Computador</li>
+<li>Manuais dos Dispositivos</li>
+<li>Fóruns on-line</li>
+<li>Busca na Internet</li></font></textformat></td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_05'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 5: Verifique a Funcionalidade Completa do Sistema e, se necessário, Implemente as Medidas Preventivas</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Verifique a Solução e a Funcionalidade Completa do Sistema </font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Reinicie o computador.</li>
+<li>Acesse todas as unidades e recursos compartilhados.</li>
+<li>Verifique os logs de eventos para garantir que não haja novos avisos ou erros.</li>
+<li>Verifique o Gerenciador de Dispositivos para garantir que não haja avisos ou erros.</li>
+<li>Certifique-se de que os aplicativos são executados corretamente.</li>
+<li>Certifique-se de que a Internet possa ser acessada.</li>
+<li>Verifique o Gerenciador de Tarefas para garantir que não existem programas não identificados em execução.</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_06'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 6: Documente as Descobertas, Ações e Resultados</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Documente as Descobertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Discuta a solução implementada com o cliente.</li>
+<li>Peça para o cliente verificar se o problema foi resolvido</li>
+<li>Fornecer os documentos ao cliente.</li>
+<li>Documente as medidas tomadas para resolver o problema na ordem de trabalho e no diário do técnico.</li>
+<li>Documente quaisquer componentes utilizados no reparo.</li>
+<li>Documente o tempo gasto para resolver o problema.</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+</textcomponents>

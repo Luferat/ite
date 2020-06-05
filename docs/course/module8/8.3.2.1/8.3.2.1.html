@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.2.1 Bluetooth em Dispositivos Móveis</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e Email</h1>
+        <h2>Bluetooth</h2>
+      </div>
+      <div id="content">
+          <p>Os dispositivos móveis são conectados utilizando vários métodos diferentes. Redes wi-fi e celular podem ser difíceis de ser configurar, pois utilizam equipamentos extra, como torres e pontos de acesso. Conexões de cabo nem sempre são práticas ao conectar fones de ouvido ou alto-falantes. A tecnologia Bluetooth fornece uma maneira simples para que dispositivos móveis possam se conectar uns com os outros ou à acessórios sem fio. Bluetooth é um tecnologia sem fio, automática e que usa muito pouca energia, ajudando assim a poupar bateria do dispositivo. Até oito dispositivos Bluetooth podem ser conectados entre si.</p>
+          <p>Estes são alguns exemplos de como os dispositivos móveis usam o Bluetooth:</p>
+          <p><ul>
+              <li>Headset - Um pequeno fone de ouvido com um microfone usado para fazer e receber chamadas, como mostrado na Figura 1.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teclado ou mouse - Um teclado ou mouse podem ser conectados a um dispositivo móvel, facilitando o uso do mesmo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sistemas de som - Um dispositivo móvel pode se conectar a um home theater ou no som do um carro para reproduzir música.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Speakerphone de carros - Um dispositivo que contém um alto-falante e um microfone usado para fazer e receber ligações.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tethering - Um dispositivo móvel pode se conectar a outro dispositivo móvel, ou em computador, para compartilhar uma conexão de rede, como mostrado na Figura 2. O Tethering também pode ser realizado com uma conexão Wi-Fi ou uma conexão a cabo, tais como USB.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alto-falante móvel - Alto-falantes portáteis podem se conectar a dispositivos móveis para fornecer áudio de alta qualidade, sem a necessidade de um sistema estéreo.</li>
+            </ul>
+          </p>
+          <p>Bluetooth é um padrão de rede que possui dois níveis: físico e protocolo. No nível físico, o Bluetooth é um padrão de frequência de rádio. Ao nível do protocolo, os dispositivos concordam sobre quando os bits são enviados, como eles são enviados e que os dados recebidos sãos exatamente iguais aos dados enviados.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

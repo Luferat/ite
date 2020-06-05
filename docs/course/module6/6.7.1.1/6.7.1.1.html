@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.7.1.1 TCP/IP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Modelos OSI e TCP/IP</h1>
+        <h2>Modelos de Referência</h2>
+      </div>
+      <div id="content">
+          <p>Um modelo de arquitetura é um quadro de referência comum, utilizado para explicar as comunicações via Internet e o desenvolvimento de protocolos de comunicação. Ele separa as funções dos protocolos em camadas administráveis. Cada camada desempenha uma função específica no processo de comunicação através de uma rede.</p>
+          <p></p>
+          <p>O modelo TCP/IP foi criado por pesquisadores do Departamento de Defesa dos EUA (DoD). O protocolo TCP/IP é o padrão dominante para o transporte de dados em redes e na Internet. Ele é composto de camadas que executam funções necessárias para preparar os dados para transmissão através de uma rede. O gráfico mostra as quatro camadas do modelo TCP/IP.</p>
+          <p></p>
+          <p>No modelo TCP/IP, a mensagem começa na camada superior, aplicação, e se move para as camadas inferiores, até a camada de acesso à rede. As informações de cabeçalho são adicionadas à mensagens a medidas que elas descem de camada em camada, até serem transmitidas. Ao chegar no destino, a mensagem viaja de volta para o topo, atravessando todas as camada. As informações de cabeçalho que foram adicionada à mensagem são removidas a medida que a mensagem se move para o topo, atravessando as camadas do dispositivo de destino.</p>
+          <p></p>
+          <p>Protocolos da Camada de Aplicação</p>
+          <p>Protocolos da camada de aplicação fornecem serviços de rede aos aplicativos do usuário, tais como navegadores e programas de e-mail. Protocolos comuns que operam na camada de aplicação incluem HTTP, Telnet, FTP, SMTP, DNS e HTML.</p>
+          <p></p>
+          <p>Protocolos da Camada de Transporte</p>
+          <p>Protocolos da camada de transporte fornecem gerenciamento fim-a-fim dos dados. Uma das funções destes protocolos é dividir os dados em segmentos manejáveis ​​para que o transporte através da rede se torne mais fácil. Protocolos comuns que operam na camada de transporte incluem o TCP e o UDP.</p>
+          <p></p>
+          <p>Protocolos de Camadas de Internet</p>
+          <p>Protocolos da camada de Internet fornecer conectividade entre os hosts da rede. Protocolos comuns que operam na camada de Internet incluem IP e ICMP.</p>
+          <p></p>
+          <p>Protocolos da Camada de Acesso à Rede</p>
+          <p>Protocolos da Camada de Acesso à Rede descrevem os padrões que os hosts usam para acessar o meio físico. Os padrões e tecnologias IEEE 802.3 Ethernet, tais como CSMA/CD e 10BASE-T, são definidos nesta camada.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

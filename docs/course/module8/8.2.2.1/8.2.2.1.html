@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.2.1 Itens da Tela Inicial</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Móveis</h1>
+        <h2>Interface de Toque do Android</h2>
+      </div>
+      <div id="content">
+          <p>Muito parecido com um computador desktop ou laptop, os dispositivos móveis organizam ícones e widgets em várias telas para fornecer um fácil acesso. Estas são chamadas de telas iniciais. Uma tela é designada como a tela inicial principal, tal como mostrado na Figura 1. Telas iniciais adicionais são acessadas deslizando a tela inicial principal para a esquerda ou direita. Cada tela inicial contém ícones de navegação, a área principal onde os ícones e widgets são acessados e os ícones e notificação do sistema. O indicador da tela inicial mostra qual tela está sendo usado atualmente.</p>
+          <p>Ícones de Navegação</p>
+          <p>O sistema operacional Android usa a barra de sistema para navegar para aplicativos e telas. A barra de sistema sempre é exibida na parte inferior de cada tela.</p>
+          <p>A barra do sistema contém os seguintes botões, como mostrado na Figura 2:</p>
+          <p><ul>
+              <li>Voltar - Retorna o foco para a tela anterior que estava sendo utilizada. Se o teclado estiver sendo exibido na tela, este botão o fechará. Continue a pressionar o botão Voltar para navegar através de cada tela anterior até que a tela inicial principal seja exibida.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Home - Retorna o foco para a última tela inicial utilizada. Se você estiver visualizando uma tela inicial da esquerda ou da direita, o botão Home abrirá a tela inicial principal.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Aplicativos Recentes - Abre imagens em miniatura dos aplicativos usados ​​recentemente. Para abrir um aplicativo, toque na miniatura. Arraste uma miniatura para removê-la da lista.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Menu - Exibe opções adicionais na tela atual, se disponível.</li>
+            </ul>
+          </p>
+          <p>Pesquisa no Google</p>
+          <p>Os dispositivos Android geralmente vêm com o aplicativo de pesquisa do Google pré-instalado por padrão. Toque e, em seguida, o digite o texto na caixa para pesquisar algo na internet ou no dispositivo. Toque no ícone do microfone para entrar na pesquisa usando a fala.</p>
+          <p>Melhorias Especiais</p>
+          <p>Alguns fabricantes adicionam funcionalidades ao sistema operacional Android. Por exemplo, alguns tablets Samsung tem um recurso chamado Mini App Tray, que contém atalhos para aplicativos que podem ser usados ​​a qualquer momento. O Mini App Tray é aberto ao tocar na seta na parte inferior da tela. Esse recurso é útil, pois o usuário não precisa navegar longe do que eles estão fazendo para executar um aplicativo específico.</p>
+          <p>Sistema de Notificação e Ícones</p>
+          <p>Cada dispositivo Android tem uma área que contém os ícones do sistema, como o relógio, o estado da bateria e estado de sinal de rádio para redes de provedores de acesso e redes Wi-Fi. Aplicativos como mensagens de email, texto e Facebook muitas vezes exibem ícones de status para indicar uma atividade de comunicação.</p>
+          <p>Para abrir a área de notificação em telefones Android, toque e segure a parte superior da tela e deslize o dedo para baixo na tela. Em tablets Android, toque os ícones de notificação e sistema na parte inferior da tela, conforme mostrado na Figura 3. Você pode fazer o seguinte quando as notificações estão abertas:</p>
+          <p><ul>
+              <li>Responda uma notificação ao tocá-la.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Descarte uma notificação arrastando-a para fora da tela de qualquer lado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Descartar todas as notificações com o ícone.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alternar as configurações usadas com frequência.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ajustar o brilho da tela.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Abra o menu de configurações utilizando o ícone de configurações rápidas.</li>
+            </ul>
+          </p>
+          <p>TouchFLO</p>
+          <p>Ao invés de usar a interface padrão do Android em seus celulares, o HTC projetou a interface TouchFLO sobre o Android. Com o TouchFLO, use um menu especial acessado ao arrastar o dedo para cima da tela e selecione as tarefas comuns movendo seu dedo para a esquerda ou direita. TouchFLO foi substituído pelo TouchFLO 3D. TouchFLO 3D possui uma coleção de guias ao longo da parte inferior da tela utilizado para acessar facilmente tarefas. O TouchFLO 3D foi substituído pelo HTC Sense. HTC Sense usa aplicativos de desktop e widgets, porém tem muitas modificações de interface exclusiva para dispositivos HTC, como o bloqueio de tela e aplicativos widgets e efeitos 3D na tela inicial.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

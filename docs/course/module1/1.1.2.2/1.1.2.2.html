@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.2.2 CPUs</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Componentes Internos do Computador</h2>
+      </div>
+      <div id="content">
+          <p>A unidade de processamento central (CPU) é considerada com sendo o cérebro do computador. A CPU também é conhecida pelo termo processador. A maioria dos cálculos são realizados na CPU. A CPU é o componente mais importante de um computador. As CPUs são fabricadas em diferentes formatos, sendo que cada formato exige um determinado slot ou soquete na placa-mãe. Fabricantes comuns de processadores incluem Intel e AMD.</p>
+          <p>O soquete ou slot da CPU é a conexão entre a placa-mãe e processador. A maioria dos soquetes e dos processadores de hoje são construídos baseado nas arquiteturas de Pin Grid Array (PGA), conforme mostrado na Figura 1, e na Land Grid Array (LGA), exibido na Figura 2. Em uma arquitetura de PGA, os pinos presentes na parte inferior do processador são conectados ao soquete, normalmente utilizando a Força de Inserção Zero (ZIF). A ZIF refere-se à quantidade de força necessária para instalar a CPU no soquete da placa-mãe. Numa arquitetura LGA, os pinos estão localizados no soquete da placa-mãe e não no processador. Processadores baseados em slot, exibido na Figura 3, são fabricados em forma de cartucho e se encaixam em um slot que se parece com um slot de expansão, conforme apresentado no canto inferior esquerdo da Figura 4.</p>
+          <p>A CPU executa um programa, no qual ela lê uma sequência de instruções armazenadas. Cada modelo de processador possui um conjunto de instruções que ele executa. A CPU executa o programa processando cada pedaço dos dados, conforme indicado pelo programa e pelo conjunto de instruções. Enquanto a CPU está executando uma etapa do programa, as demais instruções e dados são armazenados em uma memória especial chamada de cache. As duas principais arquiteturas de CPU estão relacionadas com os conjuntos de instruções:</p>
+          <p><ul>
+              <li>Reduced Instruction Set Computer (RISC) - Arquitetura que usa um conjunto relativamente pequeno de instruções. Os chips RISC são projetados para executar essas instruções muito rapidamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Complex Instruction Set Computer (CISC) - Arquitetura de usa um conjunto amplo de instruções, resultando em um menor número de passos por operação.</li>
+            </ul>
+          </p>
+          <p>Alguns processadores Intel incorporam o hyperthreading para melhorar o desempenho da CPU. Com o hyperthreading, vários pedaços de código (threads) são executados simultaneamente na CPU. Para um sistema operacional, quando vários segmentos (threads) são processados, uma única CPU com hyperthreading trabalha como se fossem duas CPUs.</p>
+          <p>Alguns processadores AMD usam o HyperTransport para melhorar o desempenho da CPU. O HyperTransport é uma conexão de alta velocidade e de baixa latência entre a CPU e o chip Northbridge.</p>
+          <p>A potência de uma CPU é medida pela velocidade e quantidade de dados que podem ser processados. A velocidade de uma CPU é avaliada em ciclos por segundo, como milhões de ciclos por segundo, chamado de megahertz (MHz), ou bilhões de ciclos por segundo, chamado gigahertz (GHz). A quantidade de dados que um processador pode processar ao mesmo tempo depende do tamanho do barramento frontal (FSB - front side bus). O FSB também é chamado de barramento da CPU ou de barramento de dados do processador. Aumentar a largura do FSB melhora o desempenho do processador. A largura do FSB é medida em bits. Um bit é a menor unidade de dados de um computador, além de ser através do formato binário que os dados são processados. Os processadores atuais usam um FSB de 32-bit ou 64-bit.</p>
+          <p>O overclocking é uma técnica utilizada para fazer um processador funcionar em uma velocidade mais rápida do que a sua especificação original. O overclocking não é uma maneira recomendada para melhorar o desempenho do computador, pois pode resultar em danos à CPU. O oposto de overclocking é a limitação da CPU (CPU Throttling). A limitação da CPU é uma técnica utilizada quando o processador funciona em velocidades menores do que sua taxa normal, para conservar a energia ou produzir menos calor. Limitação da CPU é comumente utilizada em laptops e em outros dispositivos móveis.</p>
+          <p>As mais recente tecnologias de processadores fizeram com que os fabricantes encontrassem maneiras de incorporar mais de um núcleo de CPU em um único chip. Estes processadores são capazes de processar múltiplas instruções simultaneamente:</p>
+          <p><ul>
+              <li>CPU Single Core - Um núcleo dentro de uma única CPU que controla todo o processamento. O fabricante da placa-mãe pode fornecer slots para mais de um único processador, fornecendo a possibilidade de montar um poderoso computador de multiprocessadores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CPU Dual Core - Dois núcleos dentro de uma única CPU na qual ambos os núcleos podem processar a informação ao mesmo tempo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CPU Triple Core - Três núcleos dentro de uma única CPU, o que na verdade se trata de um processador quad-core com um dos núcleos desativado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CPU Quad Core - Quatro núcleos dentro de uma única CPU</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CPU Hexa-Core - Seis núcleos dentro de uma única CPU</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CPU Octa-Core - Oito núcleos dentro de uma única CPU</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,11 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Transmissão WiMAX</b>]]></text>
+</component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>Transmissor WiMax</b>]]></text> 
+</component>
+<component id="ID_txt05">
+  <text><![CDATA[<b>Rede do ISP</b>]]></text> 
+</component>
+</textcomponents>

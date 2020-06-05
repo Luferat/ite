@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.2.1 Cases</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Cases and Power Supplies</h2>
+    </div>
+    <div id="content">
+          <p>The computer case contains the framework to support the internal components of a computer while providing an enclosure for added protection. Computer cases are typically made of plastic, steel, or aluminum and are available in a variety of styles.</p>
+          <p>In addition to providing protection and support, cases also provide an environment designed to keep the internal components cool. Case fans move air through the computer case. As the air passes warm components, it absorbs heat and then exits the case. This process keeps the computer components from overheating. Cases also help to prevent damage from static electricity. The computer’s internal components are grounded via attachment to the case.</p>
+          <p>All computers need a power supply to convert alternating-current (AC) power from the wall socket into direct-current (DC) power. Every computer also needs a motherboard. The motherboard is the main circuit board in a computer. The size and shape of the computer case is usually determined by the motherboard, power supply, and other internal components.</p>
+          <p>The size and layout of a case is called the form factor. The basic form factors for computer cases include desktop and tower, as shown in Figure 1. Desktop cases can be slimline or full-sized. Tower cases can be mini or full-sized. </p>
+          <p>You can select a larger computer case to accommodate additional components that may be required in the future. Or you might select a smaller case that requires minimal space. In general, the computer case should be durable, easy to service, and have enough room for expansion. </p>
+          <p>Computer cases are referred to in a number of ways: </p>
+          <p>
+            <ul>
+              <li>Computer chassis</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Cabinet</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Tower</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Box</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Housing</li>
+            </ul>
+          </p>
+          <p>Several factors must be considered when choosing a case: </p>
+          <p>
+            <ul>
+              <li>Size of the motherboard</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Number of external or internal drive locations, called bays</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Available space</li>
+            </ul>
+          </p>
+          <p>See Figure 2 for a list of computer case features.</p>
+          <p>
+            <b>NOTE</b>: Select a case that matches the physical dimensions of the power supply and motherboard.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

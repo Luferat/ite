@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.1.1.1 Benefícios da Manutenção Preventiva</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Manutenção Preventiva</h1>
+        <h2>Visão geral de Manutenção Preventiva de PC</h2>
+      </div>
+      <div id="content">
+          <p>A manutenção preventiva é implementada através de um plano. Embora exista várias considerações sobre as necessidades de manutenção preventiva, planos de manutenção preventiva são desenvolvidos com base em pelo menos dois fatores:</p>
+          <p><ul>
+              <li>Local do computador ou ambiente - Os computadores que são expostos a ambientes com bastante poeira, tais como aqueles usados ​​em obras de construção, conforme apresentado na imagem, exigem mais atenções do que os computadores localizados em um ambiente de escritório.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Uso do computador - redes com tráfego intenso, tais como a rede de ensino, podem exigir varredura e remoção de softwares maliciosos e arquivos indesejados.</li>
+            </ul>
+          </p>
+          <p>Para criar um plano de manutenção preventiva, documente as tarefas de manutenção de rotina que devem ser executadas sobre os componentes do computador e da freqüência de cada tarefa. Você pode usar essa lista de tarefas para criar um programa de manutenção.</p>
+          <p>Seja pró-ativo na manutenção de computadores e na proteção dos dados. Através da realização de rotinas de manutenção regulares, você pode reduzir o potencial de problemas de hardware e software. Rotinas de manutenção regulares reduzem o tempo de inatividade do computador e os custos de reparação. A manutenção preventiva também oferece os seguintes benefícios:</p>
+          <p><ul>
+              <li>Melhora a proteção de dados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Prolonga a vida útil dos componentes</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Melhora a estabilidade do equipamento</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Reduz o número de falhas de equipamentos</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

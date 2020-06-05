@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.2.2 Tipos de Oscilação de Energia</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos Seguros de Laboratório</h1>
+        <h2>Procedimentos para Proteger Equipamentos e Dados</h2>
+      </div>
+      <div id="content">
+          <p>A tensão é a força que move os elétrons através de um circuito. O movimento dos elétrons é chamado de corrente. Circuitos de computadores precisam de tensão e corrente para operar os componentes eletrônicos. Quando a tensão de um computador não é exata ou constante, os componentes do computador podem não funcionar corretamente. Voltagens instáveis são chamadas as flutuações de energia.</p>
+          <p>Os seguintes tipos de flutuações de energia AC podem causar perda ou falha de hardware de dados:</p>
+          <p><ul>
+              <li>Blackout - Perda total de energia AC. Um fusível queimado, transformador danificado ou um poste caído pode causar um apagão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Blecaute - Redução do nível de tensão de alimentação AC que dura por um período de tempo. Os blecautes ocorrem quando a tensão da linha de energia cai abaixo de 80% do nível normal da tensão. Sobrecarga dos circuitos elétricos pode causar um blecaute.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ruido - Interferência de geradores e relâmpagos. Os ruídos resultam em uma energia de má qualidade que pode causar erros em um sistema de computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pico - aumento repentino da tensão durante um curto período e superior a 100% da voltagem normal de uma linha. Os picos podem ser causados por raios, mas também podem ocorrer quando o sistema elétrico volta depois de um apagão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Oscilação de energia - Grande aumento na tensão acima do fluxo normal de corrente elétrica. Uma oscilação de energia tem a duração de alguns nanossegundos ou um bilionésimo de segundo.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

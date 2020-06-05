@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.4.1 Domínio e Grupo de Trabalho</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Domínios e grupos de trabalho são os métodos utilizados para organizar e gerenciar computadores em uma rede. Todos os computadores em uma rede devem fazer parte de um domínio ou grupo de trabalho. Quando o Windows é instalado em um computador, ele automaticamente é atribuído a um grupo de trabalho, conforme apresentado na figura.</p>
+          <p>Domínio</p>
+          <p>Um domínio é um grupo de computadores e dispositivos eletrônicos que possuem um conjunto comum de regras e procedimentos administrativos. Um domínio não é limitado a um domínio local ou rede específica. Computadores agrupados logicamente em um mesmo domínio podem estar localizados em diferentes locais ao redor do mundo. Um servidor especializado, chamado de controlador de domínio, gerencia todos os aspectos relacionados à segurança dos usuários e recursos de rede, centralizando a segurança e a administração.</p>
+          <p>Para proteger os dados, um administrador executa backups de rotina contendo todos os arquivos presentes nos servidores. Se um computador travar, ou perder os seus dados, o administrador poderá facilmente recuperar os dados a partir de um backup recente.</p>
+          <p>Grupo de Trabalho</p>
+          <p>O grupo de trabalho é um conjunto de estações de trabalho e servidores, em uma LAN, projetados para se comunicar e trocar dados entre si. Cada estação de trabalho individual controla suas contas de usuário, informações de segurança e acesso aos dados e recursos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

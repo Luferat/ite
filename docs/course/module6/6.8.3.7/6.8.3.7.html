@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.3.7 Configurações Básicas de Rede sem fio</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações de Roteador sem fio e com fio</h2>
+      </div>
+      <div id="content">
+          <p>Depois de estabelecer a conexão com o roteador, é importante definir algumas configurações básicas, utilizadas para proteger e aumentar a velocidade da rede sem fio. Todas as configurações sem fio a seguir estão localizadas na aba Wireless, conforme mostrado na figura:</p>
+          <p><ul>
+              <li>Network mode</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Service Set Identifier (SSID)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Channel</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Wireless security modes</li>
+            </ul>
+          </p>
+          <p>Network Mode</p>
+          <p>O protocolo 802.11 pode fornecer aumento da taxa de transferência de dados de acordo com o ambiente de rede sem fio. Se todos os dispositivos conectados estiverem utilizando o mesmo padrão 802.11, os usuários poderão usufruir da velocidade total fornecida pela padrão. Se o ponto de acesso estiver configurado para aceitar apenas um padrão 802.11, os dispositivos que não utilizarem esse padrão não poderão se conectar ao ponto de acesso.</p>
+          <p>Um ambiente sem fio operando no modo misto pode incluir os padrões 802.11a, 802.11b, 802.11g e 802.11n. Estes ambientes oferecem fácil acesso para dispositivos legados que precisam de uma conexão sem fio.</p>
+          <p>SSID</p>
+          <p>O SSID é o nome da rede sem fio. O broadcast do SSID permite que outros dispositivos detectem automaticamente o nome da rede sem fio. Quando o broadcast do SSID está desativado, você deve inserir manualmente o SSID no dispositivos sem fio.</p>
+          <p>Desativar o broadcast do SSID tonar mais difícil a detecção da rede sem fio para os usuários legítimos. Simplesmente desabilitar o broadcast do SSID não é suficiente para impedir que clientes não autorizados conectem-se à rede sem fio. Ao invés de desligar a transmissão do SSID, utilize uma criptografia mais forte, como o WPA ou WPA2.</p>
+          <p>Channel</p>
+          <p>Dispositivos sem fio que transmitem utilizando a mesma faixa de frequência criam interferência. Dispositivos elétricos domésticos, como telefones sem fio, redes sem fio próximas e babás eletrônicas podem utilizar a mesma faixa de frequência. Estes dispositivos podem diminuir o desempenho Wi-Fi e potencialmente desabilitar conexões de rede.</p>
+          <p></p>
+          <p>Os padrões 802.11b e 802.11g transmitem em uma faixa de frequência de rádio de 2,4 GHz. O intervalo da frequência de 2,4 GHz é devido em bandas de menor dimensão, conhecidas como canais. Configurar o canal Wi-Fi corretamente é uma maneira de evitar a interferência causada por outros dispositivos sem fio.</p>
+          <p></p>
+          <p>O canal 1 usa a faixa de frequência mais baixa e cada canal posterior a aumenta ligeiramente. Quanto mais afastado entre si os canais estão, menor será o grau de sobreposição e a de probabilidade de interferência. Os canais 1 e 11 não se sobrepõem ao canal padrão 6. Para obter um bom resultado, é recomendado que se use um desses três canais. Por exemplo, se você estiver sofrendo interferência da WLAN de um vizinho, mude para um canal diferente.</p>
+          <p>Wireless Security</p>
+          <p>Os pontos de acesso sem fio suportam diversos modos de segurança. Os mais comuns são:</p>
+          <p><ul>
+              <li>Wired Equivalent Privacy (WEP) - Criptografa os dados de transmissão entre o ponto de acesso sem fio e o cliente usando uma chave de criptografia de 64-bit ou 128-bits.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Temporal Key Integrity Protocol (TKIP) - Este patch WEP negocia automaticamente uma nova chave após um período de tempo específico. TKIP ajuda a impedir que os atacantes obtenham dados suficientes para quebrar a chave de criptografia.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Advanced Encryption Standard (AES) - Um sistema de criptografia mais seguro do que o TKIP AES também exige mais poder de processamento para executar a criptografia.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Wi-Fi Protected Access (WPA) - Uma versão melhorada do WEP criada como uma solução temporária até a aprovação do 802.11i. Após a aprovação do 802.11i, o WPA2 foi disponibilizado. Ele abrange todo o padrão 802.11i. O WPA usa uma criptografia muito mais forte do que o WEP.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Wi-Fi Protected Access 2 (WPA2) - Uma versão melhorada do WPA que suporta criptografia robusta, fornecendo segurança de nível governamental. WPA2 pode ser habilitado com autenticação de senha (personal) ou autenticação via servidor (enterprise).</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

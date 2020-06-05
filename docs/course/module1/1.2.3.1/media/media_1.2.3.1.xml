@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+    
+
+    <component id='ID_s1_title'>
+        <text><![CDATA[<b>Motherboards</b>]]></text>
+    </component>
+
+    <component id='ID_s2_table'>
+        <text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan="2" class="title"><font size='14' color='#393536'><b>Form Factors</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' width='125'><font color='#393536'>AT</font></td>
+		<td bgcolor='#F3F5E7' ><font color='#393536'>Advanced Technology</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>ATX</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Advanced Technology Extended</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Mini-ATX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Smaller footprint of Advanced Technology Extended</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>Micro-ATX</font></td>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>Smaller footprint of Advanced Technology Extended</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>LPX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Low-Profile Extended</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>NLX</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>New Low-Profile Extended</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>BTX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Balanced Technology Extended</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Mini-ITX</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Smaller than the Micro-ATX format</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Nano-ITX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Smaller footprint of the Mini-ITX</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Pico-ITX</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Half the size of the Nano-ITX</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Mobile-ITX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Smallest ITX motherboard</font></td>
+	</tr>
+</table>]]></text>
+    </component>
+
+
+</textcomponents>

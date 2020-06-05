@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.1.4 Navegação InPrivate</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ameaças de Segurança</h1>
+        <h2>Tipos de Ameaças de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Os navegadores Web retem informações sobre as páginas que você visita, as buscas que você realiza, nomes de usuário, senhas e outras informações de identificação. Esta é uma característica conveniente ao usar um computador em casa e que está protegido por senha. Ao usar um laptop fora de casa, ou de um computador em um local público, como uma biblioteca ou um Internet café, as informações mantidas pelo navegador podem ser comprometidas. Qualquer pessoa que utilizar o computador depois que você poderá usar suas informações para roubar sua identidade, roubar seu dinheiro ou alterar suas senhas de contas importantes.</p>
+          <p>É possível navegar na web sem que o navegador retenha informações pessoais sobre você ou seus históricos de navegação. Esse recurso é chamado de Navegação InPrivate. A Navegação InPrivate impede o navegador de armazenar as seguintes informações:</p>
+          <p><ul>
+              <li>Nomes de usuários</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Senhas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cookies</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Histórico de navegação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Arquivos temporários da Internet</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dados de formulários</li>
+            </ul>
+          </p>
+          <p>Para habilitar a Navegação InPrivate no Windows 7, use o seguinte caminho, conforme apresentado na figura:</p>
+          <p>Botão direito do mouse em Internet Explorer > Iniciar Navegação InPrivate</p>
+          <p>Se o Internet Explorer já estiver aberto, use o seguinte caminho:</p>
+          <p>Ferramentas > Navegação InPrivate</p>
+          <p>Outra maneira de iniciá-la é pressionando Ctrl + Shift + P.</p>
+          <p>Durante a navegação, o navegador armazenará algumas informações, como arquivos temporários e cookies, mas depois que sessão InPrivate for finalizada, eles serão excluídos.</p>
+          <p>Ao iniciar a Navegação InPrivate, uma nova janela do navegador será aberta. Apenas esta janela e todas as abas abertas na mesma proporcionam privacidade. As outras janelas do navegador não são protegidas pela Navegação InPrivate. Fechar a janela do navegador finaliza a sessão InPrivate.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

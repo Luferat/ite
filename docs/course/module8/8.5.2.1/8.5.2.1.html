@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.5.2.1 Identificar Problemas e Soluções Comuns.</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Processo Básico de Solução de Problemas em Dispositivos Móveis</h1>
+        <h2>Problemas e Soluções Comuns de Dispositivos Móveis</h2>
+      </div>
+      <div id="content">
+          <p>Problemas com o dispositivo móvel pode ser atribuído ao hardware, software, redes ou alguma combinação dos três. Você irá resolver alguns tipos de problemas de dispositivos móveis com mais frequência do que os outros. A imagem é um gráfico de problemas e soluções comuns de dispositivos móveis.</p>
+          <p>Muitos problemas de dispositivos móveis podem ser resolvidos simplesmente desligando o aparelho e ligando novamente. Quando um dispositivo móvel não responde a uma reinicialização, um reset talvez seja necessário.</p>
+          <p>Estas são algumas das maneiras que os dispositivos Android podem ser resetados, verifique a documentação do seu dispositivo móvel para determinar a forma de reiniciar o mesmo:</p>
+          <p><ul>
+              <li>Mantenha pressionado o botão de energia até que o dispositivo móvel seja desligado. Ligue o dispositivo novamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Segure o botão de energia e o botão de diminuir o volume pressionado até que o dispositivo móvel seja desligado. Ligue o dispositivo novamente.</li>
+            </ul>
+          </p>
+          <p>Esta é a forma com que os dispositivos iOS podem ser reiniciados</p>
+          <p><ul>
+              <li>Pressione e segure o botão Sleep/Wake e o botão Home por 10 segundos, até que o logotipo da Apple apareça.</li>
+            </ul>
+          </p>
+          <p>Em alguns casos, quando uma reinicialização padrão não corrige o problema, uma reinicialização de fábrica pode precisar ser realizada. Para realizar uma reinicialização de fábrica em um dispositivo Android, use o seguinte caminho:</p>
+          <p>Configurações> Backup e Reset> Reinicialização de Dados de Fábrica> Reiniciar Dispositivo</p>
+          <p>Para realizar uma reinicialização de fábrica em um dispositivo iOS, use o seguinte caminho:</p>
+          <p>Configurações> Geral> Redefinir> Apagar Todo o Conteúdo e Ajustes</p>
+          <p>ATENÇÃO: A redefinição de fábrica restaura o dispositivo ao estado em que estava quando saiu da fábrica. Todas as configurações e dados do usuário são excluídos do dispositivo quando um reset de fábrica é executado. Certifique-se de fazer backup de todos os dados e de todas as configurações antes de executar uma reinicialização de fábrica, porque todos os dados e configurações serão perdidas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

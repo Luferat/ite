@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.1.1.2 Tarefas de Manutenção Preventiva</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Manutenção Preventiva</h1>
+        <h2>Visão Geral de Manutenção Preventiva de PC</h2>
+      </div>
+      <div id="content">
+          <p>Hardware</p>
+          <p>Verifique o estado dos cabos, componentes e periféricos. Limpe os componentes para reduzir a probabilidade de superaquecimento. Repare ou substitua qualquer componente que apresente sinais de danos ou desgaste excessivo.</p>
+          <p>Use essas tarefas como um guia para a criação de um programa de manutenção de hardware:</p>
+          <p><ul>
+              <li>Remova a poeira das entradas de ventilação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Remova a poeira da fonte de alimentação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Remova a poeira dos componentes dentro do computador e equipamentos periféricos, tais como impressoras.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Limpe o mouse, teclado e monitor.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Verifique se há cabos soltos.</li>
+            </ul>
+          </p>
+          <p>Software</p>
+          <p>Verifique se o software instalado é o atual. Siga as políticas da organização ao instalar atualizações de segurança, atualizações do sistema operacional e atualizações de programas. Muitas organizações não permitem atualizações até que os testes sejam concluídos. Este teste é feito para confirmar se a atualização não vai causar problemas com o sistema operacional e o software. A imagem mostra a tela de atualização do Windows 7.</p>
+          <p>Use essas tarefas como um guia para a criação de um cronograma de manutenção de software que atenda às necessidades do seu computador:</p>
+          <p><ul>
+              <li>Revise e instale as atualizações apropriadas de segurança.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Revise e instale as atualizações apropriadas de software.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Revise e instale as atualizações apropriadas de drivers.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Atualize os arquivos de definição de vírus.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Realize uma varredura para procurar vírus e spyware.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Remova programas indesejados ou não utilizados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Verifique os discos rígidos para encontrar erros.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desfragmente os discos rígidos não SSD.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

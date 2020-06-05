@@ -1,0 +1,23 @@
+﻿<textcomponents> 
+
+
+ <component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	 
+	<tr class="title">
+		<td bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 2. Estabelecendo uma Teoria da Provável Causa</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>  
+	<tr> 
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O dispositivo está desligado</li>
+			<li>Interruptor de alimentação da tomada está desligado</li>
+			<li>O estabilizador está desligado</li>
+			<li>Cabos de conexões externos estão soltos</li>
+			<li>Disco não-inicializável na unidade de disquete</li>
+			<li>Ordem de inicialização incorreta na configuração da BIOS</li></textformat></font></td>		 
+	</tr>
+	 
+</table>]]></text>
+</component>
+</textcomponents>

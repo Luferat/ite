@@ -1,0 +1,56 @@
+﻿<textcomponents>
+	<component id='ID_title'>
+		<text><![CDATA[<b>Ordem de Trabalho</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<i>Cisco Systems, Inc.</i>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<i>Gerente do Escritório</i>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<i>170 West Tasman Drive, San Jose, CA 95134</i>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<i>408-526-4000</i>]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<i>HW</i>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[<i>N</i>]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[<i>FECHADO</i>]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[<i>Laptop</i>]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[<i>Laptop</i>]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[<i>Não inicializa</i>]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[<i>Cisco001</i>]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[<i>Conexão de rede sem fio</i>]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[<i>Médio</i>]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[<i>Móvel</i>]]></text>
+	</component>
+	<component id="ID_txt15">
+		<text><![CDATA[<i>Windows XP</i>]]></text>
+	</component>
+	<component id="ID_txt16">
+		<text><![CDATA[<i>O usuário reclama que o laptop não inicializa. Não foram adicionados softwares recentemente e não nenhuma mudança foi feita no sistema operacional. <br/>Não foram adicionados periféricos.</i>]]></text>
+	</component>
+	<component id="ID_txt17">
+		<text><![CDATA[<i>O técnico nível 1 não foi capaz de resolver o problema dentro do intervalo de 10 minutos. A ordem de trabalho foi encaminhada para um técnico de nível 2.</i>]]></text>
+	</component>
+</textcomponents>

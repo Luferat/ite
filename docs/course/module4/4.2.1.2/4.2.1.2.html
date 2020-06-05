@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.1.2 Identificar o Problema</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Processo de Solução de Problemas</h1>
+        <h2>Etapas do Processo de Solução de Problemas</h2>
+      </div>
+      <div id="content">
+          <p>O primeiro passo no processo de solução de problemas é identificar o problema. Durante esta etapa, reúna o máximo de informação possível do cliente e do computador.</p>
+          <p>Etiqueta na Conversa</p>
+          <p>Quando você estiver falando com o cliente, siga estas orientações:</p>
+          <p><ul>
+              <li>Faça perguntas diretas para coletar informações.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não use jargões</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não fale baixo com o cliente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não insulte o cliente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não acuse o cliente de ter causado o problema.</li>
+            </ul>
+          </p>
+          <p>Ao comunicar-se de forma eficaz, você pode obter as informações mais relevantes sobre o problema do cliente. A Figura 1 apresenta algumas informações importantes para reunir a partir do cliente.</p>
+          <p>Perguntas Abertas e Perguntas Fechadas</p>
+          <p>As perguntas abertas permitem que os clientes expliquem os detalhes do problema em suas próprias palavras. Use estas perguntas para obter informações gerais.</p>
+          <p>Com base nas informações do cliente, você pode prosseguir com perguntas fechadas. As perguntas fechadas geralmente requerem um sim ou não como resposta. Estas perguntas são destinadas a obter informações mais relevantes no menor tempo possível. A Figura 2 é uma atividade destinada a testar sua compreensão de questões abertas e fechadas.</p>
+          <p>Documentando Respostas</p>
+          <p>Documente as informações obtidas a partir do cliente na ordem de trabalho e na folha de reparo. Anote tudo o que você acha que possa ser importante, seja para você ou para outro técnico. Os pequenos detalhes conduzem frequentemente à solução de um problema difícil ou complicado.</p>
+          <p>Códigos de Beep</p>
+          <p>Cada fabricante de BIOS possui uma sequência de beep única, uma combinação de sinais sonoros longos e curtos, para falhas de hardware. Ao iniciar o processo de solução de problemas, ligue o computador e escute os beeps. A medida que o sistema realiza o POST, a maioria dos computadores emitem apenas um sinal sonoro para indicar que o sistema está iniciando corretamente. Se houver um erro, você poderá ouvir vários sinais sonoros. Documente a sequência de sinais sonoros (código de beep) e pesquise-o para determinar a falha de hardware específica.</p>
+          <p>Informações da BIOS</p>
+          <p>Se o computador inicializar e para após o POST, investigue as configurações da BIOS para determinar onde se encontra o problema. Um dispositivo pode não ter sido detectado ou configurado corretamente. Consulte a documentação da placa-mãe para ter certeza de que as configurações da BIOS estão corretas.</p>
+          <p>Visualizador de Eventos</p>
+          <p>Quando os erros de sistema, usuário ou software ocorrem em um computador, o Visualizador de Eventos é atualizado com informações sobre os erros. O Visualizador de Eventos, apresentado na Figura 3, registra a seguinte informação sobre o problema:</p>
+          <p><ul>
+              <li>Qual problema ocorreu</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Data e hora do problema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gravidade do problema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Origem do problema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Número de identificação do evento</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Qual usuário estava conectado quando o problema ocorreu</li>
+            </ul>
+          </p>
+          <p>Embora o Visualizador de Eventos liste detalhes sobre o erro, talvez seja necessário pesquisar mais a solução.</p>
+          <p>Gerenciador de Dispositivos</p>
+          <p>O Gerenciador de Dispositivos, apresentado na Figura 4, exibe todos os dispositivos que estão configurados em um computador. O sistema operacional sinaliza os dispositivos que não estão operando corretamente com um ícone de erro. Um círculo amarelo com um ponto de exclamação (!) indica que o dispositivo está com um problema. Um círculo vermelho e um X significa que o dispositivo está desativado. Um ponto de interrogação amarelo (?) indica que o sistema não sabe qual driver deve instalar para o hardware.</p>
+          <p>Gerenciador de Tarefas</p>
+          <p>O Gerenciador de Tarefas, apresentado na Figura 5, mostra os aplicativos que estão sendo executados. Com o Gerenciador de Tarefas, você pode encerar as aplicações que pararam de responder. Você também pode monitorar o desempenho da CPU e memória virtual, visualizar todos os processos que estão sendo executados e exibir informações sobre as conexões de rede.</p>
+          <p>Ferramentas de Diagnóstico</p>
+          <p>Realize pesquisas para determinar qual software está disponível para ajudar a diagnosticar e resolver problemas. Muitos programas que ajudam a solucionar problemas de hardware estão disponíveis. Os fabricantes de hardware geralmente fornecem ferramentas de diagnóstico proprietárias. Por exemplo, um fabricante de disco rígido pode fornecer uma ferramenta para inicializar o computador e diagnosticar por que o disco rígido não inicializa o Windows.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

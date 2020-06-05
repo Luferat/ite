@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.3.3 Atualizações de Arquivos de Assinatura</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Proteção Contra Softwares Maliciosos</h2>
+      </div>
+      <div id="content">
+          <p>Estratégias de segurança estão em constante mudança, como também as tecnologias usadas para proteger os equipamentos e dados. Novas vulnerabilidades de seguranças são encontradas diariamente. Os Invasores constantemente procuram novas maneiras de se infiltrar em computadores e em redes. Os fabricantes de software devem regularmente criar e redistribuir patches para corrigir falhas e vulnerabilidades em seus produtos. Se um técnico deixar um computador sem proteção, um invasor poderá obter acesso a ele. Os computadores desprotegidos normalmente são infectados em poucos minutos quando conectados à Internet.</p>
+          <p>Ameaças à segurança, como vírus e worms, estão sempre presentes. Por causa da frequência com que novos vírus são desenvolvidos, os softwares de segurança devem ser continuamente atualizados. Este processo pode ser realizado automaticamente, entretanto um técnico deve saber como atualizar manualmente qualquer tipo de software de proteção e os programas de um cliente.</p>
+          <p>Programas de detecção de vírus, spyware e adware procuram por padrões nos códigos de programação dos softwares presentes em um computador. Esses padrões são determinados através da análise dos vírus que são interceptados na Internet e nas redes locais. Esses padrões códigos são chamados de assinaturas. Os desenvolvedores de softwares de proteção reúnem as assinaturas dos vírus em uma tabela de definições. Para atualizar os arquivos de assinaturas dos softwares de antivírus e anti-spyware, primeiramente verifique se os arquivos de assinatura já não são os mais recentes. Você pode verificar o status do arquivo navegando até a opção &quot;Sobre (about)&quot; no software de proteção ou iniciando a ferramenta de atualização do mesmo.</p>
+          <p>Para atualizar o arquivo de assinatura, siga estes passos:</p>
+          <p>Passo 1. Crie um Ponto de Restauração no Windows. Caso o arquivo carregado esteja corrompido, o ponto de restauração permitirá que você volte para o modo anterior à instalação.</p>
+          <p>Passo 2. Abra o antivírus ou o anti-spyware. Se o programa estiver configurado para executar ou obter atualizações automaticamente, você precisará desativar o recurso de atualizações automáticas para executá-la manualmente.</p>
+          <p>Passo 3. Clique no botão Atualizar (Update).</p>
+          <p>Passo 4. Após a atualização do programa, realize uma varredura (scan) no computador.</p>
+          <p>Passo 5. Quando a verificação for concluída, verifique os relatórios e exclua manualmente os vírus e outros problemas que não foram corrigidos.</p>
+          <p>Passo 6. Configure o antivírus ou anti-spyware para atualizar automaticamente e procurar por ameaças periodicamente.</p>
+          <p>Sempre obtenha as atualizações do site do fabricante para ter certeza de que a mesma é autêntica e não foi corrompida por vírus. Isso pode gerar uma grande demanda no site do fabricante, especialmente quando novos vírus são lançados. Para evitar que haja muito tráfego em um único site, alguns fabricantes disponibilizam o download de suas atualizações em vários sites. Estes sites para download são chamados de espelhos(mirrors).</p>
+          <p>ATENÇÃO: Ao realizar o download de uma atualização de um site espelho, verifique se o mesmo é legítimo. Sempre obtenha o link do site espelho pelo fabricante.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

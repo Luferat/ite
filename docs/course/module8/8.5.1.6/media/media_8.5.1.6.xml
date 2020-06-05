@@ -1,0 +1,24 @@
+﻿<textcomponents>
+	<component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr class="liner">
+					<td colspan='2' bgcolor='#DAE17A'><font size='14' color='#393536'><b>Passo 6. Documentar as descobertas, ações e resultados.</b></font></td>				
+				</tr>
+				<tr>
+					<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>
+				<tr>
+					<td width="120px" bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>Documente suas descobertas, ações e resultados</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Discuta a solução implementada com o cliente.</li>
+						<li>Peça para o cliente verificar se o problema foi resolvido</li>
+						<li>Fornecer os documentos ao cliente.</li>
+						<li>Documente, na ordem de trabalho e no diário do técnico, os passos utilizados para resolver o problema.</li>
+						<li>Documente quaisquer componentes utilizados no reparo.</li>
+						<li>Documente o tempo gasto para resolver o problema.</li></textformat></font></td>
+				</tr>
+			</table>]]>
+		</text>
+	</component>
+	
+</textcomponents>

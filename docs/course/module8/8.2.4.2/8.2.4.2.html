@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.2 GPS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Móveis</h1>
+        <h2>Características Comuns de Dispositivos Móveis</h2>
+      </div>
+      <div id="content">
+          <p>Outro recurso comum de dispositivos móveis é o Sistema de Posicionamento Global (GPS). GPS é um sistema de navegação que determina a hora e o local usando mensagens de satélites no espaço e um receptor na Terra. Um receptor GPS usa, pelo menos, quatro satélites para calcular a sua posição com base nas mensagens. O GPS é muito preciso e pode ser usado sob a maioria das condições climáticas. No entanto, folhagem densa, túneis e prédios altos podem interromper os sinais de satélite.</p>
+          <p>Existem dispositivos GPS para carros, barcos e dispositivos portáteis utilizados por alpinistas e mochileiros. Em dispositivos móveis, receptores GPS possuem muitos usos diferentes:</p>
+          <p><ul>
+              <li>Navegação - Um aplicativo de mapeamento que fornece rotas, endereços e coordenadas para um local.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Geocaching - Um aplicativo de mapeamento que mostra a localização de geocaches - recipientes escondidos ao redor do mundo. Quando os usuários encontram os geochases, muitas vezes eles assinam um livro de registro informando o que eles encontraram.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Geotagging - Incorpora informações de localização em um objeto digital, como uma fotografia ou um vídeo, para registrar onde foi tirada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Resultados de busca especializados - Por exemplo, exibe os resultados com base na proximidade, como restaurantes que estão por perto ao realizar uma busca pela palavra restaurantes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rastreio de dispositivo - Localiza o dispositivo, caso ele tenha sido perdido ou roubado.</li>
+            </ul>
+          </p>
+          <p>Para habilitar o GPS em dispositivos Android, como mostrado na Figura 1, use o seguinte caminho:</p>
+          <p>Configurações> Serviços de Localização> Usar Satélite GPS</p>
+          <p>Para habilitar o GPS em dispositivos iOS, como mostrado na Figura 2, use o seguinte caminho:</p>
+          <p>Configurações> Localização> Serviços de Localização> Ligar</p>
+          <p>NOTA: Alguns dispositivos Android e iOS não tem receptores GPS. Estes dispositivos usam informações de redes Wi-Fi e redes celulares, se disponível, para fornecer serviços de localização.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

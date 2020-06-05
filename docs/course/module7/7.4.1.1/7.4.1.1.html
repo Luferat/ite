@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.4.1.1 Bluetooth</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Tecnologias de Comunicação sem Fio de Laptops</h1>
+        <h2>Recursos e Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>A especificação técnica do Bluetooth é descrita pelo norma IEEE (Institute of Electrical and Electronics Engineers) 802.15.1. Dispositivos Bluetooth são capazes de lidar com voz, música, vídeos e dados.</p>
+          <p></p>
+          <p>A Figura 1 exibe as características comuns do Bluetooth.</p>
+          <p></p>
+          <p>A distância de uma PAN Bluetooth é limitada pela quantidade de energia utilizada pelos dispositivos na PAN. Dispositivos Bluetooth são divididos em três classificações, conforme mostrado na Figura 2. A rede Bluetooth mais comum é a da classe 2, que possui uma alcance de cerca de 33 pés (10 m).</p>
+          <p></p>
+          <p>Quatro especificações de tecnologia Bluetooth, como mostrado na Figura 3, definem as normas para as taxas de transferência de dados. Cada versão posterior oferece capacidades aprimoradas. Por exemplo, a versão 1 é tecnologia mais velha com capacidades limitadas, enquanto a versão 4 possui os recursos mais avançados.</p>
+          <p></p>
+          <p>As medidas de segurança estão incluídas no padrão Bluetooth. A primeira vez que um dispositivo Bluetooth se conecta, o mesmo é autenticado usando um PIN. O Bluetooth suporta criptografia de 128 bits e autenticação PIN.</p>
+          <p></p>
+          <p>Instalação e Configuração do Bluetooth</p>
+          <p>O Windows, por padrão, ativa as conexões com dispositivos Bluetooth. Se a conexão não estiver ativa, procure um botão na parte frontal ou na parte lateral do laptop que permita a conexão. Se o laptop não possui tecnologia Bluetooth, você pode comprar adaptadores Bluetooth que se conectam nas portas USB.</p>
+          <p></p>
+          <p>Antes de instalar e configurar um dispositivo, certifique-se de que o Bluetooth está ativado na BIOS.</p>
+          <p></p>
+          <p>Ligue o aparelho e torne-o visível para o Windows. Verifique a documentação do dispositivo para saber como deixá-lo visível. Use o Assistente de Bluetooth para procurar e descobrir dispositivos Bluetooth que estão em modo de descoberta.</p>
+          <p></p>
+          <p>Para descobrir um dispositivo Bluetooth no Windows 7, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Dispositivos e Impressoras > Adicionar um dispositivo.</p>
+          <p>Passo 2. Selecione o dispositivo descoberto e clique em Avançar.</p>
+          <p>Passo 3. Digite o código de pareamento, fornecido pelo Windows 7, no dispositivo Bluetooth.</p>
+          <p>Passo 4. Quando o dispositivo for adicionado com sucesso, clique em Fechar.</p>
+          <p></p>
+          <p>No Windows Vista, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Rede e Internet > Configurar um dispositivo Bluetooth > Dispositivo > Adicionar.</p>
+          <p>Passo 2. Se solicitado, clique em Continuar. O Assistente para Adicionar Dispositivo Bluetooth será iniciado.</p>
+          <p>Passo 3. Clique em Meu dispositivo está configurado e pronto para ser encontrado > Avançar.</p>
+          <p>Passo 4. Selecione o dispositivo descoberto e clique em Avançar.</p>
+          <p>Passo 5. Se solicitado, digite uma senha e clique em Concluir.</p>
+          <p></p>
+          <p>No Windows XP, siga estes passos:</p>
+          <p>Passo 1. Clique em Iniciar > Painel de Controle > Dispositivos Bluetooth > Dispositivos > Adicionar.</p>
+          <p>Passo 2. O Assistente para Adicionar Dispositivo Bluetooth será iniciado.</p>
+          <p>Passo 3. Clique em Meu dispositivo está configurado e pronto para ser encontrado > Avançar.</p>
+          <p>Passo 4. Selecione o dispositivo descoberto e clique em Avançar.</p>
+          <p>Passo 5. Se solicitado, digite a senha e clique em Avançar.</p>
+          <p>Passo 6. Clique em Terminar.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

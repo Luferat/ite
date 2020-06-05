@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>12.3.1.2 Problemas e Soluções Comuns de Redes</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Redes</h1>
+        <h2>Aplicar o Processo de Solução de Problemas em Redes</h2>
+      </div>
+      <div id="content">
+          <p>Os problemas de rede podem ser atribuídos ao hardware, software ou uma combinação dos dois. Você resolverá alguns problemas com mais frequência do que outros, e algumas poderão exigir habilidades de resolução avançadas.</p>
+          <p>Problemas de Conectividade de Rede</p>
+          <p>Estes tipos de problemas de conexão estão muitas vezes relacionados com configurações incorretas de TCP/IP, configurações de firewall ou dispositivos que pararam de funcionar, conforme apresentado na Imagem 1.</p>
+          <p>Falha de Email</p>
+          <p>Não ser capaz de enviar ou receber emails geralmente é causado por configurações incorretas nos softwares de email, configurações de firewall e problemas de conectividade de hardware, conforme apresentado na Imagem 2.</p>
+          <p>Problemas de FTP e Conexão Segura da Internet</p>
+          <p>Problemas de transferência de arquivos entre clientes e servidores FTP são geralmente causados por endereços IP incorretos, configurações de porta ou políticas de segurança. Problemas de conexão segura com a Internet estão muitas vezes relacionados às configurações de certificado incorretas e/ou portas bloqueadas por software ou hardware, conforme apresentado na Imagem 3.</p>
+          <p>Problemas Revelados pelo Prompt de Comando(CLI)</p>
+          <p>Informações inesperadas exibidas através do prompt de comando(CLI) são frequentemente causadas por configurações incorretas de endereço IP, problemas de conexão de hardware e configurações de firewall, conforme apresentado na Imagem 4.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

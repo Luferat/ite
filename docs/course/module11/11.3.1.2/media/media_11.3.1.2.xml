@@ -1,0 +1,13 @@
+﻿<textcomponents>
+
+<component id="ID_title_01">
+<text><![CDATA[<b>Checklist de Informação</b>]]></text>
+</component>
+<component id="ID_body01">
+  <text><![CDATA[<textformat blockindent='-16'><LI>Informações para contato</LI><LI>Qual é o fabricante e o modelo do computador?</LI><LI>Qual é o sistema operacional utilizado no computador?</LI><LI>O computador está conectado em uma tomada ou funcionando através da bateria?</LI><LI>O computador está conectado em uma rede? Se sim, é uma conexão cabeada ou sem fio?</LI><LI>Algum aplicativo específico estava em uso quando o problema ocorreu?</LI><LI>Algum driver ou atualização foi instalado recentemente? Se sim, quais foram eles?</LI><LI>Descrição do problema</LI><LI>Prioridade do problema</LI></textformat>]]></text> 
+  </component>
+
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

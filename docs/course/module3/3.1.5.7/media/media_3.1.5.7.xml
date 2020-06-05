@@ -1,0 +1,29 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Conexão do Cabo de Vídeo</b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Conexão do Teclado</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>Conexão do Mouse</b>]]></text>
+</component>
+<component id="ID_s4_title">
+<text><![CDATA[<b>Conexão do Cabo USB</b>]]></text>
+</component>
+<component id="ID_s5_title">
+<text><![CDATA[<b>Conexão do Cabo de Rede</b>]]></text>
+</component>
+<component id="ID_s6_title">
+<text><![CDATA[<b>Conexão da Antena Sem Fio</b>]]></text>
+</component>
+<component id="ID_s7_title">
+<text><![CDATA[<b>Conexão do Cabo de Energia</b>]]></text>
+</component>
+<component id="ID_s8_title">
+<text><![CDATA[<b>Todos os Cabos Conectados</b>]]></text>
+</component>
+</textcomponents>

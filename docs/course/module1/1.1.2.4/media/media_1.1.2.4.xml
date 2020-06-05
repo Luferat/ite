@@ -1,0 +1,37 @@
+﻿<textcomponents>
+<component id="ID_title">
+  <text><![CDATA[<b>Tipos de ROM</b>]]></text>
+  </component>
+  
+ <component id="ID_btn01">
+  <text><![CDATA[<b>ROM</b>]]></text>
+  </component>
+<component id="ID_btn02">
+  <text><![CDATA[<b>PROM</b>]]></text> 
+  </component>
+<component id="ID_btn03">
+  <text><![CDATA[<b>EPROM</b>]]></text> 
+  </component>
+<component id="ID_btn04">
+  <text><![CDATA[<b>EEPROM</b>]]></text>
+  </component>
+  
+<component id="ID_txt01">
+  <text><![CDATA[Memória somente leitura. A informação é gravada em um chip ROM quando ele é fabricado. Um chip ROM não pode ser apagado ou re-escrito e atualmente é obsoleto.]]></text>
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Memória programável somente leitura. A informação é gravada em um chip PROM depois que ele é fabricado. Um chip de PROM não pode ser apagado ou regravado.]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Memória somente leitura programável e apagável A informação é gravada em um chip de EPROM depois que ele é fabricado. Um chip EPROM pode ser apagado com a exposição à luz UV. Um equipamento especial é necessário.]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[memória somente leitura programável e eletricamente apagável A informação é gravada em um chip de EEPROM depois que ele é fabricado. Os chips EEPROM são também chamados de Flash ROMs. Um chip EEPROM pode ser apagado e re-escrito, sem ter que remover o chip do computador.]]></text>
+  </component>
+
+   
+
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

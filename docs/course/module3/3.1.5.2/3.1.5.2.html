@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.5.2 Instalaçãos dos Cabos de Dados Internos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Instalação dos Cabos</h2>
+      </div>
+      <div id="content">
+          <p>As unidades se conectam a placa-mãe usando cabos de dados. O tipo de unidade determinará o tipo de cabo de dados a ser usado.</p>
+          <p>Cabos de Dados PATA</p>
+          <p>O cabo PATA é às vezes chamado de cabo de fita, pois é largo e plano. O cabo PATA pode ter 40 ou 80 condutores. Um cabo PATA geralmente tem três conectores de 40 pinos. O conector final se conecta à placa-mãe. Os outros dois conectores se conectam nas unidades. Se vários discos rígidos estiverem instalados, a unidade master deve ser conectada no conector final. A unidade escrava se conecta no conector do meio.</p>
+          <p>Uma faixa no cabo de dados indica a localização do pino 1. Conecte o cabo PATA na unidade com o indicador de pino 1 alinhado com o indicador de pino 1 do conector da unidade. O indicador do pino 1 no conector da unidade geralmente está mais próximo ao conector de alimentação na unidade. Muitas placas-mãe antigas possuem duas controladoras de disco PATA, fornecendo suporte para um máximo de quatro unidades.</p>
+          <p>Cabos de Dados SATA</p>
+          <p>O cabo de dados SATA tem um conector de 7 pinos. Uma extremidade do cabo é ligado à placa-mãe. A outra extremidade é conectada a qualquer unidade que tem um conector de dados SATA. Muitas placas-mãe têm quatro ou mais controladoras de disco SATA.</p>
+          <p>Cabos de Dados Floppy (Disquete)</p>
+          <p>O cabo de dados Floppy geralmente possui três conectores de 34 pinos. Uma faixa no cabo indica a localização do pino 1. O conector final se conecta à placa-mãe. Os outros dois conectores se conectam nas unidades. Se houver várias unidades de disquete instaladas, a unidade A: será o dispositivo que se conectar na ponta do cabo. A unidade B: será a unidade que se conectar no meio do cabo. Existe uma torção em muitos cabos da unidade de disquete, que permite que o drive conectado à extremidade do cabo a seja identificado como a unidade A: pelo computador, quando duas unidades de disquetes estão instaladas.</p>
+          <p>Conecte o cabo de dados do disquete no drive com o indicador do pino 1 do cabo alinhado com o indicador de pino 1 do conector da placa-mãe. As placas-mãe possuem uma controladora de unidade de disquete, fornecendo suporte para um máximo de dois drives de disquete.</p>
+          <p>NOTA: Se o pino 1 do cabo de dados do disquete não estiver alinhado com o pino 1 do conector da unidade, ela não funcionará. Este desalinhamento não danifica a unidade, porém a luz de atividade da unidade fica acesa continuamente. Para corrigir esse problema, desligue o computador e reconecte o cabo de dados, de modo que o pino 1 do cabo e o pino 1 do conector fiquem alinhados. Reinicie o computador.</p>
+          <p>Para instalar um cabo de dados PATA, SATA ou FDD, siga estes passos:</p>
+          <p>Passo 1. Conecte a extremidade do cabo PATA no soquete da placa-mãe (veja a Figura 1).</p>
+          <p>Passo 2. Conecte o conector da extremidade do cabo PATA na unidade óptica (veja a Figura 2).</p>
+          <p>Passo 3. Conecte uma extremidade do cabo SATA no soquete da placa-mãe (veja a Figura 3).</p>
+          <p>Passo 4. Conecte a outra extremidade do cabo SATA no HDD (veja a Figura 4).</p>
+          <p>Passo 5. Conecte a extremidade do cabo FDD no soquete da placa-mãe (veja a Figura 5).</p>
+          <p>Passo 6. Conecte o conector da extremidade do cabo FDD na unidade de disquete (veja a Figura 6).</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.3.1 Técnicas de Gestão de Tempo e Stress</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Habilidades de Comunicação e Profissionais de TI</h1>
+        <h2>Melhores Práticas dos Funcionários</h2>
+      </div>
+      <div id="content">
+          <p>Como técnico, você é uma pessoa muito ocupada. É importante para o seu próprio bem-estar, utilizar adequadamente técnicas de gestão de tempo e stress.</p>
+          <p>Ergonomia da Estação de Trabalho</p>
+          <p>A ergonomia da sua área de trabalho pode ajudá-lo a fazer o seu trabalho ou torná-lo mais difícil. Já que você passa a maior parte do seu dia em sua estação de trabalho, certifique-se que o layout da mesa funciona bem. Tenha o seu fone de ouvido e telefone em uma posição de fácil acesso e utilização. Ajuste sua cadeira em uma altura que seja confortável. Ajuste a tela do seu computador em um ângulo confortável, para que você não tenha que inclinar a cabeça para cima ou para baixo. Verifique se o seu teclado e mouse também estão em uma posição que seja confortável para você. Você não deve dobrar o pulso para digitar. Se possível, tente minimizar as distrações externas, como ruído.</p>
+          <p>Gerência de Tempo</p>
+          <p>É importante priorizar suas atividades. Certifique-se de que você segue atentamente a política de negócios da sua empresa. A política da empresa pode definir que você deve solucionar os chamados &quot;down&quot; em primeiro lugar, mesmo esses sendo mais difíceis de resolver. Um chamado down normalmente significa que um servidor não está funcionando e que todo o escritório ou empresa está aguardando o problema a ser resolvido para retomar suas atividades.</p>
+          <p>Se você tiver retornar a ligação de um cliente, certifique-se de fazê-lo o mais rápido possível. Mantenha uma lista de retorno de chamada dos clientes e anote quando você realizar essas chamadas. Isso garantirá que você não vai se esquecer de um cliente.</p>
+          <p>Quando se trabalha com muitos clientes, não preste um serviço melhor ou mais rápido para um cliente favorito. Ao analisar os quadros de chamada, não resolve apenas os problemas fáceis. Veja a Figura 1 para obter um exemplo de quadro de chamada. Não faça a chamada de outro técnico, a menos que você tenha permissão para fazê-lo.</p>
+          <p>Gerenciamento de Stress</p>
+          <p>Reserve um momento para se recompor entre as chamadas dos clientes. Cada chamada deve ser independente das outras. Não carregue quaisquer frustrações de uma chamada para a próxima.</p>
+          <p>Você pode ter que fazer alguma atividade física para aliviar o stress. Às vezes, levante-se e dê uma curta caminhada. Faça alguns movimentos de alongamento simples ou aperte uma bola de tensão. Faça uma pausa, se puder, e tente relaxar. Então você vai estar pronto para responder a próxima chamada do cliente de forma eficaz. A Figura 2 apresenta algumas maneiras de relaxar.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

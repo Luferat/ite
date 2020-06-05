@@ -1,0 +1,101 @@
+﻿<textcomponents>
+	<component id='ID_s1_title'>
+		<text><![CDATA[<b>Codificação Hash</b>]]></text>
+	</component>
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[<b>&quot;Aqui está a citação que você solicitou...&quot;</b>]]></text>
+	</component>
+	<component id='ID_s1_txt02'>
+		<text><![CDATA[<b>Se o código hash não for idêntico, significa que a mensagem foi alterada.</b>]]></text>
+	</component>
+	<component id='ID_s1_txt03'>
+		<text><![CDATA[<b>A7DE89DCA00ACB...</b>]]></text>
+	</component>
+	<component id='ID_s1_txt04'>
+		<text><![CDATA[<b>O remetente introduz uma mensagem para ser codificada</b>]]></text>
+	</component>
+	<component id='ID_s1_txt05'>
+		<text><![CDATA[<b>O algoritmo hash produz o código.</b>]]></text>
+	</component>	
+	<component id='ID_s1_txt06'>
+		<text><![CDATA[<b>A mensagem é transmitida através da rede (segura ou insegura)</b>]]></text>
+	</component>
+	<component id='ID_s1_txt07'>
+		<text><![CDATA[<b>O remetente envia o código (MessageDigest) junto com a mensagem</b>]]></text>
+	</component>
+	<component id='ID_s1_txt08'>
+		<text><![CDATA[<b>O algoritmo hash(SHA ou MD5) produz o código hash.</b>]]></text>
+	</component>
+	<component id='ID_s1_txt09'>
+		<text><![CDATA[<b>O destinatário recupera a mensagem enviada</b>]]></text>
+	</component>
+	<component id='ID_s1_txt10'>
+		<text><![CDATA[<b>A7DE89DCA00ACB...</b>]]></text>
+	</component>	
+	<component id='ID_s1_txt11'>
+		<text><![CDATA[<b>&quot;Aqui está a citação que você solicitou...&quot;</b>]]></text>
+	</component>
+	
+	<component id='ID_s2_title'>
+		<text><![CDATA[<b>Criptografia simétrica</b>]]></text>
+	</component>	
+	<component id='ID_s2_txt01'>
+		<text><![CDATA[<b>&quot;Aqui está a citação que você solicitou...&quot;</b>]]></text>
+	</component>
+	<component id='ID_s2_txt02'>
+		<text><![CDATA[<b>A7DE89DCA00ACB...</b>]]></text>
+	</component>
+	<component id='ID_s2_txt03'>
+		<text><![CDATA[<b>O remetente envia a mensagem para ser criptografada</b>]]></text>
+	</component>
+	<component id='ID_s2_txt04'>
+		<text><![CDATA[<b>O destinatório introduz uma chave secreta idêntica para decodificar a mensagem encriptada</b>]]></text>
+	</component>
+	<component id='ID_s2_txt05'>
+		<text><![CDATA[<b>Rede não segura</b>]]></text>
+	</component>
+	<component id='ID_s2_txt06'>
+		<text><![CDATA[<b>O remetente introduz uma chave de criptografia secreta para codificar a mensagem</b>]]></text>
+	</component>
+	<component id='ID_s2_txt07'>
+		<text><![CDATA[<b>O destinatário recupera a mensagem descriptografada</b>]]></text>
+	</component>
+	<component id='ID_s2_txt08'>
+		<text><![CDATA[<b>A7DE89DCA00ACB...</b>]]></text>
+	</component>
+	<component id='ID_s2_txt09'>
+		<text><![CDATA[<b>&quot;Aqui está a citação que você solicitou...&quot;</b>]]></text>
+	</component>
+	
+	<component id='ID_s3_title'>
+		<text><![CDATA[<b>Criptografia assimétrica</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt01'>
+		<text><![CDATA[<b>&quot;Aqui está a citação que você solicitou...&quot;</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt02'>
+		<text><![CDATA[<b>1BAF55D000EF795...</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt03'>
+		<text><![CDATA[<b>O remetente envia a mensagem para ser criptografada</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt04'>
+		<text><![CDATA[<b>O destinatário introduz uma chave privada de segurança para decodificar a mensagem</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt05'>
+		<text><![CDATA[<b>Rede não segura</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt06'>
+		<text><![CDATA[<b>O remetente insere a chave pública do destinatário para codificar a mensagem</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt07'>
+		<text><![CDATA[<b>O destinatário recupera a mensagem</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt08'>
+		<text><![CDATA[<b>1AG65B00BDE735...</b>]]></text>
+	</component>	
+	<component id='ID_s3_txt09'>
+		<text><![CDATA[<b>&quot;Aqui está a citação que você solicitou...&quot;</b>]]></text>
+	</component>
+		
+</textcomponents>

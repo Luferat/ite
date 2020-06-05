@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Introdução ao Computador Pessoal</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Este capítulo apresenta os componentes que compõem um sistema de computador pessoal e como considerar a atualização dos componentes. Grande parte do conteúdo deste capítulo irá ajudá-lo ao longo deste curso.</p>
+          <p><ul>
+              <li>Tecnologia da informação engloba o uso de computadores, hardware de rede e software para processar, armazenar, transmitir e recuperar informações.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Um sistema de computador pessoal é composto de componentes de hardware e aplicativos de software.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O gabinete do computador e a fonte de alimentação devem ser escolhidas cuidadosamente para suportar o hardware no interior do gabinete e para permitir a adição de componentes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os componentes internos do computador são selecionados para características e funções específicas. Todos os componentes internos devem ser compatíveis com a placa-mãe.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use o tipo correto de portas e cabos quando conectar os dispositivos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os dispositivos de entrada mais comuns incluem o teclado, mouse, tela sensível ao toque e câmeras digitais.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os dispositivos de saída mais comuns incluem monitores, impressoras e alto-falantes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gabinetes, fontes de alimentação, CPU e sistema de refrigeração, RAM, discos rígidos e placas de expansão, devem ser atualizados quando os dispositivos falharem ou não atenderem às necessidades dos clientes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Computadores especializados requerem hardware específico para sua função. O tipo de hardware utilizado em computadores especializados é determinado pela forma como o cliente trabalha e o que um cliente deseja realizar.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

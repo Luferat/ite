@@ -1,0 +1,83 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+	position:absolute !important;
+   	z-index:1 !important;
+}
+#mainDiv {
+    height: 400px;
+    width: 430px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+#text_body0 b {font-size:16px !important; font-weight:bold !important;}
+#text_body1 b { font-size:12px !important; font-weight:bold !important;}
+#text_body2 b { font-size:12px !important; font-weight:bold !important;}
+#drag1 b { margin-left:1px !important;}
+
+#textID_drag01{font-size:10px !important;text-align:left !important;padding-left:5px !important;color:#000 !important;}
+#textID_drag02{font-size:10px !important;text-align:left !important;padding:1px 0 0 5px !important;line-height:11px;color:#000!important;}
+#textID_drag03{font-size:10px !important;text-align:left !important;padding-left:5px !important;color:#000!important;}
+#textID_drag04{font-size:10px !important;text-align:left !important;padding-left:5px !important;color:#000!important;}
+#textID_drag05{font-size:10px !important;text-align:left !important;padding-left:5px !important;color:#000!important;}
+
+#button0 div {font-size: 12px !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    padding-top: 2px !important;
+    text-align: center !important;
+}
+
+#button1 div {font-size: 12px !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    padding-top: 2px !important;
+    text-align: center !important;
+}
+
+#drop0 img#tick0 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop1 img#tick1 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop2 img#tick2 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop3 img#tick3 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop4 img#tick4 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}

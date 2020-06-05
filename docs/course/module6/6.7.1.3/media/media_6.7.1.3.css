@@ -1,0 +1,121 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+	position:absolute !important;
+   z-index:1 !important;
+}
+
+#mainDiv {
+    height: 400px;
+    width: 440px;
+    position:absolute;
+    top:0px;
+}
+
+#ID_s2_term06,#ID_s2_term07{ border: 2px solid #fff;}
+
+#tick0{position:absolute;top:10px;}
+#tick1{position:absolute;top:14px;}
+#tick2{position:absolute;top:14px;}
+#ID_FEEDBACK{cursor:pointer !important;}
+
+#ID_ds_a1 { z-index:999 !important;}
+
+#button0 div {font-size: 12px !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    padding-top: 2px !important;
+    text-align: center !important;
+}
+
+#button1 div {font-size: 12px !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    padding-top: 2px !important;
+    text-align: center !important;
+}
+
+#ID_s1_txt01 b {font-size:14px !important;padding-left:8px;}
+
+#ID_s1_txt09 b {font-size:14px !important;}
+
+#text_body0 b {font-size:16px !important;}
+
+#drag0 b { font-size:12px !important; font-weight:bold !important; color:#000 !important;}
+#drag1 b { font-size:12px !important; font-weight:bold !important; color:#000 !important;}
+#drag2 b { font-size:12px !important; font-weight:bold !important; color:#000 !important;}
+#drag3 b { font-size:12px !important; font-weight:bold !important; color:#000 !important;}
+#drag4 b { font-size:12px !important; font-weight:bold !important; color:#000 !important;}
+#drag5 b { font-size:12px !important; font-weight:bold !important; color:#000 !important;}
+#drag6 b { font-size:12px !important; font-weight:bold !important; color:#000 !important;}
+
+#drop0 img#tick0 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop1 img#tick1 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop2 img#tick2 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop3 img#tick3 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop4 img#tick4 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop5 img#tick5 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#drop6 img#tick6 {
+    display: block;
+    left: -20px !important;
+    position: absolute !important;
+    top: 7px !important;
+}
+
+#ID_DnD_inst_title{margin-left:65px; left:30px !important; top: 40px !important;}
+
+#ID_DnD_inst_body1{top: 60px !important; margin-left:55px;}
+#continueDiv{margin-left:60px;}
+#ID_HELP{margin-left:-40px;}
+
+#ID_HELP > img {
+    height: 393px !important;
+}
+
+#ID_inst { font-weight:bold !important; font-size:12px;}
+#text_body0 { font-weight:bold !important; font-size:12px;}

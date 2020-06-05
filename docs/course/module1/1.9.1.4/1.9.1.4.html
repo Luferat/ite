@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.9.1.4 WiMAX</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Select an ISP Connection Type</h1>
+      <h2>Connection Technologies</h2>
+    </div>
+    <div id="content">
+          <p>Worldwide Interoperability for Microwave Access (WiMAX) is an IP-based wireless 4G broadband technology that offers high-speed mobile Internet access for mobile devices. WiMAX is a standard called IEEE 802.16e. It supports an MAN-sized network and has download speeds up to 70 Mbps and distances up to 30 miles (50 km). Security and QoS for WiMAX are equivalent to cellular networks.</p>
+          <p></p>
+          <p>WiMAX uses a low wavelength transmission, usually between 2 GHz to 11 GHz. These frequencies are not as easily disrupted by physical obstructions because they can better bend around obstacles than higher frequencies. Multiple Input Multiple Output (MIMO) technology is supported, which means additional antennas can be added to increase the potential throughput. </p>
+          <p></p>
+          <p>There are two methods of transmitting a WiMAX signal:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Fixed WiMAX </b>– A point-to-point or point-to-multipoint service with speeds up to 72 Mbps and a range of 30 miles (50 km).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Mobile WiMAX </b>– A mobile service, like Wi-Fi, but with higher speeds and a longer transmission range.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.8.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Laptops</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Este capítulo discutiu os recursos e funcionalidades dos laptops, bem como a forma de remover e instalar componentes internos e externos. Os seguintes conceitos deste capítulo são importantes para serem lembrados:</p>
+          <p></p>
+          <p><ul>
+              <li>Laptops são únicos devido ao seu tamanho compacto e sua capacidade de operar com bateria.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Laptops utilizam os mesmos tipos de portas que os computadores de mesa para que os dispositivos periféricos possam ser intercambiáveis.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dispositivos de entrada essenciais, tais como um teclado e touchpads, estão embutidos em laptops para fornecer funcionalidade semelhante aos computadores desktop.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os componentes internos dos laptops são geralmente menores do que os componentes dos desktop, pois eles são projetados para caber em espaços compactos e conservar energia.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Laptops possuem teclas de função que pode ser pressionada em combinação com a tecla Fn. As funções desempenhadas por estas teclas são específicas para cada modelo de laptop.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Bases multifuncionais (docking station) e replicadores de portas podem aumentar a funcionalidade de laptops, oferecendo os mesmos tipos de portas que são apresentados em computadores desktop.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Laptops em geral contêm monitores LCD e de LED.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Luzes de fundo e inversores iluminam as telas dos laptops.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As definições de energia de baterias dos laptops podem ser configuradas para assegurar que a energia é utilizada de forma eficiente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Laptops podem fornecer uma série de tecnologias sem fio, incluindo Bluetooth, infravermelho, Wi-Fi e a capacidade de acessar redes WAN de celulares.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Laptops fornecem uma série de possibilidades de expansão. Os usuários podem adicionar memória para aumentar o desempenho, fazer uso de memória flash para aumentar a capacidade de armazenamento ou aumento de funcionalidade usando placas de expansão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Componentes do laptop consistem em CRUs e FRUs.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os componentes do laptop devem ser limpos regularmente, a fim de prolongar a vida útil do laptop.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

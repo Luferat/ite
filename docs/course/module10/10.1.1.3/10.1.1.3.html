@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.1.3 Segurança Web</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ameaças de Segurança</h1>
+        <h2>Tipos de Ameaças de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Ferramentas utilizadas para tornar as páginas de web mais tecnológicas e versáteis, também podem fazer com que os computadores fiquem mais vulneráveis ​​a ataques. Estes são alguns exemplos de ferramentas web:</p>
+          <p><ul>
+              <li>ActiveX - Tecnologia criada pela Microsoft para controlar a interatividade em páginas web. Se ActiveX estiver habilitado em uma página web, um aplicativo ou um pequeno programa deverá ser baixado para que sistema tenha acesso a todas as funcionalidades.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Java - Linguagem de programação que permite que os aplicativos sejam executados dentro de um navegador web. Exemplos de aplicativos Java incluem uma calculadora ou um contador de cliques em uma páginas web.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>JavaScript - linguagem de programação desenvolvida para interagir com código-fonte HTML e permitir que os sites web sejam interativos. Os exemplos incluem banners rotativos ou janelas pop-ups.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Adobe Flash - Ferramenta de multimídia utilizada ​​para criar mídias interativas para a web. O Flash é utilizado para criar animações, vídeos e jogos nas páginas web.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Microsoft Silverlight - Ferramenta utilizada para criar mídias ricas e interativas para ambientes web. O Silverlight é semelhante ao Flash e possui muitas características em comum.</li>
+            </ul>
+          </p>
+          <p>Os atacantes podem utilizar qualquer uma dessas ferramentas para instalar um programa em um computador. Para prevenir esses ataques, a maioria dos browsers possuem configurações que forçam o usuário de um computador a autorizar o download ou o uso dessas ferramentas.</p>
+          <p>Filtragem ActiveX</p>
+          <p>Ao navegar na web, algumas páginas podem não funcionar corretamente a menos que o ActiveX esteja instalado. Alguns ActiveX são escritos por terceiros e podem ser maliciosos. O Filtro ActiveX permite que um usuário navegue na web sem executar os controles do ActiveX.</p>
+          <p>Depois que o Controle ActiveX for instalado em um site, o mesmo será executados em outros sites também. Isso pode prejudicar o desempenho ou introduzir riscos à segurança. Quando a Filtragem ActiveX está habilitada, você pode escolher quais sites estão autorizados a executar os controles ActiveX. Sites que não são aprovados não pode executar esses controles, deste modo o navegador não mostra notificações para que você possa instalar ou habilitá-los.</p>
+          <p>Para habilitar a Filtragem ActiveX no Internet Explorer 9, utilize o seguinte caminho, como mostrado na Imagem 1:</p>
+          <p>Ferramentas> Filtragem ActiveX</p>
+          <p>Para visualizar um site que contém conteúdo ActiveX quando a filtragem ActiveX está habilitada, clique no ícone azul Filtragem ActiveX na barra de endereços e clique em Desligar Filtragem ActiveX.</p>
+          <p>Depois de visualizar o conteúdo, você pode desligar a filtragem ActiveX para o site, seguindo os mesmos passos.</p>
+          <p>Bloqueador de Pop-up</p>
+          <p>Um pop-up é uma janela que abre em cima de outra janela do navegador web. Alguns pop-ups são iniciados durante a navegação, por exemplo um link em uma página que abre um pop-up para fornecer informações adicionais ou realizar zoom em uma imagem. Outros pop-ups são iniciados por um sites ou por anunciantes e muitas vezes são indesejados ou irritantes, especialmente quando vários pop-ups são abertos ao mesmo tempo.</p>
+          <p>O bloqueador de pop-up pode ser uma ferramenta embutida no navegador web ou um programa independente. Ele permite que o usuário limite ou bloqueie a maioria dos pop-ups abertos durante a navegação na web. O bloqueador de pop-up embutido no Internet Explorer é habilitado por padrão assim que o navegador é instalado. Quando o navegador encontra uma página que contém pop-ups, é exibido uma mensagem informando que o mesmo foi bloqueado. Um botão na mensagem pode ser usado para permitir que o pop-up seja exibido momentaneamente ou alterar as opções de bloqueio para a página web em questão.</p>
+          <p>Para desativar o bloqueador de pop-up no Internet Explorer, use o seguinte caminho:</p>
+          <p>Ferramentas> Bloqueador de Pop-up> Desativar Bloqueador de Pop-up</p>
+          <p>Para alterar as configurações do bloqueador de pop-up no Internet Explorer, use o seguinte caminho:</p>
+          <p>Ferramentas> Bloqueador de Pop-up> Configurações do Bloqueador de Pop-ups</p>
+          <p>As seguintes opções do Bloqueador de Pop-up podem ser configuradas, como mostrado na Figura 2:</p>
+          <p><ul>
+              <li>Permitir que os pop-ups de um site web sejam abertos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alterar as notificações ao bloquear os pop-ups</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alterar o nível de bloqueio. O nível alto bloqueia todos os pop-ups, o nível médio bloqueia a maioria dos pop-ups automaticamente e o nível baixo permite pop-ups de sites seguros.</li>
+            </ul>
+          </p>
+          <p>Filtro SmartScreen</p>
+          <p>No Internet Explorer, o Filtro SmartScreen, mostrado na Figura 3, detecta sites de phishing, analisa sites em busca de itens suspeitos e compara sites e downloads com uma lista de sites e arquivos que são conhecidos por serem maliciosos. Filtro SmartScreen é habilitado por padrão quando o Internet Explorer é instalado. Para desativar o Filtro SmartScreen, use o seguinte caminho:</p>
+          <p>Ferramentas> Filtro SmartScreen> Desativar Filtro SmartScreen</p>
+          <p>Para analisar a página web atual, use o seguinte caminho:</p>
+          <p>Ferramentas> Filtro SmartScreen> Verificar o Site</p>
+          <p>Para denunciar uma página web suspeita, use o seguinte caminho:</p>
+          <p>Ferramentas> Filtro SmartScreen> Relatar Site Não Seguro</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

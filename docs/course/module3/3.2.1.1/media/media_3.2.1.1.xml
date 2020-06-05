@@ -1,0 +1,81 @@
+﻿<textcomponents>
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>POST</b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Códigos de Beeps Comuns</b>]]></text>
+</component>
+
+<component id='ID_s2_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr class="title">
+          				<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+        		</tr>				
+				<tr>
+					<td bgcolor='#A2AA23' width='100' valign="top"><font size='12' color='#ffffff'><b>Código de Beep</b></font></td>
+					<td bgcolor='#A2AA23' width='150' valign="top"><font size='12' color='#ffffff'><b>Significado</b></font></td>
+					<td bgcolor='#A2AA23' valign="top"><font size='12' color='#ffffff'><b>Causa</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>1 Beep (Sem Video)</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Falha ao Atualizar a Memória</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Memória Danificada</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>2 Beeps</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Erro de Paridade de Memória</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Memória Danificada</font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>3 Beeps</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Falha nos primeiros 64k de memória</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Memória Danificada</font></td>
+				</tr>							
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>4 Beeps</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Temporizador não operacional</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Placa-mãe Danificada</font></td>
+				</tr>							
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>5 Beeps</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Erro do Processor</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Processador Danificado</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>6 Beeps</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Falha do 8042 Gate A20</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>CPU ou Placa-mãe danificada</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>7 Beeps</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Exceção do processador</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Processador Danificado</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>8 Beeps</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Erro de memória de vídeo</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Placa de vídeo ou memória danificada</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>9 Beeps</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Erro de checksum da ROM</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>BIOS Danificada</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>10 Beeps</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Erro de checksum do CMOS</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Placa-mãe Danificada</font></td>
+				</tr>		
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>11 Beeps</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Memória Cache danificada</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>CPU ou Placa-mãe danificada</font></td>
+				</tr>
+			</table>]]>
+		</text>
+	</component>
+
+</textcomponents>

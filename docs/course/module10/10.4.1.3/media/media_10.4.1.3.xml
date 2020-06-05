@@ -1,0 +1,33 @@
+﻿<textcomponents>
+  <component id="ID_title">
+    <text>
+
+    </text>
+  </component>
+    <component id='ID_table'>
+      <text>
+        <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+          
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Etapa 3. Teste a Teoria para Determinar a Causa</b></font></td>
+	</tr>  
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	
+          <tr>
+            <td width="127" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+            <td  valign="top" bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Desconecte-se da rede.</li>
+                <li>Atualize o antivírus e o anti-spyware.</li>
+                <li>Execute uma varredura no computador utilizando o software de proteção.</li>
+                <li>Verifique os últimos patches de correção e atualização do sistema operacional.</li>
+                <li>Reinicie o computador ou o dispositivo de rede.</li>
+                <li>Faça login com um usuário diferente para alterar sua senha.</li>
+                <li>Proteja a sala de equipamentos.</li>
+                <li>Proteja o ambiente de trabalho.</li>
+                <li>Aplique a política de segurança.</li></textformat></font></td>
+          </tr>
+        </table>]]>
+      </text>
+    </component>
+  </textcomponents>

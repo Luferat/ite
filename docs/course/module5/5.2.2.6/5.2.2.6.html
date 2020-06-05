@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.2.6 Opções de Recuperação do Sistema</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Opções de Instalação Personalizada</h2>
+      </div>
+      <div id="content">
+          <p>Quando ocorre uma falha no sistema os usuários podem utilizar as seguintes ferramentas de recuperação:</p>
+          <p><ul>
+              <li>Opções de Recuperação do Sistema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Recuperação Automática do Sistema (somente para o Windows XP Professional)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Recuperação de Partição para as Opções de Fábrica</li>
+            </ul>
+          </p>
+          <p>Opções de Recuperação do Sistema</p>
+          <p>As Opções de Recuperação do Sistema são um conjunto de ferramentas que permitem aos usuários recuperar ou restaurar o sistema operacional quando ocorre uma falha. As Opções de Recuperação do Sistema são uma parte do Ambiente de Recuperação do Windows (WinRE). O WinRE é uma plataforma de recuperação baseada no Ambiente de Pré-instalação do Windows (PE). O Windows PE é um sistema operacional básico criado para preparar um computador para a instalação do Windows e ajudar os usuários a solucionar problemas de falhas no sistema operacional quando não há um sistema operacional disponível.</p>
+          <p>O WinRE pode ser acessado pressionando e segurando a tecla F8 ao iniciar o computador. Quando a tela Opções Avançadas de Inicialização aparecer, marque a opção Reparar o computador e pressione Enter para acessar as Opções de Recuperação do Sistema. Você pode então usar as ferramentas de recuperação do sistema para reparar os erros que impedem a inicialização do sistema. As seguintes ferramentas estão disponíveis no menu Opções de Recuperação do Sistema:</p>
+          <p><ul>
+              <li>Reparo de Inicialização - Analisa o disco rígido para encontrar problemas e corrige automaticamente os arquivos de sistema ausentes ou corrompidos que impedem a inicialização do Windows</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Restauração do Sistema - Usa pontos de restauração para restaurar os arquivos de sistema do Windows para um ponto anterior</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Recuperação da Imagem do Sistema - Cria uma imagem do sistema que reproduz as unidades do sistema que o Windows necessita para operar</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Diagnostico de Memória do Windows - Examina a memória do computador para detectar falhas e diagnosticar problemas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Prompt de Comando - Abre uma janela do prompt de comando, onde a ferramenta Bootrec.exe pode ser utilizada para reparar e solucionar problemas de inicialização do Windows. O utilitário Bootrec.exe pode ser usado com o comando fixmbr para reparar o Master Boot Record ou o comando fixboot para escrever um novo setor de boot que é compatível com o OS. Este prompt de comando substitui a Console de Recuperação do Windows XP.</li>
+            </ul>
+          </p>
+          <p>Se reparar o seu computador não aparece como uma opção, os usuários podem acessar as Opções de Recuperação do Sistema no WinRE na inicialização do computador a partir da mídia de instalação ou um disco de reparação do sistema. Um disco de reparação do sistema permite aos usuários acessarem as Opções de Recuperação do Sistema, da mesma forma que a mídia de instalação. Antes de usar o disco de reparação do sistema para iniciar um computador, ele deve ser criado.</p>
+          <p></p>
+          <p>Para criar um disco de reparação do sistema no Windows 7, conforme apresentado na Imagem 1, siga estes passos:</p>
+          <p>Passo 1. Selecione Iniciar > Painel de Controle > Backup e Restauração > Criar um disco de reparação do sistema.</p>
+          <p>Passo 2. Insira um disco vazio na unidade óptica e clique em Criar Disco.</p>
+          <p>Passo 3. Teste o disco usando-o para inicializar o computador.</p>
+          <p>Passo 4. Depois que a janela Opções de Recuperação do Sistema é exibida, selecione o sistema operacional que precisa ser restaurado e clique em Avançar. As seguintes ferramentas devem estar disponíveis:</p>
+          <p><ul>
+              <li>Reparo de Inicialização</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Restauração do Sistema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Recuperação da Imagem do Sistema</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Diagnostico de Memória do Windows</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Prompt de Comando</li>
+            </ul>
+          </p>
+          <p>NOTA: Quando utilizar um disco de recuperação, certifique-se que ele utiliza a mesma arquitetura do sistema operacional que está sendo recuperado. Por exemplo, se o computador está executando uma versão do Windows 7 64 bits, o disco de recuperação deve usar uma arquitetura de 64 bits.</p>
+          <p>Recuperação da Imagem do Sistema</p>
+          <p>O utilitário de recuperação de imagem do sistema, conforme apresentado na Imagem 2, é uma nova opção de recuperação que está incluído em todas as versões do Windows 7. Ele permite aos usuários fazer backup do conteúdo do seu disco rígido, incluindo arquivos pessoais e configurações, se o sistema operacional precisar ser restaurado.</p>
+          <p></p>
+          <p>Para criar uma imagem do sistema no Windows 7, siga estes passos:</p>
+          <p>Passo 1. Selecione Iniciar > Painel de Controle > Backup e Restauração > Criar uma imagem do sistema.</p>
+          <p>Passo 2. Selecione um local para armazenar a imagem do sistema:</p>
+          <p><ul>
+              <li>Em um disco rígido - Armazene a imagem do sistema em um disco rígido externo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Em um ou mais DVDs - Grave a imagem do sistema em um DVD.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Em um local de rede - Armazene a imagem do sistema em uma pasta compartilhada na rede.</li>
+            </ul>
+          </p>
+          <p>Passo 3. Clique em Avançar e confirme as seleções. A imagem do sistema é criada e armazenada no local selecionado.</p>
+          <p>Recuperação Automatizada do Sistema no Windows XP Professional</p>
+          <p>Você deve criar um Automated System Recovery (ASR) definido para utilizar na recuperação. O Assistente de ASR, conforme apresentado na Imagem 3, cria um backup da situação do sistema, serviços e componentes do sistema operacional. Ele também cria um arquivo que contém informações sobre os seus discos, o backup e como restaurar o backup.</p>
+          <p></p>
+          <p>Use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar > Todos os Programas > Acessórios > Ferramentas do Sistema > Backup > clique no link Modo Avançado > Recuperação Automatizada do Sistema</p>
+          <p>Para restaurar o sistema, pressione F2 após a inicialização do disco de instalação do Windows XP. O ASR lê e restaura os discos necessários para iniciar o computador. Após as informações básicas do disco forem restauradas, o ASR instala uma versão básica do Windows e começa a restaurar o backup criado pelo Assistente do ASR.</p>
+          <p>Recuperação de Partição para as Opções de Fábrica</p>
+          <p>Alguns computadores que possuem o Windows 7 pré-instalado de fábrica contém uma seção do disco que é inacessível para o usuário. Esta partição, chamada de partição de recuperação de fábrica, contém uma imagem da partição de boot que foi criada quando o computador foi feito. Você pode usar essa partição para restaurar o computador à sua configuração original.</p>
+          <p></p>
+          <p>Ocasionalmente, a opção para chegar a esta partição está escondida, e você deve usar uma chave especial ou combinação de teclas quando o computador é iniciado. Às vezes, a opção para restaurar a partir da partição de recuperação de fábrica está localizada na BIOS. Contate o fabricante do computador para descobrir como acessar a partição e restaurar a configuração original do computador.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

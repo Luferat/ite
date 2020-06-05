@@ -1,0 +1,85 @@
+﻿<textcomponents>
+
+<component id="ID_s2_btn01">
+<text><![CDATA[<b>Registrar e acompanhar incidentes</b>]]></text>
+</component>
+<component id="ID_s2_btn02">
+<text><![CDATA[<b>Gravação de informações de contato</b>]]></text>
+</component>
+<component id="ID_s2_btn03">
+<text><![CDATA[<b>Pesquisa de informações do produto</b>]]></text>
+</component>
+<component id="ID_s2_btn04">
+<text><![CDATA[<b>Executar utilitários de diagnóstico</b>]]></text>
+</component>
+<component id="ID_s2_btn05">
+<text><![CDATA[<b>Pesquisar uma base de conhecimento</b>]]></text>
+</component>
+<component id="ID_s2_btn06">
+<text><![CDATA[<b>Coletar feedback dos clientes</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[O software pode gerenciar filas de chamadas, definir prioridades de atendimento, atribuir chamadas e escalar chamadas.]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[O software pode armazenar, editar e recuperar nomes de clientes, endereços de email, números de telefone, localização, sites, números de fax e outras informações em um banco de dados.]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[O software pode fornecer aos técnicos informações sobre os produtos suportados, incluindo características, limitações, novas versões, restrições de configuração, bugs conhecidos, disponibilidade de produtos, links para arquivos de ajuda on-line, e outras informações.]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[O software pode ter várias utilidades de diagnóstico, incluindo software de diagnóstico remoto, em que o técnico pode assumir o computador de um cliente de sua mesa no call center.]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[O software pode conter uma base de conhecimento que é pré-programado com problemas comuns e suas soluções. Esse banco de dados pode crescer à medida que os técnicos adicionam seus próprios registros de problemas e soluções.]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[O software pode coletar o feedback dos clientes em relação à satisfação com os produtos e serviços do call center.]]></text>
+</component>
+
+
+<component id='ID_s3_table'>
+    <text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="table-height">
+		<td bgcolor='#DAE17A' colspan="3" class="table-height"><font size='14' color='#393536'><b class="font-forteen">Priorização de chamada</b></font></td>
+	</tr>
+	<tr class="liner_top">
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='2' color='#434321'>.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width="100"><font color='#ffffff'><b>Nome</b></font></td>
+		<td bgcolor='#A2AA23' width="200"><font color='#ffffff'><b>Definição</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Prioridade</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Desativado</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>A empresa não pode operar qualquer um de seus equipamentos de informática.</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>1 (mais urgente)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Hardware</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Um (ou mais) dos computadores da empresa não está funcionando corretamente.</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>2 (Urgente)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Software</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Um (ou mais) dos computadores da empresa estão com erros de software do sistema operacional.</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>2 (Urgente)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Rede</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Um (ou mais) dos computadores da empresa não pode acessar a rede.</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>2 (Urgente)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Aprimoramento</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Houve um pedido da empresa para a funcionalidade em um computador adicional.</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>3 (Importante)</font></td>
+	</tr>
+</table>]]></text>
+    </component>
+
+
+
+</textcomponents>

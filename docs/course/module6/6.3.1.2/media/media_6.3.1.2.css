@@ -1,0 +1,119 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+#ID_bubble01.arrow
+{
+	position: relative;
+	width: 150px;
+	height:30px;
+	text-align: left;
+	background-color: #cce9e7;
+	border: 3px solid #67bdbc;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	overflow:hidden;
+	padding:5px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+#ID_bubble01.arrow:before
+{
+	content: ' ';
+	position: fixed;
+	width: 0;
+	height: 0;
+	left:83px;
+	top:56px;
+	border-color: #67bdbc transparent transparent #67bdbc;
+	border-right:15px solid #67bdbc;
+	border-bottom:26px solid transparent;
+}
+#ID_bubble02.arrow
+{
+	position: relative;
+	width: 150px;
+	height:30px;
+	text-align: left;
+	background-color: #cce9e7;
+	border: 3px solid #67bdbc;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	overflow:hidden;
+	padding:5px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+#ID_bubble02.arrow:before
+{
+	content: ' ';
+	position: fixed;
+	width: 0;
+	height: 0;
+	left:76px;
+	top:55px;
+	border-color: #67bdbc transparent transparent #67bdbc;
+	border-left:15px solid #67bdbc;
+	border-bottom:26px solid transparent;
+}
+#ID_bubble03.arrow
+{
+	position: relative;
+	width: 180px;
+	height:33px;
+	text-align: left;
+	background-color: #cce9e7;
+	border: 3px solid #67bdbc;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	overflow:hidden;
+	padding:5px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+#ID_bubble03.arrow:before
+{
+	content: ' ';
+	position: fixed;
+	width: 0;
+	height: 0;
+	left:5px;
+	top:58px;
+	border-color: #67bdbc transparent transparent #67bdbc;
+	border-left:15px solid #67bdbc;
+	border-bottom:26px solid transparent;
+}
+#ID_bubble03.arrow:after
+{
+	content: ' ';
+	position: fixed;
+	width: 0;
+	height: 0;
+	left:175px;
+	top:58px;
+	border-color: #67bdbc transparent transparent #67bdbc;
+	border-right:15px solid #67bdbc;
+	border-bottom:26px solid transparent;
+}
+@media only screen and (device-width: 768px) {
+#ID_bubble01.arrow:before{top:44px;}
+#ID_bubble02.arrow:before{top:44px;}
+#ID_bubble03.arrow:before{top:48px;}
+#ID_bubble03.arrow:after{top:48px;}
+}

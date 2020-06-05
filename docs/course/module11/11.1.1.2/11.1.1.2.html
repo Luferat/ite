@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.1.2 Relação entre Habilidades de Comunicação e Comportamento Profissional</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Habilidades de Comunicação e de Profissionais de TI</h1>
+        <h2>Habilidades de Comunicação, Resolução de Problemas e Comportamento Profissional</h2>
+      </div>
+      <div id="content">
+          <p>Independente da maneira com que você conversa com um cliente, por telefone ou pessoalmente, é muito importante ter uma boa comunicação para apresentar o seu profissionalismo. O profissionalismo e a boa capacidade de comunicação aumentam a sua credibilidade com o cliente.</p>
+          <p>Caso esteja conversando pessoalmente com um cliente, o mesmo também poderá observar a sua linguagem corporal. Caso esteja conversando com o cliente por telefone, o mesmo poderá escutar seus suspiros e pensar que está sendo sarcástico. Por outro lado, os clientes também poderão achar que você está sorrindo ao falar com os mesmos por telefone. Muitos técnicos de call center utilizam um espelho em sua mesa para controlar as expressões faciais.</p>
+          <p>Bons técnicos controlam suas reações e emoções entre o atendimento de um cliente e outro. Uma boa regra que todos os técnicos devem seguir é a que toda nova chamada significa um novo começo. Nunca carregue suas frustrações entre uma chamada e outra.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

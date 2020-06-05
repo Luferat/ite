@@ -1,0 +1,255 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%; 
+}
+#flashContent {
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
+#mainDiv{
+position:absolute;
+width:470px;
+height:400px;
+}
+
+#main{
+	
+background:url(6_6_1_2.png) top center no-repeat;
+width:453px;
+height:343px;
+margin:0 auto;
+position:relative;
+top:0px!important;
+}
+#comp1{
+    height:55px;
+    left: 55px;
+    margin: 0 auto;
+    position: absolute;
+    top: 115px;
+    width:65px;
+	}
+	
+	#comp2{
+    height:55px;
+    left: 17px;
+    margin: 0 auto;
+    position: absolute;
+    top: 189px;
+    width:65px;
+	}
+	
+	#comp3{
+	height:55px;
+    left: 62px;
+    margin: 0 auto;
+    position: absolute;
+    top: 270px;
+    width:65px;
+	}
+	#comp4{
+	height:55px;
+    left: 148px;
+    margin: 0 auto;
+    position: absolute;
+    top: 312px;
+    width:65px;
+	}
+	#comp5{
+	height:55px;
+    left: 241px;
+    margin: 0 auto;
+    position: absolute;
+    top: 315px;
+    width:65px;
+	}	
+	#comp6{
+	height:55px;
+    right: 55px;
+    margin: 0 auto;
+    position: absolute;
+    top: 274px;
+    width:65px;
+	}
+	
+	#comp7{
+	height:55px;
+    right: 24px;
+    margin: 0 auto;
+    position: absolute;
+    top: 191px;
+    width:65px;
+	}
+	
+	#comp8{
+	height:55px;
+    right: 55px;
+    margin: 0 auto;
+    position: absolute;
+    top: 115px;
+    width:65px;
+	}
+	#hubtext{
+    right: 135px;
+    margin: 0 auto;
+    position: absolute;
+    top: 64px;
+    width:65px;
+	height:auto;
+	}
+	
+	#comp1 span
+	{ font-size: 12px;
+    height: auto;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+	}
+	#comp2 span
+	{ font-size: 12px;
+    height: auto;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+	}
+	#comp3 span
+	{ font-size: 12px;
+    height: auto;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+	}
+	#comp4 span
+	{ font-size: 12px;
+    height: auto;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+	}
+	#comp5 span
+	{ font-size: 12px;
+    height: auto;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+	}
+	#comp6 span
+	{ font-size: 12px;
+    height: auto;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+	}
+	#comp7 span
+	{ font-size: 12px;
+    height: auto;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+	}
+	#comp8 span
+	{ font-size: 12px;
+    height: auto;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+	}
+	#button
+	{
+ height: 30px;
+    left: 143px;
+    margin: 0 auto;
+    position: absolute;
+    top: 375px;
+    width: 100px;
+	}
+	
+	#comp1 span img {position:absolute;top:0px;}
+	
+	#submit{
+		
+		background:url('button.png') top center no-repeat;
+		width:157px;
+		height:25px;
+		font-size:13px;
+		color:#fff;	
+		border:0px;	
+		text-align:center;
+		font-weight:bold;
+		}
+	
+#reset {
+		left: 0px;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		background:url('button.png') top center no-repeat;
+		width:157px;
+		height:25px;
+		font-size:13px;
+		color:#fff;	
+		border:0px;
+		text-align:center;
+		font-weight:bold;
+}
+
+#submit:hover{
+			background:url('hover_button.png') top center no-repeat;
+		width:157px;
+		height:25px;
+		font-size:13px;
+		color:#39F;	
+		border:0px;	
+		text-align:center;
+		font-weight:bold;
+}
+
+	
+
+#reset:hover
+{
+background:url('hover_button.png') top center no-repeat;
+		width:157px;
+		height:25px;
+		font-size:13px;
+		color:#39F;	
+		border:0px;	
+		text-align:center;
+		font-weight:bold;
+}
+
+#title{	
+	width:98%;
+	height:20px;
+	margin:0 auto;
+	text-align:center;
+	 font-size: 16px;
+	 position: relative;
+	top:15px
+
+		}
+	
+#Ins_text
+{
+	width:100%;
+	height:20px;
+	text-align:left;
+	position:absolute;
+	top:404px;
+	font-size:12px;
+}

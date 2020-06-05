@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.2.1 ESD e EMI</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos Seguros de Laboratório</h1>
+        <h2>Procedimentos para Proteger Equipamentos e Dados</h2>
+      </div>
+      <div id="content">
+          <p>Descarga Eletrostática.</p>
+          <p>Descarga eletrostática (ESD), climas ásperos e as fontes de energia de baixa qualidade podem causar danos a equipamentos de informática. Siga as orientações de manipulação, esteja ciente das questões ambientais e use um equipamento que estabiliza a energia para evitar danos aos equipamentos e a perda de dados.</p>
+          <p>A eletricidade estática é o acúmulo de carga elétrica em repouso sobre uma superfície. ESD ocorre quando esse acúmulo salta para um componente e causa danos. A ESD pode ser destrutiva para os componentes eletrônicos em um sistema de computador.</p>
+          <p>Pelo menos 3.000 volts de eletricidade estática devem ser liberados antes que uma pessoa possa sentir a ESD. Por exemplo, a eletricidade estática pode ser armazenada em você enquanto anda através em um piso de carpete. Quando você toca em uma outra pessoa, ambos recebem o choque. Se a descarga provoca dor ou faz um barulho, a carga provavelmente foi acima de 10.000 volts. Em comparação, menos de 30 volts de eletricidade estática pode danificar um componente do computador.</p>
+          <p>A ESD pode causar danos permanentes aos componentes elétricos. Siga estas recomendações para evitar danos causados por ESD:</p>
+          <p><ul>
+              <li>Mantenha todos os componentes em sacos anti-estáticos até que você esteja pronto para instalá-los.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use mantas anti-estáticas nas bancadas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use mantas anti-estáticas no local de trabalho.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use pulseiras anti-estáticas ao trabalhar com computadores.</li>
+            </ul>
+          </p>
+          <p>Interferência Eletromagnética</p>
+          <p>A interferência eletromagnética (EMI) é a intrusão de sinais eletromagnéticos externos em um meio de transmissão, como cabos de cobre. Num ambiente de rede, a EMI distorce os sinais de modo que os dispositivos de recepção têm dificuldade em interpretá-los.</p>
+          <p>EMI nem sempre vêm de fontes esperadas, como telefones celulares. Outros tipos de equipamentos elétricos podem emitir um campo eletromagnético silencioso e invisível, que pode se estender por mais de um quilômetro.</p>
+          <p>Existem muitas fontes de EMI:</p>
+          <p><ul>
+              <li>Qualquer fonte projetada para gerar energia eletromagnética</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Motores e linhas de alta tensão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Eventos naturais, como tempestades elétricas ou radiações solares e interestelar</li>
+            </ul>
+          </p>
+          <p>As redes sem fio são afetados pela interferência de rádio frequência (RFI). RFI é causada por transmissores de rádio e outros aparelhos de transmissão que usam a mesma frequência. Por exemplo, um telefone sem fio pode causar problemas em uma rede sem fio caso ambos os dispositivos utilizem a mesma frequência. O microondas também pode causar interferência quando posicionado próximo aos dispositivos de rede sem fio.</p>
+          <p>Clima</p>
+          <p>O clima afeta equipamento de várias formas:</p>
+          <p><ul>
+              <li>Se a temperatura ambiente for muito alta, o equipamento pode superaquecer.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Se o nível de umidade for muito baixo, a possibilidade de acontecer um ESD aumenta.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Se o nível de umidade for muito alto, o equipamento pode sofrer danos devido a umidade.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

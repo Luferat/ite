@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.1.2 Propriedades do Desktop</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Desktop, Ferramentas e Aplicações</h2>
+      </div>
+      <div id="content">
+          <p>Para personalizar a área de trabalho no Windows 7 e Windows Vista, clique com botão direito em qualquer lugar da área de trabalho e escolha Personalizar. No Windows 7, a janela de personalização, conforme apresentado na Imagem 1, possui três links à esquerda para mudar ícones, ponteiros de mouse e sua imagem da conta. Os temas são escolhidos a partir do painel à direita. Você pode modificar o tema do plano de fundo, cor, som e a proteção de tela com os quatro itens abaixo da janela.</p>
+          <p></p>
+          <p>A janela Personalização do Windows Vista possui sete links, conforme apresentado na Imagem 2, que permitem aos usuários ajustar a cor e a aparência da janela, mudar o plano de fundo, definir as configurações de exibição e muito mais. Cada link personaliza o ambiente de trabalho de uma forma particular.</p>
+          <p></p>
+          <p>Para personalizar a área de trabalho no Windows XP, clique com o botão direito em qualquer lugar da área de trabalho e escolha Propriedades. A janela Propriedades de vídeo, conforme apresentado na Imagem 3, usa abas. Cada guia personaliza as configurações de exibição de uma forma particular.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

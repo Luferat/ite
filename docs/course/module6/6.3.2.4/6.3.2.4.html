@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.2.4 Endereçamento Estático</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Endereçando os Equipamentos da Rede</h2>
+      </div>
+      <div id="content">
+          <p>Em uma rede com um número pequeno de hosts, é fácil configurar manualmente, em cada dispositivo, o endereço IP apropriado. Um administrador de rede que compreende o endereçamento IP deve atribuir os endereços e saber como escolher um endereço válido para uma rede particular. O endereço IP que é atribuído é único para cada host e ele deve fazer parte da mesma rede ou sub-rede. Isto é conhecido como endereçamento IP estático.</p>
+          <p>Para configurar um endereço IP estático em um host acesse a janela Propriedades do Protocolo TCP/IP versão 4 da NIC, como mostrado na Imagem 1. A NIC habilita um computador a se conectar a uma rede usando um endereço MAC. Considerando que o endereço de IP é um endereço lógico e que ele é definido pelo administrador de rede, um endereço MAC, mostrado na Imagem 2, é programado permanentemente (ou gravado) na placa de rede quando a mesma é fabricada. O endereço IP de uma placa de rede pode ser alterado, porém o endereço MAC não.</p>
+          <p>Você pode atribuir as seguintes informações de configuração de endereço IP a um host:</p>
+          <p><ul>
+              <li>Endereço IP - identifica o computador na rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Máscara de sub-rede - utilizada para identificar a rede na qual o computador está conectado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gateway padrão - identifica o dispositivo que o computador usa para acessar a Internet ou outras redes</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Valores opcionais - endereço do servidor DNS (Domain Name System) preferido e/ou alternativo.</li>
+            </ul>
+          </p>
+          <p>No Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Central de Rede e Compartilhamento> Alterar configuração do adaptador> botão direito do mouse em Conexão Local> Propriedades> Protocolo TCP/IP versão 4> Propriedades> Usar o seguinte endereço IP> Usar os seguintes endereços de servidor DNS> OK> OK</p>
+          <p>No Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Central de Rede e Compartilhamento> Gerenciar conexões de rede> botão direito do mouse em Conexão Local> Propriedades> Protocolo TCP/IP versão 4> Propriedades> Usar o seguinte endereço IP> Usar os seguintes endereços de servidor DNS> OK> OK</p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Conexões de Rede> botão direito do mouse em Conexão Local> Propriedades> Protocolo TCP/IP versão 4> Propriedades> Usar o seguinte endereço IP> Usar os seguintes endereços de servidor DNS> OK> OK</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

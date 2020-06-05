@@ -1,0 +1,174 @@
+﻿<textcomponents>
+
+
+<component id="ID_s1_title">
+  <text><![CDATA[<b>Módulos de Memória</b>]]></text> 
+  </component>
+  
+ <component id="ID_s1_btn01">
+  <text><![CDATA[<b>DIP</b>]]></text>
+  </component>
+<component id="ID_s1_btn02">
+  <text><![CDATA[<b>SIMM</b>]]></text> 
+  </component>
+<component id="ID_s1_btn03">
+  <text><![CDATA[<b>Memória DIMM</b>]]></text> 
+  </component>
+<component id="ID_s1_btn04">
+  <text><![CDATA[<b>RIMM</b>]]></text>
+  </component>
+<component id="ID_s1_btn05">
+  <text><![CDATA[<b>SODIMM</b>]]></text> 
+  </component>
+  
+ <component id="ID_s1_txt01">
+  <text><![CDATA[O Dual Inline Package é um chip de memória individual. O DIP tem duas fileiras de pinos utilizados para anexá-la à placa-mãe.]]></text>
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[Single Inline Memory Module é uma pequena placa de circuitos que contém vários chips de memória. A SIMM possui de 30 a 72 pinos.]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[Dual Inline Memory Module é uma placa de circuitos que suportam chips SDRAM, DDR SDRAM, DDR2 SDRAM, e DDR3 SDRAM. Existem DIMMs SDRAM de 168 pinos, DIMMs DDR de 184 pinos, DIMMs DDR2 e DDR3 de 240 pinos.]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[RAMBus Inline Memory Module é uma placa de circuito que suportam chips RDRAM. Uma RIMM típica possui 184 pinos.]]></text>
+  </component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[Small Outline DIMM tem de 72 e 100 pinos para suportar transferências de 32 bits ou de 144, 200 e 204 pinos para suportar transferências de 64 bits. Esta versão menor, mais condensada de DIMM fornece acesso aleatório ao armazenamento de dados que é ideal para uso em laptops, impressoras e outros dispositivos onde é desejável a conservação do espaço.]]></text> 
+  </component> 
+  
+  
+
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+			<td colspan='4' bgcolor='#DAE17A' class="title"><font color='#393536'><b>Tipos de Memórias e Características</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='4' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23'  valign="top" width="107"><font color='#ffffff '><b>Tipos de Memória</b></font></td>
+		<td bgcolor='#A2AA23'  valign="top" width="100" ><font color='#ffffff '><b>Nome Industrial</b></font></td>
+		<td bgcolor='#A2AA23'  valign="top" width="100"><font color='#ffffff '><b>Taxa de Transferência Máxima</b></font></td>
+		<td bgcolor='#A2AA23'  valign="top" width="100"><font color='#ffffff '><b>Barramento</b></font></td>
+	</tr>
+	
+	<tr>
+		<td height="30" bgcolor='#F3F5E7' valign="top"><font color='#393536'>PC100 SDRAM</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>PC-100</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>800 MB/s</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>100 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>PC133 SDRAM</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>PC-133</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>1060 MB/s</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>133 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>DDR-333</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>PC-2700</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>2700 MB/s</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>166 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>DDR-400</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>PC-3200</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>3200 MB/s</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>200 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>DDR2-667</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>PC2-5300</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>5333 MB/s</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>667 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>DDR3-1600</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>PC3-12800</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>12800 MB/s</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>1600 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>DDR2-800</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>PC2-6400</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>6400 MB/s</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>400 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>DDR3-1333</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>PC3-10600</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>10667 MB/s</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>1333 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>DDR3-1866</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>PC3-14900</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>14933 MB/s</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1867 MHz</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>DDR3-2133</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>PC3-17000</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>17066 MB/s</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>2133 MHz</font></td>
+	</tr>
+</table>]]></text>
+</component>  
+  
+  
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Memória Cache</b>]]></text> 
+  </component>
+  
+ <component id="ID_s3_btn01">
+  <text><![CDATA[<b>L1</b>]]></text>
+  </component>
+<component id="ID_s3_btn02">
+  <text><![CDATA[<b>L2</b>]]></text> 
+  </component>
+<component id="ID_s3_btn03">
+  <text><![CDATA[<b>L3</b>]]></text> 
+  </component>
+  
+ <component id="ID_s3_txt01">
+  <text><![CDATA[A cache L1 é uma memória cache interna integrada a CPU.]]></text>
+  </component>
+<component id="ID_s3_txt02">
+  <text><![CDATA[A cache L2 é uma memória cache externa e foi originalmente montada na placa-mãe, próximo a CPU. Atualmente, a cache L2 é integrada a CPU.]]></text> 
+  </component>
+<component id="ID_s3_txt03">
+  <text><![CDATA[A cache L3 é usada em algumas CPUs de alto desempenho de estações trabalho e de servidores.]]></text> 
+  </component>
+  
+  
+<component id="ID_s4_title">
+  <text><![CDATA[<b>Erros de Memória</b>]]></text> 
+  </component>
+  
+ <component id="ID_s4_btn01">
+  <text><![CDATA[<b>Sem paridade</b>]]></text>
+  </component>
+<component id="ID_s4_btn02">
+  <text><![CDATA[<b>Paridade</b>]]></text> 
+  </component>
+<component id="ID_s4_btn03">
+  <text><![CDATA[<b>ECC</b>]]></text> 
+  </component>
+  
+ <component id="ID_s4_txt01">
+  <text><![CDATA[Memória sem paridade não verifica se há erros na memória.]]></text>
+  </component>
+<component id="ID_s4_txt02">
+  <text><![CDATA[Memória de paridade contém oito bits para dados e um bit para verificação de erros. O bit de verificação de erros é chamado de bit de paridade.]]></text> 
+  </component>
+<component id="ID_s4_txt03">
+  <text><![CDATA[A memória com ECC (Error Correction Code) pode detectar vários erros de bit na memória e corrigir os erros de um único bit.]]></text> 
+  </component>
+  
+  
+<component id="transcript">
+  <text><![CDATA[<b>transcrição vai aqui</b>]]></text> 
+  </component>
+</textcomponents>

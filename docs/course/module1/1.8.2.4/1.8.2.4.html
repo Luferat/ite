@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.2.4 Advanced NIC Settings</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Network Cards</h2>
+    </div>
+    <div id="content">
+          <p>In most network environments, the only computer NIC setting that you must configure is the IP address information. You can leave the advanced NIC settings at their default values. However, when a computer connects to a network that does not support some or all of the default settings, you must make the necessary changes to the advanced settings. These changes may be required so that the computer can connect to the network, enable features required by the network, or achieve a better network connection. </p>
+          <p></p>
+          <p>Improperly setting the advanced features can lead to connection failure or performance degradation. Advanced features are located in the Advanced tab in the NIC configuration window. The Advanced tab contains all the parameters that the NIC manufacturer has available. </p>
+          <p></p>
+          <p>
+            <b>Note: </b>The Advanced features available and tab layout of features depend on the OS and the specific NIC adapter and driver installed.</p>
+          <p></p>
+          <p>
+            <b>Duplex and Speed</b>
+            <br/>Duplex and speed settings for a NIC can slow down data transfer rates on a computer if they are not matched with the device to which they are connected. A duplex mismatch is when a NIC with a specific link speed or duplex is connected to a NIC set with different values. The default is auto, but you may have to change either the duplex, speed, or both. Figure 1 shows duplex and speed settings. </p>
+          <p></p>
+          <p>
+            <br/>Wake on LAN (WoL)WoL settings are used to wake up a networked computer from a very low power mode state. Very low power mode means that the computer is turned off but is still connected to a power source. To support WoL, the computer must have an ATX-compatible power supply and a WoL-compatible NIC. A wake-up message, called a magic packet, is sent to the NIC of the computer. The magic packet contains the MAC address of the NIC connected to the computer. When the NIC receives the magic packet, the computer wakes up.</p>
+          <p></p>
+          <p>You configure WoL in either the motherboard BIOS or the NIC driver firmware. Figure 2 shows the configuration in the drive firmware.</p>
+          <p></p>
+          <p>
+            <b>Quality of Service (QoS)</b>
+          </p>
+          <p>QoS, also called 802.1q QoS, is a variety of techniques that control the flow of network traffic, improve transmission speeds, and improve real-time communications traffic. Both the networked computer and the network device must have QoS enabled for the service to function. When QoS is installed and enabled on a computer, Windows can limit available bandwidth to accommodate high-priority traffic. When QoS is disabled, all traffic is treated equally. Figure 3 shows the installation of the Windows platform component called QoS Packet Scheduler.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

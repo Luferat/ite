@@ -1,0 +1,47 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+    margin:0;
+    height:100%;
+
+}
+#flashContent {
+    width:98%;
+    height:98%;
+}
+
+#mainDiv {
+    height: 400px;
+    width: 470px;
+    position:absolute;
+    top:0px;
+
+}
+#ID_FEEDBACK{cursor:pointer !important;}
+
+#tick0,#tick1,#tick2,#tick3,#tick4,#tick5,#tick6,#tick7,#tick8,#tick9,#tick10,#tick11{position:absolute;top:4px; left:-18px !important}
+#ID_DnD_inst_title{margin-left:88px;left:5px !important;top:35px !important;}
+#ID_DnD_inst_body1{margin-left:84px;font-size:12px !important;left:11px !important;top:54px !important;}
+#continueDiv{margin-left:60px;}
+#ID_HELP{margin-left:1px;top:20px !important;padding:0px;border:0px;}
+
+#button0 div {font-size: 12px !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    padding-top: 2px !important;
+    text-align: center !important;
+}
+
+#button1 div {font-size: 12px !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    padding-top: 2px !important;
+    text-align: center !important;
+}
+
+#ID_HELP > img {
+    width: 482px !important;
+}

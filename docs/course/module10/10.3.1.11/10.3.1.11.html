@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.3.1.11 Mantendo Contas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas Comuns de Manutenção Preventiva de Segurança</h1>
+        <h2>Manutenção de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Os funcionários de uma organização muitas vezes solicitam diferentes níveis de acesso aos dados. Por exemplo, o gerente e o contador de uma empresa podem ser os únicos funcionários que possuem acesso às folha de pagamento.</p>
+          <p>Os funcionários podem ser agrupados pelas competências do trabalho e receber o acesso aos arquivos de acordo com as permissões do grupo. Este processo ajuda a controlar o acesso dos funcionários à rede. Contas temporárias podem ser configuradas para os funcionários que precisam de acesso por um curto período de tempo. O gerenciamento controlado do acesso à rede ajuda a limitar as áreas de vulnerabilidade que podem permitir que um vírus ou software malicioso entre na rede.</p>
+          <p>Finalizando o Acesso de um Funcionário</p>
+          <p>Quando um empregado deixa a organização, o acesso aos dados e dispositivos da rede devem ser encerrados imediatamente. Caso um ex-funcionário tenha algum arquivo armazenado em uma pasta no servidor, elimine o acesso desativando a sua conta. Caso o funcionário substituto solicite acesso aos aplicativos e pastas, você poderá reativar a conta do ex-funcionário e renomeá-la, utilizando o nome do novo funcionário.</p>
+          <p>Contas de Convidado</p>
+          <p>Os convidados e empregados temporários possivelmente precisarão de acesso à rede. Por exemplo, o visitante poderá solicitar acesso ao e-mail, Internet ou a uma impressora de rede. Estes recursos podem ser disponibilizados em uma conta especial chamada Convidado (Guest). Quando um convidado estiver presente, eles poderão utilizar a conta Convidado. Quando não houver convidado, a conta poderá ser desativada até que seja necessário utilizá-la novamente.</p>
+          <p>Em alguns casos as contas de convidados necessitam de acessos específicos aos recursos de rede, como as contas utilizadas por um consultor ou auditor financeiro. Este tipo de acesso deve ser concedido apenas pelo período necessário para que o funcionário finalize o seu trabalho.</p>
+          <p>Para configurar todos os usuários e grupos em um computador, digite lusrmgr.msc na caixa de pesquisa ou no utilitário Executar.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

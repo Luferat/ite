@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.3.6 Testing Connectivity with the Windows</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Wireless and Wired Router Configurations</h2>
+    </div>
+    <div id="content">
+          <p>
+            <b>Page Text:</b>
+          </p>
+          <p>When all devices are connected and all link lights are functioning, test the network for connectivity. This test can determine if you are connected to a wireless access point, home gateway, or the Internet. The easiest way to test for an Internet connection is to open a web browser and see if the Internet is available. To troubleshoot a wireless connection, you can use the Windows GUI or CLI.</p>
+          <p>In Windows 7, to verify a wireless connection, select <b>Start > Control Panel > Network and Sharing Center > Change adapter settings</b>. Then double-click <b>Wireless Network Connection</b> to display the status screen.</p>
+          <p>In Windows Vista, to verify a wireless connection, select <b>Start > Control Panel > Network and Sharing Center > Manage Network Connections</b>. Then double-click <b>Wireless Network Connection</b> to display the status screen.</p>
+          <p>In Windows XP, to verify a wireless connection, select <b>Start > Control Panel > Network Connections</b>. Then double-click <b>Wireless Network Connection</b> to display the status screen.</p>
+          <p>The Wireless Network Connection Status screen shown in Figure 1 displays the number of packets that have been sent and received. The packets are the communication between the computer and the network device. The window shows whether or not the computer is connected, along with the speed and duration of the connection.</p>
+          <p>For either Windows 7 or Windows Vista, click the <b>Details </b>button. The Connection Status information includes either a static address or a dynamic address. The subnet mask, default gateway, MAC address, and other information about the IP address are also listed. If the connection is not functioning correctly, click <b>Diagnose</b> to reset the connection information and attempt to establish a new connection.</p>
+          <p>For Windows XP, to display the <b>Address Type</b>, click the <b>Support</b> tab. The Connection Status information includes either a static address, which is assigned manually, or a dynamic address, which is assigned by a DHCP server. The subnet mask and default gateway are also listed. To access the MAC address and other information about the IP address, click <b>Details</b>. If the connection is not functioning correctly, click <b>Repair</b> to reset the connection information and attempt to establish a new connection.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

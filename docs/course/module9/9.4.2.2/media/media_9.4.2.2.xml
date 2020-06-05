@@ -1,0 +1,59 @@
+﻿<textcomponents>
+	<component id="ID_title">
+	 	 <text><![CDATA[<b>Compartilhar a Impressora</b>]]></text> 
+	</component>
+	<component id="ID_txt01">
+	 	 <text><![CDATA[<b>Geral</b>]]></text> 
+	</component>
+	<component id="ID_txt02">
+	 	 <text><![CDATA[<b>Compartilhamento</b>]]></text> 
+	</component>
+	<component id="ID_txt03">
+	 	 <text><![CDATA[<b>Portas</b>]]></text> 
+	</component>
+	<component id="ID_txt04">
+	 	 <text><![CDATA[<b>Avançado</b>]]></text> 
+	</component>
+	<component id="ID_txt05">
+	 	 <text><![CDATA[<b>Gerenciamento de Cores</b>]]></text> 
+	</component>
+	<component id="ID_txt06">
+	 	 <text><![CDATA[<b>Segurança</b>]]></text> 
+	</component>
+	<component id="ID_txt07">
+	 	 <text><![CDATA[<b>Você pode compartilhar esta impressora com outros usuários da rede. Para compartilhar esta impressora, clique em Compartilhar esta impressora. Se você compartilhar esta impressora, o Firewall do Windows será configurado para permitir que esta impressora seja compartilhada com outros usuários da rede.</b>]]></text> 
+	</component>
+	<component id="ID_txt08">
+	 	 <text><![CDATA[<b>Não compartilhar esta impressora</b>]]></text> 
+	</component>
+	<component id="ID_txt09">
+	 	 <text><![CDATA[<b>Compartilhar impressora</b>]]></text> 
+	</component>
+	<component id="ID_txt10">
+	 	 <text><![CDATA[<b>Nome de compartilhamento</b>]]></text> 
+	</component>
+	<component id="ID_txt11">
+	 	 <text><![CDATA[<b>Cisco Share</b>]]></text> 
+	</component>
+	<component id="ID_txt13">
+	 	 <text><![CDATA[<b>Listar no diretório</b>]]></text> 
+	</component>
+	<component id="ID_txt14">
+	 	 <text><![CDATA[<b>Drivers</b>]]></text> 
+	</component>
+	<component id="ID_txt15">
+	 	 <text><![CDATA[<b>Se esta impressora for compartilhada entre usuários que executam diferentes versões do Windows, convém instalar drivers de impressora adicionais para que os usuários não precisem procuram por um driver quando se conectarem à impressora compartilhada.</b>]]></text> 
+	</component>
+	<component id="ID_txt16">
+	 	 <text><![CDATA[<b>Drivers Adicionais...</b>]]></text> 
+	</component>
+	<component id="ID_txt17">
+	 	 <text><![CDATA[<b>OK</b>]]></text> 
+	</component>
+	<component id="ID_txt18">
+	 	 <text><![CDATA[<b>Cancelar</b>]]></text> 
+	</component>
+	<component id="ID_txt19">
+	 	 <text><![CDATA[<b>Aplicar</b>]]></text> 
+	</component>
+</textcomponents>

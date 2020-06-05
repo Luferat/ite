@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.4.5 Compartilhamento de Recursos no Windows XP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>O Assistente de Configuração de Rede do Windows XP, conforme apresentado na figura, define as configurações utilizadas pelo computador para criar uma rede doméstica e compartilhar recursos. O assistente configura os seguintes itens:</p>
+          <p></p>
+          <p><ul>
+              <li>A conexão de Internet do computador através de conexões dial-up, banda larga ou através de outro computador do grupo doméstico.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhamento de Conexão com a Internet em um computador Windows XP para que ele possa compartilhar a sua conexão de Internet com outros computadores da rede doméstica.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Nome do computador, descrição do computador e o nome do grupo de trabalho</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhar arquivos e impressoras</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Para acessar o Assistente de Configuração de Rede, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Assistente de Configuração de Rede</p>
+          <p></p>
+          <p>O Assistente de Configuração de Rede é portátil. Você pode criar um disco contendo o Assistente de Configuração de Rede para configurar automaticamente outros computadores.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.2.6 Uso Apropriado da Netiqueta</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Habilidades de Comunicação e Profissionais de TI</h1>
+        <h2>Trabalhando com um Cliente</h2>
+      </div>
+      <div id="content">
+          <p>Você já leu um fórum online onde dois ou três membros pararam de discutir sobre uma questão e começaram a insultar uns aos outros? Essas situações são chamadas de flame wars e elas ocorrem em blogs e através de e-mails. Alguma vez você já se perguntou se eles realmente dizem essas coisas pessoalmente? Talvez você já tenha recebido um e-mail que não tinha saudação ou estava escrito inteiramente em letras maiúsculas. Como você se sentiu enquanto o lia?</p>
+          <p>Como técnico, você deve ser profissional em todas as comunicações feitas com os clientes. Para a comunicação via texto ou e-mail, existe um conjunto de regras de etiqueta pessoal e empresarial chamado de Netiqueta (Netiquette).</p>
+          <p>Além disso, existem regras gerais que se aplicam a todas as suas interações on-line com os clientes e colegas de trabalho:</p>
+          <p><ul>
+              <li>Respeite o tempo das outras pessoas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compartilhe o conhecimento especializado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Respeite a privacidade das outras pessoas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Seja tolerante aos erros dos outros.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

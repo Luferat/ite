@@ -1,0 +1,165 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text>
+<![CDATA[<b> </b>]]>
+</text>
+</component>
+
+<component id='ID_table_01'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1: Identificar o Problema</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Questões Abertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Quais os problemas que você está tendo?</li>
+<li>Quando o problema começou?</li>
+<li>Como você está conectado à internet?</li>
+<li>Qual tipo de firewall você está usando?</li>
+<li>Qual software de segurança está instalado no seu computador?</li>
+<li>Quais recursos de rede você pode acessar usando a rede wireless?</li>
+<li>Quais permissões de recursos que você tem?</li></font></textformat>
+</td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#FFFFFF'><font color='#393536'>Questões Fechadas</font></td>
+<td  valign="top" bgcolor='#FFFFFF'><textformat blockindent='-18'><font color='#393536'><li>Você tem um firewall?</li>
+<li>Alguma outra pessoa usou o computador?</li>
+<li>O seu software de segurança está atualizado?</li>
+<li>Você realizou recentemente uma varredura em buscas de vírus no seu computador?</li>
+<li>Você já teve esse problema antes?</li>
+<li>Você alterou sua senha recentemente?</li>
+<li>Você recebeu alguma mensagem de erro no computador?</li>
+<li>Você compartilhou sua senha com alguém?</li>
+<li>Você tem permissão para o recurso?</li></font></textformat>
+</td>
+</tr>		
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_02'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 2: Estabelecer uma Teoria da Provável Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Causas comuns de problemas de segurança</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>A conta do usuário está desativada.</li>
+<li>O usuário está usando um username ou senha incorreto.</li>
+<li>O usuário não tem permissão na pasta ou arquivo correto.</li>
+<li>As configurações de firewall estão incorretas.</li>
+<li>O computador do usuário foi infectado por um vírus.</li>
+<li>As configurações de segurança no cliente sem fio estão incorretas.</li>
+<li>As configurações de segurança do ponto de acesso sem fio estão incorretas.</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_03'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 3: Teste a Teoria para Determinar a Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Verifique as configurações da conta do usuário.</li>
+<li>Redefina a senha do usuário.</li>
+<li>Verifique as permissões do usuário para as pastas e arquivos.</li>
+<li>Verifique os logs de erros do firewall.</li>
+<li>Verifique as configurações de firewall.</li>
+<li>Faça uma varredura e remova os vírus do computador.</li>
+<li>Verifique a configuração de segurança do cliente sem fio.</li>
+<li>Verifique a configuração de segurança no ponto de acesso sem fio.</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_04'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 4: Estabelecer um Plano de Ação para Verificar o Problema e Implementar a Solução</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Se, na etapa anterior, nenhuma solução for alcançada, novas pesquisas serão necessárias para implementar a solução</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Logs de Reparação do Helpdesk</li>
+<li>Outros Técnicos</li>
+<li>FAQs do Fabricante</li>
+<li>Websites Técnicos</li>
+<li>Grupos de notícias</li>
+<li>Manuais do Computador</li>
+<li>Manuais dos Dispositivos</li>
+<li>Fóruns on-line</li>
+<li>Busca na Internet</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_05'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 5: Verifique a funcionalidade completa do sistema e, se necessário, implemente as medidas preventivas</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Verifique a Solução e a Funcionalidade Completa do Sistema</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Reinicie o computador.</li>
+<li>Faça logon no computador.</li>
+<li>Conecte-se à rede wireless.</li>
+<li>Verifique o acesso aos arquivos e pastas.</li>
+<li>Verifique se nenhum vírus é encontrado na varredura.</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_06'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 6: Documente as Descobertas, Ações e Resultados</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Documente as Descobertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Discuta a solução implementada com o cliente.</li>
+<li>Peça para o cliente verificar se o problema foi resolvido</li>
+<li>Fornecer os documentos ao cliente.</li>
+<li>Documente as medidas tomadas para resolver o problema na ordem de trabalho e no diário do técnico.</li>
+<li>Documente quaisquer componentes utilizados no reparo.</li>
+<li>Documente o tempo gasto para resolver o problema.</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+</textcomponents>

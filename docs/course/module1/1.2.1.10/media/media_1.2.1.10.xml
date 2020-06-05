@@ -1,0 +1,154 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Conectores Comuns de Entradas e Saída</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>PS/2 USB USB</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Áudio Digital HDMI</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>VGA DVI</b>]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>USB 3.0 USB 3.0</b>]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[<b>Ethernet USB USB</b>]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>Áudio</b>]]></text>
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Plugs e Conectores Comuns de USB 1.1 e 2.0</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Plugs</b>]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[Tipo A]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[Tipo B]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[Mini-B]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[Micro-A]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[Micro-B]]></text>
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[<b>Conectores</b>]]></text>
+</component>
+<component id="ID_s2_txt08">
+<text><![CDATA[Tipo A]]></text>
+</component>
+<component id="ID_s2_txt09">
+<text><![CDATA[Tipo B]]></text>
+</component>
+<component id="ID_s2_txt10">
+<text><![CDATA[Mini-B]]></text>
+</component>
+<component id="ID_s2_txt11">
+<text><![CDATA[Micro-AB]]></text>
+</component>
+<component id="ID_s2_txt12">
+<text><![CDATA[Micro-B]]></text>
+</component>
+
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Plugs e Conectores Comuns de USB 3.0</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>USB 3.0 B</b>]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>USB 3.0 A</b>]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[<b>USB 3.0 Micro</b>]]></text>
+</component>
+
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Velocidade do PATA e SATA</b>]]></text>
+</component> 
+
+<component id='ID_s4_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DAE17A' colspan='2'><font color="#393536"><b>Velocidade do PATA e SATA</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' width='225' valign="top"><font size='12' color='#FFFFFF'><b>Interface</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font size='12' color='#FFFFFF'><b>Velocidade</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>ATA-1 (IDE)</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>8.3 MB/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>ATA-2 (EIDE)</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>16.6 MB/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>ATA-3 (EIDE) (Revisão Menor)</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>16.6 MB/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>ATA-4 (Ultra-ATA/33)</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>33.3 MB/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>ATA-5 (Ultra-ATA/66)</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>66.7 MB/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>ATA-6 (Ultra-ATA/100)</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>100 MB/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>ATA-7 (Ultra-ATA/133)</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>133 MB/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>SATA 1.0</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>1.5 Gb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>SATA 2.0</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>3 Gb/s</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>SATA 3.0</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>6 Gb/s</font></td>
+	</tr>	
+</table>]]>
+</text>
+</component>
+
+
+</textcomponents>

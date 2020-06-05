@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.3.5 Basic Wireless Settings</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Wireless and Wired Router Configurations</h2>
+    </div>
+    <div id="content">
+          <p>After establishing the connection to a router, it is good practice to configure some basic settings to help secure and increase the speed of the wireless network. All following wireless settings are under the Wireless tab, as shown in Figure 1. </p>
+          <p>
+            <ul>
+              <li>802.11 protocol selection</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Service Set Identifier (SSID) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Channel</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Wireless security modes</li>
+            </ul>
+          </p>
+          <p>
+            <b>802.11 Protocol Selection</b>
+            <br/>The 802.11 protocol can provide increased throughput based on the wireless network environment. If all wireless devices connect with the same 802.11 standard, maximum speeds can be obtained for that standard. If the access point is configured to accept only one 802.11 standard, devices that do not use that standard cannot connect to the access point.  </p>
+          <p>A mixed mode wireless network environment can include 802.11a, 802.11b, 802.11g, and 802.11n. This environment provides easy access for legacy devices that need a wireless connection. </p>
+          <p>
+            <br/>SSIDThe SSID is the name of the wireless network. The SSID broadcast allows other devices to automatically discover the name of the wireless network. When the SSID broadcast is disabled, you must manually enter the SSID on wireless devices. </p>
+          <p>Disabling SSID broadcasting can make it more difficult for legitimate clients to find the wireless network. Simply turning off the SSID broadcast is not sufficient to prevent unauthorized clients from connecting to the wireless network. Instead of turning off the SSID broadcast, use stronger encryption, such as WPA or WPA2.</p>
+          <p>
+            <b>Channel</b>
+            <br/>Wireless devices that transmit over the same frequency range create interference. Home electronic devices, such as cordless phones, other wireless networks, and baby monitors, may use this same frequency range. These devices can slow down the Wi-Fi performance and potentially break network connections. </p>
+          <p></p>
+          <p>
+            <a type="external" target="http://compnetworking.about.com/cs/wireless80211/g/bldef_80211b.htm">802.11b</a> and <a type="external" target="http://compnetworking.about.com/cs/wireless80211/g/bldef_80211g.htm">802.11g</a> standards transmit in a narrow radio frequency range of 2.4 GHz. The 2.4 GHz Wi-Fi signal range is divided into a number of smaller bands, also called channels. Setting this Wi-Fi channel number is a way to avoid wireless interference.</p>
+          <p></p>
+          <p>Channel 1 uses the lowest frequency band and each subsequent channel slightly increases the frequency. The further apart two channel numbers are, the less the degree of overlap and likelihood of interference. Channels 1 and 11 do not overlap with the default channel 6. It is good practice to use one of these three channels for best results. For example, if you experience interference with a neighbor's WLAN, change to a distant channel. </p>
+          <p>
+            <b>Wireless Security Modes</b>
+            <br/>Most wireless access points support several different security modes. The most common ones are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Wired Equivalent Privacy (WEP)</b> – Encrypts the broadcast data between the wireless access point and the client using a 64-bit or 128-bit encryption key.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Temporal Key Integrity Protocol (TKIP)</b> – This WEP patch automatically negotiates a new key every few minutes. TKIP helps to prevent attackers from gaining enough data to break the encryption key.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Advanced Encryption Standard (AES) </b>– A more secure encryption system than TKIP. AES also requires more computing power to run the stronger encryption.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Wi-Fi Protected Access (WPA)</b> – An improved version of WEP created as a temporary solution until 802.11i became ratified. Now that 802.11i has been ratified, WPA2 has been released. It covers the entire 802.11i standard. WPA uses much stronger encryption than WEP encryption. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Wi-Fi Protected Access 2 (WPA2)</b> – An improved version of WPA that supports robust encryption, which provides government-grade security. WPA2 can be enabled with password authentication (personal) or server authentication (enterprise). </li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

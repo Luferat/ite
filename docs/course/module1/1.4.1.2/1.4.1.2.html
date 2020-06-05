@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.1.2 Audio and Video Editing Workstations</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Configurations for Specialized Computer Systems</h1>
+      <h2>Specialized Computer Systems</h2>
+    </div>
+    <div id="content">
+          <p>An audio and video editing workstation is used during many stages of development when creating audio and video material. An audio editing workstation is used to record music, create music CDs, and CD labels. A video editing workstation can be used to create television commercials, prime-time programming, and movies for the theater or home movies. </p>
+          <p></p>
+          <p>Specialized hardware and software are combined to build a computer to perform audio and video editing. Audio software on an audio editing workstation, shown in the figure, is used to record audio, manipulate how the audio sounds through mixing and special effects, and finalize recordings for publication. Video software is used to cut, copy, combine, and change video clips. Special effects are also added to video using video software. Consider the following hardware when you need to run audio and video editing software:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Specialized audio card</b> - When recording music to a computer in a studio, multiple inputs from microphones and many outputs to effects equipment may be needed. An audio card capable of handling all these inputs and outputs is needed. Research different audio card manufacturers and understand the needs of your customer to install an audio card that will meet all the needs of a modern recording or mastering studio.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Specialized video card</b> - A video card that can handle high resolutions and multiple displays is necessary to combine and edit different video feeds and special effects in real time. You must understand the needs of the customer and research video cards to install a card that can handle the high amounts of information that comes from modern cameras and effects equipment.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Large, fast hard drive</b> - Modern video cameras record in high resolution at fast frame rates. This translates into a high amount of data. Small hard drives will fill up very quickly, and slow hard drives will not be able to keep up with demands, even dropping frames at times. A large, fast hard drive is necessary to record high-end video without errors or missed frames. RAID levels such as 0 or 5, where striping is used, can help to increase storage speed.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dual monitors</b> - When working with audio and video, two, three, or even more monitors can be very helpful to keep track of everything that is going on with multiple tracks, scenes, equipment, and software. Find out how your customer likes to work to decide how many monitors is most beneficial. If multiple monitors are required, specialized video cards are necessary when building an audio or video workstation.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

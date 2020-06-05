@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.3.1.1 Instalando uma Impressora</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação e Configuração de Impressoras</h1>
+        <h2>Instalação e Atualização de Drivers, Firmware e RAM</h2>
+      </div>
+      <div id="content">
+          <p>Quando você compra uma impressora, normalmente as informações sobre a instalação e configuração são fornecidas pelo fabricante. Um CD de instalação que contém os drivers, manuais e software de diagnóstico está incluso com a impressora. Caso não haja um CD, você pode baixar as ferramentas no site do fabricante.</p>
+          <p>Embora todos os tipos de impressoras possuam um métodos de configuração e conexão diferentes, existem procedimentos que devem ser aplicados em todas as impressoras. Antes de instalar a impressora, remova todo o material de embalagem. Remova qualquer material que impede que as partes móveis se desloquem durante o transporte. Guarde a embalagem original, pois ela será necessária caso você precise devolver a impressora ao fabricante para fazer uso do serviço de garantia.</p>
+          <p>NOTA: Antes de conectar a impressora ao computador, leia as instruções de instalação. Em alguns casos, o driver da impressora precisa ser instalado antes da impressora ser conectada ao PC.</p>
+          <p>Você pode conectar e usar uma impressora de forma local ou de rede. Algumas impressoras podem ser conectadas de ambas as formas. Uma impressora local está diretamente conectada a uma porta do computador, utilizando portas como USB, paralela ou serial. O computador local gerencia e envia os trabalhos de impressão para a impressora. Impressoras locais podem ser compartilhadas com outros usuários através da rede. Uma impressora de rede é conectada em uma rede utilizando uma conexão sem fio ou Ethernet. A impressora de rede permite que vários usuários enviem documentos para a mesma através da rede.</p>
+          <p>Se a impressora tiver uma porta USB, FireWire ou paralela, conecte o cabo correspondente à porta da impressora. Ligue a outra extremidade do cabo de dados para a porta correspondente, localizada na parte de traseira do computador. Se você estiver instalando uma impressora de rede, conecte o cabo de rede à porta de rede.</p>
+          <p>Depois que o cabo de dados for conectado corretamente, conecte o cabo de alimentação à impressora. Ligue a outra extremidade do cabo de alimentação em uma tomada elétrica disponível. Quando você ligar o dispositivo na energia, o computador tentará determinar o driver correto do dispositivo.</p>
+          <p>CUIDADO: Nunca conecte uma impressora em um no-break (UPS). A oscilação de energia que é gerada quando a impressora está ligada prejudica a unidade UPS.</p>
+          <p>As impressoras podem ser compartilhadas em uma rede. Conectar uma impressora a uma rede exige um cabeamento compatível tanto com a rede existente, quanto com a interface de rede instalada na impressora. A maioria das impressoras de rede usam uma interface RJ-45 para se conectar à rede.</p>
+          <p>NOTA: Sempre verifique se os cabos da impressora que você comprou estão dentro da embalagem. Muitos fabricantes reduzem o preço do produto ao não incluir os cabos na impressora. Se você tiver que comprar um cabo, certifique-se de comprar o tipo correto.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

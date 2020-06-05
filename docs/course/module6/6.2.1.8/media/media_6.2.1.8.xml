@@ -1,0 +1,71 @@
+﻿<textcomponents>
+	<component id="ID_title">
+   <text><![CDATA[<b>Atividades - Tipos de Rede</b>]]></text>
+   </component>
+   
+   
+   
+   <component id="ID_term01">
+		<text><![CDATA[<b>LAN</b>]]></text> 
+	</component>
+	<component id="ID_term02">
+		<text><![CDATA[<B>WAN</B>]]></text> 
+	</component>
+	<component id="ID_term03">
+		<text><![CDATA[<B>WLAN</B>]]></text> 
+	</component>
+<component id="ID_term04">
+		<text><![CDATA[<B>PAN</B>]]></text> 
+	</component>
+<component id="ID_term05">
+		<text><![CDATA[<B>MAN</B>]]></text> 
+	</component>
+<component id="ID_term06">
+		<text><![CDATA[<B>Ponto a Ponto</B>]]></text> 
+	</component>
+<component id="ID_term07">
+		<text><![CDATA[<B>Cliente/Servidor</B>]]></text> 
+	</component>
+	<component id="ID_drag01">
+		<text><![CDATA[Este tipo de rede utiliza conexões cabeadas em um único grupo administrativo.]]></text> 
+	</component>
+	<component id="ID_drag02">
+		<text><![CDATA[Este tipo de rede usa muitas tecnologias para conectar redes distantes.]]></text> 
+	</component>
+	<component id="ID_drag03">
+		<text><![CDATA[Este tipo de rede utiliza pontos de acesso (APs) e placas de rede sem fio para fornecer conectividade.]]></text> 
+	</component>  
+	<component id="ID_drag04">
+		<text><![CDATA[Este tipo de rede conecta dispositivos dentro do intervalo individual de uma pessoa.]]></text> 
+	</component>  
+	<component id="ID_drag05">
+		<text><![CDATA[Este tipo de rede pode abranger uma cidade.]]></text> 
+	</component>  
+	<component id="ID_drag06">
+		<text><![CDATA[Este tipo de rede não possui uma administração centralizada.]]></text> 
+	</component>  
+	<component id="ID_drag07">
+		<text><![CDATA[Este tipo de rede possui uma administração centralizada.]]></text> 
+	</component>   
+   
+   	<component id="ID_CORRECT_TITLE">
+		<text><![CDATA[Correto]]></text> 
+	</component>
+	<component id="ID_CORRECT_BODY">
+		<text><![CDATA[Está correto.]]></text> 
+	</component>
+	<component id="ID_INCORRECT_TITLE">
+		<text><![CDATA[Incorreto]]></text> 
+	</component>
+	<component id="ID_INCORRECT_BODY">
+		<text><![CDATA[Está incorreto.]]></text> 
+	</component>
+   
+   	<component id="ID_CHECK">
+		<text><![CDATA[Verificar]]></text> 
+	</component>
+	<component id="ID_RESET">
+		<text><![CDATA[Redefinir]]></text> 
+	</component>
+ 
+</textcomponents>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.1.1 Segurança Geral</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos Seguros de Laboratório</h1>
+        <h2>Procedimentos de Proteção Pessoal</h2>
+      </div>
+      <div id="content">
+          <p>Condições de trabalho seguras ajudam a prevenir lesões às pessoas e danos a equipamentos de informática. Um espaço de trabalho seguro é limpo, organizado e bem iluminado. Todos devem entender e seguir os procedimentos de segurança.</p>
+          <p>Siga as instruções básicas de segurança para evitar cortes, queimaduras, choque elétrico e danos à visão. Como uma prática recomendada, certifique-se de que o extintor de incêndio e o kit de primeiros socorros estão disponíveis em caso de incêndio ou ferimentos. Cabos mal colocados ou inseguros podem causar riscos de tropeçar em uma instalação de rede. Os cabos devem ser instalados em eletrodutos ou bandejas de cabos para evitar riscos.</p>
+          <p></p>
+          <p>Esta é uma lista parcial de precauções básicas de segurança para usar quando estiver trabalhando em um computador:</p>
+          <p><ul>
+              <li>Retire o seu relógio e jóias e não use roupas largas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desligue a energia e retire o cabo do equipamento antes de realizar o serviço.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cubra as bordas afiadas dentro do gabinete do computador com fita adesiva.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Nunca abra uma fonte de alimentação ou um monitor CRT.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não toque nas áreas das impressoras que estão quentes ou que utilizam alta tensão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Saiba onde o extintor de incêndio está localizado e como usá-lo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mantenha alimentos e bebidas fora de sua área de trabalho.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mantenha sua área de trabalho limpa e livre de desordem.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dobre os joelhos ao levantar objetos pesados ​​para evitar ferir a sua coluna.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

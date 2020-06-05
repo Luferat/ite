@@ -1,0 +1,32 @@
+﻿<textcomponents>
+
+
+   <component id="ID_s1_title">
+  <text><![CDATA[<b>Autenticação com Dois Fatores</b>]]></text> 
+  </component>
+   <component id="ID_s2_title">
+  <text><![CDATA[<b>Desabilitando o AutoRun</b>]]></text> 
+  </component>
+  
+  
+  
+  <component id="ID_s1_text01">
+  <text><![CDATA[<b>Senha (Boa Proteção)</b>]]></text> 
+  </component>
+  
+  <component id="ID_s1_text02">
+  <text><![CDATA[<b>Biometria e Smart Card (Boa Proteção)</b>]]></text> 
+  </component>
+  
+  <component id="ID_s1_text03">
+  <text><![CDATA[<b>Segurança em Dois Fatores (Proteção Muito Melhor)</b>]]></text> 
+  </component>
+  
+  <component id="ID_s1_text04">
+  <text><![CDATA[<b>+</b>]]></text> 
+  </component>
+  
+  <component id="ID_s1_text05">
+  <text><![CDATA[<b>=</b>]]></text> 
+  </component>
+</textcomponents>

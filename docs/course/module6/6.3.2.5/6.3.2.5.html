@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.2.5 Endereçamento DHCP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Endereçando os Equipamentos da Rede</h2>
+      </div>
+      <div id="content">
+          <p>Se muitos computadores fazem parte da LAN, configurar manualmente o endereço IP para cada host na rede pode ser demorado e propenso a erros. Um servidor Dynamic Host Configuration Protocol (DHCP) atribui automaticamente o endereço IP, o que simplifica o processo de endereçamento. A configuração automática do TCP/IP também reduz a possibilidade de atribuição de endereços IPs duplicados ou inválidos.</p>
+          <p>O servidor DHCP mantém uma lista de endereços IP e gerencia o processo de modo que cada dispositivo na rede recebe um endereço IP único. Quando o servidor DHCP recebe um pedido de um host, o servidor seleciona as informações de endereço IP a partir de um conjunto de endereços predefinidos que são armazenados em um banco de dados. Quando as informações de endereço IP são selecionadas, o servidor DHCP oferece esses valores para o host solicitante na rede. Se o host aceita a oferta, o servidor DHCP atribui o endereço IP por um período de tempo específico. Isso é chamado de concessão. Quando a concessão expira, o servidor DHCP pode usar esse endereço para outro computador que acessa a rede. Um dispositivo, no entanto, pode renovar sua concessão para manter o endereço IP.</p>
+          <p>Antes que um computador na rede possa tirar vantagem do serviço de DHCP, o computador deve ser capaz de identificar o servidor na rede local. Um computador pode ser configurado para aceitar um endereço IP de um servidor DHCP, selecionando a opção Obter um endereço IP automaticamente na janela de configuração da NIC, como mostrado na Figura 1. Quando um computador está configurado para obter um endereço IP automaticamente, todas as outras caixas de configuração do endereçamento IP não ficam disponíveis. As configurações DHCP são definidas de forma igual, seja para NIC com fio ou sem fio.</p>
+          <p>Um computador solicita continuamente um endereço IP para o servidor DHCP em intervalos de 5 minutos. Se o seu computador não pode se comunicar com o servidor DHCP para obter um endereço IP, o sistema operacional Windows atribuirá automaticamente um IP link-local. Se for atribuído ao seu computador um endereço IP link-local, que está na faixa de 169.254.0.0 a 169.254.255.255, o mesmo só poderá se comunicar com computadores conectados à mesma rede dentro deste intervalo de endereços IP.</p>
+          <p>Um servidor DHCP atribui automaticamente as seguintes informações de configuração de endereço IP para um host:</p>
+          <p><ul>
+              <li>Endereço IP</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Máscara de sub-rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gateway padrão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Valores opcionais, como por exemplo um endereço do servidor de DNS, são mostrados na Figura 2</li>
+            </ul>
+          </p>
+          <p>No Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central Rede e Compartilhamento > Alterar configuração do adaptador > botão direito do mouse em Conexão Local > Propriedades > TCP/IPv4 > Propriedades > selecione a opção Obter um endereço IP automaticamente > OK > OK</p>
+          <p>No Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central de Rede e Compartilhamento > Gerenciar conexões de rede > botão direito do mouse em Conexão Local > Propriedades > TCP/IPv4 > Propriedades > selecione a opção Obter um endereço IP automaticamente > OK > OK</p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Conexões de Rede > botão direito do mouse em Conexão Local > Propriedades > TCP/IP > Propriedades > selecione a opção Obter um endereço IP automaticamente > OK > OK</p>
+          <p>Definindo as Configurações de IP Alternativo</p>
+          <p>Uma alternativa para simplificar a movimentação entre uma rede que utiliza o serviço de DHCP e outra que utiliza o IP estático é a configuração do endereço IP alternativo. Caso um computador não consiga se comunicar com o servidor DHCP de uma rede, o Windows atribuirá o endereço IP alternativo à placa de rede. A configuração IP alternativo também substitui o endereçamento IP automático (APIPA), que é atribuído pelo Windows quando um servidor DHCP não pode ser contatado.</p>
+          <p>Para criar a configuração de IP alternativo, como mostrado na Figura 3, clique na guia Configuração Alternativa, localizada na janela Propriedades da NIC.</p>
+          <p>DNS</p>
+          <p>Para acessar um servidor DNS, um computador usa o endereço IP definido nas configurações de DNS da placa de rede do computador. O DNS resolve e mapeia nomes de host e URLs para endereços IP.</p>
+          <p></p>
+          <p>Todos os computadores Windows contém um cache de DNS que armazena nomes de host que recentemente foram resolvidos. O cache é o primeiro lugar que o cliente DNS olha para resolver de nome de host. Já que ele é um local na memória, o cache recupera endereços IP resolvidos mais rapidamente do que usando um servidor DNS, além de não criar tráfego de rede.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

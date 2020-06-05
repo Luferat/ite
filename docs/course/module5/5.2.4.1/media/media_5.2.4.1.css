@@ -1,0 +1,25 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+#ID_s2_txt03{font-size:12x;}
+table{line-height: 9px;font-size: 12px;}
+
+
+.ID_s1_txt01{font-size:12px;line-height:1.5em;font-family:typewriter;margin:0 0 0 15px;background-color:#ffffff;color:#000000;display:block;height:18px;}
+.ID_s1_txt02{font-size:12px;line-height:0.5em;font-family:typewriter;margin:0 0 0 8px;color:#ffffff;}
+.ID_s1_txt04{font-size:12px;line-height:1.5em;font-family:typewriter;margin:0 0 0 8px;background-color:#ffffff;color:#000000;display:block;height:18px;overflow:auto}
+.ID_s1_txt05{font-size:12px;line-height:0.5em;font-family:typewriter;color:#ffffff;}
+.space{margin:0 0 0 240px;}
+.ID_s2_txt02{font-size:11px;font-family:typewriter;margin:0 0 0 10px;color:#ffffff;overflow:auto;}
+.font_table{font-family:typewriter;font-size:10px;margin:0 0 0 10px;color:#ffffff;padding:0px;}

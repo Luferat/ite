@@ -1,0 +1,179 @@
+﻿<textcomponents>
+
+<component id="ID_test">
+<text><![CDATA[Texto da Legenda]]></text>
+</component>
+
+<component id="ID_s01_title">
+<text><![CDATA[<b>Visão Geral do Laptop</b>]]></text>
+</component>
+
+<component id="ID_s01_cap01">
+<text><![CDATA[O LED de status do Bluetooth indica quando o receptor wireless Bluetooth está ativado. O Bluetooth é um padrão sem fio que permite que dispositivos portáteis se comuniquem em uma pequena distancia.]]></text>
+</component>
+<component id="ID_s01_cap02">
+<text><![CDATA[O LED de status da bateria indica o estado da mesma. Um laptop pode usar uma bateria ou um adaptador de energia para alimentar o laptop. O tipo de bateria e o uso do laptop afeta por quanto tempo a carga da bateria irá durar.]]></text>
+</component>
+<component id="ID_s01_cap03">
+<text><![CDATA[O LED de standby indica se o laptop esta em standby ou não. O modo standby reduz a quantidade de eletricidade usada por um laptop desligando o monitor, disco rígido e a CPU. Uma pequena quantidade de eletricidade é usada para manter a RAM ativa e os dados disponíveis. Um laptop pode entrar no modo de espera se o mesmo não estiver sendo utilizando durante um período de tempo predefinido.]]></text>
+</component>
+
+<component id="ID_s02_title">
+<text><![CDATA[<b>Visão Traseira de um Laptop</b>]]></text>
+</component>
+
+<component id="ID_s02_cap01">
+<text><![CDATA[O compartimento da bateria é um conector utilizado para prender a bateria no laptop.]]></text>
+</component>
+<component id="ID_s02_cap02">
+<text><![CDATA[O conector de alimentação AC é utilizado para ligar o adaptador de energia no laptop e carregar a bateria.]]></text>
+</component>
+<component id="ID_s02_cap03">
+<text><![CDATA[A porta paralela é um slot usado para conectar um dispositivo, como uma impressora ou scanner.]]></text>
+</component>
+
+<component id="ID_s03_title">
+<text><![CDATA[<b>Comparação da bateria do laptop</b>]]></text>
+</component>
+
+<component id='ID_s03_table'>
+<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				
+				<tr class="title">
+					<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Comparação da bateria do laptop</b></font></td>
+				</tr>  
+				<tr>
+					<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr> 
+											
+				<tr>
+					<td bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Tipo de Bateria</b></font></td>
+					<td bgcolor='#A2AA23' ><font size='12' color='#ffffff'><b>Características</b></font></td>
+					<td bgcolor='#A2AA23' ><font size='12' color='#ffffff'><b>Uso Comum</b></font></td>
+					
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>Níquel-cádmio &quot;Ni-Cad&quot; (NiCd)</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Pesada pela energia que mantém, longa vida (muitos ciclos de carga) e pode apresentar efeitos de memória</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Brinquedos, telefones sem fio, iluminação de emergência, ferramentas elétricas e flash da câmera</font></td>
+					
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Níquel-metal-hidreto (NiMH)</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Peso moderado pela energia que mantém, vida útil moderada, pode experimentar &quot;inversão de polaridade&quot; no final do ciclo, encerra ou recarrega uma vez. Pode precisar de vários ciclos de carga/descarga para atingir plena capacidade</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Telefones celulares, câmeras digitais, GPS, lanternas e outros produtos eletrônicos</font></td>
+					
+				</tr>	
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>Lithium-ion (Li-Ion)</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Leve pela energia que mantém, nenhum efeito de memória, pode facilmente superaquecer, mantenha resfriada, carregada com frequência (mais recentemente fabricadas)</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Telefones celulares, laptops</font></td>
+				
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Polímero de lítio (Li-Poly ou LiPo)</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Caro, pequeno, leve pela energia que mantém, capacidade moderada, recarga rápida, tempo de vida moderada, não causa curto-circuito, não é inflamável</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>PDAs, computadores portáteis, MP3 players portáteis, dispositivos de jogos portáteis, aviões controlados por rádio</font></td>
+					
+				</tr>
+			</table>]]>
+	</text>
+</component>
+
+<component id="ID_s04_title">
+<text><![CDATA[<b>Vista da Lateral Esquerda de um Laptop</b>]]></text>
+</component>
+
+<component id="ID_s04_cap01">
+<text><![CDATA[O orifício para trava de segurança é um ponto forte na carcaça do laptop, usada para conectar um cabo de segurança.]]></text>
+</component>
+<component id="ID_s04_cap02">
+<text><![CDATA[O Universal Serial Bus (USB) é um soquete usado para conectar um ou mais periféricos.]]></text>
+</component>
+<component id="ID_s04_cap03">
+<text><![CDATA[A porta S-video é um conector mini-DIN de quatro pinos que é usado para transmitir sinais de vídeo para um dispositivo compatível. S-vídeo separa as porções de brilho e de cor de um sinal de vídeo.]]></text>
+</component>
+<component id="ID_s04_cap04">
+<text><![CDATA[A porta RJ-11 é utilizada para ligar o computador portátil a uma linha telefônica convencional. O modem pode ser usado para conectar o computador à Internet, para enviar documentos por fax e para atender chamadas.]]></text>
+</component>
+<component id="ID_s04_cap05">
+<text><![CDATA[A porta Ethernet utiliza o conector RJ-45, que é usado para conectar o laptop a uma rede local cabeada.]]></text>
+</component>
+<component id="ID_s04_cap06">
+<text><![CDATA[Os dois LEDs de rede são luzes que indicam o status da conexão de rede. A luz verde indica a conectividade de rede. O outro LED indica o tráfego originado e destinado ao laptop.]]></text>
+</component>
+<component id="ID_s04_cap07">
+<text><![CDATA[O conector de fone de ouvido é utilizado para transmitir sinais de áudio para fones de ouvido estéreo ou alto-falantes conectados.]]></text>
+</component>
+<component id="ID_s04_cap08">
+<text><![CDATA[O conector de microfone é utilizado para conectar um microfone usado para a entrada de áudio.]]></text>
+</component>
+<component id="ID_s04_cap09">
+<text><![CDATA[A grade de ventilação é uma série de aberturas que permitem que o ar quente seja expelido a partir do interior do laptop.]]></text>
+</component>
+<component id="ID_s04_cap10">
+<text><![CDATA[O PC card é um slot de expansão que suporta as placas de expansão ExpressCard, no slot superior, e os PC Cards no inferior.]]></text>
+</component>
+
+<component id="ID_s05_title">
+<text><![CDATA[<b>Vista Frontal de um Laptop</b>]]></text>
+</component>
+
+<component id="ID_s05_cap01">
+<text><![CDATA[A porta de infravermelho é um transmissor sem fio da linha de visão utilizado para a transmissão de dados.]]></text>
+</component>
+<component id="ID_s05_cap02">
+<text><![CDATA[O alto-falante é um dispositivo de saída que converte os sinais de áudio produzidos pelo laptop em som.]]></text>
+</component>
+<component id="ID_s05_cap03">
+<text><![CDATA[O trinco do laptop é a alavanca utilizada para abrir o dispositivo.]]></text>
+</component>
+<component id="ID_s05_cap04">
+<text><![CDATA[A grade de ventilação é uma série de aberturas que permitem que o ar quente seja expelido a partir do interior do laptop.]]></text>
+</component>
+
+<component id="ID_s06_title">
+<text><![CDATA[<b>Vista da Lateral Direita de um Laptop</b>]]></text>
+</component>
+
+<component id="ID_s06_cap01">
+<text><![CDATA[O drive óptico é uma unidade de disco utilizada para ler e gravar uma mídia óptica.]]></text>
+</component>
+<component id="ID_s06_cap02">
+<text><![CDATA[O indicador de atividade do drive óptico é um LED que acende quando a unidade estiver em uso.]]></text>
+</component>
+<component id="ID_s06_cap03">
+<text><![CDATA[O indicador de status do compartimento da unidade é um LED que acende quando a unidade está instalada no compartimento do laptop.]]></text>
+</component>
+<component id="ID_s06_cap04">
+<text><![CDATA[A porta VGA é um soquete de 15 pinos que se conecta a monitores externos e projetores.]]></text>
+</component>
+
+<component id="ID_s07_title">
+<text><![CDATA[<b>Vista Inferior de um Laptop</b>]]></text>
+</component>
+
+<component id="ID_s07_cap01">
+<text><![CDATA[O painel de acesso do HD é uma tampa que dá acesso ao compartimento do disco rígido interno.]]></text>
+</component>
+<component id="ID_s07_cap02">
+<text><![CDATA[As duas travas da bateria são alavancas que são usadas ​​ao inserir, remover ou proteger a bateria do laptop.]]></text>
+</component>
+<component id="ID_s07_cap03">
+<text><![CDATA[O conector docking é um soquete utilizado para conectar um laptop a uma docking station.]]></text>
+</component>
+<component id="ID_s07_cap04">
+<text><![CDATA[O painel de acesso à memória RAM é uma tampa que dá acesso à memória de expansão.]]></text>
+</component>
+
+
+
+<component id="ID_sub_inst">
+  <text><![CDATA[<b>Clique na área de destaque para visualizar os conteúdos importantes. Clique novamente para fechar. </b>]]></text> 
+  </component>  
+  
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

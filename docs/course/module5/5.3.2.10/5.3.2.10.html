@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.2.10 Configurações de Exibição</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle</h2>
+      </div>
+      <div id="content">
+          <p>Ao usar um monitor de LCD, defina a resolução para o modo nativo ou para a resolução nativa. O modo nativo possui o mesmo número de pixels que o monitor tem. Se você não usar o modo nativo, o monitor não irá fornecer a melhor imagem.</p>
+          <p></p>
+          <p>Você pode alterar as configurações de exibição com o utilitário Configurações de Vídeo. É possível alterar a aparência da área de trabalho, modificando a resolução e qualidade de cor, como mostrado na imagem. Se a resolução da tela não estiver configurada corretamente, você pode obter resultados de exibição inesperados em diferentes placas de vídeo e monitores. Você também pode alterar as configurações de vídeo mais avançadas, tais como o papel de parede, protetor de tela, configurações de energia e outras opções.</p>
+          <p>No o Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de controle> Vídeo> Alterar configurações de exibição</p>
+          <p>No Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Personalização> Configurações de Vídeo</p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>Iníciar> Painel de Controle> Vídeo> Configurações</p>
+          <p>Você pode ajustar os seguintes recursos no Windows 7:</p>
+          <p><ul>
+              <li>Resolução da tela - Especifica o número de pixels. Quanto maior o número de pixels, melhor será a resolução e a imagem.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Orientação - Determina se a imagem é exibida no formato de Paisagem, Retrato, Paisagem (Virado) ou Retrato (Virado).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Taxa de atualização - Define quantas vezes a imagem na tela é redesenhada. A taxa de atualização é medida em Hertz (Hz). Quanto maior a taxa de atualização, mais estável será a imagem na tela.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Exibição de cores - Especifica o número de cores visíveis na tela ao mesmo tempo. Quanto mais bits, maior o número de cores. A paleta de cores de 8 bits contém 256 cores. A paleta de cores de 16 bits (High Color) contém 65.536 cores. A paleta de cores de 24 bits (True Color), contém 16 milhões de cores. A paleta de cores de 32 bits contém 24-bits de cores e 8 bits para outros dados, tais como a transparência.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NOTA: Você também pode acessar as configurações de vídeo no Windows 7 e Windows Vista no link Aparência e Personalização do utilitário Personalização do painel de controle.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

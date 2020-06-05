@@ -1,0 +1,92 @@
+﻿<textcomponents>
+	<component id='ID_table'>
+		<text><![CDATA[
+			<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+			<tr class="title">
+		<td colspan='3'  bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns</b></font></td>
+	</tr>
+				<tr >
+					<td colspan='3' bgcolor='#434321' class="liner_top"><font size='2' color='#434321'><span style="color:#A2AA23">.</span></font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Identificação do Problema</b></font></td>
+					<td bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Prováveis Causas</b></font></td>
+					<td bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Soluções Possíveis</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'>O dispositivo móvel não se conecta à Internet.</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Wi-Fi não está disponível.</li>
+												<li>Wi-Fi está desabilitada.</li>
+												<li>As configurações Wi-Fi estão incorretas.</li>
+												<li>A rede de dados da provedora não está ao alcance.</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Mover-se para dentro dos limites de uma rede Wi-Fi.</li>
+												<li>Habilite a Wi-Fi.</li>
+												<li>Reconfigure as definições Wi-Fi.</li>
+												<li>Mova-se para dentro dos limites da rede de dados da provedora.</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'>O dispositivo móvel não liga.</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>A bateria está danificada.</li>
+												<li>O botão de energia está quebrado.</li>
+												<li>O dispositivo falhou.</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Carregue o dispositivo ou substitua a bateria do mesmo por uma carregada.</li>
+												<li>Contate o suporte ao cliente para determinar as próximas ações.</li></textformat></font></td>
+				</tr>	
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12'color='#393536'>O aplicativo falha ao responder.</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>O aplicativo não funciona corretamente.</li>
+												<li>O aplicativo não finaliza corretamente.</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Force o fechamento do aplicativo</li>
+												<li>Reinicie o dispositivo móvel.</li>
+												<li>Redefina o dispositivo móvel.</li>
+												<li>Remova e reinsira a bateria.</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'>O dispositivo móvel travou e parou de responder.</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>O sistema operacional encontrou um erro.</li>
+												<li>Um aplicativo causou o congelamento do sistema.</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Force o fechamento do aplicativo</li>
+												<li>Reinicie o dispositivo móvel.</li>
+												<li>Redefina o dispositivo móvel.</li>
+												<li>Remova e reinsira a bateria.</li></textformat></font></td>
+				</tr>	
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12'color='#393536'>O dispositivo móvel não pode enviar ou receber e-mail.</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>O dispositivo móvel não se conecta à Internet.</li>
+												<li>A conta de email foi configurada incorretamente.</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Conecte o dispositivo na rede Wi-Fi ou celular.</li>
+												<li>Reconfigure as definições de email.</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'>Um tablet falha ao carregar ou demora muito para carregar quando conectado na energia.</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>O tablet está em uso durante o carregamento.</li>
+												<li>O adaptador AC não possui amperagem suficiente.</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Desligue o tablet ao carregá-lo.</li>
+												<li>Use o carregar que veio junto ao tablet.</li>
+												<li>Use um adaptador que possui a quantidade correta de amperagem.</li></textformat></font></td>
+				</tr>	
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12'color='#393536'>Um smartphone não consegue se conectar na rede da provedora.</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'>O cartão SIM não está instalado.</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'>Instale o cartão SIM.</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'>O dispositivo móvel não consegue instalar aplicativos adicionais ou salvar fotos.</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'>O dispositivo móvel está sem memória.</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Insira o cartão de memória ou o substitua por um de maior capacidade.</li>
+												<li>Remova os arquivos desnecessários.</li>
+												<li>Desinstale os aplicativos desnecessários.</li></textformat></font></td>
+				</tr>	
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12'color='#393536'>Um dispositivo móvel não consegue sincronizar-se com outro dispositivo Bluetooth.</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>O dispositivo Bluetooth está fora do alcance.</li>
+												<li>O PIN está incorreto.</li>
+												<li>O dispositivo Bluetooth não é compatível com o dispositivo móvel.</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font color='#393536'><textformat blockindent='-18'><li>Mova o dispositivo Bluetooth para dentro do alcance do dispositivo móvel.</li>
+												<li>Digite o PIN correto.</li>
+												<li>Atualize o dispositivo Bluetooth ou substitua-o por um compatível.</li></textformat></font></td>
+				</tr>
+			</table>]]>
+		</text>
+	</component>
+</textcomponents>

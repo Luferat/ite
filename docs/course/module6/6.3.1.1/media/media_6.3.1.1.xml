@@ -1,0 +1,14 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Analogia da Rodovia</b>]]></text>
+	</component> 
+	<component id="ID_txt01">
+		<text><![CDATA[<b>A largura de banda é semelhante ao número de faixas.</b>]]></text>
+	</component> 
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Os dispositivos de rede são como as vias de acesso, semáforos, sinalização e mapas.</b>]]></text>
+	</component> 
+	<component id="ID_txt03">
+		<text><![CDATA[<b>O transporte dos dados são como veículos trafegando em uma rodovia.</b>]]></text>
+	</component> 
+</textcomponents>

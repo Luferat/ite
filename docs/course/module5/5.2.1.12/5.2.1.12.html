@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.1.12 Concluir a Instalação</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Procedimentos de Configuração de Disco Rígido</h2>
+      </div>
+      <div id="content">
+          <p>Depois que a instalação do Windows copiar todos os arquivos do sistema operacional necessários para o disco rígido, o computador será reiniciado e solicitará que você crie uma conta de usuário.</p>
+          <p>O Windows 7 deve ser registrado. Conforme mostrado na Figura 1, você também deve concluir a verificação que garante que você está usando uma cópia legal. Isso permite que você baixe as atualizações individuais, chamadas de patches. Um service pack são vários patches agrupados.</p>
+          <p>Windows Update</p>
+          <p>Dependendo da mídia no momento da instalação, pode haver atualizações a serem instaladas. Conforme mostrado na Figura 2, você pode usar o Windows Update, localizado no menu Iniciar, para procurar novos softwares, assim como instalar service packs e patches de atualização.</p>
+          <p>Para instalar patches e service packs no Windows 7 ou Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Todos os Programas> Windows Update</p>
+          <p>Para instalar patches e service packs no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Todos os Programas> Acessórios> Ferramentas do Sistema> Windows Update</p>
+          <p>Gerenciador de Dispositivos</p>
+          <p>Após a instalação, verifique se todo os hardwares estão instalados corretamente. Como mostrado na Figura 3, você pode usar o Gerenciador de Dispositivos para localizar problemas e instalar os drivers corretos e atualizados, no Windows 7 e Windows Vista, usando o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Gerenciador de Dispositivos</p>
+          <p>No Windows XP, utilize o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Sistema > Hardware > Gerenciador de Dispositivos</p>
+          <p>No Gerenciador de Dispositivos do Windows 7 e Windows Vista, um triângulo amarelo com um ponto de exclamação indica um problema no dispositivo. Para visualizar a descrição do problema, clique com o botão direito do mouse no dispositivo e selecione Propriedades. Um círculo cinza com uma seta apontando para baixo significa que o dispositivo está desativado. Para ativar o dispositivo, clique com o botão direito no dispositivo e selecione Ativar. Para expandir a categoria de dispositivo, clique no triângulo apontando para a direita, localizado ao lado da categoria.</p>
+          <p>NOTA: No Windows XP, um círculo vermelho com um X branco indica um dispositivo desativado.</p>
+          <p>NOTA: Quando o Windows detecta um erro do sistema, uma caixa de diálogo é exibida. Se você optar por enviar o relatório, o Microsoft Windows Error Reporting (WER) coletará informações sobre a aplicação envolvida no erro e enviará as informações para a Microsoft.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

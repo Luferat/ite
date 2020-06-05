@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.2.2 Emparelhamento Bluetooth</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e Email</h1>
+        <h2>Bluetooth</h2>
+      </div>
+      <div id="content">
+          <p>Emparelhamento Bluetooth acontece quando dois dispositivos Bluetooth estabelecem uma conexão para compartilhar recursos. Para que os dispositivos possam emparelhar-se, o Bluetooth deve estar ativo e um dispositivo deve começar a procurar outros dispositivos. Os outros dispositivos devem estar configurados para o modo detectável, também chamado visível, de modo que possam ser detectados. Quando um dispositivo Bluetooth está no modo visível, ele transmite as seguintes informações quando o outro dispositivo Bluetooth as solicita:</p>
+          <p><ul>
+              <li>Nome</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Classe Bluetooth</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Serviços que podem usar o dispositivo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Informações técnicas, como as características ou especificações que são suportadas pelo Bluetooth</li>
+            </ul>
+          </p>
+          <p>Durante o processo de emparelhamento, pode ser requisitado um PIN para autenticar o processo de emparelhamento, como mostrado na Imagem 1. O PIN muitas vezes é um número, mas também pode ser um código numérico ou senha. O PIN é armazenado usando os serviços de emparelhamento, desta forma ele não tem que ser introduzido na próxima vez que o dispositivo tentar se conectar. Isto é conveniente quando se usa um fone de ouvido com um smartphone, pois eles são emparelhados automaticamente quando o fone de ouvido está ligado e dentro do alcance.</p>
+          <p>Para emparelhar um dispositivo Bluetooth com um dispositivo Android, siga estes passos:</p>
+          <p>Passo 1. Siga as instruções do seu dispositivo para colocá-lo em modo de descoberta.</p>
+          <p>Passo 2. Verifique as instruções do seu dispositivo para encontrar o PIN da conexão.</p>
+          <p>Passo 3. Selecione Configurações> Redes sem fio e outras.</p>
+          <p>Passo 4. Toque em Bluetooth para ativá-lo.</p>
+          <p>Passo 5. Toque na guia Bluetooth.</p>
+          <p>Passo 6. Toque em Procurar dispositivos.</p>
+          <p>Passo 7. Toque no dispositivo descoberto para selecioná-lo.</p>
+          <p>Passo 8. Digite o PIN.</p>
+          <p>Passo 9. Toque no nome do dispositivo para se conectar a ele.</p>
+          <p>Para emparelhar um dispositivo Bluetooth com um dispositivo iOS, siga estes passos:</p>
+          <p><b>Passo 1. Siga as instruções do seu dispositivo para colocá-lo em modo de descoberta.</p>
+          <p>Passo 2. Verifique as instruções do seu dispositivo para encontrar o PIN da conexão.</p>
+          <p>Passo 3. Selecione Configurações> Geral> Bluetooth.</p>
+          <p>Passo 4. Toque em Bluetooth para ativá-lo.</p>
+          <p>Passo 5. Toque no dispositivo descoberto para selecioná-lo.</p>
+          <p>Passo 6. Digite o PIN.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

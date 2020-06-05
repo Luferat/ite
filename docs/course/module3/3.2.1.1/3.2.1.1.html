@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.1.1 Códigos de Bipes e Configurações da BIOS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Inicializando o Computador</h1>
+        <h2>POST e BIOS</h2>
+      </div>
+      <div id="content">
+          <p>Quando o computador é iniciado, o sistema básico de entrada/saída (BIOS) executa uma verificação básica do hardware. Esta verificação é chamada de power-on self-test (POST).</p>
+          <p>O POST, conforme apresentado na Imagem 1, verifica se o hardware do computador está funcionando corretamente. Se um dispositivo não está funcionando corretamente, um erro ou um código de bipe alerta o técnico do problema. Normalmente, um único bipe significa que o computador está funcionando corretamente. Se houver um problema de hardware, uma tela em branco pode aparecer na inicialização, e o computador emite uma série de sinais sonoros. Cada fabricante de BIOS usa códigos diferentes para indicar problemas de hardware. A Imagem 2 mostra um gráfico dos códigos de bipes. Os códigos de bipes podem ser diferentes para o seu computador. Consulte a documentação da sua placa-mãe para obter os códigos de bipes para o seu computador.</p>
+          <p></p>
+          <p>POST Card</p>
+          <p>Ao verificar um problema no computador quando o vídeo não está disponível, você pode usar um POST card. O POST card é instalado em uma porta na placa-mãe, tais como PCI ou PCIe. Quando o computador é iniciado e alguns erros são encontrados, o PC emite um código que é exibido no POST card. Este código é utilizado para diagnosticar a causa do problema através da placa-mãe, BIOS ou do POST card do fabricante.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

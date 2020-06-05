@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.2.1 Usando Habilidades de Comunicação para Determinar os Problemas dos Clientes</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Habilidades de Comunicação e Profissionais de TI</h1>
+        <h2>Trabalhando com um Cliente</h2>
+      </div>
+      <div id="content">
+          <p>Uma das primeiras tarefas do técnico é determinar o tipo de problema o qual o computador do cliente está vivenciando.</p>
+          <p>Lembre-se destas três regras no início de sua conversa:</p>
+          <p><ul>
+              <li>Conhecer - Chame o seu cliente pelo nome.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Relacionar - Utilize uma breve comunicação para criar uma conexão individual entre você e seu cliente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Entender - Determine o nível de conhecimento do cliente sobre computadores para saber como se comunicar de forma eficaz.</li>
+            </ul>
+          </p>
+          <p>Para conseguir isso, pratique as habilidades de escuta ativa. Permita que o cliente conte toda a sua história. Enquanto o cliente estiver explicando o problema, ocasionalmente intervenha com uma pequena palavra ou frase, como &quot;Eu entendo&quot;, &quot;Sim&quot;, &quot;Entendo&quot;, ou &quot;Ok&quot;. Esse comportamento permite que o cliente saiba que você está lá e que você está ouvindo.</p>
+          <p>No entanto, o técnico não deve interromper o cliente para fazer uma pergunta ou declaração. Isto é rude, desrespeitoso e cria um clima tenso. Muitas vezes em uma conversa, você pode pensar no que dizer antes que a outra termine de falar. Ao fazer isso, você não está realmente ouvindo. Em vez disso, tente ouvir atentamente quando outras pessoas estão falando e deixe-os terminar seus pensamentos.</p>
+          <p>Depois de ter ouvido o cliente explicar todo o problema, esclareça o que o cliente disse. Isso ajuda a convencer o cliente de que você o ouviu falar e compreendeu a situação. Uma boa prática para fazer esse esclarecimento é parafrasear a explicação do cliente, começando com as palavras: &quot;Deixe-me ver se eu entendi o que você me disse.&quot; Esta é uma ferramenta muito eficaz, que demonstra ao cliente que você escutou e entendeu.</p>
+          <p>Depois de mostrar ao cliente que você entendeu o problema, você provavelmente terá de fazer algumas perguntas de acompanhamento. Certifique-se de que estas questões são pertinentes. Não faça perguntas que o cliente já respondeu ao descrever o problema. Fazer isso só irrita o cliente e mostra que você não estava escutando.</p>
+          <p>As perguntas de acompanhamento devem ser orientadas e fechadas com base nas informações que você já recolheu. Perguntas fechadas devem se concentrar em obter informações específicas. O cliente deve ser capaz de responder a uma pergunta fechada com um simples &quot;sim&quot; ou &quot;não&quot; ou com uma resposta concreta, como &quot;Windows XP Pro&quot;. Use todas as informações que você recolheu do cliente para concluir a ordem de trabalho.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

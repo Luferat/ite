@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.1.1 O que é uma Política de Segurança?</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Políticas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>A política de segurança é um conjunto de regras, diretrizes e checklists. Técnicos e administradores de uma empresa trabalham em conjunto para desenvolver as regras e diretrizes de segurança dos equipamentos e computadores. Uma política de segurança inclui os seguintes elementos:</p>
+          <p><ul>
+              <li>Declaração de uso aceitável do computador na organização.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As pessoas autorizadas a utilizar os equipamentos e computadores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os dispositivos permitidos a serem instalados em uma rede, bem como as condições da instalação. Modems e pontos de acesso sem fio (access-points) são exemplos de hardwares que podem expor a rede a ataques.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Requisitos necessários para que os dados permaneçam confidenciais em uma rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Processo pelo qual os funcionários acessam os equipamentos e os dados. Esse processo pode exigir que o funcionário assine um acordo contendo as regras da empresa. Ele também lista as consequências em caso de não cumprimento.</li>
+            </ul>
+          </p>
+          <p>Uma política de segurança deve descrever como a empresa lida com os problemas e falhas de segurança. Embora as políticas de segurança variem entre as organizações, existem perguntas que todas as empresas devem fazer:</p>
+          <p><ul>
+              <li>Quais os bens que necessitam de proteção?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quais são as possíveis ameaças?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O que fazer em caso de uma falha de segurança?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Será oferecido um treinamento para educar os usuários finais?</li>
+            </ul>
+          </p>
+          <p>NOTA: Para ser eficaz, uma política de segurança deve ser aplicada e seguida por todos os funcionários.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

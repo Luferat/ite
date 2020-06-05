@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.1.2 Instalação da Fonte de Alimentação</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Abra o Gabinete e Instale a Fonte de Alimentação</h2>
+      </div>
+      <div id="content">
+          <p>Pode ser necessário que um técnico tenha que substituir ou instalar uma fonte de alimentação. A maioria das fontes de alimentação são encaixadas de uma forma específica no gabinete. Geralmente, três ou quatro parafusos prendem a fonte ao gabinete. As fontes de alimentação possuem ventiladores que podem vibrar e soltar os parafusos que não estão devidamente presos. Ao instalar uma fonte de alimentação, certifique-se de que todos os parafusos estão sendo usados ​​e que os mesmos estão apertados corretamente.</p>
+          <p>Para instalar uma fonte de alimentação, siga esses passos:</p>
+          <p>Passo 1. Insira a fonte de energia no gabinete.</p>
+          <p>Passo 2. Alinhe os orifícios da fonte de alimentação com os orifícios do gabinete.</p>
+          <p>Passo 3. Fixe a fonte utilizando os parafusos adequados.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

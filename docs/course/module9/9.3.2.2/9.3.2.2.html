@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.3.2.2 Opções Global de Documento Individual</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação e Configuração de Impressoras</h1>
+        <h2>Configurações Padrão e Opcionais</h2>
+      </div>
+      <div id="content">
+          <p>Algumas impressoras possuem painéis de controle com botões para selecionar opções. Outras impressoras usam as opções do driver da impressora. Você pode definir as opções globalmente ou por documento.</p>
+          <p>Método Global</p>
+          <p>O método global refere-se a opções de impressão que estão definidas para afetar todos os documentos. Cada vez que um documento é impresso, as opções globais são usadas, a menos que sejam substituídas pelas seleções por documento.</p>
+          <p>Para alterar a configuração global de uma impressora no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Dispositivos e Impressoras> clique com o botão direito do mouse na impressora</p>
+          <p>Para designar uma impressora padrão, clique com botão direito na impressora e selecione Definir como impressora padrão, como mostrado na imagem.</p>
+          <p>Para alterar a orientação da página para paisagem no Windows 7, clique com botão direito na impressora e selecione Preferências de impressão. Na guia Layout, selecione paisagem no menu Orientação. Clique em OK.</p>
+          <p>Para alterar a configuração global de uma impressora no Windows Vista e no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Impressoras e Aparelhos de Fax> clique com o botão direito do mouse na impressora</p>
+          <p>Para designar uma impressora padrão, clique com o botão direito na impressora e selecione Definir como impressora padrão.</p>
+          <p>NOTA: Dependendo do driver instalado, a opção Definir impressora padrão pode não estar disponível. Neste caso, dê um duplo clique na impressora para abrir a janela de status do documento e, em seguida, escolha a Impressora > Definir como impressora padrão.</p>
+          <p>Metodo Por Documento</p>
+          <p>Cartas, planilhas e imagens digitais são alguns dos tipos de documentos que podem exigir configurações especiais da impressora. Você pode alterar as configurações de um documento individual, alterando as configurações de impressão de documentos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

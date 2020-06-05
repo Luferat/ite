@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.1.1 Particionamento do Disco Rígido</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Procedimentos de Configuração de Disco Rígido</h2>
+      </div>
+      <div id="content">
+          <p>Como técnico, você pode ter que executar uma instalação limpa de um sistema operacional. Execute uma instalação limpa nas seguintes situações:</p>
+          <p><ul>
+              <li>Quando um computador é passado de um funcionário para outro</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quando o sistema operacional está corrompido</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Quando a unidade de disco rígido primário é substituída em um computador</li>
+            </ul>
+          </p>
+          <p>A instalação e inicialização do sistema operacional é chamada de configuração do sistema operacional. Embora seja possível instalar um sistema operacional através de uma rede, um servidor ou um disco rígido local, o método de instalação mais comum para uma casa ou pequenos escritórios são CDs ou DVDs. Para instalar um sistema operacional a partir de um CD ou DVD, defina primeiro a configuração da BIOS para inicializar o sistema a partir do CD ou DVD.</p>
+          <p>Importante: Se o hardware não for compatível com o sistema operacional, você pode precisar instalar drivers de terceiros ao executar uma instalação limpa.</p>
+          <p>Particionamento</p>
+          <p>Um disco rígido é dividido em áreas específicas, chamadas de partições. Cada partição é uma unidade lógica de armazenamento que pode ser formatada para armazenar informação, tais como arquivos de dados e aplicações. Durante o processo de instalação, a maioria dos sistemas operacionais particiona automaticamente e formata o espaço disponível no disco rígido.</p>
+          <p>Um técnico deve entender o processo e os termos relativos à instalação no disco rígido.</p>
+          <p><ul>
+              <li>Partição primária - A partição primária contém os arquivos do sistema operacional, e geralmente é a primeira partição. Pode haver até quatro partições primárias por disco rígido. A partição primária não pode ser subdividida em seções menores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Partição ativa - O sistema operacional usa a partição ativa para inicializar o computador. Somente uma partição primária por disco pode ser marcada como ativa. Na maioria dos casos, a unidade C: é a partição ativa e contém os arquivos de inicialização e de sistema. Alguns usuários criam partições adicionais para organizar arquivos ou ser capaz de realizar o dual-boot em um computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Partição estendida - A partição estendida normalmente usa o espaço livre restante em um disco rígido ou de uma partição primária. Só pode haver uma partição estendida por disco rígido, mas ela pode ser subdividida em seções menores, chamadas de unidades lógicas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Unidade lógica - Uma unidade lógica é uma seção de uma partição estendida. Ela pode ser usada para separar informações para fins administrativos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Disco básico - Um disco básico (padrão) contém partições primárias e estendidas, bem como unidades lógicas. Um disco de básico é limitado a quatro partições.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Disco dinâmico - Um disco dinâmico tem a capacidade de criar volumes que se estendem por mais de um disco. O tamanho das partições podem ser alteradas depois de serem definidas. Espaço livre pode ser adicionado a partir do mesmo disco ou de um disco diferente, permitindo ao usuário armazenar arquivos grandes de forma eficiente. Depois que uma partição for estendida, ela não pode ser reduzida sem a exclusão de toda a partição.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Formatação - Este processo prepara um sistema de arquivos em uma partição.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Setor - Um setor contém 512 bytes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cluster - Um cluster também é chamado de unidade de alocação de arquivos. É a menor unidade de espaço usado para armazenar dados. Ele é constituído por um ou mais setores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Track - A track é um círculo completo, que pode conter dados de um lado do prato do disco rígido. Uma track é dividida em grupos de setores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cilindro - Um cilindro é uma pilha de tracks alinhadas, uma sobre a outra, para formar um cilindro.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

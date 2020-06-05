@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.5.2.10 CPU</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Hardware de Laptop e Componentes para Instalação e Configuração</h1>
+        <h2>Substituindo Dispositivos de Hardware</h2>
+      </div>
+      <div id="content">
+          <p>Antes de uma CPU ser substituída, um técnico deve remover a ventoinha ou dissipador de calor. Ventoinhas e dissipadores podem estar unidos em um único módulo ou instalados como unidades separadas. Se o ventilador e o dissipador estão separados, remova os dois componentes individualmente.</p>
+          <p></p>
+          <p>Para substituir uma CPU com um ventoinha separada do dissipador de calor, siga estes passos:</p>
+          <p>Passo 1. Desligue o computador e desconecte do adaptador de energia (AC - corrente alternada).</p>
+          <p>Passo 2. Remova a bateria e quaisquer outros componentes recomendados pelo fabricante.</p>
+          <p>Passo 3. Vire o laptop, se necessário, e remova todos os plásticos que cobrem a ventoinha.</p>
+          <p>Passo 4. Localize a ventoinha e remova todos os parafusos que prendem ela.</p>
+          <p>Passo 5. Desconecte o cabo de alimentação que liga a ventoinha na placa-mãe.</p>
+          <p>Passo 6. Remova a ventoinha do laptop.</p>
+          <p>Passo 7. Remova o dissipador de calor do processador, removendo os parafusos que prendem ele.</p>
+          <p>Passo 8. Remova o parafuso que prende a trava que segura a CPU no soquete.</p>
+          <p>Passo 9. Abra a trava e remova a CPU do soquete.</p>
+          <p>Passo 10. Remova qualquer pasta térmica da CPU e armazene a CPU em um saco anti-estático.</p>
+          <p>Passo 11. Coloque com cuidado o novo processador no soquete.</p>
+          <p>Passo 12. Aperte a trava que prende a CPU no soquete e aperte os parafusos.</p>
+          <p>Passo 13. Aplique a pasta térmica na CPU antes de reinstalar o dissipador de calor.</p>
+          <p>Passo 14. Insira o dissipador e reinstale todos os parafusos necessários.</p>
+          <p>Passo 15. Insira a ventoinha e conecte o cabo de alimentação à placa-mãe.</p>
+          <p>Passo 16. Fixe a ventoinha na placa-mãe, reinstalando todos os parafusos necessários.</p>
+          <p>Passo 17. Recoloque a tampa traseira do laptop.</p>
+          <p>Passo 18. Insira a bateria e reponha todos os componentes necessários.</p>
+          <p></p>
+          <p>Se o ventilador e dissipador estiverem unidos, utilize o seguinte procedimento.</p>
+          <p></p>
+          <p>Para remover e substituir um dissipador de calor ou ventoinha com o dissipador, siga estes passos:</p>
+          <p>Passo 1. Desligue o computador e desconecte do adaptador de energia (AC - corrente alternada).</p>
+          <p>Passo 2. Remova a bateria e quaisquer outros componentes recomendados pelo fabricante.</p>
+          <p>Passo 3. Vire o laptop, se necessário, e remova todos os plásticos que cobrem o dissipador.</p>
+          <p>Passo 4. Localize o dissipador ou a ventoinha com o dissipador e remova os parafusos que o prendem.</p>
+          <p>Passo 5. Desligue o cabo de alimentação da ventoinha da placa-mãe.</p>
+          <p>Passo 6. Remova o dissipador ou a ventoinha com o dissipador.</p>
+          <p>Passo 7. Remova o parafuso que prende a trava que segura a CPU no soquete.</p>
+          <p>Passo 8. Abra a trava e remova a CPU do soquete.</p>
+          <p>Passo 9. Remova qualquer pasta térmica da CPU e armazene a CPU em um saco anti-estático.</p>
+          <p>Passo 10. Coloque com cuidado o novo processador no soquete.</p>
+          <p>Passo 11. Aperte a trava que prende a CPU no soquete e aperte os parafusos.</p>
+          <p>Passo 12. Aplique a pasta térmica na CPU antes de reinstalar o dissipador de calor.</p>
+          <p>Passo 13. Insira o dissipador ou a ventoinha com o dissipador e conecte o cabo de alimentação à placa-mãe.</p>
+          <p>Passo 14. Fixe o dissipador ou a ventoinha com o dissipador à estrutura do sistema, reinstalando todos os parafusos necessários.</p>
+          <p>Passo 15. Recoloque a tampa traseira do laptop.</p>
+          <p>Passo 16. Insira a bateria e reponha todos os componentes necessários.</p>
+          <p></p>
+          <p>NOTA: A CPU é um dos componentes mais frágeis em um laptop. Deve ser manuseada com muito cuidado.</p>
+          <p></p>
+          <p>NOTA: É importante observar como o processador está posicionado. A substituição deve ser instalada da mesma maneira.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

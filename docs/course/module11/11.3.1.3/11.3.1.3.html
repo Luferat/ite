@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.1.3 Responsabilidades do Técnico Nível Dois</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicos de Call Center</h1>
+        <h2>Técnicos de Call Center Nível um e Nível dois</h2>
+      </div>
+      <div id="content">
+          <p>Tal como um técnico nível um, em call centers os técnicos de nível dois podem ter nomes diferentes. Estes técnicos podem ser conhecidos como especialistas de produtos ou pessoal de apoio técnico. As responsabilidades de um técnico nível dois são geralmente as mesmas nos call centers.</p>
+          <p>Os técnicos de nível dois são geralmente mais bem informados do que os técnicos de nível um sobre determinada tecnologia ou trabalham na empresa a muito tempo. Quando um problema não for resolvido em um período predeterminado, o técnico de nível um prepara uma ordem de trabalho para ser escalada, conforme apresentado na imagem. Os técnicos de nível dois recebem a ordem de trabalho escalada com a descrição do problema e, em seguida, contacta novamente o cliente para fazer quaisquer perguntas adicionais e resolver o problema.</p>
+          <p>Técnicos de nível dois também podem usar o software de acesso remoto para se conectar ao computador do cliente para atualizar os drivers e software, acessar o sistema operacional, verificar a BIOS e recolher outras informações de diagnóstico para resolver o problema.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

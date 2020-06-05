@@ -1,0 +1,152 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Requisitos de instalação e recursos para sistemas operacionais Windows</b>]]></text>
+</component>
+
+<component id="ID_table"><text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+
+<tr>
+<td colspan='7' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+<tr>
+	<td bgcolor='#A2AA23' valign="top"><font color='#FFFFFF'><b></b></font></td>
+	<td bgcolor='#A2AA23' valign="top"><font color='#FFFFFF'><b>CPU</b></font></td>
+	<td bgcolor='#A2AA23' valign="top"><font color='#FFFFFF'><b>RAM</b></font></td>
+	<td bgcolor='#A2AA23' valign="top"><font color='#FFFFFF'><b>Disco Rígido</b></font></td>
+	<td bgcolor='#A2AA23' valign="top"><font color='#FFFFFF'><b>Placa de vídeo</b></font></td>
+	<td bgcolor='#A2AA23' valign="top" class="space"><font color='#FFFFFF'><b>Recursos</b></font></td>
+	<td bgcolor='#A2AA23' valign="top"><font color='#FFFFFF'><b>Uso Ideal</b></font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#FFFFFF' width='90' valign="top"><font color='#393536'>Windows 7 Starter</font></td>
+	<td bgcolor='#FFFFFF' width='100' valign="top"><font color='#393536'>Processador de 1 GHz ou mais rápido, 32-bit(x86) ou 64-bit(x64)</font></td>
+	<td bgcolor='#FFFFFF' width='100' valign="top"><font color='#393536'>1 GB RAM</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Disco rígido com pelo menos 16 GB de espaço disponível (32-bit)</font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Dispositivo gráfico DirectX 9 com WDDM 1.0 ou driver superior</font></td>
+	<td bgcolor='#FFFFFF' width='125' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Jump Lists</li><li>Pino</li><li>Snap</li><li>Windows Search</li></textformat></font></td>
+	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Boa escolha para clientes com netbook</font></td>
+</tr>
+
+<tr>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows 7 Home Premium</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Processador de 1 GHz ou mais rápido, 32-bit(x86) ou 64-bit(x64)</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1 GB de RAM (32-bit) ou 2 GB RAM (64-bit)</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Disco rígido com pelo menos 16 GB de espaço disponível(32 bits) ou 20 GB(64-bit)</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Dispositivo gráfico DirectX 9 com WDDM 1.0 ou driver superior</font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Shake</li><li>Temas customizados</li><li>Melhoria na Navegação do desktop</li><li>Internet TV</li><li>Grupo Domestico</li></textformat></font></td>
+	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Boa escolha para usuários domésticos que querem compartilhar algum tipo de mídia</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Windows 7 Professional</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Processador de 1 GHz ou mais rápido, 32-bit(x86) ou 64-bit(x64)</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>1 GB de RAM (32-bit) ou 2 GB RAM (64-bit)</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Disco rígido com pelo menos 16 GB de espaço disponível(32 bits) ou 20 GB(64-bit)</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Dispositivo gráfico DirectX 9 com WDDM 1.0 ou driver superior</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Impressão com reconhecimento de local</li><li>Modo Windows XP</li><li>Entrar em um Domínio</li><li>Backups para redes domesticas ou corporativas</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Boa escolha para as pessoas que usam aplicativos de negócios e querem proteger os dados</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows 7 Ultimate</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Processador de 1 GHz ou mais rápido, 32-bit(x86) ou 64-bit(x64)</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1 GB de RAM (32-bit) ou 2 GB RAM (64-bit)</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Disco rígido com pelo menos 16 GB de espaço disponível(32 bits) ou 20 GB(64-bit)</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Dispositivo gráfico DirectX 9 com WDDM 1.0 ou driver superior</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>BitLocker</li><li>Alternar entre qualquer um dos 35 idiomas</li></textformat></font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Boa escolha para pessoas que precisam de segurança, compartilhamento de mídia e executar vários aplicativos de negócios</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Windows 7 Enterprise</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Processador de 1 GHz ou mais rápido, 32-bit(x86) ou 64-bit(x64)</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>1 GB de RAM (32-bit) ou 2 GB RAM (64-bit)</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Disco rígido com pelo menos 16 GB de espaço disponível(32 bits) ou 20 GB(64-bit)</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Dispositivo gráfico DirectX 9 com WDDM 1.0 ou driver superior</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Impressão com reconhecimento de local</li><li>Modo Windows XP</li><li>Entrar em um Domínio</li><li>Backups para redes domesticas ou corporativas</li><li>Windows BitLocker Drive Encryption</li><li>DirectAccess</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Boa escolha para grandes empresas que necessitam de licenciamento por volume</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows Vista Home Basic</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Processador de 1 GHz 32-bit(x86) ou 64-bit(x64)</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>512 MB ​​de memória de sistema</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>20 GB de disco rígido com pelo menos 15 GB de espaço disponível</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Suporte para gráficos DirectX 9 e 32 MB de memória gráfica</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Controle de Acesso de Usuário - User Account Control (UAC)</li><li>Windows Defender</li><li>Firewall do Windows</li><li>Pesquisa Instantânea</li><li>Centro de Rede e Compartilhamento</li></textformat></font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Boa escolha se você tem necessidades básicas como e-mail, navegação na web e visualização de fotos</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Windows Vista Home Premium</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Processador de 1 GHz 32-bit(x86) ou 64-bit(x64)</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>1 GB de memória do sistema</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>40 GB de disco rígido com pelo menos 15 GB de espaço disponível</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'> Suporte para gráficos DirectX 9 com:<textformat blockindent='-18'><li>Driver WDDM</li><li>128 MB de memória gráfica (mínimo)</li><li>Pixel Shader 2.0 em hardware</li><li>32 bits por pixel</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Windows Aero</li><li>Windows Mobility Center</li><li>Windows Meeting Space</li><li>Windows SideShow</li><li>Windows Media Center</li><li>Backup Agendado</li><li>Windows DVD Maker</li><li>Windows Movie Maker em HD</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Boa escolha se você precisa ir além do básico com melhor produtividade e entretenimento digital</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows Vista Business</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Processador de 1 GHz 32-bit(x86) ou 64-bit(x64)</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1 GB de memória do sistema</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>40 GB de disco rígido com pelo menos 15 GB de espaço disponível</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'> Suporte para gráficos DirectX 9 com:<textformat blockindent='-18'><li>Driver WDDM</li><li>128 MB de memória gráfica (mínimo)</li><li>Pixel Shader 2.0 em hardware</li><li>32 bits por pixel</li></textformat></font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Windows Complete PC</li><li>Backup e restauração</li><li>Fax e Scanner do Windows</li><li>Conexão de Área de Trabalho Remota</li></textformat></font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Boa escolha se você possui ou pretende executar um pequeno negócio</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Windows Vista Ultimate</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Processador de 1 GHz 32-bit(x86) ou 64-bit(x64)</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>1 GB de memória do sistema</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>40 GB de disco rígido com pelo menos 15 GB de espaço disponível</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'> Suporte para gráficos DirectX 9 com:<textformat blockindent='-18'><li>Driver WDDM</li><li>128 MB de memória gráfica (mínimo)</li><li>Pixel Shader 2.0 em hardware</li><li>32 bits por pixel</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Windows BitLocker Drive Encryption</li><li>Windows Ultimate Extras</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Boa escolha se você usar ao mesmo tempo o computador para o trabalho e para o uso doméstico</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows Vista Enterprise</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Processador de 1 GHz 32-bit(x86) ou 64-bit(x64)</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1 GB de memória do sistema</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>40 GB de disco rígido com pelo menos 15 GB de espaço disponível</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'> Suporte para gráficos DirectX 9 com:<textformat blockindent='-18'><li>Driver WDDM</li><li>128 MB de memória gráfica (mínimo)</li><li>Pixel Shader 2.0 em hardware</li><li>32 bits por pixel</li></textformat></font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Windows Complete PC</li><li>Backup e restauração</li><li>Fax e Scanner do Windows</li><li>Conexão de Área de Trabalho Remota</li></textformat></font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Boa escolha para grandes empresas que necessitam de licenciamento por volume</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Windows XP Home</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>233 MHz mínimo necessário</li><li>recomendado 300 MHz ou superior</li><li>Processador Intel da Família Pentium/Celeron</li><li>Processador AMD da Família K6/Athlon/Duron, ou compatível</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>64 MB (mínimo exigido)</li><li>recomendado 128 MB ou superior</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>1,5 GB de espaço mínimo em disco disponível</li><li>É recomendado mais quando instalado através da rede</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Mínimo exigido Super VGA 800 x 600, entretanto uma resolução superior é recomendada</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Melhoria da compatibilidade de hardware e software</li><li>Troca Rápida de Usuário</li><li>Nova Interface de Usuário</li><li>Segurança simplificada</li><li>Logon Simplificado</li><li>Suporte aprimorado para mídia digital</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Geralmente usado por consumidores</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows XP Media Center</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>1.6 GHz ou superior</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>256 MB de sistema</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>1,5 GB de espaço mínimo em disco disponível</li><li>É recomendado mais quando instalado através da rede</li></textformat></font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Suporte para DirectX 9</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows Media Center</font></td>
+<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Versão especializada do XP Home, se você quiser organizar e exibir todos os tipos de mídia</li><li>Ótimo para você se conectar a um televisor para desfrutar de funcionalidade de DVR</li></textformat></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Windows XP Professional</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Mínimo 233 MHz (processador de sistema single ou dual)</li><li>300 MHz ou superior, recomendado processador Intel da família Pentium/Celeron</li><li>Processador AMD da Família K6/Athlon/Duron, ou compatível</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>64 MB (mínimo exigido)</li><li>recomendado 128 MB ou superior</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>1,5 GB de espaço mínimo em disco disponível</li><li>É recomendado mais quando instalado através da rede</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Mínimo exigido Super VGA 800 x 600, entretanto uma resolução superior é recomendada</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Área de trabalho remota</li><li>Suporte para multi-processadores</li><li>Sistema de arquivos criptografados</li><li>Participação no domínio</li><li>Group Policy</li><li>Roaming Profiles</li><li>Sistema de Recuperação Automatizado</li><li>Suporte para discos dinâmicos</li><li>Suporte Sysprep</li></textformat></font></td>
+<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Geralmente usado por profissionais de negócios</font></td>
+</tr>
+</table>]]></text>
+</component>
+</textcomponents>

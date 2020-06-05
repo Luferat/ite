@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.3.1.8 Selecting Optical Drives</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Selecting Replacement Computer Components</h1>
+      <h2>Selecting PC Components</h2>
+    </div>
+    <div id="content">
+          <p>An optical drive uses a laser to read and write data to and from optical media. There are several factors to consider when purchasing an optical drive:</p>
+          <p>
+            <ul>
+              <li>Interface type</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Reading capability</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Writing capability</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Format</li>
+            </ul>
+          </p>
+          <p>A CD-ROM drive can only read CDs. A CD-RW can read and write to CDs. Choose a CD-RW if your customer needs to read and write to CDs.</p>
+          <p>A DVD-ROM drive can only read DVDs and CDs. A DVD-RW can read and write to DVDs and CDs. DVDs hold significantly more data than CDs. Choose a DVD-RW if your customer needs to read and write to DVDs and CDs.</p>
+          <p>A Blu-ray reader (BD-R) can only read Blu-ray Discs, DVDs, and CDs. A Blu-ray writer (BD-RE) can read and write to Blu-ray Discs and DVDs. Blu-ray Discs hold significantly more data than DVDs. Choose a BD-RE drive if your customer needs to read and write to Blu-ray Discs. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

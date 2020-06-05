@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.2.2 Limpeza dos Dados, Destruição e Reciclagem do Disco Rígido</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ameaças de Segurança</h1>
+        <h2>Acesso a Dados e Equipamentos</h2>
+      </div>
+      <div id="content">
+          <p>Apagar os arquivos de um disco rígido não remove os dados completamente do computador. Ao apagar um arquivo, o sistema operacional apenas remove a referência para o mesmo na tabela de alocação de arquivos. Os dados apenas serão removidos completamente quando o disco rígido armazenar outro arquivo no mesmo local, sobrescrevendo assim os dados anteriores. Os discos rígidos devem ser totalmente apagados (Limpeza de Dados) para evitar a possibilidade da recuperação de arquivos utilizando softwares especializados. Depois que os dados forem completamente apagados, o disco rígido poderá ser destruído ou reciclado.</p>
+          <p>Limpeza de Dados</p>
+          <p>A limpeza de dados, também conhecido como eliminação segura, é um procedimento realizado para apagar permanentemente os dados de um disco rígido. Ela é frequentemente realizada em discos rígidos que contêm dados sensíveis, como informações financeiras. Apagar ou até mesmo formatar o disco não é o suficiente para apagar os dados completamente. Algumas ferramentas podem ser utilizadas para recuperar pastas, arquivos e até mesmo partições inteiras que não foram apagadas corretamente. Utilize um software projetado especificamente para sobrescrever os dados várias vezes, tornando assim os dados antigos inutilizáveis. É importante lembrar que a Limpeza de Dados é um processo irreversível, tornando os dados irrecuperáveis.</p>
+          <p>Softwares de eliminação segura gastam um tempo relativamente alto para apagar um disco. Muitos programas oferecem várias opções para sobrescrever os dados. Padrões especiais de 1s e 0s, algoritmos matemáticos, bits aleatórios e sobrescrever os dados, podem ser usados para esse fim. Com discos rígidos de mais de 2 terabytes de capacidade, pode não ser prático sobrescrever os dados via software, especialmente se você tem muitos discos a serem limpos. Devido ao fato dos dados serem armazenados magneticamente em uma unidade do disco rígido, imãs podem ser utilizados para apagá-los.</p>
+          <p>Desmagnetização</p>
+          <p>A desmagnetização interrompe ou elimina o campo magnético de um disco rígido, utilizado para armazenar os dados. Um eletroímã é um imã que, quando é aplicada uma corrente, faz com que o seu campo magnético fique muito forte. Uma ferramenta de desmagnetização pode custar US$20.000 ou mais, por isso ela não é uma solução prática para a maioria dos usuários. Demora cerca de 10 segundos para desmagnetizar um disco rígido, economizando assim muito tempo e dinheiro caso um grande número de discos rígidos precisem ser apagados de forma segura.</p>
+          <p>Existem também as varinhas de desmagnetização (degaussing wands), usadas para tarefas menores, conforme apresentado na Figura 1. As varinhas de desmagnetização usam imãs poderosos ao vez de eletroímãs, além do fato de serem muito mais baratas. Para usar uma varinha de desmagnetização, um disco rígido deve ser desmontado e os seus pratos expostos à varinha por aproximadamente 2 minutos.</p>
+          <p>Destruição do Disco Rígido</p>
+          <p>As empresas que possuem dados sigilosos devem sempre estabelecer políticas claras para a eliminação dos discos rígidos. É importante estar ciente de que formatar e reinstalar um sistema operacional em um computador não garante que as informações não possam ser recuperadas. Destruir o disco rígido é a melhor opção para empresas com esse tipo de dados. Furar os pratos de uma unidade, conforme apresentado na Figura 2, não é o método mais eficaz para destruir discos rígidos. Mesmo após danificado, os dados ainda podem ser recuperados usando softwares forense avançados. Para garantir que os dados não possam ser recuperados a partir de um disco rígido, quebre cuidadosamente os pratos com um martelo e elimine de forma segura as peças.</p>
+          <p>Solid State Drives</p>
+          <p>Os SSDs são compostos de memória flash ao vez de discos magnéticos. Técnicas comuns utilizadas para apagar dados, como a desmagnetização e a quebra dos pratos, não são eficazes em unidades SSD. Para garantir que os dados não possam ser recuperados a partir de um SSD, faça uma Limpeza de Dados ou retalhe a unidade em pedaços minúsculos.</p>
+          <p>Outros meios de armazenamento, como discos ópticos ou disquetes, também devem ser destruídos. Use uma máquina de trituração para destruir esse tipo de mídia.</p>
+          <p>Reciclagem do Disco Rígido</p>
+          <p>Os discos rígidos que não contêm dados sensíveis devem ser reutilizados em outros computadores. Essa unidade pode ser formada, instalando assim um novo sistema operacional. Podem ser realizados dois tipos de formatação:</p>
+          <p><ul>
+              <li>Formatação Padrão - Também conhecido por formatação de alto nível, um setor de inicialização é criado e um sistema de arquivos é configurado no disco. A formatação padrão só pode ser realizada depois que uma formatação de nível baixo tiver sido completada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Formatação de Nível Baixo - A superfície do disco é marcada para indicar os setores onde os dados serão armazenados fisicamente no disco, criando assim as trilhas. A formatação de baixo nível geralmente é realizada na fábrica onde o disco rígido é fabricado.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

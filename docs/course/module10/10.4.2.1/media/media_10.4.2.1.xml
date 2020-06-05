@@ -1,0 +1,80 @@
+﻿<textcomponents>
+  <component id='ID_table'>
+  
+     <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+        
+		 <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns</b></font></td>
+	</tr>  
+		
+		<tr class="liner">
+        
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	    </tr> 
+      
+        <tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'><b>Sintomas do Problema</b></font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'><b>Causas do Problema</b></font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'><b>Soluções Possíveis</b></font></td>
+        </tr>
+        <tr>
+          <td  bgcolor='#F3F5E7' valign="top"><font color='#393536'>A rede sem fio está comprometida, embora a criptografia WEP de 128 bits esteja em uso.</font></td>
+          <td  bgcolor='#F3F5E7' valign="top"><font  color='#393536'>Um hacker utilizando ferramentas de quebra de criptografia de redes sem fio disponíveis.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Alterar para criptografia WPA2.</li>
+          <li>Configurar filtros de endereços MAC para os clientes que não suportam WPA2.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um usuário está recebendo centenas ou milhares de mensagens de lixo eletrônicos todos os dias.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>A rede não está fornecendo detecção ou proteção contra spammers para os servidores de e-mail.</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Instale um programa de antivírus ou um software de e-mail que remova os spams de caixa de entrada.</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Uma pessoa desconhecida, que esta fazendo o reparo de um impressora, é visto olhando debaixo dos teclados de uma estação de trabalho.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font  color='#393536' >Os visitantes não estão sendo monitorados adequadamente ou as credenciais do usuários foram roubadas, possibilitando assim o acesso ao edifício.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font  color='#393536'><textformat blockindent='-18'><li>Contate a segurança ou a polícia.</li>
+            <li>Aconselhe aos usuários para nunca esconderem senhas perto de sua área de trabalho.</li></textformat></font></td>
+        </tr>
+         <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um ponto de acesso wireless não autorizado é descoberto na rede.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>Um usuário adicionou um ponto de acesso sem fio para aumentar o alcance sem fio da rede da empresa.</font></td>
+          <td width='170' bgcolor='#FFFFFF' valign="top"><font  color='#393536'><textformat blockindent='-18'><li>Desconecte e confisque o dispositivo não autorizado.</li><li>Aplique e faça cumprir as políticas de segurança, tomando medidas contra a pessoa responsável pelas brechas de segurança.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Usuários com unidades flash estão infectando computadores da rede com vírus.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font  color='#393536'>A unidade flash está infectada por um vírus e a mesma não foi verificada pelo software de proteção contra vírus quando o computador acessou a mesma.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Configure o software de proteção contra vírus para escanear a mídia removível quando os dados são acessados.</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um alerta de segurança é exibido.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O Firewall do Windows está desligado.</li>
+            <li>As definições de vírus estão desatualizadas.</li>
+            <li>Malware foi detectado.</li></textformat></font></td>
+          <td width='170' bgcolor='#FFFFFF' valign="top"><font  color='#393536'><textformat blockindent='-18'><li>Ligue o Firewall do Windows.</li>
+            <li>Atualiza as definições de vírus.</li>
+            <li>Verifique o computador para remover qualquer malware.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows Update falhou.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font  color='#393536'><textformat blockindent='-18'><li>A atualização baixada está corrompida.</li>
+              <li>A atualização requer uma atualização anterior que não está instalada.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font  color='#393536'><textformat blockindent='-18'><li>Baixe a atualização manualmente e instale-a.</li>
+            <li>Use a restauração do sistema para restaurar o computador a um tempo antes da tentativa de atualização.</li>
+            <li>Restaure o computador a partir de um backup.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Os arquivos de sistema foram renomeados.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>O computador foi infectado por um vírus.</font></td>
+          <td width='170' bgcolor='#FFFFFF' valign="top"><font  color='#393536'><textformat blockindent='-18'><li>Remova o vírus usando o antivírus.</li>
+            <li>Restaure o computador a partir de um backup.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Seus contatos de e-mail relatam que spams estão sendo enviados do seu endereço.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font  color='#393536'>Seu e-mail foi invadido.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font  color='#393536'><textformat blockindent='-18'><li>Altere sua senha de e-mail.</li>
+             <li>Entre em contato com o serviço de suporte de e-mail para redefinir a sua conta.</li></textformat></font></td>
+        </tr> 
+      </table>]]>
+    </text>
+  </component>
+</textcomponents>

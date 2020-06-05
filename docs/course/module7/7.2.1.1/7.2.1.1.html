@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.2.1.1 Monitores de LCD, LED, OLED e Plasma</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes do Visor de um Laptop</h1>
+        <h2>Comparando os Tipos de Visores</h2>
+      </div>
+      <div id="content">
+          <p>O monitor dos laptops é um dispositivo integrado. Eles são semelhantes aos monitores de desktop, exceto pelo fato de que você pode ajustar a resolução, brilho e contraste usando software ou por botões de controle. Você não pode ajustar a altura e a distância do monitor de um laptop, pois ele é integrado na carcaça. Você pode conectar um monitor de desktop a um laptop, fornecendo ao utilizador várias telas e mais funcionalidade, conforme apresentado na imagem.</p>
+          <p></p>
+          <p>Existem quatro tipos de visores para laptops:</p>
+          <p><ul>
+              <li>LCD</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>LED</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>OLED</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Plasma</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Os monitores de LED consomem menos energia e têm uma vida útil mais longa do que os monitores de LCD. A tecnologia LED Organic (OLED) é comumente usado para dispositivos móveis e câmeras digitais, mas também podem ser encontradas em laptops de designs conceituais. Os monitores OLED vão se tornar mais popular conforme a melhora da tecnologia. Monitores de plasma são raramente encontrados em laptops, pois eles consomem uma grande quantidade de energia.</p>
+          <p></p>
+          <p>Em muitos laptops, há um pequeno pino na tampa que é acionado quando a mesma está fechada, este pino é chamado de interruptor de corte LCD. O interruptor de corte LCD ajuda a economizar energia extinguindo a iluminação de fundo (backlight) e desligando o LCD. Se esse interruptor quebrar ou estiver sujo, o LCD ficará desligado mesmo que o laptop esteja aberto. Limpe cuidadosamente esse interruptor para que ele possa restaurar o funcionamento normal.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

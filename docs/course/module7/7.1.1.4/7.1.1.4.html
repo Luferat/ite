@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.1.4 Teclas de Funções Especiais</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes de Laptops</h1>
+        <h2>Componentes de Laptops</h2>
+      </div>
+      <div id="content">
+          <p>A finalidade da tecla de função (Fn) é ativar a segunda função de uma tecla de duplo propósito. A característica que é acessada pressionando a tecla Fn em combinação com outra tecla está impressa na mesma em uma fonte menor ou cor diferente. Várias funções podem ser acessadas:</p>
+          <p></p>
+          <p><ul>
+              <li>Definições do visor</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Brilho da tela</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Brilho da luz do teclado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ajuste de volume</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dormir</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Funcionalidade sem fio (wireless)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Funcionalidade Bluetooth</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Estado da bateria</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NOTA: Alguns laptops podem ter teclas de função dedicadas que desempenham funções sem que os usuários pressionem a tecla Fn.</p>
+          <p></p>
+          <p>O monitor de um laptop é um LCD embutido. É semelhante a um monitor LCD desktop, exceto que você pode ajustar a resolução, brilho e contraste, utilizando software ou controles de botão. Você não pode ajustar a altura e a distância do monitor de um laptop, pois ele é integrado na carcaça. Você pode conectar um monitor desktop a um laptop. Pressionando a tecla Fn com a tecla de função apropriado nos laptops é possível alternar entre a tela portátil e o monitor de mesa, conforme apresentado na imagem.</p>
+          <p></p>
+          <p>Não confunda a tecla Fn com as teclas de função de F1 a F12. Estas teclas são geralmente localizadas em uma linha na parte superior do teclado. Sua função depende do sistema operacional e do aplicativo que está em execução quando elas são pressionadas. Cada tecla pode realizar até sete diferentes operações, pressionando-a com uma ou mais combinações (Shift, Control e Alt).</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

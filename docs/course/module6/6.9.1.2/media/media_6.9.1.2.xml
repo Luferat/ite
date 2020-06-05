@@ -1,0 +1,24 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Conexão DSL</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Computador ou Rede Doméstica</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Modem DSL</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Par Trançado</b>]]></text> 
+  </component>
+
+<component id="ID_txt05">
+  <text><![CDATA[<b>ISP</b>]]></text> 
+  </component>
+  
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

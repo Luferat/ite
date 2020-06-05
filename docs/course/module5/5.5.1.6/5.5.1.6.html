@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.5.1.6 Agendando Tarefas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para os Sistemas Operacionais</h1>
+        <h2>Plano de Manutenção Preventiva para o S.O.</h2>
+      </div>
+      <div id="content">
+          <p>Você pode agendar as aplicações de manutenção preventiva para serem executadas em determinado momento. Você pode agendar essas tarefas utilizando o Agendador de Tarefas (interface GUI) ou através do prompt de comando (interface CLI). Ambas as ferramentas permitem que você execute um comando em um momento específico ou em uma base contínua de dias e horários selecionados. O Agendador de Tarefas do Windows, exibido na figura, apresenta um interface de uso e aprendizagem mais fácil do que o comando at, ideal para agendar tarefas recorrentes ou deletar tarefas agendadas.</p>
+          <p>Agendador de Tarefas do Windows</p>
+          <p>Você pode automatizar tarefas utilizando o Agendador de Tarefas. O Agendador de Tarefas monitora os critérios selecionados e definidos pelo usuário e, em seguida, executa as tarefas quando os mesmos forem cumpridos. Algumas tarefas que podem ser automatizadas utilizando o Agendador de Tarefas incluem:</p>
+          <p><ul>
+              <li>Limpeza de Disco</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Backup</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desfragmentador de Disco</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ponto de Restauração</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Iniciar outras aplicações</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Para acessar o Agendador de Tarefas no Windows 7 e no Windows Vista, utilize o seguinte caminho:</p>
+          <p>Iniciar> Todos os Programas> Acessórios> Ferramentas do Sistema> Agendador de Tarefas</p>
+          <p></p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Todos os Programas> Acessórios> Ferramentas do Sistema> Tarefas Agendadas</p>
+          <p></p>
+          <p>Comando at</p>
+          <p>Você pode usar o comando at para agendar que um comando, arquivo de script ou aplicativo seja executado em uma data e hora específica. Para utilizar o comando at, você deve estar logado como administrador.</p>
+          <p>Para obter mais informações sobre o comando at no Windows 7 e Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> no campo Pesquisar programas e arquivos, digite cmd e pressione Enter> digite at/? na linha de comando e pressione Enter</p>
+          <p>Para obter informações sobre o comando at no Windows XP, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar> Executar> digite cmd e pressione Enter> digite at/? na linha de comando e pressione Enter</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

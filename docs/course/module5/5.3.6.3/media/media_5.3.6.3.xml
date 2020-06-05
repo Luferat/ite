@@ -1,0 +1,18 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Utilitário Adicionar/Remover Programas</b>]]></text>
+</component>  
+<component id="ID_s2_title">
+<text><![CDATA[<b>Utilitário Impressoras e Aparelhos de Fax</b>]]></text>
+</component>  
+<component id="ID_s3_title">
+<text><![CDATA[<b>Utilitário Atualizações Automáticas</b>]]></text>
+</component>  
+<component id="ID_s4_title">
+<text><![CDATA[<b>Utilitário Conexões de Rede</b>]]></text>
+</component>  
+<component id="ID_s5_title">
+<text><![CDATA[<b>Utilitário de Configuração de Rede</b>]]></text>
+</component>  
+  
+</textcomponents>

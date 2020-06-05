@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.4.2 Connecting to a Workgroup or a Domain</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>OS Configurations</h2>
+    </div>
+    <div id="content">
+          <p>Before computers can share resources, they must share the same domain name or workgroup name. Older operating systems have more restrictions for naming a workgroup. If a workgroup is made up of newer and older operating systems, use the workgroup name from the computer with the oldest operating system.</p>
+          <p>
+            <b>Note:</b> Before changing a computer from a domain to a workgroup, you need the username and the password for an account in the local administrator group.</p>
+          <p>To change the workgroup name for Windows 7 and Windows Vista, as shown in Figure 1, use the following path:</p>
+          <p>
+            <b>Start ></b> right-click <b>Computer > Properties > Change setting > Change</b></p>
+          <p>To change the workgroup name for Windows XP, use the following path:</p>
+          <p>
+            <b>Start ></b> right-click <b>My Computer > Properties ></b> select <b>Computer Name</b> tab <b>> Change</b></p>
+          <p>Windows also has a wizard, shown in Figure 2, that guides you through the process for joining a domain or workgroup. After changing the domain name or workgroup name, you must restart the computer for the changes to take place.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

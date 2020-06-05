@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.1.1 Atualização de Componentes da Placa-mãe</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Atualizando e Configurando um PC</h1>
+        <h2>Placa-mãe e seus Componentes</h2>
+      </div>
+      <div id="content">
+          <p>Os sistemas de computadores precisam de atualizações periódicas, por várias razões:</p>
+          <p><ul>
+              <li>Os requisitos do usuário mudaram.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Novos softwares exigem um novo hardware.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O novo hardware oferece desempenho aprimorado.</li>
+            </ul>
+          </p>
+          <p>Alterações no computador podem fazer com que você atualize ou substitua componentes e periféricos. Pesquise e avalie o custo benefício, tanto para atualização, quanto para substituição.</p>
+          <p>Se você atualizar ou substituir a placa-mãe, pode ser necessário que você substitua outros componentes, como o processador, dissipador de calor, ventoinha e a memória RAM. A nova placa-mãe deve se encaixar no gabinete do computador antigo. A fonte de alimentação deve ser compatível com a nova placa-mãe e também suportar todos os novos componentes do computador.</p>
+          <p>Comece a atualização movendo a CPU, dissipador de calor e ventoinha para a nova placa-mãe. É mais fácil trabalhar com estes equipamentos quando eles estão fora do gabinete. Trabalhe em uma manta antiestática e use a pulseira antiestática para evitar danificar a CPU. Se a nova placa-mãe requer um modelo diferente de CPU e memória RAM, instale-os nesse momento. Limpe a pasta térmica do processador e do dissipador de calor. Lembre-se de adicionar a pasta térmica entre o processador e o dissipador de calor.</p>
+          <p>Instalação da CPU</p>
+          <p>Diferentes arquiteturas de CPU são instaladas nestes soquetes:</p>
+          <p><ul>
+              <li>Single-Edge Connector (SEC)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Low-Insertion Force (LIF)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Zero-Insertion Force (ZIF)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Land Grid Array (LGA)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pin Grid Array (PGA)</li>
+            </ul>
+          </p>
+          <p>Soquetes SEC e LIF não são mais utilizados. Consulte a documentação da placa-mãe sobre como instalar a CPU.</p>
+          <p>Configurações de Jumper</p>
+          <p>Os jumpers são os pinos dourados que se encontram em pé na placa-mãe. Cada agrupamento de dois ou mais pinos é chamado de bloco de jumper. A placa-mãe pode usar um switch Dual In-line Package (DIP), ao invés dos jumpers. Ambos os métodos são usados ​​para completar circuitos elétricos, que fornecem uma variedade de opções suportadas pela placa-mãe. A documentação da placa-mãe indica quais pinos devem ser conectados para acomodar as várias opções:</p>
+          <p><ul>
+              <li>Voltagem da CPU</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Velocidade da CPU</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Velocidade do barramento</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tamanho e Tipo de Cache</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Flash BIOS habilitado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Limpar CMOS</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tamanho da Memória do Sistema</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As placas-mãe mais atuais raramente possuem jumpers. Tecnologias eletrônicas avançadas permitem que estas opções sejam configuradas a partir do programa de configuração da BIOS.</p>
+          <p>Instalação da Bateria da CMOS</p>
+          <p>A bateria da CMOS pode precisar ser substituída depois de alguns anos. Se o computador não estiver armazenando a hora e data correta do sistema durante as vezes que o mesmo é desligado, provavelmente a bateria se esgotou. Certifique-se de que a nova bateria corresponde ao modelo exigido pela placa-mãe.</p>
+          <p>Para instalar a bateria da CMOS, siga estes passos:</p>
+          <p>Passo 1. Com cuidado, deslize para o lado, ou puxe para cima, os clipes de metal para remover a bateria antiga.</p>
+          <p>Passo 2. Alinhe os pólos positivos e negativos na posição correta.</p>
+          <p>Passo 3. Com cuidado, deslize para o lado, ou puxe para cima, os clipes de metal para inserir a nova bateria.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

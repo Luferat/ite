@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.2.1 Selecting a NIC</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Network Cards</h2>
+    </div>
+    <div id="content">
+          <p>A network interface card (NIC) is required to connect to the network. The NIC may come preinstalled on a computer, or you might have to purchase one on your own. You must be able to upgrade, install, and configure components when a customer asks for increased speed or new functionality to be added to a network. If your customer is adding additional computers or wireless functionality, you should be able to recommend equipment based on their needs, such as wireless access points and wireless network cards. The equipment that you suggest must work with the existing equipment and cabling, or the existing infrastructure must be upgraded. In rare cases, you might need to update the driver. You can use the driver disc that comes with the motherboard or adapter card, or you can supply a driver that you downloaded from the manufacturer.</p>
+          <p>There are many types of network interfaces, as shown in Figure1: </p>
+          <p>
+            <ul>
+              <li>Most network interfaces for desktop computers are either integrated into the motherboard or are an expansion card that fits into an expansion slot.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Most laptop network interfaces are either integrated into the motherboard or fit into a PC Card or ExpressBus expansion slot.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>USB network adapters plug into a USB port and can be used with both desktops and laptops.</li>
+            </ul>
+          </p>
+          <p>Before purchasing a NIC, research the card’s speed, form factor, and capabilities. Also check the speed and capabilities of the hub or switch connected to the computer.</p>
+          <p>Ethernet NICs might be backward-compatible:</p>
+          <p>
+            <ul>
+              <li>If you have a 10/100 Mbps NIC and a hub that is only 10 Mbps, the NIC operates at 10 Mbps.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If you have a 10/100/1000 Mbps NIC and a switch that is only operating at 100 Mbps, the NIC operates at 100 Mbps.</li>
+            </ul>
+          </p>
+          <p>If you have a gigabit switch, you most likely need to purchase a gigabit NIC to match speeds. If there are plans to upgrade the network in the future to Gigabit Ethernet, make sure to purchase NICs that can support the speed. Costs can vary greatly, so select NICs that match the needs of your customer.</p>
+          <p>To connect to a wireless network, the computer must have a wireless adapter. A wireless adapter communicates with other wireless devices, such as computers, printers, or wireless access points. Before purchasing a wireless adapter, make sure that it is compatible with the other wireless equipment that is already installed on the network. Verify that the wireless adapter is the correct form factor for the customer's computer. You can use a wireless USB adapter with any desktop or laptop computer that has a USB port.</p>
+          <p>Wireless NICs are available in different formats and capabilities. Select a wireless NIC based on the type of wireless network that is installed:</p>
+          <p>
+            <ul>
+              <li>802.11b NICs can be used on 802.11g networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>802.11a can be used only on a network that supports 802.11a.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>802.11a, 802.11b, and 802.11g NICs can be used on 802.11n networks.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

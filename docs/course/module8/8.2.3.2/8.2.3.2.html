@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.3.2 Gerenciamento de Aplicativos e Pastas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Móveis</h1>
+        <h2>Interface de Toque do iOS</h2>
+      </div>
+      <div id="content">
+          <p>Aplicativos</p>
+          <p>Os aplicativos e pastas do iOS funcionam de forma semelhante ao sistema Android. Ao invés de um botão &quot;Aplicativos&quot;, todos os aplicativos que estão instalados no dispositivo estão localizados nas telas iniciais. Os aplicativos podem ser desinstalados do dispositivo, porém podem ser re-instalados no dispositivo usando o iTunes.</p>
+          <p>Cada tela inicial possui uma grade na qual os aplicativos podem ser colocados. Para mover um aplicativo, siga esses passos:</p>
+          <p>Passo 1. Toque e segure o aplicativo até que ele comece a tremer.</p>
+          <p>Passo 2. Arraste-o para uma área vazia em qualquer tela inicial.</p>
+          <p>Passo 3. Solte o aplicativo.</p>
+          <p>Passo 4. Mova quaisquer aplicativos adicionais.</p>
+          <p>Passo 5. Pressione o botão Home para salvar as alterações.</p>
+          <p>Para remover um aplicativo em um dispositivo iOS, siga estes passos:</p>
+          <p>Passo 1. Toque e segure o aplicativo até que ele comece a tremer.</p>
+          <p>Passo 2. Toque no ícone X no aplicativo.</p>
+          <p>Passo 3. Exclua quaisquer aplicativos adicionais.</p>
+          <p>Passo 4. Pressione o botão Home para salvar as alterações.</p>
+          <p>Barra Multitarefa</p>
+          <p>O iOS permite que vários aplicativos sejam executados ao mesmo tempo. Enquanto você trabalha em um aplicativo, outros podem estar sendo executados em segundo plano. A barra de multitarefa é usada para alternar rapidamente entre os aplicativos que foram usados ​​recentemente, aplicativos fechados e que estão sendo executados e também acessar as configurações usadas com frequência. Para abrir a barra de multitarefa, aperte duas vezes o botão Home. As seguintes ações podem ser realizadas na barra de multitarefa:</p>
+          <p><ul>
+              <li>Tocar em qualquer aplicativo para abri-lo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Deslize a barra de multitarefa para a esquerda para visualizar mais aplicativos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Deslize a barra de multitarefa para a direita para acessar as configurações utilizadas, como mostrado na Figura 1.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Toque e segure um aplicativo até que ele comece a treme, pressione o pequeno círculo vermelho com o traço branco para forçar o aplicativo a fechar.</li>
+            </ul>
+          </p>
+          <p>Pastas</p>
+          <p>Pastas também podem ser criadas em dispositivos iOS para ajudar a organizá-los. Para criar uma pasta, siga estes passos:</p>
+          <p>Passo 1. Toque e segure um aplicativo na tela inicial até que ele comece a tremer.</p>
+          <p>Passo 2. Arraste o aplicativo para a pasta.</p>
+          <p>Passo 3. Solte o aplicativo.</p>
+          <p>Passo 4. Adicione quaisquer aplicativos adicionais na pasta.</p>
+          <p>Passo 5. Toque no botão Home para salvar as alterações</p>
+          <p>Toque em qualquer pasta para abri-la. Toque em qualquer aplicativo dentro da pasta para abri-lo. Para renomear uma pasta, toque na pasta, toque no nome da pasta e digite o novo nome. Para fechar uma pasta, toque fora da pasta ou pressione o botão Home. Você pode mover a pasta de uma tela para outra da mesma forma que você move um aplicativo.</p>
+          <p>Para remover um aplicativo de uma pasta, siga esses passos:</p>
+          <p>Passo 1. Abra a pasta.</p>
+          <p>Passo 2. Toque e segure o aplicativo que você deseja remover.</p>
+          <p>Passo 3. Arraste o aplicativo para uma área vazia da tela inicial.</p>
+          <p>Passo 4. Solte o aplicativo.</p>
+          <p>Para remover uma pasta, remova todos os aplicativos da pasta.</p>
+          <p>Muitos dos aplicativos em dispositivos iOS são capazes de exibir um ícone de alerta. Um ícone de alerta é exibido como um pequeno ícone sobre uma aplicação, como mostrado na Figura 2. Esse ícone é um número que indica a quantidade de alertas de um aplicativo que precisam ser visualizados. Ele pode ser quantas chamadas não atendidas que você tem, quantas mensagens de texto que você tem ou quantas atualizações estão disponíveis. Se um ícone de alerta exibir um ponto de exclamação, há um problema com o aplicativo. Os ícones de alerta para aplicativos que estão dentro de uma pasta são exibidos na pasta. Toque no aplicativo para atender aos alertas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

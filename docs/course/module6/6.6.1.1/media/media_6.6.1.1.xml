@@ -1,0 +1,45 @@
+﻿
+<textcomponents>
+
+<component id='ID_table'>
+<text><![CDATA[
+				<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="liner">
+	 <td colspan='2' bgcolor='#DAE17A'><font size='14' color='#393536'><b>Organizações Normatizadoras</b></font></td>
+	 </tr>			
+			<tr>
+					<td class="liner_top" colspan='2' bgcolor='#434321'><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>  
+				<tr>
+					<td bgcolor='#F3F5E7' width="100px" valign="top"><font size='12'color='#393536'>ITU-T</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>O International Telecommunication Unions Telecommunication Standardization Sector - Agência especializada das Nações Unidas para tecnologias de comunicação e informação(TIC).</font></td>			</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12'color='#393536'>IEEE</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Institute of Electrical and Electronics Engineering - Desenvolve padrões para computadores e para a indústria eletrônica. Por exemplo, o padrão IEEE 802 é utilizado em redes locais. </font></td> 
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>ISO</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>International Organization for Standardization - Define padrões computacionais. Por exemplo, o modelo OSI (Open System Interconnection). </font></td> 
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12'color='#393536'>IAB</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>Internet Architecture Board - Comitê que supervisiona o desenvolvimento técnico e de engenharia da Internet. </font></td> 
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>IEC</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>International Electrotechnical Commission - Organização global que prepara e publica padrões internacionais para todas as tecnologias elétricas, eletrônicas e tecnologias relacionadas. </font></td> 
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12'color='#393536'>ANSI</font></td>
+					<td bgcolor='#FFFFFF' valign="top"><font size='12' color='#393536'>American National Standards Institute - Facilita o desenvolvimento de padrões, estabelecendo processos de consenso entre os grupos qualificados. </font></td> 
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12'color='#393536'>TIA/EIA</font></td>
+					<td bgcolor='#F3F5E7' valign="top"><font size='12' color='#393536'>Telecommunications Industry Association e Electronic Industries Alliance - Desenvolve e publica normas que abrangem estruturas de voz e cabeamento de dados para redes locais. </font></td> 
+				</tr>
+			
+			</table>]]>
+		</text>
+</component>
+
+</textcomponents>

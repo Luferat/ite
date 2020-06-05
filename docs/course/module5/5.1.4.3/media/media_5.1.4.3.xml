@@ -1,0 +1,27 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>User State Migration Tool</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Administrador: Prompt de Comando]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<font color="#FFFFFF" face='_typewriter' size='10' class="cmdFontSize">C:\Program Files\USMT301>scanstate c:\usmtLog messages are being sent to &#39;C:\Program Files\USMT301\scanstate.log&#39;Scanning the computer for files and settings...Collecting files and settings for:<textformat blockindent='25'>This Computer&#39;PRODUCTION\Administrator&#39; &lt;user 1 of 2>&#39;JOHN\John&#39; &lt;user 2 of 2></textformat><br>Saving files and settings -ScanState has successfully collected the files and settings.C:\Program Files\USMT301>]]></text>
+</component>
+
+<!--Slide 2-->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Transferência Fácil do Windows</b>]]></text>
+</component>
+
+<!--Slide 3-->
+<component id='ID_s3_title'>
+	<text><![CDATA[<b>Assistente para Transferência de Arquivos e Configurações</b>]]></text>
+</component>
+
+</textcomponents>

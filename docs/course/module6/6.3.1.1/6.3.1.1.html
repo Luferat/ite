@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.1.1 Largura de Banda</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Fluxo de Dados</h2>
+      </div>
+      <div id="content">
+          <p>Quando os dados são enviados através de uma rede de computadores, eles são divididos em pequenos pedaços chamados pacotes. Cada pacote contém informações sobre o endereço de destino e de origem. O pacote, juntamente com a informação do endereço, é chamado quadro. Ele também contém informações que descrevem como juntar todos os pacotes no destino. A largura de banda determina o número de pacotes que podem ser transmitidos dentro de um período de tempo fixo.</p>
+          <p></p>
+          <p>A largura de banda é medida em bits por segundo e geralmente é indicada por qualquer uma das seguintes unidades de medida:</p>
+          <p></p>
+          <p><ul>
+              <li>bps - bits por segundo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>kbps - kilobits por segundo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mbps - megabits por segundo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gbps - gigabits por segundo</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NOTA: 1 byte equivale a 8 bits, e é abreviado com uma letra maiúscula B. 1 MBps é de aproximadamente 8 Mbps.</p>
+          <p></p>
+          <p>A figura faz uma comparação entre o conceito de largura de banda em uma rede e uma rodovia. No exemplo da rodovia, os carros e caminhões representam os dados. O número de faixas da estrada representa a quantidade de carros que podem viajar na estrada ao mesmo tempo. Uma estrada de oito pistas pode lidar com quatro vezes o número de carros que uma estrada de duas pistas.</p>
+          <p></p>
+          <p>A quantidade de tempo que os dados levam para viajar a partir da origem até o destino é chamado de latência. Como um carro que viaja através da cidade e que atravessa semáforos ou desvios, os dados são atrasados por dispositivos de rede e pelo comprimento do cabo. Os dispositivos de rede adicionam latência ao processar e enviar os dados. Ao navegar na Web ou baixar um arquivo, a latência não costuma causar problemas. Aplicações críticas em tempo real, tais como chamadas telefônicas de Internet, vídeo e jogos podem ser significativamente afetados pela latência.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

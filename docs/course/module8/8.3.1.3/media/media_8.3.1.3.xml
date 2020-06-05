@@ -1,0 +1,14 @@
+﻿<textcomponents>
+
+<component id="ID_label01">
+<text><![CDATA[<b>Ativar Dados no Celular Android</b>]]></text>
+</component>
+<component id="ID_label02">
+  <text><![CDATA[<b>Ativar Dados no Celular iOS</b>]]></text> 
+  </component>
+
+<component id="transcript">
+  <text><![CDATA[<b>Transcreva aqui</b>]]></text> 
+  </component>
+  
+</textcomponents>

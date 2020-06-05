@@ -1,0 +1,36 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Cabo Coaxial</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Design do Cabo Coaxial</b>]]></text> 
+</component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Conexão Coaxial</b>]]></text> 
+</component>
+
+<component id="ID_s2_txt01">
+	<text><![CDATA[<b>Revestimento Externo</b>]]></text>
+</component>
+<component id="ID_s2_txt02">
+	<text><![CDATA[<b>Blindagem de Malha de Cobre</b>]]></text>
+</component>
+<component id="ID_s2_txt03">
+	<text><![CDATA[<b>Condutor de Cobre</b>]]></text>
+</component>
+<component id="ID_s2_txt04">
+	<text><![CDATA[<b>Isolamento Plástico</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+	<text><![CDATA[<b>Conectores Coaxiais</b>]]></text>
+</component>
+<component id="ID_s3_txt02">
+	<text><![CDATA[<b>BNC</b>]]></text>
+</component>
+<component id="ID_s3_txt03">
+	<text><![CDATA[<b>Tipo F</b>]]></text>
+</component>
+
+</textcomponents>

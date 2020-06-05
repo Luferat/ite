@@ -1,0 +1,29 @@
+﻿<textcomponents>
+	
+	
+	<component id='ID_table'>
+		<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+			 <tr class="title">
+					<td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 2: Estabelecendo uma Teoria da Provável Causa</b></font></td>
+				</tr>
+			 <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+        </tr>
+		
+			 
+			<tr>
+			<td valign="top" bgcolor='#F3F5E7'><font size='12'color='#393536'>Causas Comuns de Problemas dos Sistemas Operacionais</font></td>
+				<td valign="top" bgcolor='#F3F5E7'><font size='12'color='#393536'><li>Configurações Incorretas na BIOS</li>
+														<li>A tecla Caps Lock está habilitada.</li>
+														<li>Uma midia não-inicializável está inserida na unidade de disquete durante a inicialização do computador</li>
+														<li>Senha foi alterada</li>
+														<li>Configurações incorretas do monitor no painel de controle</li>
+														<li>Falha na atualização do sistema operacional</li>
+														<li>Falha na atualização do driver</li>
+														<li>Infecção por malware</li>
+														<li>Falha no disco rígido</li>
+														<li>Arquivos do sistema operacional corrompidos</li></font></td>
+			</tr>
+		</table>]]></text>
+	</component>
+</textcomponents>

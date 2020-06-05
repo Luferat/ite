@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.10.1.1 Procedimentos de Manutenção Preventiva</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva Comuns Usadas em Redes</h1>
+        <h2>Manutenção de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Existem técnicas de manutenção preventiva comuns que devem ser continuamente realizadas para que a rede funcione corretamente. Em uma organização, se um computador não estiver funcionando corretamente, em geral, só o usuário é afetado. Mas se a rede não estiver funcionando corretamente, muitos ou todos os usuários são incapazes de trabalhar.</p>
+          <p>A manutenção preventiva é tão importante para a rede, quanto para os computadores em uma rede. Você deve verificar o estado dos cabos, dispositivos de rede, servidores e computadores para certificar-se de que eles são mantidos em um ambiente limpos e que estão em boas condições de funcionamento. Um dos maiores problemas referente aos dispositivos de rede, especialmente na sala do servidor, é o calor. Os dispositivos de rede não trabalha de forma apropriada quando superaquecidos. Quando há muita poeria, dentro ou fora dos dispositivos de rede, ela impede o fluxo de ar e muitas vezes entopem os coolers e ventoinhas. É importante manter as salas de rede limpas e trocar os filtros de ar com frequência. Também é uma boa ideia ter filtros de substituição disponíveis para a uma manutenção rápida. Você deve desenvolver um plano para realizar a manutenção e a limpeza programada em intervalos regulares. Um programa de manutenção ajuda a evitar o tempo de inatividade da rede e falhas de equipamento.</p>
+          <p>Como parte de um programa de manutenção regular, verifique todo o cabeamento. Certifique-se de que os cabos estão identificados corretamente e que as etiquetas não estão saindo. Substitua as etiquetas desgastadas ou ilegíveis. Siga sempre as orientações de identificação de cabos da empresa. Verifique se os suportes de cabos estão instalados corretamente e se os pontos de fixação não estão frouxos. O cabeamento pode ficar danificado e desgastado. Mantenha os cabos em bom estado de conservação para manter o bom desempenho da rede. Consulte os diagramas de cabeamento, se necessário.</p>
+          <p>Verifique os cabos nas estações de trabalho e impressoras. Muitas vezes, os cabos são movidos ou chutado quando estão embaixo das mesas. Estas condições podem resultar na perda de largura de banda ou conectividade.</p>
+          <p>Como técnico, você pode notar que o equipamento está falhando, danificado ou fazendo sons incomuns. Informe o administrador de rede se você notar algum desses problemas, evitando assim um tempo de inatividade de rede desnecessário. Você também deve ser pró-ativo na educação dos usuários da rede. Demonstre aos usuários da rede como conectar e desconectar corretamente os cabos, bem como a forma de movê-los, se necessário.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

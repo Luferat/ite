@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.5.1.4 Ambiente Operacional</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para Impressoras</h1>
+        <h2>Manutenção Preventiva de Impressoras</h2>
+      </div>
+      <div id="content">
+          <p>Impressoras, como todos os outros dispositivos elétricos, são afetadas pela temperatura, umidade e interferência elétrica. As impressoras a laser produzem calor e devem operar em locais bem ventilados para evitar o superaquecimento.</p>
+          <p>Mantenha o papel e os cartuchos de toner em suas embalagens originais. Esses suprimentos também devem ser armazenados num ambiente fresco, seco e livre de poeira. Alta umidade faz com que o papel absorva a umidade. Isso pode criar ondas no papel, o que faz com que pedaços de papel fiquem juntos ou grudados durante o processo de impressão. A alta umidade também pode dificultar a absorção do toner pelo papel. Se o papel e a impressora estiverem empoeirados, você pode usar ar comprimido para soprar a poeira.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

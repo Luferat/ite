@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.3.6 Memory Modules</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Internal PC Components</h2>
+    </div>
+    <div id="content">
+          <p>Early computers had RAM installed on the motherboard as individual chips. The individual memory chips, called dual inline package (DIP) chips, were difficult to install and often became loose. To solve this problem, designers soldered the memory chips on a special circuit board to create a memory module. The different types of memory modules are described in Figure 1.</p>
+          <p>
+            <b>NOTE</b>: Memory modules can be single-sided or double-sided. Single-sided memory modules contain RAM only on one side of the module. Double-sided memory modules contain RAM on both sides.</p>
+          <p>The speed of memory has a direct impact on how much data a processor can process, because faster memory improves the performance of the processor. As processor speed increases, memory speed must also increase. For example, single-channel memory is capable of transferring data at 64 bits. Dual-channel memory increases the speed by using a second channel of memory, creating a data transfer rate of 128 bits.</p>
+          <p>Double Data Rate (DDR) technology doubles the maximum bandwidth of Synchronous Dynamic RAM (SDRAM). DDR2 offers faster performance and uses less energy. DDR3 operates at even higher speeds than DDR2. However, none of these DDR technologies are backward- or forward-compatible. Many common memory types and speeds are shown in Figure 2.</p>
+          <p>
+            <b>Cache</b>
+          </p>
+          <p>Static RAM (SRAM )is used as cache memory to store the most recently used data and instructions. SRAM provides the processor with faster access to the data than retrieving it from the slower dynamic RAM (DRAM), or main memory. The three most common types of cache memory are described in Figure 3.</p>
+          <p>
+            <b>Error Checking</b>
+          </p>
+          <p>Memory errors occur when the data is not stored correctly in the RAM chips. The computer uses different methods to detect and correct data errors in memory. Different types of error checking are described in Figure 4.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

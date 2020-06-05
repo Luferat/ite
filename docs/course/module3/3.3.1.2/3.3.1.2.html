@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.1.2 Atualizando a Placa-mãe</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Atualizando e Configurando um PC</h1>
+        <h2>Placa-mãe e seus Componentes</h2>
+      </div>
+      <div id="content">
+          <p>Para remover e substituir uma antiga placa-mãe, remova os cabos da placa-mãe que se conectam aos LEDs e botões do gabinete. Faça anotações em seu diário para saber onde e como estão conectados esses cabos antes de iniciar a troca.</p>
+          <p>Observe como a placa-mãe é presa ao gabinete. Alguns parafusos de montagem prendem a placa-mãe, enquanto outros podem fornecer uma importante conexão de aterramento entre a placa-mãe e o chassi. Em particular, preste atenção aos parafusos e espaçadores que são não-metálicos, pois estes podem ser isolantes. A substituição de parafusos e suportes de isolamento por um hardware de metal que conduz eletricidade pode danificar os componentes elétricos.</p>
+          <p>Antes de instalar a nova placa-mãe dentro do computador, examine o espelho I/O, localizado na parte traseira do gabinete. Substitua o antigo espelho, se a nova placa-mãe possua portas de I/O diferente ou se as portas estiverem em locais diferentes.</p>
+          <p>Certifique-se de usar os parafusos corretos. Não troque os parafusos convencionais com parafusos de auto-rosqueamento, pois eles podem danificar os furos ou podem não prender a placa-mãe adequadamente. Certifique-se de que os parafusos são do comprimento correto e tem o mesmo número de linhas por polegada. Se o número de linhas estiver correto, eles se encaixarão facilmente. Se você forçar um parafuso para encaixar, você pode danificar o furo, fazendo com que a placa-mãe não fique presa com firmeza. Usar o parafuso errado também pode produzir rebarbas de metal que podem causar curtos-circuitos.</p>
+          <p>Em seguida, conecte os cabos de alimentação. Se os conectores de alimentação ATX não são do mesmo tamanho (alguns têm mais pinos do que os outros), você pode precisar usar um adaptador. Conecte os cabos dos LEDs e botões frontais do gabinete. Consulte a documentação da placa-mãe para visualizar o layout das conexões.</p>
+          <p>Depois que a nova placa-mãe estiver no local e os cabos estiverem conectados, instale as placas de expansão.</p>
+          <p>Agora é hora de verificar o seu trabalho. Certifique-se de que não há peças soltas ou fios sobrando. Conecte o teclado, mouse, monitor e o cabo de energia. Se for detectado um problema, desligue a fonte de alimentação imediatamente.</p>
+          <p>Atualização da BIOS</p>
+          <p>O firmware codificado no chip CMOS da placa-mãe pode precisar ser atualizada para que a placa-mãe possa suportar hardwares mais recentes. A atualização do firmware pode ser arriscada. Antes de atualizar o firmware, anote o nome do fabricante da BIOS e da placa-mãe e o modelo da placa-mãe. Você precisará dessas informações quando você acessar o site do fabricante da placa-mãe para obter o software de instalação e o firmware correto. Só atualize o firmware se houver problemas com o hardware ou para adicionar funcionalidades ao sistema.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

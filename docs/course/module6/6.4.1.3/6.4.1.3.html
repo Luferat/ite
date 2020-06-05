@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.1.3 Roteadores e Pontos de Acesso Sem Fio</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Dispositivos de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Ao assinar com um provedor, determine que tipo de equipamento está disponível para selecionar o dispositivo mais adequado. Um ISP é uma empresa que fornece serviços de Internet para indivíduos e empresas. Um ISP geralmente fornece uma conexão com a Internet, contas de e-mail e páginas web, cobrando uma taxa de serviço mensal. Alguns ISPs alugam equipamentos por uma taxa mensal. Em alguns casos, alugar os equipamentos é uma boa opção, pois o ISP fornece suporte ao equipamento em casos de falhas, alteração ou atualização na tecnologia. Os equipamentos que podem ser usados para se conectar a um ISP são mostrados na Figura 1.</p>
+          <p>Pontos de Acesso Sem Fio</p>
+          <p>Pontos de acesso sem fio, mostrados na Figura 2, fornecem acesso à rede para dispositivos sem fio, tais como laptops e tablets. Os pontos de acesso sem fio usa ondas de rádio para se comunicar com as placa de rede dos dispositivos e com outros pontos de acesso. Um ponto de acesso possui um alcance de cobertura limitado. Grandes redes requerem vários pontos de acesso sem fio para fornecer uma cobertura adequada. Um ponto de acesso sem fio fornece apenas conectividade de rede, enquanto que um roteador sem fio oferece recursos adicionais, tais como atribuição de endereços IP.</p>
+          <p>Roteadores</p>
+          <p>Roteadores interconectam redes. Switches usam endereços MAC para encaminhar quadros dentro de uma única rede. Os roteadores usam endereços IP para transmitir pacotes para outras redes. Um roteador pode ser um computador com um software de rede especial instalado ou um dispositivo construído por fabricantes de equipamento de rede.</p>
+          <p>Em uma rede corporativa, uma porta do roteador se conecta à conexão WAN e as outras portas se conectam à LANs corporativas. O roteador se torna o gateway para a LAN.</p>
+          <p>Dispositivos Multifuncional</p>
+          <p>Dispositivos multifuncionais, mostrados na Figura 3, são dispositivos de rede que executam mais do que uma função. É mais conveniente comprar e configurar um dispositivo que atende a todas as suas necessidades do que comprar um dispositivo separado para cada função. Esses equipamentos são muito comuns em redes domésticas. Em uma rede local, o roteador conecta os computadores e os dispositivos à Internet. O roteador age como um switch e um gateway doméstico. O roteador sem fio age como um gateway, ponto de acesso sem fio e um switch. Dispositivos multifuncionais também podem incluir um modem.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

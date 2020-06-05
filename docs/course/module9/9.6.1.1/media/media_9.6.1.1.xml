@@ -1,0 +1,28 @@
+﻿<textcomponents>
+   <component id='ID_table'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1. Identificar o Problema</b></font></td>
+	</tr> 
+                <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Questões em Aberto </font></td>
+          <td  valign="top" bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Quais os problemas que você está enfrentando com a sua impressora ou scanner?</li>
+              <li>Quais softwares e hardwares foram alterados recentemente em seu computador?</li>
+              <li>O que você estava fazendo quando o problema foi identificado?</li>
+              <li>Quais mensagens de erro você recebeu?</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#FFFFFF'><font color='#393536'>Questões Fechadas </font></td>
+          <td  valign="top" bgcolor='#FFFFFF'><font color='#393536'><textformat blockindent='-18'><li>A impressora está na garantia?</li>
+              <li>Você consegue imprimir uma página de teste?</li>
+              <li>Essa impressora é nova?</li>
+              <li>A impressora está ligada?</li></textformat></font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>  
+</textcomponents>

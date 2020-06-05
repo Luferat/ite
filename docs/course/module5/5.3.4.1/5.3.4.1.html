@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.4.1 Ferramenta de Verificação de Erros de Disco e Desfragmentador de Disco</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Ferramentas do Sistema</h2>
+      </div>
+      <div id="content">
+          <p>Para manter e otimizar o sistema operacional, você pode utilizar várias ferramentas presentes no Windows. Algumas dessas ferramentas incluem a desfragmentação do disco rígido, que consolida os arquivos para tornar o acesso mais rápido, e a verificação de erros no disco, que varre o disco rígido em busca de erros de estrutura de arquivos.</p>
+          <p>Vários utilitários presentes no Windows ajudam a manter a integridade do sistema. Dois utilitários úteis para a manutenção preventiva é o Desfragmentador de Disco e a Ferramenta de Verificação de Erros de Disco (CHKDSK).</p>
+          <p>Desfragmentador de Disco</p>
+          <p>Como os arquivos aumentam de tamanho, alguns dados são escritos no próximo cluster disponível no disco. Com o tempo, os dados tornam-se fragmentados e se espalham por clusters não adjacentes no disco rígido. Como resultado, leva mais tempo para encontrar e recuperar cada pedaço dos dados. Um desfragmentador de disco reúne os dados não contíguos em um único lugar, fazendo com que o sistema operacional opere mais rápido. No Windows 7, o Desfragmentador de Disco, conforme apresentado na Figura 1, é programado para ser executado automaticamente nas quarta-feiras ou na próxima vez que o computador for ligado.</p>
+          <p>NOTA: Não é recomendado executar a desfragmentação de disco do Windows em discos SSDs. Os SSDs são otimizados pelo seu controlador e firmware. Determine se a unidade de disco rígido é um SSD visualizando os discos disponíveis no Gerenciador de dispositivos, conforme apresentado na Figura 2.</p>
+          <p>Para acessar o Desfragmentador de disco no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Acessórios > Ferramentas do sistema > Desfragmentador de disco</p>
+          <p>No Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Computador > clique com o botão direito do mouse na Unidade X > Propriedades > Ferramentas</p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Acessórios > Ferramentas do sistema > Desfragmentador de disco</p>
+          <p>Ferramenta de Verificação de Erros (CHKDSK)</p>
+          <p>A ferramenta de verificação de erros de disco verifica a integridade de arquivos e pastas, examinando a superfície do disco rígido em busca de erros físicos. Se algum erro for detectado a ferramenta irá repará-lo. Você pode acessar o CHKDSK através do Desfragmentador de disco ou digitando CHKDSK na linha de comando. Como alternativa, você pode verificar unidade em busca de erros usando os seguintes passos:</p>
+          <p>Passo 1. Clique em Iniciar e selecione Computador.</p>
+          <p>Passo 2. Clique com o direito do mouse na unidade em que deseja verificar e selecione Propriedades.</p>
+          <p>Passo 3. Clique na guia Ferramentas.</p>
+          <p>Passo 4. Em Verificação de erros, clique em Verificar agora.</p>
+          <p>Passo 5. Em Opções de verificação de disco, selecione Procurar e tentar recuperar setores defeituosos.</p>
+          <p>A ferramenta corrige erros do sistema e verifica o disco em busca de setores defeituosos. Ele também tenta recuperar os dados de setores defeituosos.</p>
+          <p>NOTA: Utilize a ferramenta de verificação de erros de disco pelo menos uma vez por mês e também sempre que uma perda súbita de energia fizer com que o sistema desligue.</p>
+          <p>Para manter e otimizar o sistema operacional, você pode utilizar várias ferramentas presentes no Windows. Algumas dessas ferramentas incluem a desfragmentação do disco rígido, que consolida os arquivos para tornar o acesso mais rápido, e a verificação de erros no disco, que varre o disco rígido em busca de erros de estrutura de arquivos.</p>
+          <p>Vários utilitários presentes no Windows ajudam a manter a integridade do sistema. Dois utilitários úteis para a manutenção preventiva é o Desfragmentador de Disco e a Ferramenta de Verificação de Erros de Disco (CHKDSK).</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

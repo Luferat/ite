@@ -1,0 +1,76 @@
+﻿<textcomponents>
+
+    
+
+    <component id='ID_s1_title'>
+        <text><![CDATA[<b>Placa-mãe</b>]]></text>
+    </component>
+
+    <component id='ID_s2_table'>
+        <text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr class="title">
+		<td bgcolor='#DAE17A' colspan="3" class="title"><font size='14' color='#393536'><b>Formatos de Fábrica</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' width='125'><font color='#393536'>AT</font></td>
+		<td bgcolor='#F3F5E7' ><font color='#393536'>Advanced Technology</font></td>
+		<td bgcolor='#F3F5E7' ><font color='#393536'>12 in (30.5 cm) X 13.8 in (35.1 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>ATX</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Advanced Technology Extended</font></td>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>12 in (30.5 cm) X 9.6 in (24.4 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Mini-ATX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Menor que o Advanced Technology Extended</font></td>
+		<td bgcolor='#F3F5E7' ><font color='#393536'>5.9 in (15 cm) X 5.9 in (15 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>Micro-ATX</font></td>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>Menor que o Advanced Technology Extended</font></td>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>9.6 in (24.4 cm) X 9.6 in (24.4 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>LPX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Low-Profile Extended</font></td>
+		<td bgcolor='#F3F5E7' ><font color='#393536'>13 in (33 cm) X 9 in (22.9 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>NLX</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>New Low-Profile Extended</font></td>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>8 in (20.3 cm) X 10 in (25.4 cm) a 9 in (22.9 cm) X 13.6 in (34.5 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>BTX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Balanced Technology Extended</font></td>
+		<td bgcolor='#F3F5E7' ><font color='#393536'>12.8 in (32.5 cm) X 10.5 in (26.6 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Mini-ITX</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Menor que o formato Micro-ATX</font></td>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>6.7 in (17 cm) X 6.7 in (17 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Nano-ITX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Menor que o Mini-ITX</font></td>
+		<td bgcolor='#F3F5E7' ><font color='#393536'>4,7 em (12 cm) X 4.7 in (12 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Pico-ITX</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Metade do tamanho do Nano-ITX</font></td>
+		<td bgcolor='#FFFFFF' ><font color='#393536'>3.9 in (9.9 cm) X 2.8 in (7.1 cm)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Mobile-ITX</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536'>Menor placa-mãe ITX</font></td>
+		<td bgcolor='#F3F5E7' ><font color='#393536'>2.4 in (6 cm) X 2.4 in (6 cm)</font></td>
+	</tr>
+</table>]]></text>
+    </component>
+
+
+</textcomponents>

@@ -1,0 +1,69 @@
+﻿<textcomponents>
+
+<!--Buttons-->
+<component id='ID_btn01'>
+	<text><![CDATA[<b>Cliente Falador</b>]]></text>
+</component>
+
+<component id='ID_btn02'>
+	<text><![CDATA[<b>Cliente Rude</b>]]></text>
+</component>
+
+<component id='ID_btn03'>
+	<text><![CDATA[<b>Cliente Nervoso</b>]]></text>
+</component>
+
+<component id='ID_btn04'>
+	<text><![CDATA[<b>Cliente Instruído</b>]]></text>
+</component>
+
+<component id='ID_btn05'>
+	<text><![CDATA[<b>Cliente sem Experiência</b>]]></text>
+</component>
+
+<!--Textbox 1-->
+<component id='ID_titleTxt01'>
+	<text><![CDATA[<b>Cliente falador</b>]]></text>
+</component>
+
+<component id='ID_bodyTxt01'>
+	<text><![CDATA[<font size="+2"><b>O que fazer: </b></font><br /><textformat blockindent='-18'><li>Deixe o cliente falar por um minuto.</li><li>Reúna o máximo de informações possível sobre o problema.</li><li>Interromper, educadamente, o cliente, de modo a concentrá-lo no problema. Esta é a exceção à regra de nunca interromper um cliente.</li><li>Faça quantas perguntas fechadas forem necessárias, assim que você conseguir controlar a chamada.</li></textformat><br />O que não fazer: Incentivar uma conversa que não esteja relacionada ao problema, fazendo perguntas, tais como &quot;Como você está hoje?&quot;.]]></text>
+</component>
+
+<!--Textbox 2-->
+<component id='ID_titleTxt02'>
+	<text><![CDATA[<b>Cliente Rude</b>]]></text>
+</component>
+
+<component id='ID_bodyTxt02'>
+	<text><![CDATA[<font size="+2"><b>O que fazer:</b></font><br /><textformat blockindent='-18'><li>Escutá-lo, atentamente, pois não desejará pedir que o cliente repita as mesmas informações.</li><li>Seguir uma abordagem passo-a-passo para determinar e resolver o problema.</li><li>Se o cliente tiver um técnico favorito, tente entrar em contato com o técnico para ver se ele pode atender a chamada. Como exemplo, diga ao cliente: &quot;Eu posso ajudá-lo agora ou ver se (o técnico preferido) encontra-se disponível. Ele estará disponível em duas horas. Será aceitável?&quot; Se o cliente optar por esperar o outro técnico, registre essa informação em um bilhete.</li><li>Desculpe-se pelo tempo de espera e pelo inconveniente, mesmo que o cliente não tenha aguardado.</li><li>Informe que você deseja resolver o problema o mais rápido possível.</li></textformat><br /><font size="+2"><b>O que não fazer:</b></font><br /><textformat blockindent='-18'><li>Peça ao cliente para realizar todas as etapas óbvias, mesmo que você possa determinar o problema sem elas.</li><li>Seja rude com o cliente, mesmo que ele seja rude com você.</li></textformat>]]></text>
+</component>
+
+<!--Textbox 3-->
+<component id='ID_titleTxt03'>
+	<text><![CDATA[<b>Cliente Irritado</b>]]></text>
+</component>
+
+<component id='ID_bodyTxt03'>
+	<text><![CDATA[<font size="+2"><b>O que fazer:</b></font><br /><textformat blockindent='-18'><li>Deixe que o cliente conte o seu problema sem interrupções, mesmo que ele esteja irritado. Isso permite que o cliente libere um pouco da sua irritação, antes de prosseguir.</li><li>Demonstre a sua compreensão com o problema do cliente.</li><li>Desculpe-se pelo tempo de espera ou pelo inconveniente.</li></textformat><br /><font size="+2"><b>O que não fazer:</b></font><br /><textformat blockindent='-18'><li>Se possível, tente não colocar esse cliente em espera ou transferir a chamada.</li><li>Desperdiçar o tempo da chamada falando sobre o que pode ter causado o problema (ao invés disso, conduza a conversa para a resolução do problema).</li></textformat>]]></text>
+</component>
+
+<!--Textbox 4-->
+<component id='ID_titleTxt04'>
+	<text><![CDATA[<b>Cliente Instruído</b>]]></text>
+</component>
+
+<component id='ID_bodyTxt04'>
+	<text><![CDATA[<font size="+2"><b>O que fazer:</b></font><br /><textformat blockindent='-18'><li>Se você é um técnico nível um, tente estabelecer uma chamada ou conferência com um técnico nível dois.</li><li>Fornecer ao cliente uma abordagem geral dos elementos que vocês está tentando verificar.</li></textformat><br /><font size="+2"><b>O que não fazer:</b></font><br /><textformat blockindent='-18'><li>Siga um processo passo-a-passo com este cliente.</li><li>Peça para verificar o óbvio, como o cabo de alimentação ou o interruptor de energia. Em vez disso, como exemplo, você poderia sugerir uma reinicialização do computador.</li></textformat>]]></text>
+</component>
+
+<!--Textbox 5-->
+<component id='ID_titleTxt05'>
+	<text><![CDATA[<b>Cliente sem Experiência</b>]]></text>
+</component>
+
+<component id='ID_bodyTxt05'>
+	<text><![CDATA[<font size="+2"><b>O que fazer:</b></font><br /><textformat blockindent='-18'><li>Use um processo simples e gradual de instruções.</li><li>Utilize termos simples.</li></textformat><br /><font size="+2"><b>O que não fazer:</b></font><br /><textformat blockindent='-18'><li>Usar jargões da indústria.</li><li>Ser condescendente com o seu cliente ou depreciá-lo.</li></textformat>]]></text>
+</component>
+
+</textcomponents>

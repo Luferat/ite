@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.3.1 Processo de Inicialização do Windows</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Sequência de Inicialização e Arquivos de Registro</h2>
+      </div>
+      <div id="content">
+          <p>Compreender o processo de inicialização do Windows pode ajudar um técnico solucionar problemas de inicialização. A Figura 1 mostra a sequência de boot do Windows 7.</p>
+          <p>Processo de Inicialização do Windows</p>
+          <p>Para iniciar o processo de inicialização, ligue o computador. Isso é chamado de cold boot. Quando o computador é ligado, ele executa o Power On Self Test (POST). Devido ao fato de que a placa de vídeo ainda não foi inicializada, os erros que ocorrem neste momento no processo de boot são relatados por uma série de sinais sonoros, chamado códigos de beep.</p>
+          <p>Depois do POST, a BIOS localiza e lê as definições de configuração que são armazenados na memória CMOS. A prioridade de boot do dispositivo, tal como mostrado na Figura 2, é da ordem em que os dispositivos são verificados para localizar o sistema operacional. A prioridade de boot dos dispositivos é definido na BIOS e podem ser organizadas em qualquer ordem. A BIOS inicializa o computador usando o primeiro disco que contém um sistema operacional.</p>
+          <p>Os discos rígidos, unidades de rede, drives USB e mídias magnéticas removíveis, como cartões CompactFlash ou Secure Digital (SD), podem ser usados na ordem de inicialização, dependendo das capacidades da placa-mãe. Algumas BIOS também tem um menu de prioridade do dispositivo de inicialização, que é acessado com a combinação de teclas especiais, enquanto o computador é iniciado, antes da sequência de inicialização. Você pode usar este menu para selecionar o dispositivo de boot, que é útil se várias unidades podem inicializar o computador.</p>
+          <p>O Windows Boot Loader e do Gerenciador de Inicialização do Windows no Windows 7 e Windows Vista</p>
+          <p>Quando a unidade de armazenamento do S.O. é localizada, a BIOS encontra o Master Boot Record (MBR). Neste ponto, o Windows Boot Manager (BOOTMGR) controla várias etapas de instalação. Por exemplo, se houver mais de um sistema operacional presente no disco, o BOOTMGR dá ao usuário a chance de escolher qual usar. Se não houver outros sistemas operacionais, ou se o usuário não faz uma seleção antes do timer expirar, ocorre o seguinte processo:</p>
+          <p>1. O WinLoad usa o caminho especificado no BOOTMGR para encontrar a partição de boot.</p>
+          <p>2. O WinLoad carrega dois arquivos que compõem o núcleo do Windows 7: NTOSKRNL.EXE e HAL.DLL.</p>
+          <p>3. O WinLoad lê os Arquivos de Registro, escolhe um perfil de hardware e carrega os drivers de dispositivo.</p>
+          <p>NOTA: Se outra versão do S.O. Windows Vista ou posterior estiver instalada no disco, o BOOTMGR repetirá o processo. Se outra versão do S.O. Windows XP ou anterior estiver instalada no disco, o BOOTMGR invocará o Windows XP boot loader (NTLDR).</p>
+          <p>NTLDR e o Menu de Inicialização do Windows no Windows XP</p>
+          <p>Quando a unidade com o sistema operacional está localizada em um computador com o Windows XP, a BIOS localiza o MBR. O MBR localiza o boot loader NTLDR do sistema operacional. Neste ponto, o NTLDR controla várias etapas de instalação. Por exemplo, se houver mais de um sistema operacional presente no disco, o BOOT.INI dá ao usuário a chance de escolher qual usar. Se não houver outros sistemas operacionais, ou se o usuário não faz uma seleção antes do timer expirar, ocorre o seguinte processo:</p>
+          <p>1. O NTLDR executa o NTDETECT.COM para obter informações sobre o hardware instalado.</p>
+          <p>2. O NTLDR usa o caminho especificado no BOOT.INI para encontrar a partição de boot.</p>
+          <p>3. O NTLDR carrega dois arquivos que compõem o núcleo do XP: NTOSKRNL.EXE e HAL.DLL.</p>
+          <p>4. O NTLDR lê os Arquivos do Registro, escolhe um perfil de hardware e carrega os drivers de dispositivo.</p>
+          <p>NT Kernel</p>
+          <p>Neste ponto, o NT Kernel assume. O NT Kernel é o coração de todos os sistemas operacionais Windows. O nome desse arquivo é NTOSKRNL.EXE. Ele executa o arquivo de login chamado WINLOGON.EXE e exibe a tela de boas vindas do Windows.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

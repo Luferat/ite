@@ -1,0 +1,74 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Power Supply</b>]]></text>
+</component>
+
+<component id="ID_table">
+  <text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td colspan='6' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#a2aa23'  valign="top" width="55" rowspan='2' id="voltage"><font color='#ffffff' size="11"><b>Voltage</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top"  width="55" rowspan='2' id="Wire"><font color='#ffffff' size="11"><b>Wire Color</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top" rowspan='2' id="use"><font color='#ffffff' size="11"><b>Use</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top" class="border_left" colspan='3' ><font color='#ffffff' size="11" ><b>Power Supply Form</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#a2aa23'  valign="top" width="30" class="border_left"><font color='#ffffff' size="11"><b>AT</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top" width="35" class="border_left"><font color='#ffffff' size="11"><b>ATX</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top" width="55" class="border_left" id="ATXv12"><font color='#ffffff' size="11"><b>ATXv12</b></font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">+12V</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Yellow</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Disk drive motors, fans,cooling devices, and the system bus slots</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#ffffff' valign="top"><font color='#393536' size="11">-12V</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Blue</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Some type of serial port circuits and early programmable read only memory(PROM)</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">+3.3V</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Orange</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Most newer CPUs, some type of system memory, and AGP video cards</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11"></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#ffffff' valign="top"><font color='#393536' size="11">+5V</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Red</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Motherboard, Baby AT and earlier CPUs, and many motherboard components</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">-5V</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">White</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">ISA bus cards and early PROMS</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0V</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Black</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Ground -Used to complete circuits with the other voltages.</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	
+</table>]]></text>
+  </component>
+</textcomponents>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.3.3.2 TCP and UDP Protocols and Ports</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Basic Networking Concepts and Technologies</h1>
+      <h2>Common Ports and Protocols</h2>
+    </div>
+    <div id="content">
+          <p>When the TCP/IP protocol stack is enabled, other protocols can communicate on specific ports. For example, HTTP uses port 80 by default. A port is a numeric identifier used to keep track of specific conversations. Every message that a host sends contains both a source and destination port. </p>
+          <p>Network software applications use these protocols and ports to perform functions over the Internet or over a network. Some network software applications include services to host a web page, send email, and transfer files. These services may be provided by a single server or by several servers. Clients use well-known ports for each service so that the client requests can be identified by using a specific destination port. </p>
+          <p>To understand how networks and the Internet work, you must be familiar with commonly used protocols and associated ports. Some uses of these protocols are to connect to a remote network device, convert a website URL to an IP address, and transfer data files. You will encounter other protocols as your experience in IT grows, but they are not used as often as the common protocols described here.</p>
+          <p>Figure 1 summarizes some of the more common network and Internet protocols, and the port number used by these protocols. The more you understand about each of these protocols, the more you will understand how networks and the Internet work.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

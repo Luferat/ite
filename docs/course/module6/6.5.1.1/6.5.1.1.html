@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.5.1.1 Topologias Lógicas e Físicas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Topologias de Rede</h1>
+        <h2>Topologias</h2>
+      </div>
+      <div id="content">
+          <p>Topologias Lógicas</p>
+          <p>Uma topologia lógica descreve como os hosts acessam o meio e se comunicam na rede. Os dois tipos mais comuns de topologias lógicas são broadcast e passagem de token. Em uma topologia de broadcast, um host transmite uma mensagem para todos os hosts no mesmo segmento de rede. Não há uma ordem que os hosts devem seguir para transmitir dados. As mensagens são enviadas no modo First In, First Out (FIFO).</p>
+          <p></p>
+          <p>A passagem de token controla o acesso à rede, passando sequencialmente um token eletrônico para cada host. Se um host quiser transmitir dados, o host adiciona os dados e o endereço de destino ao token, que é um quadro especialmente formatado. Em seguida, o token viaja para outro host com o endereço de destino. O host de destino tira os dados do quadro. Se um host não tiver dados para enviar, o token é passado para outro host.</p>
+          <p></p>
+          <p>Topologias Físicas</p>
+          <p>A topologia física define a maneira na qual os computadores, impressoras e outros dispositivos são conectados a uma rede. A figura exibe seis topologias físicas.</p>
+          <p></p>
+          <p>Barramento</p>
+          <p>Em uma topologia de barramento, cada computador se conecta a um cabo comum. O cabo conecta um computador ao outro, como uma linha de ônibus que viaja através de uma cidade. O cabo tem uma pequena tampa instalada nas extremidades, chamado de terminador. O terminador previne que os sinais retornem e causem erros na rede.</p>
+          <p></p>
+          <p>Anel</p>
+          <p>Em uma topologia em anel, os hosts são conectados em um anel físico ou círculo. Como a topologia em anel não tem começo e nem fim, o cabo não é terminado. Um token viaja ao redor do anel, parando em cada host. Se um host deseja transmitir dados, o host adiciona os dados e o endereço de destino no token. O token é encaminhado ao redor do anel até que ele pare no host com o endereço de destino correto. O host de retira os dados do token.</p>
+          <p></p>
+          <p>Estrela</p>
+          <p>A topologia em estrela tem um ponto de conexão central, que normalmente é um dispositivo, como um hub, switch ou roteador. Cada host na rede possui um cabo que o conecta diretamente para o ponto de conexão central. A vantagem de uma topologia em estrela é que ela é fácil de administrar e solucionar problemas. Cada máquina é conectada ao dispositivo central com o seu próprio cabo. Se houver um problema com o cabo, esse problema afetará apenas um host. O restante da rede continuará operacional.</p>
+          <p></p>
+          <p>Hierárquico</p>
+          <p>Uma topologia hierárquica, ou estrela estendida, é uma rede em estrela com um dispositivo de rede adicional conectado ao dispositivo principal. Normalmente, um cabo de rede se conecta a um switch, e, em seguida, vários outros switches se conectam ao primeiro. Redes maiores, como as de empresas ou universidades, usam a topologia em estrela hierárquica.</p>
+          <p></p>
+          <p>Malha</p>
+          <p>A topologia de malha conecta todos os dispositivos entre si. Quando cada dispositivo está conectado em todos os outros dispositivos, uma falha em qualquer cabo ou dispositivo ao longo de uma conexão não afeta a rede. A topologia em malha é usada em WANs que interligam LANs.</p>
+          <p></p>
+          <p>Híbrida</p>
+          <p>Uma topologia híbrida é uma combinação de duas ou mais topologias de rede básicas, tais como um barramento-estrela ou anel-estrela. A vantagem de uma topologia híbrida é que ela pode ser implementada por um certo número de diferentes ambientes de rede.</p>
+          <p></p>
+          <p>O tipo de topologia determina os recursos da rede, tais como a facilidade de instalação, velocidade e comprimento dos cabos. A arquitetura da LAN descreve a topologias física e a lógica usada em uma rede.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

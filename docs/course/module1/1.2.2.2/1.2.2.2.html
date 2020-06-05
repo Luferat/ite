@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.2.2 Power Supplies</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Cases and Power Supplies</h2>
+    </div>
+    <div id="content">
+          <p>The power supply must provide enough power for the components that are currently installed and allow for other components that may be added at a later time. If you choose a power supply that powers only the current components, you might need to replace the power supply when other components are upgraded.</p>
+          <p>The power supply, shown in Figure 1, converts AC power coming from a wall outlet into DC power, which is a lower voltage. DC power is required for all components inside the computer.</p>
+          <p>A computer can tolerate slight fluctuations in power, but a significant deviation can cause the power supply to fail. An uninterruptible power supply (UPS) can protect a computer from problems caused by changes in power. A UPS uses a power inverter. A power inverter provides AC power to the computer from a built-in battery by converting the DC current of the UPS battery into AC power. This built-in battery is continually charged via DC current that is converted from the AC supply.</p>
+          <p>
+            <b>Connectors</b>
+          </p>
+          <p>Most connectors today are keyed. A keyed connector is designed to be inserted in only one direction. Each power supply connector uses a different voltage, as shown in Figure 2. Different connectors are used to connect specific components to various ports on the motherboard.</p>
+          <p>
+            <ul>
+              <li>A Molex keyed connector connects to optical drives, hard drives, or other devices that use older technology. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A Berg keyed connector connects to a floppy drive. A Berg connector is smaller than a Molex connector. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A SATA keyed connector connects to an optical drive or a hard drive. The SATA connector is wider and thinner than a Molex connector.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A 20-pin or 24-pin slotted connector connects to the motherboard. The 24-pin connector has two rows of 12 pins each, and the 20-pin connector has two rows of 10 pins each. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A 4-pin to 8-pin auxiliary power connector has two rows of two to four pins and supplies power to all areas of the motherboard. The auxiliary power connector is the same shape as the main power connector but smaller. It can also power other devices within the computer. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A 6/8-pin PCIe power connector has two rows of three to four pins and supplies power to other internal components.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Older standard power supplies used two connectors called P8 and P9 to connect to the motherboard. P8 and P9 were unkeyed connectors. They could be installed backwards, potentially damaging the motherboard or power supply. The installation required that the connectors be lined up with the black wires together in the middle. </li>
+            </ul>
+          </p>
+          <p>
+            <b>NOTE</b>: If you have a difficult time inserting a connector, try repositioning it, or check to make sure that no bent pins or foreign objects are in the way. If it is difficult to plug in a cable or other part, something is wrong. Cables, connectors, and components are designed to fit together snugly. Never force a connector or component. If a connector is plugged in incorrectly, it can damage the plug and the connector. Take your time and make sure that you are handling the hardware correctly.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

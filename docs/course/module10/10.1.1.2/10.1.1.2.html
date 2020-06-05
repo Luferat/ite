@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.1.2 Vírus, Worms, Trojans e Rootkits</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ameaças de Segurança</h1>
+        <h2>Tipos de Ameaças de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Vírus</p>
+          <p>Um vírus é um programa malicioso escrito e enviado por atacantes. O vírus é transferido para outros computadores através de e-mail, transferência de arquivos e programas de mensagens instantâneas. O vírus se esconde anexando-se no código de computador, do software ou em documentos presentes no computador. Quando o arquivo é acessado, o vírus é executado, infectando o computador. Um vírus possui a capacidade de corromper e apagar arquivos, usar o seu e-mail para se espalhar em outros computadores, impedir que o computador inicialize, fazer com que aplicativos não carregarem ou funcionem corretamente e até mesmo apagar todo o disco rígido. Se o vírus se espalhar em outros computadores, estas máquinas podem continuar a espalhar o mesmo.</p>
+          <p>Alguns vírus podem ser extremamente perigosos. Os vírus utilizados para registrar os caracteres digitados são um dos tipos mais prejudiciais existentes. Os atacantes podem usar estes vírus para colher informações confidenciais, como senhas e números de cartão de crédito. O vírus então envia os dados obtidos para o atacante. Os vírus também podem alterar ou destruir informação em um computador. Alguns vírus podem infectar um computador e permanecer dormente até que seja iniciado pelo atacante.</p>
+          <p>Worms</p>
+          <p>Um worm é um programa auto-replicante prejudicial às redes. Ele utiliza a rede para duplicar seu código para os hosts, muitas vezes sem a intervenção do usuário. Um worm é diferente de um vírus, pois ele não precisa se anexar a um programa para infectar o hospedeiro. Worms normalmente se espalham automaticamente, explorando vulnerabilidades conhecidas em softwares legítimos.</p>
+          <p>Cavalo de Troia</p>
+          <p>O Cavalo de Troia é um software malicioso disfarçado de um programa legítimo. O trojan fica escondido em um software que aparenta fazer uma coisa, mas que nos bastidores ele faz outra totalmente diferente. Ele pode se reproduzir como um vírus e se espalhar em outros computadores. Dados corrompidos, informações de login expostas e perda de desempenho podem ser muito significativos. Pode ser necessário que um técnico execute reparos em computadores infectados, fazendo com que, às vezes, os funcionários percam ou tenham de substituir os seus dados. Um computador infectado pode, ao mesmo tempo que envia dados críticos, estar infectando outros computadores na rede.</p>
+          <p>Software de Proteção Contra Vírus</p>
+          <p>Softwares de proteção contra vírus, também conhecidos como antivírus, são programas projetados para detectar, desativar e remover vírus, worms e cavalos de Tróia, antes que eles infectem o computador. No entanto, os antivírus ficam desatualizados rapidamente, onde é de responsabilidade do técnico aplicar as atualizações mais recentes, patches e de definições de vírus como parte de um cronograma de manutenção regular. Muitas empresas estabelecem uma política de segurança por escrito afirmando que os funcionários não estão autorizados a instalar quaisquer softwares que não são fornecidos pela mesma. As organizações também conscientizam os funcionários sobre os perigos de abrir anexos de email, que podem conter um vírus ou worm.</p>
+          <p>Rootkits</p>
+          <p>Um rootkit é um programa malicioso que ganha acesso completo a um sistema de computador. Geralmente, um ataque direto em um sistema usando uma vulnerabilidade conhecida ou uma senha é usado para obter acesso de nível de administrador. Devido ao acesso privilegiado obtido pelo rootkit, o programa é capaz de esconder arquivos, registros e pastas, impedindo assim que ele seja detectado por antivírus e anti-spyware comuns. É muito difícil detectar a presença de um rootkit, pois o mesmo possui a capacidade de controlar e modificar os programas de segurança utilizados para detectar a instalação de programas maliciosos. Um software especial de remoção pode ser utilizado para remover alguns rootkits, porém muitas vezes é necessário reinstalar o sistema para garantir que o rootkit foi completamente removido.</p>
+          <p>NOTA: Não assuma que os anexos de email são seguros, mesmo quando eles são enviados por um contato confiável. O computador do remetente pode estar infectado por um vírus que está tentando se espalhar. Sempre verifique os anexos de email antes de abri-los.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

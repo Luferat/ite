@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.1.3 Touchscreens</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Visão Geral do Hardware de Dispositivos Móveis</h1>
+        <h2>Hardware de Dispositivos Móvies</h2>
+      </div>
+      <div id="content">
+          <p>A maioria dos dispositivos móveis não têm um teclado ou um dispositivo apontador. Eles usam telas sensíveis ao toque (Touchscreens) para permitir aos usuários interagir fisicamente com o que é mostrado na tela e um teclado digital para digitar. Os dedos ou uma caneta são usados ​​no lugar do mouse. Ícones, como aqueles encontrados em desktops e notebooks, são clicados com o toque ao invés de um botão do mouse. Fabricantes de dispositivos móveis usam as palavras touch (toque) e tap ao descrever operações e etapas do uso de um dispositivo móvel. Você verá esses dois termos em manuais de instruções, e eles significam a mesma coisa. Este curso utiliza o termo touch (toque).</p>
+          <p>Existem dois tipos de telas sensíveis ao toque:</p>
+          <p><ul>
+              <li>Capacitiva - Consiste em uma tela de vidro revestido com um condutor. Devido ao corpo humano também ser um condutor, tocar a tela interrompe o campo eléctrico da mesma. Esta mudança é medida pelo processador de toque para determinar a posição vertical e horizontal do toque na tela.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Resistiva - Consiste em camadas transparentes de material capaz de conduzir eletricidade. Estas camadas possuem uma pequena abertura de ar entre elas. Uma camada conduz eletricidade de cima para baixo, enquanto a outra conduz eletricidade da esquerda para a direita. Quando a pressão é exercida sobre a tela, as duas camadas se tocam. Quando as duas camadas se tocam, os pontos verticais e horizontais são calculadas pelo processador de toque de onde a energia elétrica foi interrompida.</li>
+            </ul>
+          </p>
+          <p>Além de um simples toque, os dispositivos móveis têm a capacidade de reconhecer quando dois ou mais pontos de contatos são feitos na tela. Isto é chamado de multi-touch. Estes são alguns dos gestos comuns usados ​​para executar funções:</p>
+          <p><ul>
+              <li>Slide ou swipe - Move entre telas, horizontal ou verticalmente. Toque na tela, deslize o dedo rapidamente na direção que você deseja mover a tela e solte-o.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Duplo toque - Realiza zoom, tais como em fotografias, mapas e textos. Toque rapidamente duas vezes na tela dar o zoom. Novamente, toque rapidamente duas vezes na tela para afastar o zoom.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Toque longo - Selecione itens, como texto, ícones ou fotos. Toque e segure a tela até que as opções referentes ao item que você está tocando se tornem disponíveis.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rolagem - Role os itens que são muito grandes para a tela, como fotos ou páginas da web. Toque e segure a tela, movendo o dedo na direção que você deseja a página. Levante o dedo quando chegar na área da tela que você quer ver.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pinça - Reduz o zoom de objetos, tais como fotografias, mapas e textos. Toque na tela com dois dedos e junte-os para diminuir o zoom do objeto.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Afastar - Realiza o zoom em objetos, tais como fotografias, mapas e textos. Toque na tela com dois dedos e afaste-os para aumentar o zoom no objeto.</li>
+            </ul>
+          </p>
+          <p>Estes gestos podem ser diferentes entre os dispositivos. Muitos outros gestos também podem ser usados, dependendo da versão do dispositivo e do sistema operacional. Verifique a documentação do dispositivo para obter mais informações.</p>
+          <p>Alguns smartphones tem um sensor de proximidade que desliga o touchscreen quando o telefone é colocado próximo a orelha e o liga quando você o afasta de sua orelha. Isso impede que íconos ou números sejam apertados pelo rosto ou orelha do usuário, além de economizar energia.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

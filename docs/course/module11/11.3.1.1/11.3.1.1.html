@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.1.1 Call Centers</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicos de Call Center</h1>
+        <h2>Técnicos de Call Center Nível um e Nível dois</h2>
+      </div>
+      <div id="content">
+          <p>Um ambiente de call center geralmente é muito profissional e tem um ritmo acelerado. Os clientes ligam para receber ajuda referente a um problema de informática específico. O fluxo de trabalho típico de um call center são as chamadas de clientes que são exibidas em um callboard. Técnicos nível um respondem a essas chamadas na ordem em que as chamadas chegam. Se o nível técnico um não pode resolver o problema, o problema é escalado para um técnico de nível dois. Em todos os casos, o técnico deve fornecer o nível de suporte que está delineado no SLA do cliente.</p>
+          <p>Um call center pode existir dentro de uma empresa e oferecer serviços aos funcionários daquela empresa, bem como para os clientes dos produtos da empresa. Alternativamente, um call center pode ser um negócio independente que vende suporte de informática como um serviço para clientes externos. Em ambos os casos, um call center é um ambiente de trabalho ocupado, em ritmo acelerado, muitas vezes operando 24 horas por dia.</p>
+          <p>Call centers tendem a ter um grande número de cubículos. Como mostrado na Imagem 1, cada cubículo tem uma cadeira, pelo menos um computador, um telefone e um fone de ouvido com micfrofone. Os técnicos que trabalham nesses cubículos podem ter níveis variados de experiência em computadores, além disso alguns têm especialidades em determinados tipos de computadores, hardware, software ou sistemas operacionais.</p>
+          <p>Todos os computadores de um call center tem um software de help desk. Os técnicos utilizam este software para gerenciar muitas de suas funções do trabalho. A Imagem 2 mostra algumas das funcionalidades do software de help desk.</p>
+          <p>Cada call center tem políticas de negócios em relação a prioridade de chamada. A Imagem 3 mostra um gráfico contendo exemplo de como as chamadas podem ser nomeadas, definidas e priorizadas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

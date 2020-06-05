@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.2.2 Exibindo um Comportamento Profissional com os Clientes</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Habilidades de Comunicação e Profissionais de TI</h1>
+        <h2>Trabalhando com um Cliente</h2>
+      </div>
+      <div id="content">
+          <p>Ao lidar com os clientes, é necessário ser profissional em todos os aspectos da sua função. Você deve lidar com os clientes com respeito e atenção imediata. Quando em um telefone, certifique-se que você sabe como colocar o cliente em espera, bem como a forma de transferência de um cliente sem perder a chamada. A maneira com que você conduz a chamada é importante e seu trabalho é ajudar o cliente a se concentrar e comunicar o problema para que você (ou outro técnico) possa resolvê-lo.</p>
+          <p>Seja positivo ao se comunicar com o cliente. Diga ao cliente que você pode fazer. Não se concentre no que você não pode fazer. Esteja preparado para explicar as formas com que você pode ajudá-los, como enviar e-mails com informações, fax com instruções passo-a-passo ou usando um software de controle remoto para resolver o problema. Os clientes vão perceber rapidamente se você está interessado em ajudá-los.</p>
+          <p>A Imagem 1 apresenta o processo a ser seguido antes de colocar o cliente em espera. Primeiro, deixe o cliente terminar de falar. Em seguida, explique que você tem que colocá-lo em espera, e peça ao cliente a permissão para fazê-lo. Quando o cliente concorda em ser colocado em espera, agradeça-o. Diga ao seu cliente que você vai estar longe por apenas alguns minutos e explique o que você vai fazer durante esse tempo.</p>
+          <p>A Imagem 2 descreve o processo para a transferência de uma chamada. Siga o mesmo processo para a transferência de chamada como se estivesse colocando um cliente em espera. Deixe o cliente terminar de falar e, em seguida, explique que você tem que transferir a chamada. Quando o cliente concordar em ser transferido, diga ao cliente o número de telefone para qual você irá transferi-lo. Além disso, informe ao novo técnico o seu nome, o nome do cliente que você está transferindo, e o número de referência correspondente.</p>
+          <p>Ao lidar com os clientes, às vezes é mais fácil de explicar o que você não deve fazer. A lista a seguir descreve as coisas que você não deve fazer ao se comunicar com um cliente:</p>
+          <p><ul>
+              <li>Não minimizar os problemas de um cliente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não use jargões, abreviaturas, siglas e gírias.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não use uma atitude negativa ou um tom alto de voz.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não discuta com os clientes ou não fique na defensiva.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não faça observações culturalmente insensíveis.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não julgue, insulte ou chame os clientes pelo nome.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Evite distrações e não interrompa quando está falando com os clientes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não faça/atenda chamadas pessoais ao falar com clientes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não fale com os colegas de trabalho sobre assuntos não relacionados ao falar com clientes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Evite esperas desnecessárias ou bruscas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não transfira uma chamada sem explicar a finalidade da transferência e obter o consentimento do cliente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Não use comentários negativos sobre outros técnicos para o cliente.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

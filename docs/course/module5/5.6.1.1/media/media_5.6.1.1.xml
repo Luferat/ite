@@ -1,0 +1,34 @@
+﻿<textcomponents>
+	
+	
+	<component id='ID_table'>
+		<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+			 <tr class="title">
+	 <td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 1: Identificação do Problema</b></font></td>
+	 </tr>
+			 <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+        </tr>
+			<tr>
+				<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Questões em Aberto</font></td>
+				<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'><li>Que problemas você possui?</li>
+														<li>Qual é o sistema operacional que está instalado no computador?</li>
+														<li>Quais atualizações foram realizadas ultimamente?</li>
+														<li>Quais programas foram instalados recentemente?</li>
+														<li>O que você estava fazendo quando o problema foi descoberto?</li></font></td>
+				
+			</tr>
+			 
+			<tr>
+				<td valign="top" bgcolor='#ffffff'><font size='12' color='#393536'>Questões Encerradas</font></td> 
+				<td valign="top" bgcolor='#ffffff'><font size='12' color='#393536'><li>Você pode inicializar o sistema operacional?</li>
+														<li>Você pode inicializar em modo de segurança?</li>
+														<li>Você alterou sua senha recentemente?</li>
+														<li>Você tem visto quaisquer mensagens de erro no computador?</li>
+														<li>Mais alguém usou o computador recentemente?</li>
+														<li>Algum hardware foi adicionado recentemente?</li></font></td> 
+			</tr>
+
+		</table>]]></text>
+	</component>
+</textcomponents>

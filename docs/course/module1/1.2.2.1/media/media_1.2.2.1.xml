@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Types of Computer Cases</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Choosing a Computer Case</b>]]></text>
+</component>
+
+<component id="ID_s2_header01">
+<text><![CDATA[<b>Factor</b>]]></text>
+</component>
+<component id="ID_s2_header02">
+<text><![CDATA[<b>Rationale</b>]]></text>
+</component>
+
+<component id="ID_s2_btn01">
+<text><![CDATA[<b>Model Type</b>]]></text>
+</component>
+<component id="ID_s2_btn02">
+<text><![CDATA[<b>Size</b>]]></text>
+</component>
+<component id="ID_s2_btn03">
+<text><![CDATA[<b>Available Space</b>]]></text>
+</component>
+<!-- <component id="ID_s2_btn04">
+<text><![CDATA[<b>Power Supply</b>]]></text>
+</component> -->
+<component id="ID_s2_btn04">
+<text><![CDATA[<b>Appearance</b>]]></text>
+</component>
+<component id="ID_s2_btn05">
+<text><![CDATA[<b>Status Display</b>]]></text>
+</component>
+<component id="ID_s2_btn06">
+<text><![CDATA[<b>Vents</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[There are two main case models. One type is for desktop PCs, and the other type is for tower computers. The type of motherboard you choose determines the type of case that can be used. The size and shape must match exactly.]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[If a computer has many components, it will need more room for airflow to keep the system cool.
+]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[Desktop cases allow space conservation in tight areas because the monitor can be placed on top of the unit. The design of the desktop case may limit the number and size of the components that can be added.]]></text>
+</component>
+<!-- <component id="ID_s2_txt04">
+<text><![CDATA[You must match the power rating and connection type of the power supply to the type of motherboard you have chosen.]]></text>
+</component> -->
+<component id="ID_s2_txt04">
+<text><![CDATA[For some people, how the case looks does not matter at all. For others, it is critical. There are many case designs to choose from if it is necessary to have a case that is attractive.]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[What is going on inside the case can be very important. LED indicators that are mounted on the front of the case can tell you if the system is receiving power, when the hard drive is being used, and when the computer is in "Sleep" or "Hibernate" mode.]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[Some cases are designed with more vents for systems that generate an unusual amount of heat. This situation may occur when many devices are installed close together in the case.]]></text>
+</component>
+
+
+
+</textcomponents>

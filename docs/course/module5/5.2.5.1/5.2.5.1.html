@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.5.1 Estruturas de Diretórios</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Estrutura de Diretório e Atributos de Arquivos</h2>
+      </div>
+      <div id="content">
+          <p>No Windows, os arquivos são organizados em uma estrutura de diretórios. A estrutura de diretórios é projetada para armazenar os arquivos do sistema, arquivos de usuário e arquivos de programa. O nível raiz da estrutura de diretórios do Windows, a partição, é geralmente rotulado como unidade C, como mostrado na figura. A unidade C contém um conjunto de diretórios padronizados, chamados de pastas, para o sistema operacional, aplicativos, informações de configuração e arquivos de dados. Diretórios podem conter subdiretórios. Subdiretórios são comumente chamados de subpastas.</p>
+          <p>Após a instalação inicial, você pode instalar a maioria dos aplicativos e dados em qualquer diretório que você escolher. O programa de instalação do Windows cria diretórios que têm finalidades específicas, tais como armazenar fotos ou arquivos de música. Quando os arquivos de um mesmo tipo são salvos em um determinado local, fica mais fácil encontrar as coisas.</p>
+          <p>NOTA: É uma boa prática armazenar os arquivos em pastas e subpastas, em vez de armazenar na raiz de uma unidade.</p>
+          <p>Mapeamento de Unidade</p>
+          <p>No Windows, as letras são usadas para nomear discos físicos ou lógicos. Este processo é chamado de mapeamento de unidade. Um computador com Windows pode ter até 26 unidades físicas e lógicas, pois há 26 letras no alfabeto Inglês. Unidades A e B têm sido tradicionalmente reservadas para unidades de disquete e a unidade C está reservada para a primária, partição ativa. No Windows Vista e Windows 7, você pode atribuir as unidades A e B para outros volumes, caso você não tenha unidades de disquete. Uma unidade óptica é tradicionalmente rotulados como unidade D. O número máximo de unidades adicionais dependente do hardware de um computador específico.</p>
+          <p></p>
+          <p>Montando um Volume</p>
+          <p>Com o sistema de arquivos NTFS, você pode mapear uma unidade para uma pasta vazia em um volume. Isto é chamado de unidade montada. São atribuídos caminhos de unidades, ao invés de letras, para as unidades montadas e elas são exibidas como um ícone de unidade no Windows Explorer. O Windows Explorer é uma ferramenta que permite aos usuários visualizar todas as unidades, pastas e arquivos em um computador de uma forma organizada. Utilize uma unidade montada para configurar mais de 26 unidades no seu computador ou quando você precisar de um espaço de armazenamento adicional em um volume.</p>
+          <p>Para montar um volume no Windows, siga estes passos:</p>
+          <p>Passo 1. Selecione Iniciar > Painel de Controle > Ferramentas Administrativas > Gerenciamento do Computador.</p>
+          <p>Passo 2. Clique em Gerenciamento de disco, localizado no painel esquerdo.</p>
+          <p>Passo 3. Clique com o botão direito do mouse na partição ou volume a ser montado.</p>
+          <p>Passo 4. Clique em Alterar letra de unidade e caminho.</p>
+          <p>Passo 5. Clique em Adicionar.</p>
+          <p>Passo 6. Clique em Montar na seguinte pasta NTFS vazia.</p>
+          <p>Passo 7. Navegue até uma pasta vazia em um volume NTFS ou criar. Ao final, clique em OK.</p>
+          <p>Passo 8. Feche o Gerenciamento do Computador.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

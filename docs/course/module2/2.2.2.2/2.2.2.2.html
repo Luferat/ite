@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.2.2 Software e Ferramentas de Segurança</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Uso Adequado das Ferramentas</h1>
+        <h2>Software e Ferramentas</h2>
+      </div>
+      <div id="content">
+          <p>A cada ano, vírus, spyware e outros tipos de ataques maliciosos infectam milhões de computadores. Estes ataques podem danificar o sistema operacional, aplicativos e dados. Os computadores que foram infectados podem ter problemas com o desempenho do hardware ou falha de alguns componentes.</p>
+          <p>Para proteger os dados e a integridade do sistema operacional e do hardware, utilize softwares projetado para proteger contra ataques e remover programas maliciosos.</p>
+          <p>Existem vários tipos softwares para a proteção do hardware e dos dados. A imagem fornece mais informações sobre esses softwares e ferramentas de proteção:</p>
+          <p><ul>
+              <li>Windows 7 Action Center - Verifica o status das configurações de segurança essenciais. O Action Center verifica continuamente para se certificar de que os programas de firewall e antivírus estão operacionais. Ele também garante que as atualizações automáticas sejam baixadas e instaladas automaticamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Antivirus - Protege contra ataques de vírus.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Anti-spyware - Protege contra softwares que enviam informações sobre hábitos de navegação para um atacante. O spyware pode ser instalado sem o conhecimento ou consentimento do usuário.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Firewall do Windows 7 - Está em contínua execução para proteger contra comunicações não autorizadas a partir ou destinadas ao seu computador.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

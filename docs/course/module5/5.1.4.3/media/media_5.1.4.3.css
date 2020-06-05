@@ -1,0 +1,18 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+.cmdFontSize{font-size:10px;line-height:0.5em;font-family:typewriter;margin:0 0 0 8px;}
+
+.paragraghSpace{font-size:10px;line-height:0.5em;font-family:typewriter;margin-left:20px;}

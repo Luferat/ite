@@ -1,0 +1,63 @@
+﻿<textcomponents>
+<component id="ID_Title">
+<text><![CDATA[<b>Atualizações do sistema operacional </b>]]></text>
+</component>
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+	<tr>
+		<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	<tr><td bgcolor='#A2AA23' height="20" width="110"><font  color='#FFFFFF'><b>O S.O. pode ser atualizado para:</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font  color='#FFFFFF'><b >Windows 2000</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>Windows XP</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>Windows Vista</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>Windows 7</b></font></td>
+		
+		
+		
+	</tr>
+	
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Windows 98</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Suportado</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Suportado</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Suportado</font></td>		
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Não suportado</font></td>
+		
+	</tr>
+	
+	
+	
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows 2000</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>ND</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Suportado</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Suportado</font></td>		
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Não suportado</font></td>
+		
+	</tr>
+	
+		<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Windows 98</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>ND</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>ND</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Suportado</font></td>		
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Não suportado</font></td>
+		
+	</tr>	
+		<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Windows Vista</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>ND</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>ND</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>ND</font></td>		
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Suportado</font></td>
+		
+	</tr>
+	
+	
+	
+	
+</table>]]>
+</text>
+</component>
+</textcomponents>

@@ -1,0 +1,15 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Atualização e Montagem do Cooler da CPU</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Ventoinha</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Dissipador de Calor</b>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.3.7 Testing Connectivity with the Windows CLI</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>Wireless and Wired Router Configurations</h2>
+    </div>
+    <div id="content">
+          <p>You can use several CLI tools to test network connectivity. As a technician, it is essential that you become familiar with a basic set of these tools.</p>
+          <p>
+            <b>Ipconfig</b>
+            <br/>The <b>ipconfig</b> command verifies that the connection has a valid IP address. It displays basic IP address information for network connections. To perform specific tasks, you can add options to the <b>ipconfig</b> command.</p>
+          <p>
+            <ul>
+              <li>
+                <b>ipconfig /all</b> – Displays full configuration information of all network adapters.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipconfig /release</b> – Releases the IP address of a network adapter.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipconfig /renew</b> – Renews the IP address of a network adapter.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipconfig /flushdns</b> – Empties the cache that stores DNS information.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipconfig /registerdns</b> – Refreshes the DHCP lease and re-registers the adapter with DNS.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipconfig /displaydns</b> – Shows DNS information in the cache.</li>
+            </ul>
+          </p>
+          <p>
+            <b>Ping</b>
+            <br/>Ping tests basic connectivity between devices. You can test your own connection by pinging your computer. To test your computer, ping your NIC. In Windows 7 and Windows Vista, select <b>Start</b> and type<b> cmd</b>. For Windows XP, select <b>Start > Run > cmd</b>. At the command prompt, enter <b>ping localhost</b>. </p>
+          <p>Try to ping other computers on the network, including the default gateway and remote computers. You can find the address for the default gateway by using the ipconfig command. </p>
+          <p>Ping a public IP address outside of your network to check if your WAN connection is working properly. You can also test the Internet connection and DNS when you ping a popular website. At the command prompt, enter <b>ping</b><i> destination_name</i>.</p>
+          <p>The response of the <b>ping</b> command displays the IP address resolution of the domain. The response shows replies from the ping or that the request timed out because there is a problem.</p>
+          <p>To perform other specific tasks, add options to the <b>ping</b> command, as shown in Figure 1.</p>
+          <p>
+            <b>Tracert</b>
+            <br/>Tracert traces the route that packets take from your computer to a destination address. At the command prompt, enter <b>tracert </b><i>destination_name</i>.</p>
+          <p>The first listing in the results is your default gateway. Each listing after that is the router that packets are traveling through to reach the destination. Tracert shows you where packets are stopping, indicating where the problem is occurring. If listings show problems after the default gateway, it may mean that the problems are with the ISP, the Internet, or the destination server.</p>
+          <p>
+            <b>Net</b>
+            <br/>Use the <b>net</b><b></b>command to manage network computers, servers, and resources like drives and printers. Net commands use the NetBIOS protocol in Windows. These commands start, stop, and configure networking services, as shown in Figure 2.</p>
+          <p>
+            <b>Nslookup</b>
+            <br/>Nslookup tests and troubleshoots DNS servers. It queries the DNS server to discover IP addresses or host names. At the command prompt, enter <b>nslookup </b><i>hostname</i>. Nslookup returns the IP address for the host name entered. A reverse nslookup command, <b>nslookup </b><i>IP_address</i><b></b>returns the corresponding host name for the IP address entered. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

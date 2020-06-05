@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.1.4 Atualizando a Memória RAM</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Atualizando e Configurando um PC</h1>
+        <h2>Placa-mãe e seus Componentes</h2>
+      </div>
+      <div id="content">
+          <p>Aumentar a quantidade de memória RAM do sistema quase sempre melhora o seu desempenho geral. Antes de atualizar ou substituir a RAM, responda às seguintes perguntas:</p>
+          <p><ul>
+              <li>Qual o tipo de RAM que a placa-mãe utiliza atualmente?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A memória RAM pode ser instalada em um módulo por vez ou deve ser agrupada em slots correspondentes?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Há slots de memória RAM disponíveis?</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A nova memória RAM possui a mesma velocidade, tipo, latência e tensão da RAM existente?</li>
+            </ul>
+          </p>
+          <p>ATENÇÃO: Ao manusear uma memória RAM, lembre-se de utilizar mantas ou pulseiras anti-estática. Coloque a RAM sobre a manta até que você esteja pronto para instalá-la. Guarde a RAM em uma embalagem anti-estática.</p>
+          <p>Remova o módulo de memória RAM existente, pressionando as travas de fixação. Retire-a do socket. Para as memórias DIMMs, insira-as pressionando para baixo. Memórias SIMMs antigas eram encaixadas em um certo ângulo.</p>
+          <p>Ao inserir o novo módulo de memória RAM, certifique-se de que as ranhuras do slot na placa-mãe e da memória RAM estão alinhadas corretamente. Pressione para baixo com firmeza, e prenda a memória RAM apertando as travas.</p>
+          <p>CUIDADO: Certifique-se de inserir completamente a memória RAM no socket da placa-mãe. Caso a memória RAM esteja incorretamente alinhada ao slot, ela poderá causar sérios danos à placa-mãe.</p>
+          <p>Se a memória RAM recém instalada for compatível e estiver encaixada corretamente, o sistema descobrirá a mesma. Se a BIOS não indicar a presença da quantidade correta de RAM, certifique-se de que a RAM é compatível com a placa-mãe e que está instalada corretamente.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.12.1.1 Summary</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Summary</h1>
+      <h2>Summary</h2>
+    </div>
+    <div id="content">
+          <p>This chapter introduced you to the fundamentals of networking, the benefits of having a network, the ways to connect computers to a network, and the planning, implementation, and upgrading of networks and network components. The different aspects of troubleshooting a network were discussed with examples of how to analyze and implement simple solutions. The following concepts from this chapter are important to remember:</p>
+          <p>
+            <ul>
+              <li>A computer network is composed of two or more computers that share data and resources. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>There are several different network types called LAN, WLAN, PAN, MAN, and WAN.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>In a peer-to-peer network, devices are connected directly to each other. A peer-to-peer network is easy to install, and no additional equipment or dedicated administrator is required. Users control their own resources, and a network works best with a small number of computers. A client/server network uses a dedicated system that functions as the server. The server responds to requests made by users or clients connected to the network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The network topology defines the way in which computers, printers, and other devices are connected. Physical topology describes the layout of the wire and devices, as well as the paths used by data transmissions. Logical topology is the path that signals travel from one point to another. Topologies include bus, star, ring, and mesh. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Networking devices are used to connect computers and peripheral devices so that they can communicate. These include hubs, bridges, switches, routers, and multipurpose devices. The type of device implemented depends on the type of network. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Networking media can be defined as the means by which signals, or data, are sent from one computer to another. Signals can be transmitted either by cable or wireless means. The media types discussed were coaxial, twisted pair, fiber-optic cabling, and radio frequencies.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ethernet architecture is now the most popular type of LAN architecture. Architecture refers to the overall structure of a computer or communications system. It determines the capabilities and limitations of the system. The Ethernet architecture is based on the IEEE 802.3 standard. The IEEE 802.3 standard specifies that a network implement the CSMA/CD access control method. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The OSI reference model is an industry-standard framework that divides the functions of networking into seven distinct layers: application, presentation, session, transport, network, data link, and physical. It is important to understand the purpose of each layer. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The TCP/IP suite of protocols has become the dominant standard for the Internet. TCP/IP represents a set of public standards that specify how packets of information are exchanged between computers over one or more networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A NIC is a device that plugs into a motherboard and provides ports for the network cable connections. It is the computer interface with the LAN. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Resources are shared over a network when computers belong to the same workgroup and homegroup.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Testing network connectivity can be accomplished with CLI tools like ping, ipconfig, net, tracert, and nslookup.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The three transmission methods to sending signals over data channels are simplex, half-duplex, and full-duplex. Full-duplex networking technology increases performance because data can be sent and received at the same time. DSL, two-way cable modem, and other broadband technologies operate in full-duplex mode.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Network devices and media, such as computer components, must be maintained. It is important to clean equipment regularly and use a proactive approach to prevent problems. Repair or replace broken equipment to prevent downtime.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Many safety hazards are associated with network environments, devices, and media. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Make network design decisions that will meet the needs and the goals of your customers.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Select network components that offer the services and capabilities necessary to implement a network based on the needs of the customer.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Plan network installations based on the needed services and equipment.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Upgrading a network may involve additional equipment or cabling. Discuss how upgrading can help to enhance the future usability of the network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Prevent network problems by developing and implementing a comprehensive preventive maintenance policy.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When troubleshooting network problems, listen to what your customer tells you so that you can formulate open-ended and closed-ended questions that will help you determine where to begin fixing the problem. Verify obvious issues, and try quick solutions before escalating the troubleshooting process.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

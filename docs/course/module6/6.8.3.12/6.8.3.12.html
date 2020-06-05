@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.3.12 Testando a Conectividade Através da Interface Gráfica do Windows</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações de Roteador sem fio e com fio</h2>
+      </div>
+      <div id="content">
+          <p>Quando todos os dispositivos estão conectados e todas as luzes de link estão piscando, teste a conectividade da rede. Este teste pode determinar se você está conectado a um ponto de acesso sem fio, gateway ou Internet. A maneira mais fácil para testar uma conexão com a Internet é abrir um navegador e verificar se a Internet está disponível. Para solucionar os problemas de uma conexão sem fio, você pode usar a GUI ou CLI do Windows.</p>
+          <p>Para verificar uma conexão sem fio no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central de Rede e Compartilhamento > Alterar configurações do adaptador. Em seguida, clique duas vezes em Conexão de Rede Sem Fio para exibir a tela de status.</p>
+          <p>Para verificar uma conexão sem fio no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Central de Rede e Compartilhamento > Gerenciar Conexões de Rede. Em seguida, clique duas vezes em Conexão de Rede Sem Fio para exibir a tela de status.</p>
+          <p>Para verificar uma conexão sem fio no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Conexões de Rede. Em seguida, clique duas vezes em Conexão de Rede Sem Fio para exibir a tela de status.</p>
+          <p>A janela de Status da Conexão de Rede Sem Fio, tal como exibido na figura, mostra se o computador está conectado à Internet, bem como a duração desta conexão. Ela também mostra o número de bytes enviados e recebidos.</p>
+          <p>Para o Windows 7 ou Windows Vista, clique no botão Detalhes. As informações de Status de Conexão incluem um endereço estático ou um endereço dinâmico. A máscara de sub-rede, gateway padrão, endereço MAC e outras informações sobre o endereço IP também são listadas. Se a conexão não estiver funcionando corretamente, clique em Diagnosticar para redefinir as informações de conexão e tentar estabelecer uma nova conexão.</p>
+          <p>No Windows XP, para exibir o tipo de endereço, clique na guia Suporte. As informações de Status de Conexão incluem um endereço estático, que é atribuído manualmente, ou um endereço dinâmico, que é atribuído por um servidor DHCP. A máscara de sub-rede e o gateway padrão também são listados. Para acessar o endereço MAC e outras informações sobre o endereço IP, clique em Detalhes. Se a conexão não está funcionando corretamente, clique em Reparar para redefinir as informações de conexão e tentar estabelecer uma nova conexão.</p>
+          <p>Para visualizar mais informações sobre as redes locais sem fio antes de se conectar, você pode precisar usar um localizador sem fio. Localizadores sem fio são utilitários de software que permitem ao usuário ver transmissões de SSID, criptografias, canais e locais de redes sem fio nas imediações.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

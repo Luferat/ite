@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.9.1.7 Selecionando um ISP para o Cliente</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando um Tipo de Conexão ISP</h1>
+        <h2>Tecnologias de Conexão</h2>
+      </div>
+      <div id="content">
+          <p>Várias soluções WAN estão disponíveis para realizar a conexão entre os sites ou para Internet. Serviços de conexão WAN oferecem diferentes velocidades e níveis de serviço. Você deve entender como os usuários se conectam à Internet e as vantagens e desvantagens dos diferentes tipos de conexão. O ISP que você escolher pode ter um efeito notável no serviço de rede. Alguns revendedores particulares que se conectam a uma empresa de telefonia podem vender mais conexões do que o permitido, o que diminuia velocidade total do serviço para os clientes.</p>
+          <p>Existem quatro considerações principais referentes a uma conexão de Internet:</p>
+          <p><ul>
+              <li>Custo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Velocidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Confiabilidade</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Disponibilidade</li>
+            </ul>
+          </p>
+          <p>Pesquise os tipos de conexão que os ISPs oferecem antes de escolher um provedor de acesso. Confira os serviços disponíveis na sua área. Compare as velocidades de conexão, confiabilidade e custo antes de finalizar um contrato de serviço.</p>
+          <p>POTS</p>
+          <p>A conexão POTS é extremamente lenta, mas está disponível onde quer que haja um telefone. Existem duas grandes desvantagens de se usar a linha telefônica com um modem analógico. A primeira é que a linha de telefone não pode ser utilizada para chamadas de voz quando o modem está em uso. O segundo é a largura de banda limitada fornecida pelo serviço de telefone analógico. A largura de banda máxima usando um modem analógico é de 56 Kbps, mas, na realidade, normalmente ela é muito mais baixa do que isso. Um modem analógico não é uma boa solução para as demandas de redes com muito fluxo de dados.</p>
+          <p>ISDN</p>
+          <p>O ISDN é muito confiável, pois utiliza linhas POTS. O ISDN está disponível na maioria dos lugares onde a companhia telefônica suportar sinalização digital para transportar os dados. Devido ao ISND utilizar a tecnologia digital, ele oferece conexões mais rápidas, melhores taxas e maior qualidade de voz do que o serviço de telefonia analógica tradicional. Ele também permite que vários dispositivos compartilhem uma única linha telefônica.</p>
+          <p>DSL</p>
+          <p>A DSL permite que vários dispositivos compartilhem uma única linha telefônica. A velocidade da DSL geralmente é mais elevada do que a do ISDN. A DSL permite o uso de aplicativos de alta largura de banda ou que múltiplos usuários compartilhem a mesma conexão com a Internet. Na maioria dos casos, os fios de cobre capazes de transportar os sinais necessários para a comunicação DSL já estão instalados em sua casa ou empresa.</p>
+          <p>Existem algumas limitações referentes a tecnologia DSL:</p>
+          <p><ul>
+              <li>O serviço DSL não está disponível em todos os lugares e ele funciona melhor e mais rápido quanto mais perto o cliente estiver do escritório central do provedor (CO).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Em alguns casos, as linhas telefônicas instaladas não se qualificam para transportar todos os sinais de DSL.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As informações de voz e dados transportadas por DSL devem ser separadas na rede do cliente. Um dispositivo chamado filtro impede que os sinais de dados interferiram com os sinais de voz.</li>
+            </ul>
+          </p>
+          <p>Cabo</p>
+          <p>A maioria das casas que têm televisão por cabo tem a opção de instalar o serviço de Internet de alta velocidade usando o mesmo meio. Muitas empresas de cabo oferecem serviço de telefone também.</p>
+          <p>Satélite</p>
+          <p>Pessoas que vivem em áreas rurais geralmente usam banda larga via satélite, pois elas precisam de uma conexão mais rápida do que o dial-up e nenhuma outra conexão de banda larga está disponível. O custo de instalação e as taxas de serviço mensal são geralmente muito maiores do que o DSL e cabo. Fortes tempestades podem degradar a qualidade da conexão ou até mesmo interromper a conexão.</p>
+          <p>Celular</p>
+          <p>Muitos tipos de serviços de Internet sem fio estão disponíveis. As mesmas empresas que oferecem serviços de telefonia celular podem oferecer serviço de Internet. PC Card/ExpressBus, USB ou placas PCI e PCIe são usadas ​​para conectar um computador à Internet. As operadoras podem oferecer serviço de Internet sem fio usando a tecnologia de micro-ondas em áreas limitadas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

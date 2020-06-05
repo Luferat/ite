@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.9.1.4 WiMAX</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando um Tipo de Conexão ISP</h1>
+        <h2>Tecnologias de Conexão</h2>
+      </div>
+      <div id="content">
+          <p>Worldwide Interoperability for Microwave Access (WiMAX) é uma tecnologia de banda larga sem fio 4G baseada em IP que oferece acesso de alta velocidade à Internet móvel para dispositivos móveis. O padrão WiMAX é o IEEE 802.16e. Ele suporta uma rede com tamanho semelhante ao de uma MAN e possui velocidades de download de até 70 Mbps e alcance de até 30 milhas (50 km). Segurança e QoS para WiMAX são equivalentes às redes de celulares.</p>
+          <p></p>
+          <p>A WiMAX usa uma transmissão de baixo comprimento de onda, geralmente entre 2 e 11 GHz. Estas frequências não são facilmente interrompidas por obstáculos físicos, pois elas são melhores para desviar de obstáculos do que frequências mais altas. A Tecnologia Multiple Input Multiple Output (MIMO) é suportada, o que significa que antenas podem ser adicionadas para aumentar potencialmente o throughput.</p>
+          <p></p>
+          <p>Existem dois métodos de transmissão de sinais WiMAX:</p>
+          <p></p>
+          <p><ul>
+              <li>WiMAX Fixo - Um serviço ponto-a-ponto ou ponto-multiponto com velocidades de até 72 Mbps e um alcance de 30 milhas (50 km).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>WiMAX Móvel - Um serviço móvel, como o Wi-Fi, mas com velocidades mais altas e uma gama de transmissão mais longa.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

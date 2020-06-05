@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.4.10 VPN</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Rede Privada Virtual (VPN) é uma rede privada que conecta locais remotos ou usuários através de uma rede pública, como a Internet. O tipo mais comum de VPN é usado para acessar uma rede privada corporativa. A VPN utiliza conexões seguras dedicadas, roteadas através da Internet, da rede privada corporativa para o usuário remoto. Quando conectado à rede corporativa privada, os usuários tornam-se parte dessa rede e tem acesso a todos os serviços e recursos como se estivessem fisicamente conectados à rede corporativa.</p>
+          <p>Usuários de acesso remoto devem instalar o cliente VPN em seus computadores para formar uma conexão segura com a rede privada corporativa. O software cliente VPN criptografa os dados antes de enviá-los através da Internet para o gateway de VPN na rede privada corporativa. Gateways VPN estabelecem, gerenciam e controlam conexões VPN, também conhecidas como túneis VPN. Uma conexão básica de VPN via software é exibida na figura.</p>
+          <p>Para instalar e configurar o Windows 7 e Windows Vista para usar uma conexão VPN, siga estes passos:</p>
+          <p></p>
+          <p><ul>
+              <li>Passo 1. Selecione Iniciar > Central de Rede e Compartilhamento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 2. Selecione Configurar uma nova conexão ou rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 3. Depois que a janela Configurar uma Conexão ou um Rede abrir, selecione Conectar a um local de trabalho e clique em Avançar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 4. Selecione Usar minha conexão com a Internet (VPN) e digite o endereço de Internet e o nome do destino.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 5. Selecione &quot;Não conectar agora. Apenas configurar para permitir conexão posterior.&quot; e clique em Avançar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 6. Digite o nome de usuário e senha e clique em Criar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 7. Na janela de login, digite o nome de usuário e senha e clique em Conectar.</li>
+            </ul>
+          </p>
+          <p>Para configurar o Windows XP para usar uma conexão VPN, siga estes passos:</p>
+          <p></p>
+          <p><ul>
+              <li>Passo 1. Selecione Iniciar > Painel de Controle > Conexões de Rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 2. Selecione Criar uma nova conexão.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 3. Depois que a janela Configurar uma Conexão ou uma Rede abrir, clique em Avançar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 4. Selecione Conectar a uma rede em meu local de trabalho e clique em Avançar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 5. Selecione Conexão Virtual Private Network e clique em Avançar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 6. Digite um nome para a conexão e clique em Avançar.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 7. Digite o nome ou endereço IP do servidor VPN e clique em Avançar e Concluir.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Passo 8. Na janela de login, digite o nome de usuário e senha e clique em Conectar.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

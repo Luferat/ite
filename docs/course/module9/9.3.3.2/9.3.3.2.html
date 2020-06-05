@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.3.3.2 Otimização de Hardware</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação e Configuração de Impressoras</h1>
+        <h2>Otimizando o Desempenho da Impressora</h2>
+      </div>
+      <div id="content">
+          <p>Algumas impressoras podem ser otimizadas para imprimir mais rápido e acomodar mais trabalhos de impressão, atualizando o seu hardware. Esse hardware pode incluir bandejas de papel adicionais, alimentadores de folhas, placas de rede e memória de expansão.</p>
+          <p>Firmware</p>
+          <p>O Firmware é um conjunto de instruções armazenadas na impressora. O Firmware controla o funcionamento da impressora. O procedimento para atualizar o firmware é semelhante à instalação de drivers de impressora. Devido as atualizações de firmware não serem feitas automaticamente, visite o site do fabricante da impressora para verificar a disponibilidade de um novo Firmware.</p>
+          <p>Memória da Impressora</p>
+          <p>Atualizar a memória da impressora aumenta a velocidade de impressão e melhora o desempenho em trabalho de impressões complexas. Todas as impressoras possuem memória RAM. Quanto mais memória uma impressora tiver, mais eficiente ela será. A memória adicional ajuda em tarefas como o buffer dos trabalhos, criação de páginas, impressão de fotos e gráficos.</p>
+          <p>O buffer do trabalho de impressão é feito quando um trabalho é capturado na memória interna da impressora. O Buffer permite que o computador continue com outro trabalho, ao invés de esperar até que a impressora finalize a impressão. Buffer é uma característica comum em impressoras a laser e plotters, bem como em impressoras jato de tinta avançadas e matriciais.</p>
+          <p>As impressoras geralmente vem de fábrica com memória suficiente para lidar com trabalhos que envolvem texto. No entanto, os trabalhos de impressão que envolvem gráficos e, principalmente, fotografias são executados de forma mais eficiente se a memória da impressora for adequada para armazenar todo o trabalho antes de começar a impressão. Se você receber erros de memória, isso pode indicar que a impressora está sem memória ou que a memória está sobrecarregada. Neste caso, você pode precisar de mais memória.</p>
+          <p>Instalação de Memória na Impressora</p>
+          <p>Antes de instalar memória adicional na impressora, leia a documentação da impressora para determinar o seguinte:</p>
+          <p><ul>
+              <li>Tipo de Memória - Tipo físico de memória, velocidade e capacidade. Alguns tipos de memória são padrão e algumas impressoras exigem um modelo de memória especial ou proprietário.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Slots - Tipo de slot e número de slots disponíveis. Você terá que abrir o compartimento para verificar o slot.</li>
+            </ul>
+          </p>
+          <p>Os fabricantes de impressoras definiram procedimentos para atualização de memória, incluindo as seguintes tarefas:</p>
+          <p><ul>
+              <li>Remoção das tampas para acesso a área da memória</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instalação ou remoção da memória</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Inicialização da impressora para reconhecimento da nova memória</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Instalação dos drivers atualizados, se necessário</li>
+            </ul>
+          </p>
+          <p>Upgrade Adicional da Impressora</p>
+          <p>Algumas impressoras permitem atualizações adicionais:</p>
+          <p><ul>
+              <li>Impressão frente e verso</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Bandeja extra para manter mais papel</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Bandeja especializadas para diferentes mídias</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placa de rede para acessar uma rede com ou sem fio</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Atualizações de firmware para adicionar funcionalidade ou para corrigir erros</li>
+            </ul>
+          </p>
+          <p>Siga as instruções fornecidas com a impressora durante a instalação ou atualização dos componentes. Contacte o fabricante ou um técnico de serviço autorizado para obter informações adicionais caso você tenha quaisquer problemas ao instalar as atualizações. Siga todos os procedimentos de segurança definidos pelo fabricante.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

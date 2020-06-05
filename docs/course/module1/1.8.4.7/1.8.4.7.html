@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.4.7 VPN</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>OS Configurations</h2>
+    </div>
+    <div id="content">
+          <p>A Virtual Private Network (VPN) is a private network that uses a public network, like the Internet, to connect remote sites or users together. A VPN uses dedicated secure connections routed through the Internet from the company private network to the remote user. When connected to the company private network, users become part of that network and have access to all services and resources as if they were physically connected to the LAN. </p>
+          <p>Remote-access users must install the VPN client on their computers to form a secure connection with the company private network. The VPN client software encrypts data before sending it over the Internet to the VPN gateway at the company private network. VPN gateways establish, manage, and control VPN connections, also known as VPN tunnels. A basic VPN connection is shown in the figure.</p>
+          <p>To set up and configure Windows 7 and Windows Vista to use a VPN connection:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Select <b>Start > Network and Sharing Center</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Select <b>Set up a new connection or network</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>After the New Connection Wizard window opens, select <b>Connect to a workplace</b> and click <b>Next</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Select<b> Use my Internet connection (VPN)</b> and type the Internet address and the destination name.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Select <b>Don’t connect now; just set it up so I can connect later</b> and click <b>Next.</b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Type the username and password and click <b>Create</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>In the login window, enter the username and password, as shown in Figure 1 and click<b> Connect</b>.</li>
+            </ul>
+          </p>
+          <p>To set up and configure Windows XP to use a VPN connection:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Select <b>Start > Control Panel > Network Connections</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Select <b>Create a new connection</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>After the New Connection Wizard window opens, click <b>Next</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Select <b>Connect to the network at my workplace</b> and click <b>Next</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Select <b>Virtual Private Network connection </b>and click <b>Next</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Type the name for the connection and click <b>Next</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Type in the name or IP address of the VPN server and<b></b>click <b>Next </b>and<b> Finish</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>In the login window, enter the username and password<b></b>and click<b> Connect</b>.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

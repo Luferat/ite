@@ -1,0 +1,54 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Protocolos de Email</b>]]></text>
+</component>
+
+<component id="ID_drag01">
+<text><![CDATA[Usado para enviar email contendo apenas textos ASCII]]></text>
+</component>
+<component id="ID_drag02">
+<text><![CDATA[Usado para enviar email contendo texto, imagens e documentos]]></text>
+</component>
+<component id="ID_drag03">
+<text><![CDATA[Utilize o protocolo Post Office Protocol para realizar o download do email]]></text>
+</component>
+<component id="ID_drag04">
+<text><![CDATA[Utilizado para realizar o download do email e sincronizar as pastas.]]></text>
+</component>
+
+<component id="ID_def01">
+<text><![CDATA[<b>SMTP</b>]]></text>
+</component>
+<component id="ID_def02">
+<text><![CDATA[<b>MIME</b>]]></text>
+</component>
+<component id="ID_def03">
+<text><![CDATA[<b>POP3</b>]]></text>
+</component>
+<component id="ID_def04">
+<text><![CDATA[<b>IMAP</b>]]></text>
+</component>
+
+
+
+	<component id="ID_CORRECT_TITLE">
+		<text><![CDATA[Correto]]></text> 
+	</component>
+	<component id="ID_CORRECT_BODY">
+		<text><![CDATA[Está correto.]]></text> 
+	</component>
+	<component id="ID_INCORRECT_TITLE">
+		<text><![CDATA[Incorreto]]></text> 
+	</component>
+	<component id="ID_INCORRECT_BODY">
+		<text><![CDATA[Está incorreto.]]></text> 
+	</component>
+	<component id="ID_CHECK">
+		<text ><![CDATA[Verificar]]></text> 
+	</component>
+	<component id="ID_RESET">
+		<text><![CDATA[Redefinir]]></text> 
+	</component>
+  
+</textcomponents>

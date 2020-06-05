@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.1.2 Características e Benefícios</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Princípios da Rede</h1>
+        <h2>Redes de Computadores</h2>
+      </div>
+      <div id="content">
+          <p>Os benefícios de uma rede de computadores e outros dispositivos incluem custos reduzidos e o aumento da produtividade. Em uma rede, os recursos podem ser compartilhados para reduzir a duplicação e a corrupção dos dados.</p>
+          <p>Exigem Menos Periféricos</p>
+          <p>A figura mostra que diversos dispositivos podem ser conectados à rede. Cada computador na rede não precisa ter a sua própria impressora ou dispositivo de backup. Várias impressoras podem ser alocadas em uma localização central e compartilhadas entre os usuários da rede. Todos os usuários da rede enviam os trabalhos de impressão para um servidor de impressão central que gerencia os pedidos de impressão. O servidor de impressão pode distribuir os trabalhos de impressão em várias impressoras ou manter em uma fila as impressões que requerem uma impressora específica.</p>
+          <p>Aumenta as Capacidades de Comunicação</p>
+          <p>As redes fornecem várias ferramentas de colaboração diferentes que podem ser utilizadas para realizar a comunicação entre os utilizadores da rede. Ferramentas de colaboração on-line incluem e-mail, fóruns e chats, chamadas de voz e vídeo e mensagens instantâneas. Com essas ferramentas, os usuários podem se comunicar com amigos, familiares e colegas.</p>
+          <p>Evita a Duplicação e Corrupção de Arquivos</p>
+          <p>Um servidor gerencia os recursos de rede. Servidores armazenar dados e os compartilham com os usuários na rede. Os dados confidenciais ou sensíveis podem ser protegidos e compartilhados com os usuários que possuem permissão para acessá-los. Softwares de rastreamento de documento podem ser usados para impedir os usuários de sobrescrever ou alterar arquivos que outras pessoas estão acessando ao mesmo tempo.</p>
+          <p>Baixo Custo de Licenciamento</p>
+          <p>O licenciamento da aplicação pode ser caro para computadores individuais. Muitos fornecedores de software oferecem licenças para rede, o que reduz drasticamente o custo de software. Essa licença de instalação permite que um grupo de pessoas ou uma organização inteira possa usa o aplicativo por uma única taxa.</p>
+          <p>Administração Centralizada</p>
+          <p>A administração centralizada reduz o número de pessoas necessárias para gerenciar os dispositivos e os dados na rede, reduzindo o tempo e o custo da empresa. Usuários individuais da rede não precisam gerenciar seus próprios dados e dispositivos. Um administrador pode controlar os dados, dispositivos e as permissões dos usuários na rede. O backup de dados é mais fácil, pois os dados são armazenados em um local central.</p>
+          <p>Conserva de Recursos</p>
+          <p>O processamento de dados pode ser distribuído em vários computadores para evitar que um computador fique sobrecarregado com múltiplas tarefas.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

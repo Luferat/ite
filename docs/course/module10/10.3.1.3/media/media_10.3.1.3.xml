@@ -1,0 +1,39 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Tipos de Backup</b>]]></text>
+</component>
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+	<tr class="liner">
+		<td colspan='2' bgcolor='#434321' class="liner"><font size='1' color='#434321' class="liner"><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	<tr>
+    <td bgcolor='#A2AA23' width='130' valign="top" class="width"><font  color='#FFFFFF'><b class="subHeaderFont">Tipo de Backup</b></font></td>
+	<td bgcolor='#A2AA23' valign="top" class="width1"><font  color='#FFFFFF'><b class="subHeaderFont">Descrição</b></font></td>		
+	</tr>
+	
+	<tr><td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Completa ou Normal </font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Esse tipo de backup copia todos os arquivos selecionados e marca cada arquivo como copiado.</font></td>	
+	</tr>
+    <tr><td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Incremental</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Esse tipo realiza o backup apenas dos arquivos que foram criados ou alterados desde o último backup completo ou incremental. A restauração de arquivos requer que você tenha o último conjunto de backup completo e todos os conjuntos de backups incrementais.</font></td>	
+	</tr>
+    
+     <tr><td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Diferencial </font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Esse tipo de backup copia apenas os arquivos que foram criados ou alterados desde o último backup completo. A restauração de arquivos requer que você tenha o último backup completo e um backup diferencial. </font></td>	
+	</tr>
+	
+    
+     <tr><td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Diário </font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Esse tipo de backup copia todos os arquivos selecionados que foram modificados no dia em que o backup diário for realizado.</font></td>	
+	</tr>
+	
+     <tr><td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Copia </font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Esse tipo de backup copia todos os arquivos selecionados, mas não os marca como copiados.</font></td>	
+	</tr>
+</table>
+]]>
+</text>
+</component>
+
+</textcomponents>

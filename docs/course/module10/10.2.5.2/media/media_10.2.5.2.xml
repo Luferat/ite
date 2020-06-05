@@ -1,0 +1,23 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Trava de segurança para Laptop</b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Parafusos e Fechaduras de Segurança</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>Cartão PIN</b>]]></text>
+</component>
+<component id="ID_s4_title">
+<text><![CDATA[<b>Soft Token</b>]]></text>
+</component>
+<component id="ID_s5_title">
+<text><![CDATA[<b>Dongle de Segurança USB</b>]]></text>
+</component>
+
+
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

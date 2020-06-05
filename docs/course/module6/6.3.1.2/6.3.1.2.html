@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.1.2 Transmissão de Dados</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Fluxo de Dados</h2>
+      </div>
+      <div id="content">
+          <p>Os dados que são transmitidos através da rede podem fluir através de um dos três modos: simplex, half-duplex ou full-duplex.</p>
+          <p></p>
+          <p>Simplex</p>
+          <p>Simplex, também chamado de unidirecional, é único, transmissão em um único sentido. Um exemplo de transmissão simplex é o sinal que é enviado de uma estação de TV à sua TV de casa.</p>
+          <p></p>
+          <p>Half-Duplex</p>
+          <p>Quando o fluxo de dados ocorre em um sentido de cada vez ele é conhecido como half-duplex, conforme apresentado na imagem. Com half-duplex, o canal de comunicação permite a alternância em duas direções de transmissão, mas não em ambas as direções simultaneamente. Rádios bidirecionais, tais como as comunicações da polícia ou de emergência com rádios móveis, trabalham com as transmissões half-duplex. Quando você pressiona o botão do microfone para transmitir, você não pode ouvir a pessoa do outro lado. Se as pessoas em ambas as extremidades tentarem falar ao mesmo tempo, nenhuma das transmissões serão completadas.</p>
+          <p></p>
+          <p>Full-Duplex</p>
+          <p>Quando o fluxo de dados é realizado em ambos os sentidos e ao mesmo tempo a transmissão é conhecida como full-duplex, conforme apresentado na imagem. Embora o fluxo de dados seja em ambas as direções, a largura de banda é medida em uma única direção. Um cabo de rede de 100 Mb/s em modo full-duplex tem uma largura de banda de 100 Mb/s.</p>
+          <p></p>
+          <p>A conversa telefônica é um exemplo de comunicação full-duplex. As duas pessoas podem falar e ouvir ao mesmo tempo.</p>
+          <p></p>
+          <p>Tecnologia de rede full-duplex aumenta o desempenho da rede, pois os dados podem ser enviados e recebidos ao mesmo tempo. Tecnologias de banda larga, como a DSL (digital subscriber line)e cabo, operam em modo full-duplex. Tecnologias de banda larga permitem que vários sinais viajem simultaneamente no fio. Com uma conexão DSL, por exemplo, os usuários podem transferir dados para o computador e falar ao telefone ao mesmo tempo.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,327 @@
+﻿<textcomponents>
+  <component id="ID_s1_title">
+    <text>
+      <![CDATA[<b>Permissões de Pasta</b>]]>
+    </text>
+  </component>
+  <component id="ID_s2_title">
+    <text>
+      <![CDATA[<b>Permissões de Arquivos</b>]]>
+    </text>
+  </component>
+  <component id="ID_s3_title">
+    <text>
+      <![CDATA[<b>Comparação entre FAT32 e NTFS</b>]]>
+    </text>
+  </component>
+  <component id='ID_table01'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+        <tr class="liner">
+          <td colspan='7' bgcolor='#434321' class="liner"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="100px" bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b>Permissões</b> </font></td>
+          <td width="55px" bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b>Controle Total </b> </font></td>
+          <td width="45px" bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b>Modificar</b> </font></td>
+          <td width="60px" bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b >Ler e Executar</b> </font></td>
+          <td width="60px" bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b>Listar Conteúdo da Pasta</b> </font></td>
+          <td width="42px" bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b>Leitura</b> </font></td>
+          <td width="41px" bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b>Escrever</b> </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Desviar Pasta</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Listar Pasta</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Visualizar Atributos da Pasta</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Visualizar Atributos Estendidos da Pasta</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Criar Arquivos Dentro da Pasta</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Criar Pastas</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Escrever Atributos de Pasta</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Escrever Atributos da Pasta Estendida</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Excluir Subpastas e Arquivos</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Excluir Pasta</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Visualizar Permissões da Pasta</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Alterar Permissões da Pasta</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Apropriar-se</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Sincronizar</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table02'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+        <tr class="liner">
+          <td colspan='6' bgcolor='#434321' class="liner"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="100px" bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont">Permissões</b> </font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont">Controle Total </b> </font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont">Modificar</b> </font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont">Ler e Executar</b> </font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont">Leitura</b> </font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont">Escrever</b> </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Executar Arquivo</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Visualizar Dados</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Visualizar Atributos dos Arquivos</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Visualizar Atributos Estendidos</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Escrever Dados</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Acrescentar Dados</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Escrever Atributos de Arquivos</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Escrever Atributos Estendidos de Arquivos</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Excluir Arquivos</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Visualizar Permissões de Arquivos</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Alterar Permissões de Arquivos</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Apropriar-se</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>não</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Sincronizar</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>sim</font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table03'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+        <tr class="liner">
+          <td colspan='3' bgcolor='#434321' class="liner"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont"> </b> </font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont">FAT32</b> </font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'> <b class="subHeaderFont">NTFS</b> </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Segurança</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Baixa Segurança</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Níveis de Permissão de Arquivos e Pastas, Criptografia</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Compatibilidade</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Compatível com todas as versões do Windows</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Compatível com todas as versões do Windows</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Tamanho do Arquivo</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Limite de 4 GB de arquivos/32 GB de volume da unidade</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Limite de 16 GB de Terabyte/256 Terabyte de volume da unidade</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Arquivos por Volume</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>4.17 milhões</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>4.29 bilhões</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Eficiência</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Cluesters grandes perdem um pouco de espaço</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Clusters menores usam mais do espaço disponível; a compressão embutida maximiza o espaço</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Confiabilidade</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Não rastrea as alterações feitas no sistema de arquivos</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Inclui o recurso journaling que ajuda reconstruir o sistema de arquivos após uma falha ou queda de energia.</font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  
+</textcomponents>

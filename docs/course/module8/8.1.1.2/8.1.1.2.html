@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.1.2 Hardware Não Expansível</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Visão Geral do Hardware de Dispositivos Móveis</h1>
+        <h2>Hardware de Dispositivos Móvies</h2>
+      </div>
+      <div id="content">
+          <p>O hardware do dispositivo móvel normalmente não é atualizável. O design e as dimensões do hardware interno não permitem a substituição por um hardware atualizado. Muitos dos componentes de um dispositivo móvel estão ligados diretamente às placas de circuito, aos quais não podem ser substituídos por componentes melhorados, conforme apresentado na imagem. Baterias e cartões de memória, no entanto, muitas vezes podem ser substituídas por itens de maiores capacidades. Isso não aumentará a velocidade ou os recursos do dispositivo móvel, mas permitirá a execução por mais tempo entre as cargas ou aumento da capacidade de armazenamento de dados.</p>
+          <p>Algumas funcionalidades podem ser adicionadas aos dispositivos móveis através do uso de portas internas e docking stations. Essas conexões oferecem capacidade de expansão, tais como saídas de vídeo ou áudio, uma conexão com uma estação de ancoragem, ou encaixe para um rádio-relógio. Alguns smartphones ainda pode ser acoplado a um dispositivo com um teclado, trackpad e monitor LCD para criar uma versão de um laptop. Há também casos de tablets que possuem um teclado na parte interna.</p>
+          <p>Quando um dispositivo móvel deixa de possuir os recursos ou não opera nas velocidades exigidas pelo usuário, ele deverá ser substituído. Muitas vezes, os dispositivos móveis antigos podem ser trocados por créditos na compra de um novo. Os itens são remodelados, revendidos ou doados. Os dispositivos móveis básicos podem ser doados para serem reutilizados quando não podem ser mais negociados. Verifique se há programas de doações locais na sua área para descobrir onde estes dispositivos podem ser deixados.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.3.4 Configuração Básica de Rede</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações de Roteador sem fio e com fio</h2>
+      </div>
+      <div id="content">
+          <p>Após o login, a tela de configuração será aberta, conforme apresentado na figura. A tela de setup possui algumas guias que o ajuda durante a configuração do roteador. Você deve clicar em Save Settings, localizado na parte inferior de cada tela, após realizar qualquer alteração.</p>
+          <p>Todos os roteadores que são projetados para uma rede doméstica ou de uma pequena empresa são pré-configurados com definições básicas. Estas configurações podem ser localizadas em abas diferentes, dependendo da marca e modelo do roteador. É uma boa prática fazer alterações nas seguintes configurações padrões.</p>
+          <p><ul>
+              <li>Nome do Roteador - Forneça um nome que possa ser facilmente reconhecido. Esse nome é exibido durante a visualização dos dispositivos de rede a partir de um sistema operacional.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Permissões de Acesso aos Dispositivos de Rede - Muitos dispositivos de rede feitos por fabricantes específicos possuem o mesmo username e senha padrão para acessar a tela de configuração do dispositivo. Se deixado inalterado, usuários não autorizados podem facilmente fazer logon no dispositivo e modificar as configurações. Ao se conectar pela primeira vez no dispositivo de rede, altere o username e senha padrão. Em alguns dispositivos, você só pode redefinir a senha.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>QoS Básico - O roteador E2500 suporta QoS para aplicações, jogos online, VoIP e streaming de vídeo.</li>
+            </ul>
+          </p>
+          <p>Enquanto algumas configurações padrões devem ser alteradas em outras é melhor deixar como está. A maioria das redes domésticas ou de pequenas empresas compartilham uma única conexão de Internet fornecida pelo ISP. Roteadores deste tipo de rede recebem endereços públicos do ISP, que permite que o roteador envie e receba pacotes da Internet. O roteador fornece endereços privados para os hosts da rede local. Como os endereços privados não podem ser usado na Internet, um processo é usado para traduzir os endereços privados em endereços públicos únicos. Isto permite aos hosts locais se comunicarem na Internet.</p>
+          <p>Network Address Translation (NAT) é o processo usado para converter endereços privados em endereços de Internet roteáveis. Com o NAT, um endereço IP de origem privada (local) é traduzido para um endereço público (global). O processo é revertido para pacotes de entrada. O roteador é capaz de traduzir vários endereços IP internos em endereços públicos, usando NAT.</p>
+          <p>Apenas os pacotes destinados a outras redes precisam ser traduzidos. Estes pacotes devem passar pelo gateway, onde o roteador substitui os endereços IP privados dos hosts de origem pelos endereços IP públicos do roteador.</p>
+          <p>Embora cada host da rede interna tenha um endereço IP privado único, os host compartilham endereços roteáveis ​​na Internet que foram atribuídos ao roteador pelo ISP.</p>
+          <p>Ao configurar um roteador E2500, clique na guia Help para visualizar informações adicionais sobre a guia. Para obter informações além do que é mostrado na tela de ajuda, consulte a documentação.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.5.1.1 Diretrizes do Vendedor</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para Impressoras</h1>
+        <h2>Manutenção Preventiva de Impressoras</h2>
+      </div>
+      <div id="content">
+          <p>A manutenção preventiva diminui o tempo de inatividade e aumenta a vida útil dos componentes. É importante realizar a manuntenção preventiva na impressora para mantê-la em funcionamento adequadamente. Um bom programa de manutenção garante boa qualidade de impressão e operação ininterrupta. A documentação da impressora contém informações sobre como manter e limpar o equipamento.</p>
+          <p>Leia os manuais de informação que vêm junto com cada nova peça do equipamento. Siga as instruções de manutenção recomendadas. Use os suprimentos listados pelo fabricante. Catuchos/toners mais baratos podem economizar dinheiro, porém podem reduzir a qualidade da impressão, danificar o equipamento e invalidar a garantia.</p>
+          <p>CUIDADO: Certifique-se de desligar a impressora e tirá-la da tomada antes de iniciar qualquer tipo de manutenção.</p>
+          <p>Quando a manutenção for concluída, zere os contadores para que a próxima manutenção seja feita no tempo certo. Em muitos tipos de impressoras, a contagem de página é visualizada através do visor LCD ou em um contador localizado dentro da tampa principal.</p>
+          <p>A maioria dos fabricantes vendem kits de manutenção para suas impressoras. Para impressoras a laser, o kit pode conter peças de reposição, que muitas vezes quebram ou se desgastam:</p>
+          <p><ul>
+              <li>Conjunto de fusor</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rolos de transferência</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pads de separação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rolos de captação</li>
+            </ul>
+          </p>
+          <p>Ao instalar novas peças ou substituir toners e cartuchos, verifique todos os componentes internos e realize as seguintes tarefas:</p>
+          <p><ul>
+              <li>Remova os pedaços de papel e poeira</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Limpe a tinta ou toner derramado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Procure por engrenagens desgastadas, plástico rachado ou partes danificadas</li>
+            </ul>
+          </p>
+          <p>Se você não sabe como realizar a manutenção preventiva do equipamento de impressão, chame um técnico certificado pelo fabricante.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

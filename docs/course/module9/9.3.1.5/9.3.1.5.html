@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.3.1.5 Tipos de Drivers de Impressão</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação e Configuração de Impressoras</h1>
+        <h2>Instalação e Atualização de Drivers, Firmware e RAM</h2>
+      </div>
+      <div id="content">
+          <p>Os drivers de impressora são programas que tornam possível que computadores e impressoras se comunique uns com os outros. Os softwares de configuração fornecem uma interface que permite aos usuários configurar e alterar as opções da impressora. Cada modelo de impressora possui o seu próprio tipo de driver e software de configuração.</p>
+          <p>O Page Description Language (PDL) é um código que descreve a aparência de um documento em um idioma para que uma impressora possa entender. O PDL inclui os textos, gráficos e informações de formatação. Um aplicativo de software utiliza um PDL para enviar imagens What You See Is What You Get (WYSIWYG) para a impressora. A impressora traduz o arquivo PDL de modo que tudo o que está na tela do computador será impresso. O PDL acelera o processo de impressão ao enviar grandes quantidades de dados de uma só vez. Eles também gerenciam as fontes do computador.</p>
+          <p>A Adobe Systems desenvolveu o PostScript para permitir que as fontes e tipos de texto compartilhem as mesmas características da tela, como no papel. A Hewlett-Packard desenvolveu o PCL para comunicação com impressoras jato de tinta antigas. Hoje, o PCL é um padrão da indústria utilizado por quase todos os tipos de impressora.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

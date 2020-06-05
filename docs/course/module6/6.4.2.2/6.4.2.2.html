@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.2.2 Cabo Coaxial</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Cabos e Conectores</h2>
+      </div>
+      <div id="content">
+          <p>O cabo coaxial, mostrado na Imagem 1, geralmente é construído de cobre ou alumínio. Ele é usado por empresas de televisão a cabo para fornecer serviços e para conectar diversos componentes que compõem sistemas de comunicação por satélite.</p>
+          <p></p>
+          <p>O cabo coaxial transporta dados na forma de sinais elétricos. Ele oferece uma melhor proteção em relação ao par trançado não blindado (UTP), por isso tem uma maior relação sinal-ruído e pode, portanto, levar mais dados. No entanto, o cabeamento de par trançado substituiu o coaxial em LANs, pois, quando comparado com o UTP, o cabo coaxial é fisicamente mais difícil de instalar, mais caro e mais difícil de resolver problemas.</p>
+          <p></p>
+          <p>O cabo coaxial é encerrado numa bainha ou invólucro, conforme mostrado na Imagem 2. Existem vários tipos de cabos coaxiais:</p>
+          <p></p>
+          <p><ul>
+              <li>Thicknet ou 10Base5 - Usado em redes e opera a 10 Mbps, com um comprimento máximo de 1640,4 pés (500 m.)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Thinnet 10BASE2 - Usado em redes e operado a 10 Mbps, com um comprimento máximo de 607 pés (185 m.)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>RG-59 - Mais comumente utilizado para a televisão a cabo nos Estados Unidos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>RG-6 - Cabo de qualidade superior a do que o RG-59, com mais largura de banda e menor susceptibilidade a interferências</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>O cabo do provedor de serviços utilizado dentro das instalações do cliente é o coaxial. Existem vários métodos de conexão que são usados ​​para conectar cabos coaxiais em conjunto. Os dois tipos comuns de conexão, mostrados na Imagem 3, incluem:</p>
+          <p></p>
+          <p><ul>
+              <li>Série F - Usado principalmente em aplicações de televisão a cabo e em antenas de até 1 GHz</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>BNC - Projetado para uso militar e também usado em vídeo e aplicações de RF de até 2 GHz</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>O conector série F tem uma de rosca padrão, mas e modo push-on também está disponíveis. O BNC usa um conector de push, torção e bloqueio. O cabo coaxial não tem nenhuma largura de banda máxima específica, assim o tipo de tecnologia de sinalização utilizado determina a velocidade e os fatores limitativos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.1.1 Abrindo o Gabinete</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Abra o gabinete e instale a fonte de alimentação</h2>
+      </div>
+      <div id="content">
+          <p>Os gabinetes de computadores são produzidos em várias de formas. Estas formas referem-se ao tamanho e ao perfil do gabinete.</p>
+          <p>Prepare a área que irá trabalhar antes de abrir o gabinete do computador. É necessario uma iluminação adequada, boa ventilação e uma temperatura confortável do ambiente. A bancada ou mesa deve ser acessível por todos os lados. Evite desordenar a superfície da área onde irá trabalhar com as ferramentas e os componentes do computador. Coloque uma manta anti-estática em cima da mesa para ajudar a evitar danos físicos e de ESD ao equipamento. É útil usar pequenos recipientes para armazenar os parafusos e outras peças que você irá remover.</p>
+          <p>Existem diferentes métodos para a abertura de um gabinete. Para saber como abrir um gabinete especial, consulte o manual ou site do fabricante. A maioria dos gabinetes são abertos por uma das seguintes maneiras:</p>
+          <p><ul>
+              <li>A tampa do gabinete é removida como uma única peça.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os painéis superiores e laterais do gabinete são removidos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A parte superior do gabinete é removida antes que os painéis laterais.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Uma trava é puxada para abrir o gabinete liberando o painel lateral.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

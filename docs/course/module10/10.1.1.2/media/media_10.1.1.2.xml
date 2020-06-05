@@ -1,0 +1,19 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Ataques de Computadores</b>]]></text>
+</component>
+
+<component id="ID_s1_text-01">
+<text><![CDATA[<b>Vírus</b>]]></text>
+</component>
+
+<component id="ID_s1_text-02">
+<text><![CDATA[<b>Worm</b>]]></text>
+</component>
+
+<component id="ID_s1_text-03">
+<text><![CDATA[<b>Cavalo de Tróia</b>]]></text>
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.4.1.2 Infravermelho</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Tecnologias de Comunicação sem Fio de Laptops</h1>
+        <h2>Recursos e Configurações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>O infravermelho (IR) é uma tecnologia sem fio de curto alcance e baixa potência. Os infravermelhos transmitem dados utilizando LEDs e recebem através de fotodiodos. Redes sem fio infravermelho são globalmente regulamentadas. No entanto, a Infrared Data Association (IrDA) define as especificações para a comunicação IR sem fio. A Figura 1 apresenta características comuns do Infravermelho.</p>
+          <p></p>
+          <p>Existem três tipos comuns de redes Infravermelho:</p>
+          <p><ul>
+              <li>Linha de visão - O sinal só é transmitido se houver uma visão clara e desobstruída entre os dispositivos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dispersão – O sinal é refletido no teto e na parede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Reflexiva - O sinal é enviado para um transceptor óptico e é reencaminhado para o dispositivo receptor.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Instalar e configurar dispositivos Infravermelho é simples. Muitos dispositivos infravermelho conectam-se à porta USB de um laptop ou desktop. Quando o computador detecta o novo dispositivo, o Windows 7 instala os drivers apropriados. A instalação é semelhante a configurar uma conexão LAN.</p>
+          <p></p>
+          <p>O infravermelho é uma solução de conexão prática, de curto alcance, mas que tem algumas limitações:</p>
+          <p><ul>
+              <li>A luz do infravermelho não pode penetrar tetos ou paredes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os sinais infravermelho são susceptíveis a interferência e diluição por fortes fontes de luz, tais como luzes fluorescentes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Os dispositivos infravermelhos de dispersão conseguem estabelecer uma conexão sem uma linha de visão, mas a velocidade de transferência de dados é inferior e as distâncias são mais curtas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As distâncias dos dispositivos infravermelho devem ser de 3 pés (1 m) ou inferiores quando utilizadas para comunicações de computador.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Antes de instalar e configurar um dispositivo, certifique-se que o infravermelho está habilitado na BIOS, seguindo estes passos:</p>
+          <p>Passo 1. Ligue o dispositivo, tornando-o visível para Windows.</p>
+          <p>Passo 2. Alinhe os dispositivos.</p>
+          <p>Passo 3. Quando os dispositivos estiverem corretamente alinhados, um ícone aparecerá na barra de tarefas com uma mensagem pop-up.</p>
+          <p>Passo 4. Clique na mensagem para exibir a caixa de diálogo do infravermelho.</p>
+          <p></p>
+          <p>Laptops que não possuem um dispositivo infravermelho interno podem se conectar em um transceptor infravermelho através de uma porta serial ou USB. A Figura 2 exibe um transceptor infravermelho utilizando uma porta interna.</p>
+          <p></p>
+          <p>Você também pode acessar a caixa de diálogo do infravermelho no Painel de Controle. Você pode configurar as seguintes definições:</p>
+          <p><ul>
+              <li>Infravermelho - Controla a forma como você é notificado sobre uma conexão infravermelho e controla como os arquivos são transferidos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Transferência de Imagem - Controla como as imagens são transferidas de uma câmara digital.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Hardware - Lista os dispositivos de infravermelho que são instalados no computador.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

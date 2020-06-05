@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.5.1 Input Devices</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Input and Output Devices</h2>
+    </div>
+    <div id="content">
+          <p>An input device enters data or instructions into a computer. Here are some examples of input devices:</p>
+          <p>
+            <ul>
+              <li>Mouse and keyboard </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Gamepad and joystick</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Digital camera and digital video camera </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Biometric authentication device </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Touch screen </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Digitizer</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Scanner </li>
+            </ul>
+          </p>
+          <p>
+            <b>Mice and Keyboards</b>
+          </p>
+          <p>The mouse and keyboard are the two most commonly used input devices. The mouse is used to navigate the graphical user interface (GUI). The keyboard is used to enter text commands that control the computer.</p>
+          <p>A keyboard, video, mouse (KVM) switch is a hardware device that can be used to control more than one computer using a single keyboard, monitor, and mouse. For businesses, KVM switches provide cost-efficient access to multiple servers. Home users can save space using a KVM switch, as seen in Figure 1, to connect multiple computers to one keyboard, monitor, and mouse.</p>
+          <p>Newer KVM switches have added the capability to share USB devices and speakers with multiple computers. Typically, by pressing a button on the KVM switch, the user can change the control from one connected computer to another connected computer. Some models of the switch transfer control from one computer to another using a specific key sequence on a keyboard, such as <b>Ctrl > Ctrl > A > Enter</b> to control the first computer connected to the switch, and then <b>Ctrl > Ctrl > B > Enter</b> to transfer control to the next computer.</p>
+          <p>
+            <b>Gamepads and Joysticks</b>
+          </p>
+          <p>Input devices for playing games include gamepads and joysticks, as shown in Figure 2. Gamepads allow the player to control movement and views with small sticks moved by the player’s thumbs. Multiple buttons are pressed to achieve specific results within a game, such as jumping or shooting. Many gamepads even have triggers that register the amount of pressure the player puts on them. For example, applying more pressure exerted on the trigger accelerates the player faster in a driving game.</p>
+          <p>Joysticks are also used to play games and run simulations. Joysticks are best when simulating flight where actions such as pulling the joystick toward you allow the simulated plane to climb.</p>
+          <p>
+            <b>Digital Cameras and Digital Video Cameras</b>
+          </p>
+          <p>Digital cameras and digital video cameras, shown in Figure 3, create images that can be stored on magnetic media. The image is stored as a file that can be displayed, printed, or altered. Webcams can be built into monitors or laptops, or stand alone to capture images in real time. Webcams are often used to create video for posting on the Internet or performing video chat sessions with others. They can also take still images that can be saved to the computer. A microphone allows the user to communicate audibly with others during a video chat session or record voice while creating a video.</p>
+          <p>
+            <b>Biometric Identification Devices</b>
+          </p>
+          <p>Biometric identification makes use of features that are unique to an individual user, such as fingerprints, voice recognition, or a retinal scan. When combined with ordinary usernames, biometrics guarantees that the authorized person is accessing the data. Figure 4 shows a laptop that has a built-in fingerprint scanner. By measuring the physical characteristics of the fingerprint of the user, the user is granted access if the fingerprint characteristics match the database and the correct login information is supplied. </p>
+          <p>
+            <b>Touch Screens</b>
+          </p>
+          <p>A touch screen has a pressure-sensitive transparent panel. The computer receives instructions specific to the place on the screen that the user touches. </p>
+          <p>
+            <b>Digitizers</b>
+          </p>
+          <p>A digitizer, shown in Figure 5, allows a designer or artist to create blueprints, images, or other artwork by using a pen-like tool called a stylus against a surface that senses where the stylus is located. Some digitizers have more than one surface or sensor and allow the user to create 3D models by performing actions with the stylus in mid-air.</p>
+          <p>
+            <b>Scanners</b>
+          </p>
+          <p>A scanner digitizes an image or document. The digitization of the image is stored as a file that can be displayed, printed, or altered. A bar code reader is a type of scanner that reads universal product code (UPC) bar codes. It is widely used for pricing and inventory information.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.1.3 Escolhendo o Processador, Dissipador de Calor e Ventoinha</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Selecionando os Componentes para Substituição no Computador</h1>
+        <h2>Selecionando os Componentes do PC</h2>
+      </div>
+      <div id="content">
+          <p>Antes de comprar uma CPU, certifique-se de que ela é compatível com a placa-mãe existente. Os sites dos fabricantes são bons recursos utilizados para verificar a compatibilidade entre processadores e outros dispositivos. Ao atualizar a CPU, certifique-se de que a voltagem correta é mantida. Um módulo regulador de voltagem (VRM - Voltage Regulator Module) está integrado na placa-mãe. Você pode configurar o ajuste de voltagem da CPU utilizando os jumpers, localizados na placa-mãe, ou as configurações da BIOS.</p>
+          <p>Processadores de vários núcleos (multicore) possuem dois ou mais processadores no mesmo circuito integrado. Integrar os processadores no mesmo chip cria uma conexão muito rápida entre eles. Processadores de vários núcleos executam instruções mais rápidas do que processadores de núcleo único (single-core), além de aumentarem o throughput de dados. As instruções podem ser distribuídas para todos os processadores, ao mesmo tempo. A memória RAM é dividida entre os processadores, pois os núcleos estão localizados no mesmo chip. É indicado o uso de processadores multicore para aplicações como edição de vídeo, jogos e manipulação de fotos.</p>
+          <p>O alto consumo de energia gera mais calor no gabinete do computador. Processadores multicore conservam energia e produzem menos calor do que múltiplos processadores single-core, aumentando assim o seu desempenho e eficiência.</p>
+          <p>A velocidade de um processador moderno é medida em GHz. A classificação de velocidade máxima refere-se à velocidade máxima em que um processador pode funcionar sem erros. Dois fatores podem limitar a velocidade de um processador:</p>
+          <p><ul>
+              <li>O chip do processador é composto por um conjunto de transistores interligados por fios. A transmissão de dados através de transistores e fios cria atraso.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>À medida que os transistores alteram o estado de ligado para desligado ou de desligado para ligado, uma pequena quantidade de calor é gerada. A quantidade de calor gerada aumenta à medida que a velocidade do processador também aumenta. Quando o processador fica muito quente, ele começa a produzir erros.</li>
+            </ul>
+          </p>
+          <p>O front-side bus (FSB) é o nome dado ao caminho entre a CPU e a Northbridge. Ele é utilizado para conectar vários componentes, como o chipset, as placas de expansão e a memória RAM. Os dados podem viajar em ambas as direções através do FSB. A freqüência do barramento é medida em MHz. A frequência com que um processador opera é determinada pela aplicação de um multiplicador de clock em relação à velocidade do FSB. Por exemplo, um processador funcionando a 3200 MHz pode estar usando um FSB de 400 MHz. 3200 MHz dividido por 400 é igual à 8 MHz, de forma que a CPU é oito vezes mais rápida do que o FSB.</p>
+          <p>Os processadores ainda são classificados como 32 e 64 bits. A principal diferença é o número de instruções que podem ser executas pelo processador de uma só vez. Um processador de 64 bits processa mais instruções por ciclo de clock do que um processador de 32 bits. Um processador de 64 bits também pode suportar mais memória. Para utilizar as funcionalidades de um processador de 64 bits, verifique se o sistema operacional e seus aplicativos instalados suportam um processador de 64 bits.</p>
+          <p>Um dos componentes mais caros e sensíveis do computador é a CPU. A CPU pode esquentar muito. Muitas CPUs necessitam de um dissipador de calor e uma ventoinha para resfriá-la. O dissipador de calor é um pedaço de cobre ou alumínio que fica entre o processador e a ventoinha. O dissipador de calor absorve o calor gerado do processador e, em seguida, a ventoinha o dispersa. Ao escolher um dissipador de calor ou ventoinha, existem vários fatores a serem considerados.</p>
+          <p><ul>
+              <li>Tipo de Socket - O dissipador de calor e a ventoinha devem corresponder ao tipo de soquete da placa-mãe.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Especificações Físicas da Placa-mãe - o dissipador de calor e a ventoinha não devem interferir nos componentes ligados à placa-mãe.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tamanho do Gabinete - O dissipador de calor e a ventoinha devem caber dentro do gabinete.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ambiente Físico - O dissipador de calor e a ventoinha devem ser capazes de dispersar o calor para manter a CPU resfriada em ambientes quentes.</li>
+            </ul>
+          </p>
+          <p>A CPU não é o único componente do gabinete do computador que pode ser afetado pelo calor. Um computador possui muitos componentes que geram calor durante o seu funcionamento. Os coolers do gabinete devem estar instalados para que possam puxam o ar frio para dentro do gabinete enquanto jogam o ar quente para fora. Ao escolher os coolers do gabinete, existem vários fatores a serem considerados:</p>
+          <p><ul>
+              <li>Tamanho do Gabinete - Muitas vezes, grandes gabinetes requerem coolers maiores, pois os coolers menores não conseguem criar um fluxo de ar suficiente para refrigerar os equipamentos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Velocidade do Cooler - Os coolers maiores giram mais devagar do que os coolers menores, reduzindo assim o ruído produzido pelo mesmo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Número de componentes dentro do gabinete - Muitos componentes geram calor adicional. Nesse caso, é necessário uma quantidade maior de coolers, sejam eles maiores ou mais rápidos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ambiente Físico - Os coolers devem ser capazes de dispersar o calor do interior do gabinete e mantê-lo resfriado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Número de lugares disponíveis para fixação - Os gabinetes possuem quantidades diferentes de lugares para fixar as ventoinhas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Lugares disponíveis para fixação - Os gabinetes possuem locais diferentes para fixar as ventoinhas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conexões Elétricas - Alguns coolers são conectados diretamente à placa-mãe, enquanto outros são conectados diretamente à fonte de alimentação.</li>
+            </ul>
+          </p>
+          <p>NOTA: A direção do fluxo de ar criado pelos coolers do gabinete devem estar alinhados entre si para que possam trazer a maior quantidade possível de ar frio enquanto expelem o ar quente. Instalar um cooler ao contrário ou usar o tamanho e/ou velocidade incorreta pode fazer com que os fluxos de ar trabalhem uns contra os outros.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

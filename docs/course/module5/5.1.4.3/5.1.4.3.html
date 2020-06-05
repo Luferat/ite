@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.4.3 Migração de Dados</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Modernos</h1>
+        <h2>Atualizações do Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Quando uma nova instalação for necessária, os dados do usuário devem ser migrados do sistema operacional antigo para o novo. Existem três ferramentas disponíveis para realizar a transferência dos dados e das configurações. A ferramenta que você escolherá depende do seu nível de experiência e de suas necessidades.</p>
+          <p></p>
+          <p>User State Migration Tool</p>
+          <p>O User State Migration Tool do Windows (USMT) migra todos os arquivos e configurações do usuário para o novo sistema operacional, como mostrado na Figura 1. Baixe e instale o USMT da Microsoft. Use o software armazenar os arquivos e configurações do usuário que estão salvos em um local diferente do OS. Depois que o novo sistema operacional estiver instalado, baixe e instale USMT novamente para carregar os arquivos e configurações do usuário no novo OS.</p>
+          <p></p>
+          <p>Transferência Fácil do Windows</p>
+          <p>Se um usuário estiver trocando de um computador antigo para um novo, você pode usar a Transferência Fácil do Windows para migrar arquivos e configurações pessoais, como mostrado na Figura 2. Você pode realizar a transferência de arquivos através de um cabo USB, CD ou DVD, unidade flash USB, disco rígido externo ou via rede.</p>
+          <p></p>
+          <p>Depois de executar a Transferência Fácil do Windows, você pode verificar o registro dos arquivos transferidos. Para acessar a Transferência Fácil do Windows no Windows 7 ou Windows Vista, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar> Todos os Programas> Acessórios> Ferramentas do Sistema> Transferência Fácil do Windows</p>
+          <p></p>
+          <p>No Windows XP, você deve primeiro fazer o download do programa Transferência Fácil do Windows. Depois de baixar e instalar, acesse-o usando o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar> Todos os Programas> Transferência Fácil do Windows</p>
+          <p></p>
+          <p>A Transferência Fácil do Windows substituiu o Assistente de Transferência de Arquivos e Configurações do Windows XP.</p>
+          <p></p>
+          <p>Assistente de Transferência de Arquivos e Configurações do Windows XP</p>
+          <p>O Assistente de Transferência de Arquivos e Configurações do Windows XP, como mostrado na Figura 3, transfere arquivos e configurações de um computador antigo para um novo. Ele permite que o usuário selecione quais arquivos e configurações serão transferidos. Você pode transferir arquivos usando mídias de armazenamento, uma conexão por cabo ou conexão de rede. Para acessar o Assistente de Transferência de Arquivos e Configurações, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar> Todos os Programas> Acessórios> Ferramentas do Sistema> Assistente de Transferência de Arquivos e Configurações</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

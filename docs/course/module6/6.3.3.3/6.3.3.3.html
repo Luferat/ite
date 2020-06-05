@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.3.3 Protocolos e Portas TCP e UDP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Portas e Protocolos Comuns</h2>
+      </div>
+      <div id="content">
+          <p>Quando a pilha de protocolos TCP/IP estiver ativa, outros protocolos podem se comunicar em portas específicas. Por exemplo, o HTTP usa a porta 80 por padrão. Uma porta é um identificador numérico utilizado para acompanhar conversas específicas. Cada mensagem que um host envia contém uma porta de origem e uma de destino.</p>
+          <p>Aplicações de software de rede usam esses protocolos e as portas para executar funções através da Internet ou em uma rede. Alguns aplicativos de software de rede incluem serviços para hospedar uma página web, enviar email e transferir arquivos. Esses serviços podem ser proporcionados por um único servidor ou por vários servidores. Os clientes usam portas conhecidas para cada serviço de modo que as solicitações do cliente possa ser identificada através de uma porta de destino específica.</p>
+          <p>Para entender como as redes e a Internet trabalham, você deve estar familiarizado com os protocolos utilizados e as portas associadas. Alguns usos destes protocolos são para se conectar a um dispositivo de rede remoto, converter a URL do site para um endereço IP e os arquivos de transferência de dados. Você vai encontrar outros protocolos a medida que sua experiência em TI cresce, mas eles não são usados ​​tão frequentemente como os protocolos comuns descritos aqui.</p>
+          <p>A imagem resume alguns dos protocolos de rede e de Internet mais comuns, bem como o número da porta utilizada por estes protocolos. Quanto mais você entende sobre cada um destes protocolos, mais você vai entender como trabalham as redes e a Internet.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,117 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Ferramentas de Mão</b>]]></text>
+</component>
+
+<component id='ID_btn01'>
+	<text><![CDATA[<b>Chave de Fenda</b>]]></text>
+</component>
+
+<component id='ID_btn02'>
+	<text><![CDATA[<b>Chave Phillips</b>]]></text>
+</component>
+
+<component id='ID_btn03'>
+	<text><![CDATA[<b>Chave Torx</b>]]></text>
+</component>
+
+<component id='ID_btn04'>
+	<text><![CDATA[<b>Chave Hexagonal</b>]]></text>
+</component>
+
+<component id='ID_btn05'>
+	<text><![CDATA[<b>Alicates de bico</b>]]></text>
+</component>
+
+<component id='ID_btn06'>
+	<text><![CDATA[<b>Alicate de Corte</b>]]></text>
+</component>
+
+<component id='ID_btn07'>
+	<text><![CDATA[<b>Pinça</b>]]></text>
+</component>
+
+<component id='ID_btn08'>
+	<text><![CDATA[<b>Recuperador de Peças</b>]]></text>
+</component>
+
+<component id='ID_btn09'>
+	<text><![CDATA[<b>Lanterna</b>]]></text>
+</component>
+
+<component id='ID_btn10'>
+	<text><![CDATA[<b>Decapador</b>]]></text>
+</component>
+
+<component id='ID_btn11'>
+	<text><![CDATA[<b>Crimpador</b>]]></text>
+</component>
+
+<component id='ID_btn12'>
+	<text><![CDATA[<b>Punch Down</b>]]></text>
+</component>
+
+<!--Slide 1-->
+<component id='ID_s1_caption'>
+	<text><![CDATA[A chave de fenda é utilizada para afrouxar ou apertar parafusos com ranhuras.]]></text>
+</component>
+
+<!--Slide 2-->
+<component id='ID_s2_caption'>
+	<text><![CDATA[A chave de Phillips é utilizada para apertar ou afrouxar os parafusos de cabeça cruzada.]]></text>
+</component>
+
+<!--Slide 3-->
+<component id='ID_s3_caption'>
+	<text><![CDATA[A chave torx é utilizada para apertar ou afrouxar os parafusos que possuem uma cavidade semelhante a uma estrelas na parte superior, onde esses parafusos são encontrados principalmente em laptops.]]></text>
+</component>
+
+<!--Slide 4-->
+<component id='ID_s4_caption'>
+	<text><![CDATA[A chave hexagonal, também conhecida por chave de porca, é utilizada para apertar porcas, tal como uma chave aperta parafusos.]]></text>
+</component>
+
+<!--Slide 5-->
+<component id='ID_s5_caption'>
+	<text><![CDATA[O alicate de bico é utilizado para segurar peças pequenas.]]></text>
+</component>
+
+<!--Slide 6-->
+<component id='ID_s6_caption'>
+	<text><![CDATA[O alicate de corte é utilizado para decapar e cortar fios.]]></text>
+</component>
+
+<!--Slide 7-->
+<component id='ID_s7_caption'>
+	<text><![CDATA[As pinça são utilizadas para manusear peças pequenas.]]></text>
+</component>
+
+<!--Slide 8-->
+<component id='ID_s8_caption'>
+	<text><![CDATA[Um recuperador de peças é utilizado para recuperar peças de locais pequenos onde não é possível inserir a mão.]]></text>
+</component>
+
+<!--Slide 9-->
+<component id='ID_s9_caption'>
+	<text><![CDATA[A lanterna é utilizada para iluminar áreas com pouca luminosidade.]]></text>
+</component>
+
+<!--Slide 10-->
+<component id='ID_s10_caption'>
+	<text><![CDATA[O decapador é utilizado para remover o isolamento externo do cabo de modo que seja possível trançar os fios internos e crimpá-los em um conector.]]></text>
+</component>
+
+<!--Slide 11-->
+<component id='ID_s11_caption'>
+	<text><![CDATA[O crimpador é utilizado para prender os conectores nos cabos.]]></text>
+</component>
+
+<!--Slide 12-->
+<component id='ID_s12_caption'>
+	<text><![CDATA[O alicate punch down é uma ferramenta utilizada para crimpar fio em blocos de terminação. Alguns conectores e tomadas de rede devem ser conectados utilizando o punch down.]]></text>
+</component>
+
+ 
+
+</textcomponents>

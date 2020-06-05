@@ -1,0 +1,9 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Contas de Usuário</b>]]></text>
+</component> 
+<component id="ID_s2_title">
+<text><![CDATA[<b>Configurações de Controle de Conta de Usuário</b>]]></text>
+</component>  
+ 
+</textcomponents>

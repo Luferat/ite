@@ -1,0 +1,19 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {#ID_txt02{margin-left:1px;}#ID_txt03{margin-left:2px;}#ID_txt06{margin-left:2px;}#ID_txt05{margin-left:1px;}}
+
+
+

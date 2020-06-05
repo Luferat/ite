@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.3.1 Motherboards</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Personal Computer Systems</h1>
+      <h2>Internal PC Components</h2>
+    </div>
+    <div id="content">
+          <p>The motherboard is the main printed circuit board and contains the buses, or electrical pathways, found in a computer. These buses allow data to travel between the various components that comprise a computer. Figure 1 shows a variety of motherboards. A motherboard is also known as the system board or the main board.</p>
+          <p>The motherboard accommodates the central processing unit (CPU), random access memory (RAM), expansion slots, heat sink and fan assembly, basic input/output system (BIOS) chip, chipset, and the circuitry that interconnects the motherboard components. Sockets, internal and external connectors, and various ports are also placed on the motherboard.  </p>
+          <p>The form factor of motherboards pertains to the size and shape of the board. It also describes the physical layout of the different components and devices on the motherboard. The form factor determines how individual components attach to the motherboard and the shape of the computer case. Various form factors exist for motherboards, as shown in Figure 2.</p>
+          <p>The most common form factor in desktop computers was the AT, based on the IBM AT motherboard. The AT motherboard can be up to approximately 1 foot wide. This cumbersome size led to the development of smaller form factors. The placement of heat sinks and fans often interferes with the use of expansion slots in smaller form factors.</p>
+          <p>A newer motherboard form factor, ATX, improved on the AT design. The ATX case accommodates the integrated I/O ports on the ATX motherboard. The ATX power supply connects to the motherboard via a single 20-pin connector, instead of the confusing P8 and P9 connectors used with some earlier form factors. Instead of using a physical toggle switch, the ATX power supply can be powered on and off with signaling from the motherboard.</p>
+          <p>A smaller form factor designed to be backward-compatible with ATX is the microATX . Because the mounting points of a microATX motherboard are a subset of those used on an ATX board, and the I/O panel is identical, you can use the microATX motherboard in a full-size ATX case. </p>
+          <p>Because microATX boards often use the same chipsets (Northbridges and Southbridges) and power connectors as full-size ATX boards, they can use many of the same components. However, microATX cases are typically much smaller than ATX cases and have fewer expansion slots.</p>
+          <p>Some manufacturers have proprietary form factors based on the ATX design. This causes some motherboards, power supplies, and other components to be incompatible with standard ATX cases.</p>
+          <p>The ITX form factor has gained in popularity because of its very small size. There are many types of ITX motherboards. Mini-ITX is one of the most popular. The Mini-ITX form factor uses very little power, so fans are not needed to keep it cool. A Mini-ITX motherboard has only one PCI slot for expansion cards. A computer based on a Mini-ITX form factor can be used in places where it is inconvenient to have a large or noisy computer.</p>
+          <p>An important set of components on the motherboard is the chipset. The chipset is composed of various integrated circuits attached to the motherboard. They control how system hardware interacts with the CPU and motherboard. The CPU is installed into a slot or socket on the motherboard. The socket on the motherboard determines the type of CPU that can be installed.</p>
+          <p>The chipset allows the CPU to communicate and interact with the other components of the computer, and to exchange data with system memory, or RAM, hard disk drives, video cards, and other output devices. The chipset establishes how much memory can be added to a motherboard. The chipset also determines the type of connectors on the motherboard.</p>
+          <p>Most chipsets are divided into two distinct components, Northbridge and Southbridge. What each component does varies from manufacturer to manufacturer. In general, the Northbridge controls access to the RAM, video card, and the speeds at which the CPU can communicate with them. The video card is sometimes integrated into the Northbridge. AMD and Intel have chips that integrate the memory controller onto the CPU die, which improves performance and power consumption. The Southbridge, in most cases, allows the CPU to communicate with the hard drive, sound card, USB ports, and other I/O ports.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

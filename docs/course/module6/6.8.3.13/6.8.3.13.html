@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.3.13 Testando a Conectividade Através do Prompt de Comando do Windows</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações de Roteador sem fio e com fio</h2>
+      </div>
+      <div id="content">
+          <p>Você pode usar vários comandos da CLI para testar a conectividade da rede. Como técnico, é essencial que você se familiarize com o conjunto básico destes comandos.</p>
+          <p>Opções do Comando ipconfig</p>
+          <p>O comando ipconfig exibe informações básicas de configuração de todos os adaptadores de rede. Para executar tarefas específicas, você pode adicionar opções para o comando ipconfig, conforme mostrado na Figura 1.</p>
+          <p>Opções do Comando ping</p>
+          <p>Ping testa a conectividade básica entre os dispositivos. Você pode testar sua própria conexão ao executar o ping em seu computador. Para testar o seu computador, faça um ping em sua NIC. No Windows 7 e Windows Vista, clique em Iniciar e digite cmd. No Windows XP, selecione Iniciar > Executar > cmd. No prompt de comando, digite ping localhost.</p>
+          <p>Tente executar o ping em outros computadores na rede, inclusive no gateway padrão e computadores remotos. Você pode encontrar o endereço do gateway padrão usando o comando ipconfig.</p>
+          <p>Faça o ping em um endereço IP público, que se encontra do lado de fora de sua rede, para verificar se a sua conexão WAN está funcionando corretamente. Você também pode testar a conexão com a Internet e o DNS ao executar o ping em um site popular. No prompt de comando, digite ping e, em seguida, o nome de destino.</p>
+          <p>A resposta do comando ping exibe a resolução de endereço IP do domínio. A saída do comando exibe as respostas do comando ping ou que a solicitação expirou devido a um problema.</p>
+          <p>Para executar outras tarefas específicas, você pode adicionar opções para o comando ping, conforme apresentado na Figura 2.</p>
+          <p>Comandos Net</p>
+          <p>Use o comando net para gerenciar os computadores da rede, servidores e recursos como discos e impressoras. Os comandos net usam o protocolo NetBIOS no Windows. Estes comandos iniciam, param e configuraram serviços de rede, conforme apresentado na Figura 3.</p>
+          <p>Comando Tracert</p>
+          <p>O Tracert traça a rota que os pacotes fazem do seu computador para um host de destino. No prompt de comando, digite tracert hostname.</p>
+          <p>O primeiro da lista do resultado é o seu gateway padrão. Cada item seguinte da lista é o roteador pelo qual os pacotes viajam até chegar no destino. O Tracert mostra onde os pacotes estão parando, indicando também onde o problema está ocorrendo. Se os itens listados exibirem problemas após o pacote atravessar o gateway padrão, isso pode significar que há problemas no ISP, Internet ou servidor de destino.</p>
+          <p>Comando Nslookup</p>
+          <p>O Nslookup testa e soluciona problemas de servidores DNS. Ele consulta o servidor DNS para descobrir o endereço IP ou nome do host. No prompt de comando, digite nslookup hostname. Nslookup retorna o endereço IP para o nome do host digitado. O comando nslookup reverse, nslookup endereço_IP, retorna o nome de host correspondente para o endereço IP digitado.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

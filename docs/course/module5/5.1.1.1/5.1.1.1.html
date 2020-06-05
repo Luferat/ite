@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.1.1 Termos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Modernos</h1>
+        <h2>Termos e Características dos Sistemas Operacionais</h2>
+      </div>
+      <div id="content">
+          <p>Para entender as capacidades de um sistema operacional, é importante primeiro entender alguns termos básicos. Os termos a seguir são usados ​​para descrever os sistemas operacionais:</p>
+          <p><ul>
+              <li>Multi-usuário (multi-user) - Dois ou mais usuários têm contas individuais que lhes permitem trabalhar com programas e dispositivos periféricos ao mesmo tempo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Multitarefa (multitasking) - O computador é capaz de rodar várias aplicações ao mesmo tempo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Multiprocessamento(multiprocessing) - O sistema operacional pode suportar dois ou mais processadores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Multisegmentação (multithreading) - Um programa pode ser dividido em partes menores que são carregados conforme a necessidade do sistema operacional. A multisegmentação permite que diferentes partes de um programa sejam executadas ao mesmo tempo.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Todos os computadores contam com um sistema operacional para fornecer a interface para a interação entre usuários, aplicativos e hardware. O Sistema Operacional inicializa o computador e permite o gerenciamento do sistema de arquivos. Os sistemas operacionais podem suportar mais de um usuário, tarefa ou CPU.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

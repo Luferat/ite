@@ -1,0 +1,37 @@
+﻿<textcomponents>
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	 
+	 <tr class="liner">
+	 <td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Camadas TCP/IP</b></font></td>				
+	 </tr>
+	
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td valign="top" bgcolor='#A2AA23' width="90" valign="top"><font size='12' color='#ffffff'><b>Camadas TCP/IP</b></font></td>
+		<td valign="top" bgcolor='#A2AA23' valign="top"><font size='12' color='#ffffff'><b>Descrição</b></font></td>
+	</tr>
+	 
+	<tr>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Aplicação</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Onde os protocolos de alto nível operam, tais como SMTP e FTP</font></td> 
+	</tr>
+	<tr>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Transporte</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Especifica quais aplicações solicitaram ou estão recebendo dados através de portas específicas</font></td> 
+	</tr>
+	<tr>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Internet</font></td>
+		<td valign="top" bgcolor='#F3F5E7'><font size='12' color='#393536'>Onde o endereçamento IP e o roteamento ocorrem</font></td>
+	</tr>
+	
+	<tr>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Acesso à rede</font></td>
+		<td valign="top" bgcolor='#FFFFFF'><font size='12' color='#393536'>Onde existe o endereçamento MAC e os componentes físicos da rede</font></td> 
+	</tr> 
+</table>]]></text>
+</component>
+
+</textcomponents>

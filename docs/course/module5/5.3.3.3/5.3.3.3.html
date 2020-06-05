@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.3.3 Serviços</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Ferramentas Administrativas</h2>
+      </div>
+      <div id="content">
+          <p>A console de serviços, conforme apresentado na figura, permite gerenciar todos os serviços em seu computador e também em computadores remotos. Um serviço é um tipo de aplicação que roda em segundo plano, realizando um objetivo específico ou aguardando por uma solicitação. Para reduzir os riscos de segurança, apenas inicie os serviços necessários. Você pode usar as seguintes configurações ou estados para controlar um serviço:</p>
+          <p><ul>
+              <li>Automático - O serviço começa assim que o computador é iniciado. Este modo prioriza os serviços mais importantes para iniciarem imediatamente quando o sistema operacional for iniciado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Automático (Atraso na Inicialização) - O serviço começa após a inicialização dos serviços configurados no modo Automático. O modo Automático (Atraso na Inicialização) está disponível apenas no Windows 7 e Windows Vista.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Manual - O serviço deve ser iniciado manualmente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desativado - O serviço não pode ser iniciado até que ele seja ativado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Parado - O serviço não está sendo executado.</li>
+            </ul>
+          </p>
+          <p>Para abrir a console de serviços, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Ferramentas Administrativas > Serviços</p>
+          <p>Para visualizar o console de serviços em um computador remoto, siga estes passos:</p>
+          <p>Passo 1. Na árvore de console, clique com o botão direito do mouse em Serviços (Local) e selecione Conectar a outro computador.</p>
+          <p>Passo 2. Na janela exibida, digite o nome do computador ou navegue para encontrar o dispositivo que deseja gerenciar.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

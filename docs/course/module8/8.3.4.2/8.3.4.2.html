@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.4.2 Requisitos de Instalação de Aplicativos e Software</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e E-mail</h1>
+        <h2>Sincronização de Dispositivos Móveis</h2>
+      </div>
+      <div id="content">
+          <p>Para sincronizar os dados de um dispositivo iOS, o software iTunes deve ser instalado, como mostrado na figura. O iTunes é um aplicativo reprodutor de mídia que realiza o download, reproduz e organiza o conteúdo para o uso dos dispositivos iOS e dos computadores. iTunes também gerencia dispositivos iOS, ativando-os com a Apple e restaurando-os quando há um mau funcionamento. O iTunes também é utilizado para atualizar o iOS. Estes são os requisitos de hardware necessários para instalar o iTunes no Windows:</p>
+          <p><ul>
+              <li>PC com processador 1GHz Intel ou AMD</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>512 MB de RAM</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows XP Service Pack 2 ou edições posteriores, Windows Vista de 32 bits ou Windows 7 de 32 bits</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>As versões 64 bits do Windows Vista ou Windows 7 necessitam do instalador 64 bits do iTunes</li>
+            </ul>
+          </p>
+          <p>Os requisitos mudam de acordo com as versões, além de que o software exige requisitos específicos de áudio e vídeo. Para mais informações, consulte o site da Apple.</p>
+          <p>Não é necessário nenhum aplicativo para sincronizar o conteúdo dos dispositivos Android. A sincronização automática dos vários tipos de dados e conteúdos do Google é acessada selecionando Configurações> Pessoal> Contas e sincronização.</p>
+          <p>Utilize o Motocast USB para sincronizar dados e conteúdos ao usar um dispositivo Motorola com o Android OS. Estes são os requisitos de hardware necessários para instalar o iTunes no Windows:</p>
+          <p><ul>
+              <li>PC com processador de 3.0 GHz Intel Pentium IV ou AMD Athlon XP 2600 + processador single-core ou mais rápido ou um PC com um 1.8 GHz Core Duo, processador dual-core ou multi-core Athlon/Phenom ou Pentium mais rápido</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>1 GB de RAM</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows XP Service Pack 3 ou posterior, Windows Vista ou Windows 7</li>
+            </ul>
+          </p>
+          <p>Especificações adicionais de hardware para áudio ou recursos de vídeo podem ser necessárias. Para mais informações, consulte o site da Motorola.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

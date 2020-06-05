@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.5.1.1 Placas de Expansão</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Hardware de Laptop e Componentes para Instalação e Configuração</h1>
+        <h2>Opções de Expansão</h2>
+      </div>
+      <div id="content">
+          <p>Uma das desvantagens dos laptops, em comparação com os desktops, é que o seu projeto compacto pode limitar a disponibilidade de algumas funções. Para resolver este problema, muitos laptops contêm slots PC Card ou ExpressCard para adicionar funcionalidades, como mais memória, um modem ou uma conexão de rede.</p>
+          <p></p>
+          <p>Esses cartões seguem o padrão PCMCIA. Eles vêm em três tipos: Tipo I, Tipo II e Tipo III. Cada tipo possui um tamanho diferente e pode se conectar a diferentes dispositivos.</p>
+          <p></p>
+          <p>O slot PC Card utiliza uma interface de padrão aberto para conectar os dispositivos. O ExpressCard é o modelo mais recente da placa de expansão e é o mais comumente usado. A Figura 1 apresenta uma comparação entre o PC Card e o PC ExpressCard. O ExpressCard PC vem em dois modelos: ExpressCard/34 e ExpressCard/54. Os modelos são de 34 milímetros e 54 mm de largura, respectivamente. A Figura 2 apresenta o exemplo de uma placa PC Card e ExpressCard.</p>
+          <p></p>
+          <p>Esses são alguns exemplos de funcionalidades que podem ser adicionados ao usar o PC Card e ExpressCard:</p>
+          <p><ul>
+              <li>Conectividade Wi-Fi</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ethernet</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Portas USB e FireWire</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Acesso ao disco rígido externo</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Memória adicional</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Todas as placas de expansão são inseridas e removidas utilizando passos semelhantes. Para instalar o cartão, insira a placa no slot. Para retirar o cartão, pressione o botão de ejeção.</p>
+          <p></p>
+          <p>Se um PC Card for hot-swappable, para removê-lo com segurança siga estes passos:</p>
+          <p>Passo 1. Clique com o botão esquerdo do mouse no ícone Remover Hardware com Segurança, localizado na bandeja do sistema Windows, para assegurar que o dispositivo não está em uso.</p>
+          <p>Passo 2. Clique com o botão esquerdo sobre o dispositivo que você deseja remover. Em seguida, aparecerá uma mensagem dizendo que é seguro remover o dispositivo.</p>
+          <p>Passo 3. Remova o dispositivo do laptop.</p>
+          <p></p>
+          <p>ATENÇÃO: Normalmente, PC Cards e dispositivos USB são hot-swappable. Em alguns casos, o drive óptico e bateria também são hot-swappable. No entanto, a unidade de disco rígido interna e a memória RAM nunca são hot-swappable. A remoção de um dispositivo que não é hot-swappable, enquanto o computador está ligado, pode causar danos aos dados e aos dispositivos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.2.1 Considerações Sobre o Cabeamento de uma Rede</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Cabos e Conectores</h2>
+      </div>
+      <div id="content">
+          <p>Existe uma grande variedade de cabos de rede disponíveis, como mostrado na figura. Os cabos coaxiais e de par trançado usam o cobre para transmitir os dados. Cabos de fibra óptica usam vidro ou plástico para transmitir dados. Estes cabos possuem diferentes larguras de banda, tamanhos e custos. Ao instalar os cabos, você deve saber qual o tipo de cabo correto a utilizar em situações diferentes. Você também precisa ser capaz de solucionar e reparar os problemas que você encontrar. Selecione o tipo de cabo que é o mais benéfico e rentável para os usuários e serviços que se conectam à rede.</p>
+          <p>Custo</p>
+          <p>Ao projetar uma rede, o custo é uma consideração. A instalação dos cabos é cara, porém é um custo único. Normalmente, o custo de manutenção de uma rede cabeada é baixo.</p>
+          <p>Segurança</p>
+          <p>Uma rede cabeada é mais segura do que uma rede sem fio. Normalmente, os cabos são instalados na parede ou no teto, portanto não são facilmente acessados. É mais fácil obter acesso não autorizado em uma rede sem fio de que em uma rede cabeada. Os sinais de rádio estão disponíveis para qualquer pessoa que tenha um receptor sem fio. Para que uma rede sem fio seja tão segura quanto uma rede cabeada, utilize autenticação e criptografia.</p>
+          <p>Escalabilidade</p>
+          <p>Muitas organizações instalam o melhor tipo de cabo disponível. Isso assegura que as redes estarão preparadas para requisitos adicionais de largura de banda no futuro. Para evitar instalações posteriores, você e o seu cliente devem decidir se o custo para instalar um cabeamento melhor é viável.</p>
+          <p>Wireless</p>
+          <p>A solução sem fio podem ser necessária em locais onde os cabos não podem ser instalados, como um edifício histórico onde os códigos de construção local não permitem modificações estruturais.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.4.2 Dispositivos de Saída</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Dispositivos de Entrada e Saída</h2>
+      </div>
+      <div id="content">
+          <p>Um dispositivo de saída exibe as informações para o utilizador a partir de um computador. Aqui estão alguns exemplos de dispositivos de saída:</p>
+          <p><ul>
+              <li>Monitores e projetores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressoras, scanners e máquinas de fax</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alto-falantes e fones de ouvido</li>
+            </ul>
+          </p>
+          <p>Monitores e Projetores</p>
+          <p>Monitores e projetores são dispositivos de saída primários para um computador. Existem diferentes tipos de monitores, como mostrado na Figura 1. A diferença mais importante entre estes tipos de monitor é a tecnologia usada para criar uma imagem:</p>
+          <p><ul>
+              <li>CRT - O tubo de raios catódicos (CRT) tem três feixes de elétrons. Em cada feixe é dirigido pontos de fósforo coloridos na tela que brilham em vermelho, azul ou verde, quando atingido por um feixe. Áreas não atingidas por um feixe de elétrons não brilham. A combinação das zonas brilhantes e não brilhante criam a imagem na tela. Alguns televisores usam esta tecnologia. CRTs normalmente têm um botão de desmagnetização na parte frontal que o utilizador pode pressionar para remover a descoloração provocada pela interferência magnética.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>LCD - Display de cristal líquido (LCD) é comumente usado em monitores de tela plana, laptops e alguns projetores. É constituído por dois filtros de polarização com uma solução de cristal líquido entre elas. Uma corrente eletrônica alinha os cristais de modo que a luz pode passar ou não. O efeito da luz que passa através de determinadas áreas e não em outras é o que cria a imagem. LCD vem em duas formas, de matriz ativa e matriz passiva. Matriz ativa é, às vezes, chamado de transistor de película fina (TFT). TFT permite que cada pixel seja controlado, o que cria imagens coloridas muito vivas. Matriz passiva é menos caro do que a matriz ativa, mas não fornece o mesmo nível de controle de imagem. Matriz passiva não é comumente usada em laptops.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>LED - Um diodo emissor de luz (LED) é um display LCD que utiliza uma luz de fundo LED para iluminar a tela. O LED possui um menor consumo de energia do que o padrão LCD de retro-iluminação, permite que o painel seja mais fino, mais leve, mais brilhante e apresenta um melhor contraste.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>OLED - O LED orgânico utiliza uma camada de material orgânico, que responde a estímulos eléctricos para emitir luz. Este processo permite que cada pixel seja iluminado individualmente, resultando em níveis de preto mais profundos do que o LED. Telas OLED também são mais finas e leves do que as telas de LED.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Plasma - A tela de plasma é um outro tipo de monitor que pode alcançar altos níveis de brilho, níveis de preto profundos e uma vasta gama de cores. As telas de plasma podem ser de até 150 polegadas (381 cm) ou mais. Telas de plasma tem esse nome devido ao uso de pequenas células de gás ionizado que se acendem quando estimuladas por eletricidade. Monitores de plasma são frequentemente utilizados em aplicações de home theater por causa de sua representação precisa do vídeo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DLP - Digital Light Processing (DLP) é outra tecnologia usada em projetores. Projetores DLP usam uma roda de cores com um conjunto controlado por microprocessadores de espelhos, chamado de dispositivo microespelhos digitais (DMD). Cada espelho corresponde a um pixel específico. Cada espelho reflete a luz na direção ou para longe da ótica do projetor. Isso cria uma imagem monocromática de até 1024 tons de cinza entre o branco e o preto. A roda de cor, em seguida, adiciona os dados de cor para completar a imagem colorida projetada.</li>
+            </ul>
+          </p>
+          <p>Impressoras All-in-One</p>
+          <p>As impressoras são dispositivos de saída que criam cópias dos arquivos do computador. Algumas impressoras especializam-se em determinadas aplicações, tais como a impressão de fotos coloridas. Impressoras all-in-one, conforme apresentado na Figura 2, são projetadas para fornecer vários serviços, tais como impressão, digitalização, fax e cópia.</p>
+          <p>Alto-falantes e Fones de Ouvido</p>
+          <p>Alto-falantes e fones de ouvido são dispositivos de saída para sinais de áudio. A maioria dos computadores tem suporte de áudio integrado na placa-mãe ou em uma placa adaptadora. O suporte de áudio inclui portas que permitem a entrada e saída de sinais de áudio. A placa de som tem um amplificador de potência para fones de ouvido e alto-falantes externos, conforme apresentado na Figura 3.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

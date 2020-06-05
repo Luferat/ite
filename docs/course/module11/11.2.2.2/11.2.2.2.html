@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.2.2 Lei Cibernética e Primeiras Reações</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Questões Éticas e Legais na Indústria de TI</h1>
+        <h2>Visão Geral de Procedimentos Legais</h2>
+      </div>
+      <div id="content">
+          <p>Cyber-Lei</p>
+          <p>Não há nenhuma lei única conhecida como Cyber-Lei. Cyber-Lei é um termo para descrever leis internacionais, regionais, nacionais e estaduais que afetam os profissionais de segurança de computadores. Os profissionais de TI devem estar cientes das leis para que compreendam as sua responsabilidades no que se refere a crimes cibernéticos.</p>
+          <p></p>
+          <p>Leis cibernéticas explicam as circunstâncias em que os dados (evidências) podem ser coletados a partir de computadores, dispositivos de armazenamento de dados, redes e comunicações sem fio. Elas também podem especificar a maneira pela qual estes dados podem ser coletados. Nos Estados Unidos, a lei cibernética tem três elementos principais:</p>
+          <p></p>
+          <p><ul>
+              <li>Lei Wiretap</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pen/Trap e Estatuto de Rastreamento</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Stored Electronic Communication Act</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Os profissionais de TI devem estar cientes das leis cibernéticas em seu país, região ou estado.</p>
+          <p></p>
+          <p>Primeiras Reações</p>
+          <p>Primeira reação é o termo usado para descrever os procedimentos oficiais utilizados por aquelas pessoas que estão qualificadas para recolher provas. Administradores de sistema, como policiais, são geralmente os primeiros a responder em cenas de crime em potencial. Especialistas forenses em informática são chamados quando é evidente que houve atividade ilegal.</p>
+          <p></p>
+          <p>Tarefas administrativas de rotina podem afetar o processo forense. Se o processo forense é realizado de forma inadequada, as provas que foram coletadas podem não ser admissíveis em um tribunal.</p>
+          <p></p>
+          <p>Como um técnico de campo ou de bancada, você pode ser a pessoa que descobre um computador ou uma atividade de rede ilegal. Se isso acontecer, não desligue o computador. Dados voláteis sobre o estado atual do computador pode incluir os programas que estão em execução, conexões de rede que estão abertas e os usuários que estão conectados na rede ou ao computador. Estas informação ajudam a determinar um cronograma lógico do incidente de segurança. Eles também podem ajudar a identificar os responsáveis ​​pela atividade ilegal. Estes dados podem ser perdidos quando o computador é desligado.</p>
+          <p></p>
+          <p>Esteja sempre familiarizado com a política da empresa em relação a crimes cibernéticos. Saber para quem ligar e o que fazer é tão importante quanto saber o que não fazer.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

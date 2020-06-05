@@ -1,0 +1,11 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+    margin:0;
+    height:100%;
+}
+
+#flashContent { overflow:hidden !important;}

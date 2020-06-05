@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.0.1.1 Introdução</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Laptops</h1>
+        <h2>Introdução</h2>
+      </div>
+      <div id="content">
+          <p>Os primeiros laptops eram utilizados principalmente por pessoas de negócios que precisavam acessar e inserir dados enquanto estavam fora do escritório. O uso de laptops era baixo devido ao custo, peso e recursos limitados quando comparado com desktops mais baratos.</p>
+          <p></p>
+          <p>A característica mais importante de um latptop é o seu tamanho compacto. O design do laptop aloca o teclado, a tela e os componentes internos em uma pequena carcaça portátil. Desta forma, os laptops podem ser usados ​​para fazer anotações na escola, apresentar informações em uma reunião de negócios ou acessar a Internet em uma cafeteria. A bateria recarregável permite que o laptop funcione quando ele estiver desconectado de uma fonte de alimentação externa. O design compacto, a conveniência e evolução da tecnologia tornaram os laptops populares.</p>
+          <p>Alguns usos comuns dos laptops são:</p>
+          <p></p>
+          <p><ul>
+              <li>Fazer anotações na escola</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Realizar pesquisas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Apresentações em reuniões de negócios</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Acessar dados longe de casa ou do escritório</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Jogar enquanto viaja</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Assistir à filmes enquanto viaja</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Acessar a Internet em um lugar público</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Enviar e receber e-mails em um local público</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

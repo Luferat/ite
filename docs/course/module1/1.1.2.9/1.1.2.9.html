@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.2.9 Cabos Internos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Componentes Internos do Computador</h2>
+      </div>
+      <div id="content">
+          <p>As unidades requerem tanto um cabo de alimentação quanto um cabo de dados. A fonte de alimentação pode ter conectores de alimentação SATA para discos SATA, conectores de alimentação Molex para unidades PATA, e conectores Berg para drives de disquetes. Os botões e os LED na parte da frente do gabinete se conectam à placa-mãe através dos cabos do painel frontal.</p>
+          <p>Os cabos de dados conectam os disco à controladora da unidade, que está localizada em uma placa adaptadora ou na placa-mãe. Aqui estão alguns tipos comuns de cabos de dados:</p>
+          <p><ul>
+              <li>Cabo de dados do floppy disk drive (FDD) - Possui até dois conectores de unidade de 34 pinos e um conector de 34 pinos para a controladora da unidade.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabo de dados PATA de 40 condutores (IDE/EIDE) - Originalmente, a interface IDE suporta dois dispositivos em uma única controladora. Com a introdução do Extended IDE (EIDE), duas controladoras capazes de suportar dois dispositivos cada foram introduzidas. O cabo de fita de 40 condutores usa conectores de 40 pinos. O cabo possui dois conectores para as unidades e um conector para a controladora.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabo de dados PATA de 80 condutores (EIDE) - À medida que as taxas de dados disponíveis sobre a interface EIDE aumentaram, a chance de corromper os dados durante a transmissão também aumentou. Um cabo de 80 condutores foi introduzido para dispositivos de transmissão de 33,3 MBps ou maiores, permitindo uma transmissão de dados balanceada mais confiável. O cabo de 80 condutores utiliza conectores de 40 pinos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabo de dados SATA - Este cabo possui sete condutores, um conector chaveado para a unidade e um conector chaveado para a controladora da unidade.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabo de dados SCSI - Existem três tipos de cabos de dados SCSI. Um cabo de dados SCSI estreito possui 50 condutores, até sete conectores de 50 pinos por unidade, e um conector de 50 pinos para a controladora da unidade, também chamado de adaptador de host. Um cabo de dados SCSI largo possui 68 condutores, até 15 conectores de 68 pinos para unidades, e um conector de 68 pinos do adaptador de host. Um cabo de dados SCSI Alt-4 possui 80 condutores, até 15 conectores de 80 pinos para unidades, e um conector de 80 pinos do adaptador de host.</li>
+            </ul>
+          </p>
+          <p>NOTA: A faixa colorida em um disquete ou cabo PATA identifica o pino 1 do cabo. Ao instalar um cabo de dados, sempre assegure-se de que o pino 1 no cabo está alinhado com o pino 1 na controladora da unidade. Cabos chaveados só podem ser conectados de uma única maneira na controladora da unidade.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

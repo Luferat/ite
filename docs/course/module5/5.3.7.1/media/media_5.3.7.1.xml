@@ -1,0 +1,92 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Comandos Comuns da CLI</b>]]></text>
+</component>
+<component id='ID_table'>
+<text><![CDATA[    <table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+        <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+        </tr>
+        <tr style="background:#A2AA23;">
+          <td bgcolor='#A2AA23' valign="top" class="tdWid"><font  color='#FFFFFF'><b>Comando</b></font></td>
+          <td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>Função do Comando</b></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Help [nome-do-comando]</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Fornece informações específicas para qualquer comando CLI. Alternativamente, você pode usar [command-name] /?.</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Taskkill</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Para um aplicativo em execução</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Bootrec</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Repara o MBR</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Shutdown</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Desliga uma máquina local ou remota</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Tasklist</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Exibe os aplicativos em execução</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>MD</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Cria um novo diretório</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>RD</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Remove um diretório</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>CD</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Altera para um diretório diferente</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>DEL</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Exclui um arquivo</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>FDISK</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Particiona os discos no Windows XP</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>FORMAT</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Formatos uma unidade, ponto de montagem ou o volume com um sistema de arquivos</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>COPY</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Copia arquivos de um local para outro</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>XCOPY</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><li>Copia arquivos, diretórios ou unidades inteiras de um local para outro</li>
+          <li>Copia um diretório com o seu conteúdo de um local para outro, a menos que o diretório esteja vazio</li>
+          <li>Copia somente arquivos com o atributo de arquivamento definido</li>
+          <li>Copia e verifica se cada novo arquivo é igual ao da origem</li>
+           <li>Copia sem notificar que irá sobrescrever os arquivos existentes</li></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>ROBOCOPY</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Copia um arquivo</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>DISKPART</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Fornece funcionalidades de gerenciamento de disco</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>SFC</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Verifica e substitui todos os arquivos protegidos do sistema por versões conhecidas caso eles sejam excluídos ou estejam corrompidos</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>CHKDSK</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><li>Cria um relatório sobre o disco</li><li>Corrige eventuais entradas na tabela de alocação de arquivos</li>
+          <li>Tenta recuperar dados de setores defeituosos do disco</li></font></td>
+        </tr>
+    </table>
+]]>
+</text>
+</component>
+
+</textcomponents>

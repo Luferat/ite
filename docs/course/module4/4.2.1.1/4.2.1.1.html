@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.1.1 Introdução à Solução de Problemas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Processo de Solução de Problemas</h1>
+        <h2>Etapas do Processo Solução de Problemas</h2>
+      </div>
+      <div id="content">
+          <p>O processo de solução de problemas (Troubleshooting) requer uma abordagem organizada e lógica com os problemas dos computadores e de outros componentes. Às vezes surgem problemas durante a manutenção preventiva. Em outras ocasiões, o cliente pode entrar em contato com um problema. Uma abordagem lógica para a solução de problemas permite eliminar variáveis ​​e identificar as causas dos problemas em uma ordem sistemática. Fazer as perguntas certas, testar o hardware certo e analisar os dados corretos ajudam a entender o problema e formar uma solução a ser testada.</p>
+          <p>O troubleshooting é uma habilidade refinada ao longo do tempo. Cada vez que você resolve um problema, você aumenta suas habilidades de resolução de problemas, ganhando mais experiência. Você aprende como e quando combinar passos ou pular etapas para chegar a uma solução rapidamente. O processo de Troubleshooting é uma diretriz que é modificada para atender às suas necessidades.</p>
+          <p>Esta seção apresenta uma abordagem para resolução de problemas que pode ser aplicada tanto para o hardware, quanto para o software. Você também pode aplicar muitos dos passos para a resolver problemas de outras áreas relacionadas ao seu trabalho.</p>
+          <p>NOTA: O termo cliente, como é usado neste curso, é qualquer usuário que necessite de assistência técnica de informática.</p>
+          <p>Antes de iniciar a resolução dos problemas, siga sempre as precauções necessárias para proteger os dados de um computador. Alguns reparos, como substituir um disco rígido ou reinstalar o sistema operacional, podem colocar os dados do computador em risco. Certifique-se de fazer todo o possível para evitar a perda de dados durante as tentativas de reparos.</p>
+          <p>ATENÇÃO: Sempre faça um backup antes de iniciar qualquer solução de problemas. Você deve proteger os dados antes de iniciar qualquer trabalho no computador de um cliente. Se o trabalho resultar em perda de dados para o cliente, você ou sua empresa poderão ser responsabilizados.</p>
+          <p>Backup de Dados</p>
+          <p>O backup é uma cópia dos dados de um disco rígido que é armazenado em um outro dispositivo ou na nuvem. Armazenamento em nuvem é um armazenamento on-line, acessado através da Internet. Em uma empresa, os backups podem ser realizados em uma base semanal ou mensal.</p>
+          <p>Se você não tem certeza de que um backup foi feito, não tente nenhuma atividade de resolução de problemas até que seja verificado com o cliente se o backup foi feito. Aqui estão uma lista de itens a verificar com o cliente sobre os backups de dados:</p>
+          <p><ul>
+              <li>Data do último backup</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conteúdo do backup</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Integridade dos dados do backup</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Disponibilidade de todas as mídias de backup para uma restauração de dados</li>
+            </ul>
+          </p>
+          <p>Se o cliente não tiver um backup atual e não for capaz de criar um, peça ao cliente para assinar um termo de isenção de responsabilidade. A forma de liberação de responsabilidade contém pelo menos as seguintes informações:</p>
+          <p><ul>
+              <li>Permissão para trabalhar no computador sem um backup atualizado disponível</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Isenção de responsabilidade caso os dados sejam perdidos ou corrompidos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Descrição do trabalho a ser executado</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,29 @@
+﻿<textcomponents>
+  
+  <component id='ID_table'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+			 <tr class="title">
+			 	<td colspan='2' bgcolor='#DAE17A' class="title"><font size='14' color='#393536'><b>Passo 3: Teste a Teoria para Determinar a Causa</b></font></td>
+			</tr>
+			 <tr>
+          		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+       		</tr>
+			
+			<tr>
+			<td valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+			<td valign="top" bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Use um adaptador AC no laptop.</li>
+				<li>Substitua a bateria</li>
+				<li>Reinicie o laptop</li>
+				<li>Verifique as configurações da BIOS</li>
+				<li>Desconecte e reconecte os cabos</li>
+				<li>Desconecte os periféricos</li>
+				<li>Pressione a tecla Num Lock</li>
+				<li>Remova e reinstale a RAM</li>
+				<li>A tecla Caps lock está habilitada</li>
+				<li>Verifique se há alguma mídia não inicializável em um dispositivo de inicialização</li></textformat></font></td>
+			</tr>
+		</table>]]>
+    </text>
+  </component>
+</textcomponents>

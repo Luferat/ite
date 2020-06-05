@@ -1,0 +1,55 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<b>Topologia de rede</b>]]></text> 
+  </component>
+
+<component id="ID_internet1">
+  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+
+<component id="ID_C1">
+  <text><![CDATA[<b>Sala de Aula 1</b>]]></text> 
+  </component>
+<component id="ID_C2">
+  <text><![CDATA[<b>Sala de Aula 2</b>]]></text> 
+  </component>
+<component id="ID_C3">
+  <text><![CDATA[<b>Sala de Aula 3</b>]]></text> 
+  </component>
+
+<component id="ID_AO">
+  <text><![CDATA[<b>Escritório de Administração</b>]]></text> 
+  </component>
+<component id="ID_CH">
+  <text><![CDATA[<b>Switch da Sala de Aula</b>]]></text> 
+  </component>
+<component id="ID_CH2">
+  <text><![CDATA[<b>Switch da Sala de Aula</b>]]></text> 
+  </component>
+<component id="ID_CH3">
+  <text><![CDATA[<b>Switch da Sala de Aula</b>]]></text> 
+  </component>
+<component id="ID_AH">
+  <text><![CDATA[<b>Switch Administrativo</b>]]></text> 
+  </component>
+<component id="ID_ES">
+  <text><![CDATA[<b>Switch Ethernet</b>]]></text> 
+  </component>
+<component id="ID_RTR">
+  <text><![CDATA[<b>Roteador</b>]]></text> 
+  </component>
+<component id="ID_SWT">
+  <text><![CDATA[<b>Switch</b>]]></text> 
+  </component>
+<component id="ID_MS">
+  <text><![CDATA[<b>Servidor de E-mail</b>]]></text> 
+  </component>
+<component id="ID_WS">
+  <text><![CDATA[<b>Servidor Web</b>]]></text> 
+  </component>
+<component id="ID_FS">
+  <text><![CDATA[<b>Servidor de Arquivos</b>]]></text> 
+  </component>
+
+</textcomponents>

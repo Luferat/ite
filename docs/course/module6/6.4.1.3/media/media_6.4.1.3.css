@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+    margin:0;
+    height:100%;
+}
+
+#flashContent { overflow:hidden !important;width:98%;height:98%;}
+
+#ID_s3_textBoxBody01 li{padding:0 0 0 5px !important;line-height:20px;margin-left:1em !important;}

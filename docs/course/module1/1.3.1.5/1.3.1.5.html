@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.3.1.5 Computadores Home Theather</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Configuração para um Sistema de Computador Especializado</h1>
+        <h2>Sistemas de Computadores Especializados</h2>
+      </div>
+      <div id="content">
+          <p>Construir um Computador Pessoal Home Theater (HTPC) requer hardware especializado para oferecer uma experiência de visualização de alta qualidade para o cliente. Cada equipamento tem de ser conectado para fornecer apropriadamente os serviços e recursos necessários para apoiar as diferentes demandas requeridas de um sistema HTPC.</p>
+          <p></p>
+          <p>Um recurso útil de um HTPC é a capacidade de gravar um programa de vídeo para assisti-lo em um momento posterior. Sistemas HTPC podem ser projetados para exibir televisão ao vivo, transmitir filmes e conteúdo de Internet, fotos e vídeos da família e até mesmo navegar na Internet em uma televisão. Considere o seguinte hardware durante a construção de um HTPC:</p>
+          <p></p>
+          <p><ul>
+              <li>Gabinetes e fontes de alimentação especializados - Placas-mãe menores podem ser usadas ​​na construção de um HTPC para que os componentes possam se encaixar em um gabinete que possui um formato compacto. Estes formatos menores parecem com os componentes que normalmente são encontrados em um home theater. Normalmente, um gabinete HTPC contém grandes ventoinhas que se movem mais lentamente e geram menos ruído do que as encontradas em uma estação de trabalho convencional. As fontes de alimentação, que não têm os ventoinhas, podem ser utilizadas (dependendo dos requisitos de energia) para reduzir ainda mais a quantidade de ruído gerado pelo HTPC. Alguns projetos HTPC contêm componentes de alta eficiência e não necessitam de ventiladores para refrigeração.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Áudio Surround - O som Surround ajuda a aproximar o espectador ao vídeo. Um HTPC pode usar o som surround da placa-mãe, quando suportado pelo chipset, ou uma placa de som dedicada pode ser instalada para fornecer uma saída de alta qualidade de som surround em alto falantes ou amplificador adicional para um som ainda melhor.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Saída HDMI - O padrão HDMI permite a transmissão de vídeo de alta definição, som surround e dados para televisores, receptores de mídia e projetores.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sintonizadores de TV e cable cards - Um sintonizador deve ser utilizado no HTPC para exibir os sinais de televisão. Um sintonizador de TV converte sinais de televisão analógica e digital em sinais de áudio e vídeo que o computador pode usar e armazenar. Cable cards podem ser usadas para receber sinais de televisão a partir de uma empresa de cabo. O cable cards é necessário para o acesso aos canais a cabo premium. Alguns cable cards podem receber até seis canais simultaneamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Disco rígido especializado - Os discos rígidos, que têm baixos níveis de ruído e possuem um consumo de energia reduzido, são comumente conhecidos como discos de áudio/vídeo (A/V).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Em vez de montar um HTPC, alguns clientes podem optar por construir um servidor PC Home. O servidor PC Home pode ser colocado em qualquer lugar da casa e ser acessado por vários dispositivos ao mesmo tempo. O servidor compartilha arquivos e fluxos de áudio, vídeo e fotos para computadores, laptops, tablets, televisores e outros dispositivos de mídia através da rede. Um home server PC pode ter RAID configurado para proteger os dados valiosos de uma falha do disco rígido. Para transmitir dados para vários dispositivos, sem atrasos, instale uma placa de rede gigabit.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,141 @@
+﻿<textcomponents>
+
+	<component id='ID_table'>
+		<text><![CDATA[
+			<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+				
+				<tr>
+					<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns</b></font></td>
+				</tr>
+				<tr >
+					<td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>				
+				<tr>
+					<td bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Identificação do Problema</b></font></td>
+					<td bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Prováveis Causas</b></font></td>
+					<td bgcolor='#A2AA23'><font size='12' color='#ffffff'><b>Soluções Possíveis</b></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>Laptop não liga</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>O laptop não está conectado na tomada</li>
+						<li>A bateria está descarregada</li>
+						<li>A bateria não segura a carga</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Conecte o laptop ao adaptador de energia AC</li>
+						<li>Remova e insira novamente a bateria</li>
+						<li>Substitua a bateria caso ela não carregue</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>A bateria do laptop fornece energia ao sistema por um período reduzido de tempo</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Não foi seguida a prática apropriada para recarga e descarga da bateria</li>
+						<li>Periféricos extra estão drenando a bateria</li>
+						<li>O plano de energia não está configurado corretamente</li>
+						<li>A bateria não está segurando a carga por muito tempo</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Siga os procedimentos de carga da bateria descritos no manual</li>
+						<li>Remova os periféricos desnecessários e desabilite a NIC wireless, se possível</li>
+						<li>Modifique o plano de energia para reduzir o uso da bateria</li>
+						<li>Substitua a bateria</li></textformat></font></td>
+				</tr>	
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>O display externo está ligado, porém não exibe imagem na tela</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>O cabo de vídeo está solto ou danificado</li>
+												<li>O laptop não está enviando sinal de vídeo para o display externo</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Reconecte ou substitua o cabo de vídeo</li>
+												<li>Utilize a tecla Fn, junto com a tecla em questão, para alternar para o display externo.</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>O laptop está ligado, porém nada é exibido na tela LCD quando a sua tampa é reaberta.</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>O interruptor de corte LCD está sujo ou danificado</li>
+												<li>O laptop entrou em modo de suspensão</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Verifique o manual de reparo do laptop em busca de instruções sobre como limpar ou substituir o interruptor de corte LCD</li>
+												<li>Pressione uma teclado do teclado para retirar o computador do modo de suspensão</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>A imagem na tela do laptop parece estar borrada e pálida</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>A luz de fundo LCD não está ajustada corretamente</font></td>								
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>Verifique o manual de reparo do laptop em busca de instruções sobre como calibrar a luz de fundo LCD</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>A imagem do laptop está pixelada</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>As configurações do visor LCD estão incorretas</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>Configure o visor para utilizar a resolução nativa</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>A tela do laptop está piscando</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>As imagens na tela não estão atualizando rápido o bastante</li>
+												<li>O inversor da tela está danificado ou com defeito</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Ajuste a taxa de atualização do visor</li>
+												<li>Desmonte o visor e substitua o inversor.</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>Um usuário está vivenciando um cursor fantasma que se move por conta própria</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>O touchpad está sujo</li>
+											<li>O touchpad e o mouse estão sendo usados ao mesmo tempo</li>
+											<li>Um pedaço da mão encostou no touchpad enquanto o usuário digitava</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Limpe o touchpad</li>
+											<li>Desconecte o mouse</li>
+											<li>Tente não encostar no touchpad enquanto digita</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>Os pixels na tela estão danificados ou não estão gerando cor</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>A alimenta de energia aos pixels foi cortada</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>Entre em contato com fabricante</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>A imagem na tela parece piscar linhas ou padrões de cor e tamanho diferente (artefatos)</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>O visor não está conectado corretamente</li>
+												<li>A GPU está superaquecida</li>
+												<li>A GPU está com defeito ou funcionando incorretamente</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Desmonte o laptop para verificar as conexões do visor</li>
+												<li>Desmonte e limpe o computador, verificando se há poeira e detritos</li>
+												<li>Substitua a GPU</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>Os padrões de cor no visor estão incorretos</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>O visor não está conectado corretamente</li>
+												<li>A GPU está superaquecida</li>
+												<li>A GPU está com defeito ou funcionando incorretamente</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Desmonte o laptop para verificar as conexões do visor</li>
+												<li>Desmonte e limpe o computador, verificando se há poeira e detritos</li>
+												<li>Substitua a GPU</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>As imagens no visor estão distorcidas</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>As configurações do visor foram alteradas</li>
+												<li>O visor não está conectado corretamente</li>
+												<li>A GPU está superaquecida</li>
+												<li>A GPU está com defeito ou funcionando incorretamente</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Restaure as definições do visor para as opções originais de fábrica</li>
+												<li>Desmonte o computador a um ponto onde você possa verificar as conexões do visor</li>
+												<li>Desmonte e limpe o computador, verificando se há poeira e detritos</li>
+												<li>Substitua a GPU</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>A rede está totalmente funcional e a conexão sem fio do laptop está ativada, mesmo assim o laptop não pode se conectar à rede.</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>A capacidade sem fio do laptop está desativada.</li>
+												<li>A antena wireless externa está desalinhada.</li>
+												<li>Fora do alcance da rede sem fio</li></textformat></font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Ative a placa de rede sem fio do laptop através das propriedade da NIC sem fio ou usando a tecla Fn.</li>
+												<li>Realinhe a antena wireless externa para captar o sinal wireless.</li>
+												<li>Aproxime-se do ponto de acesso sem fio.</li></textformat></font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'>Dispositivos de entrada Bluetooth não estão funcionando corretamente</font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>O Bluetooth está desabilitado</li>
+											<li>As baterias do dispositivo de entrada não estão fornecendo energia</li>
+											<li>O dispositivo de entrada está fora do alcance</li></textformat></font></td>
+					<td bgcolor='#FFFFFF' class="valign-top"><font size='12' color='#393536'><textformat blockindent='-18'><li>Habilite o Bluetooth do laptop utilizado o utilitário de configuração Bluetooth ou através da tecla Fn.</li>
+												<li>Substitua as baterias</li>
+												<li>Mova os dispositivos de entrada para próximo do receptor Bluetooth do laptop.</li>
+												<li>Verifique se o Bluetooth do laptop está habilitado.</li></textformat></font></td>
+				</tr>	
+
+				
+				<tr>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>O teclado está inserindo números ao invés de texto e indicador luminoso do num lock está acesso</font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>O num lock está ativado </font></td>
+					<td bgcolor='#F3F5E7' class="valign-top"><font size='12' color='#393536'>Desligue o num lock pressionando a tecla num lock ou através do uso da tecla Fn.</font></td>
+				</tr>
+			</table>]]>
+		</text>
+	</component>
+</textcomponents>

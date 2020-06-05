@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.5.1.2 Substituição de Consumíveis</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para Impressoras</h1>
+        <h2>Manutenção Preventiva de Impressoras</h2>
+      </div>
+      <div id="content">
+          <p>O tipo e a qualidade do papel e da tinta usada pode afetar a vida útil de uma impressora. Muitos tipos de papel de impressora estão disponíveis, incluindo o jato de tinta e laser. O fabricante da impressora pode recomendar qual o tipo de papel a ser usado para obter melhores resultados. Alguns papéis, como papel especial fotográfico, transparências e papel carbono de múltiplas camadas possuem um lado certo e errado para imprimir. Insira o papel na impressora de acordo com as instruções do fabricante.</p>
+          <p>O fabricante recomenda a marca e o tipo de tinta para usar. Se o tipo errado de tinta for instalado, a impressora pode não funcionar ou a qualidade de impressão pode deteriorar-se. Evite recarregar cartuchos de tinta, pois a tinta pode vazar.</p>
+          <p>Quando uma impressora jato de tinta produz páginas em branco, os cartuchos de tinta podem estar vazio. Algumas impressoras jato de tinta podem se recusar a imprimir todas as páginas se um dos cartuchos de tinta estiver vazio. As impressoras a laser não produzem páginas em branco. Em vez disso, eles começam a imprimir impressões de má qualidade. A maioria das impressoras de jato de tinta tem um utilitário que mostra os níveis de tinta em cada cartucho, como mostrado na figura. Algumas impressoras possuem visores de LCD ou LED que avisam aos usuários quando os suprimentos de tinta estão baixos.</p>
+          <p>Um método para verificar o nível de tinta é olhar para o contador de páginas no interior da impressora ou no software da impressora para determinar quantas páginas foram impressas. Depois, olhe as informações do rótulo do cartucho. O rótulo deve lhe mostrar quantas páginas o cartucho pode imprimir. Você pode então estimar quantas páginas você ainda pode imprimir. Para ajudar a manter o controle de uso, sempre que substituir o cartucho, zere o contador. Além disso, algumas impressões usar mais tinta do que outras. Por exemplo, uma carta usa menos tinta do que uma fotografia.</p>
+          <p>Você pode configurar o software da impressora para o modo de economia de toner ou utilizar a qualidade de impressão rascunho para reduzir a quantidade de tinta ou toner, que a impressora usa. Essas configurações também reduzem a qualidade de impressão de produtos a laser e jato de tinta, bem como o tempo que leva para imprimir um documento em uma impressora jato de tinta.</p>
+          <p>Uma impressora de impacto é similar a uma máquina de escrever, pois a cabeça de impressão atinge uma fita de tinta que transfere a tinta para a impressão. Quando a impressora de impacto produz caracteres desbotados ou fracos, significa que a fita está desgastada e precisa ser substituída. Se uma falha consistente é produzida em todos os caracteres, a cabeça de impressão está presa ou quebrada e precisa ser substituída.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

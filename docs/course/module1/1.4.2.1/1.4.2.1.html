@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.2.1 Considerations for Cabling a Network</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Physical Components of a Network</h1>
+      <h2>Cables and Connectors</h2>
+    </div>
+    <div id="content">
+          <p>A wide variety of networking cables are available, as shown in Figure 1. Coaxial and twisted-pair cables use copper to transmit data. Fiber-optic cables use glass or plastic to transmit data. These cables differ in bandwidth, size, and cost. You need to know what type of cable to use in different situations to install the correct cables for the job. You also need to be able to troubleshoot and repair problems that you encounter. Select the cable type that is the most beneficial and cost effective for the users and services that will connect to the network.</p>
+          <p>
+            <b>Cost</b>
+            <br/>When designing a network, cost is a consideration. Installing cables is expensive, but after a one-time expense, a wired network is normally inexpensive to maintain.</p>
+          <p>
+            <b>Security</b>
+            <br/>A wired network is usually more secure than a wireless network. The cables in a wired network are usually installed in walls and ceilings and are therefore not easily accessible. It is easier to gain unauthorized access to the signals on a wireless network than a wired network. Radio signals are available to anyone who has a receiver. To make a wireless network as secure as a wired network requires using authentication and encryption.</p>
+          <p>
+            <b>Design for the Future</b>
+            <br/>Many organizations install the highest grade of cable that is available. This ensures that the networks are prepared for additional bandwidth requirements in the future. To avoid expensive cable installations later, you and your customer must decide if the cost of installing a higher grade cable is necessary.</p>
+          <p>
+            <b>Wireless</b>
+            <br/>A wireless solution might be needed in places where cables cannot be installed, such as an older, historic building where local building codes do not permit structural modifications. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

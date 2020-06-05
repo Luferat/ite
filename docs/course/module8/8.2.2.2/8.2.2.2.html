@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.2.2 Gerenciando Aplicativos, Widgets e Pastas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Móveis</h1>
+        <h2>Interface de Toque(touch) do Android</h2>
+      </div>
+      <div id="content">
+          <p>Aplicativos</p>
+          <p>Cada uma das telas iniciais é configurada com uma grade, onde os aplicativos podem ser posicionados. Para mover um aplicativo, siga esses passos:</p>
+          <p>Passo 1. Toque e segure o aplicativo.</p>
+          <p>Passo 2. Arraste-o para uma área vazia em qualquer tela inicial.</p>
+          <p>Passo 3. Solte o aplicativo.</p>
+          <p>Para remover um aplicativo, a partir de uma tela inicial, siga estes passos:</p>
+          <p>Passo 1. Toque e segure o aplicativo.</p>
+          <p>Passo 2. Arraste-o para o ícone da lata de lixo ou para o X localizado na tela.</p>
+          <p>Passo 3. Solte o aplicativo.</p>
+          <p>Para executar um aplicativo, toque sobre ele. Durante a execução do aplicativo, existem várias opções que podem ser configuradas ao pressionar o botão menu.</p>
+          <p>Normalmente, existem três maneiras diferentes para fechar um app:</p>
+          <p><ul>
+              <li>Precione continuamente o botão Voltar até chegar na tela inicial. Geralmente o programa exibe uma imagem confirmando se o usuário pretende sair do aplicativo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pressione o botão Home.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Toque na opção Sair no menu do aplicativo.</li>
+            </ul>
+          </p>
+          <p>Widgets</p>
+          <p>Widgets são programas (ou partes de programas) que exibem informações. Por exemplo, um widget pode ser colocado na tela inicial para exibir as condições meteorológicas. Muitas vezes, um widget pode ser tocado para executar um aplicativo associado. No caso de um widget de condições climáticas, ao tocá-lo será aberto um aplicativo de tempo em tela cheia, contedo mais detalhes e informações. Widgets são úteis porque eles fornecem acesso rápido a informações ou funções frequentemente usadas. Alguns exemplos de widgets interessantes são os seguintes:</p>
+          <p><ul>
+              <li>Relógio - Exibe uma versão grande de um relógio personalizável.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tempo - Mostra as condições atuais para um ou mais locais.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Wi-Fi On/Off - Permite que o usuário ligue ou desligue o Wi-Fi rapidamente, sem precisar navegar até o menu de configurações.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Controle Energia - Apresenta vários widgets, como Wi-Fi On/Off, Bluetooth e o modo vibrar em um grupo de Widgets que está sempre visível.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Notas - Permite ao usuário criar notas que são exibidas na tela inicial.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Facebook - Fornece acesso ao Facebook e permite ao usuário postar no mesmo rapidamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ligações - Exibe a última chamada recebida ou realizada.</li>
+            </ul>
+          </p>
+          <p>Existem muitos outros tipos de elementos que podem ser utilizados para personalizar as telas Android. Consulte a documentação de programas ou do Google Play para determinar quais aplicativos possuem widgets.</p>
+          <p>Pastas</p>
+          <p>Em alguns dispositivos móveis, vários aplicativos podem ser agrupados em pastas para melhor organizá-los. Se opções de pastas não estiverem disponíveis, um aplicativo pode ser instalado para fornecer esse recurso. Os aplicativos podem ser agrupados de qualquer forma desejada.</p>
+          <p>Para criar uma pasta em um smartphone Android, siga esses passos:</p>
+          <p>Passo 1. Toque e segure um aplicativo na tela inicial.</p>
+          <p>Passo 2. Arraste o aplicativo para a pasta.</p>
+          <p>Passo 3. Solte o aplicativo.</p>
+          <p>Para criar uma pasta em um tablet Android, siga esses passos:</p>
+          <p>Passo 1. Toque e segure um aplicativo na tela inicial.</p>
+          <p>Passo 2. Arraste o ícone do aplicativo para a pasta, localizada na parte superior da tela.</p>
+          <p>Passo 3. Solte o aplicativo.</p>
+          <p>Toque em qualquer pasta para abri-la. Toque em qualquer aplicativo dentro da pasta para abri-lo. Para renomear uma pasta, toque na pasta, toque no nome da pasta e digite um novo nome. Para sair de uma pasta, toque fora da pasta ou pressione o botão Home ou Voltar. Você pode mover a pasta de uma tela para outra da mesma forma que você move um aplicativo.</p>
+          <p>Para remover um aplicativo de uma pasta, siga esses passos:</p>
+          <p>Passo 1. Abra a pasta.</p>
+          <p>Passo 2. Toque e segure o aplicativo a ser removido.</p>
+          <p>Passo 3. Arraste o aplicativo para uma área vazia da tela inicial.</p>
+          <p>Passo 4. Solte o aplicativo.</p>
+          <p>Em smartphones Android, se a pasta possuir dois aplicativos e um deles é removido, a pasta é excluída, porém o aplicativo restante substitui a pasta na tela inicial. Em tablets Android, se todos os aplicativos são removidos de uma pasta, a pasta não é excluída. Você pode remover a pasta de uma tela da mesma forma que você remove um aplicativo.</p>
+          <p>Ícone de Aplicativos</p>
+          <p>O ícone Aplicativos exibe todos os aplicativos que estão instalados no dispositivo. Estas são algumas das tarefas comuns que podem ser executadas nessa tela:</p>
+          <p><ul>
+              <li>Executar um aplicativo - Toque em qualquer aplicativo para iniciá-lo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mover aplicativo para a tela inicial - Toque e segure um aplicativo. A tela inicial será exibida. Solte o aplicativo em qualquer área livre de qualquer tela inicial.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Desinstalar aplicativos - Toque e segure um aplicativo. Arraste o aplicativo para o ícone da lixeira ou para o ícone X.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Acesse o Play Store - Toque no ícone do menu e depois toque no ícone Google Play.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Widgets - Toque na aba Widgets para visualizar todos os widgets instalados. Adicione os widgets na tela inicial usando o mesmo método necessário para adicionar aplicativos na tela inicial.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.2.6 ICMP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Endereçando os Equipamentos da Rede</h2>
+      </div>
+      <div id="content">
+          <p>O Internet Control Message Protocol (ICMP) é usado por dispositivos em uma rede para enviar mensagens de erro e controle para computadores e servidores. Há vários usos diferentes para o ICMP, tais como anunciar erros de rede, anunciar o congestionamento da rede e solucionar de problemas.</p>
+          <p></p>
+          <p>O Ping é muito utilizado para testar as conexões entre os computadores. O Ping é um utilitário simples, utilizado em linha de comando, para determinar se um endereço IP específico está acessível. Para visualizar uma lista de opções que você pode usar junto ao comando ping, digite C: \> ping /? na janela do Prompt de Comando.</p>
+          <p></p>
+          <p>O comando ipconfig é outro utilitário de linha de comando útil, utilizado para verificar se a placa de rede possui um endereço IP válido. Para exibir informações de configuração completas sobre todos os adaptadores de rede, digite C: \> ipconfig /all na janela do Prompt de Comando. Você pode executar ping no endereço IP obtido a partir do comando ipconfig /all para testar a conectividade IP.</p>
+          <p></p>
+          <p>O ping funciona enviando uma solicitação de eco ICMP para um computador de destino ou outro dispositivo de rede. O dispositivo receptor envia de volta uma mensagem de resposta eco ICMP para confirmar a conectividade. Solicitações e respostas de eco são mensagens de testes que determinam se os dispositivos podem enviar pacotes entre si. Quatro pedidos de eco ICMP (pings) são enviados para o computador de destino. Caso o destino seja alcançável, ele responderá com quatro respostas eco ICMP. A porcentagem de respostas bem-sucedidas pode ajudá-lo a determinar a confiabilidade e a acessibilidade do computador de destino. Outras mensagens ICMP exibem pacotes que não são entregues e informa se o dispositivo está ocupado demais para lidar com o pacote.</p>
+          <p></p>
+          <p>Você também pode usar o ping para encontrar o endereço IP de um host quando o nome do mesmo é conhecido. Se você pingar o nome de um site, por exemplo cisco.com, como mostrado na figura, o endereço IP do servidor será exibido.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

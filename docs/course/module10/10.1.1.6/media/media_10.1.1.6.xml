@@ -1,0 +1,136 @@
+﻿<textcomponents>
+
+<!--SLIDE 1-->
+
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Servidor Web WWW.XXYZCORP.COM]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Ataque DoS]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Este site está muito lento hoje!]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[Enviarei tantos pings que o servidor não responderá a ninguém.]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[Ajuda, Eu não posso realizar nenhum trabalho!]]></text>
+</component>
+
+
+<!--SLIDE 2-->
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Código DDoS ativado.]]></text> 
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[WWW.QZXBANK.COM]]></text> 
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[Atacante DDoS]]></text> 
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[Internet]]></text> 
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[Eu infectei computadores através da Internet com o código de DDoS. Eu vou ativar todos eles agora.]]></text> 
+
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[Estou sobrecarregado com muito tráfego.]]></text> 
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[Código DDoS ativado.]]></text> 
+</component>
+
+<!--SLIDE 3-->
+<component id="ID_s3_txt01">
+	<text><![CDATA[O atacante envia vários pedidos de SYN para um servidor web.]]></text>
+</component>
+<component id="ID_s3_txt02">
+	<text><![CDATA[O servido web percebe o SYN-ACK e responde.]]></text> 
+</component>
+<component id="ID_s3_txt03">
+	<text><![CDATA[Servidor Web aguarda para completar um three-way handshake.]]></text> 
+</component>
+<component id="ID_s3_txt04">
+	<text><![CDATA[Usuário válido envia um pedido SYN.]]></text> 
+</component>
+<component id="ID_s3_txt05">
+	<text><![CDATA[Servidor Web está indisponível.]]></text> 
+</component>
+<component id="ID_s3_txt06">
+	<text><![CDATA[Servidor Web]]></text> 
+</component>
+<component id="ID_s3_txt07">
+	<text><![CDATA[Servidor Web]]></text> 
+</component>
+<component id="ID_s3_txt08">
+	<text><![CDATA[Servidor Web]]></text> 
+</component>
+  
+  
+<!--SLIDE 4-->
+<component id="ID_s4_txt01">
+	<text><![CDATA[1. Quando a vítima solicita uma página web, o pedido é direcionado para o computador do atacante.]]></text>
+</component>
+<component id="ID_s4_txt02">
+	<text><![CDATA[2. O computador do atacante recebe a solicitação e recupera a página real a partir do site legítimo.]]></text>
+</component>
+<component id="ID_s4_txt03">
+	<text><![CDATA[3. O atacante pode alterar a página legítima e modificar os dados.]]></text>
+</component>
+<component id="ID_s4_txt04">
+	<text><![CDATA[4. O atacante envia a página solicitada à vítima.]]></text>
+</component>
+<component id="ID_s4_txt05">
+	<text><![CDATA[Vítima]]></text>
+</component>
+<component id="ID_s4_txt06">
+	<text><![CDATA[Servidor Web]]></text>
+</component>
+
+
+<!-- controller -->
+
+<component id="end">
+<text><![CDATA[Fim]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Avanço Rápido]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Retroceder]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Iniciar]]></text>
+</component>
+
+
+</textcomponents>

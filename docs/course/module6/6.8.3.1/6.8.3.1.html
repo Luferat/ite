@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.3.1 Conectando-se ao Roteador</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações de Roteador sem fio e com fio</h2>
+      </div>
+      <div id="content">
+          <p>Após os drivers da NIC serem instalados, o roteador de rede poderá ser ligado pela primeira vez. Conecte um cabo de rede, também chamado de um cabo Ethernet ou cabo direto, à porta de rede do computador. Conecte a outra extremidade no dispositivo de rede ou na tomada de rede.</p>
+          <p>Depois de conectar o cabo de rede, olhe para os LEDs ou luzes de link, junto à porta Ethernet na placa de rede para ver se há alguma atividade. A figura mostra as luzes de link em uma placa de rede. Se não houver nenhuma atividade, isso pode indicar um cabo defeituoso, uma porta do switch com defeito ou até mesmo uma placa de rede com defeito. Você pode ter que substituir um ou mais desses dispositivos para corrigir o problema.</p>
+          <p>Após confirmar que o computador está conectado à rede e que as luzes de link da NIC indicam que a conexão está funcionando, o computador precisará de um endereço IP. A maioria das redes são configuradas para que o computador receba o endereço IP automaticamente, através de um servidor DHCP local. Se o computador não possuir um endereço IP, digite um endereço IP exclusivo nas propriedades do TCP/IP da placa de rede.</p>
+          <p>Para se conectar em um roteador E2500 pela primeira vez, siga estes passos:</p>
+          <p>Passo 1. A parte de trás do roteador Linksys E2500 possui cinco portas Ethernet. Conecte um modem a cabo ou DSL na porta Internet. A lógica de comutação do dispositivo encaminha todos os pacotes através desta porta, quando há uma comunicação para a Internet originada dos computadores conectados. Conecte um computador a qualquer porta restante para acessar as páginas web de configuração do dispositivo.</p>
+          <p>Passo 2. Ligue o modem de banda larga e conecte o cabo de alimentação ao roteador. Quando o modem terminar de estabelecer a conexão com o ISP, o roteador se comunicará automaticamente com o modem para receber as informações de rede do ISP que são necessárias para obter acesso à Internet: endereço IP, máscara de sub-rede, gateway padrão e endereços dos servidores DNS. O LED da Internet acende, indicando a comunicação com o modem.</p>
+          <p>Passo 3. Assim que o roteador estabelecer a comunicação com o modem, você deve configurar o roteador para se comunicar com os dispositivos na rede. Ligue o computador que está conectado ao roteador. Os LEDs da NIC indicam que há uma comunicação entre o computador e o router.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

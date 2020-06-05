@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.5.1.5 Atualizações</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Técnicas de Manutenção Preventiva para os Sistemas Operacionais</h1>
+        <h2>Plano de Manutenção Preventiva para Sistema Operacional</h2>
+      </div>
+      <div id="content">
+          <p>Atualizações de Drivers de Dispositivos</p>
+          <p>A atualização regular dos drivers dos dispositivos deve fazer parte do seu programa de manutenção preventiva para garantir que os seus drivers são atuais. De tempos em tempos, os fabricantes lançam novos drivers para resolver problemas dos drivers atuais. Verifique se há atualizações de drivers quando seu hardware não funcionar corretamente ou para evitar problemas futuros. Também é importante atualizar os drivers que corrigem problemas de segurança. Se uma atualização de driver não funcionar corretamente, utilize o recurso Reverter Driver para reverter o mesmo para o driver instalado anteriormente.</p>
+          <p>Atualizações do Sistema Operacional</p>
+          <p>A Microsoft libera atualizações para tratar de questões de segurança e outros problemas de funcionalidade. Você pode instalar as atualizações individuais manualmente, através do site da Microsoft, ou automaticamente, usando o utilitário Atualizações Automáticas do Windows. Downloads que contêm várias atualizações são chamados service packs. Um service pack geralmente contém todas as atualizações de um sistema operacional. Instalar de um service pack é uma boa maneira de fazer com que o seu sistema operacional seja atualizado rapidamente. Crie um ponto de restauração e faça backup dos dados críticos antes de instalar um service pack. Adicione as atualizações do sistema operacional no seu programa de manutenção preventiva para garantir que o seu sistema tenha as mais recentes funcionalidades e correções de segurança.</p>
+          <p></p>
+          <p>Atualizações de Firmware</p>
+          <p>Atualizações de firmware são menos frequentes e comuns do que as atualizações de drivers. Os fabricantes lançam novas atualizações de firmware para resolver problemas que não podem ser corrigidos através de atualizações de drivers. As atualizações de firmware podem aumentar a velocidade de certos tipos de hardware, habilitar novos recursos ou aumentar a estabilidade de um produto. Siga, com cuidado, as instruções do fabricante ao realizar uma atualização de firmware para evitar que o hardware se torne inutilizável. Faça uma pesquisa completa da atualização antes de instalá-la, pois pode não ser possível reverter para o firmware original. Verificar se há atualizações de firmware deve fazer parte do seu programa de manutenção preventiva.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

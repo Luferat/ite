@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.2.1 Firewalls de Software</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Protegendo os Dados</h2>
+      </div>
+      <div id="content">
+          <p>Um firewall de software é um programa que é executado em um computador para permitir ou negar o tráfego entre o computador e outros computadores aos quais ele está conectado. O firewall aplica um conjunto de regras para transmissão de dados através da inspeção e filtragem de pacotes. O Firewall do Windows é um exemplo de um software de firewall. Ele é instalado por padrão junto ao sistema operacional.</p>
+          <p>Toda comunicação TCP/IP é associada a um número de porta. O HTTP, por exemplo, utiliza porta 80 por padrão. Um software de firewall, como mostrado na Figura 1, é capaz de proteger um computador de intrusão feita através das portas de dados. Você pode controlar os tipos de dados que são enviados para outro computador selecionando quais portas serão abertas e quais serão bloqueadas. Você deve criar exceções para permitir que determinado tráfego ou aplicativos possa se conectar ao computador. O Firewall bloqueia as conexões de rede de entrada e saída, a menos que exceções sejam definidas para abrir e fechar as portas utilizadas por um programa.</p>
+          <p>Para bloquear portas utilizando o Firewall do Windows no Windows 7, como mostrado na Figura 2, siga estes passos:</p>
+          <p>Passo 1. Selecione Iniciar > Painel de Controle > Firewall do Windows > Configurações avançadas.</p>
+          <p>Passo 2. No painel da esquerda, escolha se as regras que serão configuradas são &quot;Regras de Entrada&quot; ou &quot;Regras de Saída&quot;, em seguida, clique com o botão direito e selecione Nova Regra....</p>
+          <p>Passo 3. Selecione a porta e clique em Avançar.</p>
+          <p>Passo 4. Escolha TCP ou UDP.</p>
+          <p>Passo 5. Selecione Todas as portas locais ou uma Porta local específica e clique em Avançar.</p>
+          <p>Passo 6. Escolha Bloquear a conexão e clique em Avançar.</p>
+          <p>Passo 7. Escolha quando a regra se aplica e clique em Avançar.</p>
+          <p>Passo 8. Digite um nome e uma descrição opcional para a regra e clique em Concluir.</p>
+          <p>Para bloquear portas utilizando o Firewall do Windows no Windows Vista, siga estes passos:</p>
+          <p>Passo 1. Selecione Iniciar > Painel de Controle > Firewall do Windows > Alterar Configurações > Continuar > Exceções > Adicionar porta ....</p>
+          <p>Passo 2. Digite um nome e um número de porta ou um intervalo de portas.</p>
+          <p>Passo 3. Selecione TCP ou UDP e clique em OK.</p>
+          <p>Para bloquear portas utilizando o Firewall do Windows no Windows XP, siga estes passos:</p>
+          <p>Passo 1. Selecione Iniciar > Painel de Controle > Firewall do Windows > Exceções > Adicionar Porta ....</p>
+          <p>Passo 2. Digite um nome e um número de porta ou um intervalo de portas.</p>
+          <p>Passo 3. Selecione TCP ou UDP e clique em OK.</p>
+          <p>NOTA: Em uma rede segura, ative o firewall interno do S.O. para fornecer segurança adicional. Alguns aplicativos podem não funcionar de forma apropriada se o firewall não estiver configurado corretamente.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

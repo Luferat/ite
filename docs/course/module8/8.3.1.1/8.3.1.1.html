@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.1.1 Rede de Dados sem fio</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e Email</h1>
+        <h2>Rede de Dados Sem Fio e Celular</h2>
+      </div>
+      <div id="content">
+          <p>Os dispositivos móveis dão às pessoas a liberdade de trabalhar, aprender, jogar e se comunicar a qualquer momento e em qualquer lugar. As pessoas que utilizam dispositivos móveis não precisam estar vinculadas a um local físico para enviar e receber voz, vídeo e dados. Além disso, alguns locais que disponibilizam rede sem fios, tais como cafeterias, estão disponíveis em muitos países. Campus universitários usam redes sem fio para permitir que os alunos se inscrevam para as aulas, assistam a palestras e apresentem trabalhos em áreas onde as conexões físicas para a rede não estão disponíveis. Com os dispositivos móveis cada vez mais poderosos, muitas tarefas que precisam ser realizadas em grandes computadores conectados a redes físicas podem agora ser concluídas através de dispositivos móveis em redes sem fio.</p>
+          <p>Quase todos os dispositivos móveis são capazes de se conectar à redes Wi-Fi. É aconselhável se conectar nas redes Wi-Fi quando possível, pois os dados usados ​​por Wi-Fi não contam no plano de dados do celular. Além disso, como a interface rádio Wi-Fi utiliza menos energia do que a celular, se conectar em redes Wi-Fi economiza bateria. Como outros dispositivos Wi-Fi, é importante manter a segurança ao se conectar em redes Wi-Fi. Estas precauções devem ser tomadas para proteger as comunicações Wi-Fi em dispositivos móveis:</p>
+          <p><ul>
+              <li>Nunca envie informações de login ou senha usando texto claro não criptografado.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use uma conexão VPN quando possível.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ative a segurança em redes domésticas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Use segurança WPA2.</li>
+            </ul>
+          </p>
+          <p>Para ligar ou desligar o Wi-Fi, utilize o seguinte caminho para o Android, mostrado na Figura 1, e iOS, mostrado na Figura 2:</p>
+          <p>Configurações > Habilitar ou Desabilitar Wi-Fi</p>
+          <p>Para conectar um dispositivo Android quando este estiver dentro da faixa de cobertura de uma rede Wi-Fi, ligue o Wi-Fi e, em seguida, procure por todas as redes Wi-Fi disponíveis e exibidas em uma lista. Toque em uma rede Wi-Fi na lista para se conectar. Digite uma senha, se necessário.</p>
+          <p>Quando um dispositivo móvel está fora do alcance da rede Wi-Fi, ele tenta se conectar a outra rede Wi-Fi no alcance. Se não houver redes Wi-Fi ao alcance, o dispositivo móvel se conecta à rede de dados celular. Quando o Wi-Fi está ativado, ele automaticamente se conecta a qualquer rede Wi-Fi que foi conectada anteriormente. Se a rede for nova, o dispositivo móvel exibirá uma lista de redes disponíveis que podem ser usadas ​​ou perguntará se ele deve se conectar a ela.</p>
+          <p>Se um dispositivo móvel não solicitar para se conectar a uma rede Wi-Fi, a transmissão do SSID da rede pode estar desligado ou o dispositivo pode não ter sido configurado para se conectar automaticamente. Configure manualmente as definições Wi-Fi no dispositivo móvel.</p>
+          <p>Para se conectar a uma rede Wi-Fi manualmente em um dispositivo Android, siga estes passos:</p>
+          <p>Passo 1. Selecione Configurações > Adicionar rede.</p>
+          <p>Passo 2. Digite o SSID da rede.</p>
+          <p>Passo 3. Toque em Segurança e selecione o tipo de segurança.</p>
+          <p>Passo 4. Toque em Senha e digite a senha.</p>
+          <p>Passo 5. Toque em Salvar.</p>
+          <p>Para se conectar a uma rede Wi-Fi manualmente em um dispositivo iOS, siga estes passos:</p>
+          <p>Passo 1. Selecione Ajustes > Wi-Fi > Outras.</p>
+          <p>Passo 2. Digite o SSID da rede.</p>
+          <p>Passo 3. Toque em Segurança e selecione o tipo de segurança.</p>
+          <p>Passo 4. Toque em Outra Rede.</p>
+          <p>Passo 5. Toque em Senha e digite a senha.</p>
+          <p>Passo 6. Pressione Conectar.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

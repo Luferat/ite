@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.1.1.3 Limpando o Gabinete e os Componentes Internos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Manutenção Preventiva</h1>
+        <h2>Visão Geral de Manutenção Preventiva de PC</h2>
+      </div>
+      <div id="content">
+          <p>Uma parte importante da manutenção preventiva de hardware é manter o gabinete do computador e os componentes internos limpos. A quantidade de poeira, outras partículas em suspensão no ambiente e os hábitos do usuário, determinam a frequência com que os componentes do computador devem ser limpos. Limpar regularmente ou substituir os filtros de ar do prédio no qual o computador está localizado irá reduzir significativamente a quantidade de poeira no ar.</p>
+          <p>Poeira ou sujeira localizada no lado de fora de um computador podem entrar através dos ventiladores e de uma tampa aberta do gabinete. Quando o pó se acumula no interior do computador, ele impede o fluxo de ar e reduz o resfriamento dos componentes. Componentes quentes são mais propensos a sofrer problemas do que os componentes devidamente refrigerados. A maioria das limpezas é realizada para evitar o acumulo de poeira. A Figura 1 apresenta uma ventoinha de resfriamento que possui uma quantidade excessiva de poeiras acumulada.</p>
+          <p>Quando o pó se acumula no interior do computador, ele impede o fluxo de ar e reduz o resfriamento dos componentes. É importante manter vários componentes limpos:</p>
+          <p><ul>
+              <li>Dissipador de calor e ventoinha</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>RAM</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placas de expansão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Placa-mãe</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Coolers</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fonte de alimentação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Unidades internas</li>
+            </ul>
+          </p>
+          <p>Para remover a poeira de dentro de um computador, use o ar comprimido, aspirador de pó ESD de baixo fluxo e um pano que não solte fiapos. A pressão do ar de alguns dispositivos de limpeza pode gerar energia estática e causar danos ​​ou soltar componentes e jumpers.</p>
+          <p>Você pode usar um aspirador de pó ESD de baixo fluxo para remover a poeira e os materiais recolhidos de dentro do fundo do gabinete. Você também pode usar o aspirador para puxar a poeira soprado pelo ar comprimido. Se você usar uma lata de ar comprimido, tal como mostrado na Figura 2, mantenha a lata na posição vertical para evitar o fluido vaze para os componentes do computador. Siga sempre as instruções e avisos sobre o ar comprimido, como manter uma distância segura para os dispositivos e componentes sensíveis. Utilize um pano que não solte fiapos para remover qualquer poeira que não tenha sido retirada dos componentes.</p>
+          <p>ATENÇÃO: Quando limpar uma ventoinha com ar comprimido, mantenha as pás do ventilador paradas. Isso evita o overspinning do rotor ou que a ventoinha gire para o lado errado.</p>
+          <p>A limpeza regular também lhe dá a chance de inspecionar os componentes em busca de parafusos e conectores soltos. Procure por fatores que possam causar problemas posteriores e corrija-os, como os seguintes:</p>
+          <p><ul>
+              <li>Ausência da cobertura dos slots de expansão que permite que sujeira, pó e pragas entrem no computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Parafusos soltos das placas de expansão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabos faltando</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cabos soltos ou emaranhados de cabos</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>Utilize um pano ou um espanador para limpar a parte externa do gabinete. Se você usar um produto de limpeza, não espirre-o diretamente ao gabinete. Em vez disso, coloque uma pequena quantidade sobre o pano de limpeza ou o espanador e limpe a parte externa do gabinete.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

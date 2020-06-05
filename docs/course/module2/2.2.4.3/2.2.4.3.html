@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.4.3 Ferramentas Manuais</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Uso Adequado das Ferramentas</h1>
+        <h2>Demonstrar o Uso Adequado das Ferramentas</h2>
+      </div>
+      <div id="content">
+          <p>Um técnico precisa ser capaz de utilizar corretamente cada ferramenta da caixa de ferramentas. Esta página cobre muitas das várias ferramentas manuais utilizadas no reparo dos computadores.</p>
+          <p>Parafusos</p>
+          <p>Combine cada parafuso com a chave adequada. Coloque a ponta da chave na cabeça do parafuso. Rode a chave no sentido horário para apertar o parafuso e para o sentido anti-horário e para soltar o parafuso, conforme mostrado na Figura 1.</p>
+          <p>Parafusos podem se ficar espanado se você apertá-los demais com uma chave. Um parafuso espanado, como mostrado na Figura 2, pode ficar preso dentro do furo do parafuso ou pode não apertar firmemente. Jogue fora os parafusos espanados.</p>
+          <p>Chave de Fenda</p>
+          <p>Como mostrado na Figura 3, use uma chave de fenda quando você estiver trabalhando com um parafuso de fenda. Não use uma chave de fenda para remover um parafuso de cabeça Phillips. Nunca use uma chave de fenda como uma alavanca. Se você não conseguir retirar o componente, verifique se há um clipe ou trava que está prendendo o componente no lugar.</p>
+          <p>ATENÇÃO: Se você tiver que usar uma força excessiva para remover ou colocar um componente, algo provavelmente está errado. Dê uma segunda olhada para se certificar de que você não se esqueceu de um parafuso ou clipe de travamento que esteja prendendo o componente. Consulte o manual do aparelho ou diagrama para obter informações adicionais.</p>
+          <p>Chave Phillips</p>
+          <p>Como mostrado na Figura 4, o use a chave Phillips em parafusos de cabeça em estrela. Não utilize este tipo de chave para furar, seja o que for. Irá danificar a extremidade da chave.</p>
+          <p>Chave Hexagonal</p>
+          <p>Tal como é demonstrado na Figura 5, utilize uma chave hexagonal, para apertar e desapertar parafusos de rosca que têm uma cabeça hexagonal (seis lados). Não deve-se apertar demais os parafusos de rosca hexagonais, pois as estrias das roscas podem ser danificadas. Não utilize uma hexagonal que é muito grande para o parafuso que você está apertando.</p>
+          <p>CUIDADO: Algumas ferramentas são magnetizadas. Ao trabalhar próximo a dispositivos eletrônicos, certifique-se de que as ferramentas que você está usando não estão magnetizadas. Campos magnéticos podem ser prejudiciais para os dados armazenados em meio magnético. Teste a sua ferramenta tocando-a em um parafuso. Se o parafuso for atraído para a ferramenta, não utilize a mesma.</p>
+          <p>Ferramentas de Recuperação de Componentes</p>
+          <p>Como mostrado na Figura 6, alicates e pinças podem ser usados para colocar e recuperar peças difíceis de alcançar com os dedos. Existem ferramentas chamadas recuperados de peças que são projetadas especificamente para esta tarefa. Não risque ou acerte os componentes ao utilizar estas ferramentas.</p>
+          <p>ATENÇÃO: Não se deve utilizar lápis dentro do computador para alterar as configurações de botões ou retirar jumpers. A ponta do lápis pode atuar como um condutor e danificar os componentes do computador.</p>
+          <p>Um técnico de computador precisa de ferramentas adequadas para trabalhar com segurança e evitar danos aos equipamentos. Um técnico usa muitas ferramentas para diagnosticar e reparar problemas do computador:</p>
+          <p><ul>
+              <li>Chave de fenda grande e pequena</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Chave Phillips grande e pequena</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pinças ou recuperador de peças</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alicate de bico</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Cortador de fios</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Extrator de fios</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conjunto chave hexagonal</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Chave Torx</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Chave de boca, grande e pequena</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Garra para segurar componente</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Decapador</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Crimpador</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alicate Punch Down</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Multímetro digital</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fita para organizar os conectores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Espelho pequeno</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pequena escova para poeira</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Pano macio que não solte fiapos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Amarras de cabos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tesoura</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Lanterna</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fita isolante</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Lápis ou caneta</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ar comprimido</li>
+            </ul>
+          </p>
+          <p>Várias ferramentas especiais, tais como a chave Torx, sacos e luvas antiestáticos e puxadores de circuito integrado, podem ser usados para reparar um computadores. Sempre evite ferramentas magnetizadas, como chaves de fenda com cabeças magnéticas ou ferramentas que usam ímãs de extensão para recuperar pequenos objetos metálicos que estão fora do seu alcance. Usar ferramentas magnéticas pode causar perda de dados em discos rígidos e disquetes. Ferramentas magnéticas também podem induzir corrente, o que pode danificar os componentes internos do computador. Além disso, existem dispositivos de teste especializados usados ​​para diagnosticar problemas no computador e no cabeamento:</p>
+          <p><ul>
+              <li>Multímetro - Um dispositivo que mede a tensão AC/DC, a corrente eléctrica e outras características eléctricas do cabo, como mostrado na Figura 7.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Testador de fonte de alimentação - Um dispositivo que verifica se a fonte de alimentação do computador está funcionando corretamente. Um simples testador de fonte de alimentação pode ter apenas luzes indicadoras, enquanto as versões mais avançadas mostram a quantidade de voltagem e amperagem.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Testador de cabos - Um dispositivo que verifica erros no cabeamento, tais como fios ligados em conetores errados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Plug Loopback - Um dispositivo que se conecta a um computador, hub, switch, roteador ou porta para realizar um procedimento de diagnóstico chamado de teste de loopback. Em um teste de circuito fechado, um sinal é transmitido através de um circuito e, em seguida, devolvido ao dispositivo de envio para testar a integridade da transmissão de dados.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.1.4 Gerenciador de Tarefas</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Desktop, Ferramentas e Aplicações</h2>
+      </div>
+      <div id="content">
+          <p>O Gerenciador de Tarefas, mostrado na imagem, permite que você visualize todos os aplicativos que estão sendo executados e feche todas as aplicações que pararam de responder.</p>
+          <p>O Gerenciador de Tarefas tem as seguintes guias:</p>
+          <p><ul>
+              <li>Aplicações - Este guia mostra todos os aplicativos em execução. Nessa guia, você pode criar, mudar ou fechar todas as aplicações que pararam de responder, usando os botões na parte inferior.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Processos - Este guia mostra todos os processos em execução. Um processo é um conjunto de instruções iniciado pelo utilizador, um programa ou do Sistema Operacional. A partir deste guia, você pode finalizar ou definir prioridades de processo.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Serviços - Esta guia mostra os serviços disponíveis, incluindo o seu status operacional.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Performance - Este guia mostra o uso do arquivo de paginação e da CPU.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede - Essa guia mostra o uso de todos os adaptadores de rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usuários - Este guia mostra todos os usuários que estão conectados no computador. Nessa guia, você pode desconectar usuários remotos ou fazer logoff em usuários locais.</li>
+            </ul>
+          </p>
+          <p>Para ver as informações do Gerenciador de Tarefas do Windows 7 e Windows Vista, use o seguinte caminho:</p>
+          <p>CTRL-ALT-DEL e selecione Iniciar Gerenciador de Tarefas</p>
+          <p>Alternativamente, você pode acessar o Gerenciador de tarefas clicando com o botão direito do mouse na barra de tarefas e selecionando Iniciar Gerenciador de Tarefas.</p>
+          <p>No Windows XP, use o seguinte caminho:</p>
+          <p>CTRL-ALT-DEL e selecione Gerenciador de Tarefas</p>
+          <p>Alternativamente, você pode acessar o Gerenciador de Tarefas clicando com o botão direito do mouse na barra de tarefas e selecionando Gerenciador de Tarefas.</p>
+          <p>Tenha cuidado ao finalizar um processo ou alterar a sua prioridade. Finalizar um processo faz com que o programa feche imediatamente, sem salvar qualquer informação. Finalizar um processo pode impedir que o sistema funcione corretamente. Alterar a prioridade de um processo pode afetar muito o desempenho do computador.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

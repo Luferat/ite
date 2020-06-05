@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.3.1.7 Página de Teste da Impressora</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação e Configuração de Impressoras</h1>
+        <h2>Instalação e Atualização de Drivers, Firmware e RAM</h2>
+      </div>
+      <div id="content">
+          <p>Depois de instalar uma impressora, imprima uma página de teste para verificar se a impressora está funcionando corretamente. A página de teste confirma que o driver está instalado e funcionando corretamente e que a impressora e o computador estão se comunicando.</p>
+          <p>Imprimir uma Página de Teste</p>
+          <p>Para imprimir manualmente uma página de teste no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar > Dispositivos e Impressoras (atalho que mostra Dispositivos e Impressoras)</p>
+          <p>No Windows 7, clique com botão direito na impressora desejada e siga este caminho:</p>
+          <p>Propriedades da Impressora > Guia Geral > Imprimir Página de Teste</p>
+          <p>Para imprimir manualmente uma página de teste no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Painel de Controle > Impressoras e Aparelhos de Fax</p>
+          <p>No menu Impressoras e Aparelhos de Fax, clique com o botão direito do mouse na impressora desejada e siga este caminho:</p>
+          <p>Propriedades > guia Geral > Imprimir Página de Teste</p>
+          <p>Uma caixa de diálogo pergunta se a página foi impressa corretamente. Se a página não for impressa, os arquivos de ajuda embutidos o ajudará a solucionar o problema.</p>
+          <p>Para imprimir manualmente uma página de teste no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Impressoras e Aparelhos de Fax. No menu Impressoras e Aparelhos de Fax, clique com o botão direito do mouse na impressora e selecione Propriedades > Guia Geral > Imprimir Página de Teste</p>
+          <p>Imprimir a Partir de um Aplicativo</p>
+          <p>Você pode testar a impressora imprimindo uma página de teste a partir de um aplicativo, como o Bloco de Notas ou o WordPad. Para acessar o Bloco de Notas no Windows 7, Windows Vista e Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Acessórios > Bloco de Notas</p>
+          <p>No documento em branco, digite algum texto. Para imprimir o documento use o seguinte caminho:</p>
+          <p>Arquivo > Imprimir</p>
+          <p>Teste a Impressora</p>
+          <p>Você pode imprimir a partir da linha de comando para testar a impressora. Impressão a partir da linha de comando é limitada a apenas arquivos ASCII, tais como .txt e .bat.</p>
+          <p>Para enviar um arquivo para a impressora a partir da linha de comando no Windows 7, clique no botão Iniciar. No campo de pesquisa de programas e arquivos, digite cmd e clique em OK. No prompt de comando, digite o comando Print nome_do_arquivo.txt.</p>
+          <p>Para enviar um arquivo para a impressora a partir da linha de comando no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar > Iniciar Pesquisa. Na caixa Executar, digite cmd e clique em OK. No prompt de comando, digite o comando Print nome_do_arquivo.txt.</p>
+          <p>Para enviar um arquivo para a impressora a partir da linha de comando no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar > Executar. Na caixa Executar, digite cmd e clique em OK. No prompt de comando, digite o comando Print nome_do_arquivo.txt.</p>
+          <p>Teste a Impressora no Painel de Impressora</p>
+          <p>A maioria das impressoras tem um painel frontal com controles para permitir que você gere páginas de teste. Este método de impressão permite que você verifique o funcionamento da impressora separadamente da rede ou do computador. Consulte o site ou a documentação do fabricante para saber como imprimir uma página de teste a partir do painel frontal da impressora.</p>
+          <p>A instalação de qualquer dispositivo não está completa até que você tenha testado com sucesso todas as suas funções. As funções da impressora podem incluir:</p>
+          <p><ul>
+              <li>Imprimir documentos em frente e verso.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usar diferentes bandejas para diferentes tamanhos de papel.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Alterar as configurações de cor de uma impressora para que ela imprima em preto e branco ou escala de cinza.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Imprimir no modo rascunho.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usar uma aplicação de reconhecimento óptico de caracteres (OCR).</li>
+            </ul>
+          </p>
+          <p>Para um dispositivo all-in-one, teste todas as funções:</p>
+          <p><ul>
+              <li>Envia um fax para outro aparelho de fax que esteja funcionando.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Criar uma cópia de um documento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Digitalizar um documento.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Imprimir um documento.</li>
+            </ul>
+          </p>
+          <p>NOTA: Para obter informações sobre como eliminar atolamentos de papel, a instalação de cartuchos de tinta e carregar as bandejas de papel, verifique a documentação ou website do fabricante.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

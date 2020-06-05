@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.4.2.3 Bloqueio e Limpeza Remota</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Métodos de Proteção de Dispositivos Móveis</h1>
+        <h2>Serviços de Nuvem em Dispositivos Inteligentes</h2>
+      </div>
+      <div id="content">
+          <p>Se as tentativas de localizar um dispositivo móvel falharem, existem ainda as medidas de segurança que podem ser utilizadas para impedir que os dados do dispositivo sejam comprometidos. Estas medidas podem ser feitas usando o aplicativo Buscar iPhone a partir de um dispositivo iOS ou usando outros aplicativos desenvolvidos para realizar tarefas parecidas. Normalmente, os aplicativos que executam a localização remota possuem medidas de segurança. As duas medidas mais comuns de segurança remota são:</p>
+          <p><ul>
+              <li>Bloqueio Remoto - O recurso de bloqueio remoto, conforme apresentado na Figura 1, permite bloquear um dispositivo utilizando uma senha.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Limpeza Remota - O recurso de limpeza remota, conforme apresentado na Figura 2, apaga todos os dados do dispositivo e o retorna ao estado de fábrica. Para restaurar os dados no dispositivo, os usuários do Android devem configurar o dispositivo usando uma conta do Gmail, e os usuários do iOS devem sincronizar seu dispositivo ao iTunes.</li>
+            </ul>
+          </p>
+          <p>NOTA: Para que essas medidas de segurança remotas funcionem, o dispositivo deve estar ligado e conectado a uma rede Wi-Fi ou celular.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

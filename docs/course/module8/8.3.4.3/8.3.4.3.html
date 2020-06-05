@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.4.3 Tipos de Conexão de Sincronização</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conectividade de Rede e Email</h1>
+        <h2>Sincronização de Dispositivos Móveis</h2>
+      </div>
+      <div id="content">
+          <p>Para sincronizar dados entre dispositivos, eles devem usar um meio de comunicação comum. USB e conexões Wi-Fi são os tipos de conexão mais comuns usados ​​para sincronizar dados entre dispositivos.</p>
+          <p>Já que a maioria dos dispositivos Android não tem um programa utilizado para realizar a sincronização de dados, a maioria dos usuários usam e sincronizam com diferentes serviços web do Google, independente se a sincronização é feita em um computador desktop ou laptop. Um dos benefícios da sincronização de dados usando este método é que os dados são acessíveis a partir de qualquer computador ou dispositivo móvel em qualquer momento através da assinatura em uma conta do Google. A desvantagem desse recurso é que pode ser difícil de sincronizar dados de programas que estão instalados localmente em um computador, como o Outlook para e-mail, calendário e contatos ou o iTunes para música e vídeo.</p>
+          <p>Antes de iOS 5, a sincronização era limitada ao uso de um cabo de conexão USB para conectar o dispositivo a um computador. Atualmente, o usuário pode usar o Wi-Fi Sync para sincronizar com o iTunes sem fio. Para usar o Wi-Fi Sync, primeiro você deve sincronizar o dispositivo iOS com o iTunes usando um cabo USB. Você também deve habilitar a sincronização via Wi-Fi nas configurações do iTunes. Depois disso, você poderá usar tanto o Wi-Fi Sync, quanto um cabo USB. Quando o dispositivo iOS estiver na mesma rede sem fio do computador que possui o iTunes instalado e ele estiver conectado a uma fonte de energia, ele sincronizará automaticamente com o iTunes.</p>
+          <p>Sincronização de Dados Multi-Plataforma</p>
+          <p>Muitas vezes, o usuário tem dispositivos que executam sistemas operacionais diferentes. Sincronização de dados entre diferentes sistemas operacionais é chamado de sincronização de dados multi-plataforma. As aplicações de terceiros que lidam com a sincronização Android entre o Outlook ou iTunes devem ser instaladas para que a sincronização funcione. O iTunes pode ser instalado em um computador Windows ou Apple e um dispositivo Android ou iOS pode sincronizar dados em qualquer um dos sistemas.</p>
+          <p>Aplicativos também podem ser usados ​​para executar a sincronização entre diferentes plataformas. O Dropbox é um exemplo de aplicação que pode ser instalado em diferentes plataformas para sincronizar diferentes tipos de dados. Uma característica particularmente útil é a capacidade de configurar o dispositivo móvel para sincronizar as fotografias automaticamente. Quando uma foto é tirada, ela é automaticamente enviado para um servidor remoto. Quando outro dispositivo, como um tablet ou computador, está executando o software, a fotografia é baixada automaticamente.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

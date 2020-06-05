@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.2.1 Clonagem de Disco</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Opções de Instalação Personalizada</h2>
+      </div>
+      <div id="content">
+          <p>A instalação de um sistema operacional em um único computador leva um tempo. Imagine o tempo que seria necessário para instalar sistemas operacionais em vários computadores, um de cada vez. Para simplificar esta atividade, você pode usar o Microsoft System Preparation (Sysprep), conforme apresentado na imagem, para instalar e configurar o mesmo sistema operacional em vários computadores. O Sysprep prepara o sistema operacional com diferentes configurações de hardware. Com o Sysprep e um aplicativo de clonagem de disco, os técnicos podem instalar rapidamente o sistema operacional, completar os últimos passos de configurações e instalar os aplicativos.</p>
+          <p>Clonagem de Disco</p>
+          <p>A clonagem de disco cria a imagem do disco rígido de um computador. Para a clonagem de disco, siga estes passos:</p>
+          <p>Passo 1. Crie uma instalação principal em um computador. Esta instalação principal inclui o sistema operacional, aplicativos de software e configurações comuns que serão utilizadas pelos outros computadores da organização.</p>
+          <p>Passo 2. Execute o Sysprep.</p>
+          <p>Passo 3. Crie uma imagem de disco do computador configurado usando um programa de clonagem de disco.</p>
+          <p>Copie a imagem do disco em um servidor. Quando o computador de destino é inicializado, uma versão reduzida do programa de configuração do Windows é executado. A instalação instala os drivers para os componentes de hardware, cria contas de usuário e define as configurações de rede para concluir a instalação.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

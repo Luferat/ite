@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.4.5 Informações do Sistema</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Ferramentas do Sistema</h2>
+      </div>
+      <div id="content">
+          <p>Os administradores podem usar as ferramentas de Informações do Sistema, conforme apresentado na figura, para coletar e exibir informações sobre os computadores locais e remotos. As ferramentas de Informações do Sistema encontram rapidamente as informações sobre os software, drivers, configurações de hardware e componentes do computador. A equipe de suporte pode usar essas informações para diagnosticar e solucionar os problemas de um computador.</p>
+          <p>Para acessar as Ferramentas Informações do Sistema, use o seguinte caminho:</p>
+          <p>Iniciar > Todos os Programas > Acessórios > Ferramentas do Sistema > Informações do Sistema</p>
+          <p>Você também pode gerar um arquivo contendo todas as informações sobre o computador e enviá-lo para outro técnico ou help desk. Para exportar um arquivo de informações do sistema, clique em Arquivo > Exportar, digite o nome do arquivo, escolha um local e clique em Salvar.</p>
+          <p>A ferramenta de Informações do Sistema no Windows XP fornece acesso a muitos outros recursos:</p>
+          <p><ul>
+              <li>Diagnóstico de Rede - Executa vários testes para solucionar problemas de rede.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Restauração do Sistema - Cria ou carrega um ponto de restauração para restaurar os arquivos e as configurações do sistema.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Utilitário de Verificação de Assinatura de Arquivo - Verifica os arquivos de sistema que não são assinados digitalmente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Ferramenta de Diagnóstico do DirectX - Realiza relatórios contendo informações detalhadas sobre os componentes do DirectX que estão instalados em seu computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Dr Watson - Depura o Windows para ajudar a diagnosticar erros de programas.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

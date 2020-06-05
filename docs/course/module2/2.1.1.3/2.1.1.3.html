@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.1.3 Segurança Contra Incêndios</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos Seguros de Laboratório</h1>
+        <h2>Procedimentos de Proteção Pessoal</h2>
+      </div>
+      <div id="content">
+          <p>Siga as orientações de segurança contra incêndio para proteger vidas, estruturas e equipamentos. Para evitar um choque elétrico e evitar danos ao computador, desligue e desconecte o computador antes de iniciar um reparo.</p>
+          <p></p>
+          <p>O fogo pode se espalhar rapidamente e causar um grande prejuízo. O uso adequado de um extintor de incêndio pode impedir que um pequeno fogo fique fora de controle. Ao trabalhar com os componentes do computador, esteja ciente da possibilidade de um incêndio acidental e saiba como reagir a tal situação. Esteja em alerta para com os odores que são emitidos dos computadores e dispositivos eletrônicos. Quando os componentes eletrônicos superaquecem ou entram em curto, eles emitem um cheiro de queimado. Se houver um incêndio, siga estes procedimentos de segurança:</p>
+          <p></p>
+          <p><ul>
+              <li>Nunca combata um incêndio que está fora de controle ou que não está contido.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sempre tenha uma rota de fuga de incêndio planejada antes de iniciar qualquer trabalho.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Saia do prédio rapidamente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Entre em contato com os serviços de emergência para obter ajuda.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Localize e leia as instruções sobre os extintores de incêndio em seu local de trabalho antes de usá-los.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Esteja familiarizado com os tipos de extintores de incêndio usados ​​em seu país ou região. Cada tipo de extintor de incêndio tem produtos químicos específicos para combater diferentes tipos de incêndios:</p>
+          <p><ul>
+              <li>Papel, madeira, plástico, papelão</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gasolina, querosene, solventes orgânicos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Equipamentos elétricos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Metais combustíveis</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>É importante saber como usar um extintor de incêndio. Use o auxiliar de memória P-M-A-M para se lembrar das regras básicas de funcionamento do extintor de incêndio:</p>
+          <p>P - Puxe o pino.</p>
+          <p>M - Mire na base do fogo, não nas chamas.</p>
+          <p>A - Aperte a alavanca.</p>
+          <p>M - Mova o bico de um lado para outro.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

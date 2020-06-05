@@ -1,0 +1,26 @@
+﻿<textcomponents>
+<component id='ID_table'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 3: Teste a Teoria para Determinar a Causa</b></font></td>
+	</tr> 
+               <tr>
+          <td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+        <tr>
+          <td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+          <td  valign="top" bgcolor='#F3F5E7'><font color='#393536'><textformat blockindent='-18'><li>Reinicie a impressora ou scanner.</li>
+							<li>Desconecte e reconecte os cabos.</li>
+							<li>Reinicie o computador.</li>
+							<li>Verifique se há papel atolado na impressora.</li>
+							<li>Coloque novamente papel nas bandejas.</li>
+							<li>Abra e feche a bandeja da impressora.</li>
+							<li>Verifique se as portas da impressora estão fechadas.</li>
+							<li>Instale um novo cartucho ou torne.</li></textformat></font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+</textcomponents>
+

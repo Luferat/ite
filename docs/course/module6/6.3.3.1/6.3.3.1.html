@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.3.1 TCP e UDP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Portas e Protocolos Comuns</h2>
+      </div>
+      <div id="content">
+          <p>Um protocolo é um conjunto de regras. O IP (Internet Protocol) é um conjunto de regras que rege a comunicação dentro e entre os computadores da rede. As especificações do protocolo definem o formato das mensagens que são trocadas. Uma carta enviada por meio do sistema postal (correio postal) também utiliza protocolos. Parte do protocolo especifica qual o local onde o endereço de entrega do envelope precisa ser escrito. Se o endereço de entrega está escrito no lugar errado, a carta não pode ser entregue.</p>
+          <p>O tempo é crucial para a entrega confiável de pacotes. Protocolos exigem mensagens para chegar dentro de determinados intervalos de tempo para que os computadores não esperem indefinidamente por mensagens que podem ter sido perdidas. Os sistemas mantem um ou mais temporizadores durante a transmissão de dados. Protocolos também iniciam ações alternativas, caso a rede não atenda às regras de tempo.</p>
+          <p>Estas são as principais funções dos protocolos:</p>
+          <p><ul>
+              <li>Identificação e tratamento de erros</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Compressão de dados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Decidir como os dados devem ser divididos e empacotados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Endereçamento de pacotes de dados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Decidir como anunciar o envio e recebimento de pacotes de dados</li>
+            </ul>
+          </p>
+          <p>Dispositivos e computadores conectados à Internet utilizam um conjunto de protocolos chamado de TCP/IP para se comunicar uns com os outros. A informação é transmitida, na maioria das vezes, através de dois protocolos, TCP e UDP, como mostrado na Imagem.</p>
+          <p>No projeto de uma rede, você deve determinar os protocolos que vão ser usados. Alguns protocolos são proprietários e rodam apenas em equipamentos específicos, enquanto outros protocolos são de padrão aberto e trabalham em uma variedade de equipamentos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

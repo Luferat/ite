@@ -1,0 +1,50 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Dispositivos usados ​​para se conectar a um ISP</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>DSL</b>]]></text>
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Modem DSL</b>]]></text>
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Linha Telefónica</b>]]></text>
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>Cabo</b>]]></text>
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[<b>Modem a Cabo</b>]]></text>
+</component>
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>Cabo Coaxial</b>]]></text>
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Ponto de acesso sem fio</b>]]></text>
+</component>
+
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Dispositivo multiuso</b>]]></text>
+</component>
+
+<component id="ID_s3_textBoxHead01">
+<text><![CDATA[<B>Recursos</B>]]></text>
+</component>
+
+<component id="ID_s3_textBoxBody01">
+<text><![CDATA[<textformat blockindent='-16'><LI>Segurança</LI><LI>Ponto de acesso sem fio</LI><LI>VPN</LI><LI>DHCP</LI><LI>NAT</LI><LI>Detecção de intruso</LI><LI>Voz Sobre IP (VoIP)</LI><LI>Qualidade de Serviço</LI></textformat>]]></text>
+</component>
+
+
+
+
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

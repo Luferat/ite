@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.3.2.1 Configurações Comuns</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação e Configuração de Impressoras</h1>
+        <h2>Configuração Padrão e Opções</h2>
+      </div>
+      <div id="content">
+          <p>Cada impressora pode ter diferentes configurações e opções definidas por padrão. Verifique o manual da impressora para obter informações específicas sobre sua configuração padrão e também sobre outras opções disponíveis.</p>
+          <p>Aqui estão algumas opções comuns de configuração disponíveis nas impressoras:</p>
+          <p><ul>
+              <li>Tipo de Papel - padrão, rascunho, brilhante ou fotográfico</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Qualidade da Impressão - Rascunho, Normal ou Fotografia</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressão Colorida - Utiliza muitas cores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressão preto-e-branco - Somente a tinta preta é usada</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressão Tons de Cinza - As imagens sçao impressas usando apenas tinta preta em diferentes tons</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tamanho do papel - Tamanhos de papel padrão, envelopes ou cartões de visita</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Orientação do Papel - paisagem ou retrato</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Layout - normal, banner, folheto ou cartaz</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressão Frente e Verso - imprime nos dois lados da folha</li>
+            </ul>
+          </p>
+          <p>As opções mais comuns da impressora que o usuário pode configurar incluem os controle de mídia e saída da impressora.</p>
+          <p>As seguintes opções de controle de mídia definem a forma como a impressora gerencia o papel:</p>
+          <p><ul>
+              <li>Seleção da bandeja de entrada do papel</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Seleção do caminho de saída</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tamanho do papel e orientação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Seleção do peso do papel</li>
+            </ul>
+          </p>
+          <p>As seguintes opções de saída da impressora controlam a forma como a tinta ou toner vai na folha:</p>
+          <p><ul>
+              <li>Gerenciamento de cores</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Velocidade de impressão</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

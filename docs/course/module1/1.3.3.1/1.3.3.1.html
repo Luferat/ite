@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.3.3.1 TCP and UDP</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Basic Networking Concepts and Technologies</h1>
+      <h2>Common Ports and Protocols</h2>
+    </div>
+    <div id="content">
+          <p>A protocol is a set of rules. Internet protocols are sets of rules governing communication within and between computers on a network. Protocol specifications define the format of the messages that are exchanged. A letter sent through the postal system also uses protocols. Part of the protocol specifies where the delivery address on the envelope needs to be written. If the delivery address is written in the wrong place, the letter cannot be delivered.</p>
+          <p>Timing is crucial for the reliable delivery of packets. Protocols require messages to arrive within certain time intervals so that computers do not wait indefinitely for messages that might have been lost. Systems maintain one or more timers during the transmission of data. Protocols also initiate alternative actions if the network does not meet the timing rules. </p>
+          <p>These are the main functions of protocols:</p>
+          <p>
+            <ul>
+              <li>Identifying errors </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Compressing the data </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Deciding how data is to be divided and packaged</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Addressing data packets</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Deciding how to announce the sending and receiving of data packets</li>
+            </ul>
+          </p>
+          <p>Devices and computers connected to the Internet use a protocol suite called TCP/IP to communicate with each other. The information is transmitted most often via two protocols:</p>
+          <p>
+            <ul>
+              <li>
+                <b>TCP </b>– Transmission Control Protocol (TCP) is the primary Internet protocol for the reliable delivery of data. TCP includes facilities for end-to-end connection establishment, error detection and recovery, and metering the rate of data flow into the network. Many standard applications, such as email, web browser, file transfer, and Telnet, depend on TCP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>UDP </b>– User Datagram Protocol (UDP) offers a connectionless service for delivery of data. UDP has lower overhead than TCP and does not provide reliability. Some network management applications, network file systems, and simple file transfer use UDP.</li>
+            </ul>
+          </p>
+          <p>In the design of a network, you must determine the protocols that are going to be used. Some protocols are proprietary and only work on specific equipment, while other protocols are open standard and work on a variety of equipment.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

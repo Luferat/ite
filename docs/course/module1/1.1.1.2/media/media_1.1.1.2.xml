@@ -1,0 +1,74 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Fonte de Alimentação</b>]]></text>
+</component>
+
+<component id="ID_table">
+  <text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td colspan='6' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#a2aa23'  valign="top" width="55" rowspan='2' id="voltage"><font color='#ffffff' size="11"><b>Voltagem</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top"  width="55" rowspan='2' id="Wire"><font color='#ffffff' size="11"><b>Cor do Fio</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top" rowspan='2' id="use"><font color='#ffffff' size="11"><b>Uso</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top" class="border_left" colspan='3' ><font color='#ffffff' size="11" ><b>Formato da Fonte de Alimentação</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#a2aa23'  valign="top" width="30" class="border_left"><font color='#ffffff' size="11"><b>AT</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top" width="35" class="border_left"><font color='#ffffff' size="11"><b>ATX</b></font></td>
+		<td bgcolor='#a2aa23'  valign="top" width="55" class="border_left" id="ATXv12"><font color='#ffffff' size="11"><b>ATX12V</b></font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">+12 V</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Amarelo</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Motores de acionamento de disco, coolers, dispositivos de refrigeração e slots de barramento do sistema</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#ffffff' valign="top"><font color='#393536' size="11">-12V</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Azul</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Alguns tipos de circuitos de portas seriais e memórias PROM (programmable read-only memory)antigas.</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">3,3 V</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Laranja</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Maioria das CPUS atuais, alguns tipos de memórias do sistema e placas de vídeo AGP</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11"></font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#ffffff' valign="top"><font color='#393536' size="11">+5 V</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Vermelho</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Placa-mãe, Baby AT, CPUs antigas e muitos componentes da placa-mãe</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">-5V</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Branco</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">Cartões de barramento ISA e memórias PROMS antigas.</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	<tr>
+		<td height="30" bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0V</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Preto</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Terra - Usado para aterrar circuitos com as outras tensões.</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">*</font></td>
+	</tr>
+	
+</table>]]></text>
+  </component>
+</textcomponents>

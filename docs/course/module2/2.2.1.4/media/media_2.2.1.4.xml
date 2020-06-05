@@ -1,0 +1,33 @@
+﻿<textcomponents> 
+ <component id="ID_btn01">
+  <text><![CDATA[<b>Pano macio e sem fiapos</b>]]></text>
+  </component>
+<component id="ID_btn02">
+  <text><![CDATA[<b>Ar Comprimido</b>]]></text> 
+  </component>
+<component id="ID_btn03">
+  <text><![CDATA[<b>Abraçadeiras</b>]]></text> 
+  </component>
+<component id="ID_btn04">
+  <text><![CDATA[<b>Organizador de Peças</b>]]></text>
+  </component>
+  
+<component id="ID_s1_caption">
+  <text><![CDATA[Um pano macio e que não solte fiapos é utilizado para limpar diferentes componentes do computador, sem arranhar ou deixar resíduos.]]></text>
+  </component>
+<component id="ID_s2_caption">
+  <text><![CDATA[O ar comprimido é utilizado para soprar poeira e detritos de diferentes partes do computador, sem tocar nos componentes.]]></text> 
+  </component>
+<component id="ID_s3_caption">
+  <text><![CDATA[As abraçadeiras são utilizadas para agrupar os cabos (internos e externos) de forma ordenada.]]></text> 
+  </component>
+<component id="ID_s4_caption">
+  <text><![CDATA[Um organizador de peças é utilizado para armazenar parafusos, jumpers, fixadores e outras peças pequenas, impedindo que as mesmas se misturem.]]></text>
+  </component>
+  
+  
+  
+<component id="transcript">
+  <text><![CDATA[<b>Entre com a transcrição aqui</b>]]></text> 
+  </component>
+</textcomponents>

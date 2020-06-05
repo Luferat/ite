@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.1.2 Funções Básicas de um Sistema Operacional</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas Operacionais Modernos</h1>
+        <h2>Termos e Características dos Sistemas Operacionais</h2>
+      </div>
+      <div id="content">
+          <p>Independentemente do tamanho e da complexidade do computador e do sistema operacional, todos os S.O. executam as mesmas quatro funções básicas:</p>
+          <p><ul>
+              <li>Controlar o acesso ao hardware</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gerenciar arquivos e pastas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Fornecer uma interface ao usuário</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Gerenciar aplicativos</li>
+            </ul>
+          </p>
+          <p>Acesso ao Hardware</p>
+          <p>O sistema operacional gerencia a interação entre os aplicativos e o hardware. Para acessar e se comunicar com cada componente de hardware, o sistema operacional usa um programa chamado driver de dispositivo. Quando um dispositivo de hardware é instalado, o sistema operacional localiza e instala o driver desse dispositivo no componente. A atribuição de recursos do sistema e a instalação dos drivers são realizadas pelo processo de plug-and-play (PNP). O sistema operacional, em seguida, configura o dispositivo e atualiza o registro, que é um banco de dados que contém todas as informações sobre o computador.</p>
+          <p>Se o sistema operacional não consegue localizar o driver do dispositivo, um técnico deve instalar o driver manualmente usando a mídia fornecida com o dispositivo ou baixá-lo no site do fabricante.</p>
+          <p>Gerenciamento de arquivos e pastas</p>
+          <p>O sistema operacional cria uma estrutura de arquivos no disco rígido para armazenar os dados. Um arquivo é um bloco de dados relacionados que tem um único nome e é tratado como uma única unidade. Os arquivos de programas e dados são agrupados em um diretório. Os arquivos e os diretórios são organizados para facilitar a recuperação e o uso. Os diretórios podem ser mantidos dentro de outros diretórios. Esses grupos de diretórios são chamados de subdiretórios. Os diretórios são chamados de pastas nos sistemas operacionais Windows, e os subdiretórios são chamados de subpastas.</p>
+          <p>Interface de Usuário</p>
+          <p>O sistema operacional permite ao usuário interagir com o software e hardware. Sistemas operacionais incluem dois tipos de interfaces de usuário:</p>
+          <p><ul>
+              <li>Interface de linha de comando (CLI) - o usuário digita comandos em um prompt, conforme apresentado na Imagem 1.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Interface gráfica do usuário (GUI) - O usuário interage com menus e ícones, conforme apresentado na Imagem 2.</li>
+            </ul>
+          </p>
+          <p>Gerenciamento de Aplicativos</p>
+          <p>O Sistema Operacional localiza uma aplicação e a carrega na memória RAM do computador. Aplicações são programas de software, tais como editores de texto, bancos de dados, planilhas e jogos. O sistema operacional aloca recursos do sistema disponíveis para os aplicativos em execução.</p>
+          <p>Para garantir que uma nova aplicação é compatível com um sistema operacional, os programadores seguem um conjunto de diretrizes conhecidas como uma Application Programming Interface (API). Uma API permite que os programas acessem os recursos gerenciados pelo sistema operacional de uma forma consistente e confiável. Aqui estão alguns exemplos de APIs:</p>
+          <p><ul>
+              <li>Open Graphics Library (OpenGL) - É um programa Multi-plataforma de especificação padrão para gráficos de multimídia</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DirectX - Coleção de APIs relacionados a tarefas de multimídia para o Microsoft Windows</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>API do Windows - Permite que aplicativos de versões mais antigas do Windows funcionem em versões mais recentes</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>APIs Java - Coleção de APIs relacionados com o desenvolvimento de programação Java</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

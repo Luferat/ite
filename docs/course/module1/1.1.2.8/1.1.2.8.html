@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.2.8 Dispositivos de Armazenamento e RAID</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Componentes Internos do Computador</h2>
+      </div>
+      <div id="content">
+          <p>Unidades de armazenamento, conforme apresentado na Figura 1, leem ou escrevem informação em meios de armazenamento magnéticos, ópticos ou de semicondutores. Esses dispositivos podem ser usados para armazenar dados de forma permanente ou para recuperar informações de um disco. As unidades de armazenamento podem ser instaladas dentro do gabinete do computador, como um disco rígido. Para portabilidade, algumas unidades de armazenamento podem ser conectadas ao computador através de uma porta USB, FireWire, eSATA, ou SCSI. Essas unidades de armazenamento portáteis são muitas vezes referidas como dispositivos removíveis e podem ser usadas em vários computadores. Aqui estão alguns tipos comuns de unidades de armazenamento:</p>
+          <p><ul>
+              <li>Unidade de disquete</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Disco rígido.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Unidade óptica</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Unidade Flash</li>
+            </ul>
+          </p>
+          <p>Unidade de disquete</p>
+          <p>A unidade de disquete ou unidade floppy, é um dispositivo de armazenamento que usa disquetes removíveis de 3,5 polegadas. Esses disquetes magnéticos podem armazenar 720 KB ou 1,44 MB de dados. Em um computador, o drive de disquete normalmente é configurado como a unidade A:. A unidade de disquete pode ser usada para inicializar o computador caso o disquete tenha uma imagem inicializável. A unidade de disquete de 5,25 polegadas é uma tecnologia mais antiga e raramente utilizada.</p>
+          <p>Disco Rígido</p>
+          <p>A unidade de disco rígido ou HD, é um dispositivo magnético usado para armazenar dados. Em um computador com Windows, o disco rígido normalmente é configurado como a unidade C: e contém o sistema operacional e os aplicativos instalados. A capacidade de armazenamento de um disco rígido varia de gigabytes(GB) à terabytes(TB). A velocidade de um disco rígido é medida em rotações por minuto(RPM). Esta medida é a rapidez com o eixo gira os discos que possuem dados armazenados. Quanto mais rápido a velocidade do eixo, mais rápido um disco rígido pode recuperar dados. Velocidades de eixos comuns incluem 5.400, 7.200, 10.000 e até 15.000 RPM em unidades de servidores high-end. Várias unidades de disco rígido podem ser adicionados para aumentar a capacidade de armazenamento.</p>
+          <p>Discos rígidos tradicionais usam armazenamento magnético. Discos rígidos magnéticos têm motores de acionamento que são projetados para girar os discos e mover as cabeças (agulhas) da unidade. Em contrapartida, os dispositivos de estado sólido mais recentes(SSDs) não têm partes móveis e usam semicondutores para armazenar dados. Pelo fato de um SSD não ter motores de acionamento e partes móveis, ele consome muito menos energia do que um disco rígido magnético. Chips de memória flash não-volátil gerenciam todo o armazenamento em um SSD, o que resulta em um acesso mais rápido aos dados, maior confiabilidade e consumo reduzido de energia. Os SSDs têm o mesmo formato dos discos rígidos magnéticos e se conectam através de interfaces ATA ou SATA. Você pode substituir uma unidade magnética por um SSD.</p>
+          <p>Unidade de Fita</p>
+          <p>Fitas magnéticas são frequentemente utilizadas para backups de segurança e arquivamento de dados. Essas fitas utilizam uma cabeça magnética de leitura/escrita (read/write). Embora a recuperação de dados utilizando uma unidade de fita possa ser rápido, localizar os dados específicos é um processo lento, pois a fita tem de ser enrolada em forma de bobina até que os mesmos sejam encontrados. A capacidades de armazenamento das fitas comuns variam entre alguns gigabytes para muitos terabytes.</p>
+          <p>Drive Óptico</p>
+          <p>Uma unidade óptica usa lasers para ler os dados presentes em uma mídia óptica. Existem três tipos de unidades ópticas:</p>
+          <p><ul>
+              <li>Compact disc (CD)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Digital versatile disc (DVD)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Blu-ray disc (BD)</li>
+            </ul>
+          </p>
+          <p>CD, DVD e as mídias BD podem ser pré-gravadas (read only), de gravação (write once) ou regraváveis. Os CDs têm capacidade de armazenamento de dados de aproximadamente 700 MB. Os DVDs têm capacidade de armazenamento de dados de cerca de 4,7 GB em um disco convencional, e cerca de 8,5 GB em um disco dual-layer. As mídias BD têm capacidade de armazenamento de 25 GB em um disco convencional simples e 50 GB em um disco de dual-layer.</p>
+          <p>Existem vários tipos de mídias ópticas:</p>
+          <p><ul>
+              <li>CD-ROM - Mídia pré-gravada read-only (apenas leitura)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CD-R - Mídia gravável que só pode ser gravada uma vez</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>CD-RW - Mídia regravável ​​que pode ser gravada, apagada e regravada</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DVD-ROM - Mídia pré-gravada read-only (apenas leitura)</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DVD-RAM - Mídia ​​que pode ser gravada, apagada e regravada</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DVD+/-R - Mídia gravável que só pode ser gravada uma vez</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>DVD+/-RW - Mídia regravável ​​que pode ser gravada, apagada e regravada</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>BD-ROM - Mídia somente-leitura(read-only) que é pré-gravada com filmes, jogos ou software</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>BD-R - Mídia gravável que pode armazenar vídeos em alta definição(HD) e dados do computador apenas uma vez.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>BD-RE - Mídia em formato regravável utilizada para gravação de vídeos em alta definição(HD) e armazenamento de dados do computador</li>
+            </ul>
+          </p>
+          <p>Unidade Flash Externa</p>
+          <p>Uma unidade de flash externa, também conhecida como pen drive, é um dispositivo de armazenamento removível que se conecta através de uma porta USB. Uma unidade de flash externa utiliza o mesmo tipo de chip de memória não-volátil que os SSDs e não necessita de energia para manter os dados armazenados. Essas unidades podem ser acessadas ​​pelo sistema operacional da mesma maneira que outros tipos de discos são acessados.</p>
+          <p>Tipos de Interfaces de Disco</p>
+          <p>Discos rígidos e unidades ópticas são fabricados com diferentes tipos de interfaces utilizadas para conectar a unidade ao computador. Para instalar a unidade de armazenamento no computador, a interface de conexão do dispositivo deve ser a mesma que no controlador da placa-mãe. Essas são algumas interfaces comuns de disco:</p>
+          <p><ul>
+              <li>IDE - Integrated Drive Electronics, também conhecido por Advanced Technology Attachment (ATA), é uma interface controladora de unidade antiga que conecta computadores e discos rígidos. Uma interface IDE usa um conector de 40 pinos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>EIDE - Enhanced Integrated Drive Electronics, também conhecido por ATA-2, é uma versão atualizada da interface do controlador da unidade IDE. EIDE suporta discos rígidos maiores que 512 MB, permite acesso direto à memória (DMA) e utiliza a interface ATAPI(AT Attachment Packet Interface) para acomodar as unidades ópticas e unidades de fita no barramento EIDE. Uma interface EIDE usa conector de 40 pinos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>PATA - Parallel ATA - Versão paralela da interface controladora da unidade ATA.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>SATA - Serial ATA - Versão serial da interface controladora da unidade ATA. A interface SATA usa um conector de dados de 7 pinos.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>eSATA - Serial ATA externo - Fornece uma interface hot-swappable externa para discos SATA. Hot-swapping é a capacidade de conectar e desconectar um dispositivo enquanto o computador está ligado. A interface eSATA conecta um dispositivo SATA externo utilizando um conector de 7 pinos. O comprimento máximo deste cabo pode ser de até 2 metros (6,56 pés).</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>SCSI - Small Computer System Interface é uma interface controladora de unidade que pode conectar até 15 dispositivos. O SCSI pode conectar unidades externas e internas. Além disso, uma interface SCSI utiliza conectores de 25, 50 e 68 pinos.</li>
+            </ul>
+          </p>
+          <p>O RAID fornece uma maneira de armazenar dados em vários discos rígidos para garantir redundância. Para o sistema operacional, o RAID aparece como um disco lógico. A Figura 2 apresenta uma comparação entre os diferentes níveis de RAID. Os termos a seguir descrevem como RAID armazena os dados em vários discos:</p>
+          <p><ul>
+              <li>Parity - detecta erros de dados.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Striping - Escreve dados em várias unidades.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mirroring - Também conhecido como espelhamento, armazena os dados duplicando-os em uma segunda unidade.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

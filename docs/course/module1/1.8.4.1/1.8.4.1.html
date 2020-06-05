@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.8.4.1 Domain and Workgroup</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Computer to Network Connection</h1>
+      <h2>OS Configurations</h2>
+    </div>
+    <div id="content">
+          <p>Domain and workgroup are methods for organizing and managing computers on a network. All computers on a network must be part of either a domain or a workgroup. When Windows is first installed on a computer, it is automatically assigned to a workgroup, as shown in Figure 1. </p>
+          <p>
+            <b>Domain</b>
+            <br/>A domain is a group of computers and electronic devices with a common set of rules and procedures administered as a unit. A domain does not refer to a single location or specific type of network configuration. Computers in a domain are a logical grouping of connected computers that can be located in different locations in the world. A specialized server called a domain controller manages all security-related aspects of users and network resources, centralizing security and administration.</p>
+          <p>For data protection, an administrator performs a routine backup of all files on the servers. If a computer crashes, or data is lost, the administrator can easily recover the data from a recent backup.</p>
+          <p>
+            <b>Workgroup</b>
+            <br/>A workgroup is a collection of workstations and servers on a LAN that are designed to communicate and exchange data with one another. Each individual workstation controls its user accounts, security information, and access to data and resources. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

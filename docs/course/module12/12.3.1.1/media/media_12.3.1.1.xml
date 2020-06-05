@@ -1,0 +1,159 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text>
+<![CDATA[<b> </b>]]>
+</text>
+</component>
+
+<component id='ID_table_01'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 1: Identificação do Problema</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Questões Abertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7' class="width"><textformat blockindent='-18'><font color='#393536'><li>Quando o problema começou?</li>
+<li>Quais LEDs de rede estão acesos?</li>
+<li>Quais os problemas que você está tendo?</li>
+<li>Existe alguma coisa que você pode me dizer sobre o problema?</li>
+<li>Outros usuários estão tendo problemas?</li>
+<li>Você pode descrever a sua configuração de rede?</li></font></textformat></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#FFFFFF'><font color='#393536'>Questões Fechadas</font></td>
+<td  valign="top" bgcolor='#FFFFFF'><textformat blockindent='-18'><font color='#393536'><li>Algum equipamento de rede mudou?</li>
+<li>Algum periférico foi adicionado ao seu computador?</li>
+<li>Algum outro computador foi adicionado à rede?</li>
+<li>Você reiniciou o seu computador?</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_02'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 2: Estabelecer a Teoria da Provável Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Causas comuns de problemas de rede</font></td>
+<td  valign="top" bgcolor='#F3F5E7' class="width_2"><textformat blockindent='-18'><font color='#393536'><li>Informações incorretas de IP</li>
+<li>Configuração wireless incorreta</li>
+<li>Conexão de rede desativada</li>
+<li>Verifique a configuração do roteador wireless</li>
+<li>Verifique os cabos e conexões</li>
+<li>Verifique as configurações dos equipamentos de rede</li></font></textformat></td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_03'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 3: Teste a Teoria para Determinar a Causa</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Passos comuns para determinar a causa</font></td>
+<td  valign="top" bgcolor='#F3F5E7' class="width_3"><textformat blockindent='-18'><font color='#393536'><li>Reinicie o equipamento de rede</li>
+<li>Renove o endereço IP</li>
+<li>Reconecte todos os cabos de rede</li>
+<li>Verifique a configuração do roteador wireless</li>
+<li>Realize ping no host local</li>
+<li>Realize ping no gateway padrão</li>
+<li>Realize ping em um site externo</li>
+<li>Verifique as configurações dos equipamentos de rede</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_04'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 4: Estabelecer um Plano de Ação para Verificar o Problema e Implementar a Solução</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Se nenhuma solução for alcançada na etapa anterior, novas pesquisas serão necessárias para implementar a solução</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Logs de Reparação do Helpdesk</li>
+<li>Outros Técnicos</li>
+<li>FAQs do Fabricante</li>
+<li>Websites Técnicos</li>
+<li>Grupos de Notícias</li>
+<li>Manuais do Computador</li>
+<li>Manuais dos Dispositivos</li>
+<li>Fóruns on-line</li>
+<li>Busca na Internet</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_05'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 5: Verifique a Funcionalidade Completa do Sistema e, se necessário, Implemente as Medidas Preventivas</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Verifique a Solução e a Funcionalidade Completa do Sistema </font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Reinicie todos os equipamentos da rede</li>
+<li>Reinicie qualquer computador que apresentou os problemas recorrentes</li>
+<li>Valide todos os LEDs no equipamento de rede</li>
+<li>Use o comando ipconfig /all para exibir as informações de endereçamento IP para todos os adaptadores de rede</li>
+<li>Use o comando ping para verificar a conectividade de rede à um site externo</li>
+<li>Use o comando nslookup para consultar o servidor de DNS</li>
+<li>Use o comando net view para mostrar os recursos compartilhados disponíveis em uma rede</li>
+<li>Imprima em uma impressora compartilhada</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+<component id='ID_table_06'>
+<text>
+<![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="title">
+<td bgcolor='#DAE17A' colspan='2' class="title"><font size='14' color='#393536'><b>Passo 6: Documente as Descobertas, Ações e Resultados</b></font></td>
+</tr> 
+<tr>
+<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+</tr>
+<tr>
+<td width="150" valign="top" bgcolor='#F3F5E7'><font color='#393536'>Documente as Descobertas</font></td>
+<td  valign="top" bgcolor='#F3F5E7'><textformat blockindent='-18'><font color='#393536'><li>Discuta a solução implementada com o cliente</li>
+<li>O cliente deve verificar se o problema foi resolvido</li>
+<li>Fornecer os documentos ao cliente.</li>
+<li>Documente as medidas tomadas para resolver o problema na ordem de trabalho e no diário do técnico</li>
+<li>Documente quaisquer componentes utilizados no reparo.</li>
+<li>Documente o tempo gasto para resolver o problema</li></font></textformat>
+</td>
+</tr>
+</table>]]>
+</text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.2.2 IPv4</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conceitos Básicos de Redes e Tecnologias</h1>
+        <h2>Endereçando os Equipamentos da Rede</h2>
+      </div>
+      <div id="content">
+          <p>Um endereço IPv4 é composto por uma série de 32 bits binários (zeros e uns). É difícil para os seres humanos ler um endereço IPv4 binário. Por esta razão, os 32 bits são agrupados em quatro segmentos de 8 bits chamados octetos. Um endereço IPv4, mesmo nesse formato agrupados, é difícil para os seres humanos a ler, escrever e lembrar. Portanto, cada octeto é representado como o seu valor decimal, separados por um ponto. Este formato é chamado de notação decimal com pontos.</p>
+          <p>Quando um host é configurado com um endereço IPv4, ele é inserido como um número decimal com pontos, como 192.168.1.5. Imagine se você tivesse que digitar o binário equivalente a este de 32 bits: 11000000101010000000000100000101. Se apenas um bit foi digitado incorretamente, o endereço seria diferente, e o host pode não ser capaz de se comunicar na rede.</p>
+          <p>O endereço IPv4 é hierárquico e é composto de duas partes. A primeira parte identifica a rede e a segunda parte identifica um host naquela rede. Ambas as partes são necessárias. Por exemplo, se um host tem o endereço IPv4 192.168.18.57, os três primeiros octetos, 192.168.18, identificam a parte de rede do endereço e o último octeto, 57, identifica o host. Isto é conhecido como endereçamento hierárquico, pois os roteadores só precisam se comunicar com redes e não individualmente com os hosts. Um roteador é um dispositivo de rede que encaminha pacotes de dados através de redes de destino.</p>
+          <p>Os endereços IPv4 são divididos nas seguintes classes:</p>
+          <p><ul>
+              <li>Classe A - Grandes redes implementadas por grandes empresas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Classe B - Redes de médio porte implementadas por universidades e outras organizações de tamanho similar</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Classe C - Pequenas redes implementadas por pequenas empresas ou prestadores de serviços de Internet (ISPs) para assinaturas de clientes</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Classe D - Uso especial para multicasting</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Classe E - Usado para testes experimentais</li>
+            </ul>
+          </p>
+          <p>Além da criação de classes separadas, o IETF reservou um espaço de endereços de Internet para redes privadas. Redes privadas não têm nenhuma conexão com as redes públicas. Endereços de rede privadas não são roteados através da Internet. Isso permite que as redes em locais diferentes usem o mesmo esquema de endereçamento privado, sem criar conflitos de endereçamento. Um exemplo de quando esses endereços privados são úteis é em um laboratório de sala de aula onde você quer impedir o acesso vindo do lado de fora de sua rede.</p>
+          <p>Cada uma dessas classes tem uma gama de endereços IP privados:</p>
+          <p><ul>
+              <li>Classe A - 10.0.0.0 a 10.255.255.255</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Classe B - 172.16.0.0 a 172.31.255.255</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Classe C - 192.168.0.0 a 192.168.255.255</li>
+            </ul>
+          </p>
+          <p>Máscara de Sub-rede IPv4</p>
+          <p>A máscara de sub-rede indica a porção de rede de um endereço IPv4. Como o endereço IPv4, a máscara de sub-rede é um número decimal com pontos. Normalmente, todos os hosts dentro de uma LAN usam a mesma máscara de sub-rede. A figura mostra as máscaras de sub-rede padrão para endereços IPv4 utilizáveis ​​que são mapeadas para as três primeiras classes de endereços IPv4:</p>
+          <p><ul>
+              <li>255.0.0.0 - Classe A, o que indica que o primeiro octeto do endereço IPv4 é a parte da rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>255.255.0.0 - Classe B, o que indica que os dois primeiros octetos do endereço IPv4 são as partes da rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>255.255.255.0 - Classe C, o que indica que os três primeiros octetos do endereço IPv4 são as partes da rede</li>
+            </ul>
+          </p>
+          <p>Se uma organização possui uma rede de classe B, mas precisa fornecer endereços IPv4 para quatro LANs, a organização deve subdividir o endereço de Classe B em quatro partes menores. Sub-rede é uma divisão lógica de uma rede. Ela fornece uma maneira de dividir uma rede, e a máscara de sub-rede especifica como a rede é subdividida. Um administrador de rede experiente normalmente cria sub-redes. Depois que o esquema de sub-rede for criado, os endereços IPv4 e máscaras de sub-rede adequados devem ser configurados nos hosts das quatro LANs. Essas habilidades são ensinadas no curso Cisco Certified Network Associate (CCNA) do programa Cisco Networking Academy.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.4.1.1 Resumo</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>O Profissional de TI</h1>
+        <h2>Resumo</h2>
+      </div>
+      <div id="content">
+          <p>Neste capítulo, você aprendeu sobre a relação entre as habilidades de comunicação e as habilidades de resolução de problemas. Você aprendeu que essas duas habilidades precisam ser combinadas para fazer de você um técnico de sucesso. Você também aprendeu sobre os aspectos jurídicos e éticos de lidar com computadores e a propriedade do cliente.</p>
+          <p>Os seguintes conceitos deste capítulo são importantes para serem lembrados:</p>
+          <p><ul>
+              <li>Para ser um técnico bem sucedido, você deve praticar suas boas habilidades de comunicação com clientes e colegas de trabalho. Estas habilidades são tão importantes quanto o conhecimento técnico.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Você deve sempre se conduzir de uma maneira profissional com seus clientes e colegas de trabalho. O comportamento profissional aumenta a confiança do cliente e a sua credibilidade. Você também deve aprender a reconhecer os sinais clássicos de um cliente difícil e aprender o que fazer e o que não fazer quando você estiver em uma chamada com este cliente.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Existem técnicas que você pode usar para manter um cliente difícil voltado para o problema durante uma chamada. Primeiramente, você deve manter a calma e fazer perguntas pertinentes de uma forma adequada. Estas técnicas irá mantê-lo no controle da chamada.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Há um jeito certo e um errado de colocar o cliente em espera ou transferir um cliente para outro técnico. Aprenda e use o jeito certo sempre. Realizar uma destas operações de forma incorreta pode afetar negativamente o relacionamento de sua empresa com seus clientes.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Netiqueta é uma lista de regras para usar sempre que você se comunicar através de mensagens de texto, email, mensagens instantâneas e blogs.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Você deve compreender e cumprir a SLA do seu cliente. Se o problema está fora dos parâmetros do SLA, encontre formas positivas de dizer ao cliente o que você pode fazer para ajudá-lo e o que você não pode fazer. Em circunstâncias especiais, você pode optar por escalar a ordem de trabalho para a gerência.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Além do SLA, você deve seguir as políticas de negócios da empresa. Estas políticas incluem como sua empresa prioriza as chamadas, como e quando escalar uma chamada para a gerência e quando você tem permissão para fazer intervalos e almoço.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O trabalho de um técnico de informática é estressante. É raro encontrar um cliente que está tendo um bom dia. Você pode aliviar um pouco do estresse através da organização de sua estação de trabalho da forma mais benéfica possível ergonomicamente. Utilize técnicas de gerenciamento de tempo e estresse todos os dias.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Há aspectos éticos e legais de trabalhar com informática. Você deve estar ciente das políticas e práticas de sua empresa. Além disso, você pode precisar se familiarizar com as leis de marca registrada de seu local ou país e de direitos autorais.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>A coleta e análise de dados de sistemas de computadores, redes, comunicações sem fio e dispositivos de armazenamento é chamado de computação forense.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Leis cibernéticas explicam as circunstâncias em que os dados (evidências) podem ser coletados a partir de computadores, dispositivos de armazenamento de dados, redes e comunicações sem fio. A primeira resposta é o termo usado para descrever os procedimentos oficiais utilizados por aquelas pessoas que estão qualificadas para recolher provas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Mesmo se você não for um administrador de sistema ou um perito forense computacional, é um bom hábito criar documentações detalhadas de todo o trabalho que você faz. Ser capaz de provar como e onde as provas foram coletadas entre o tempo de coleta e a sua entrada no processo judicial é conhecida como a cadeia de custódia.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O call center é um ambiente em ritmo acelerado. Os técnicos de nível um e nível dois possuem responsabilidades específicas. Estas responsabilidades podem variar ligeiramente de um call center para outro.</li>
+            </ul>
+          </p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

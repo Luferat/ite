@@ -1,0 +1,14 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Considerations and requirements process</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Determine end-user requirements</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Determine choices and select OS</b>]]></text> 
+  </component>
+<component id="transcript">
+  <text><![CDATA[<b>transcript goes here</b>]]></text> 
+  </component>
+</textcomponents>

@@ -1,0 +1,75 @@
+﻿<textcomponents> 
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Especificações do Cartão de Expansão do Laptop</b>]]></text>
+</component>
+
+<component id='ID_s1_table01'>
+    <text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td width='70' bgcolor='#A2AA23'><font color='#ffffff'><b>PC Bus</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Tamanho</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Espessura</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Interface</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Exemplos</b></font></td>
+	</tr> 
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Tipo I</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>85.6 mm X 54 mm</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>3.3 mm</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Memória, IO, CardBus</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>SRAM, Flash</font></td>
+	</tr> 
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Tipo II</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>85.6 mm X 54 mm</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>5 mm</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Memória, IO, CardBus</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Modem, LAN, Wireless</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Tipo III</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>85.6 mm X 54 mm</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>10.5 mm</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Memória, IO, CardBus</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Disco rígido.</font></td>
+	</tr> 
+</table>]]></text>
+    </component>
+	
+<component id='ID_s1_table02'>
+    <text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td colspan='5' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td width='70' bgcolor='#A2AA23'><font color='#ffffff'><b>Express Bus</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Tamanho</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Espessura</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Interface</b></font></td>
+		<td bgcolor='#A2AA23'><font color='#ffffff'><b>Exemplos</b></font></td>
+	</tr> 
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Express Card/34</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>75 mm X 34 mm</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>5 mm</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>PCI Express, USB 2.0 ou USB 3.0</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Firewire, Sintonizador de TV, NIC Wireless</font></td>
+	</tr> 
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Express Card/54</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>75 mm X 54 mm</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>5 mm</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>PCI Express, USB 2.0 ou USB 3.0</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Leitor de Smart Card, Leitor de Compact Flash, disco rígido de 1,8 polegada</font></td>
+	</tr>
+</table>]]></text>
+    </component>
+
+<component id="ID_s2_title">
+	<text><![CDATA[<b>Cartões de Expansão do Laptop</b>]]></text>
+</component> 
+ 
+</textcomponents>

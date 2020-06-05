@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.5.4 Instalação dos Cabos do Painel Frontal</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Montagem de Computadores</h1>
+        <h2>Instalação dos Cabos</h2>
+      </div>
+      <div id="content">
+          <p>O gabinete do computador possuí botões utilizados para controlar a alimentação da placa-mãe e LEDs para indicar sua atividade. Você deve conectar esses botões e LEDs na placa-mãe utilizando os cabos da parte frontal do gabinete. A Figura 1 mostra alguns dos cabos do painel frontal comumente encontrados em um gabinete. A Figura 2 exibe o painel de sistema de uma placa-mãe, onde os cabos frontais são conectados. As escritas presentes na placa-mãe, próximas ao painel do sistema, mostra onde cada cabo deve ser conectado.</p>
+          <p></p>
+          <p>Os Conectores do painel do sistema não são chaveados. As diretrizes para conectar cabos aos conectores do painel do sistema a seguir são genéricas, pois não há normas definidas para rotulação dos cabos de gabinetes ou do painel do sistema. As marcas e escrituras presentes em seus cabos do painel frontal e nos conectores do painel do sistema pode ser diferente do que são exibidos. Sempre consulte o manual da sua placa-mãe para obter diagramas e informações adicionais sobre como conectar os cabos do painel frontal.</p>
+          <p></p>
+          <p>Botões de Energia e de Reset</p>
+          <p>O botão de energia liga e desliga o computador. Se o botão de energia não conseguir desligar o computador, mantenha-o pressionado durante 5 segundos. O botão reset reinicia o computador sem desligá-lo. Algumas placas-mãe não suportam o botão de reset. Neste caso, talvez seja necessário pressionar o botão de energia por um curto período de tempo para reiniciar o computador.</p>
+          <p></p>
+          <p>Cada um dos cabos do painel frontal tem uma pequena seta indicando o pino 1, conforme exibido na Figura 3. Para conectar o botão de energia, alinhe o pino 1 do cabo com o pino PWR do painel da placa-mãe. Para conectar o botão de reset, alinhe o pino 1 do cabo com o pino RESET do painel da placa-mãe.</p>
+          <p></p>
+          <p>LEDs de Energia e Atividade do Disco Rígido</p>
+          <p>O LED de energia permanece aceso quando o computador está ligado e pisca quando o computador está em modo de suspensão. O LED de atividade da unidade permanece aceso ou piscando quando o computador está lendo ou gravando informações no disco rígido. Cada par de pinos de LED presente no painel do sistema tem um pino marcado com um sinal de adição (+), conforme mostrado na Figura 4. Para conectar o LED de energia, alinhe o pino 1 do cabo com o pino PLED+ no painel da placa-mãe. Para conectar o LED IDE, alinhe o pino 1 do cabo com o pino IDE_LED+ do painel da placa-mãe.</p>
+          <p></p>
+          <p>Speaker do Sistema</p>
+          <p>A placa-mãe usa o speaker do sistema para indicar o status do computador. O speaker do sistema não é o mesmo que os alto-falantes que um computador utiliza para reproduzir músicas e outros arquivos de áudio. Um beep sonoro indica que o computador foi ligado corretamente. Se houver algum problema de hardware, uma série de beeps será emitida para indicar o tipo de problema. Os beeps de diagnóstico serão discutidos mais tarde neste capítulo.</p>
+          <p>O cabo do speaker do sistema utiliza normalmente quatro pinos do painel do sistema. Para conectar o speaker, alinhe o pino 1 do cabo com o pino &quot;+&quot; ou &quot;5V&quot; do painel da placa-mãe.</p>
+          <p></p>
+          <p>USB</p>
+          <p>As portas USB ficam localizadas na parte externa do gabinete. Os conectores USB normalmente consistem de 9 ou 10 pinos dispostos em duas fileiras, conforme mostrado na Figura 5. Esse arranjo permite duas conexões USB, pois os conectores USB geralmente são dispostos em pares. Às vezes, os dois conectores estão juntos numa só peça, como mostrado na Figura 6, e podem ser conectados em qualquer conector USB da placa-mãe. Os conectores USB podem ter quatro ou cinco pinos dispostos individualmente ou em grupos.</p>
+          <p></p>
+          <p>A maioria dos dispositivos USB requerem apenas a conexão de quatro pinos. O quinto pino é utilizado para aterrar a blindagem de alguns cabos USB. Para conectar a interface USB, alinhe o pino 1 do cabo com o pino marcado como &quot;USB +5V&quot; ou &quot;5V&quot;.</p>
+          <p></p>
+          <p>CUIDADO: Certifique-se de que o conector da placa-mãe esteja marcado como USB. Os conectores FireWire são muito semelhantes. Conectar os cabos USB em conectores FireWire pode causar danos.</p>
+          <p></p>
+          <p>Novos gabinetes e placas-mãe podem possuir interfaces USB 3.0. O conector USB 3.0 da placa-mãe é similar em design a um conector USB, porém possui pinos adicionais.</p>
+          <p></p>
+          <p>Áudio</p>
+          <p>Alguns gabinetes têm portas de áudio externas utilizadas para conectar microfones, equipamento de áudio externo, como processadores de sinal, mesas de mixagem e instrumentos. Painéis especiais de áudio também podem ser comprados e conectados diretamente à placa-mãe. Estes painéis podem instalados em uma ou mais baias externas ou serem standalone. Devido à funções especializadas e variedades de hardware, consulte a documentação da placa-mãe, gabinete e do painel de áudio para obter instruções específicas para conectar os cabos aos conectores da placa-mãe.</p>
+          <p></p>
+          <p>Para instalar os cabos do painel frontal, siga estes passos:</p>
+          <p>Passo 1. Conecte o cabo de alimentação no conector do painel do sistema, identificado como POWER.</p>
+          <p>Passo 2. Conecte o cabo de reset no conector do painel do sistema, identificado como RESET.</p>
+          <p>Passo 3. Conecte o cabo de LED de energia no conector do painel do sistema, identificado por power LED.</p>
+          <p>Passo 4. Conecte o cabo de LED de atividade da unidade no conector do painel do sistema, identificado por IDE LED.</p>
+          <p>Passo 5. Conecte o cabo do speaker no conector do painel do sistema, identificado como SPEAKER.</p>
+          <p>Passo 6. Conecte o cabo USB no conector USB.</p>
+          <p>Passo 7. Conecte o cabo de áudio no conector de áudio.</p>
+          <p></p>
+          <p>Em geral, se um botão ou LED não funcionar, o conector pode estar encaixado de forma inadequada. Para corrigir esse problema, desligue o computador e desconecte-o da tomada, abra o gabinete e encaixe corretamente o conector ou o LED que não está funcionando.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

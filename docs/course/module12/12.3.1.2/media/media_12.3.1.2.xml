@@ -1,0 +1,241 @@
+﻿<textcomponents>
+  <component id='ID_table_01'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+			<tr class="title">
+				<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Conexões de Rede</b></font></td>
+			</tr> 	  			
+			<tr class="liner">
+			  <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+			</tr>
+		<tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificar o Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+		<tr>
+			<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um computador pode se conectar a um dispositivo de rede pelo endereço IP, mas não pelo nome do host.</font></td>
+			  <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O nome do host está incorreto.</li>
+						<li>Configurações incorretas do DNS.</li>
+						<li>Servidor DNS não está operacional.</li></textformat></font></td>
+			  <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Insira novamente o nome do host.</li>
+					<li>Insira novamente o endereço IP do servidor DNS.</li>
+					<li>Reinicie o servidor DNS.</li></textformat></font></td>
+        </tr>	
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador não obtêm ou não renova o endereço IP.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O computador está usando um endereço IP estático.</li>
+				<li>Cabo de rede está desconectado.</li>
+				<li>O firewall está bloqueando o DHCP.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Habilite a função para que o computador obtenha um endereço IP automaticamente.</li>
+				<li>Verifique as conexões do cabo.</li>
+				<li>Alterar as configurações do firewall para permitir o tráfego DHCP.</li></textformat></font></td>
+        </tr>		
+		<tr>
+			<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Uma mensagem de conflito de endereço IP é exibida quando um novo computador é conectado à rede.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O mesmo endereço IP é atribuído a dois dispositivos diferentes na rede.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Configure cada dispositivo com um único endereço IP.</font></td>
+        </tr>
+		
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um computador tem acesso à rede, mas não à Internet.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O endereço IP do gateway está incorreto.</li>
+				<li>O roteador não está configurado incorretamente.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Reinicie o roteador e insira novamente as configurações no mesmo.</font></td>
+        </tr>		
+		 <tr>
+			<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador obtêm automaticamente o endereço IP 169.254.x.x, mas não pode se conectar à rede.</font></td>
+         	 <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O servidor DHCP não está ligado.</li>
+            	<li>O computador não pode se comunicar com o servidor DHCP.</li>
+            	<li>Um outro computador foi atribuído com um endereço IP estático que está pool do DHCP.</li></textformat></font></td>
+          	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Ligue o servidor DHCP.</li>
+          		<li>Execute o comando ipconfig/release e depois o comando ipconfig/renew.</li>
+          		<li>Reinicie o computador.</li></textformat></font></td>
+        </tr>
+
+		
+		<tr>
+			<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Os usuários estão com velocidades de transferência baixa na rede wireless.</font></td>
+         	 <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>A segurança da rede sem fio não foi implementada, permitindo que os usuários não autorizadas tenham acesso.</li>
+					<li>Há muitos usuários conectados no mesmo ponto de acesso.</li></textformat></font></td>
+          	<td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Implemente um plano de segurança para a rede sem fio.</li>
+					<li>Adicione outro ponto de acesso.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+			<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Usuários estão com conectividade intermitente na rede sem fio.</font></td>
+         	 <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O usuário está muito longe do ponto de acesso.</li>
+					<li>O sinal sem fio está sofrendo interferência de fontes externas.</li>
+					<li>Há muitos usuários conectados no mesmo ponto de acesso.</li></textformat></font></td>
+          	<td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Verifique se o ponto de acesso está localizado em uma posição central em relação aos dispositivos.</li>
+					<li>Mude os canais da rede wireless.</li>
+					<li>Adicione outro ponto de acesso.</li></textformat></font></td>
+        </tr>
+		
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_02'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		  <tr class="title">
+			<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Falhas de Email</b></font></td>
+		</tr> 
+			<tr class="liner">
+			  <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+			</tr>
+			
+		  <tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificar o Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  <tr>
+		 <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador não consegue enviar ou receber emails.</font></td>
+         <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O computador possui configurações incorretas no cliente de email.</li>
+				<li>O servidor de email está desligado.</li>
+				<li>Há um cabo de rede frouxo ou desconectado.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Reconfigure as definições do cliente de email.</li>
+			<li>Reinicie o servidor de email ou notifique seu provedor de serviços de email.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador pode enviar , mas não pode receber emails.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A caixa de entrada está cheia.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Arquive ou exclua os emails para obter mais espaço.</font></td>
+        </tr>
+		
+		<tr>
+		 <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O computador não pode receber um determinado anexo de email.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O anexo do email é muito grande.</li>
+				<li>O anexo do email contém um vírus e foi bloqueado pelo antivírus.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Solicite ao remetente para dividir o anexo em partes menores e reenviá-los em emails individuais.</li>
+			<li>Solicite ao remetente para verificar o anexo antes de enviá-lo.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador não consegue se autenticar no servidor de email.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>As configurações do servidor de email estão incorretas.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Digite as configurações corretas do servidor de email.</font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_03'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+			  <tr class="title">
+				<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para FTP e Conexão de Internet Segura</b></font></td>
+			</tr> 
+			<tr class="liner">
+			  <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+			</tr>
+	  		<tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificar o Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  <tr>
+		 <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um usuário não pode acessar o servidor FTP.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O encaminhamento de porta não está habilitado no roteador.</li>
+				<li>Foi alcançado o número máximo de utilizadores.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Habilite o encaminhamento de porta no roteador para encaminhar a porta 21 para o endereço IP do servidor de FTP.</li>
+				<li>Aumente o número máximo de usuários simultâneos para FTP no servidor FTP.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O software de cliente FTP não consegue encontrar o servidor FTP.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O cliente FTP possui um endereço IP ou uma configuração de porta incorreta.</li>
+				<li>O servidor FTP não está funcionando.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Digite o endereço IP e as configurações de portas corretas no cliente FTP.</li>
+			<li>Reinicie o servidor FTP.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O servidor FTP desconecta o cliente após um curto período de inatividade.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O servidor FTP não permite que os clientes permaneçam conectados quando nenhum comando está sendo enviado para o servidor FTP.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Aumente a quantidade de tempo que um cliente FTP é autorizado a permanecer conectado sem realizar nenhuma ação.</font></td>
+        </tr>	
+		
+
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um computador não pode acessar um site HTTPS específico.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>A configuração do certificado SSL do navegador está incorreta.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Limpe o estado SSL.</li>
+			<li>Adicione o certificado raiz confiável.</li>
+			<li>Selecione Ferramentas > Opções da Internet > Avançado e certifique-se que a caixa de seleção SSL está habilitada.</li></textformat></font></td>
+        </tr>
+  		
+      </table>]]>
+    </text>
+  </component>
+  <component id='ID_table_04'>
+    <text>
+      <![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	  <tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemas e Soluções Comuns para Laptops ao Utilizar Ferramentas de Solução de Problemas de Rede</b></font></td>
+	</tr> 
+
+		<tr class="liner">
+          <td colspan='3' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'> <span style="color:#DAE17A">.</span> </font></td>
+        </tr>
+		<tr>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Identificar o Problema</b> </font></td>
+          <td bgcolor='#a2aa23'><font  color='#ffffff'> <b>Prováveis Causas</b> </font></td>
+          <td bgcolor='#a2aa23' ><font  color='#ffffff'> <b>Soluções Possíveis</b> </font></td>
+        </tr>
+	  <tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Computador pode pingar um endereço IP, mas não o nome do host.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O nome do host está incorreto.</li>
+				<li>As configurações de DNS do computador estão incorretas.</li>
+				<li>O servidor DNS não está operacional.</li>
+				<li>NetBIOS sobre TCP/IP não está habilitado.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Digite o nome de host correto.</li>
+			<li>Digite as configurações de DNS corretas.</li>
+			<li>Reinicie o servidor DNS.</li>
+			<li>Ative NetBIOS sobre TCP/IP.</li></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um computador em uma rede não pode pingar um computador em outra rede.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Existe uma conexão ruim ou algum dispositivo quebrado entre as duas redes.</li>
+				<li>ICMP echo request está desativado.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Use o tracert para localizar qual link está em down e corrija o mesmo.</li>
+			<li>Certifique-se de que o ICMP echo request está habilitada.</li></textformat></font></td>
+        </tr>
+		
+		<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Relatório nslookup &quot;Não é possível encontrar o nome de servidor para o endereço 127.0.0.0: expirou&quot;.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O endereço IP do DNS não está configurado no computador local.</li>
+				<li>O endereço IP do DNS não está correto.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Adicione o endereço IP de um servidor DNS válido nas propriedades TCP/IP do adaptador de rede.</font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Um computador não pode se conectar a uma pasta de rede compartilhada usando o comando net use.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>A pasta não está compartilhada.</li>
+				<li>O computador não está no mesmo grupo de trabalho.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Certifique-se que a pasta de rede foi compartilhada com o comando net share.</li>
+			<li>Defina o computador para o mesmo grupo de trabalho do computador que possui a pasta de rede compartilhada.</li></textformat></font></td>
+        </tr>
+		
+			<tr>
+			<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Ao tentar usar o comando ipconfig/release e ipconfig/renew, você recebeu a seguinte mensagem: &quot;Nenhuma operação pode ser realizada no adaptador enquanto a mídia estiver desconectada.&quot;</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O cabo de rede está desconectado.</li>
+				<li>O computador foi configurado com um endereço IP estático.</li></textformat></font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Reconecte os cabos de rede.</li>
+			<li>Altere as propriedades TCP/IP do adaptador de rede local para usar DHCP.</li></textformat></font></td>
+        </tr>
+		 <tr>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'>O computador não pode acessar o telnet de um computador remoto.</font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>O serviço telnet parou.</li>
+				<li>O computador remoto não foi configurado para aceitar conexões telnet.</li></textformat></font></td>
+          <td bgcolor='#F3F5E7' valign="top"><font color='#393536'><textformat blockindent='-18'><li>Inicie o serviço de telnet no computador remoto.</li>
+			<li>Configure o computador remoto para aceitar conexões telnet.</li></textformat></font></td>
+        </tr>
+		<tr>
+			<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>O ícone de rede na área de notificação mostra um ponto de exclamação amarelo. Ao tentar usar os comandos ipconfig/release e ipconfig/renew, você recebeu a seguinte mensagem: &quot;A operação falhou, pois nenhum adaptador permite esta operação.&quot;</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Um endereço de IP estático foi atribuído à interface.</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Altere a configuração de um endereço IP estático para obter um endereço IP automaticamente.</font></td>
+        </tr>
+      </table>]]>
+    </text>
+  </component>
+  
+  
+</textcomponents>

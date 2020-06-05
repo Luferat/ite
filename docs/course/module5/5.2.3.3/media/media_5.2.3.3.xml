@@ -1,0 +1,39 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Chaves do Registro</b>]]></text>
+</component>
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr> 
+	<tr>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>HKEY</b></font></td>
+		<td bgcolor='#A2AA23' valign="top" ><font  color='#FFFFFF'><b>DESCRIÇÃO</b></font></td>
+	</tr>
+	
+	<tr><td bgcolor='#FFFFFF' valign="top"><font color='#393536'>HKEY_CLASSES_ROOT</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Contêm informações sobre quais extensões de arquivo mapear para uma aplicação específica</font></td></tr>
+	<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>HKEY_CURRENT_USER</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Contêm informações, como configurações de desktop e histórico, relacionadas ao usuário atual do PC</font></td>
+	</tr>
+			<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>HKEY_USERS</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Contêm informações sobre todos os usuários que se conectaram em um sistema</font></td>
+	</tr>	
+		<tr>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>HKEY_LOCAL_MACHINE</font></td>
+		<td bgcolor='#F3F5E7' valign="top"><font color='#393536'>Contêm informações relacionadas a hardware e software</font></td>
+			</tr>
+			<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>HKEY_CURRENT_CONFIG</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Contêm informações relacionadas a todos os dispositivos ativos em um sistema</font></td>		
+	</tr>	
+	
+	
+</table>]]>
+</text>
+</component>
+
+</textcomponents>

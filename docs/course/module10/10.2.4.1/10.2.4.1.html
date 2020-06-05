@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.4.1 Tipos de Criptografia Comuns</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Técnicas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Codificação Hash</p>
+          <p>A codificação hash, ou hashing, garante que as mensagens não foram corrompidas ou adulteradas durante a transmissão. O hashing usa uma função matemática para criar um valor numérico que é exclusivo para os dados. Se mesmo um único carácter for alterado, a função de saída, chamada compilação de mensagem (message digest), não será o mesma. No entanto, a função é de uma unica via. Ter conhecimento da compilação da mensagem não permiti que um invasor recrie a mensagem, tornando-se difícil para alguém interceptar e alterar mensagens. A codificação hash é exibida na Imagem 1. Os algoritmos de hash mais populares são o Secure Hash Algorithm (SHA), Message Digest 5 (MD5) e o Data Encryption Standard (DES).</p>
+          <p>Criptografia Simétrica</p>
+          <p>A criptografia simétrica requer que ambos os lados de uma conversa criptografada usem uma chave de criptografia para codificar e decodificar os dados. O remetente e o destinatário devem utilizar chaves idênticas. A criptografia simétrica é mostrada na imagem 2. DES e 3DES são exemplos de criptografias simétricas.</p>
+          <p>Criptografia Assimétrica</p>
+          <p>A criptografia assimétrica requer duas chaves, uma chave privada e uma chave pública. A chave pública pode ser amplamente distribuída, através de e-mail ou publicação na web. A chave privada é mantida por um indivíduo e não deve ser divulgada a ninguém. Estas chaves podem ser utilizadas de duas maneiras.</p>
+          <p>A criptografia da chave pública é usada quando uma única organização precisa receber o texto criptografado a partir de uma fonte especifica. A chave pública pode ser amplamente distribuída e usada para criptografar as mensagens. O destinatário é a único a ter a chave privada, a qual é utilizada para decifrar as mensagens.</p>
+          <p>No caso das assinaturas digitais, uma chave privada é necessária para criptografar a mensagem e uma chave pública é necessária para descriptografar. Esta abordagem permite que o receptor esteja confiante sobre a origem da mensagem, pois só uma mensagem criptografada usando a chave privada do autor poderia ser descriptografada pela chave pública. A criptografia assimétrica, usando assinaturas digitais, é exibida na Imagem 3. RSA é o exemplo mais popular de criptografia assimétrica.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.1.2 Hubs, Bridges e Switches</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes Físicos de uma Rede</h1>
+        <h2>Dispositivos de Rede</h2>
+      </div>
+      <div id="content">
+          <p>Para fazer a transmissão de dados mais extensível e eficiente do que uma simples rede peer-to-peer, os projetistas de rede usam dispositivos de rede especializados, tais como hubs, bridges e switches, roteadores e pontos de acesso sem fio, para enviar dados entre dispositivos.</p>
+          <p>Hubs</p>
+          <p>Os hubs, mostrado na Figura 1, estendem o alcance de uma rede ao receber os dados em uma porta e, em seguida, regenerar os dados e enviá-los para todas as outras portas. Um hub também pode funcionar como um repetidor. Um repetidor amplia o alcance de uma rede, pois reconstrói o sinal, o qual supera os efeitos da degradação de dados causados pela distância. O hub também pode se conectar a outro dispositivo de rede, como um switch ou roteador, que conecta outras partes da rede.</p>
+          <p>Hubs são usados ​​com menos frequência hoje devido ao seu relação custo-benefício e o baixo custo dos switches. Hubs não segmentam o tráfego da rede, desta forma eles diminuem a quantidade de largura de banda disponível para todos os dispositivos conectados a eles. Além disso, como os hubs não podem filtrar os dados, uma grande quantidade de tráfego de rede desnecessário se move constantemente entre todos os dispositivos conectados a ele.</p>
+          <p>Bridges e Switches</p>
+          <p>Os arquivos são divididos em pequenos pedaços de dados, chamados de pacotes, antes de serem transmitidos através de uma rede. Este processo permite a verificação de erros e uma retransmissão mais fácil caso o pacote seja perdido ou danificado. Informações de endereçamento são adicionadas no início e no final dos pacotes antes de serem transmitidos. O pacote, juntamente com a informação do endereço, é chamado quadro.</p>
+          <p>As LANs são frequentemente divididas em seções chamadas segmentos, semelhante à maneira como uma empresa é dividida em departamentos ou uma escola é dividida em classes. Os segmentos podem ser definidos utilizando uma bridge. A bridge filtra o tráfego de rede entre os segmentos da LAN. As bridges mantem um registro de todos os dispositivos em cada segmento da bridge no qual eles estão conectados. Quando a bridge recebe um quadro, ela examina o endereço de destino para determinar se o quadro deve ser enviado para um segmento diferente ou descartado. A bridge também ajuda a melhorar o fluxo de dados, mantendo o quadro confinado apenas no segmento ao qual ele pertence.</p>
+          <p>Switches, mostrados na Figura 2, às vezes chamados de pontes multiportas. Uma bridge comum tem duas portas que ligam dois segmentos da mesma rede. Um switch possui várias portas, dependendo de quantos segmentos de rede devem ser conectados. Um switch é um dispositivo mais sofisticado do que uma bridge.</p>
+          <p>Em redes modernas, os switches substituíram os hubs como o ponto central de conectividade. Como um hub, a velocidade do switch determina a velocidade máxima da rede. No entanto, o switch filtra e segmenta o tráfego da rede, enviando os dados apenas para o dispositivo o destino. Isto proporciona uma maior largura de banda dedicada para cada dispositivo na rede.</p>
+          <p>Os switches mantêm uma tabela de comutação. A tabela de comutação contém uma lista de todos os endereços MAC na rede e uma lista de qual porta do switch pode ser usada para alcançar um dispositivo dado o seu endereço MAC. A tabela de comutação registra os endereços MAC inspecionando o endereço MAC de origem de cada quadro de entrada, bem como a porta em que o quadro chega. O switch então cria uma tabela de comutação que mapeia endereços MAC para as portas de saída. Quando um quadro que é destinado a um endereço MAC específico chega, o switch utiliza a tabela de comutação para determinar qual porta usar para alcançar o endereço MAC. O quadro é encaminhado utilizando a porta de destino. Através do envio de quadros utilizando apenas uma porta para o destino, as outras interface não são afetadas.</p>
+          <p>Power over Ethernet (PoE)</p>
+          <p>Um switch PoE transfere pequenas quantidades de corrente contínua através de um cabo Ethernet, juntamente com os dados, para um dispositivos PoE. Dispositivos de baixa tensão que suportam PoE, tais como pontos de acesso Wi-Fi, dispositivos de vídeo vigilância e placas de rede podem ser alimentados a partir de locais remotos. Dispositivos que suportam PoE podem receber energia, através de uma conexão Ethernet com distância de até 330 pés (100 m).</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

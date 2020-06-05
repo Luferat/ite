@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.2.1 Placa-Mãe</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Componentes Internos do Computador</h2>
+      </div>
+      <div id="content">
+          <p>A placa-mãe é a principal placa de circuito e contém os buses, ou caminhos elétricos, encontrados em um computador. Estes buses permitem que os dados viajem entre os diversos elementos que compõem um computador. A Imagem 1 mostra uma variedade de Placas-mãe. A placa-mãe também é conhecida como a placa do sistema ou placa principal.</p>
+          <p>A placa-mãe acomoda a unidade central de processamento (CPU), memória de acesso aleatório (RAM), slots de expansão, dissipador de calor e ventoinha, chip básico de entrada/saída do sistema (BIOS), chipset e o circuito que interliga os componentes da placa-mãe. Soquetes, conectores internos e externos e várias portas também são colocados na placa-mãe.</p>
+          <p>A forma das placas-mãe referem-se ao tamanho e forma da placa. Ele também descreve o layout físico dos diferentes componentes e dispositivos da placa-mãe. A forma determina como componentes individuais se anexam à placa-mãe e a forma do gabinete do computador. Existem diversos formatos de placas, como mostrado na Imagem 2.</p>
+          <p>A forma mais comum nos computadores de uso doméstico foi a AT, com base na placa-mãe IBM AT. A placa-mãe AT pode ser de cerca de 30 centímetros de largura. Este grande tamanho levou ao desenvolvimento de formatos menores. A colocação de dissipadores de calor e ventiladores, muitas vezes interfere com o uso de slots de expansão em formatos menores.</p>
+          <p>Uma nova forma de placa-mãe, ATX, melhorou o design AT. O ATX acomoda as portas integradas I/O na placa-mãe ATX. A fonte de alimentação ATX conecta-se à placa-mãe através de um único conector de 20 pinos, em vez das conexões confusas de P8 e P9, utilizados com alguns formatos anteriores. Em vez de usar um interruptor físico, a fonte de alimentação ATX pode ser ligada e desligada com a sinalização da placa-mãe.</p>
+          <p>Uma forma menor projetada para ser compatível com o ATX é o Micro-ATX. Os pontos de montagem da placa-mãe Micro-ATX eram um subconjunto das usadas em uma placa ATX, o painel de I/O era idêntico e era possível utilizar uma placa-mãe Micro-ATX em um gabinete de tamanho completo ATX.</p>
+          <p>As placas Micro-ATX geralmente usam os mesmos chipsets (Northbridges e southbridges) e conectores de energia das placas ATX de tamanho normal, eles podem usar muitos dos mesmos componentes. No entanto, gabinetes para Micro-ATX são geralmente muito menores do que gabinetes ATX e possuem menos slots de expansão.</p>
+          <p>Alguns fabricantes têm formatos proprietários com base no design ATX. Isso faz com que algumas placas-mãe, fontes de alimentação e outros componentes se tornem incompatíveis com gabinetes ATX padrão.</p>
+          <p>A forma ITX ganhou popularidade por causa de seu tamanho muito pequeno. Existem muitos tipos de placas-mãe ITX. Mini-ITX é um dos mais populares. A forma Mini-ITX consome pouca energia e faz com que os coolers não são necessários para mantê-la refrigerada. A placa-mãe Mini-ITX tem apenas um slot PCI para placas de expansão. Um computador baseado na forma Mini-ITX pode ser utilizado em lugares onde é inconveniente de ter um grande computador ou um computador com grande ruido.</p>
+          <p>Um conjunto importante de componentes na placa-mãe é o chipset. O chipset é composto de vários circuitos integrados ligados à placa-mãe. Eles controlam como o hardware do sistema interage com a CPU e placa-mãe. A CPU está instalada em um slot ou soquete na placa-mãe. O soquete da placa-mãe determina o tipo de CPU que pode ser instalado.</p>
+          <p>O chipset permite que a CPU se comunique e interaja com os outros componentes do computador, e troque dados com a memória do sistema, ou RAM, discos rígidos, placas de vídeo e outros dispositivos de saída. O chipset determina a quantidade de memória que pode ser adicionada a uma placa-mãe. O chipset também determina o tipo de conectores na placa-mãe.</p>
+          <p>A maioria dos chipsets são divididos em dois componentes distintos, Northbridge e Southbridge. O que cada componente faz varia de fabricante para fabricante. Em geral, o Northbridge controla o acesso à memória RAM, placa de vídeo, e as velocidades em que a CPU pode comunicar-se com eles. A placa de vídeo é, as vezes, integrada à Northbridge. AMD e Intel tem chips que integram o controlador de memória na die da CPU, o que melhora o desempenho e o consumo de energia. A Southbridge, na maioria dos casos, permite que a CPU se comunique com o disco rígido, placa de som, portas USB e outras portas de I/O.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

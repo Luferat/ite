@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.4.3 Filtragem de Endereços MAC</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Procedimentos de Segurança</h1>
+        <h2>Técnicas de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>A filtragem de endereços MAC é uma técnica usada para implantar segurança em nível de dispositivo em uma LAN sem fio. Como cada dispositivo sem fio tem um endereço MAC único, roteadores e os pontos de acesso sem fio podem impedir que alguns dispositivos se conectem à rede, caso os dispositivos de rede neguem o seu endereço MAC. Para aplicar a filtragem de endereços MAC, insira o endereço MAC dos dispositivos sem fio.</p>
+          <p>Para configurar a filtragem de endereços MAC, como mostrado na figura, siga esses passos:</p>
+          <p>Passo 1. Clique em Wireless > Wireless MAC Filter.</p>
+          <p>Passo 2. Selecione a opção Enabled.</p>
+          <p>Passo 3. Selecione o tipo de restrição de acesso (Prevent ou Permit).</p>
+          <p>Passo 4. Clique em Wireless Client List.</p>
+          <p>Passo 5. Selecione o cliente.</p>
+          <p>Passo 6. Clique em Save to MAC Address Filter List > Add > Save Settings > Continue.</p>
+          <p>Repita os passos acima para adicionar mais clientes à lista de endereços MAC.</p>
+          <p>O endereço MAC de uma placa de rede sem fio pode ser encontrado digitando ipconfig /all no prompt de comando. O endereço MAC é exibido na linha Endereço Físico. Para outros dispositivos, normalmente o endereço MAC está gravado na etiqueta do dispositivo ou dentro de manual do fabricante.</p>
+          <p>A filtragem de endereços MAC pode ser entediante se uma série de dispositivos estiver conectados à rede. Além disso, quando se utiliza a filtragem de endereços MAC, é possível que um invasor capture um endereço MAC usando ferramentas de hacker apropriadas. Depois que o intruso obtém o endereço MAC, ele pode usá-lo para se passar por um computador permitido na filtragem de endereços MAC. Nesse caso, use uma tecnologia de criptografia robusta.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

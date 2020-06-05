@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.4.3.2 Correção e Atualização de Sistemas Operacionais</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Métodos de Proteção de Dispositivos Móveis</h1>
+        <h2>Software de Segurança</h2>
+      </div>
+      <div id="content">
+          <p>Como o sistema operacional de um desktop ou laptop, você pode atualizar ou corrigir o sistema operacional de dispositivos móveis. Atualizações adicionam funcionalidades ou melhoram o desempenho. Os patches podem corrigir problemas de segurança ou de algum hardware ou software que não esteja funcionando corretamente.</p>
+          <p></p>
+          <p>Pelo fato de existirem diferentes dispositivos móveis Android as atualizações e patches não são lançadas como um pacote para todos os dispositivos. Às vezes, uma nova versão do Android não pode ser instalada em dispositivos mais antigos, onde o hardware não atende às especificações mínimas. Estes dispositivos podem receber patches para corrigir problemas conhecidos, mas não receberão atualizações do sistema operacional.</p>
+          <p></p>
+          <p>Atualizações e patches Android usam um processo automatizado para a entrega. Quando uma operadora ou fabricante possui uma atualização para um dispositivo, ela é apresentada como uma notificação no dispositivo informando que há uma atualização. Toque na atualização para iniciar o processo de download e instalação.</p>
+          <p></p>
+          <p>As atualizações do iOS utilizam um processo automatizado para entrega e os dispositivos que não atendem aos requisitos de hardware são excluídos. Para verificar se há atualizações para iOS, conecte o dispositivo ao iTunes. Um aviso de download é indicado se há atualizações disponíveis. Para verificar manualmente por atualizações, clique no botão Check for Update no painel de Resumo do iTunes.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

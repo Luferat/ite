@@ -1,0 +1,5 @@
+﻿<textcomponents>
+	<component id="ID_title">
+	 	 <text><![CDATA[<b>Configurações de Energia da BIOS</b>]]></text> 
+	</component>
+</textcomponents>

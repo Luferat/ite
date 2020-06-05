@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.1.1 LANs</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Identificando Redes</h1>
+        <h2>Tipos de Redes</h2>
+      </div>
+      <div id="content">
+          <p>As redes de dados continuam a evoluir em termos de complexidade, uso e design. Uma rede de computadores é identificada pelas seguintes características específicas:</p>
+          <p><ul>
+              <li>A área abrangida</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Como os dados são armazenados</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Como os recursos são geridos</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Como a rede é organizada</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo de dispositivos utilizados na rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Tipo de mídia usada para conectar os dispositivos</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Para os diferentes tipos de redes são dados diferentes nomes. Uma rede individual geralmente se espalha por uma única área geográfica, fornecendo serviços e aplicações a pessoas dentro de uma estrutura organizacional comum, tal como um único negócio, campus ou região. Esse tipo de rede é chamada de Local Area Network (LAN). Uma LAN pode ser feita de várias redes locais.</p>
+          <p></p>
+          <p>Todas as redes locais dentro de uma LAN estão em um mesmo grupo de controle administrativo. Este grupo reforça a segurança e as políticas de controle de acesso da rede. Neste contexto, o termo Local refere-se a um controle local consistente em vez de estar fisicamente perto uns dos outros. Dispositivos em uma LAN podem estar fisicamente perto, mas esta não é uma exigência.</p>
+          <p>A LAN pode ser tão pequena como uma única rede local instalada em uma casa ou pequeno escritório. Ao longo do tempo, a definição de uma LAN evoluiu para incluir redes locais interligadas constituídos por muitas centenas de dispositivos que estão instalados em vários edifícios e locais.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

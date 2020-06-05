@@ -1,0 +1,28 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Conexões de Alimentação da Placa-mãe</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Conexão de Energia Auxiliar da Placa-mãe</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Conector de Alimentção SATA</b>]]></text>
+</component>
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Conector de Alimentação Molex</b>]]></text>
+</component>
+
+<component id="ID_s5_title">
+<text><![CDATA[<b>Conector de Alimentação Berg</b>]]></text>
+</component>
+
+<component id="ID_s6_title">
+<text><![CDATA[<b>Conector de Alimentação da Ventoinha</b>]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.1.3 Componentes Internos</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Componentes de Laptops</h1>
+        <h2>Componentes de Laptops</h2>
+      </div>
+      <div id="content">
+          <p>A natureza compacta dos laptops requer que um certo número de componentes internos se encaixem em um espaço pequeno. A restrição de tamanho resulta em uma variedade de formatos de componentes d laptops, tais como placa-mãe, memória RAM e CPU. Alguns componentes, como o processador, podem ser desenvolvidos para utilizar menos energia e garantir que o sistema funcione durante um longo período, utilizando apenas a bateria.</p>
+          <p></p>
+          <p>Placa-mãe</p>
+          <p>As placas-mãe dos desktops possuem formatos padrão de fábrica. O tamanho e a formato padrão permite que placas-mãe de diferentes fabricantes sejam intercambiáveis. Ao contrário dos desktops, as placas-mãe dos laptops são proprietárias e variam de acordo com os fabricante. Ao reparar um laptop, é recomendável que você obtenha uma placa de substituição do fabricante do laptop. A Figura 1 mostra uma comparação entre uma placa-mãe de desktop e uma de laptop.</p>
+          <p></p>
+          <p>Placas-mãe de laptops e desktops são projetadas de forma diferente. Os componentes desenvolvidos para laptop não podem ser utilizados em desktops. Componentes projetados para laptops e desktops são comparados na Figura 2.</p>
+          <p></p>
+          <p>RAM</p>
+          <p>Os laptops têm limitações internas de espaço. Portanto, eles utilizam módulos de memórias RAM SODDIM (Small Outline Dual In-line Memory Modules), como exibido na Figura 3.</p>
+          <p></p>
+          <p>CPUs</p>
+          <p>Os processadores dos laptops são projetados para utilizar menos energia e gerar menos calor, se comparado aos processadores de desktops. Desta forma, esses processadores não exigem dispositivos de resfriamento tão grandes como os encontrados nas CPUs de desktops. Os processadores de laptops também usam o CPU throttling para modificar a velocidade do clock, conforme necessário, reduzindo o consumo de energia e a quantidade de calor gerado. Isso resulta em uma pequena perda de desempenho, porém aumenta o tempo de vida útil de alguns componentes. Estes processadores especialmente projetados permitem aos laptops funcionar durante um longo período de tempo quando ligados apenas na bateria.</p>
+          <p></p>
+          <p>NOTA: Consulte o manual do laptop para verificar os processadores compatíveis e as instruções de substituição.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

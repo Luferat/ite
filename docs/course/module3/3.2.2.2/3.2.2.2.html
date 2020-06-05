@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.2.2 Configurações da BIOS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Inicializando o Computador</h1>
+        <h2>Configuração da BIOS</h2>
+      </div>
+      <div id="content">
+          <p>Outra função do programa de configuração do BIOS é personalizar os aspectos específicos do hardware do computador para atender às necessidades individuais. Os recursos que podem ser personalizados são determinados pelo fabricante da BIOS e pela sua versão. Antes de fazer alterações na BIOS, é importante ter uma compreensão clara de como as mudanças podem afetar o computador. Configurações incorretas podem ter um efeito prejudicial.</p>
+          <p></p>
+          <p>Data e Hora</p>
+          <p>A página principal da BIOS tem o campo de hora e data do sistema para ajustar o relógio do sistema, conforme apresentado na Imagem 1. É importante definir estes campos com a data e hora correta, pois eles são usados como referência pelo sistema operacional e outros programas. Se a data e a hora não forem configuradas corretamente, um programa de manutenção pode pensar que ele está desatualizado e irá tentar constantemente atualizar seus arquivos, ou um programa de calendário não exibirá lembretes sobre a data ou a hora correta.</p>
+          <p></p>
+          <p>Desativando dispositivos</p>
+          <p>Você pode configurar as definições avançadas da BIOS para desativar os dispositivos que não são necessários ou não utilizados pelo computador, conforme apresentado na Imagem 2. Por exemplo, uma placa-mãe pode possuir dispositivos de vídeo, som ou recursos de rede onboard (built-in) e se for instalada uma placa offboard de um adaptador específico para um ou mais desses recursos, o dispositivo onboard se tornará redundante. Em vez de desperdiçar recursos co o dispositivo onboard, você pode desativar o mesmo na BIOS.</p>
+          <p></p>
+          <p>Você também pode desativar os controladores extras de disco rígido, portas seriais, portas FireWire ou infravermelho. Se um dispositivo não estiver funcionando, verifique as configurações avançadas da BIOS para ver se o dispositivo está desativado por padrão ou foi desativado por alguém. Ative o dispositivo na BIOS de modo que o mesmo possa ser utilizado pelo computador.</p>
+          <p></p>
+          <p>Ordem de Inicialização</p>
+          <p>Uma lista ordenada de dispositivos que um computador está autorizado a iniciar é chamada de ordem de inicialização (boot order) ou sequência de inicialização (boot sequence). Esta lista normalmente é localizada na guia de inicialização (Boot tab) da BIOS, conforme apresentado na Imagem 3. Você pode indicar os discos rígidos, drives ópticos, drives de disquetes, inicialização pela rede e mídia flash na ordem de inicialização. Para permitir a inicialização através de um dispositivo USB, ative essa opção na BIOS.</p>
+          <p></p>
+          <p>Pouco tempo depois de completar o POST, o computador tentará carregar o sistema operacional. A BIOS verificará o primeiro dispositivo na ordem de boot para uma partição inicializável. Se o dispositivo não tem uma partição inicializável, o computador verificará o próximo dispositivo na lista. Quando um dispositivo com uma partição inicializável é encontrado, a BIOS verifica a existência de um sistema operacional instalado.</p>
+          <p></p>
+          <p>A ordem em que os dispositivos estão listados na ordem de inicialização (boot) depende das necessidades do usuário. Por exemplo, ao instalar um sistema operacional, uma unidade óptica, boot pela rede ou drive USB precisam ser listados antes do disco rígido inicializável. Recomenda-se reordenar a lista de inicialização após a instalação do sistema operacional para que o primeiro boot seja pelo disco rígido inicializável. A BIOS também permite desabilitar ou remover os dispositivos da lista de ordem de inicialização.</p>
+          <p></p>
+          <p>Velocidade do Clock</p>
+          <p>Alguns programas de configuração da BIOS permitem que você altere a velocidade do clock da CPU, conforme apresentado na Imagem 4. Reduzir a velocidade do clock da CPU faz com que o computador funcione mais lento e em uma temperatura menor. Isso pode resultar em menos barulho das ventoinhas e pode ser útil se um computador mais silencioso for desejado, como em um quarto ou sala de TV.</p>
+          <p></p>
+          <p>Aumentar a velocidade de clock da CPU faz com que o computador funcione mais rápido, mas também em uma temperatura maior, consequentemente aumentando a velocidade das ventoinhas. Aumentar a velocidade de clock da CPU para um valor além das recomendações do fabricante é conhecido como overclocking. Realizar um overclocking em um processador é arriscado e anula a garantia do mesmo. Overclocking pode resultar em uma vida mais curta da CPU ou causar danos se a velocidade do clock for aumentada para um valor muito alto. É uma prática comum instalar um sistema de resfriamento capaz de dissipar o excesso de calor criado por um overclocking de modo que o processador não seja danificado.</p>
+          <p></p>
+          <p>Virtualização</p>
+          <p>A tecnologia de virtualização permite que um computador execute vários sistemas operacionais em arquivos ou partições separadas. Para conseguir isso, um programa de virtualização emula as características de um sistema, incluindo o hardware, BIOS, sistema operacional e programas. Ative a configuração de virtualização na BIOS para um computador que irá utilizar a tecnologia de virtualização, conforme apresentado na Imagem 5. Desabilite essa configuração se a virtualização não for executa corretamente ou utilizada.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

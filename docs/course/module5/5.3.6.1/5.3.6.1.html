@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.6.1 Utilitários Exclusivos do Windows 7</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle Exclusivos para Versões Específicas do Windows</h2>
+      </div>
+      <div id="content">
+          <p>Uma série de utilitários do Painel de Controle são exclusivos para o Windows 7, incluindo os seguintes:</p>
+          <p><ul>
+              <li>Grupo Domestico</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Central de Ações</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Windows Defender</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conexões de RemoteApp e Área de Trabalho</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Solução de Problemas</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Grupo Domestico</p>
+          <p>Um grupo doméstico é uma configuração de rede que permite aos usuários compartilhar arquivos e pastas facilmente em uma rede doméstica. O utilitário Grupo Doméstico, mostrado na Imagem 1, não está disponível para redes corporativas ou públicas.</p>
+          <p></p>
+          <p>Central de Ações</p>
+          <p>A Central de Ações substitui a Central de Segurança, que se encontra no XP e Vista. A Central de Ações é descrito com mais detalhes na página intitulada Central de Ações, encontrada em outro local deste curso.</p>
+          <p></p>
+          <p>Windows Defender</p>
+          <p>O Windows Defender é um programa anti-spyware que varre o sistema operacional para encontrar softwares indesejados que podem representar uma ameaça à segurança. O Windows Defender protege os computadores contra softwares nocivos, como spyware, que é criado para realizar ataques maliciosos. Se o Windows Defender detectar qualquer software indesejado, os usuários podem excluir ou colocar em quarentena os arquivos nocivos. Para acessar o Windows Defender, use o seguinte caminho:</p>
+          <p></p>
+          <p>Iniciar> Painel de Controle> Windows Defender</p>
+          <p></p>
+          <p>Windows Defender está disponível no Windows 7 e Windows Vista por padrão e pode ser baixado para Windows XP.</p>
+          <p></p>
+          <p>Conexões de RemoteApp e Área de Trabalho</p>
+          <p>O utilitário Conexões de RemoteApp e Área de Trabalho, mostrado na Imagem 2, fornece acesso a computadores remotos e programas a partir de uma única pasta no Windows Explorer. Para acessar o utilitário Conexões de RemoteApp e Área de Trabalho, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Conexões de RemoteApp e Área de Trabalho</p>
+          <p></p>
+          <p>Solução de Problemas</p>
+          <p>O utilitário de solução de problemas, mostrado na Imagem 3, permite solucionar problemas dentro das seguintes categorias:</p>
+          <p><ul>
+              <li>Programas - Resolva problemas de compatibilidade com programas criados para versões anteriores do Windows.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Hardware e som - Diagnostica e soluciona problemas de configuração dos dispositivos e questões de áudio.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede e Internet - Resolve problemas com conexões de Internet, bem como arquivos e pastas compartilhadas.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Aparência e Personalização - Resolve problemas associados com a aparência da área de trabalho.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sistema e Segurança - Executa tarefas de manutenção, verifica se há problemas de desempenho e melhorar o uso de energia.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Para acessar o utilitário de solução de problemas, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Solução de problemas</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

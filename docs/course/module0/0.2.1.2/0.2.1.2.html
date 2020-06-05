@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>0.2.1.2 Certificação CompTIA A+</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Indústria de TI</h1>
+        <h2>Certificações da Indústria de TI</h2>
+      </div>
+      <div id="content">
+          <p>A Computing Technology Industry Association (CompTIA) desenvolveu o programa de certificação A+. Possuir a certificação CompTIA A+, conforme exibido na figura, significa que o candidato é um técnico qualificado de software e hardware. As certificações CompTIA são conhecidas por toda a comunidade de TI como uma das melhores maneiras de entrar na área e construir uma carreira sólida.</p>
+          <p>A última versão do CompTIA A+ é o CompTIA A+ edição 2012. Dois exames são necessários para obter a certificação: CompTIA A+ 220-801 e o 220-802.</p>
+          <p>Os exames CompTIA A+ medem as competências necessárias de um profissional de TI com o conhecimento equivalente a pelo menos 12 meses de experiência prática em laboratório ou campo. Os candidatos aprovados possuem o conhecimento necessário para montar componentes com base nas necessidades dos clientes. Eles também são capazes de instalar, configurar e realizar a manutenção de dispositivos, PCs e softwares. Para se qualificar, eles devem entender os conceitos básicos de rede e segurança. Os candidatos devem ser capazes de diagnosticar, determinar e documentar corretamente problemas de hardware e software, fornecer suporte ao cliente adequadamente e compreender os conceitos básicos de virtualização, imagens de desktop e sua implementação.</p>
+          <p>Até 2011, as certificações CompTIA não expiravam. A partir de 2011, os técnicos devem renovar a certificação A+ a cada três anos. A manutenção da validade da certificação exige que o candidato seja aprovado na versão mais atual do exame A+ ou se matricule no programa CompTIA Continuing Education (CE). O programa CE permite que os participantes recebam Unidades de Educação Continuada (Continuing Education Units - CEUs), realizando assim atividades aprovadas que exibem a compreensão de conhecimentos relevantes da indústria. São necessários vinte CEUs para renovar a sua certificação A+, juntamente com uma taxa anual de US$25.</p>
+          <p>Muitas certificações de nível superior, tais como Cisco CCNA, CompTIA Network+ e Microsoft MCSE, concedem créditos completos CEU ou renovam a certificação A+. Detalhes adicionais sobre o programa CE encontram-se no site da CompTIA.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

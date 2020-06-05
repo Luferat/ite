@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.1.4 Instalação com as Configurações Padrão do Sistema Operacional</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação do Sistema Operacional</h1>
+        <h2>Procedimentos de Configuração de Disco Rígido</h2>
+      </div>
+      <div id="content">
+          <p>Quando um computador é inicializado com o disco de instalação do Windows 7 (ou uma unidade USB), o assistente de instalação apresenta três opções, como mostrado na Figura 1:</p>
+          <p><ul>
+              <li>Instalar agora - Configura e instala o Windows 7.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>O que saber antes de instalar o Windows - Abre as janelas Ajuda e Suporte que descrevem a atualização e opções personalizadas de instalação do Windows 7. A janela também descreve como preparar e instalar o Windows 7.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Reparar o computador - Abre o utilitário Opções de Recuperação do Sistema para reparar uma instalação. Selecione a instalação do Windows 7 que precisa de reparos e clique em Avançar. Você pode então selecionar a partir de uma série de ferramentas de recuperação, como o Reparo de Inicialização. O Reparo de Inicialização localiza e repara problemas com os arquivos do sistema operacional. Se o reparo de inicialização não resolver o problema, opções adicionais, como a Restauração do Sistema e a Recuperação de Imagem do Sistema, estão disponíveis.</li>
+            </ul>
+          </p>
+          <p>NOTA: Antes de executar uma instalação de reparo, faça um backup dos arquivos importantes em um local diferente, como em um segundo disco rígido, em um disco óptico ou em um dispositivo de armazenamento USB.</p>
+          <p>Para esta seção, selecione a opção Instalar agora. Três opções estão disponíveis:</p>
+          <p><ul>
+              <li>Atualizar - Atualiza o Windows, porém mantém seus arquivos atuais, configurações e programas. Você pode usar esta opção para reparar uma instalação.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Personalizado (avançado) - Instala uma cópia limpa do Windows em sua escolha de localização e permite que você mude os discos e partições. Também conhecida como instalação limpa. Selecionar a instalação personalizada aumenta a probabilidade de uma instalação bem-sucedida.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Sair - Sai do Setup.</li>
+            </ul>
+          </p>
+          <p>Se as instalações existentes do Windows não forem encontradas, a opção de Atualização será desativada, conforme mostrado na Figura 2.</p>
+          <p>NOTA: A menos que você execute uma instalação limpa do Windows 7, as pastas anteriores do Windows serão mantidas, juntamente com a pasta Documents and Settings e pastas Arquivos de Programas. Durante a instalação do Windows 7, essas pastas são movidas para uma pasta chamada Windows.old. Você pode copiar os arquivos da instalação anterior para a nova instalação se você precisar deles.</p>
+          <p>Durante a instalação, você deve fornecer as seguintes informações:</p>
+          <p><ul>
+              <li>Idioma a ser instalado</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Padrões e formatos que definem moedas e números</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Teclado ou método de entrada</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Localização física da instalação</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Usuário e nome do computador</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Senha para a conta de administrador</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Chave do produto</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Configurações de data e hora</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Configurações de rede</li>
+            </ul>
+          </p>
+          <p>Configurações de Rede</p>
+          <p>Ao configurar as definições iniciais de rede durante a instalação, você será solicitado a escolher um dos seguintes locais atuais, como mostrado na Figura 3:</p>
+          <p><ul>
+              <li>Rede Doméstica</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede de Corporativa</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede Pública</li>
+            </ul>
+          </p>
+          <p>Dependendo da localização atual do computador e da versão do sistema operacional, você será solicitado para selecionar um método para organizar os computadores e compartilhar recursos em uma rede. As opções são Grupo Doméstico, Grupo de Trabalho e Domínio.</p>
+          <p>Se a opção Rede Doméstica for selecionada, será solicitado que você digite o nome de um grupo de trabalho, juntamente com a opção de configurar um grupo doméstico. Um grupo de trabalho fornece uma estrutura de rede que permite o compartilhamento de arquivos e impressora. Todos os computadores em um grupo de trabalho devem ter o mesmo nome do grupo. Um grupo doméstico permite que os computadores na mesma rede compartilhem automaticamente arquivos, como músicas e fotos, bem como impressoras.</p>
+          <p>Se a opção Rede Corporativa for selecionada, você pode optar por digitar o nome de um domínio ou grupo de trabalho. Um computador em um domínio é gerenciado por um administrador central e deve seguir as regras e procedimentos definidos pelo administrador. Um domínio, como um grupo de trabalho, oferece aos usuários a capacidade de compartilhar arquivos e dispositivos.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

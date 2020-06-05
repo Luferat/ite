@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.3.1.6 Atualizando e Instalando Drivers de Impressão</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Instalação e Configuração de Impressoras</h1>
+        <h2>Instalação e Atualização de Drivers, Firmware e RAM</h2>
+      </div>
+      <div id="content">
+          <p>Depois de conectar os cabos de alimentação e de dados na impressora, o sistema operacional descobrirá a impressora e instalá o driver.</p>
+          <p>Um driver de impressão é um programa de software que permite que o computador e a impressora se comuniquem entre si. O driver também fornece uma interface para que o usuário configure as opções da impressora. Cada modelo de impressora possui um driver único. Os fabricantes de impressoras frequentemente atualizam os drivers para aumentar o desempenho da impressora, acrescentar opções ou resolver problemas. Você pode fazer o download dos drivers atualizados no site do fabricante.</p>
+          <p>Para instalar um driver de impressora, siga estes passos:</p>
+          <p>Passo 1. Determine se um driver mais recente está disponível. A maioria dos sites dos fabricantes possui um link para uma página que fornece drivers e suporte ao cliente. Certifique-se de que o driver é compatível com o computador e com o sistema operacional que você está atualizando.</p>
+          <p>Passo 2. Baixe os arquivos do driver da impressora para o seu computador. A maioria dos arquivos de driver são compactados ou &quot;zipados&quot;. Faça o download do arquivo para uma pasta e descompacte o conteúdo. Salve as instruções ou documentação em uma pasta separada do seu computador.</p>
+          <p>Passo 3. Instale o driver baixado. Instale o driver baixado de forma automática ou manual. A maioria dos drivers de impressão possuem um arquivo de configuração que procura automaticamente no sistema drivers mais antigos, substitui-os por um novo. Se nenhum arquivo de configuração estiver disponível, siga as orientações fornecidas pelo fabricante.</p>
+          <p>Passo 4. Teste o novo driver da impressora. Execute vários testes para certificar-se de que a impressora está funcionando corretamente. Imprima diferentes tipos de documentos. Teste cada opção de impressão.</p>
+          <p>A página de teste de impressão contém texto que pode ser lido. Se o texto estiver ilegível, o problema pode estar sendo causado devido a um driver ruim ou o PDL errado sendo utilizado.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

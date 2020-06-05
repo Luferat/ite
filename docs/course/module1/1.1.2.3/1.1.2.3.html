@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.2.3 Sistemas de Resfriamento</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Sistemas de Computadores Pessoais</h1>
+        <h2>Componentes Internos do Computador</h2>
+      </div>
+      <div id="content">
+          <p>O fluxo de corrente entre os componentes eletrônicos gera calor. Os componentes dos computadores possuem um melhor desempenho quando refrigerados. Se o calor não é removido, o computador pode executar mais lentamente. Se muito calor é acumulado, os componentes do computador podem ser danificados.</p>
+          <p>Aumentando o fluxo de ar no gabinete do computador permite que mais calor seja removido. Uma ventoinha instalada no gabinete do computador, conforme apresentado na Imagem 1, faz com que o processo de resfriamento seja mais eficiente. Além da ventoinha, o dissipador retira o calor do núcleo da CPU. A ventoinha sobre o dissipador, conforme apresentado na Imagem 2, retira o calor da CPU.</p>
+          <p>Outros componentes também são suscetíveis a danos causados ​​pelo calor e em alguns casos eles são equipados com ventiladores. Placas de vídeo também produzem uma grande quantidade de calor. Ventiladores são dedicados ao resfriamento da unidade gráfica de processamento (GPU), conforme mostrado na Imagem 3.</p>
+          <p>Computadores com CPUs e GPUs extremamente rápidas podem utilizar um sistema de refrigeração líquida. Uma placa de metal é colocada sobre o processador e a água é bombeada sobre a parte superior do mesmo para dissipar o calor gerado. Em seguida, a água é bombeada a um radiador para dissipar o calor e circular novamente.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,35 @@
+﻿<textcomponents>
+<component id='ID_title'>
+	<text><![CDATA[<b>Ferramentas de Gerenciamento de Disco</b>]]></text>
+</component>
+<component id='ID_btn01'>
+	<text><![CDATA[<font align="center"><b>FDISK</b></font>]]></text>
+</component>
+
+<component id='ID_btn02'>
+	<text><![CDATA[<font align="center"><b>Gerenciamento de Disco</font>]]></text>
+</component>
+
+<component id='ID_btn03'>
+	<text><![CDATA[<font align="center"><b>Formatação</b></font>]]></text>
+</component>
+
+<component id='ID_btn04'>
+	<text><![CDATA[<font align="center"><b>Scandisk ou Chkdsk</b></font>]]></text>
+</component>
+
+<component id='ID_btn05'>
+	<text><![CDATA[<font align="center"><b>Desfragmentador</b></font>]]></text>
+</component>
+
+<component id='ID_btn06'>
+	<text><![CDATA[<font align="center"><b>Limpeza de Disco</b></font>]]></text>
+</component>
+
+<component id='ID_btn07'>
+	<text><![CDATA[<font align="center"><b>Verificador de Arquivos do Sistema</b></font>]]></text>
+</component>
+
+ 
+
+</textcomponents>

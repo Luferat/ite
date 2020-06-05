@@ -1,0 +1,37 @@
+﻿<textcomponents>
+<component id="ID_title">
+  <text><![CDATA[<b>ROM Types</b>]]></text>
+  </component>
+  
+ <component id="ID_btn01">
+  <text><![CDATA[<b>ROM</b>]]></text>
+  </component>
+<component id="ID_btn02">
+  <text><![CDATA[<b>PROM</b>]]></text> 
+  </component>
+<component id="ID_btn03">
+  <text><![CDATA[<b>EPROM</b>]]></text> 
+  </component>
+<component id="ID_btn04">
+  <text><![CDATA[<b>EEPROM</b>]]></text>
+  </component>
+  
+<component id="ID_txt01">
+  <text><![CDATA[Read-only memory chips. Information is written to a ROM chip when it is manufactured. A ROM chip cannot be erased or re-written and is obsolete.]]></text>
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Programmable read-only memory. Information is written to a PROM chip after it is manufactured. A PROM chip cannot be erased or re-written.]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Erasable programmable read-only memory.  Information is written to an EPROM chip after it is manufactured. An EPROM chip can be erased with exposure to UV light. Special equipment is required.]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Electrically erasable programmable read-only memory. Information is written to an EEPROM chip after it is manufactured. EEPROM chips are also called Flash ROMs. An EEPROM chip can be erased and re-written without having to remove the chip from the computer.]]></text>
+  </component>
+
+   
+
+<component id="transcript">
+  <text><![CDATA[<b>transcript goes here</b>]]></text> 
+  </component>
+</textcomponents>

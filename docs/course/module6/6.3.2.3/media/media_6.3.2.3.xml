@@ -1,0 +1,170 @@
+﻿<textcomponents>
+
+
+
+<component id='ID_title'>
+	<text><![CDATA[<b>Abreviação de endereços IPv6</b>]]></text>
+</component>
+
+<!--Slide 1-->
+<component id='ID_s1_table01'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td colspan='2' bgcolor='#434321' class="liner_top"><font size='2' color='#434321'>.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' width='150'>Os endereços são de 128 bit</td>
+		<td bgcolor='#FFFFFF' class="tableFont">3ffe:6a88:85a3:08d3:1319:8a2e:0370:7344</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b> </b>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[Os endereços são apresentados em oito valores hexadecimais, separados por dois pontos (:).]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[Cada campo tem um comprimento de 16 bits. <br>8 x 16 = 128]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[<font color="#FFFFFF"><b>Hierarquia do endereço</b></font>]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[<font color="#FFFFFF"><b>Prefixo global</b></font>]]></text>
+</component>
+
+<component id='ID_s1_txt06'>
+	<text><![CDATA[<font color="#8557A0"><b>Subnet ID</b></font>]]></text>
+</component>
+
+<component id='ID_s1_txt07'>
+	<text><![CDATA[<font color="#FFFFFF"><b>Interface ID</b></font>]]></text>
+</component>
+
+<component id='ID_s1_txt08'>
+	<text><![CDATA[<b>Endereço IPv6</b>]]></text>
+</component>
+
+<component id='ID_s1_txt09'>
+	<text><![CDATA[<b>3ffe:6a88:85a3:08d3:1319:8a2e:0370:7344</b>]]></text>
+</component>
+
+<component id='ID_s1_table02'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td colspan='4' bgcolor='#434321' class="liner"><font size='2' color='#434321'>.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23'><font color='#FFFFFF'><b></b></font></td>
+		<td bgcolor='#A2AA23' colspan='3'><font color='#FFFFFF'><b>Hierarquia do endereço</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' width='200'><font color='#393536'><b>Endereço IPv6</b></font></td>
+		<td bgcolor='#FFFFFF' width='80'><font color='#393536'>Prefixo global</font></td>
+		<td bgcolor='#FFFFFF' width='60'><font color='#393536'>Subnet ID</font></td>
+		<td bgcolor='#FFFFFF'><font color='#393536'>Interface ID</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'><font color='#393536' size='-1' class="subnetId">3ffe:6a88:85a3:08d3:1319:8a2e:0370:7344</font></td>
+		<td bgcolor='#F3F5E7'><font color='#393536' size='-1'></font>3ffe:6a88:85a3</td>
+		<td bgcolor='#F3F5E7'><font color='#393536' size='-1'></font>:08d3:</td>
+		<td bgcolor='#F3F5E7'><font color='#393536' size='-1'></font>1319:8a2e:0370:7344</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+
+<!--Slide 2-->
+<component id='ID_s2_title'>
+	<text><![CDATA[ ]]></text>
+</component>
+
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DAE17A' colspan='16'><font size='+2' color='#393536'><b>Regras para abreviar o Endereço IPv6</b></font></td>
+	</tr>
+	<tr>
+		<td  bgcolor='#434321'colspan='16' class="liner"><font size='2' color='#434321'>.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7' width='50'>Endereço</td>
+		<td bgcolor='#F3F5E7'>2001</td>
+		<td bgcolor='#F3F5E7' width='14'>:</td>
+		<td bgcolor='#F3F5E7'>0db8</td>
+		<td bgcolor='#F3F5E7' width='14'>:</td>
+		<td bgcolor='#F3F5E7'>0000</td>
+		<td bgcolor='#F3F5E7' width='14'>:</td>
+		<td bgcolor='#F3F5E7'>0000</td>
+		<td bgcolor='#F3F5E7' width='14'>:</td>
+		<td bgcolor='#F3F5E7'>0000</td>
+		<td bgcolor='#F3F5E7' width='14'>:</td>
+		<td bgcolor='#F3F5E7'>0000</td>
+		<td bgcolor='#F3F5E7' width='14'>:</td>
+		<td bgcolor='#F3F5E7'>1428</td>
+		<td bgcolor='#F3F5E7' width='14'>:</td>
+		<td bgcolor='#F3F5E7'>57ab</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' width='10'>Após a Regra 1</td>
+		<td bgcolor='#FFFFFF'>2001</td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>db8</td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>0</td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>0</td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>0</td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>0</td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>1428</td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>57ab</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'>Após a Regra 2</td>
+		<td bgcolor='#F3F5E7'>2001</td>
+		<td bgcolor='#F3F5E7'>:</td>
+		<td bgcolor='#F3F5E7'>db8</td>
+		<td bgcolor='#F3F5E7'>:</td>
+		<td bgcolor='#F3F5E7'></td>
+		<td bgcolor='#F3F5E7'></td>
+		<td bgcolor='#F3F5E7'></td>
+		<td bgcolor='#F3F5E7'></td>
+		<td bgcolor='#F3F5E7'></td>
+		<td bgcolor='#F3F5E7'></td>
+		<td bgcolor='#F3F5E7'></td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>1428</td>
+		<td bgcolor='#FFFFFF'>:</td>
+		<td bgcolor='#FFFFFF'>57ab</td>
+
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' colspan='16'><font color='#FFFFFF' size='+2' class="titleFont">Abaixo estão as representações de texto dos seguintes endereços:</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'>Endereço</td>
+		<td bgcolor='#F3F5E7' colspan='15'>2001:0db8:0000:0000:0000:0000:1428:57ab</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' >Após a Regra 1</td>
+		<td bgcolor='#FFFFFF' colspan='15'>2001:db8:0:0:0:0:1428:57a</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F3F5E7'>Após a Regra 2</td>
+		<td bgcolor='#F3F5E7' colspan='15'>2001:db8::1428:57ab</td>
+	</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

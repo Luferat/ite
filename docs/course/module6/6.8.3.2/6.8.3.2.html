@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.8.3.2 Definindo o Local de Rede</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Conexão de Rede de Computadores</h1>
+        <h2>Configurações de Roteador sem fio e com fio</h2>
+      </div>
+      <div id="content">
+          <p>A primeira vez em que o Windows 7 ou Windows Vista se conecta a uma rede, um perfil local de rede deve ser selecionado. Cada perfil possui diferentes configurações padrão. Dependendo do perfil selecionado, o compartilhamento de arquivos e impressora ou a descoberta de rede pode estar habilitado ou desabilitado, além disso diferentes configurações de firewall podem ser aplicadas.</p>
+          <p>O Windows 7 e o Windows Vista possuem três perfis de locais de rede, chamados de Rede Pública, Rede de Trabalho e Rede Doméstica. Os computadores que pertencem e compartilham recursos em uma Pública, de Trabalho ou Doméstica devem ser membros do mesmo grupo de trabalho. Computadores em uma Rede Doméstica também podem pertencer a um grupo doméstico. O grupo doméstico é um recurso do Windows 7 que fornece um método simples de compartilhamento de arquivos e impressora. O Windows Vista não suporta este recurso.</p>
+          <p>Existe um quarto perfil de local de rede chamada Domínio, onde ele normalmente é usado em redes locais de empresas. Este perfil é controlado pelo administrador de rede e o mesmo não pode ser selecionado ou modificado pelos usuários da empresa.</p>
+          <p>Windows XP não suporta a seleção do perfil de local de rede. Desta forma, este procedimento não é necessário ao conectar-se em uma rede.</p>
+          <p>A Figura 1 mostra os três perfis de local de rede disponíveis para os usuários do Windows 7 e do Windows Vista. Ao conectar-se pela primeira vez em uma rede, utilize as seguintes informações para fazer a escolha de forma adequada.</p>
+          <p><ul>
+              <li>Rede Doméstica - Escolha esta opção quando estiver conectado em uma rede doméstica ou quando você confia nas pessoas e nos dispositivos na rede. Neste perfil, a descoberta de rede está habilitada, o que permite que você veja outros computadores e dispositivos na rede e que os usuários da mesma vejam o seu computador.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede de Trabalho - Escolha esta opção quando estiver conectado em uma rede corporativa ou em uma rede de um pequeno escritório. A descoberta de rede está habilitada. Não é possível criar ou entrar em um grupo doméstico.</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Rede Pública - Escolha esta opção para redes de aeroportos, cafés e outros locais públicos. A descoberta de rede está desabilitada. Esta opção de local de rede oferece o melhor nível de proteção. Escolha também esta opção caso você se conecte diretamente à Internet, sem usar um roteador, ou se você possuir uma conexão de banda larga móvel. O grupo doméstico não está disponível.</li>
+            </ul>
+          </p>
+          <p>NOTA: Se houver apenas um computador em uma rede e o compartilhamento de arquivos ou impressora não for necessário, a opção mais segura recomendada é a Pública.</p>
+          <p>Caso a janela Selecionar o Local de Rede não for exibida quando você se conectar pela primeira vez em uma rede, talvez seja necessário liberar e renovar o endereço IP do computador. Para renovar o endereço IP, abra o prompt de comando no computador e digite ipconfig /release e ipconfig /renew.</p>
+          <p>Você pode alterar as configurações padrão de todos os perfis de local de rede, como mostrado na Figura 2. As alterações no perfil padrão serão aplicadas para todas as redes que usam o mesmo perfil de local de rede.</p>
+          <p>Para alterar as configurações de perfil de local de rede no Windows 7, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Central de Rede e Compartilhamento> clique no perfil de local de rede atual> selecione um local de rede> Exibir ou alterar configurações> escolha o grupo doméstico e as opções de compartilhamento> Alterar as configurações de compartilhamento avançadas.</p>
+          <p>Para alterar as configurações de perfil de local de rede no Windows Vista, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Central de Rede e Compartilhamento> Personalizar> selecione um tipo de Local> Avançar> Exibir ou alterar configurações de rede e compartilhamento</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

@@ -1,0 +1,88 @@
+﻿<textcomponents>
+
+<!--Slide 2-->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Corresponda o modelo OSI com o modelo TCP/IP</b>]]></text>
+</component>
+<component id='ID_header01'>
+	<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+<component id='ID_header02'>
+	<text><![CDATA[<b>Aplicação</b>]]></text>
+</component>
+<component id='ID_header03'>
+	<text><![CDATA[<b>Acesso à rede</b>]]></text>
+</component>
+<component id='ID_header04'>
+	<text><![CDATA[<b>Transporte</b>]]></text>
+</component>
+<!--Drag and Drop Activity-->
+<component id='ID_continue_btn'>
+	<text><![CDATA[Continuar]]></text>
+</component>
+<component id='ID_DnD_inst_title'>
+	<text><![CDATA[<b>Atividade Modelo OSI</b>]]></text>
+</component>
+
+<component id='ID_DnD_inst_body'>
+	<text><![CDATA[<p>Corresponda o modelo OSI com o modelo TCP/IP.</p><br /><p>Arraste a camada OSI à camada TCP/IP correta, e clique em Verificar.</p><br /><p>Clique no botão Continuar para começar. Clique em &quot;?&quot; para ver as instruções novamente.</p>]]></text>
+</component>
+
+<component id='ID_DnD_inst_body1'>
+	<text><![CDATA[<p>Corresponda o modelo OSI com o modelo TCP/IP.</p><p>Arraste a camada OSI à camada TCP/IP correta, e clique em Verificar.</p><p>Clique no botão Continuar para começar. Clique em &quot;?&quot; para ver as instruções novamente.</p>]]></text>
+</component>
+
+<component id='ID_s2_inst'>
+	<text><![CDATA[Corresponda o modelo OSI com o protocolo TCP/IP. Arraste a camada OSI à camada TCP/IP correta, e clique em Verificar.]]></text>
+</component>
+
+<component id='ID_ds_a1'>
+	<text><![CDATA[<b>Aplicação</b>]]></text>
+</component>
+
+<component id='ID_ds_a2'>
+	<text><![CDATA[<b>Apresentação</b>]]></text>
+</component>
+
+<component id='ID_ds_t1'>
+	<text><![CDATA[<b>Transporte</b>]]></text>
+</component>
+
+<component id='ID_ds_n1'>
+	<text><![CDATA[<b>Enlace de dados</b>]]></text>
+</component>
+
+<component id='ID_ds_n2'>
+	<text><![CDATA[<b>Física</b>]]></text>
+</component>
+
+<component id='ID_ds_i1'>
+	<text><![CDATA[<b>Rede</b>]]></text>
+</component>
+
+<component id='ID_ds_a3'>
+	<text><![CDATA[<b>Sessão</b>]]></text>
+</component>
+
+<!--Feedback-->
+<component id="ID_CORRECT_TITLE">
+	<text><![CDATA[Correto]]></text> 
+</component>
+<component id="ID_CORRECT_BODY">
+	<text><![CDATA[Está correto.]]></text> 
+</component>
+<component id="ID_INCORRECT_TITLE">
+	<text><![CDATA[Incorreto]]></text> 
+</component>
+<component id="ID_INCORRECT_BODY">
+	<text><![CDATA[Está incorreto.]]></text> 
+</component>
+<!--Buttons-->
+<component id="ID_CHECK">
+	<text><![CDATA[Verificar]]></text> 
+</component>
+<component id="ID_RESET">
+	<text><![CDATA[Reiniciar]]></text> 
+</component>
+
+</textcomponents>

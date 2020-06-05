@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.5.0.2 Determining the Network Topology</title>
+    <link type="text/css" rel="stylesheet" href='../../common/styles/course.css' rel='stylesheet' type="text/css" />
+	<SCRIPT type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></SCRIPT>
+<!--	<SCRIPT type="text/javascript" src="../../common/scripts/twocolumn_page.js"></SCRIPT> -->
+
+
+<script>
+var myLayout; 
+$(document).ready(function () {
+	myLayout = $('body').layout({west__size:300,stateManagement__enabled: false, maskContents: true, livePaneResizing:	true, onresize_end:resizeTextDiv});
+});
+function resizeTextDiv() {
+		var DivHeight = document.getElementById("header").offsetHeight;
+		document.getElementById("content").style.top = String(DivHeight)+'px';
+    }
+</script>
+
+
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+  <div class="ui-layout-west">
+    <div id="header">
+      <h1>Physical Components of a Network</h1>
+      <h2>Cables and Connectors</h2>
+    </div>
+    <div id="content">
+          <p>Understanding the needs of the customer and determining the general layout of the new network are required to properly determine the network topology. These network decisions need to be discussed with the customer:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Cable and wireless standards </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Expandability </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Number and location of users </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The number of users and the estimated amount of future growth determines the initial physical and logical topology of the network. An inspection, called a site survey, should be done early in the project. A site survey is a physical inspection of the building that helps determine a basic physical topology. Create a checklist to record the needs of your customer to determine the physical topology:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Location of users’ computers </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Position of network equipment, such as switches and routers </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Position of the servers </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A floor plan or blueprint is helpful to determine the physical layout of equipment and cables. The physical layout is often based on available space, power, security, and air conditioning. Figure 1 shows a typical network topology. If a floor plan or blueprint is not available, make a drawing of where the network devices will be located, including the location of the server room, printers, end stations, and cable runs. This drawing can be used for discussions when the customer makes the final layout decisions.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame"  src="media/index.html"  frameborder="0" class="ui-layout-center" >
+  </body>
+</html>
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.1.7 Redes Cliente/Servidor</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Identificando Redes</h1>
+        <h2>Tipos de Redes</h2>
+      </div>
+      <div id="content">
+          <p>Servidores possuem softwares instalados que lhes permitem fornecer serviços para os clientes, tais como e-mail ou páginas da web. Cada serviço requer um software de servidor dedicado. Por exemplo, um servidor exige um software web (web server) para fornecer serviços de Internet para a rede.</p>
+          <p>Em uma rede cliente/servidor, o cliente solicita informações ou serviços para um servidor. O servidor fornece as informações ou serviços solicitados para o cliente. Servidores em uma rede cliente/servidor normalmente realizam alguns trabalhos de processamento para as máquinas dos clientes, por exemplo, uma busca através de um banco de dados antes de entregar apenas os registros solicitados pelo cliente. Esse modelo fornece a administração de rede centralizada, o que torna mais fácil determinar quem controla os recursos na rede. Os recursos são controlados por uma gerência de rede centralizada.</p>
+          <p>Um computador com um software de servidor pode fornecer serviços simultâneos a um ou a vários clientes. Além disso, um único computador pode executar vários tipos de softwares de servidor. Em uma casa ou em um pequeno escritório, pode ser necessário que um computador aja como um servidor de arquivos, um servidor web e um servidor de email. Em um ambiente corporativo, os funcionários podem acessar um único computador na empresa, que atua como um servidor de email. Este servidor de email é usado apenas para enviar, receber e armazenar mensagens de email. O cliente de email instalado no computador de um funcionário emite uma solicitação para que o servidor de email envie as mensagens de emails não lidas. O servidor responde enviando o email solicitado para o cliente.</p>
+          <p></p>
+          <p>Um único computador pode executar vários tipos de software cliente. Deve haver um software cliente para cada serviço exigido. Com vários software clientes instalados, o usuário pode se conectar a vários servidores ao mesmo tempo. Por exemplo, um usuário pode verificar os emails e visualizar uma página web enquanto envia mensagens instantâneas (IM) e escuta rádio na Internet.</p>
+          <p></p>
+          <p>O modelo cliente/servidor torna mais fácil determinar quem controla os recursos da rede, fornecendo uma administração de rede centralizada. O administrador de rede executa backups de dados e medidas de segurança. O administrador da rede também controla o acesso dos usuários aos recursos da rede. Todos os dados na rede são armazenados em um servidor de arquivos centralizado. Um servidor de impressão centralizado gerencia impressoras compartilhadas na rede. Cada usuário deve fornecer um nome de usuário e senha para ter acesso aos recursos da rede.</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

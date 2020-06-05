@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.6.3 Utilitários Exclusivos do Windows XP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+    	myLayout = $('body').layout({
+          west__size:300,
+          stateManagement__enabled: true,
+          maskContents: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane"
+        });
+
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+    	var date = new Date();
+     	var minutes = 10;
+     	date.setTime(date.getTime() + (minutes * 60 * 1000));
+     	$.cookie("ui_pane", "foo", { expires: date });
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Interface Gráfica do Windows e Painel de Controle</h1>
+        <h2>Utilitários do Painel de Controle Exclusivos para Versões Específicas do Windows</h2>
+      </div>
+      <div id="content">
+          <p>Uma série de utilitários do Painel de Controle são exclusivos para Windows XP, incluindo os seguintes:</p>
+          <p><ul>
+              <li>Adicionar/Remover Programas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Impressoras e Aparelhos de Fax</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Atualizações Automáticas</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Conexões de Rede</li>
+            </ul>
+          </p>
+          <p><ul>
+              <li>Assistente de Configuração de Rede</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Adicionar/Remover Programas</p>
+          <p>O utilitário Adicionar/Remover Programas, exibido na Figura 1, oferece a mesma funcionalidade no Windows XP que o utilitários Programas e Recursos oferece para o Windows 7 e Windows Vista. Para acessar a ferramenta Adicionar/Remover Programas no Windows XP, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Adicionar/Remover Programas</p>
+          <p></p>
+          <p>Impressoras e Aparelhos de Fax</p>
+          <p>O utilitário Impressoras e Aparelhos de Fax do Windows XP, mostrada na Figura 2, permite que você adicione impressoras e configure um fax. Funcionalidade semelhante é fornecida pelo utilitário Dispositivos e Impressoras, presente no Windows 7 e Windows Vista. Para acessar o utilitário Impressoras e Aparelhos de Fax, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Impressoras e Aparelhos de Fax</p>
+          <p></p>
+          <p>Atualizações Automáticas</p>
+          <p>O utilitário Atualizações Automáticas, mostrado na Figura 3, garante que o sistema operacional e os programas sejam constantemente atualizados, para fins de segurança e funcionalidades adicionais. O utilitário Atualizações Automáticas verifica o sistema em buscas de atualizações necessárias e, em seguida, recomenda o que deve ser baixado e instalado. É possível fazer o download e instalar as atualizações assim que elas estiverem disponíveis, ou baixar as atualizações, conforme necessário, e instalá-las na próxima vez que o computador for reiniciado. Para acessar o utilitário Atualizações Automáticas, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Sistema> Atualizações Automáticas</p>
+          <p></p>
+          <p>Conexões de Rede</p>
+          <p>O utilitário Conexões de Rede, mostrado na Figura 4, permite ativar e desativar conexões de rede. Foi substituído no Windows 7 e no Windows Vista pela Central de Rede e Compartilhamento. Para acessar o utilitário de Conexões de Rede, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Conexões de Rede</p>
+          <p></p>
+          <p>Assistente de Configuração de Rede</p>
+          <p>O Assistente de Configuração de Rede, mostrado na Figura 5, orienta você durante a instalação da rede de um pequeno escritório ou de uma rede doméstica. Esse assistente permite que os usuários da rede compartilhem arquivos, pastas e dispositivos, como impressoras.</p>
+          <p></p>
+          <p>Para acessar o Assistente de Configuração de Rede, use o seguinte caminho:</p>
+          <p>Iniciar> Painel de Controle> Conexões de Rede> Tarefas comuns e, em seguida, clique em Assistente de Configuração de Rede</p>
+        </div>
+    </div><iframe id="mainFrame" name="mainFrame" src="media/index.html" frameborder="0" class="ui-layout-center"></iframe></body>
+</html>

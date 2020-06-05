@@ -1,0 +1,117 @@
+﻿<textcomponents> 
+ <component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#DAE17A' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>	
+<tr class="title">
+		<td bgcolor='#DAE17A' colspan='3' class="title"><font size='14' color='#393536'><b>Problemase Soluções Comuns para Componentes e Periféricos</b></font></td></tr> 
+ 
+	  <tr>	  
+		<td class="liner_top" colspan='3' bgcolor='#434321'><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2AA23' valign="top" width='110'><font size='12' color='#ffffff'><b>Identificação do Problema</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"><font size='12' color='#ffffff'><b>Prováveis Causas</b></font></td>
+		<td bgcolor='#A2AA23' valign="top"width='150'><font size='12' color='#ffffff'><b>Soluções Possíveis</b></font></td>
+	 
+	</tr>
+		
+	<tr>
+		<td bgcolor='#F3F5E7' width='110' valign="top">A mensagem de erro &quot;OS not found&quot; é exibido quando o computador é iniciado.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>O disco rígido falhou.</li>
+			<li>O jumper do disco rígido está inserido do forma errada.</li>
+			<li>A ordem de inicialização não está definida corretamente na BIOS.</li>
+			<li>A MBR está corrompida.</li></textformat>
+		</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Substitua o disco rígido.</li>
+			<li>Altere as configurações de jumper no disco rígido.</li>
+			<li>Alterar a ordem de boot na BIOS para inicializar pelo HD correto.</li>
+			<li>Inicialize o computador utilizando a Console de Recuperação. No prompt de comando, digite o comando bootrec /fixmbr ou bootrec /fixboot no Windows 7 ou Vista ou o comando fixmbr no Windows XP.</li></textformat>
+		</td>
+		</tr>
+		<tr>
+		<td bgcolor='#FFFFFF' width='110' valign="top">O RAID não pôde ser encontrado.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Os cabos conectados aos discos rígidos são conectados de forma incorreta.</li>
+			<li>O controlador RAID externo não está recebendo energia.</li>
+			<li>O controlador RAID falhou.</li>
+			<li>As configurações da BIOS estão incorretas.</li></textformat>
+		</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Examine todas as conexões de cabo de todas as unidades em RAID.</li>
+			<li>Verifique a conexão de energia no controlador RAID.</li>
+			<li>Substitua o controlador RAID.</li>
+			<li>Reconfigure as definições da BIOS referentes ao controlador RAID.</li></textformat>
+		</td>
+		</tr> 
+	
+<tr>
+		<td bgcolor='#F3F5E7' width='110' valign="top">O RAID parou de funcionar.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>O controlador RAID externo não está recebendo energia.</li>
+			<li>O controlador RAID falhou.</li>
+			<li>As configurações da BIOS estão incorretas.</li></textformat> 
+		</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Verifique a conexão de energia no controlador RAID.</li>
+			<li>Substitua o controlador RAID.</li>
+			<li>Reconfigure as definições da BIOS referentes ao controlador RAID.</li></textformat>
+		</td>
+		</tr>
+
+	<tr>
+		<td bgcolor='#FFFFFF' width='110' valign="top">Um computador apresenta desempenho lento.</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>O computador não tem memória RAM suficiente.</li>
+			<li>O computador está executando muitos programas.</li>
+			<li>O disco rígido está cheio.</li></textformat> 
+		</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Instale memória RAM adicional.</li>
+			<li>Feche os programas desnecessários.</li>
+			<li>Execute a Limpeza de Disco ou substitua o disco rígido por um com maior capacidade.</li></textformat>
+		</td>
+		</tr>
+		<tr>
+		<td bgcolor='#F3F5E7' width='110' valign="top">O computador não reconhece a unidade SCSI.</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>A unidade SCSI tem um ID SCSI incorreto.</li>
+			<li>A terminação SCSI não está configurada corretamente.</li>
+			<li>A unidade SCSI externa não foi ligada antes de inicializar o computador.</li></textformat>
+		</td>
+		<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Reconfigure o ID SCSI.</li>
+			<li>Certifique-se de que a cadeia SCSI (SCSI chain) está terminada nos pontos finais corretos.</li>
+			<li>Ligue a unidade antes de iniciar o computador.</li></textformat>
+		</td>
+		</tr>
+		<tr>
+			<td bgcolor='#FFFFFF' width='110' valign="top">O computador não reconhece a unidade externa removível.</td>
+			<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>O sistema operacional não possui os drivers corretos para o disco rígido externo removível.</li>
+				<li>A porta USB tem muitos dispositivos conectados para fornecer energia adequada.</li></textformat> 
+			</td>
+			<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Faça o download dos drivers corretos.</li>
+				<li>Conecte uma alimentação externa para o dispositivo ou remova alguns dos dispositivos USB.</li></textformat>
+			</td>
+		</tr> 
+		<tr>
+			<td bgcolor='#F3F5E7' width='110' valign="top">Depois de atualizar o firmware da CMOS, o computador não inicia.</td>
+			<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>A atualização de firmware da CMOS não foi instalada corretamente.</li></textformat> 
+			</td>
+			<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Restaure o firmware original, se houver um disponível.</li>
+			<li>Contacte o fabricante da placa-mãe para obter um novo chip CMOS.</li>
+			<li>Se a placa possuir dois chips CMOS, o segundo chip pode ser usado.</li></textformat>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor='#FFFFFF' width='110' valign="top">O computador é reiniciado sem aviso prévio, trava, exibe mensagens de erro ou a BSOD (tela azul).</td>
+			<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>O front-side bus está configurado com um valor muito alto.</li>
+				<li>O multiplicador da CPU está definido com um valor muito alto.</li> 
+				<li>A voltagem da CPU está definida com um valor muito alto.</li></textformat> 
+			</td>
+			<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Redefina a placa-mãe para as configurações padrões de fábrica.</li>
+				<li>Diminua as configurações de FSB.</li>
+				<li>Diminua o valor do multiplicador configurado.</li>
+				<li>Diminua a voltagem da CPU configurada.</li></textformat>
+			</td>
+		</tr> 
+		<tr>
+			<td bgcolor='#F3F5E7' width='110' valign="top">Depois de substituir uma CPU de núcleo único para dual core, o computador ficou mais lento e só exibe o gráfico da uma CPU no Gerenciador de Tarefas.</td>
+			<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>A BIOS não reconhece a CPU multi-core.</li></textformat> 
+			</td>
+			<td bgcolor='#F3F5E7' valign="top"><textformat blockindent='-18'><li>Atualize o firmware da CMOS para suportar a CPU multi-core.</li></textformat>
+			</td>
+		</tr>
+</table>]]></text>
+</component> 
+</textcomponents>
